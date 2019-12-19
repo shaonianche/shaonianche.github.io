@@ -1,14 +1,12 @@
 ---
 layout:            post
-title:             "Theme Features"
-date:              
+title:             什么是好？什么是不好？
 tags:              Read 
 category:          Features
-author:            jwillmer
+author:            duanfei
 math:              true
 ---
 
-## 什么是好？什么是不好？
 
 随着阅读的深入，”选择读什么“的疑惑就越来越明显。对文字、故事、观点、手法等本质没有标准的认知跟理解，好坏的判断全凭感受。
 
