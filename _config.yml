@@ -7,7 +7,7 @@
 
 # Site settings
 title:            duanfei's blog 
-subtitle:         Example Blog
+subtitle:         
 description:      This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.
 keywords:         demo theme example github jekyll features
 language:         "zh" # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
