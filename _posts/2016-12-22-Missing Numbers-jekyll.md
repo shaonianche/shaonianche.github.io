@@ -1,7 +1,15 @@
 ---
+title: "Missing Numbers"
 layout: post
-title:  Missing Numbers
-tags: [Hackerrank]
+date: 2016-12-22 22:48
+headerImage: false
+tag:
+- markdown
+- components
+- extra
+category: blog
+author: jamesfoster
+description: Markdown summary with different options
 ---
 
 ### Problem

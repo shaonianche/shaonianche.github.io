@@ -1,10 +1,15 @@
 ---
-layout:            post
-title:             什么是好？什么是不好？
-tags:              Read 
-category:          Features
-author:            duanfei
-math:              true
+title: "好与不好"
+layout: post
+date: 2019-12-18 22:48
+headerImage: false
+tag:
+- markdown
+- components
+- extra
+category: blog
+author: jamesfoster
+description: Markdown summary with different options
 ---
 
 
