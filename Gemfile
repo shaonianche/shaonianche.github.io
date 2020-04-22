@@ -1,12 +1,12 @@
-source 'http://rubygems.org'
-
-gem "jekyll"
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+source 'https://rubygems.org'
 
 group :jekyll_plugins do
-    gem 'jekyll-mentions'
+    gem 'github-pages'
+    gem 'jekyll-admin'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-gist'
     gem 'jekyll-feed'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-redirect-from'
-    gem 'hawkins'                    # jekyll liveserve
+    gem 'jemoji'
+    gem "jekyll-paginate-v2", "~> 2.0"
+    gem "html-proofer"
 end
