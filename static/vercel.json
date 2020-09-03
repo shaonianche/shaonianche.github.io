@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "github": {
+    "enabled": true,
+    "silent": true
+  },
+  "redirects": [
+    {
+      "source": "/blog/atom.xml",
+      "permanent": true,
+      "destination": "/feed/atom.xml"
+    },
+    {
+      "source": "/blog/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug([a-z0-9\\-]+).html",
+      "permanent": true,
+      "destination": "/blog/:year/:month/:slug"
+    }
+  ]
+}
