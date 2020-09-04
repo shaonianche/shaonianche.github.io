@@ -41,7 +41,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.BLOG_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           # docs: https://developer.github.com/v3/activity/events/types/#commitcommentevent
           commit_message: site updated at ${{ github.event.head_commit.timestamp }}
