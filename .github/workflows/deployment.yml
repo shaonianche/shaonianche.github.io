@@ -9,7 +9,7 @@ jobs:
   deploy:
     name: Build
     runs-on: ubuntu-18.04
-    if: "! contains(toJSON(github.event.commits.*.message), '[ci skip]')"
+    # if: "! contains(toJSON(github.event.commits.*.message), '[ci skip]')"
 
     steps:
       # correct build machine timezone
