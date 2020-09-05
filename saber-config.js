@@ -5,17 +5,17 @@ module.exports = {
   },
   theme: "./theme/src",
   siteConfig: {
-    url: 'https://shaonianche.github.io/',
-    title: " Duan Fei's Blog " ,
-    description: '',
-    keywords: 'duanfei,blog,blogger,个人博客',
-    author: 'DuanFei',
-    // disqusjs: {
-    //   shortname: 'DuanFei',
-    //   sitename: "",
-    //   apikey: 'Hg3FyAX4IodvgGm8OAIpuplfZW5APk2DYcuVk9DEEDSBijKPdPdooKBX7683fo6u',
-    //   admin: 'h404bi'
-    // }
+    url: 'https://www.h404bi.com',
+    title: 'The Art of Chawye Hsu',
+    description: 'Personal Website of Chawye Hsu.',
+    keywords: 'h404bi,blog,blogger,个人博客',
+    author: 'Chawye Hsu',
+    disqusjs: {
+      shortname: 'h404bi',
+      sitename: "The Art of Chawye Hsu",
+      apikey: 'Hg3FyAX4IodvgGm8OAIpuplfZW5APk2DYcuVk9DEEDSBijKPdPdooKBX7683fo6u',
+      admin: 'h404bi'
+    }
   },
   themeConfig: {
     since: '2015',
@@ -28,40 +28,40 @@ module.exports = {
           path: '/blog'
         },
         {
-          name: 'About',
-          path: '/about'
-        },
-        {
           name: 'Guestbook',
           path: '/guestbook'
+        },
+        {
+          name: 'Links',
+          path: '/links'
+        },
+        {
+          name: 'About',
+          path: '/about'
         }
-        // {
-        //   name: 'Links',
-        //   path: '/links'
-        // },
       ]
     },
     footer: {
       social_network: [
-        // {
-        //   name: 'Instagram',
-        //   path: 'https://www.instagram.com/chawyehsu'
-        // },
-        // {
-        //   name: 'Music',
-        //   path: 'https://music.163.com/#/user/home?id=35631431'
-        // },
+        {
+          name: 'Instagram',
+          path: 'https://www.instagram.com/chawyehsu'
+        },
+        {
+          name: 'Music',
+          path: 'https://music.163.com/#/user/home?id=35631431'
+        },
         {
           name: 'GitHub',
-          path: 'https://github.com/shaonianche'
+          path: 'https://github.com/chawyehsu'
         },
         {
           name: 'Twitter',
-          path: 'https://twitter.com/Bonjour_Ar'
+          path: 'https://twitter.com/intent/follow?screen_name=chawyehsu'
         },
         {
           name: 'Steam',
-          path: 'https://steamcommunity.com/id/axmiao'
+          path: 'https://steamcommunity.com/id/h404bi'
         }
       ]
     }
