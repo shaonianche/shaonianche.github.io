@@ -2,199 +2,247 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-    <loc>https://www.h404bi.com/blog/category/technology</loc>
-    <lastmod>2020-09-06T01:44:53.198Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/tag/%E5%BF%83%E6%99%BA%E6%8E%A2%E5%AF%BB</loc>
+    <lastmod>2020-09-06T01:59:15.154Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/category/digital</loc>
-    <lastmod>2020-09-06T01:44:53.198Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/tag/%E8%AE%BE%E8%AE%A1%E8%80%83%E5%8F%A4</loc>
+    <lastmod>2020-09-06T01:59:15.154Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/tag/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96</loc>
-    <lastmod>2020-09-06T01:44:53.197Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/tag/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1</loc>
+    <lastmod>2020-09-06T01:59:15.154Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/category/uncategorized</loc>
-    <lastmod>2020-09-06T01:44:53.197Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/tag/code</loc>
+    <lastmod>2020-09-06T01:59:15.153Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/tag/%E5%89%8D%E7%AB%AF</loc>
-    <lastmod>2020-09-06T01:44:53.196Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/tag/read</loc>
+    <lastmod>2020-09-06T01:59:15.153Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2020/04/ten-indie-video-game-soundtracks-you-must-listen</loc>
-    <lastmod>2020-04-18T15:15:00.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/tag/text</loc>
+    <lastmod>2020-09-06T01:59:15.153Z</lastmod>
+        <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/tag/life</loc>
+    <lastmod>2020-09-06T01:59:15.152Z</lastmod>
+        <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/2019/12/good%2520or%2520no%2520good</loc>
+    <lastmod>2020-09-04T02:31:32.248Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/11/github-universe-2019-news</loc>
-    <lastmod>2019-11-18T14:50:00.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2019/11/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E5%9C%B0%E5%9B%BE</loc>
+    <lastmod>2020-09-04T02:31:32.247Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/07/better-lazyload-implementation-with-responsive-images</loc>
-    <lastmod>2019-07-24T08:33:00.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2019/09/%E5%B1%B1%E6%B2%B3%E6%95%85%E4%BA%BA</loc>
+    <lastmod>2020-09-04T02:31:32.247Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/07/amd-itx-diy-specs-for-the-next-5-years</loc>
-    <lastmod>2019-07-08T01:31:05.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2019/06/lorem%2520ipsum</loc>
+    <lastmod>2020-09-04T02:31:32.247Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/05/mariya-takeuchis-plastic-love-gets-music-video-after-35-years</loc>
-    <lastmod>2019-05-21T15:07:32.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2019/06/%E4%BB%8E%E9%AD%82%E7%B3%BB%E5%88%97%E6%B8%B8%E6%88%8F%E4%B8%AD%E5%BE%97%E5%87%BA%E7%9A%84%E6%83%B3%E6%B3%95</loc>
+    <lastmod>2020-09-04T02:31:32.247Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/05/macos-mojave-dark-mode-in-css</loc>
-    <lastmod>2019-05-01T10:14:40.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2019/06/How%2520to%2520Think%2520Straight%2520%2520chinaese</loc>
+    <lastmod>2020-09-04T02:31:32.247Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/04/recent-changes-of-my-site</loc>
-    <lastmod>2019-04-21T11:21:20.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2019/03/%E3%80%8A%E7%A4%BE%E4%BC%9A%E6%80%A7%E5%8A%A8%E7%89%A9%E3%80%8B%EF%BC%9A%E4%BB%8E%E4%BC%97%E6%95%88%E5%BA%94%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%AE%A4%E7%9F%A5</loc>
+    <lastmod>2020-09-04T02:31:32.247Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/02/understanding-windows-console-host-settings</loc>
-    <lastmod>2019-03-06T15:15:20.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2019/01/we</loc>
+    <lastmod>2020-09-04T02:31:32.247Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2019/01/the-2018-hacktoberfest-shirt-arrived</loc>
-    <lastmod>2019-01-14T18:19:44.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2018/07/welcome</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2018/12/chrome-extensions-that-i-am-using</loc>
-    <lastmod>2018-12-21T03:00:17.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2018/06/header-image</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2018/05/talk-about-scoop-the-package-manager-for-windows-again</loc>
-    <lastmod>2019-10-13T15:32:50.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2018/04/hello%2520friend</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2018/03/office-2016-custom-installation-guide</loc>
-    <lastmod>2018-03-25T05:00:00.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2018/04/%E5%82%85%E9%9B%B7%E5%AE%B6%E4%B9%A6</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2018/01/the-tao-of-notch-beyond-twitter</loc>
-    <lastmod>2019-04-06T14:34:56.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2018/02/goodluck%25202018</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2017/12/nintendo-switch-unboxing-and-simple-review</loc>
-    <lastmod>2017-12-16T10:04:00.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2017/12/new%2520beginning</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2017/02/a-brief-history-of-minecraft-modding</loc>
-    <lastmod>2017-02-22T05:22:19.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2017/06/%E5%88%87%E8%AE%B0%E4%B9%A0%E6%83%AF%E8%A0%A2%E8%B4%A7</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2017/02/henet-6in4-ipv6-tunnel-on-openwrt</loc>
-    <lastmod>2017-02-12T12:44:53.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2017/06/mylife</loc>
+    <lastmod>2020-09-04T02:31:32.246Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2017/01/2016-2017</loc>
-    <lastmod>2017-01-30T00:00:00.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2017/04/linux%2520config</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2015/10/dot-im-domain-renewal</loc>
-    <lastmod>2015-10-05T06:30:54.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2017/04/time</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2015/09/new-mac-env-bootstrap</loc>
-    <lastmod>2015-09-20T09:28:19.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2017/02/end</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2015/08/use-scoop-to-enhance-windows-powershell</loc>
-    <lastmod>2015-09-04T09:19:38.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2017/02/start</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/2015/05/hello-world</loc>
-    <lastmod>2015-09-09T13:32:27.000Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/2016/12/2016</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/about</loc>
+    <loc>https://blog.duanfei.org/blog/2016/12/note%2520blog</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
+        <priority>0.6</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/2016/12/Missing%2520Numbers-jekyll</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
+        <priority>0.6</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/2016/09/woto</loc>
+    <lastmod>2020-09-04T02:31:32.245Z</lastmod>
+        <priority>0.6</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/2016/08/wellto</loc>
+    <lastmod>2020-09-04T02:31:32.244Z</lastmod>
+        <priority>0.6</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/about</loc>
     <lastmod>2020-07-28T14:10:00.000Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog</loc>
+    <loc>https://blog.duanfei.org/blog</loc>
     <lastmod>2020-04-17T16:00:00.000Z</lastmod>
         <priority>1</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/guestbook</loc>
+    <loc>https://blog.duanfei.org/guestbook</loc>
     <lastmod>2020-06-07T16:00:00.000Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/</loc>
+    <loc>https://blog.duanfei.org/</loc>
     <lastmod>2020-04-17T16:00:00.000Z</lastmod>
         <priority>1</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/links</loc>
+    <loc>https://blog.duanfei.org/links</loc>
     <lastmod>2020-04-17T16:00:00.000Z</lastmod>
         <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/blog/page/2</loc>
+    <loc>https://blog.duanfei.org/blog/page/2</loc>
     <lastmod>2020-04-17T16:00:00.000Z</lastmod>
         <priority>1</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://www.h404bi.com/page/2</loc>
+    <loc>https://blog.duanfei.org/blog/page/3</loc>
+    <lastmod>2020-04-17T16:00:00.000Z</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/page/2</loc>
+    <lastmod>2020-04-17T16:00:00.000Z</lastmod>
+        <priority>1</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/page/3</loc>
     <lastmod>2020-04-17T16:00:00.000Z</lastmod>
         <priority>1</priority>
         <changefreq>always</changefreq>
