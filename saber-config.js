@@ -149,6 +149,9 @@ module.exports = {
     //   }
     // },
     {
+      resolve: 'saber-plugin-netlify-redirect'
+    },
+    {
       resolve: 'saber-plugin-prismjs'
     },
     {

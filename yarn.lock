@@ -8179,6 +8179,13 @@ saber-plugin-feed@0.4.3:
   dependencies:
     feed "^4.0.0"
 
+saber-plugin-netlify-redirect@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npm.taobao.org/saber-plugin-netlify-redirect/download/saber-plugin-netlify-redirect-0.1.2.tgz#d4566d9064d485c21ebadb64b771a1f27530de7f"
+  integrity sha1-1FZtkGTUhcIeuttkt3Gh8nUw3n8=
+  dependencies:
+    url-join "^4.0.0"
+
 saber-plugin-prismjs@0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/saber-plugin-prismjs/-/saber-plugin-prismjs-0.2.4.tgz#03d9a866b196c18e97319fb677a41ac1b12a1afd"
