@@ -1,12 +1,12 @@
 {
-  "name": "www.h404bi.com",
+  "name": "shaonianche.github.io",
   "version": "0.0.0",
-  "homepage": "https://www.h404bi.com/",
+  "homepage": "https://blog.duanfei.org/",
   "description": "This is Chawye Hsu's website.",
   "author": "Chawye Hsu <h404bi@gmail.com>",
   "private": true,
   "repository": {
-    "url": "git+https://github.com/h404bi/www.h404bi.com.git",
+    "url": "git+https://github.com/shaonianche/shaonianche.github.io.git",
     "type": "git"
   },
   "scripts": {
