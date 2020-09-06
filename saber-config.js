@@ -5,13 +5,13 @@ module.exports = {
   },
   theme: "./theme/src",
   siteConfig: {
-    url: 'https://www.h404bi.com',
-    title: 'The Art of Chawye Hsu',
+    url: 'https://blog.duanfei.org',
+    title: "Duan Fei's blog",
     description: 'Personal Website of Chawye Hsu.',
-    keywords: 'h404bi,blog,blogger,个人博客',
-    author: 'Chawye Hsu',
+    keywords: 'duanfei,blog,blogger,个人博客',
+    author: 'DuanFei',
     disqusjs: {
-      shortname: 'h404bi',
+      shortname: 'DuanFei',
       sitename: "The Art of Chawye Hsu",
       apikey: 'Hg3FyAX4IodvgGm8OAIpuplfZW5APk2DYcuVk9DEEDSBijKPdPdooKBX7683fo6u',
       admin: 'h404bi'
