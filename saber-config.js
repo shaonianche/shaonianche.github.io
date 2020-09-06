@@ -32,8 +32,8 @@ module.exports = {
           path: '/guestbook'
         },
         {
-          name: 'Links',
-          path: '/links'
+          name: 'Running',
+          path: '/running'
         },
         {
           name: 'About',
@@ -45,24 +45,24 @@ module.exports = {
       social_network: [
         {
           name: 'Instagram',
-          path: 'https://www.instagram.com/chawyehsu'
+          path: 'https://www.instagram.com/alone_cmj/?hl=en'
         },
-        {
-          name: 'Music',
-          path: 'https://music.163.com/#/user/home?id=35631431'
-        },
+        // {
+        //   name: 'Music',
+        //   path: 'https://music.163.com/#/user/home?id=35631431'
+        // },
         {
           name: 'GitHub',
-          path: 'https://github.com/chawyehsu'
+          path: 'https://github.com/shaonianche'
         },
         {
           name: 'Twitter',
-          path: 'https://twitter.com/intent/follow?screen_name=chawyehsu'
+          path: 'https://twitter.com/Bonjour_Ar'
         },
-        {
-          name: 'Steam',
-          path: 'https://steamcommunity.com/id/h404bi'
-        }
+        // {
+        //   name: 'Steam',
+        //   path: 'https://steamcommunity.com/id/h404bi'
+        // }
       ]
     }
   },
