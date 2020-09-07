@@ -58,7 +58,17 @@ body {
 }
 
 p, blockquote, table, hr, dl, ul, ol, pre, address, figure {
-  margin-bottom: $gap-m;
+  font-family: $font-serif-text;
+  margin-bottom: $gap-l;
+}
+
+p {
+  line-height: 1.8;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 a {

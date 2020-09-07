@@ -10,8 +10,9 @@ $font-sans-chinese: "lucida grande", "lucida sans unicode","Noto Sans SC", "Sour
 $font-sans-fallback: sans-serif;
 $font-family-sans: $font-sans-latin, $font-sans-chinese, $font-sans-fallback;
 // Serif
-$font-serif-latin: "lucida","helvetica","Alegreya", "Times New Roman";
+$font-serif-latin: "Alegreya", "Times New Roman";
 $font-serif-chinese: "lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", STFangsong, FangSong, FangSong_GB2312;
+$font-serif-text: "lucida grande", "lucida sans unicode";
 $font-serif-fallback: serif;
 $font-family-serif: $font-serif-latin, $font-serif-chinese, $font-serif-fallback;
 // Headline
