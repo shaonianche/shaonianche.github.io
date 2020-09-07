@@ -6,15 +6,15 @@ module.exports = {
   theme: "./theme/src",
   siteConfig: {
     url: 'https://blog.duanfei.org',
-    title: "Duan Fei's blog",
-    description: 'Personal Website of Chawye Hsu.',
+    title: "友人A",
+    description: 'Personal Website of Duan Fei.',
     keywords: 'duanfei,blog,blogger,个人博客',
     author: 'DuanFei',
     disqusjs: {
-      shortname: 'DuanFei',
-      sitename: "The Art of Chawye Hsu",
-      apikey: 'Hg3FyAX4IodvgGm8OAIpuplfZW5APk2DYcuVk9DEEDSBijKPdPdooKBX7683fo6u',
-      admin: 'h404bi'
+      shortname: 'duanfeis-blog',
+      sitename: "DuanFei's blog",
+      apikey: 'D7uane8BBRWsUOjSMYQiB5MsH23KwfUsby74d4a7aiWWT49tIAqqqC2gigQ1q8uk',
+      admin: 'disqus_kHjqZhPfw2'
     }
   },
   themeConfig: {
@@ -59,10 +59,10 @@ module.exports = {
           name: 'Twitter',
           path: 'https://twitter.com/Bonjour_Ar'
         },
-        // {
-        //   name: 'Steam',
-        //   path: 'https://steamcommunity.com/id/h404bi'
-        // }
+        {
+          name: 'Steam',
+          path: 'https://steamcommunity.com/id/duanf/'
+        }
       ]
     }
   },
