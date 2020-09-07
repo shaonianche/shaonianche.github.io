@@ -6,12 +6,12 @@
 $font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 // Sans
 $font-sans-latin: "Open Sans";
-$font-sans-chinese: "Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei";
+$font-sans-chinese: "lucida grande", "lucida sans unicode","Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei";
 $font-sans-fallback: sans-serif;
 $font-family-sans: $font-sans-latin, $font-sans-chinese, $font-sans-fallback;
 // Serif
-$font-serif-latin: "Alegreya", "Times New Roman";
-$font-serif-chinese: "Noto Serif SC", "Source Han Serif SC", STFangsong, FangSong, FangSong_GB2312;
+$font-serif-latin: "lucida","helvetica","Alegreya", "Times New Roman";
+$font-serif-chinese: "lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", STFangsong, FangSong, FangSong_GB2312;
 $font-serif-fallback: serif;
 $font-family-serif: $font-serif-latin, $font-serif-chinese, $font-serif-fallback;
 // Headline

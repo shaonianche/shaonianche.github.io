@@ -10,7 +10,7 @@ assets:
   feature: ../_assets/uploads/2020/09/20200906002.jpg
 categories:
   - 杂谈
-feature: true
+feature: false
 ---
 
 
