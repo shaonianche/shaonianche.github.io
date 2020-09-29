@@ -2,8 +2,8 @@
   "name": "shaonianche.github.io",
   "version": "0.0.0",
   "homepage": "https://blog.duanfei.org/",
-  "description": "This is Chawye Hsu's website.",
-  "author": "Chawye Hsu <h404bi@gmail.com>",
+  "description": "This is DuanFei's website.",
+  "author": "DuanFei<duanfei.job@gmail.com>",
   "private": true,
   "repository": {
     "url": "git+https://github.com/shaonianche/shaonianche.github.io.git",
