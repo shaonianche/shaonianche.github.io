@@ -14,8 +14,8 @@
             "content_html": " class=\"tach-root\"><header class=\"tach-header\"><div class=\"tach-wrapper\"><nav class=\"navbar\"><div class=\"container\"><div class=\"column navbar-brand\"><a href=\"/\" class=\"navbar-item site-title router-link-active\">友人A</a> <span class=\"navbar-burger burger\"><span></span> <span></span> <span></span></span></div> <div class=\"column navbar-menu\"><div class=\"navbar-end\"><a href=\"/blog\" class=\"navbar-item router-link-active\">Blog</a><a href=\"/guestbook\" class=\"navbar-item\">Guestbook</a><a href=\"/running\" class=\"navbar-item\">Running</a><a href=\"/about\" class=\"navbar-item\">About</a></div></div></div></nav></div></header> <main class=\"tach-main\"><!----> <article role=\"main\" itemscope=\"itemscope\" itemtype=\"https://schema.org/Article\" class=\"page-content\"><div class=\"page-inner-wrapper tach-page-wrapper\"><header class=\"page-header page-has-cover\"><section class=\"page-cover\"><img src=\"/_saber/images/20200915001-1626977d.png\" srcset=\"data:image/png;base64,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\" data-srcset=\"/_saber/images/20200915001-1626977d.png 1200w,/_saber/images/20200915001-6286b72b.png 720w,/_saber/images/20200915001-dd9f05c2.png 480w\" width=\"1200\" class=\"image\"> <span class=\"overlay\"></span></section> <section class=\"page-head-content\"><h1 class=\"page-title is-family-sans\">想象另一种可能</h1> <div class=\"page-meta\"><section class=\"page-datetime\"><time datetime=\"2020-09-15T00:00:00.000Z\" class=\"published\">\n                  2020-09-15 8:00:00\n                </time></section> <section class=\"page-categories\"><span><!----> <a href=\"/blog/category/notes\" class=\"category\">\n                    Notes\n                  </a></span></section></div></section></header> <!----> <section class=\"page-body\"><!----></section> <!----> <section class=\"page-comments\"><div id=\"disqus_thread\"></div></section> <footer class=\"page-footer\"></footer></div></article></main> <footer class=\"tach-footer footer\"><div class=\"tach-wrapper\"><div class=\"container columns\"><section class=\"section column is-6\"><div class=\"copyright\">\n          © 2015-2020 DuanFei. Made with <span style=\"color:#b30e2e\">❤︎︎</span> in Beijing\n        </div></section> <section class=\"section column is-6\"><div class=\"social-network\"><ul><li><a target=\"_blank\" rel=\"noopener\" href=\"https://www.instagram.com/alone_cmj/?hl=en\" class=\"icon\">Instagram</a></li><li><a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/shaonianche\" class=\"icon\">GitHub</a></li><li><a target=\"_blank\" rel=\"noopener\" href=\"https://twitter.com/Bonjour_Ar\" class=\"icon\">Twitter</a></li><li><a target=\"_blank\" rel=\"noopener\" href=\"https://steamcommunity.com/id/duanf/\" class=\"icon\">Steam</a></li></ul></div></section></div></div></footer></div></div",
             "url": "https://blog.duanfei.org/blog/2020/09/private-secondary-school",
             "title": "想象另一种可能",
-            "summary": "保持思想的开放性是面对复杂与高速变化的时代的唯一方案。但更重要的是，我们希望保持一种非功利的兴趣：对世界的丰富性、复杂性本身充满兴趣，真诚地渴望理解他人的经验。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "summary": "标题跟这段话都来自于「理想国」出版社，想从这段话所引出的问题是我周末在私立中学的感受。正值小妹要上中学，一直以来说「私立」学校，但是我并没有感受过其中的氛围。\n",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2020-09-15T00:00:00.000Z"
         },
         {
@@ -24,7 +24,7 @@
             "url": "https://blog.duanfei.org/blog/2020/09/use-yourself-as-a-method",
             "title": "《把自己作为方法》读书笔记",
             "summary": "这本书最早是在整理 界面文化 的 书单 的时候发现的，前段时间因为听 随机波动 的播客节目，发掘出了不少人类学的奇怪知识。后来连续看了一段时间的访谈，许知远、梁文道、陈丹青 ...\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2020-09-10T00:00:00.000Z"
         },
         {
@@ -33,7 +33,7 @@
             "url": "https://blog.duanfei.org/blog/2020/09/restart",
             "title": "重启：未完成",
             "summary": "最近偏好看访谈，找来许知远的《十三邀》跟陈丹青的《局部》来看，配合着项飚的《把自己作为方法》。访谈作为一种谈话形式，我尤为关注许知远在其中的提问，如何开启话题、如何切入，提问的问题反应出了许知远如何认知“人”这个概念，从那些方面来提问也反映着背后的评价标准。比如他对李诞的一期中从李诞的成长经历开始，了解这些成长经历对如今的影响，以当今的视角对当时人事的认知等等，能够感受到许知远在挖掘人的丰富性，我们有何不同，而我们又因何不同。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2020-09-07T00:00:00.000Z"
         },
         {
@@ -42,7 +42,7 @@
             "url": "https://blog.duanfei.org/blog/2019/12/good-and-bad",
             "title": "好与不好",
             "summary": "随着阅读的深入，”选择读什么“的疑惑就越来越明显。对文字、故事、观点、手法等本质没有标准的认知跟理解，好坏的判断全凭感受。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-12-18T14:48:00.000Z"
         },
         {
@@ -51,7 +51,7 @@
             "url": "https://blog.duanfei.org/blog/2019/11/customer-journey-maps",
             "title": "用户体验地图",
             "summary": "原文地址：A beginner’s guide to customer journey maps\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-11-30T14:48:00.000Z"
         },
         {
@@ -60,7 +60,7 @@
             "url": "https://blog.duanfei.org/blog/2019/09/mountains-may-depart",
             "title": "山河故人",
             "summary": "也许先看汪曾祺再回去读沈从文更能明白《边城》所表达出来的情感，之前先读过《边城》并没有读出来什么惊奇的地方，知识觉得平常，平常事、平常心、平常人。后来看过汪曾祺的《人间草木》，我对花草生物学一无所知，看的很是艰难，看了三分之一就放弃了。直到《山河故人》让我从一个学生的视角，看到了不一样的沈从文。\n故事脱离了背景会变得平平常常，会丧失情绪。就像汪曾祺所言，对当时身边人事与西南大地的热爱与热情，造就了边城、沈从文、汪曾祺等等这些人。\n在山河故人中汪曾祺写道：西南联大的学习生涯里面中，学习古文观止、诗经楚辞、书法，祖父曾教过他写八股文。西南联大在短短时间内教育出了很多享誉世界各领域的人物，谈及原因时，总结道：“因为自由”。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-09-19T14:48:00.000Z"
         },
         {
@@ -69,7 +69,7 @@
             "url": "https://blog.duanfei.org/blog/2019/06/social-animal",
             "title": "《社会性动物》：从众效应与基础认知",
             "summary": "人类经常会有一种倾向，去从事或相信其他多数人从事或相信的东西，就是所谓的“从众效应”。产生从众效应的原因有：\n1、获得集体认可；\n2、获取恰当行为的有关信息（面对未知、我们通常通过观察他人行动而做出决策）；\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-06-27T14:48:00.000Z"
         },
         {
@@ -78,7 +78,7 @@
             "url": "https://blog.duanfei.org/blog/2019/06/How-to-Think-Straight-chinaese",
             "title": "How to Think Straight",
             "summary": "这个世界上，有两门学科是真正迷人的。一是物理学，它让我们了解我们所处的这个世界。二是心理学，它让我们了解自己。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-06-27T14:48:00.000Z"
         },
         {
@@ -87,7 +87,7 @@
             "url": "https://blog.duanfei.org/blog/2019/06/lorem-ipsum",
             "title": "Lorem ipsum",
             "summary": "在使用Axure的 “文本段落” 元件时，里面会默认填充一段文字\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-06-27T14:48:00.000Z"
         },
         {
@@ -96,7 +96,7 @@
             "url": "https://blog.duanfei.org/blog/2019/06/soul-series",
             "title": "从《魂》系列游戏设定所衍生的一点想法",
             "summary": "在过去近 10 年的时间里，知名游戏开发商 From Software 开发出了魂系列游戏，从《恶魔之魂》、《黑暗之魂》、《血源诅咒》再到如今的《只狼：影逝二度》，我们在其中被各种小怪教做人、被新手村BOSS教做人。我更是曾被古达卡了半年之久。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-06-27T14:48:00.000Z"
         },
         {
@@ -105,7 +105,7 @@
             "url": "https://blog.duanfei.org/blog/2019/01/we",
             "title": "我们",
             "summary": "我喜欢安晓的勇气，我无法忘记那时候她为我们而做过的决定。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2019-01-17T14:48:00.000Z"
         },
         {
@@ -114,7 +114,7 @@
             "url": "https://blog.duanfei.org/blog/2018/04/hello-friend",
             "title": "Hello,Stranger.",
             "summary": "我凌晨1点多在工作的微信群里面收到这样一条信息，当时我正在调博客的代码，戴着耳机听着歌，房间里只有键盘的声音，喵小姐已然入睡，两点半之后我停下来才回头去看这条信息。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2018-04-05T14:48:00.000Z"
         },
         {
@@ -123,7 +123,7 @@
             "url": "https://blog.duanfei.org/blog/2018/04/fu-lei-letters",
             "title": "《傅雷家书》笔记",
             "summary": "以下来自于傅雷家书的摘录，有人评价说：傅雷家书字里行间表现出了傅雷对儿子傅聪倾注所有的感情。读过之后确实如此，或许傅雷父子有共同的音乐爱好，而这也成为了他们沟通的桥梁。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2018-04-02T14:48:00.000Z"
         },
         {
@@ -132,7 +132,7 @@
             "url": "https://blog.duanfei.org/blog/2018/02/games-data2",
             "title": "游戏、游戏",
             "summary": "我虽然想赢，但我更看重开心。\n",
-            "date_modified": "2020-10-12T14:32:47.581Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2018-02-26T14:48:00.000Z"
         },
         {
@@ -141,7 +141,7 @@
             "url": "https://blog.duanfei.org/blog/2017/04/time",
             "title": "时光",
             "summary": "自了新离职至今已有20多天的时间了，期间面试过一家公司，帮朋友画了几天原型图，看完了《S》，虽然没有看太过明白。交出了主工作账号，只留下pull代码的权限，其实回头总结一下，除了不用去公司之外，离职之后与工作之时并没有很大的区别。无非都是看书、写代码、个人游戏时间。\n",
-            "date_modified": "2020-10-12T14:32:47.577Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2017-04-03T14:48:00.000Z"
         },
         {
@@ -150,7 +150,7 @@
             "url": "https://blog.duanfei.org/blog/2017/02/start",
             "title": "节后杂谈",
             "summary": "It does not do to dwell on dreams, and forget to live.\n",
-            "date_modified": "2020-10-12T14:32:47.577Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2017-02-07T14:48:00.000Z"
         },
         {
@@ -159,7 +159,7 @@
             "url": "https://blog.duanfei.org/blog/2016/09/%20my-whole-life",
             "title": "我这一辈子",
             "summary": "“我要自杀，打算跳楼，这跳楼我有研究，二楼跟二十楼不一样，二楼是’啪’、’啊’，二十楼是 ‘啊 ~~~~’，’啪’。 ”  ——郭德纲（我这一辈子）\n",
-            "date_modified": "2020-10-12T14:32:47.577Z",
+            "date_modified": "2020-10-12T14:39:55.107Z",
             "date_published": "2016-09-23T14:48:00.000Z"
         }
     ]
