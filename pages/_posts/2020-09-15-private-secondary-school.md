@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "想象另一种可能"
@@ -8,7 +7,7 @@ date: 2020-09-15
 updated: 
 assets:
   cover: ../_assets/uploads/2020/09/2020100915.jpg
-  feature: 
+  feature: ../_assets/uploads/2020/09/2020100915.jpg
 categories:
   - Notes
 feature: false
