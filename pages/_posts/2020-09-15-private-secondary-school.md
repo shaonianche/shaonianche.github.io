@@ -7,7 +7,7 @@ description: >-
 date: 2020-09-15
 updated: 
 assets:
-  cover: https://user-images.githubusercontent.com/16186646/95718697-6513da80-0ca1-11eb-9148-83b686fc70f5.png
+  cover: ../_assets/uploads/2020/09/2020100915.jpg
   feature: 
 categories:
   - Notes
@@ -25,6 +25,8 @@ feature: false
 标题跟这段话都来自于「理想国」出版社，想从这段话所引出的问题是我周末在私立中学的感受。正值小妹要上中学，一直以来说「私立」学校，但是我并没有感受过其中的氛围。
 
 如何在限制与自由中保持平衡性是个很难的事情，我既不希望看到那么模式化的生活磨灭人的自主，希望创造保持有“非功利兴趣”的环境。自由与无往不在枷锁之中理想中的环境。
+
+
 
 理想国译丛的序言中写道：
 
