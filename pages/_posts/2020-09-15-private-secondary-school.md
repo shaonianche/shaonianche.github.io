@@ -4,11 +4,11 @@ layout: post
 title: "想象另一种可能"
 keywords: 
 description: >-
-date: 2020-09-10
+date: 2020-09-15
 updated: 
 assets:
-  cover: ../_assets/uploads/2020/09/20200906018.jpg
-  feature: ../_assets/uploads/2020/09/20200906017-1.jpg
+  cover: https://user-images.githubusercontent.com/16186646/95718697-6513da80-0ca1-11eb-9148-83b686fc70f5.png
+  feature: 
 categories:
   - Notes
 feature: false
@@ -17,7 +17,7 @@ feature: false
 ### 想象另一种可能
 
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1484951066&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=800 height=86 src="//music.163.com/outchain/player?type=2&id=1484951066&auto=1&height=66"></iframe>
 
 
 > **保持思想的开放性是面对复杂与高速变化的时代的唯一方案。但更重要的是，我们希望保持一种非功利的兴趣：对世界的丰富性、复杂性本身充满兴趣，真诚地渴望理解他人的经验。**
@@ -25,8 +25,6 @@ feature: false
 标题跟这段话都来自于「理想国」出版社，想从这段话所引出的问题是我周末在私立中学的感受。正值小妹要上中学，一直以来说「私立」学校，但是我并没有感受过其中的氛围。
 
 如何在限制与自由中保持平衡性是个很难的事情，我既不希望看到那么模式化的生活磨灭人的自主，希望创造保持有“非功利兴趣”的环境。自由与无往不在枷锁之中理想中的环境。
-
-
 
 理想国译丛的序言中写道：
 
