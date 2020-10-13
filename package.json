@@ -21,25 +21,31 @@
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-implicit-figures": "^0.10.0",
-    "prismjs": "^1.21.0",
+    "prismjs": "^1.22.0",
     "saber": "0.11.7",
-    "saber-plugin-baidu-analytics": "0.1.0",
+    "saber-plugin-baidu-analytics": "^0.1.0",
     "saber-plugin-feed": "0.4.3",
-    "saber-plugin-ga-lite": "0.4.0",
+    "saber-plugin-ga-lite": "^0.4.0",
     "saber-plugin-google-adsense": "^0.2.1",
     "saber-plugin-netlify-redirect": "^0.1.2",
     "saber-plugin-prismjs": "0.2.4",
     "saber-plugin-query-posts": "0.4.6",
-    "saber-plugin-sitemap": "0.4.1",
-    "sass": "^1.26.10",
-    "sass-loader": "^10.0.2"
+    "saber-plugin-sitemap": "^0.4.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "gh-pages": "^3.1.0",
     "lerna": "^3.22.1"
   },
   "workspaces": [
     "packages/*",
     "theme"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
