@@ -44,4 +44,6 @@ jobs:
           github_token: ${{ secrets.G_TOKEN }}
           publish_dir: ./public
           # docs: https://developer.github.com/v3/activity/events/types/#commitcommentevent
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: site updated at ${{ github.event.head_commit.timestamp }}
