@@ -9941,9 +9941,9 @@ vm-browserify@^1.0.1:
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
 vue-compile@^0.6.0:
-  version "0.6.1"
-  resolved "https://registry.npm.taobao.org/vue-compile/download/vue-compile-0.6.1.tgz#a6621e971ecba8368a485e130fc660477365f08a"
-  integrity sha1-pmIelx7LqDaKSF4TD8ZgR3Nl8Io=
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/vue-compile/-/vue-compile-0.6.2.tgz#d4e4a6b1467fdc754a1df36685e2762f6350de76"
+  integrity sha512-1MooNTFo/+pZYG+8gqYfneDrE8NIz00pPDoRe4GWTzqmX9e78WxmE/Hy025qwPu8vuKyh0ip6hsX9ty29OYYWQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/preset-typescript" "^7.0.0"
