@@ -9,8 +9,4 @@ updated: 2020-04-18 00:00:00
 
 ### Activities
 
-展示我自己运动的一些数据，样式和数据处理方式参考 [Yihong's Blog](https://yihong.run/running/)。
-
-![Running Data](https://raw.githubusercontent.com/shaonianche/running-data-sync/master/assets/github.svg)
-
-![Running Data](https://raw.githubusercontent.com/shaonianche/running-data-sync/master/assets/grid.svg)
+<iframe height='454' width='800' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/67102018/latest-rides/09dd550eee34177099b3a8776252ce6abb8ba698'></iframe>

@@ -47,10 +47,6 @@ module.exports = {
           name: 'Instagram',
           path: 'https://www.instagram.com/alone_cmj/?hl=en'
         },
-        // {
-        //   name: 'Music',
-        //   path: 'https://music.163.com/#/user/home?id=35631431'
-        // },
         {
           name: 'GitHub',
           path: 'https://github.com/shaonianche'
@@ -95,24 +91,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'saber-plugin-baidu-analytics',
-      options: {
-        trackId: '25da54bb9d300c118148dcad780da73b'
-      }
-    },
-    {
-      resolve: 'saber-plugin-ga-lite',
-      options: {
-        trackId: 'UA-91882040-1'
-      }
-    },
-    {
-      resolve: 'saber-plugin-google-adsense',
-      options: {
-        adClientId: 'ca-pub-4381515676738667'
-      }
-    },
-    {
       resolve: 'saber-plugin-feed',
       options: {
         atomFeed: '/feed/atom.xml',
@@ -142,12 +120,6 @@ module.exports = {
         blendIn: false
       }
     },
-    // {
-    //   resolve: './packages/saber-plugin-jsdelivr-cdn',
-    //   options: {
-    //     prefix: 'https://cdn.jsdelivr.net/gh/chawyehsu/www.h404bi.com@gh-pages'
-    //   }
-    // },
     {
       resolve: 'saber-plugin-netlify-redirect'
     },
