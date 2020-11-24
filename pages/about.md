@@ -10,5 +10,22 @@ comments: false
 
 ### 关于我 / About Me
 
+I'm duanfei:
+- **Working :** Product manager 🔭
+- **Learning :** Like [reading](https://www.douban.com/people/137566058/) 📖
+- **Playing :** [PlayStation](http://psnine.com/psnid/axmiao) [Steam](https://steamcommunity.com/id/duanf/) [Nintendo Switch]() 🎮
+- **favourite :** A passion for [running](https://blog.duanfei.org/running/) 🏃
+
+<!-- steam-box start -->
+#### <a href="https://gist.github.com/58443ff7f75e2911513f8b3016b49955" target="_blank">🎮 Steam playtime leaderboard</a>
+```text
+⚔️ Dota 2                           🕘 3003 hrs 25 mins
+🍳 PLAYERUNKNOWN'S BATTLEGROUNDS    🕘 166 hrs 46 mins
+🎮 DARK SOULS™ III                  🕘 145 hrs 1 mins
+🎮 The Witcher 3: Wild Hunt         🕘 25 hrs 44 mins
+🔫 Counter-Strike: Global Offensive 🕘 25 hrs 36 mins
+```
+<!-- Powered by https://github.com/YouEclipse/steam-box . -->
+<!-- steam-box end -->
 
 
