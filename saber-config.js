@@ -131,6 +131,18 @@ module.exports = {
       options: {
         template: './sitemap.xml'
       }
-    }
+    },
+    {
+      resolve: 'saber-plugin-google-analytics',
+      options: {
+        trackId:'G-894MPRJ6VX'
+      }
+    },
+    {
+      resolve: 'saber-plugin-baidu-analytics',
+      options: {
+        trackId: 'ce8a793b27a541a8902492d462952fca'
+      }
+    },
   ]
 }
