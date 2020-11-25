@@ -8544,6 +8544,11 @@ saber-plugin-feed@0.4.3:
   dependencies:
     feed "^4.0.0"
 
+saber-plugin-google-analytics@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/saber-plugin-google-analytics/-/saber-plugin-google-analytics-0.2.1.tgz#58d312cf8e56a383ef25b08bd971cd361dd9b8ad"
+  integrity sha512-r6efJutsxbF4aJDtz9kGdt1tPcezkHd5GvOhy5ihXHIJR8G0oEfkSbGMG2590ZpQrgwmVx+IohhwGVDdcrOYHg==
+
 saber-plugin-netlify-redirect@^0.1.2:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/saber-plugin-netlify-redirect/download/saber-plugin-netlify-redirect-0.1.2.tgz#d4566d9064d485c21ebadb64b771a1f27530de7f"
