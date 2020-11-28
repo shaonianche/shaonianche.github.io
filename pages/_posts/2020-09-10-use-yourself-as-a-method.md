@@ -13,8 +13,6 @@ categories:
 feature: false
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1484951066&auto=1&height=66"></iframe>
-
 这本书最早是在整理 [界面文化](https://www.jiemian.com/lists/452.html) 的 [书单](https://www.douban.com/doulist/128578344/) 的时候发现的，前段时间因为听 [随机波动](https://www.stovol.club/) 的播客节目，发掘出了不少人类学的奇怪知识。后来连续看了一段时间的访谈，许知远、梁文道、陈丹青 ...
 
 很多人谈起十九世纪七八十年代的时候都很是激昂，有种某种我无法理解的怀念与心情，后来通过逐渐了解其细节，也明白了一些。

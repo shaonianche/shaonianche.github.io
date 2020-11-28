@@ -13,7 +13,7 @@ categories:
 feature: false
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=800 height=150 src="//music.163.com/outchain/player?type=2&id=1484951066&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width='100%' height=150 src="//music.163.com/outchain/player?type=2&id=1484951066&auto=0&height=66"></iframe>
    
 >保持思想的开放性是面对复杂与高速变化的时代的唯一方案。但更重要的是，我们希望保持一种非功利的兴趣：对世界的丰富性、复杂性本身充满兴趣，真诚地渴望理解他人的经验。
 

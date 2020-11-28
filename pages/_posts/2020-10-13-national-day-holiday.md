@@ -13,7 +13,7 @@ categories:
 feature: true
 ---
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=800 height=150 src="//music.163.com/outchain/player?type=2&id=527083298&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width='100%' height=150 src="//music.163.com/outchain/player?type=2&id=527083298&auto=1&height=66"></iframe>
 
 ### 刷剧
 放假之前帮 @yihong 补完了文档，想着放假的时候有空帮他写写代码，但是出门在外总是心不在焉的，加上网络环境不是很方便就没动。倒是刷剧刷了不少，去文安之前看了一部分「半泽直树」，假期里面花了时间把两季的刷完了。在太原的时候刷完了一季「秘密森林」，把带出去的「金阁寺」读完了，动漫啥的就随手刷了一下，没怎么认真看。
