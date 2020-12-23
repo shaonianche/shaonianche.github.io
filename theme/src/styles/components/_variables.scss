@@ -16,7 +16,7 @@ $font-serif-text: "lucida grande", "lucida sans unicode";
 $font-serif-fallback: serif;
 $font-family-serif: $font-serif-latin, $font-serif-chinese, $font-serif-fallback;
 // Headline
-$font-serif-chinese-headline: "Noto Serif SC", "Source Han Serif SC", "Kaiti SC", STKaiti, KaiTi, KaiTi_GB2312;
+$font-serif-chinese-headline: "lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", "Kaiti SC", STKaiti, KaiTi, KaiTi_GB2312;
 $font-family-serif-headline: $font-serif-latin, $font-serif-chinese-headline, $font-serif-fallback;
 // Mono
 $font-family-mono: 'Inconsolata', Monaco, Consolas, 'Lucida Console', monospace;
