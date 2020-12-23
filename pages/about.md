@@ -8,7 +8,7 @@ updated: 2020-07-28 22:10:00
 comments: false
 ---
 
-### About Me
+#### About Me
 
 I'm duanfei:
 - Working : Product manager 🔭
@@ -28,4 +28,8 @@ I'm duanfei:
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
 
-
+#### Friends
+[@yihong](https://yihong.run/)
+- 曾有多重身份（策划、数据分析、写代码）的开发人员
+[@GeekPlux](https://geekplux.com/)
+- 主营数据分析的开发人员
