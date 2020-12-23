@@ -3,8 +3,9 @@ layout: post
 title: "好与不好"
 keywords: 
 description: >-
+  随着阅读的深入，”选择读什么“的疑惑就越来越明显。对文字、故事、观点、手法等本质没有标准的认知跟理解，好坏的判断全凭感受。
 date: 2019-12-18 22:48
-updated: 
+updated: 2019-12-18 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906001.jpg
   feature: ../_assets/uploads/2020/09/20200906002.jpg

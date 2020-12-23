@@ -3,8 +3,9 @@ layout: post
 title: "从《魂》系列游戏设定所衍生的一点想法"
 keywords: 
 description: >-
+  在过去近 10 年的时间里，知名游戏开发商 From Software 开发出了魂系列游戏，从《恶魔之魂》、《黑暗之魂》、《血源诅咒》再到如今的《只狼：影逝二度》，我们在其中被各种小怪教做人、被新手村BOSS教做人。我更是曾被古达卡了半年之久。
 date: 2019-06-27 22:48
-updated: 
+updated: 2019-06-27 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906006.jpg
   feature: ../_assets/uploads/2020/09/20200906006-1.jpg

@@ -3,8 +3,9 @@ layout: post
 title: "《傅雷家书》笔记"
 keywords: 
 description: >-
+  亲爱的弥拉：人在宇宙中微不足道，身不由己，但对他人来说，却又神秘莫测，自成一套。所以要透彻了解一个人，相当困难，再加上种族、宗教、文化与政治背景的差异，就更不容易。
 date: 2018-04-02 22:48
-updated: 
+updated: 2018-04-02 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906011.jpg
   feature: ../_assets/uploads/2020/09/20200906005-1.jpg

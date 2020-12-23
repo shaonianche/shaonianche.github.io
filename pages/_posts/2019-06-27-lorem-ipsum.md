@@ -3,8 +3,9 @@ layout: post
 title: "Lorem ipsum"
 keywords: 
 description: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 date: 2019-06-27 22:48
-updated: 
+updated: 2019-06-27 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906013.jpg
   feature: ../_assets/uploads/2020/09/20200906005-1.jpg

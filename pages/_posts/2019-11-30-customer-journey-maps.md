@@ -3,8 +3,9 @@ layout: post
 title: "用户体验地图"
 keywords: 
 description: >-
+  在设计既有用又令人印象深刻的产品过程中，没有什么比培养【以用户为中心】的工作方法更重要的了。
 date: 2019-11-30 22:48
-updated: 
+updated: 2019-11-30 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906003.jpg
   feature: ../_assets/uploads/2020/09/20200906004.jpg

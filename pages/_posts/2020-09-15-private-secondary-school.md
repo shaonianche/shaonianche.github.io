@@ -3,8 +3,9 @@ layout: post
 title: "想象另一种可能"
 keywords: 
 description: >-
+  我们希望保持一种非功利的兴趣：对世界的丰富性、复杂性本身充满兴趣，真诚地渴望理解他人的经验。
 date: 2020-09-15
-updated: 
+updated: 2020-09-15
 assets:
   cover: ../_assets/uploads/2020/09/20200915001.png
   feature: ../_assets/uploads/2020/09/20200915001.png

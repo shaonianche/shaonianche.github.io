@@ -4,7 +4,7 @@ title: "我这一辈子"
 keywords: 
 description: >-
 date: 2016-09-23 22:48
-updated: 
+updated: 2016-09-23 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906015.jpg
   feature: ../_assets/uploads/2020/09/20200906005-1.jpg

@@ -3,8 +3,9 @@ layout: post
 title: "国庆假期"
 keywords: 
 description: >-
+  心底的正义能否做到行为的正义很难说，但或许是因为这个社会有太多认为正义不需要说出来的人，所以才会忘记遵守吧。
 date: 2020-10-13
-updated: 
+updated: 2020-10-13
 assets:
   cover: ../_assets/uploads/2020/10/20201013001.png
   feature: ../_assets/uploads/2020/10/20201013001.png

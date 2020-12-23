@@ -3,8 +3,9 @@ layout: post
 title: "《把自己作为方法》读书笔记"
 keywords: 
 description: >-
+  保持开放性的思想和非功利的眼睛，看看世界的丰富性与复杂性。
 date: 2020-09-10
-updated: 
+updated: 2020-09-10
 assets:
   cover: ../_assets/uploads/2020/09/20200906018.jpg
   feature: ../_assets/uploads/2020/09/20200906017-1.jpg

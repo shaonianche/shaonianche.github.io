@@ -3,8 +3,9 @@ layout: post
 title: "山河故人"
 keywords: 
 description: >-
+  也许先看汪曾祺再回去读沈从文更能明白《边城》所表达出来的情感，之前先读过《边城》并没有读出来什么惊奇的地方，知识觉得平常，平常事、平常心、平常人。
 date: 2019-09-19 22:48
-updated: 
+updated: 2019-09-19 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906005.jpg
   feature: ../_assets/uploads/2020/09/20200906005-1.jpg

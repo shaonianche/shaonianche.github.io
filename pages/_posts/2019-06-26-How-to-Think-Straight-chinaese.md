@@ -3,8 +3,9 @@ layout: post
 title: "How to Think Straight"
 keywords: 
 description: >-
+  这个世界上，有两门学科是真正迷人的。一是物理学，它让我们了解我们所处的这个世界。二是心理学，它让我们了解自己。 
 date: 2019-06-27 22:48
-updated: 
+updated: 2019-06-27 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906007.jpg
   feature: ../_assets/uploads/2020/09/20200906005-1.jpg
