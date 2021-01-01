@@ -5,6 +5,7 @@ module.exports = {
   },
   theme: "./theme/src",
   siteConfig: {
+    lang: 'zh-CN',
     url: 'https://blog.duanfei.org',
     title: "友人A",
     description: 'Personal Website of Duan Fei.',
@@ -15,10 +16,15 @@ module.exports = {
       sitename: "DuanFei's blog",
       apikey: 'D7uane8BBRWsUOjSMYQiB5MsH23KwfUsby74d4a7aiWWT49tIAqqqC2gigQ1q8uk',
       admin: 'disqus_kHjqZhPfw2'
-    }
+    },
+    pwaFirstTimeInstallMessage: '本站可以离线访问',
+    pwaUpdateFoundMessage: '正在更新站点资源',
+    pwaUpdateReadyMessage: '站点资源更新就绪',
+    pwaUpdateButtonMessage: '刷新',
+    pwaDismissMessage: '忽略'
   },
   themeConfig: {
-    since: '2015',
+    since: '2016',
     pswp: true,
     header: {
       logo_url: '/',
@@ -118,6 +124,42 @@ module.exports = {
         sizes: [1200, 720, 480],
         placeholder: true,
         blendIn: false
+      }
+    },
+    {
+      resolve: './packages/saber-plugin-adobe-font',
+      options: {
+        kitId: 'qxo6reu',
+        useTypekitCache: true
+      }
+    },
+    {
+      resolve: 'saber-plugin-code-copy',
+      options: {
+        buttonStyle: {
+          'display': 'flex',
+          'border-radius': 0,
+          'padding': '6px 6px 8px 8px',
+          'transition': 'opacity .2s ease-in-out',
+          'outline': 'none'
+        }
+      }
+    },
+    {
+      resolve: 'saber-plugin-pwa',
+      options: {
+        generateSWOptions: {
+          runtimeCaching: [
+            {
+              urlPattern: /^https:\/\/cdn\.jsdelivr\.net\//,
+              handler: 'StaleWhileRevalidate'
+            },
+            {
+              urlPattern: /^https:\/\/use\.typekit\.net\//,
+              handler: 'StaleWhileRevalidate'
+            }
+          ]
+        }
       }
     },
     {
