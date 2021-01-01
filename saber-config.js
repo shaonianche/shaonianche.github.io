@@ -126,13 +126,13 @@ module.exports = {
         blendIn: false
       }
     },
-    {
-      resolve: './packages/saber-plugin-adobe-font',
-      options: {
-        kitId: 'qxo6reu',
-        useTypekitCache: true
-      }
-    },
+    // {
+    //   resolve: './packages/saber-plugin-adobe-font',
+    //   options: {
+    //     kitId: 'qxo6reu',
+    //     useTypekitCache: true
+    //   }
+    // },
     {
       resolve: 'saber-plugin-code-copy',
       options: {
