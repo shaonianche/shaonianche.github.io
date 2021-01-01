@@ -2,45 +2,51 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-    <loc>https://blog.duanfei.org/blog/category/uncategorized</loc>
-    <lastmod>2020-12-23T09:13:33.542Z</lastmod>
-        <priority>0.3</priority>
-        <changefreq>always</changefreq>
-  </url>
-    <url>
     <loc>https://blog.duanfei.org/blog/category/notes</loc>
-    <lastmod>2020-12-23T09:13:33.542Z</lastmod>
-        <priority>0.3</priority>
-        <changefreq>always</changefreq>
-  </url>
-    <url>
-    <loc>https://blog.duanfei.org/blog/category/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0</loc>
-    <lastmod>2020-12-23T09:13:33.541Z</lastmod>
+    <lastmod>2021-01-01T04:13:39.588Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
     <loc>https://blog.duanfei.org/blog/category/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86</loc>
-    <lastmod>2020-12-23T09:13:33.541Z</lastmod>
+    <lastmod>2021-01-01T04:13:39.587Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
     <loc>https://blog.duanfei.org/blog/category/ux</loc>
-    <lastmod>2020-12-23T09:13:33.541Z</lastmod>
+    <lastmod>2021-01-01T04:13:39.587Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://blog.duanfei.org/blog/category/%E7%94%9F%E6%B4%BB</loc>
-    <lastmod>2020-12-23T09:13:33.540Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/category/uncategorized</loc>
+    <lastmod>2021-01-01T04:13:39.587Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
     <loc>https://blog.duanfei.org/blog/category/%E6%B8%B8%E6%88%8F</loc>
-    <lastmod>2020-12-23T09:13:33.540Z</lastmod>
+    <lastmod>2021-01-01T04:13:39.586Z</lastmod>
         <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/category/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0</loc>
+    <lastmod>2021-01-01T04:13:39.586Z</lastmod>
+        <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/category/%E7%94%9F%E6%B4%BB</loc>
+    <lastmod>2021-01-01T04:13:39.585Z</lastmod>
+        <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/2020/12/2020-end</loc>
+    <lastmod>2020-12-30T00:00:00.000Z</lastmod>
+        <priority>0.6</priority>
         <changefreq>always</changefreq>
   </url>
     <url>

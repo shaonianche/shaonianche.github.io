@@ -1,4 +1,10 @@
 {
+  "short_name": "友人A",
+  "name": "友人A",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "static/img/icons/icon_32x32.png",
