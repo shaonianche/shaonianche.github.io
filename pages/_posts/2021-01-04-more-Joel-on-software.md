@@ -3,14 +3,15 @@ layout: post
 title: 软件随想录
 keywords: 
 description: >-
+  软件随想录里面收集的是 Joel Spolsky 10年之前的博客。基本上是按照如何找人、如何管理两条线来整理的，谈到了关于如何寻找优秀的程序员、团队管理方法、项目管理等一些理论跟实践经验
 date: 2021-01-04
-updated: 2020-01-04
+updated: 2021-01-04
 assets:
   cover: ../_assets/uploads/2021/01/2021-01-04.jpg
-  feature: 
+  feature: ../_assets/uploads/2021/01/2021-01-04-1.jpg
 categories:
   - 读书笔记
-feature: false
+feature: true
 ---
 
 [Joel Spolsky/周思博](https://zh.wikipedia.org/zh-hans/%E5%91%A8%E6%80%9D%E5%8D%9A) 至今还在写 [博客](https://www.joelonsoftware.com/) 创建了 Trello 跟 Stack overflow ，后来 Trello 并入 Atlassian ，就是做 Jira 的那家公司，我现在还是这三个产品的忠实用户。在 ToB 的项目管理产品领域，Atlassian 算是领头羊了，Jira、Trello 本身的易用性还有与其他应用的结合组成了完整的工作流。
@@ -19,7 +20,7 @@ feature: false
 
 我比较感兴趣的几篇有：
 
-- [计算机专业学生的几条建议](#Joel 对计算机专业学生的几条建议)
+- [计算机专业学生的几条建议](#Joel对计算机专业学生的几条建议)
 - [用软件搭建社区](#用软件搭建社区)
 - [循证式日程规划](#循证式日程规划)
 - [确定优先顺序](#如何确定功能的优先顺序)
