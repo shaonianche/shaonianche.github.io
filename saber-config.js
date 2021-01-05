@@ -39,7 +39,9 @@ module.exports = {
         },
         {
           name: 'Running',
-          path: '/running'
+          path:'https://run.duangfei.org/'
+          // path: '/running'
+
         },
         {
           name: 'About',
