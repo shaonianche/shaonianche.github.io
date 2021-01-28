@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chromecast with Google TV 断电后重启后时间错误
+title: Chromecast with Google TV 断电重启后时间错误
 keywords: Chromecast with Google TV GoogleTV Chromecast NTP 
 description: >-
   总体来讲，Chromecast with Google TV 的使用体验还算不错，如果你能解决掉中国特色的网络问题的话。
@@ -14,7 +14,7 @@ categories:
 feature: false
 ---
 
-Chromecast with Google TV[^1] 在大陆使用的时候会出现时间错误，导致连上 WiFi 之后网络受限。通过设置手动调整时间后可以解除 WiFi 网络受限的问题，但断电重启之后系统时间又会被重置。
+Chromecast with Google TV [^1] 在大陆使用的时候会出现时间错误，导致连上 WiFi 之后网络受限。通过设置手动调整时间后可以解除 WiFi 网络受限的问题，但断电重启之后系统时间又会被重置。
 
 这是由于 Chromecast with Google TV 默认的 NTP 服务器[^2] [time.android.com](https://android.googlesource.com/platform/frameworks/base/+/oreo-r6-release/core/res/res/values/config.xml#1719) （Google 的安卓代码库  https://android.googlesource.com/platform/frameworks/base/+/oreo-r6-release/core/res/res/values/config.xml#1719 ）
 
@@ -83,9 +83,9 @@ Android 的 adb 调试在 Android Developers 的 [Android 调试桥 (adb)](https
 - 盒子没有电视系统那些乱七八糟的广告，适合用来给适龄儿童看电视
 - 缺点是有一点技术门槛
 
-### Reference
 
-[^1 ]: Chromecast with Google TV https://store.google.com/product/chromecast?srp=/product/chromecast_google_tv
+
+[^1]: Chromecast with Google TV https://store.google.com/product/chromecast?srp=/product/chromecast_google_tv
 [^2]: Chromecast with Google TV 默认的 NTP 服务器  https://android.googlesource.com/platform/frameworks/base/+/oreo-r6-release/core/res/res/values/config.xml#1719 
 [^3]: 阿里云公网的 NTP 服务器  https://help.aliyun.com/document_detail/92704.html
 
