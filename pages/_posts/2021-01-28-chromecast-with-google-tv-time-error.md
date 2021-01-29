@@ -46,13 +46,13 @@ adb shell settings put global ntp_server ntp1.aliyun.com
 4. 返回上一层开发者选项 - 开启 USB 调试
 5. 确保电脑上安装好了 [ADB](https://developer.android.com/studio/command-line/adb?hl=zh-cn) 
 
-```
+```bash
 adb devices
 ```
 
 在 manjaro linux 下会提示权限问题，需要 sudo 权限
 
-``` 
+```bash
 sudo adb devices
 ```
 
