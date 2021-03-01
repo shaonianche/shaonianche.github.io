@@ -8528,12 +8528,13 @@ responselike@1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
-responsive-loader@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/responsive-loader/-/responsive-loader-1.2.0.tgz"
-  integrity sha512-ZbeiKySyCMkMLm747DlwvpRS6mk7MiJZiXmOY6KxE5P7d08av3jy2fbEpDDnuxWDruVUePoMzMg9hYGtBWFNxg==
+responsive-loader@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/responsive-loader/-/responsive-loader-2.3.0.tgz#3123b6db1dd8aeee37c4d7805e3f45d2e8f5edc1"
+  integrity sha512-8GyyasTKdOfTMDvYy/mBpyV2EM7hz7zWoKdxpocA60eX1jM2udsb+ji03haZWeGnTkQvOplXVqHsev9952dWng==
   dependencies:
-    loader-utils "^1.1.0"
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
 
 restore-cursor@^2.0.0:
   version "2.0.0"
