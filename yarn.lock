@@ -8959,6 +8959,11 @@ saber-markdown@^0.1.6:
   resolved "https://registry.npmjs.org/saber-markdown/-/saber-markdown-0.1.6.tgz#49aa91c98b1772607bb42fe9438ede1d2e05735a"
   integrity sha512-ilJvG0yC/9bqN1Mfv+GblJGV9sZsMFtWl7x8Lrxrx9Jx5IgY6z2rAe0e2YblyuoOCrIircWXrh2qT7dd97lHXA==
 
+saber-plugin-adobe-font@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/saber-plugin-adobe-font/-/saber-plugin-adobe-font-0.3.0.tgz#8257df2c694ffcdebf0ccd65b81064fcf54839da"
+  integrity sha512-g2qy08Y0TTGsO8H/KwHY3Qj21XK4EeOgk34QyXriTu/5BXwheR9/cbR3neq1aTWs7j7U2ior7xRQSjPSWQ7ADw==
+
 saber-plugin-code-copy@^0.3.2:
   version "0.3.2"
   resolved "https://registry.npmjs.org/saber-plugin-code-copy/-/saber-plugin-code-copy-0.3.2.tgz#d754c970ada3b75a6535a6ffabadd279a27c4491"
