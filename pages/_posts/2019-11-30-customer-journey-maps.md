@@ -8,7 +8,6 @@ date: 2019-11-30 22:48
 updated: 2019-11-30 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906003.jpg
-  feature: ../_assets/uploads/2020/09/20200906004.jpg
 categories:
   - UX
 feature: false

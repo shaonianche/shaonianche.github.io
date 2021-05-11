@@ -8,7 +8,6 @@ date: 2021-01-29
 updated: 2021-01-29
 assets:
   cover: ../_assets/uploads/2021/01/2021-01-29.jpg
-  feature: ../_assets/uploads/2021/01/2021-01-29.jpg
 categories:
   - 读书笔记
 feature: false

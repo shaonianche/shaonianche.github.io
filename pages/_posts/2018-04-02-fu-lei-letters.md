@@ -8,7 +8,6 @@ date: 2018-04-02 22:48
 updated: 2018-04-02 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906011.jpg
-  feature: ../_assets/uploads/2020/09/20200906005-1.jpg
 categories:
   - 读书笔记
 feature: false

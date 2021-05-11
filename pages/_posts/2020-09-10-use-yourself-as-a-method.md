@@ -8,7 +8,6 @@ date: 2020-09-10
 updated: 2021-01-29
 assets:
   cover: ../_assets/uploads/2020/09/20200906018.jpg
-  feature: ../_assets/uploads/2020/09/20200906017-1.jpg
 categories:
   - Notes
 feature: false

@@ -8,10 +8,11 @@ date: 2021-01-28
 updated: 2021-01-28
 assets:
   cover: ../_assets/uploads/2021/01/2021-01-28.jpg
-  feature: ../_assets/uploads/2021/01/2021-01-04-1.jpg
+  feature: ../_assets/uploads/2021/01/2021-01-28.jpg
 categories:
-  - GoogleTV 科技
-feature: false
+  - GoogleTV 
+  - 科技
+feature: true
 ---
 
 Chromecast with Google TV [^1] 在大陆使用的时候会出现时间错误，导致连上 WiFi 之后网络受限。通过设置手动调整时间后可以解除 WiFi 网络受限的问题，但断电重启之后系统时间又会被重置。

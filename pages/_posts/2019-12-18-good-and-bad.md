@@ -8,7 +8,6 @@ date: 2019-12-18 22:48
 updated: 2019-12-18 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906001.jpg
-  feature: ../_assets/uploads/2020/09/20200906002.jpg
 categories:
   - 杂谈
 feature: false

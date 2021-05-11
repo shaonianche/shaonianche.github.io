@@ -125,13 +125,13 @@ module.exports = {
         blendIn: false
       }
     },
-    // {
-    //   resolve: './packages/saber-plugin-adobe-font',
-    //   options: {
-    //     kitId: 'qxo6reu',
-    //     useTypekitCache: true
-    //   }
-    // },
+    {
+      resolve: './packages/saber-plugin-adobe-font',
+      options: {
+        kitId: 'mfy3ycj',
+        useTypekitCache: true
+      }
+    },
     {
       resolve: 'saber-plugin-code-copy',
       options: {

@@ -7,7 +7,6 @@ date: 2019-06-27 22:48
 updated: 2019-06-27 22:48
 assets:
   cover: ../_assets/uploads/2020/09/20200906008.jpg
-  feature: ../_assets/uploads/2020/09/20200906005-1.jpg
 categories:
   - 认知心理
 feature: false
