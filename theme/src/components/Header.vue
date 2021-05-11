@@ -9,6 +9,7 @@
               :to="$themeConfig.header.logo_url"
               v-text="$themeConfig.title || $siteConfig.title">
             </saber-link>
+            <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
             <span
               @click="toggleNavbarMenu()"
               ref="burger"

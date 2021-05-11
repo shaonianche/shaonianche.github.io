@@ -48,7 +48,7 @@
             class="page-alert outdated-alert notification">
             本文最后更新于 {{ days }} 天前（{{ humanDate }}），其中的信息可能已经有所发展或者不再适合现阶段。
           </section>
-          <section class="page-body">
+          <section class="page-body entry heti">
             <client-only>
               <Photoswipe v-if="$themeConfig.pswp" auto ref="photoswipe">
                 <slot name="default" />
