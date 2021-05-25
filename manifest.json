@@ -1,6 +1,6 @@
 {
-  "short_name": "友人A",
-  "name": "友人A",
+  "short_name": "FriendsA",
+  "name": "FriendsA",
   "start_url": "./",
   "display": "standalone",
   "theme_color": "#ffffff",
