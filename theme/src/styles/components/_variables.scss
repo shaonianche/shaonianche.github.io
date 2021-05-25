@@ -10,13 +10,13 @@ $font-sans-chinese: source-han-sans-traditional,"lucida grande", "lucida sans un
 $font-sans-fallback: sans-serif;
 $font-family-sans: $font-sans-latin, $font-sans-chinese, $font-sans-fallback;
 // Serif
-$font-serif-latin: "Alegreya", "Times New Roman";
-$font-serif-chinese: "lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", STFangsong, FangSong, FangSong_GB2312;
-$font-serif-text: "lucida grande", "lucida sans unicode";
+$font-serif-latin: source-han-sans-traditional,"Alegreya", "Times New Roman";
+$font-serif-chinese: source-han-sans-traditional,"lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", STFangsong, FangSong, FangSong_GB2312;
+$font-serif-text:source-han-sans-traditional,"lucida grande", "lucida sans unicode";
 $font-serif-fallback: serif;
 $font-family-serif: $font-serif-latin, $font-serif-chinese, $font-serif-fallback;
 // Headline
-$font-serif-chinese-headline: "lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", "Kaiti SC", STKaiti, KaiTi, KaiTi_GB2312;
+$font-serif-chinese-headline: source-han-sans-traditional,"lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", "Kaiti SC", STKaiti, KaiTi, KaiTi_GB2312;
 $font-family-serif-headline: $font-serif-latin, $font-serif-chinese-headline, $font-serif-fallback;
 // Mono
 $font-family-mono: 'Inconsolata', Monaco, Consolas, 'Lucida Console', monospace;

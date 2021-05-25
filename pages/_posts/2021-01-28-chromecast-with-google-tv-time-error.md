@@ -8,7 +8,7 @@ date: 2021-01-28
 updated: 2021-01-28
 assets:
   cover: ../_assets/uploads/2021/01/2021-01-28.jpg
-  feature: ../_assets/uploads/2021/01/2021-01-28.jpg
+  feature: ../_assets/uploads/2021/01/2021-01-28-1.jpg
 categories:
   - GoogleTV 
   - 科技
