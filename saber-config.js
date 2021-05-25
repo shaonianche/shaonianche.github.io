@@ -7,7 +7,7 @@ module.exports = {
   siteConfig: {
     lang: 'zh-CN',
     url: 'https://blog.duanfei.org',
-    title: "友人A",
+    title: "FriendsA",
     description: 'Personal Website of Duan Fei.',
     keywords: 'duanfei,blog,blogger,个人博客',
     author: 'DuanFei',
