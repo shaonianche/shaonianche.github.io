@@ -2,56 +2,56 @@
 <?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-    <loc>https://blog.duanfei.org/blog/category/%E6%9D%82%E8%B0%88</loc>
-    <lastmod>2021-07-06T04:19:19.436Z</lastmod>
-        <priority>0.3</priority>
-        <changefreq>always</changefreq>
-  </url>
-    <url>
-    <loc>https://blog.duanfei.org/blog/category/notes</loc>
-    <lastmod>2021-07-06T04:19:19.436Z</lastmod>
-        <priority>0.3</priority>
-        <changefreq>always</changefreq>
-  </url>
-    <url>
     <loc>https://blog.duanfei.org/blog/category/googletv</loc>
-    <lastmod>2021-07-06T04:19:19.436Z</lastmod>
+    <lastmod>2021-07-21T06:49:13.794Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
     <loc>https://blog.duanfei.org/blog/category/%E7%A7%91%E6%8A%80</loc>
-    <lastmod>2021-07-06T04:19:19.436Z</lastmod>
+    <lastmod>2021-07-21T06:49:13.794Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://blog.duanfei.org/blog/category/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86</loc>
-    <lastmod>2021-07-06T04:19:19.435Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/category/%E6%9D%82%E8%B0%88</loc>
+    <lastmod>2021-07-21T06:49:13.793Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
-    <loc>https://blog.duanfei.org/blog/category/ux</loc>
-    <lastmod>2021-07-06T04:19:19.435Z</lastmod>
-        <priority>0.3</priority>
-        <changefreq>always</changefreq>
-  </url>
-    <url>
-    <loc>https://blog.duanfei.org/blog/category/%E6%B8%B8%E6%88%8F</loc>
-    <lastmod>2021-07-06T04:19:19.434Z</lastmod>
+    <loc>https://blog.duanfei.org/blog/category/notes</loc>
+    <lastmod>2021-07-21T06:49:13.793Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
     <loc>https://blog.duanfei.org/blog/category/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0</loc>
-    <lastmod>2021-07-06T04:19:19.434Z</lastmod>
+    <lastmod>2021-07-21T06:49:13.792Z</lastmod>
+        <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/category/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86</loc>
+    <lastmod>2021-07-21T06:49:13.792Z</lastmod>
+        <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/category/ux</loc>
+    <lastmod>2021-07-21T06:49:13.792Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
     <url>
     <loc>https://blog.duanfei.org/blog/category/%E7%94%9F%E6%B4%BB</loc>
-    <lastmod>2021-07-06T04:19:19.433Z</lastmod>
+    <lastmod>2021-07-21T06:49:13.791Z</lastmod>
+        <priority>0.3</priority>
+        <changefreq>always</changefreq>
+  </url>
+    <url>
+    <loc>https://blog.duanfei.org/blog/category/%E6%B8%B8%E6%88%8F</loc>
+    <lastmod>2021-07-21T06:49:13.791Z</lastmod>
         <priority>0.3</priority>
         <changefreq>always</changefreq>
   </url>
