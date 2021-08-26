@@ -379,8 +379,8 @@ self.__precacheManifest = [
     "revision": "614162ec8ff2124f3186328705a2338a"
   },
   {
-    "url": "_saber/js/client.c6166b1a.js",
-    "revision": "ec93ed8564b7eff77573130e8add77cf"
+    "url": "_saber/js/client.6c8b9384.js",
+    "revision": "fc9190d74399c09cd13cfe10e99990a6"
   },
   {
     "url": "_saber/js/page--_posts-2016-09-23-my-whole-life-md.d728269e.js",
@@ -487,40 +487,40 @@ self.__precacheManifest = [
     "revision": "41daa6aa39bb93a14bd83a08b4ff6e14"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__googletv.8671a6ff.js",
-    "revision": "bbacc6d8c90cc840c7f661c15b80da98"
+    "url": "_saber/js/page--internal_blog__category__googletv.387d9a8a.js",
+    "revision": "934b3d1002db98eb1a5906692e6dfc96"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__notes.1263e5b4.js",
-    "revision": "e633048072833c84721958caa554e7cd"
+    "url": "_saber/js/page--internal_blog__category__notes.9bbf1197.js",
+    "revision": "fac2c1f4b331073c83bfc288e9d190c0"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__ux.9c6080e7.js",
-    "revision": "a8269e04c696867fce1351ae17a51f0f"
+    "url": "_saber/js/page--internal_blog__category__ux.a3fc9ac3.js",
+    "revision": "a4bafb5d326b3411b06627ada838ce7e"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__杂谈.931a9f72.js",
-    "revision": "5fc0236bff09e803e4c22d246e1a7184"
+    "url": "_saber/js/page--internal_blog__category__杂谈.a1685348.js",
+    "revision": "1c962647d95ed453e57108950182f258"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__游戏.aa34cc41.js",
-    "revision": "e9d2f4d569b9a1cf124591fdcad23a47"
+    "url": "_saber/js/page--internal_blog__category__游戏.801cc1bc.js",
+    "revision": "3321b5ae6ad649cb38d96513562a2ff7"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__生活.21c0e7b8.js",
-    "revision": "d654df37a719c7e49226870b98fe4dfa"
+    "url": "_saber/js/page--internal_blog__category__生活.6112d147.js",
+    "revision": "c69c4e855fb563cbc8b1210a75105915"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__科技.82b2331d.js",
-    "revision": "e55b812e1ae037c619dff4405e16f3f1"
+    "url": "_saber/js/page--internal_blog__category__科技.1ead02aa.js",
+    "revision": "7bac5b4617317d92dde664d8eb0bf39b"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__认知心理.cf976d71.js",
-    "revision": "d2a5cde2707509ddbea19e53f0ff0dd4"
+    "url": "_saber/js/page--internal_blog__category__认知心理.52884791.js",
+    "revision": "f72e36761d6ccd1deff660d74cebe7e5"
   },
   {
-    "url": "_saber/js/page--internal_blog__category__读书笔记.6ded4204.js",
-    "revision": "c22121853f5b69efbf7508a3d8b7e835"
+    "url": "_saber/js/page--internal_blog__category__读书笔记.faadf9cd.js",
+    "revision": "ab8e6b5ebb4dea7c89c631cdb327b5d5"
   },
   {
     "url": "_saber/js/styles.1849aaf9.js",
@@ -528,155 +528,155 @@ self.__precacheManifest = [
   },
   {
     "url": "404.html",
-    "revision": "5fe038a2e8f1fd49c74b7bccd2cd69de"
+    "revision": "7b9d9107583515f6844a73f8557bacf8"
   },
   {
     "url": "about/index.html",
-    "revision": "2c240705eeb83d0bb706739f3d581df0"
+    "revision": "3c0ea3cc9754bc069feb362feb1c363f"
   },
   {
     "url": "blog/2016/09/my-whole-life/index.html",
-    "revision": "accdbf38292b672ddf825c66cf50c3ab"
+    "revision": "9d0538ff7cd8d3ffbeffa3187fb25ab6"
   },
   {
     "url": "blog/2017/02/start/index.html",
-    "revision": "dfcac5831797cfa6892ace0ebf87efe1"
+    "revision": "18b95403badde71d0a3a96f59f64bcd5"
   },
   {
     "url": "blog/2017/04/time/index.html",
-    "revision": "ed7aeb783a6e87d7ab92b2d751e07203"
+    "revision": "f02f649200ab49b20150d06034c0f76a"
   },
   {
     "url": "blog/2018/02/games-data2/index.html",
-    "revision": "062e109dbb5ebab0fcf08f0fc294a4df"
+    "revision": "3967411d1d0c0c2217c0021e396d0013"
   },
   {
     "url": "blog/2018/04/fu-lei-letters/index.html",
-    "revision": "6253b4c5cf4a487342ec503dd2996cdc"
+    "revision": "f5573ec509a01d5859b367c0861cf4b4"
   },
   {
     "url": "blog/2018/04/hello-friend/index.html",
-    "revision": "f0754ee96a0ef6b7f3dd58564ff1031d"
+    "revision": "8ba78364b29a13f129499046ccdef629"
   },
   {
     "url": "blog/2019/01/we/index.html",
-    "revision": "bdb16c4680034c59445601b4453dc4d2"
+    "revision": "631afbda572279e5c5cc5d4706142e14"
   },
   {
     "url": "blog/2019/06/How-to-Think-Straight-chinaese/index.html",
-    "revision": "44c226d5933561430cdd5decfdc54e06"
+    "revision": "90595395aa8e258783e1bceb002fa526"
   },
   {
     "url": "blog/2019/06/lorem-ipsum/index.html",
-    "revision": "c621bfd8a41f0aa321d86215ce617c35"
+    "revision": "a5cf8e68f45d5b02768fb83538483e5a"
   },
   {
     "url": "blog/2019/06/social-animal/index.html",
-    "revision": "085b8a2b639d00c4961b9dcd41388661"
+    "revision": "4007c8e1d95a1d47a47c5dea6606f29c"
   },
   {
     "url": "blog/2019/06/soul-series/index.html",
-    "revision": "e7e0efc8f384211fa1315a0ca6b1cc27"
+    "revision": "9854791a6322bbd11a53af5e9d1d6342"
   },
   {
     "url": "blog/2019/09/mountains-may-depart/index.html",
-    "revision": "0318885e2ec3c0a7eed2f3d63a92c7fe"
+    "revision": "89542df6e9f8003c638f4717558d0db3"
   },
   {
     "url": "blog/2019/11/customer-journey-maps/index.html",
-    "revision": "9af503bfd44a87dea46e062ae4290f7b"
+    "revision": "a53dbe1795979bb84931c28aa0f25639"
   },
   {
     "url": "blog/2019/12/good-and-bad/index.html",
-    "revision": "780c86a392e6ef1901323714bf42de68"
+    "revision": "ead4da5ba16bae330a665b8f0556b966"
   },
   {
     "url": "blog/2020/09/private-secondary-school/index.html",
-    "revision": "8b88ea5a8caa989fa3b384b4eb9c2225"
+    "revision": "8a125cd19b702ef8a374a0e555523cf6"
   },
   {
     "url": "blog/2020/09/restart/index.html",
-    "revision": "a2b6bc2ac332ca555ecde196ea83ed1b"
+    "revision": "e7c2411a0f5a0f0fc4606d72650d4736"
   },
   {
     "url": "blog/2020/09/use-yourself-as-a-method/index.html",
-    "revision": "beb86ce81f92e51a2cc79923c51a8725"
+    "revision": "f7c8953ec5ba20ba2d2bba9af7362fa7"
   },
   {
     "url": "blog/2020/10/national-day-holiday/index.html",
-    "revision": "917676c128d985039cf807febdf37209"
+    "revision": "3f70dd70f976955b66b594a92d2f31ac"
   },
   {
     "url": "blog/2020/12/2020-end/index.html",
-    "revision": "15621e799388e7bfa3fd748071c7a72a"
+    "revision": "d91c6807e3d1591b9d36c5f393781d7b"
   },
   {
     "url": "blog/2021/01/chromecast-with-google-tv-time-error/index.html",
-    "revision": "a9d12b2969a4f22f30972417176e3a58"
+    "revision": "93873103bdc21707c08214f1cf4afbaa"
   },
   {
     "url": "blog/2021/01/more-Joel-on-software/index.html",
-    "revision": "4e34e2edf80db7537c7ed763458bf092"
+    "revision": "1b9f4255f8df73e2834f31b09e4066e6"
   },
   {
     "url": "blog/2021/01/XuZhiyuan-conversation-with-XiangBiao/index.html",
-    "revision": "916a8d7f2c9663d1447b971fd15fb418"
+    "revision": "c519020e85a98fe067c9fb1172633310"
   },
   {
     "url": "blog/category/googletv/index.html",
-    "revision": "5f0d75f3382b8db39e87a94b037f4f25"
+    "revision": "154e6ec081ec8aa2f62e5432ea111af3"
   },
   {
     "url": "blog/category/notes/index.html",
-    "revision": "c6a558d788fed6408b2ac586d39f42aa"
+    "revision": "ed85895a473931e8f56138af3980631e"
   },
   {
     "url": "blog/category/ux/index.html",
-    "revision": "c13ef0ca164b21665abe5219e80a951b"
+    "revision": "9f752c5697a56f4f4e88ede7c1f77798"
   },
   {
     "url": "blog/category/杂谈/index.html",
-    "revision": "93e46ca57519bca050e29b207e533125"
+    "revision": "a38b19f979ac4c2744673633adf44ff2"
   },
   {
     "url": "blog/category/游戏/index.html",
-    "revision": "de033ae873a85c6849d24f0171529ef4"
+    "revision": "68670c33d66147175e2ca4598aa2d782"
   },
   {
     "url": "blog/category/生活/index.html",
-    "revision": "d37583e8c1cf49f63085df0b35fb5393"
+    "revision": "efc9db8d971b08f38e6ad433df0dc1dc"
   },
   {
     "url": "blog/category/科技/index.html",
-    "revision": "a3c617474482ef35a433399ab32de8ad"
+    "revision": "d541082675607945404edeb40fddec7c"
   },
   {
     "url": "blog/category/认知心理/index.html",
-    "revision": "dbb7f35c1995f23b51c1ecbd21c02ee6"
+    "revision": "e9dc7704dc5039a67097e5e7aadb7b2b"
   },
   {
     "url": "blog/category/读书笔记/index.html",
-    "revision": "5886a00988c803a81389f02ca840304a"
+    "revision": "adc8391604a344f952d3276cd1f5ea43"
   },
   {
     "url": "blog/index.html",
-    "revision": "f6139a749022f028d46f83151935b827"
+    "revision": "82d3ecece4951c9398458950dd6074ef"
   },
   {
     "url": "blog/page/2/index.html",
-    "revision": "9c4fff55565459dd60aaaed9833381e9"
+    "revision": "22e07f42d7421837bc88246f4571bbbd"
   },
   {
     "url": "guestbook/index.html",
-    "revision": "dd439e294d458d9dcd063dabbe78b30f"
+    "revision": "a7c3fd792472a4876523fd6bdd2e0d3d"
   },
   {
     "url": "index.html",
-    "revision": "2ebd7d11123b7167710ae467c5877e86"
+    "revision": "3d7192b4b6830625b1499f367ee06aec"
   },
   {
     "url": "page/2/index.html",
-    "revision": "f82cc01156e52544fa2792287a504020"
+    "revision": "02a4bf8390d4fa4734f0c6f0822437c6"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
