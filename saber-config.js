@@ -5,7 +5,7 @@ module.exports = {
   },
   theme: "./theme/src",
   siteConfig: {
-    lang: 'zh-CN',
+    lang: 'zh-cn',
     url: 'https://blog.duanfei.org',
     title: "FriendsA",
     description: 'Personal Website of Duan Fei.',

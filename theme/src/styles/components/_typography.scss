@@ -13,7 +13,7 @@ html {
     font-family: $font-family-serif;
 
     h1, h2, h3, h4, h5, h6 {
-      font-family: $font-family-serif-headline;
+      font-family: $font-family-sans;
     }
   }
 }
@@ -63,7 +63,7 @@ p, blockquote, table, hr, dl, ul, ol, pre, address, figure {
 }
 
 p {
-  line-height: 1.8;
+  line-height: $line-height-base;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;

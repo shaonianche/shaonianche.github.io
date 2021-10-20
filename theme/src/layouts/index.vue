@@ -96,7 +96,7 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/components/variables';
 .tach-layout-header {
-  padding-top: 3rem;
+  padding-top: 1rem;
 
   h6 {
     font-size: 80%;
@@ -105,7 +105,7 @@ export default {
 }
 
 .tach-blog-items {
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .post-list {

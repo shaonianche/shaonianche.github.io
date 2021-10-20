@@ -10,7 +10,7 @@ comments: false
 
 ### 关于我 / About Me
 
-I'm duanfei:
+I'm duanfei :
 - Working : Product manager 🔭
 - Learning : Like [reading](https://www.douban.com/people/137566058/) 📖
 - Playing : [PlayStation](http://psnine.com/psnid/axmiao) [Steam](https://steamcommunity.com/id/duanf/) [Nintendo Switch]() 🎮
