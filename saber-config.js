@@ -9,7 +9,7 @@ module.exports = {
     url: 'https://blog.duanfei.org',
     title: "FriendsA",
     description: 'Personal Website of Duan Fei.',
-    keywords: 'duanfei,blog,blogger,个人博客',
+    keywords: 'duanfei,blog,blogger，个人博客',
     author: 'DuanFei',
     disqusjs: {
       shortname: 'duanfeis-blog',
