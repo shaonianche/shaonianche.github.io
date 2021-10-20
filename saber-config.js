@@ -118,7 +118,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'saber-plugin-image',
+      resolve: './packages/saber-plugin-image',
       options: {
         sizes: [1200, 720, 480],
         placeholder: true,
@@ -126,7 +126,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'saber-plugin-adobe-font',
+      resolve: './packages/saber-plugin-adobe-font',
       options: {
         kitId: 'mfy3ycj',
         useTypekitCache: true
