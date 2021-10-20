@@ -40,7 +40,7 @@
     "sass-loader": "^8.0.0",
     "tinytime": "^0.2.6",
     "vue-loader": "^15.9.8",
-    "webpack": "^2.0.0"
+    "webpack": "^5.59.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
