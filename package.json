@@ -37,7 +37,7 @@
     "saber-plugin-query-posts": "0.4.6",
     "saber-plugin-sitemap": "^0.4.1",
     "sass": "^1.43.2",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^12.3.0",
     "tinytime": "^0.2.6",
     "vue-loader": "^15.9.8",
     "webpack": "^2.0.0"
