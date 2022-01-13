@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.duanfei.org/</id>
     <title>FriendsA</title>
-    <updated>2022-01-07T23:54:26.538Z</updated>
+    <updated>2022-01-13T09:16:53.030Z</updated>
     <generator>Saber</generator>
     <author>
         <name>DuanFei</name>
@@ -12,6 +12,22 @@
     <link rel="self" href="https://blog.duanfei.org/feed/atom.xml"/>
     <subtitle>Personal Website of Duan Fei.</subtitle>
     <rights>All rights reserved</rights>
+    <entry>
+        <title type="html"><![CDATA[0x1b：27岁之前]]></title>
+        <id>https://blog.duanfei.org/blog/2022/01/0x1b</id>
+        <link href="https://blog.duanfei.org/blog/2022/01/0x1b"/>
+        <updated>2022-01-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[std::cout  &lt;&lt; std::hex &lt;&lt; 27 &lt;&lt; endl; 其实也就27而已啦！
+]]></summary>
+        <content type="html"><![CDATA[ class="tach-root"><header class="tach-header"><div class="tach-wrapper"><nav class="navbar"><div class="container"><div class="column navbar-brand"><a href="/" class="navbar-item site-title router-link-active">FriendsA</a> <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css"> <span class="navbar-burger burger"><span></span> <span></span> <span></span></span></div> <div class="column navbar-menu"><div class="navbar-end"><a href="/blog" class="navbar-item router-link-active">Blog</a><a href="/guestbook" class="navbar-item">Guestbook</a><a rel="noopener noreferrer" target="_blank" href="https://run.duangfei.org/" class="navbar-item">Running</a><a href="/about" class="navbar-item">About</a></div></div></div></nav></div></header> <main class="tach-main"><!----> <article role="main" itemscope="itemscope" itemtype="https://schema.org/Article" class="page-content"><div class="page-inner-wrapper tach-page-wrapper"><header class="page-header page-has-cover"><section class="page-cover"><img src="/_saber/images/2022-01-13_12-46-22-12e295ee.jpg" srcset="data:image/jpeg;base64,/9j/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAbACgDASIAAhEBAxEB/8QAGwAAAgIDAQAAAAAAAAAAAAAABQYABwECBAj/xAAsEAABAwMDAwIFBQAAAAAAAAABAgMEABEhBQYxEhNBIlEHCBRxkSMyUmGx/8QAGQEAAgMBAAAAAAAAAAAAAAAAAwYAAQQF/8QAJREAAgIBAwIHAQAAAAAAAAAAAQMAAhEEISIFkQYSExUWMVGh/9oADAMBAAIRAxEAPwDz7p2lLeIsgm/9U26LtKRIAs0r8UEjq3DpE1USRHWw+0CVJWE8C2b3sRkcc+KcdN37rW3mWZEhER1tw+gdoKvi/hQxTAvxBp1gYnMd0vV3+toWg/DmS82Fdg/isTfh1Jadba7CupxKlDH8bX/0USi/Mg5GgpCNAhOyrG7fbISCBi5vwTbihJ+ZDUnJzD07R9KU4z3gEtsqSAF9ODnNgnB596v5JYnjSZPZnVxm8CapseYyFfoKx7JqVXu79/7p3E5Ob1DWJLkOXI+o+mJAQ2QT0hIH7QAbWHPmpV264Tv5ZpX05gGDf+TTa++twaEO3BnqVFUfXHfbQ42v3ulQPjGKbmt/6DrbzTe4duREhN+hyISyG+DYJyPHiqnOFWGBet2Sb3vmlB2kW05I3/Yyr1TFjAO0s+Ro215LyFw5EiOt9klouWIUvnJNgbDkg8Uvbi2yRBiyIS4j75UtD/acUStfViw4wLD0nPNLMqfNc7XclOq6UdCbq4Txb7V26bPlwmGX4zxbc7hF7A3H2ODQKoaogi/eF9ZbeNqdpzajo+qwghciO4hJR1BRym3ixF/apTKqQ9KizpEhZW60hAQo+Lg3qUZeouRyAzIzTLqeJOJ//9k=" data-srcset="/_saber/images/2022-01-13_12-46-22-12e295ee.jpg 1200w,/_saber/images/2022-01-13_12-46-22-11c3d1db.jpg 720w,/_saber/images/2022-01-13_12-46-22-6c607289.jpg 480w" width="1200" class="image"> <span class="overlay"></span></section> <section class="page-head-content"><h1 class="page-title is-family-sans">0x1b：27岁之前</h1> <div class="page-meta"><section class="page-datetime"><time datetime="2022-01-13T00:00:00.000Z" class="published">
+                  2022-01-13 8:00:00
+                </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/生活" class="category">
+                    生活
+                  </a></span></section></div></section></header> <!----> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
+          © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
+        </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
+        <published>2022-01-13T00:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2021-END]]></title>
         <id>https://blog.duanfei.org/blog/2022/01/2021-end</id>
@@ -74,7 +90,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/读书笔记" class="category">
                     读书笔记
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 368 天前（2021-Jan-04），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 374 天前（2021-Jan-04），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -92,7 +108,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/生活" class="category">
                     生活
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 373 天前（2020-Dec-30），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 379 天前（2020-Dec-30），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -110,7 +126,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/生活" class="category">
                     生活
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 451 天前（2020-Oct-13），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 457 天前（2020-Oct-13），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -128,7 +144,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/notes" class="category">
                     Notes
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 479 天前（2020-Sep-15），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 485 天前（2020-Sep-15），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -162,7 +178,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/杂谈" class="category">
                     杂谈
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 487 天前（2020-Sep-07），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 493 天前（2020-Sep-07），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -180,7 +196,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/杂谈" class="category">
                     杂谈
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 751 天前（2019-Dec-18），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 756 天前（2019-Dec-18），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -198,7 +214,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/ux" class="category">
                     UX
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 769 天前（2019-Nov-30），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 774 天前（2019-Nov-30），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -218,7 +234,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/ux" class="category">
                     UX
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 841 天前（2019-Sep-19），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 846 天前（2019-Sep-19），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -238,7 +254,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/认知心理" class="category">
                     认知心理
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 925 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 930 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -256,7 +272,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/认知心理" class="category">
                     认知心理
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 925 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 930 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -274,7 +290,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/ux" class="category">
                     UX
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 925 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 930 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -292,7 +308,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/ux" class="category">
                     UX
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 925 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 930 天前（2019-Jun-27），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -310,7 +326,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/生活" class="category">
                     生活
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 1086 天前（2019-Jan-17），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 1091 天前（2019-Jan-17），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -328,7 +344,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/认知心理" class="category">
                     认知心理
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 1373 天前（2018-Apr-05），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 1378 天前（2018-Apr-05），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -346,7 +362,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/读书笔记" class="category">
                     读书笔记
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 1376 天前（2018-Apr-02），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 1381 天前（2018-Apr-02），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -364,7 +380,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/游戏" class="category">
                     游戏
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 1411 天前（2018-Feb-26），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 1416 天前（2018-Feb-26），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -382,7 +398,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/生活" class="category">
                     生活
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 1740 天前（2017-Apr-03），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 1745 天前（2017-Apr-03），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -400,7 +416,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/生活" class="category">
                     生活
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 1795 天前（2017-Feb-07），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 1800 天前（2017-Feb-07），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
@@ -418,7 +434,7 @@
                 </time></section> <section class="page-categories"><span><!----> <a href="/blog/category/生活" class="category">
                     生活
                   </a></span></section></div></section></header> <section class="page-alert outdated-alert notification">
-          本文最后更新于 1932 天前（2016-Sep-23），其中的信息可能已经有所发展或者不再适合现阶段。
+          本文最后更新于 1937 天前（2016-Sep-23），其中的信息可能已经有所发展或者不再适合现阶段。
         </section> <section class="page-body entry"><!----></section> <!----> <section class="page-comments"><div id="disqus_thread"></div></section> <footer class="page-footer"></footer></div></article></main> <footer class="tach-footer footer"><div class="tach-wrapper"><div class="container columns"><section class="section column is-6"><div class="copyright">
           © 2016-2022 DuanFei. Made with <span style="color:#b30e2e">❤︎︎</span> in Beijing
         </div></section> <section class="section column is-6"><div class="social-network"><ul><li><a target="_blank" rel="noopener" href="https://www.instagram.com/alone_cmj/?hl=en" class="icon">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://github.com/shaonianche" class="icon">GitHub</a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/Bonjour_Ar" class="icon">Twitter</a></li><li><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/duanf/" class="icon">Steam</a></li></ul></div></section></div></div></footer></div></div]]></content>
