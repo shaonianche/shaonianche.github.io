@@ -3,23 +3,32 @@
 /**
  * Typography: Font Family
  */
-$font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 // Sans
-$font-sans-latin:pt-sans,"Open Sans";
-$font-sans-chinese: pt-sans, system-ui, source-han-sans-cjk-sc, -apple-system, "lucida grande","lucida sans unicode","Noto Sans SC", "Source Han Sans SC", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei";
+$font-sans-latin: pt-sans, 'Open Sans';
+$font-sans-chinese: pt-sans, system-ui, source-han-sans-cjk-sc, -apple-system,
+  'lucida grande', 'lucida sans unicode', 'Noto Sans SC', 'Source Han Sans SC',
+  'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei';
 $font-sans-fallback: sans-serif;
-$font-family-sans: $font-sans-chinese,$font-sans-latin,$font-sans-fallback;
+$font-family-sans: $font-sans-chinese, $font-sans-latin, $font-sans-fallback;
 
 // Serif
-$font-serif-latin: source-han-sans-cjk-sc,pt-sans,system-ui,-apple-system,"Alegreya", "Times New Roman";
-$font-serif-chinese: pt-sans,system-ui,source-han-sans-cjk-sc,-apple-system,"lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", STFangsong, FangSong, FangSong_GB2312;
-$font-serif-text:source-han-sans-cjk-sc,pt-sans,system-ui,-apple-system,"lucida grande", "lucida sans unicode";
+$font-serif-latin: source-han-sans-cjk-sc, pt-sans, system-ui, -apple-system,
+  'Alegreya', 'Times New Roman';
+$font-serif-chinese: pt-sans, system-ui, source-han-sans-cjk-sc, -apple-system,
+  'lucida grande', 'lucida sans unicode', 'Noto Serif SC', 'Source Han Serif SC',
+  STFangsong, FangSong, FangSong_GB2312;
+$font-serif-text: source-han-sans-cjk-sc, pt-sans, system-ui, -apple-system,
+  'lucida grande', 'lucida sans unicode';
 $font-serif-fallback: serif;
 $font-family-serif: $font-serif-latin, $font-serif-chinese, $font-serif-fallback;
 
 // Headline
-$font-serif-chinese-headline: pt-sans,system-ui,source-han-sans-cjk-sc,-apple-system,"lucida grande", "lucida sans unicode","Noto Serif SC", "Source Han Serif SC", "Kaiti SC", STKaiti, KaiTi, KaiTi_GB2312;
-$font-family-serif-headline: $font-serif-chinese-headline,$font-serif-latin,  $font-serif-fallback;
+$font-serif-chinese-headline: pt-sans, system-ui, source-han-sans-cjk-sc,
+  -apple-system, 'lucida grande', 'lucida sans unicode', 'Noto Serif SC',
+  'Source Han Serif SC', 'Kaiti SC', STKaiti, KaiTi, KaiTi_GB2312;
+$font-family-serif-headline: $font-serif-chinese-headline, $font-serif-latin,
+  $font-serif-fallback;
 
 // Mono
 $font-family-mono: 'Inconsolata', Monaco, Consolas, 'Lucida Console', monospace;
@@ -28,10 +37,10 @@ $font-family-mono: 'Inconsolata', Monaco, Consolas, 'Lucida Console', monospace;
  * Typography: Font Sizes
  */
 // Base font sizes
-$font-size-base: 100%;     // 16px
+$font-size-base: 100%; // 16px
 $font-size-base-m: 112.5%; // 18px
-$font-size-base-l: 125%;   // 20px
-$font-size-base-xl: 150%;  // 24px
+$font-size-base-l: 125%; // 20px
+$font-size-base-xl: 150%; // 24px
 // Headline font sizes
 $font-size-1: 2rem;
 $font-size-2: 1.5rem;

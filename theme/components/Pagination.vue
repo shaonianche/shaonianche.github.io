@@ -5,7 +5,8 @@
         class="prev"
         title="PREVIOUS PAGE"
         v-if="page.pagination.hasNext"
-        :to="page.pagination.nextLink">
+        :to="page.pagination.nextLink"
+      >
         <span class="text">PREVIOUS</span>
       </saber-link>
     </div>
@@ -14,7 +15,8 @@
         class="next"
         title="NEXT PAGE"
         v-if="page.pagination.hasPrev"
-        :to="page.pagination.prevLink">
+        :to="page.pagination.prevLink"
+      >
         <span class="text">NEXT</span>
       </saber-link>
     </div>
@@ -23,7 +25,7 @@
 
 <script>
 export default {
-  props: ['page']
+  props: ['page'],
 }
 </script>
 

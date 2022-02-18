@@ -9,12 +9,13 @@ import DisqusJS from 'disqusjs'
 
 export default {
   props: ['page'],
-  mounted () {
-    this.load();
+  mounted() {
+    this.load()
   },
   methods: {
-    load () {
-      const { shortname, sitename, api, apikey, admin, adminLabel } = this.$siteConfig.disqusjs
+    load() {
+      const { shortname, sitename, api, apikey, admin, adminLabel } =
+        this.$siteConfig.disqusjs
       const { title, url, author } = this.$siteConfig
 
       // Spawn DisqusJS instance
@@ -27,10 +28,10 @@ export default {
         api,
         apikey,
         admin: admin || author,
-        adminLabel
+        adminLabel,
       })
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -68,7 +69,7 @@ export default {
     background: var(--color-background);
   }
 
-  .dsqjs-order-radio:checked+.dsqjs-order-label {
+  .dsqjs-order-radio:checked + .dsqjs-order-label {
     color: var(--color-accent-0);
     background-color: var(--color-accent-5);
   }
@@ -77,14 +78,17 @@ export default {
     color: var(--color-text-primary);
   }
 
-  .dsqjs-post-list .dsqjs-post-header .dsqjs-meta, footer, footer a {
+  .dsqjs-post-list .dsqjs-post-header .dsqjs-meta,
+  footer,
+  footer a {
     color: var(--color-text-secondary);
   }
 }
 
 // serif fonts mode
 html {
-  &:lang(en), &.serif {
+  &:lang(en),
+  &.serif {
     #dsqjs * {
       font-family: $font-family-serif;
     }

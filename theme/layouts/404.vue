@@ -20,13 +20,13 @@ import Footer from '../components/Footer.vue'
 export default {
   components: {
     Header,
-    Footer
+    Footer,
   },
-  head () {
+  head() {
     return {
-      title: `404 File Not Found - ${this.$siteConfig.title}`
+      title: `404 File Not Found - ${this.$siteConfig.title}`,
     }
-  }
+  },
 }
 </script>
 

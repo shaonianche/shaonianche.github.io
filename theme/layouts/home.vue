@@ -4,7 +4,8 @@
     <main class="tach-main">
       <section
         v-if="page.attributes.assets.hero"
-        class="tach-portfolio-hero hero">
+        class="tach-portfolio-hero hero"
+      >
         <div class="hero-body">
           <saber-image class="hero-img" :src="page.attributes.assets.hero" />
         </div>
@@ -26,18 +27,23 @@
             <div class="container columns is-mobile is-multiline">
               <article
                 class="tach-portfolio-item column is-4-desktop is-6-tablet is-12-mobile"
-                v-for="post in page.posts.filter(item => item.feature === true).slice(0, 6)"
-                :key="post.attributes.permalink">
+                v-for="post in page.posts
+                  .filter((item) => item.feature === true)
+                  .slice(0, 6)"
+                :key="post.attributes.permalink"
+              >
                 <figure class="item-content">
                   <saber-link class="link" :to="post.attributes.permalink">
                     <div class="pic-box">
                       <saber-image
                         class="item-cover"
                         :src="post.attributes.assets.feature"
-                        :alt="post.attributes.title" />
+                        :alt="post.attributes.title"
+                      />
                       <span
                         class="overlay"
-                        v-text="post.attributes.title"></span>
+                        v-text="post.attributes.title"
+                      ></span>
                     </div>
                   </saber-link>
                 </figure>
@@ -52,7 +58,9 @@
             <div class="content is-uppercase">
               <h4>Feeds</h4>
               <p>如果你不想错过更新的文章，可以通过 RSS 订阅本博客</p>
-              <a class="button" target="_blank" :href="this.$feed.permalink">Subscribe</a>
+              <a class="button" target="_blank" :href="this.$feed.permalink"
+                >Subscribe</a
+              >
             </div>
           </div>
         </div>
@@ -71,11 +79,11 @@ export default {
   props: ['page'],
   components: {
     Header,
-    Footer
+    Footer,
   },
-  head () {
+  head() {
     return head(this)
-  }
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -208,7 +216,7 @@ export default {
     color: #ffffff;
     margin-top: 1.7778rem;
     border-radius: 50px;
-    padding: .6rem 3.2rem;
+    padding: 0.6rem 3.2rem;
     border: 1px solid var(--color-accent-6);
     transition: all 0.2s ease-in-out;
 

@@ -5,14 +5,27 @@
         <section class="section column is-6">
           <!-- &#xfe0e; to prevent rendering ❤︎ as an emoji in iOS/Android -->
           <div class="copyright">
-            © {{ siteDate }} {{ $siteConfig.author }}. Made with <span style="color:#b30e2e">❤︎&#xfe0e;</span> in Beijing
+            © {{ siteDate }} {{ $siteConfig.author }}. Made with
+            <span style="color: #b30e2e">❤︎&#xfe0e;</span> in Beijing
           </div>
         </section>
-        <section class="section column is-6" v-if="$themeConfig.footer.social_network">
+        <section
+          class="section column is-6"
+          v-if="$themeConfig.footer.social_network"
+        >
           <div class="social-network">
             <ul>
-              <li v-for="(item, index) in $themeConfig.footer.social_network" :key="index">
-                <a class="icon" :href="item.path" target="_blank" rel="noopener">{{ item.name }}</a>
+              <li
+                v-for="(item, index) in $themeConfig.footer.social_network"
+                :key="index"
+              >
+                <a
+                  class="icon"
+                  :href="item.path"
+                  target="_blank"
+                  rel="noopener"
+                  >{{ item.name }}</a
+                >
               </li>
             </ul>
           </div>
@@ -27,7 +40,7 @@ import { date } from '../utils'
 
 export default {
   computed: {
-    siteDate () {
+    siteDate() {
       const since = this.$themeConfig.since
       const now = date(Date.now(), '{YYYY}')
 
@@ -36,11 +49,11 @@ export default {
       } else {
         return now
       }
-    }
+    },
   },
   methods: {
-    date
-  }
+    date,
+  },
 }
 </script>
 
@@ -72,7 +85,7 @@ export default {
       li {
         display: inline-block;
 
-        &+li {
+        & + li {
           margin-left: $gap-m;
         }
       }

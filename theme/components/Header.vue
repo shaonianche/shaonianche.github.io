@@ -7,13 +7,15 @@
             <saber-link
               class="navbar-item site-title"
               :to="$themeConfig.header.logo_url"
-              v-text="$themeConfig.title || $siteConfig.title">
+              v-text="$themeConfig.title || $siteConfig.title"
+            >
             </saber-link>
-            <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+            <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css" />
             <span
               @click="toggleNavbarMenu()"
               ref="burger"
-              class="navbar-burger burger">
+              class="navbar-burger burger"
+            >
               <span></span>
               <span></span>
               <span></span>
@@ -22,14 +24,16 @@
           <div
             v-if="$themeConfig.header.nav"
             ref="menu"
-            class="column navbar-menu">
+            class="column navbar-menu"
+          >
             <div class="navbar-end">
               <saber-link
                 class="navbar-item"
                 v-for="(item, index) in $themeConfig.header.nav"
                 :key="index"
                 :to="item.path"
-                v-text="item.name">
+                v-text="item.name"
+              >
               </saber-link>
             </div>
           </div>
@@ -42,15 +46,13 @@
 <script>
 export default {
   methods: {
-    toggleNavbarMenu () {
+    toggleNavbarMenu() {
       this.$refs.burger.classList.toggle('is-active')
       this.$refs.menu.classList.toggle('is-active')
-    }
-  }
+    },
+  },
 }
-
 </script>
-
 
 <style lang="scss" scoped>
 @import '../styles/components/variables';
