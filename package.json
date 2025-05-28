@@ -19,7 +19,7 @@
     "markdown-it-figure-gallery": "0.2.0",
     "markdown-it-footnote": "3.0.3",
     "prismjs": "1.28.0",
-    "saber": "0.11.7",
+    "@alterjs/saber": "^0.14.1",
     "saber-plugin-adobe-font": "0.3.0",
     "saber-plugin-baidu-analytics": "0.1.0",
     "saber-plugin-feed": "^0.4.3",
@@ -40,7 +40,7 @@
     "packages/*"
   ],
   "volta": {
-    "node": "14.18.1",
-    "npm": "7.24.2"
+    "node": "18.20.5",
+    "yarn": "1.22.22"
   }
 }
