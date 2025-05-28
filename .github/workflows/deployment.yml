@@ -8,29 +8,25 @@ on:
 jobs:
   deploy:
     name: Build
-    runs-on: ubuntu-18.04
-    if: "! contains(toJSON(github.event.commits.*.message), '[ci skip]')"
-
+    runs-on: ubuntu-latest
     steps:
       # correct build machine timezone
       - run: sudo timedatectl set-timezone Asia/Shanghai
       # checkout source
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       # setup node.js
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
+      - name: Setup Node (via Volta)
+        uses: volta-cli/action@v4
       # find yarn cache
       - name: Get yarn cache path
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        id: yarn_cache
+        run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
       # update cache
       - name: Cache dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
+          path: ${{ steps.yarn_cache.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
@@ -39,7 +35,7 @@ jobs:
       - run: yarn build
       # deployment
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
