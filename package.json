@@ -34,7 +34,7 @@
     "sass-loader": "10.1.0",
     "sharp": "^0.32.6",
     "tinytime": "0.2.6",
-    "tua-body-scroll-lock": "^1.2.1"
+    "tua-body-scroll-lock": "^1.6.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.14.0",
