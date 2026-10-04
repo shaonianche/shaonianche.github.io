@@ -5,7 +5,8 @@
  * 而本站从 Saber 迁移来的媒体是路径式 key（uploads/2022/01/xx.jpg），
  * 会被拒并回退到 Astro 默认端点导致 400/500。这里放宽为允许 "/" 但拒绝
  * ".."，其余逻辑与 EmDash 版本一致：从 R2 读字节，用 IMAGES 绑定变换，
- * 绑定缺失或参数无效时流式返回原图。
+ * 绑定缺失或参数无效时流式返回原图。（曾有的 9432 legacy-billing 回退在
+ * 账号切到 Images 新计费后已删除。）
  *
  * 通过 astro.config.mjs 的 image.endpoint 注册；EmDash 只覆盖未自定义的端点，
  * 因此不会被它替换。
@@ -104,41 +105,6 @@ export const GET: APIRoute = async (ctx) => {
 	} catch (error) {
 		if (error instanceof Error && /not found/i.test(error.message)) {
 			return new Response("Not Found", { status: 404 });
-		}
-		// 9432：账号还在 legacy Image Resizing 订阅，IMAGES 绑定不可用。
-		// 退化为同源子请求 + cf.image（legacy 订阅支持的能力），同样不行再回原图。
-		if (error instanceof Error && /9432|legacy billing/.test(error.message)) {
-			try {
-				const origin = new URL(ctx.request.url).origin;
-				const mediaUrl = `${origin}${MEDIA_PREFIX}${key}`;
-				const cfImage: Record<string, unknown> = {};
-				const parsed2 = parseTransformParams(url.searchParams);
-				if (parsed2.ok) {
-					if (parsed2.options.width) cfImage.width = parsed2.options.width;
-					if (parsed2.options.height) cfImage.height = parsed2.options.height;
-					cfImage.format = parsed2.options.format;
-					const q = resolveTransformQuality(parsed2.options.format, parsed2.options.quality);
-					if (q !== undefined) cfImage.quality = q;
-				}
-				const resized = await fetch(mediaUrl, {
-					cf: { image: cfImage },
-				} as RequestInit);
-				if (resized.ok && resized.body) {
-					return new Response(resized.body, {
-						status: 200,
-						headers: {
-							"Content-Type": resized.headers.get("Content-Type") ?? "image/webp",
-							"Cache-Control": MUTABLE_MEDIA_CACHE_CONTROL,
-							"X-Content-Type-Options": "nosniff",
-							"X-Image-Engine": "cf-image",
-						},
-					});
-				}
-			} catch {
-				// cf.image 也不可用时落到下面的原图回退
-			}
-			const source = await storage.download(key);
-			return streamOriginal(source.body, source.contentType);
 		}
 		console.error("[image] transform failed:", error);
 		return new Response("Internal Server Error", { status: 500 });
