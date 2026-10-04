@@ -98,6 +98,7 @@ export const GET: APIRoute = async (ctx) => {
 				"Content-Type": response.headers.get("Content-Type") ?? "image/webp",
 				"Cache-Control": MUTABLE_MEDIA_CACHE_CONTROL,
 				"X-Content-Type-Options": "nosniff",
+				"X-Image-Engine": "images-binding",
 			},
 		});
 	} catch (error) {
@@ -129,6 +130,7 @@ export const GET: APIRoute = async (ctx) => {
 							"Content-Type": resized.headers.get("Content-Type") ?? "image/webp",
 							"Cache-Control": MUTABLE_MEDIA_CACHE_CONTROL,
 							"X-Content-Type-Options": "nosniff",
+							"X-Image-Engine": "cf-image",
 						},
 					});
 				}
