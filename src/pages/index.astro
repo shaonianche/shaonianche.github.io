@@ -29,6 +29,7 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 
 <Base title={siteTitle} description={siteTagline}>
 	<div class="tach-portfolio">
+		<h1 class="visually-hidden">{siteTitle}</h1>
 		{
 			HERO_IMAGE && (
 				<section class="tach-portfolio-hero">
@@ -48,16 +49,16 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 		<section class="tach-portfolio-haiku">
 			<div class="haiku-content">
 				<small>There will</small>
-				<h4>
+				<p class="haiku-line">
 					still be <span>love</span> in this world
-				</h4>
+				</p>
 			</div>
 		</section>
 
 		{
 			posts.length > 0 && (
 				<section class="tach-portfolio-feature">
-					<h4 class="feature-title">Featured</h4>
+					<h2 class="feature-title">Featured</h2>
 					<div class="feature-grid">
 						{posts.map((post) => {
 							const img = resolveImageUrl(post.data.featured_image);
@@ -91,7 +92,7 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 
 		<section class="tach-portfolio-subscribe">
 			<div class="subscribe-content">
-				<h4>Feeds</h4>
+				<h2>Feeds</h2>
 				<p>如果你不想错过更新的文章，可以通过 RSS 订阅本博客</p>
 				<a class="button" target="_blank" rel="noopener" href="/rss.xml">
 					Subscribe
@@ -102,6 +103,18 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 </Base>
 
 <style>
+	.visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+
 	.tach-portfolio-hero .hero-img {
 		display: block;
 		width: 100%;
@@ -127,7 +140,7 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 		text-transform: uppercase;
 	}
 
-	.haiku-content h4 {
+	.haiku-content .haiku-line {
 		letter-spacing: 6px;
 		font-weight: 400;
 		line-height: var(--leading-relaxed);
@@ -135,7 +148,7 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 		font-size: var(--font-size-lg);
 	}
 
-	.haiku-content h4 span {
+	.haiku-content .haiku-line span {
 		background: #2f2f2f;
 		color: #ffffff;
 		padding: 0.3rem;
@@ -207,12 +220,24 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 		transition: opacity 0.3s ease-in-out;
 	}
 
-	.tach-portfolio-item:hover .overlay {
+	.tach-portfolio-item:hover .overlay,
+	.tach-portfolio-item:focus-within .overlay {
 		opacity: 1;
 	}
 
 	.tach-portfolio-item:hover .item-cover {
 		transform: scale(1.05);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.item-cover,
+		.overlay {
+			transition: none;
+		}
+
+		.tach-portfolio-item:hover .item-cover {
+			transform: none;
+		}
 	}
 
 	.tach-portfolio-subscribe {
@@ -224,7 +249,7 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 		padding: 0 var(--gap-m);
 	}
 
-	.subscribe-content h4 {
+	.subscribe-content h2 {
 		text-align: center;
 		letter-spacing: 2px;
 		line-height: var(--leading-relaxed);
@@ -242,19 +267,21 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 	a.button {
 		display: inline-block;
 		height: auto;
-		background: #2f2f2f;
-		color: #ffffff;
+		background: var(--color-text-primary);
+		color: var(--color-background);
 		margin-top: 1.7778rem;
 		border-radius: 50px;
 		padding: 0.6rem 3.2rem;
-		border: 1px solid var(--color-accent-6);
-		transition: all 0.2s ease-in-out;
+		border: 1px solid var(--color-text-primary);
+		transition:
+			background-color 0.2s ease-in-out,
+			color 0.2s ease-in-out;
 		text-decoration: none;
 	}
 
 	a.button:hover {
-		background: #ffffff;
-		color: #2f2f2f;
+		background: var(--color-background);
+		color: var(--color-text-primary);
 		text-decoration: none;
 	}
 

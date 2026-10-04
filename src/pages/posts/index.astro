@@ -29,7 +29,7 @@ const haiku = randomHaiku();
 		<section class="tach-layout-header">
 			<div class="header-inner">
 				<h1>Blog</h1>
-				<h6>{haiku}</h6>
+				<p class="haiku">{haiku}</p>
 			</div>
 		</section>
 		<section class="tach-blog-items">
@@ -87,7 +87,7 @@ const haiku = randomHaiku();
 		margin-bottom: var(--gap-m);
 	}
 
-	.tach-layout-header h6 {
+	.tach-layout-header .haiku {
 		font-size: 80%;
 		font-weight: 400;
 		color: var(--color-text-secondary);

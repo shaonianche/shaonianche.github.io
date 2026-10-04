@@ -31,12 +31,19 @@ const { items: results } = query
 				type="search"
 				name="q"
 				value={query}
-				placeholder="Search posts..."
+				placeholder="Search posts…"
 				class="search-input"
-				autofocus
+				autocomplete="off"
 			/>
 			<button type="submit" class="search-button">Search</button>
-		</form>
+			</form>
+
+			<script>
+			// Desktop-only autofocus: avoid popping the mobile keyboard.
+			if (window.matchMedia("(pointer: fine)").matches) {
+				document.getElementById("site-search-query")?.focus();
+			}
+			</script>
 
 		{
 			query && (
@@ -115,6 +122,9 @@ const { items: results } = query
 
 	.search-input:focus {
 		outline: none;
+	}
+
+	.search-input:focus-visible {
 		border-color: var(--color-brand);
 		box-shadow: 0 0 0 3px var(--color-brand-ring);
 	}
@@ -123,17 +133,19 @@ const { items: results } = query
 		padding: var(--gap-s) 2rem;
 		font-size: var(--font-size-base);
 		font-family: var(--font-body);
-		background: #2f2f2f;
-		color: #ffffff;
-		border: 1px solid var(--color-accent-6);
+		background: var(--color-text-primary);
+		color: var(--color-background);
+		border: 1px solid var(--color-text-primary);
 		border-radius: 50px;
 		cursor: pointer;
-		transition: all 0.2s ease-in-out;
+		transition:
+			background-color 0.2s ease-in-out,
+			color 0.2s ease-in-out;
 	}
 
 	.search-button:hover {
-		background: #ffffff;
-		color: #2f2f2f;
+		background: var(--color-background);
+		color: var(--color-text-primary);
 	}
 
 	.search-summary {

@@ -26,7 +26,6 @@
 	color: var(--color-link);
 	text-decoration: none;
 	overflow-wrap: break-word;
-	word-break: break-all;
 }
 
 .page-body a:hover,
@@ -90,7 +89,6 @@
 	padding-left: var(--gap-l);
 	padding-right: var(--gap-s);
 	overflow-wrap: break-word;
-	word-break: break-all;
 	margin-left: 0;
 	margin-right: 0;
 }

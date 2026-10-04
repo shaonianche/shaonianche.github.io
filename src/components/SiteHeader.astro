@@ -22,25 +22,25 @@ const { siteTitle, menuItems = [], isLoggedIn = false } = Astro.props;
 ---
 
 <header class="tach-header">
-	<nav class="navbar" aria-label="Main navigation">
+	<nav class="navbar" aria-label="主导航">
 		<div class="navbar-brand">
 			<a href="/" class="navbar-item site-title">{siteTitle}</a>
 			<button
 				type="button"
 				class="navbar-burger"
-				aria-label="Toggle navigation"
+				aria-label="切换导航菜单"
 				aria-expanded="false"
 				data-burger
 			>
-				<span></span>
-				<span></span>
-				<span></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
 			</button>
 		</div>
 		<div class="navbar-menu" data-menu>
 			<div class="navbar-search">
 				<LiveSearch
-					placeholder="Search..."
+					placeholder="Search…"
 					class="site-search"
 					inputClass="site-search-input"
 					resultsClass="site-search-results"
@@ -203,6 +203,9 @@ const { siteTitle, menuItems = [], isLoggedIn = false } = Astro.props;
 
 	.navbar-search :global(.site-search-input):focus {
 		outline: none;
+	}
+
+	.navbar-search :global(.site-search-input):focus-visible {
 		border-color: var(--color-brand);
 		box-shadow: 0 0 0 3px var(--color-brand-ring);
 	}

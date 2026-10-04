@@ -94,6 +94,16 @@ const menuItems = (menu?.items ?? []).map((item) => ({
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="#ffffff"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="#22272e"
+		/>
 		<Font cssVariable="--font-body" preload />
 		<Font cssVariable="--font-mono" />
 		<title>{fullTitle}</title>
@@ -114,6 +124,7 @@ const menuItems = (menu?.items ?? []).map((item) => ({
 	</head>
 	<body>
 		<EmDashBodyStart page={pageCtx} />
+		<a href="#main" class="skip-link">跳到主要内容</a>
 		<div class="tach-root">
 			<SiteHeader
 				siteTitle={siteTitle}
@@ -121,7 +132,7 @@ const menuItems = (menu?.items ?? []).map((item) => ({
 				isLoggedIn={isLoggedIn}
 			/>
 
-			<main class="tach-main">
+			<main class="tach-main" id="main">
 				<slot />
 			</main>
 
@@ -183,8 +194,10 @@ const menuItems = (menu?.items ?? []).map((item) => ({
 					}
 				}
 
-				html {
-					scroll-behavior: smooth;
+				@media (prefers-reduced-motion: no-preference) {
+					html {
+						scroll-behavior: smooth;
+					}
 				}
 
 				body {
@@ -239,6 +252,22 @@ const menuItems = (menu?.items ?? []).map((item) => ({
 		</style>
 
 		<style>
+			.skip-link {
+				position: absolute;
+				top: -100%;
+				left: var(--gap-m);
+				z-index: 200;
+				padding: var(--gap-s) var(--gap-m);
+				background: var(--color-bg);
+				color: var(--color-text);
+				border: 1px solid var(--color-border);
+				border-radius: var(--radius);
+			}
+
+			.skip-link:focus-visible {
+				top: var(--gap-m);
+			}
+
 			/* Sticky-footer layout from the original theme (_helpers.scss) */
 			.tach-root {
 				display: flex;
