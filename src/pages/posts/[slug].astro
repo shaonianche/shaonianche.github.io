@@ -16,7 +16,12 @@ import { PortableText } from "emdash/ui";
 import { Comments, CommentForm } from "emdash/ui/comments";
 import Base from "../../layouts/Base.astro";
 import PostCard from "../../components/PostCard.astro";
-import { resolveImageUrl, resolveImageAlt } from "../../utils/media";
+import {
+	resolveImageUrl,
+	resolveImageAlt,
+	transformImageUrl,
+	transformSrcset,
+} from "../../utils/media";
 import {
 	formatPostDate,
 	formatDayDate,
@@ -108,8 +113,11 @@ const otherPostsWithTags = otherPosts.map((p) => ({
 						<section class="page-cover">
 							<img
 								class="image"
-								src={coverUrl}
+								src={transformImageUrl(post.data.featured_image, 840)}
+								srcset={transformSrcset(post.data.featured_image, [840, 1680])}
+								sizes="(min-width: 900px) 840px, 100vw"
 								alt={coverAlt}
+								decoding="async"
 								{...post.edit.featured_image}
 							/>
 							<span class="overlay" />

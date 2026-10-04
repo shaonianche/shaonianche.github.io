@@ -3,7 +3,12 @@
  * PostCard -- port of the post card from theme/layouts/index.vue.
  * 3:2 cover, date, title, excerpt with fade-out clamp.
  */
-import { resolveImageUrl, resolveImageAlt } from "../utils/media";
+import {
+	resolveImageUrl,
+	resolveImageAlt,
+	transformImageUrl,
+	transformSrcset,
+} from "../utils/media";
 import { formatCardDate } from "../utils/format-date";
 
 interface Props {
@@ -25,7 +30,9 @@ const img = resolveImageUrl(featuredImage);
 			<div class="post-card-image">
 				<a class="link" href={href} aria-label={title}>
 					<img
-						src={img}
+						src={transformImageUrl(featuredImage, 480)}
+						srcset={transformSrcset(featuredImage, [480, 960])}
+						sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 90vw"
 						alt={resolveImageAlt(featuredImage) || title}
 						loading="lazy"
 						decoding="async"

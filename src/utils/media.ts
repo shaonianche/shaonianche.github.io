@@ -34,3 +34,22 @@ export function resolveImageAlt(image: unknown): string | undefined {
 	const media = image as MediaObject;
 	return media.$media?.alt || media.alt || undefined;
 }
+
+/**
+ * 经 Astro 图片端点（/_image）的变换 URL。EmDash 在 Cloudflare 上接管该端点：
+ * 内部媒体键直接从 R2 读字节并用 IMAGES 绑定缩放（默认输出 webp，q85）。
+ * 非本站的图片 URL 不做变换，原样返回。
+ */
+export function transformImageUrl(image: unknown, width: number): string | undefined {
+	const url = resolveImageUrl(image);
+	if (!url) return undefined;
+	if (!url.startsWith(MEDIA_FILE_BASE)) return url;
+	return `/_image?href=${encodeURIComponent(url)}&w=${width}`;
+}
+
+/** 与 transformImageUrl 配套的 srcset；非站内媒体返回 undefined（模板应省略该属性）。 */
+export function transformSrcset(image: unknown, widths: number[]): string | undefined {
+	const url = resolveImageUrl(image);
+	if (!url || !url.startsWith(MEDIA_FILE_BASE)) return undefined;
+	return widths.map((w) => `${transformImageUrl(image, w)} ${w}w`).join(", ");
+}

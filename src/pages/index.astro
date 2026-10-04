@@ -5,7 +5,12 @@
  */
 import { getEmDashCollection, getSiteSettings } from "emdash";
 import Base from "../layouts/Base.astro";
-import { resolveImageUrl, resolveImageAlt } from "../utils/media";
+import {
+	resolveImageUrl,
+	resolveImageAlt,
+	transformImageUrl,
+	transformSrcset,
+} from "../utils/media";
 import { resolveBlogSiteIdentity } from "../utils/site-identity";
 
 const HERO_IMAGE = "/_emdash/api/media/file/home-page-1.jpg";
@@ -27,7 +32,15 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 		{
 			HERO_IMAGE && (
 				<section class="tach-portfolio-hero">
-					<img class="hero-img" src={HERO_IMAGE} alt={siteTitle} />
+					<img
+						class="hero-img"
+						src={transformImageUrl(HERO_IMAGE, 1200)}
+						srcset={transformSrcset(HERO_IMAGE, [1200, 2400])}
+						sizes="100vw"
+						alt={siteTitle}
+						fetchpriority="high"
+						decoding="async"
+					/>
 				</section>
 			)
 		}
@@ -56,7 +69,9 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 												{img && (
 													<img
 														class="item-cover"
-														src={img}
+														src={transformImageUrl(post.data.featured_image, 480)}
+														srcset={transformSrcset(post.data.featured_image, [480, 960])}
+														sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 90vw"
 														alt={resolveImageAlt(post.data.featured_image) || post.data.title}
 														loading="lazy"
 														decoding="async"
