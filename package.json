@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@12.0.0",
   "emdash": {
     "label": "Blog",
     "seed": "seed/seed.json"

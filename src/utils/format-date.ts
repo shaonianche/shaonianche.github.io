@@ -1,57 +1,62 @@
 /**
- * Date formatting -- port of theme/utils/index.js (tinytime-based).
- *
- * The old Saber site rendered dates at build time on a CI machine pinned to
- * Asia/Shanghai. The site is now server-rendered on Cloudflare Workers (UTC),
- * so format explicitly in Asia/Shanghai to keep the same displayed times.
+ * 日期展示工具。EmDash 中 content entries 携带 ISO 8601 的
+ * publishedAt/updatedAt 字段；本站统一按 UTC 展示，
+ * 与线上 blog.duanfei.org 的历史行为保持一致。
  */
 
-const TIME_ZONE = "Asia/Shanghai";
+const TIME_ZONE = "UTC";
 
-const dateTimeParts = new Intl.DateTimeFormat("en-US", {
-	timeZone: TIME_ZONE,
-	year: "numeric",
-	month: "2-digit",
-	day: "2-digit",
-	hour: "numeric",
-	minute: "2-digit",
-	second: "2-digit",
-	hour12: false,
-});
-
-function partsOf(date: Date) {
-	const parts: Record<string, string> = {};
-	for (const part of dateTimeParts.formatToParts(date)) {
-		parts[part.type] = part.value;
-	}
-	return parts;
+function parseDate(input: string | Date | null | undefined): Date | null {
+  if (!input) return null;
+  const date = input instanceof Date ? input : new Date(input);
+  return Number.isNaN(date.getTime()) ? null : date;
 }
 
-const cardDate = new Intl.DateTimeFormat("en-GB", {
-	timeZone: TIME_ZONE,
-	day: "2-digit",
-	month: "long",
-	year: "numeric",
-});
-
-/** `{YYYY}-{Mo}-{DD} {H}:{mm}:{ss}` -- post page meta, e.g. "2020-09-06 8:05:03". */
-export function formatPostDate(date: Date): string {
-	const p = partsOf(date);
-	return `${p.year}-${p.month}-${p.day} ${Number(p.hour)}:${p.minute}:${p.second}`;
+/** 列表卡片："7 January 2022" */
+export function formatCardDate(input: string | Date | null | undefined): string {
+  const date = parseDate(input);
+  if (!date) return "";
+  return new Intl.DateTimeFormat("en-GB", {
+    timeZone: TIME_ZONE,
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(date);
 }
 
-/** `{YYYY}-{MM}-{DD}` -- outdated-warning human date, e.g. "2020-09-06". */
-export function formatDayDate(date: Date): string {
-	const p = partsOf(date);
-	return `${p.year}-${p.month}-${p.day}`;
+/** 文章页元信息："2016-09-23 12:00:00" */
+export function formatPostDate(input: string | Date | null | undefined): string {
+  const date = parseDate(input);
+  if (!date) return "";
+  const parts = new Intl.DateTimeFormat("zh-CN", {
+    timeZone: TIME_ZONE,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    hourCycle: "h23",
+  }).formatToParts(date);
+  const get = (type: Intl.DateTimeFormatPartTypes) =>
+    parts.find((p) => p.type === type)?.value ?? "";
+  return `${get("year")}-${get("month")}-${get("day")} ${get("hour")}:${get("minute")}:${get("second")}`;
 }
 
-/** `{DD} {MMMM} {YYYY}` -- post card date, e.g. "06 September 2020". */
-export function formatCardDate(date: Date): string {
-	return cardDate.format(date);
+/** "最后更新于 YYYY-MM-DD" 中的日期部分 */
+export function formatDayDate(input: string | Date | null | undefined): string {
+  const date = parseDate(input);
+  if (!date) return "";
+  return formatPostDate(date).slice(0, 10);
 }
 
-/** Whole days elapsed since `date` (theme/layouts/default.vue `days`). */
-export function daysAgo(date: Date): number {
-	return Math.floor((Date.now() - date.getTime()) / 86400000);
+/** 与今天相差的完整天数（UTC 对齐），用于「最后更新于 N 天前」 */
+export function daysAgo(input: string | Date | null | undefined): number {
+  const date = parseDate(input);
+  if (!date) return 0;
+  const start = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+  const now = new Date();
+  const end = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  return Math.round((end - start) / 86_400_000);
 }

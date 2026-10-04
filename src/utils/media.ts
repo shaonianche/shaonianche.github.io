@@ -11,13 +11,22 @@ interface MediaObject {
 	src?: string;
 	url?: string;
 	alt?: string;
+	meta?: { storageKey?: string };
 }
+
+const MEDIA_FILE_BASE = "/_emdash/api/media/file/";
 
 export function resolveImageUrl(image: unknown): string | undefined {
 	if (!image) return undefined;
 	if (typeof image === "string") return image || undefined;
 	const media = image as MediaObject;
-	return media.$media?.url || media.src || media.url || undefined;
+	const direct = media.$media?.url || media.src || media.url;
+	if (direct) return direct;
+	// 本地 seed 生成的媒体字段只有 provider/id/meta.storageKey，
+	// 文件通过 media file 路由按 storageKey 提供。
+	const storageKey = media.meta?.storageKey;
+	if (storageKey) return MEDIA_FILE_BASE + storageKey;
+	return undefined;
 }
 
 export function resolveImageAlt(image: unknown): string | undefined {
