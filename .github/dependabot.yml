@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      # EmDash 单独一组：本站依赖其内部 API（image-endpoint helpers、
+      # integration hook 顺序），升级需人工 review，勿自动合并。
+      emdash:
+        patterns:
+          - "emdash"
+          - "@emdash-cms/*"
+      astro:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
+      cloudflare:
+        patterns:
+          - "wrangler"
+          - "@cloudflare/*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
