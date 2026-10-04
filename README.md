@@ -1,68 +1,40 @@
-# EmDash Blog Template (Cloudflare)
+# blog.duanfei.org
 
-A clean, minimal blog built with [EmDash](https://github.com/emdash-cms/emdash) and deployed on Cloudflare Workers with D1 and R2.
+个人博客，基于 [EmDash](https://github.com/emdash-cms/emdash)（Astro + React）构建，部署在 Cloudflare Workers 上。
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/emdash-cms/templates/tree/main/blog-cloudflare)
+## 技术栈
 
-![Blog template homepage](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-light-desktop.jpg)
+- **CMS**：EmDash（管理后台 `/_emdash/admin`）
+- **框架**：Astro 7 + @astrojs/cloudflare 适配器
+- **存储**：D1（内容）、R2（媒体）、KV（会话）
+- **图片**：Cloudflare Images 绑定实时缩放（`/_image` 端点，见 `src/endpoints/image.ts`）
 
-## What's Included
-
-- Featured post hero on the homepage
-- Post archive with reading time estimates
-- Category and tag archives
-- Full-text search
-- RSS feed
-- SEO metadata and JSON-LD
-- Dark/light mode
-
-## Pages
-
-| Page | Route |
-|---|---|
-| Homepage | `/` |
-| All posts | `/posts` |
-| Single post | `/posts/:slug` |
-| Category archive | `/category/:slug` |
-| Tag archive | `/tag/:slug` |
-| Search | `/search` |
-| Static pages | `/pages/:slug` |
-| 404 | fallback |
-
-## Screenshots
-
-| | Desktop | Mobile |
-|---|---|---|
-| Light | ![homepage light desktop](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-light-desktop.jpg) | ![homepage light mobile](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-light-mobile.jpg) |
-| Dark | ![homepage dark desktop](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-dark-desktop.jpg) | ![homepage dark mobile](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-dark-mobile.jpg) |
-
-## Infrastructure
-
-- **Runtime:** Cloudflare Workers
-- **Database:** D1
-- **Storage:** R2
-- **Framework:** Astro with `@astrojs/cloudflare`
-
-## Local Development
+## 本地开发
 
 ```bash
-npm install
-npm run dev
+pnpm install
+gunzip -k seed/seed.json.gz   # 首次需要，解压种子数据
+pnpm dev                       # http://localhost:4321
 ```
 
-Open http://localhost:4321/_emdash/admin and complete the setup wizard. EmDash runs database migrations and applies the blog seed during setup. The site is available at http://localhost:4321.
-
-## Deploying
+常用命令：
 
 ```bash
-npx wrangler login
-npm run deploy
+pnpm build       # 构建
+pnpm typecheck   # 类型检查
 ```
 
-The first deployment provisions the named D1 database and R2 bucket from `wrangler.jsonc`. See [Deploy to Cloudflare](https://docs.emdashcms.com/deployment/cloudflare/) for production setup, or use the deploy button above.
+## 部署
 
-## See Also
+push 到 `main` 分支，Cloudflare Workers Builds 自动构建并部署到 <https://blog.duanfei.org>。
 
-- [Node.js variant](../blog) -- same template using SQLite and local file storage
-- [All templates](../)
-- [EmDash documentation](https://docs.emdashcms.com/)
+## 目录结构
+
+| 路径 | 说明 |
+| --- | --- |
+| `src/pages/` | 页面路由（首页、文章、归档、搜索、RSS） |
+| `src/layouts/Base.astro` | 基础布局（导航、页脚、SEO） |
+| `src/endpoints/image.ts` | 自定义图片变换端点（支持路径式 media key，兼容 legacy billing 回退） |
+| `src/utils/media.ts` | 媒体 URL 与 srcset 生成 |
+| `seed/seed.json.gz` | EmDash 种子数据（结构 + 全部文章），见 `seed/README.md` |
+| `wrangler.jsonc` | Worker 配置与绑定 |
