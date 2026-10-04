@@ -1,0 +1,154 @@
+---
+/**
+ * TermArchive -- 分类/标签归档页共用布局。
+ * 两种归档仅在 taxonomy 名称与文案上不同，其余结构和样式完全一致，
+ * 由页面负责取数（getTaxonomyTerms + getEmDashCollection），这里负责渲染。
+ */
+import Base from "../layouts/Base.astro";
+import PostCard from "./PostCard.astro";
+
+interface Term {
+	slug: string;
+	label: string;
+}
+
+interface ArchivePost {
+	id: string;
+	data: {
+		title?: string;
+		excerpt?: string | null;
+		featured_image?: unknown;
+		publishedAt?: Date | null;
+	};
+	edit?: Record<string, unknown>;
+}
+
+interface Props {
+	taxonomy: "category" | "tag";
+	term: Term;
+	posts: ArchivePost[];
+	nextCursor?: string;
+	hasCursor?: boolean;
+}
+
+const { taxonomy, term, posts, nextCursor, hasCursor = false } = Astro.props;
+
+const copy =
+	taxonomy === "category"
+		? {
+				label: "Category",
+				title: `${term.label} posts`,
+				description: `All posts in ${term.label}`,
+				empty: "No posts in this category yet.",
+			}
+		: {
+				label: "Tag",
+				title: `Posts tagged "${term.label}"`,
+				description: `All posts tagged with ${term.label}`,
+				empty: "No posts with this tag yet.",
+			};
+const basePath = `/${taxonomy}/${term.slug}`;
+---
+
+<Base title={copy.title} description={copy.description}>
+	<section class="archive-section">
+		<header class="archive-header">
+			<span class="archive-label">{copy.label}</span>
+			<h1 class="archive-title">{term.label}</h1>
+		</header>
+
+		{
+			posts.length === 0 ? (
+				<p class="no-posts">{copy.empty}</p>
+			) : (
+				<div class="posts-grid">
+					{posts.map((post) => (
+						<PostCard
+							title={post.data.title ?? "Untitled"}
+							excerpt={post.data.excerpt}
+							featuredImage={post.data.featured_image}
+							href={`/posts/${post.id}`}
+							date={post.data.publishedAt ?? undefined}
+							edit={post.edit}
+						/>
+					))}
+				</div>
+			)
+		}
+		<nav class="pagination" aria-label="Pagination">
+			{hasCursor && <a href={basePath}>First page</a>}
+			{
+				nextCursor && (
+					<a href={`${basePath}?cursor=${encodeURIComponent(nextCursor)}`}>
+						Next page
+					</a>
+				)
+			}
+		</nav>
+	</section>
+</Base>
+
+<style>
+	.archive-section {
+		max-width: var(--wide-width);
+		margin: 0 auto;
+		padding: 1rem 0;
+	}
+
+	.archive-header {
+		padding: 1rem var(--gap-m) 0;
+		margin-bottom: var(--gap-l);
+	}
+
+	.archive-label {
+		display: block;
+		font-size: 80%;
+		font-weight: 400;
+		color: var(--color-text-secondary);
+		margin-bottom: var(--gap-s);
+	}
+
+	.archive-title {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.posts-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--gap-m);
+		padding: 0 var(--gap-m);
+	}
+
+	.no-posts {
+		color: var(--color-text-secondary);
+		padding: 0 var(--gap-m);
+	}
+
+	.pagination {
+		display: flex;
+		justify-content: space-between;
+		padding: var(--gap-l) var(--gap-m);
+	}
+
+	.pagination a {
+		color: var(--color-text-primary);
+		text-decoration: none;
+	}
+
+	.pagination a:hover {
+		color: var(--color-link);
+	}
+
+	@media (max-width: 900px) {
+		.posts-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 600px) {
+		.posts-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

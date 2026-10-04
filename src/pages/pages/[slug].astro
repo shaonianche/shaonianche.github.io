@@ -8,6 +8,7 @@ import {
 import { PortableText } from "emdash/ui";
 import Base from "../../layouts/Base.astro";
 import { resolveBlogSiteIdentity } from "../../utils/site-identity";
+import "../../styles/prose.css";
 
 const slug = decodeSlug(Astro.params.slug);
 
@@ -73,100 +74,7 @@ const seo = getSeoMeta(page, {
 		line-height: 1.2;
 	}
 
-	/* shared body typography with post detail */
-	.page-body :global(p),
-	.page-body :global(blockquote),
-	.page-body :global(ul),
-	.page-body :global(ol),
-	.page-body :global(pre),
-	.page-body :global(table),
-	.page-body :global(figure) {
-		margin-bottom: var(--gap-l);
-	}
-
-	.page-body :global(p) {
-		text-align: justify;
-		line-height: var(--leading-relaxed);
-		overflow-wrap: break-word;
-	}
-
-	.page-body :global(a) {
-		color: var(--color-link);
-		text-decoration: none;
-		overflow-wrap: break-word;
-	}
-
-	.page-body :global(a:hover) {
-		text-decoration: underline;
-	}
-
-	.page-body :global(h2) {
-		font-size: 1.5rem;
-		margin-top: 2em;
-		margin-bottom: 0.75em;
-	}
-
-	.page-body :global(h3) {
-		font-size: 1.25rem;
-		margin-top: 1.75em;
-		margin-bottom: 0.5em;
-	}
-
-	.page-body :global(blockquote) {
-		position: relative;
-		color: var(--color-text-secondary);
-		padding-left: var(--gap-l);
-		margin-left: 0;
-	}
-
-	.page-body :global(blockquote::before) {
-		position: absolute;
-		left: calc(var(--gap-m) * -1.7);
-		content: "\201c";
-		font-size: 2.25rem;
-		font-weight: 700;
-		line-height: 1;
-	}
-
-	.page-body :global(ul),
-	.page-body :global(ol) {
-		padding-left: calc(var(--gap-m) * 1.5);
-	}
-
-	.page-body :global(ul) {
-		list-style-type: square;
-	}
-
-	.page-body :global(pre),
-	.page-body :global(code) {
-		font-family: var(--font-mono);
-	}
-
-	.page-body :global(pre) {
-		background: var(--color-accent-1);
-		padding: var(--gap-m);
-		overflow: auto;
-		line-height: 1.5;
-	}
-
-	.page-body :global(:not(pre) > code) {
-		color: var(--color-link);
-		font-size: 0.875em;
-	}
-
-	.page-body :global(:not(pre) > code::before),
-	.page-body :global(:not(pre) > code::after) {
-		content: "`";
-	}
-
-	.page-body :global(img) {
-		max-width: 100%;
-	}
-
-	.page-body :global(p img) {
-		display: block;
-		margin: 0 auto;
-	}
+	/* shared body typography lives in src/styles/prose.css */
 
 	.page-footer {
 		margin-bottom: var(--gap-l);

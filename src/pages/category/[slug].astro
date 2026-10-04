@@ -4,8 +4,7 @@ import {
 	getEmDashCollection,
 	decodeSlug,
 } from "emdash";
-import Base from "../../layouts/Base.astro";
-import PostCard from "../../components/PostCard.astro";
+import TermArchive from "../../components/TermArchive.astro";
 
 const slug = decodeSlug(Astro.params.slug);
 const termsResult = await getTaxonomyTermsWithCacheHint("category", {
@@ -34,111 +33,12 @@ if (Astro.cache?.enabled) {
 	Astro.cache.set(termsResult.cacheHint);
 	Astro.cache.set(cacheHint);
 }
-
-const filteredPosts = posts.map((post) => ({ post }));
 ---
 
-<Base title={`${term.label} posts`} description={`All posts in ${term.label}`}>
-	<section class="archive-section">
-		<header class="archive-header">
-			<span class="archive-label">Category</span>
-			<h1 class="archive-title">{term.label}</h1>
-		</header>
-
-		{
-			filteredPosts.length === 0 ? (
-				<p class="no-posts">No posts in this category yet.</p>
-			) : (
-				<div class="posts-grid">
-					{filteredPosts.map(({ post }) => (
-						<PostCard
-							title={post.data.title}
-							excerpt={post.data.excerpt}
-							featuredImage={post.data.featured_image}
-							href={`/posts/${post.id}`}
-							date={post.data.publishedAt ?? undefined}
-							edit={post.edit}
-						/>
-					))}
-				</div>
-			)
-		}
-		<nav class="pagination" aria-label="Pagination">
-			{cursor && <a href={`/category/${term.slug}`}>First page</a>}
-			{
-				nextCursor && (
-					<a
-						href={`/category/${term.slug}?cursor=${encodeURIComponent(nextCursor)}`}
-					>
-						Next page
-					</a>
-				)
-			}
-		</nav>
-	</section>
-</Base>
-
-<style>
-	.archive-section {
-		max-width: var(--wide-width);
-		margin: 0 auto;
-		padding: 1rem 0;
-	}
-
-	.archive-header {
-		padding: 1rem var(--gap-m) 0;
-		margin-bottom: var(--gap-l);
-	}
-
-	.archive-label {
-		display: block;
-		font-size: 80%;
-		font-weight: 400;
-		color: var(--color-text-secondary);
-		margin-bottom: var(--gap-s);
-	}
-
-	.archive-title {
-		font-size: 2rem;
-		margin: 0;
-	}
-
-	.posts-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: var(--gap-m);
-		padding: 0 var(--gap-m);
-	}
-
-	.no-posts {
-		color: var(--color-text-secondary);
-		padding: 0 var(--gap-m);
-	}
-
-	.pagination {
-		display: flex;
-		justify-content: space-between;
-		padding: var(--gap-l) var(--gap-m);
-	}
-
-	.pagination a {
-		color: var(--color-text-primary);
-		text-decoration: none;
-	}
-
-	.pagination a:hover {
-		color: var(--color-link);
-	}
-
-	@media (max-width: 900px) {
-		.posts-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media (max-width: 600px) {
-		.posts-grid {
-			grid-template-columns: 1fr;
-		}
-	}
-</style>
+<TermArchive
+	taxonomy="category"
+	term={term}
+	posts={posts}
+	nextCursor={nextCursor}
+	hasCursor={!!cursor}
+/>
