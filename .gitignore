@@ -19,3 +19,7 @@ seed/seed.json
 # Editor settings
 .cursor
 .vscode
+
+# Amp orb runtime state
+.amp/portals/
+.amp/in/

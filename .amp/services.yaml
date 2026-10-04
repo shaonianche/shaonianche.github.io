@@ -1,0 +1,6 @@
+services:
+  dev:
+    command: npm run dev
+    port: 4321
+    portal:
+      title: 段飛 blog dev server

@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "== pnpm install =="
+time pnpm install --frozen-lockfile
+
+echo "== seed.json =="
+if [ ! -f seed/seed.json ]; then
+	gunzip -k seed/seed.json.gz
+	echo "decompressed seed/seed.json.gz"
+else
+	echo "seed/seed.json already present"
+fi
+
+# Seed local D1 + R2 once: apply seed/seed.json to miniflare's D1 file via
+# the CLI, then import the downloaded media binaries into the local R2
+# binding (the dev server reads media from R2, not from ./uploads).
+if ls .wrangler/state/v3/d1/miniflare-D1DatabaseObject/*.sqlite >/dev/null 2>&1; then
+	echo "== local D1 already seeded, skipping =="
+else
+	echo "== seeding local D1 + R2 =="
+	# Boot the dev server once so miniflare creates its D1 sqlite file.
+	# Do NOT HTTP-request the app here: EmDash auto-seeds on the first
+	# request, which would race our explicit seed below.
+	npm run dev >/tmp/emdash-seed-dev.log 2>&1 &
+	dev_pid=$!
+	cleanup() {
+		kill "$dev_pid" 2>/dev/null || true
+		# astro/workerd escape the process group; match by command line.
+		# Safe here: this script file's own cmdline matches neither pattern.
+		pkill -f 'astro\.mjs dev' 2>/dev/null || true
+		pkill -f 'workerd serve' 2>/dev/null || true
+	}
+	trap cleanup EXIT
+
+	db_file=""
+	for i in $(seq 1 45); do
+		db_file=$(ls .wrangler/state/v3/d1/miniflare-D1DatabaseObject/*.sqlite 2>/dev/null | grep -v metadata | head -1 || true)
+		[ -n "$db_file" ] && break
+		# Nudge with a static-asset request (does not run EmDash middleware).
+		[ "$i" = 15 ] && curl -sf -o /dev/null http://localhost:4321/media/home-page-1.jpg || true
+		sleep 2
+	done
+	[ -n "$db_file" ] || {
+		echo "ERROR: miniflare D1 sqlite never appeared, see /tmp/emdash-seed-dev.log" >&2
+		exit 1
+	}
+
+	# Apply the seed directly to the D1 file. The CLI downloads each $media
+	# URL and writes binaries to ./uploads/<storage_key>.
+	npx emdash seed seed/seed.json -d "$db_file"
+
+	# Stop the temp server before touching R2 state.
+	cleanup
+	sleep 2
+	trap - EXIT
+
+	# The dev server serves media from the R2 binding, not ./uploads —
+	# import each blob into local R2 under its storage key.
+	python3 - "$db_file" <<'PYEOF'
+import sqlite3, subprocess, sys
+db = sqlite3.connect(sys.argv[1])
+rows = db.execute("select storage_key, mime_type from media").fetchall()
+fails = 0
+for key, mime in rows:
+    r = subprocess.run(
+        ["npx", "wrangler", "r2", "object", "put", f"blog/{key}",
+         "--file", f"uploads/{key}", "--local",
+         "--content-type", mime or "application/octet-stream"],
+        capture_output=True)
+    if r.returncode:
+        fails += 1
+        print("FAIL", key, r.stderr.decode()[:200])
+print(f"{len(rows) - fails}/{len(rows)} media blobs imported into local R2")
+sys.exit(1 if fails else 0)
+PYEOF
+
+	rm -rf uploads
+	echo "seed applied"
+fi
+
+echo "setup done"

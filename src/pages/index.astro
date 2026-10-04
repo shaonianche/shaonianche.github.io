@@ -13,7 +13,7 @@ import {
 } from "../utils/media";
 import { resolveBlogSiteIdentity } from "../utils/site-identity";
 
-const HERO_IMAGE = "/_emdash/api/media/file/home-page-1.jpg";
+const HERO_IMAGE = "/media/home-page-1.jpg";
 
 const [{ entries: posts, cacheHint }, settings] = await Promise.all([
 	getEmDashCollection("posts", {
