@@ -1,1 +1,540 @@
-IyBTaXRlIEZlYXR1cmVzCgojIyBTaXRlIFNldHRpbmdzCgpgYGB0eXBlc2NyaXB0CmltcG9ydCB7IGdldFNpdGVTZXR0aW5ncywgZ2V0U2l0ZVNldHRpbmdzV2l0aENhY2hlSGludCwgZ2V0U2l0ZVNldHRpbmcgfSBmcm9tICJlbWRhc2giOwoKLy8gQWxsIHNldHRpbmdzCmNvbnN0IHNldHRpbmdzID0gYXdhaXQgZ2V0U2l0ZVNldHRpbmdzKCk7CnNldHRpbmdzLnRpdGxlOyAvLyAiTXkgU2l0ZSIKc2V0dGluZ3MudGFnbGluZTsgLy8gIkEgZGVzY3JpcHRpb24iCnNldHRpbmdzLmxvZ28/LnVybDsgLy8gUmVzb2x2ZWQgbWVkaWEgVVJMCnNldHRpbmdzLmZhdmljb24/LnVybDsKCi8vIFNpbmdsZSBzZXR0aW5nCmNvbnN0IHRpdGxlID0gYXdhaXQgZ2V0U2l0ZVNldHRpbmcoInRpdGxlIik7CgovLyBDYWNoZWQgcm91dGU6IHJlZ2lzdGVyIGludmFsaWRhdGlvbiBmb3Igc2V0dGluZ3MgY2hhbmdlcwpjb25zdCB7IGRhdGE6IGNhY2hlZFNldHRpbmdzLCBjYWNoZUhpbnQgfSA9IGF3YWl0IGdldFNpdGVTZXR0aW5nc1dpdGhDYWNoZUhpbnQoKTsKaWYgKEFzdHJvLmNhY2hlPy5lbmFibGVkKSBBc3Ryby5jYWNoZS5zZXQoY2FjaGVIaW50KTsKYGBgCgpBdmFpbGFibGUga2V5czogYHRpdGxlYCwgYHRhZ2xpbmVgLCBgbG9nb2AsIGBmYXZpY29uYCwgYHNvY2lhbGAsIGB0aW1lem9uZWAsIGBkYXRlRm9ybWF0YC4KClVzZSB0aGVzZSBpbnN0ZWFkIG9mIGhhcmQtY29kaW5nIHNpdGUgbmFtZSwgbG9nbywgZXRjLgoKIyMgTmF2aWdhdGlvbiBNZW51cwoKYGBgdHlwZXNjcmlwdAppbXBvcnQgeyBnZXRNZW51LCBnZXRNZW51V2l0aENhY2hlSGludCwgZ2V0TWVudXMgfSBmcm9tICJlbWRhc2giOwoKLy8gRmV0Y2ggYSBuYW1lZCBtZW51CmNvbnN0IG1lbnUgPSBhd2FpdCBnZXRNZW51KCJwcmltYXJ5Iik7CgovLyBMaXN0IGFsbCBtZW51cwpjb25zdCBtZW51cyA9IGF3YWl0IGdldE1lbnVzKCk7CgovLyBDYWNoZWQgcm91dGUKY29uc3QgeyBkYXRhOiBwcmltYXJ5TWVudSwgY2FjaGVIaW50IH0gPSBhd2FpdCBnZXRNZW51V2l0aENhY2hlSGludCgicHJpbWFyeSIpOwppZiAoQXN0cm8uY2FjaGU/LmVuYWJsZWQpIEFzdHJvLmNhY2hlLnNldChjYWNoZUhpbnQpOwpgYGAKCiMjIyBSZW5kZXJpbmcgYSBtZW51CgpgYGBhc3RybwotLS0KaW1wb3J0IHsgZ2V0TWVudSB9IGZyb20gImVtZGFzaCI7CmNvbnN0IHByaW1hcnlNZW51ID0gYXdhaXQgZ2V0TWVudSgicHJpbWFyeSIpOwotLS0KPG5hdj4KCXtwcmltYXJ5TWVudT8uaXRlbXMubWFwKGl0ZW0gPT4gKAoJCTxhCgkJCWhyZWY9e2l0ZW0udXJsfQoJCQl0YXJnZXQ9e2l0ZW0udGFyZ2V0fQoJCQlyZWw9e2l0ZW0udGFyZ2V0ID09PSAiX2JsYW5rIiA/ICJub29wZW5lciBub3JlZmVycmVyIiA6IHVuZGVmaW5lZH0KCQk+e2l0ZW0ubGFiZWx9PC9hPgoJKSl9CjwvbmF2PgpgYGAKCiMjIyBOZXN0ZWQgbWVudXMgKGRyb3Bkb3ducykKCmBgYGFzdHJvCntwcmltYXJ5TWVudT8uaXRlbXMubWFwKGl0ZW0gPT4gKAoJPGxpPgoJCTxhIGhyZWY9e2l0ZW0udXJsfT57aXRlbS5sYWJlbH08L2E+CgkJe2l0ZW0uY2hpbGRyZW4ubGVuZ3RoID4gMCAmJiAoCgkJCTx1bCBjbGFzcz0ic3VibWVudSI+CgkJCQl7aXRlbS5jaGlsZHJlbi5tYXAoY2hpbGQgPT4gKAoJCQkJCTxsaT48YSBocmVmPXtjaGlsZC51cmx9PntjaGlsZC5sYWJlbH08L2E+PC9saT4KCQkJCSkpfQoJCQk8L3VsPgoJCSl9Cgk8L2xpPgopKX0KYGBgCgojIyMgTWVudUl0ZW0gc2hhcGUKCmBgYHR5cGVzY3JpcHQKaW50ZXJmYWNlIE1lbnVJdGVtIHsKCWlkOiBzdHJpbmc7CglsYWJlbDogc3RyaW5nOwoJdXJsOiBzdHJpbmc7IC8vIFJlc29sdmVkIFVSTAoJdGFyZ2V0Pzogc3RyaW5nOyAvLyAiX2JsYW5rIiBldGMuCgljaGlsZHJlbjogTWVudUl0ZW1bXTsKfQpgYGAKCiMjIFRheG9ub21pZXMKCmBgYHR5cGVzY3JpcHQKaW1wb3J0IHsKCWdldFRheG9ub215VGVybXMsCglnZXRUYXhvbm9teVRlcm1zV2l0aENhY2hlSGludCwKCWdldFRlcm0sCglnZXRFbnRyeVRlcm1zLAoJZ2V0RW50cmllc0J5VGVybSwKfSBmcm9tICJlbWRhc2giOwoKLy8gQWxsIHRlcm1zIGluIGEgdGF4b25vbXkgKG5hbWUgbXVzdCBtYXRjaCB5b3VyIHNlZWQncyAibmFtZSIgZmllbGQgZXhhY3RseSkKY29uc3QgY2F0ZWdvcmllcyA9IGF3YWl0IGdldFRheG9ub215VGVybXMoImNhdGVnb3J5Iik7CmNvbnN0IHRhZ3MgPSBhd2FpdCBnZXRUYXhvbm9teVRlcm1zKCJ0YWciKTsKCi8vIENhY2hlZCB0YXhvbm9teSBhcmNoaXZlIG9yIGZhY2V0CmNvbnN0IHsgZGF0YTogY2FjaGVkQ2F0ZWdvcmllcywgY2FjaGVIaW50IH0gPSBhd2FpdCBnZXRUYXhvbm9teVRlcm1zV2l0aENhY2hlSGludCgiY2F0ZWdvcnkiLCB7CglpbmNsdWRlQ291bnRzOiBmYWxzZSwKfSk7CmlmIChBc3Ryby5jYWNoZT8uZW5hYmxlZCkgQXN0cm8uY2FjaGUuc2V0KGNhY2hlSGludCk7CgovLyBTaW5nbGUgdGVybSBieSBzbHVnCmNvbnN0IHRlcm0gPSBhd2FpdCBnZXRUZXJtKCJjYXRlZ29yeSIsICJuZXdzIik7Ci8vIHsgaWQsIG5hbWUsIHNsdWcsIGxhYmVsLCBjaGlsZHJlbiwgY291bnQgfQoKLy8gVGVybXMgZm9yIGEgc3BlY2lmaWMgZW50cnkgKHVzZSBkYXRhLmlkLCBub3QgZW50cnkuaWQhKQpjb25zdCBwb3N0Q2F0ZWdvcmllcyA9IGF3YWl0IGdldEVudHJ5VGVybXMoInBvc3RzIiwgcG9zdC5kYXRhLmlkLCAiY2F0ZWdvcnkiKTsKY29uc3QgcG9zdFRhZ3MgPSBhd2FpdCBnZXRFbnRyeVRlcm1zKCJwb3N0cyIsIHBvc3QuZGF0YS5pZCwgInRhZyIpOwoKLy8gRW50cmllcyB3aXRoIGEgc3BlY2lmaWMgdGVybQpjb25zdCBuZXdzUG9zdHMgPSBhd2FpdCBnZXRFbnRyaWVzQnlUZXJtKCJwb3N0cyIsICJjYXRlZ29yeSIsICJuZXdzIik7CmBgYAoKKipJbXBvcnRhbnQ6KiogVGhlIHRheG9ub215IG5hbWUgYXJndW1lbnQgbXVzdCBtYXRjaCBleGFjdGx5IHdoYXQgeW91ciBzZWVkIGRlZmluZXMgaW4gYCJuYW1lImAuIFRoZSBibG9nIHNlZWQgdXNlcyBgImNhdGVnb3J5ImAgYW5kIGAidGFnImAgKHNpbmd1bGFyKS4gVXNpbmcgYCJjYXRlZ29yaWVzImAgcmV0dXJucyBlbXB0eSByZXN1bHRzIHdpdGggbm8gZXJyb3IuCgoqKkltcG9ydGFudDoqKiBgZ2V0RW50cnlUZXJtc2AgdGFrZXMgdGhlIGRhdGFiYXNlIFVMSUQgKGBwb3N0LmRhdGEuaWRgKSwgbm90IHRoZSBzbHVnIChgcG9zdC5pZGApLgoKIyMjIERpc3BsYXlpbmcgcG9zdCB0ZXJtcwoKYGBgYXN0cm8KLS0tCmNvbnN0IHRhZ3MgPSBwb3N0LmRhdGEudGVybXM/LnRhZyA/PyBbXTsKLS0tCnt0YWdzLm1hcCh0ID0+ICgKCTxhIGhyZWY9e2AvdGFnLyR7dC5zbHVnfWB9Pnt0LmxhYmVsfTwvYT4KKSl9CmBgYAoKIyMjIEZpbHRlcmluZyBieSB0YXhvbm9teQoKYGBgYXN0cm8KLS0tCmNvbnN0IHsgZW50cmllczogcG9zdHMgfSA9IGF3YWl0IGdldEVtRGFzaENvbGxlY3Rpb24oInBvc3RzIiwgewoJd2hlcmU6IHsgY2F0ZWdvcnk6IHRlcm0uc2x1ZyB9LAoJb3JkZXJCeTogeyBwdWJsaXNoZWRfYXQ6ICJkZXNjIiB9LAp9KTsKLS0tCmBgYAoKIyMgV2lkZ2V0IEFyZWFzCgpSZW5kZXIgYSBuYW1lZCB3aWRnZXQgYXJlYToKCmBgYGFzdHJvCi0tLQppbXBvcnQgeyBXaWRnZXRBcmVhIH0gZnJvbSAiZW1kYXNoL3VpIjsKLS0tCjxhc2lkZT4KCTxXaWRnZXRBcmVhIG5hbWU9InNpZGViYXIiIC8+CjwvYXNpZGU+CmBgYAoKYFdpZGdldEFyZWFgIHJlZ2lzdGVycyBpdHMgd2lkZ2V0LWFyZWEgY2FjaGUgaGludCB3aGVuIEFzdHJvJ3Mgcm91dGUgY2FjaGUgaXMgZW5hYmxlZC4KClRoZSBgV2lkZ2V0QXJlYWAgY29tcG9uZW50IGF1dG9tYXRpY2FsbHkgcmVuZGVycyBhbGwgd2lkZ2V0cyBpbiB0aGUgYXJlYSAoc2VhcmNoLCBjYXRlZ29yaWVzLCB0YWdzLCByZWNlbnQgcG9zdHMsIHJpY2ggdGV4dCwgZXRjLikgd2l0aCBhcHByb3ByaWF0ZSBIVE1MIGFuZCBDU1MgY2xhc3Nlcy4KCiMjIyBNYW51YWwgd2lkZ2V0IHJlbmRlcmluZwoKRm9yIG1vcmUgY29udHJvbCwgdXNlIHRoZSBgZ2V0V2lkZ2V0QXJlYWAgZnVuY3Rpb246CgpgYGBhc3RybwotLS0KaW1wb3J0IHsgZ2V0V2lkZ2V0QXJlYSB9IGZyb20gImVtZGFzaCI7CmltcG9ydCB7IFBvcnRhYmxlVGV4dCB9IGZyb20gImVtZGFzaC91aSI7Cgpjb25zdCBzaWRlYmFyID0gYXdhaXQgZ2V0V2lkZ2V0QXJlYSgic2lkZWJhciIpOwotLS0Ke3NpZGViYXI/LndpZGdldHMubWFwKHdpZGdldCA9PiAoCgk8ZGl2IGNsYXNzPSJ3aWRnZXQiPgoJCXt3aWRnZXQudGl0bGUgJiYgPGgzPnt3aWRnZXQudGl0bGV9PC9oMz59CgkJe3dpZGdldC50eXBlID09PSAiY29udGVudCIgJiYgd2lkZ2V0LmNvbnRlbnQgJiYgKAoJCQk8UG9ydGFibGVUZXh0IHZhbHVlPXt3aWRnZXQuY29udGVudH0gLz4KCQkpfQoJPC9kaXY+CikpfQpgYGAKCiMjIFNlYXJjaAoKIyMjIExpdmVTZWFyY2ggY29tcG9uZW50IChpbnN0YW50IHNlYXJjaCkKCmBgYGFzdHJvCi0tLQppbXBvcnQgTGl2ZVNlYXJjaCBmcm9tICJlbWRhc2gvdWkvc2VhcmNoIjsKLS0tCjxMaXZlU2VhcmNoCglwbGFjZWhvbGRlcj0iU2VhcmNoLi4uIgoJY29sbGVjdGlvbnM9e1sicG9zdHMiLCAicGFnZXMiXX0KLz4KYGBgCgpDdXN0b21pemFibGUgQ1NTIGNsYXNzZXM6CgpgYGBhc3Rybwo8TGl2ZVNlYXJjaAoJcGxhY2Vob2xkZXI9IlNlYXJjaC4uLiIKCWNsYXNzPSJzaXRlLXNlYXJjaCIKCWlucHV0Q2xhc3M9InNpdGUtc2VhcmNoLWlucHV0IgoJcmVzdWx0c0NsYXNzPSJzaXRlLXNlYXJjaC1yZXN1bHRzIgoJcmVzdWx0Q2xhc3M9InNpdGUtc2VhcmNoLXJlc3VsdCIKCWNvbGxlY3Rpb25zPXtbInBvc3RzIiwgInBhZ2VzIl19CglleHBhbmRPbkZvY3VzPXt7IGNvbGxhcHNlZDogIjE4MHB4IiwgZXhwYW5kZWQ6ICIyODBweCIgfX0KLz4KYGBgCgpUaGVtZSB2aWEgQ1NTIHZhcmlhYmxlczoKCmBgYGNzcwo6cm9vdCB7CgktLWVtZGFzaC1zZWFyY2gtYmc6IHZhcigtLWNvbG9yLWJnKTsKCS0tZW1kYXNoLXNlYXJjaC10ZXh0OiB2YXIoLS1jb2xvci10ZXh0KTsKCS0tZW1kYXNoLXNlYXJjaC1tdXRlZDogdmFyKC0tY29sb3ItbXV0ZWQpOwoJLS1lbWRhc2gtc2VhcmNoLWJvcmRlcjogdmFyKC0tY29sb3ItYm9yZGVyKTsKCS0tZW1kYXNoLXNlYXJjaC1ob3ZlcjogdmFyKC0tY29sb3Itc3VyZmFjZSk7CgktLWVtZGFzaC1zZWFyY2gtaGlnaGxpZ2h0OiB2YXIoLS1jb2xvci10ZXh0KTsKfQpgYGAKCiMjIyBQcm9ncmFtbWF0aWMgc2VhcmNoCgpgYGB0eXBlc2NyaXB0CmltcG9ydCB7IHNlYXJjaCB9IGZyb20gImVtZGFzaCI7Cgpjb25zdCByZXN1bHRzID0gYXdhaXQgc2VhcmNoKCJoZWxsbyB3b3JsZCIsIHsKCWNvbGxlY3Rpb25zOiBbInBvc3RzIiwgInBhZ2VzIl0sCglzdGF0dXM6ICJwdWJsaXNoZWQiLAoJbGltaXQ6IDIwLAp9KTsKLy8geyBpdGVtczogU2VhcmNoUmVzdWx0W10sIG5leHRDdXJzb3I/IH0KYGBgCgpFYWNoIGl0ZW0gaGFzOiBgY29sbGVjdGlvbmAsIGBpZGAsIGB0aXRsZWAsIGBzbHVnYCwgYGxvY2FsZWAsIGBzbmlwcGV0YCAoc2FuaXRpemVkIEhUTUwgd2l0aCBgPG1hcms+YCBoaWdobGlnaHRzKSwgYW5kIGBzY29yZWAuCgojIyMgU2VhcmNoIHBhZ2UKCmBgYGFzdHJvCi0tLQppbXBvcnQgTGl2ZVNlYXJjaCBmcm9tICJlbWRhc2gvdWkvc2VhcmNoIjsKaW1wb3J0IEJhc2UgZnJvbSAiLi4vbGF5b3V0cy9CYXNlLmFzdHJvIjsKCmNvbnN0IHF1ZXJ5ID0gQXN0cm8udXJsLnNlYXJjaFBhcmFtcy5nZXQoInEiKSB8fCAiIjsKLS0tCjxCYXNlIHRpdGxlPSJTZWFyY2giPgoJPGgxPlNlYXJjaDwvaDE+Cgk8TGl2ZVNlYXJjaAoJCXBsYWNlaG9sZGVyPSJTZWFyY2ggcG9zdHMuLi4iCgkJY29sbGVjdGlvbnM9e1sicG9zdHMiLCAicGFnZXMiXX0KCS8+CjwvQmFzZT4KYGBgCgojIyMgS2V5Ym9hcmQgc2hvcnRjdXQKCkFkZCBDbWQrSyAvIEN0cmwrSyB0byBmb2N1cyBzZWFyY2g6CgpgYGBodG1sCjxzY3JpcHQ+Cglkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCJrZXlkb3duIiwgKGUpID0+IHsKCQlpZiAoKGUubWV0YUtleSB8fCBlLmN0cmxLZXkpICYmIGUua2V5ID09PSAiayIpIHsKCQkJZS5wcmV2ZW50RGVmYXVsdCgpOwoJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCIuc2l0ZS1zZWFyY2gtaW5wdXQiKT8uZm9jdXMoKTsKCQl9Cgl9KTsKPC9zY3JpcHQ+CmBgYAoKIyMjIFNlYXJjaCBwcmVyZXF1aXNpdGVzCgpTZWFyY2ggcmVxdWlyZXMgcGVyLWNvbGxlY3Rpb24gZW5hYmxlbWVudDoKCjEuIEluIGFkbWluOiBFZGl0IENvbnRlbnQgVHlwZSAtPiBjaGVjayAiU2VhcmNoIiBpbiBGZWF0dXJlcwoyLiBNYXJrIGZpZWxkcyBhcyBgInNlYXJjaGFibGUiOiB0cnVlYCBpbiB0aGUgc2VlZCBmaWxlCjMuIE9ubHkgc2VhcmNoYWJsZSBmaWVsZHMgb2Ygc2VhcmNoYWJsZSBjb2xsZWN0aW9ucyBhcmUgaW5kZXhlZAoKIyMgU0VPIE1ldGEKCj4gWyFJTVBPUlRBTlRdCj4gT24gc2VydmVyLXJlbmRlcmVkIGNvbnRlbnQgcGFnZXMgdGhhdCBmZXRjaCB0aGUgZW50cnkgd2l0aCBgZ2V0RW1EYXNoRW50cnkoKWAKPiBhbmQgcmVuZGVyIGA8RW1EYXNoSGVhZD5gLCBFbURhc2ggYXV0b21hdGljYWxseSBhcHBsaWVzIHRoZSBTRU8gcGFuZWwncwo+IGRlc2NyaXB0aW9uLCBpbWFnZSwgY2Fub25pY2FsIFVSTCwgYW5kIG5vaW5kZXggc2V0dGluZy4gVGhlIHBhbmVsIHRpdGxlCj4gc3VwcGxpZXMgdGhlIHNvY2lhbCBhbmQgSlNPTi1MRCB0aXRsZSBjb250cmlidXRpb25zLiBUaGUgcGFuZWwgZGF0YSB1c2VzIHRoZQo+IGVudHJ5IHF1ZXJ5IHRoZSBwYWdlIGFscmVhZHkgcnVucywgc28gaXQgYWRkcyBubyBhZGRpdGlvbmFsIHF1ZXJ5Lgo+Cj4gYDxFbURhc2hIZWFkPmAgY2Fubm90IHNldCB0aGUgZG9jdW1lbnQgYDx0aXRsZT5gLCBzbyB1c2UgYGdldFNlb01ldGEoKWAgZm9yCj4gdGhlIHRpdGxlLiBQcmVyZW5kZXJlZCBwYWdlcywgcGFnZXMgd2l0aG91dCBgPEVtRGFzaEhlYWQ+YCwgaGFuZC1yb2xsZWQgcXVlcnkKPiBwYXRocywgYW5kIG11bHRpLWVudHJ5IGNvbGxlY3Rpb24gcmVzdWx0cyBkbyBub3QgcmVjZWl2ZSB0aGlzIG92ZXJsYXkuIFVzZQo+IGBnZXRTZW9NZXRhKClgIG9yIHRoZSByYXcgU0VPIGRhdGEgb24gdGhvc2UgcGF0aHMuCgpVc2UgYGdldFNlb01ldGEoKWAgd2hlbiB0aGUgdGVtcGxhdGUgbmVlZHMgdG8gc2V0IGA8dGl0bGU+YCBvciB0aGUgcGFnZSBkb2VzIG5vdApyZWNlaXZlIHRoZSBhdXRvbWF0aWMgb3ZlcmxheToKCmBgYHR5cGVzY3JpcHQKaW1wb3J0IHsgZ2V0U2VvTWV0YSB9IGZyb20gImVtZGFzaCI7Cgpjb25zdCBzZW8gPSBnZXRTZW9NZXRhKHBvc3QsIHsKCXNpdGVUaXRsZTogIk15IEJsb2ciLAoJc2l0ZVVybDogQXN0cm8udXJsLm9yaWdpbiwKCXBhdGg6IGAvcG9zdHMvJHtzbHVnfWAsCglkZWZhdWx0T2dJbWFnZTogZmVhdHVyZWRJbWFnZVVybCwgLy8gT3B0aW9uYWwgZmFsbGJhY2sKfSk7CmBgYAoKVXNlIGluIHlvdXIgbGF5b3V0J3MgYDxoZWFkPmA6CgpgYGBhc3Rybwo8dGl0bGU+e3Nlby50aXRsZX08L3RpdGxlPgp7c2VvLmRlc2NyaXB0aW9uICYmIDxtZXRhIG5hbWU9ImRlc2NyaXB0aW9uIiBjb250ZW50PXtzZW8uZGVzY3JpcHRpb259IC8+fQp7c2VvLmNhbm9uaWNhbCAmJiA8bGluayByZWw9ImNhbm9uaWNhbCIgaHJlZj17c2VvLmNhbm9uaWNhbH0gLz59CntzZW8ub2dJbWFnZSAmJiA8bWV0YSBwcm9wZXJ0eT0ib2c6aW1hZ2UiIGNvbnRlbnQ9e3Nlby5vZ0ltYWdlfSAvPn0Ke3Nlby5yb2JvdHMgJiYgPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PXtzZW8ucm9ib3RzfSAvPn0KYGBgCgojIyMgQ3VzdG9tIHRpdGxlIGFuZCBkZXNjcmlwdGlvbiBkZWZhdWx0cwoKUGFzcyBjb21wdXRlZCBmYWxsYmFja3MgdGhyb3VnaCBgZGVmYXVsdFRpdGxlYCBhbmQgYGRlZmF1bHREZXNjcmlwdGlvbmAuIFZhbHVlcwpzZXQgaW4gdGhlIFNFTyBwYW5lbCB0YWtlIHByZWNlZGVuY2Ugb3ZlciB0aGVzZSBkZWZhdWx0czoKCmBgYHRzCmltcG9ydCB7IGdldFNlb01ldGEgfSBmcm9tICJlbWRhc2giOwoKY29uc3Qgc2VvID0gZ2V0U2VvTWV0YShwb3N0LCB7CglkZWZhdWx0VGl0bGU6IGAke3Bvc3QuZGF0YS50aXRsZX06IEEgcHJhY3RpY2FsIGd1aWRlYCwKCWRlZmF1bHREZXNjcmlwdGlvbjogYFJlYWQgJHtwb3N0LmRhdGEudGl0bGV9IG9uIE15IEJsb2cuYCwKfSk7CmBgYAoKIyMgQ29tbWVudHMKCkJ1aWx0LWluIGNvbW1lbnRzIHN5c3RlbToKCmBgYGFzdHJvCi0tLQppbXBvcnQgeyBDb21tZW50cywgQ29tbWVudEZvcm0gfSBmcm9tICJlbWRhc2gvdWkvY29tbWVudHMiOwotLS0KPENvbW1lbnRzIGNvbGxlY3Rpb249InBvc3RzIiBjb250ZW50SWQ9e3Bvc3QuZGF0YS5pZH0gdGhyZWFkZWQgLz4KPENvbW1lbnRGb3JtIGNvbGxlY3Rpb249InBvc3RzIiBjb250ZW50SWQ9e3Bvc3QuZGF0YS5pZH0gLz4KYGBgCgpDb21tZW50cyBhcmUgZW5hYmxlZCBwZXItY29sbGVjdGlvbiBpbiB0aGUgc2VlZDogYCJjb21tZW50c0VuYWJsZWQiOiB0cnVlYC4KCiMjIFBhZ2UgQ29udHJpYnV0aW9ucyAoUGx1Z2luIEhlYWQvQm9keSBJbmplY3Rpb24pCgpQbHVnaW5zIGNhbiBpbmplY3QgY29udGVudCBpbnRvIHRoZSBgPGhlYWQ+YCBhbmQgYDxib2R5PmAgb2YgcGFnZXMuIFRvIHN1cHBvcnQgdGhpcywgdXNlIHRoZSBwYWdlIGNvbnRyaWJ1dGlvbiBjb21wb25lbnRzOgoKYGBgYXN0cm8KLS0tCmltcG9ydCB7IEVtRGFzaEhlYWQsIEVtRGFzaEJvZHlTdGFydCwgRW1EYXNoQm9keUVuZCB9IGZyb20gImVtZGFzaC91aSI7CmltcG9ydCB7IGNyZWF0ZVB1YmxpY1BhZ2VDb250ZXh0IH0gZnJvbSAiZW1kYXNoL3BhZ2UiOwoKY29uc3QgcGFnZUN0eCA9IGNyZWF0ZVB1YmxpY1BhZ2VDb250ZXh0KHsKCUFzdHJvLAoJa2luZDogY29udGVudCA/ICJjb250ZW50IiA6ICJjdXN0b20iLAoJcGFnZVR5cGU6ICJhcnRpY2xlIiwKCXRpdGxlOiBmdWxsVGl0bGUsCglwYWdlVGl0bGU6IHBvc3QuZGF0YS50aXRsZSwKCWRlc2NyaXB0aW9uLAoJY2Fub25pY2FsLAoJaW1hZ2UsCgljb250ZW50OiB7IGNvbGxlY3Rpb246ICJwb3N0cyIsIGlkOiBwb3N0LmRhdGEuaWQsIHNsdWcgfSwKfSk7Ci0tLQo8aHRtbD4KCTxoZWFkPgoJCTwhLS0geW91ciBtZXRhIHRhZ3MgLS0+CgkJPEVtRGFzaEhlYWQgcGFnZT17cGFnZUN0eH0gLz4KCTwvaGVhZD4KCTxib2R5PgoJCTxFbURhc2hCb2R5U3RhcnQgcGFnZT17cGFnZUN0eH0gLz4KCQk8IS0tIHlvdXIgY29udGVudCAtLT4KCQk8RW1EYXNoQm9keUVuZCBwYWdlPXtwYWdlQ3R4fSAvPgoJPC9ib2R5Pgo8L2h0bWw+CmBgYAoKVGhpcyBlbmFibGVzIHBsdWdpbnMgKGFuYWx5dGljcywgdHJhY2tpbmcgcGl4ZWxzLCBzdHJ1Y3R1cmVkIGRhdGEsIGV0Yy4pIHRvIGNvbnRyaWJ1dGUgdG8gYW55IHBhZ2UuCgojIyBCeWxpbmVzCgpCeWxpbmVzIGFyZSBhdXRob3IgcHJvZmlsZXMsIGluZGVwZW5kZW50IG9mIHVzZXIgYWNjb3VudHMuIFRoZXkgc3VwcG9ydCBndWVzdCBhdXRob3JzIGFuZCBtdWx0aS1hdXRob3IgYXR0cmlidXRpb24gd2l0aCByb2xlIGxhYmVscy4KCiMjIyBFYWdlcmx5IGxvYWRlZCBvbiBlbnRyaWVzCgpCeWxpbmVzIGFyZSBhdXRvbWF0aWNhbGx5IGF0dGFjaGVkIHRvIGV2ZXJ5IGVudHJ5IGJ5IHRoZSBxdWVyeSBsYXllcjoKCmBgYGFzdHJvCnsvKiBQcmltYXJ5IGF1dGhvciAqL30Ke3Bvc3QuZGF0YS5ieWxpbmUgJiYgKAoJPHNwYW4+e3Bvc3QuZGF0YS5ieWxpbmUuZGlzcGxheU5hbWV9PC9zcGFuPgopfQoKey8qIEFsbCBjcmVkaXRzIChpbmNsdWRlcyByb2xlTGFiZWwgZm9yIGNvLWF1dGhvcnMsIGd1ZXN0IGVzc2F5cywgZXRjLikgKi99Cntwb3N0LmRhdGEuYnlsaW5lcz8ubWFwKGNyZWRpdCA9PiAoCgk8c3Bhbj4KCQl7Y3JlZGl0LmJ5bGluZS5kaXNwbGF5TmFtZX0KCQl7Y3JlZGl0LnJvbGVMYWJlbCAmJiA8ZW0+ICh7Y3JlZGl0LnJvbGVMYWJlbH0pPC9lbT59Cgk8L3NwYW4+CikpfQpgYGAKCi0gYGVudHJ5LmRhdGEuYnlsaW5lYCAtLSBwcmltYXJ5IGBCeWxpbmVTdW1tYXJ5YCBvciBgbnVsbGAKLSBgZW50cnkuZGF0YS5ieWxpbmVzYCAtLSBhcnJheSBvZiBgQ29udGVudEJ5bGluZUNyZWRpdGAgKGVhY2ggaGFzIGAuYnlsaW5lYCwgYC5yb2xlTGFiZWxgLCBgLnNvdXJjZWApCgojIyMgU3RhbmRhbG9uZSBxdWVyeSBmdW5jdGlvbnMKCmBgYHR5cGVzY3JpcHQKaW1wb3J0IHsgZ2V0QnlsaW5lLCBnZXRCeWxpbmVCeVNsdWcgfSBmcm9tICJlbWRhc2giOwoKLy8gTG9vayB1cCBhIHNwZWNpZmljIGJ5bGluZQpjb25zdCBieWxpbmUgPSBhd2FpdCBnZXRCeWxpbmVCeVNsdWcoImphbmUtZG9lIik7CmBgYAoKIyMjIEJ5bGluZVN1bW1hcnkgc2hhcGUKCmBgYHR5cGVzY3JpcHQKaW50ZXJmYWNlIEJ5bGluZVN1bW1hcnkgewoJaWQ6IHN0cmluZzsKCXNsdWc6IHN0cmluZzsKCWRpc3BsYXlOYW1lOiBzdHJpbmc7CgliaW86IHN0cmluZyB8IG51bGw7CglhdmF0YXJNZWRpYUlkOiBzdHJpbmcgfCBudWxsOwoJd2Vic2l0ZVVybDogc3RyaW5nIHwgbnVsbDsKCWlzR3Vlc3Q6IGJvb2xlYW47Cn0KYGBgCgojIyMgQ29udGVudEJ5bGluZUNyZWRpdCBzaGFwZQoKYGBgdHlwZXNjcmlwdAppbnRlcmZhY2UgQ29udGVudEJ5bGluZUNyZWRpdCB7CglieWxpbmU6IEJ5bGluZVN1bW1hcnk7Cglzb3J0T3JkZXI6IG51bWJlcjsKCXJvbGVMYWJlbDogc3RyaW5nIHwgbnVsbDsgLy8gZS5nLiwgIkd1ZXN0IGVzc2F5IiwgIlBob3RvZ3JhcGhlciIKCXNvdXJjZT86ICJleHBsaWNpdCIgfCAiaW5mZXJyZWQiOyAvLyAiaW5mZXJyZWQiID0gZmFsbGJhY2sgZnJvbSBhdXRob3JfaWQKfQpgYGAKCiMjIERhcmsgTW9kZSBQYXR0ZXJuCgpDb29raWUtYmFzZWQgdGhlbWUgc3dpdGNoaW5nIChubyBmbGFzaCBvbiBsb2FkKToKCmBgYGh0bWwKPCEtLSBJbiA8aGVhZD4sIGJlZm9yZSBzdHlsZXMgbG9hZCAtLT4KPHNjcmlwdCBpczppbmxpbmU+CgkoZnVuY3Rpb24gKCkgewoJCXZhciBjID0gZG9jdW1lbnQuY29va2llOwoJCXZhciBpID0gYy5pbmRleE9mKCJ0aGVtZT0iKTsKCQl2YXIgdGhlbWUgPSBpID49IDAgPyBjLnNsaWNlKGkgKyA2KS5zcGxpdCgiOyIpWzBdIDogbnVsbDsKCQlpZiAodGhlbWUgPT09ICJkYXJrIiB8fCB0aGVtZSA9PT0gImxpZ2h0IikgewoJCQlkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQuY2xhc3NMaXN0LmFkZCh0aGVtZSk7CgkJfSBlbHNlIGlmICh3aW5kb3cubWF0Y2hNZWRpYSgiKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSIpLm1hdGNoZXMpIHsKCQkJZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmNsYXNzTGlzdC5hZGQoImRhcmsiKTsKCQl9Cgl9KSgpOwo8L3NjcmlwdD4KYGBgCgpUaGVuIHVzZSBDU1MgdmFyaWFibGVzIHRoYXQgY2hhbmdlIGJhc2VkIG9uIGAuZGFya2AgY2xhc3M6CgpgYGBjc3MKOnJvb3QgewoJLS1jb2xvci1iZzogI2ZmZmZmZjsKCS0tY29sb3ItdGV4dDogIzFhMWExYTsKfQo6cm9vdC5kYXJrIHsKCS0tY29sb3ItYmc6ICMwZDBkMGQ7CgktLWNvbG9yLXRleHQ6ICNlZGVkZWQ7Cn0KYGBgCgojIyBMYXlvdXQgUGF0dGVybgoKQSB0eXBpY2FsIGJhc2UgbGF5b3V0OgoKYGBgYXN0cm8KLS0tCmltcG9ydCB7IGdldE1lbnUsIGdldEVtRGFzaENvbGxlY3Rpb24gfSBmcm9tICJlbWRhc2giOwppbXBvcnQgeyBXaWRnZXRBcmVhLCBFbURhc2hIZWFkLCBFbURhc2hCb2R5U3RhcnQsIEVtRGFzaEJvZHlFbmQgfSBmcm9tICJlbWRhc2gvdWkiOwppbXBvcnQgeyBjcmVhdGVQdWJsaWNQYWdlQ29udGV4dCB9IGZyb20gImVtZGFzaC9wYWdlIjsKaW1wb3J0IExpdmVTZWFyY2ggZnJvbSAiZW1kYXNoL3VpL3NlYXJjaCI7CgppbnRlcmZhY2UgUHJvcHMgewoJdGl0bGU6IHN0cmluZzsKCWRlc2NyaXB0aW9uPzogc3RyaW5nIHwgbnVsbDsKCWltYWdlPzogc3RyaW5nIHwgbnVsbDsKCWNvbnRlbnQ/OiB7IGNvbGxlY3Rpb246IHN0cmluZzsgaWQ6IHN0cmluZzsgc2x1Zz86IHN0cmluZyB8IG51bGwgfTsKfQoKY29uc3QgeyB0aXRsZSwgcGFnZVRpdGxlLCBkZXNjcmlwdGlvbiwgaW1hZ2UsIGNvbnRlbnQgfSA9IEFzdHJvLnByb3BzOwpjb25zdCBtZW51ID0gYXdhaXQgZ2V0TWVudSgicHJpbWFyeSIpOwoKY29uc3QgcGFnZUN0eCA9IGNyZWF0ZVB1YmxpY1BhZ2VDb250ZXh0KHsKCUFzdHJvLAoJa2luZDogY29udGVudCA/ICJjb250ZW50IiA6ICJjdXN0b20iLAoJcGFnZVR5cGU6ICJ3ZWJzaXRlIiwKCXRpdGxlLAoJcGFnZVRpdGxlOiBwYWdlVGl0bGUgPz8gdGl0bGUsCglkZXNjcmlwdGlvbiwKCWltYWdlLAoJY29udGVudCwKfSk7Ci0tLQo8IWRvY3R5cGUgaHRtbD4KPGh0bWwgbGFuZz0iZW4iPgoJPGhlYWQ+CgkJPG1ldGEgY2hhcnNldD0iVVRGLTgiIC8+CgkJPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiIC8+CgkJPHRpdGxlPnt0aXRsZX08L3RpdGxlPgoJCXtkZXNjcmlwdGlvbiAmJiA8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD17ZGVzY3JpcHRpb259IC8+fQoJCTxFbURhc2hIZWFkIHBhZ2U9e3BhZ2VDdHh9IC8+Cgk8L2hlYWQ+Cgk8Ym9keT4KCQk8RW1EYXNoQm9keVN0YXJ0IHBhZ2U9e3BhZ2VDdHh9IC8+CgkJPGhlYWRlcj4KCQkJPG5hdj4KCQkJCTxhIGhyZWY9Ii8iPk15IFNpdGU8L2E+CgkJCQk8TGl2ZVNlYXJjaCBwbGFjZWhvbGRlcj0iU2VhcmNoLi4uIiBjb2xsZWN0aW9ucz17WyJwb3N0cyIsICJwYWdlcyJdfSAvPgoJCQkJe21lbnU/Lml0ZW1zLm1hcChpdGVtID0+ICgKCQkJCQk8YSBocmVmPXtpdGVtLnVybH0+e2l0ZW0ubGFiZWx9PC9hPgoJCQkJKSl9CgkJCTwvbmF2PgoJCTwvaGVhZGVyPgoJCTxtYWluPgoJCQk8c2xvdCAvPgoJCTwvbWFpbj4KCQk8Zm9vdGVyPgoJCQk8V2lkZ2V0QXJlYSBuYW1lPSJmb290ZXIiIC8+CgkJPC9mb290ZXI+CgkJPEVtRGFzaEJvZHlFbmQgcGFnZT17cGFnZUN0eH0gLz4KCTwvYm9keT4KPC9odG1sPgpgYGAK
+# Site Features
+
+## Site Settings
+
+```typescript
+import { getSiteSettings, getSiteSettingsWithCacheHint, getSiteSetting } from "emdash";
+
+// All settings
+const settings = await getSiteSettings();
+settings.title; // "My Site"
+settings.tagline; // "A description"
+settings.logo?.url; // Resolved media URL
+settings.favicon?.url;
+
+// Single setting
+const title = await getSiteSetting("title");
+
+// Cached route: register invalidation for settings changes
+const { data: cachedSettings, cacheHint } = await getSiteSettingsWithCacheHint();
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+```
+
+Available keys: `title`, `tagline`, `logo`, `favicon`, `social`, `timezone`, `dateFormat`.
+
+Use these instead of hard-coding site name, logo, etc.
+
+## Navigation Menus
+
+```typescript
+import { getMenu, getMenuWithCacheHint, getMenus } from "emdash";
+
+// Fetch a named menu
+const menu = await getMenu("primary");
+
+// List all menus
+const menus = await getMenus();
+
+// Cached route
+const { data: primaryMenu, cacheHint } = await getMenuWithCacheHint("primary");
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+```
+
+### Rendering a menu
+
+```astro
+---
+import { getMenu } from "emdash";
+const primaryMenu = await getMenu("primary");
+---
+<nav>
+	{primaryMenu?.items.map(item => (
+		<a
+			href={item.url}
+			target={item.target}
+			rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
+		>{item.label}</a>
+	))}
+</nav>
+```
+
+### Nested menus (dropdowns)
+
+```astro
+{primaryMenu?.items.map(item => (
+	<li>
+		<a href={item.url}>{item.label}</a>
+		{item.children.length > 0 && (
+			<ul class="submenu">
+				{item.children.map(child => (
+					<li><a href={child.url}>{child.label}</a></li>
+				))}
+			</ul>
+		)}
+	</li>
+))}
+```
+
+### MenuItem shape
+
+```typescript
+interface MenuItem {
+	id: string;
+	label: string;
+	url: string; // Resolved URL
+	target?: string; // "_blank" etc.
+	children: MenuItem[];
+}
+```
+
+## Taxonomies
+
+```typescript
+import {
+	getTaxonomyTerms,
+	getTaxonomyTermsWithCacheHint,
+	getTerm,
+	getEntryTerms,
+	getEntriesByTerm,
+} from "emdash";
+
+// All terms in a taxonomy (name must match your seed's "name" field exactly)
+const categories = await getTaxonomyTerms("category");
+const tags = await getTaxonomyTerms("tag");
+
+// Cached taxonomy archive or facet
+const { data: cachedCategories, cacheHint } = await getTaxonomyTermsWithCacheHint("category", {
+	includeCounts: false,
+});
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+
+// Single term by slug
+const term = await getTerm("category", "news");
+// { id, name, slug, label, children, count }
+
+// Terms for a specific entry (use data.id, not entry.id!)
+const postCategories = await getEntryTerms("posts", post.data.id, "category");
+const postTags = await getEntryTerms("posts", post.data.id, "tag");
+
+// Entries with a specific term
+const newsPosts = await getEntriesByTerm("posts", "category", "news");
+```
+
+**Important:** The taxonomy name argument must match exactly what your seed defines in `"name"`. The blog seed uses `"category"` and `"tag"` (singular). Using `"categories"` returns empty results with no error.
+
+**Important:** `getEntryTerms` takes the database ULID (`post.data.id`), not the slug (`post.id`).
+
+### Displaying post terms
+
+```astro
+---
+const tags = post.data.terms?.tag ?? [];
+---
+{tags.map(t => (
+	<a href={`/tag/${t.slug}`}>{t.label}</a>
+))}
+```
+
+### Filtering by taxonomy
+
+```astro
+---
+const { entries: posts } = await getEmDashCollection("posts", {
+	where: { category: term.slug },
+	orderBy: { published_at: "desc" },
+});
+---
+```
+
+## Widget Areas
+
+Render a named widget area:
+
+```astro
+---
+import { WidgetArea } from "emdash/ui";
+---
+<aside>
+	<WidgetArea name="sidebar" />
+</aside>
+```
+
+`WidgetArea` registers its widget-area cache hint when Astro's route cache is enabled.
+
+The `WidgetArea` component automatically renders all widgets in the area (search, categories, tags, recent posts, rich text, etc.) with appropriate HTML and CSS classes.
+
+### Manual widget rendering
+
+For more control, use the `getWidgetArea` function:
+
+```astro
+---
+import { getWidgetArea } from "emdash";
+import { PortableText } from "emdash/ui";
+
+const sidebar = await getWidgetArea("sidebar");
+---
+{sidebar?.widgets.map(widget => (
+	<div class="widget">
+		{widget.title && <h3>{widget.title}</h3>}
+		{widget.type === "content" && widget.content && (
+			<PortableText value={widget.content} />
+		)}
+	</div>
+))}
+```
+
+## Search
+
+### LiveSearch component (instant search)
+
+```astro
+---
+import LiveSearch from "emdash/ui/search";
+---
+<LiveSearch
+	placeholder="Search..."
+	collections={["posts", "pages"]}
+/>
+```
+
+Customizable CSS classes:
+
+```astro
+<LiveSearch
+	placeholder="Search..."
+	class="site-search"
+	inputClass="site-search-input"
+	resultsClass="site-search-results"
+	resultClass="site-search-result"
+	collections={["posts", "pages"]}
+	expandOnFocus={{ collapsed: "180px", expanded: "280px" }}
+/>
+```
+
+Theme via CSS variables:
+
+```css
+:root {
+	--emdash-search-bg: var(--color-bg);
+	--emdash-search-text: var(--color-text);
+	--emdash-search-muted: var(--color-muted);
+	--emdash-search-border: var(--color-border);
+	--emdash-search-hover: var(--color-surface);
+	--emdash-search-highlight: var(--color-text);
+}
+```
+
+### Programmatic search
+
+```typescript
+import { search } from "emdash";
+
+const results = await search("hello world", {
+	collections: ["posts", "pages"],
+	status: "published",
+	limit: 20,
+});
+// { items: SearchResult[], nextCursor? }
+```
+
+Each item has: `collection`, `id`, `title`, `slug`, `locale`, `snippet` (sanitized HTML with `<mark>` highlights), and `score`.
+
+### Search page
+
+```astro
+---
+import LiveSearch from "emdash/ui/search";
+import Base from "../layouts/Base.astro";
+
+const query = Astro.url.searchParams.get("q") || "";
+---
+<Base title="Search">
+	<h1>Search</h1>
+	<LiveSearch
+		placeholder="Search posts..."
+		collections={["posts", "pages"]}
+	/>
+</Base>
+```
+
+### Keyboard shortcut
+
+Add Cmd+K / Ctrl+K to focus search:
+
+```html
+<script>
+	document.addEventListener("keydown", (e) => {
+		if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+			e.preventDefault();
+			document.querySelector(".site-search-input")?.focus();
+		}
+	});
+</script>
+```
+
+### Search prerequisites
+
+Search requires per-collection enablement:
+
+1. In admin: Edit Content Type -> check "Search" in Features
+2. Mark fields as `"searchable": true` in the seed file
+3. Only searchable fields of searchable collections are indexed
+
+## SEO Meta
+
+> [!IMPORTANT]
+> On server-rendered content pages that fetch the entry with `getEmDashEntry()`
+> and render `<EmDashHead>`, EmDash automatically applies the SEO panel's
+> description, image, canonical URL, and noindex setting. The panel title
+> supplies the social and JSON-LD title contributions. The panel data uses the
+> entry query the page already runs, so it adds no additional query.
+>
+> `<EmDashHead>` cannot set the document `<title>`, so use `getSeoMeta()` for
+> the title. Prerendered pages, pages without `<EmDashHead>`, hand-rolled query
+> paths, and multi-entry collection results do not receive this overlay. Use
+> `getSeoMeta()` or the raw SEO data on those paths.
+
+Use `getSeoMeta()` when the template needs to set `<title>` or the page does not
+receive the automatic overlay:
+
+```typescript
+import { getSeoMeta } from "emdash";
+
+const seo = getSeoMeta(post, {
+	siteTitle: "My Blog",
+	siteUrl: Astro.url.origin,
+	path: `/posts/${slug}`,
+	defaultOgImage: featuredImageUrl, // Optional fallback
+});
+```
+
+Use in your layout's `<head>`:
+
+```astro
+<title>{seo.title}</title>
+{seo.description && <meta name="description" content={seo.description} />}
+{seo.canonical && <link rel="canonical" href={seo.canonical} />}
+{seo.ogImage && <meta property="og:image" content={seo.ogImage} />}
+{seo.robots && <meta name="robots" content={seo.robots} />}
+```
+
+### Custom title and description defaults
+
+Pass computed fallbacks through `defaultTitle` and `defaultDescription`. Values
+set in the SEO panel take precedence over these defaults:
+
+```ts
+import { getSeoMeta } from "emdash";
+
+const seo = getSeoMeta(post, {
+	defaultTitle: `${post.data.title}: A practical guide`,
+	defaultDescription: `Read ${post.data.title} on My Blog.`,
+});
+```
+
+## Comments
+
+Built-in comments system:
+
+```astro
+---
+import { Comments, CommentForm } from "emdash/ui/comments";
+---
+<Comments collection="posts" contentId={post.data.id} threaded />
+<CommentForm collection="posts" contentId={post.data.id} />
+```
+
+Comments are enabled per-collection in the seed: `"commentsEnabled": true`.
+
+## Page Contributions (Plugin Head/Body Injection)
+
+Plugins can inject content into the `<head>` and `<body>` of pages. To support this, use the page contribution components:
+
+```astro
+---
+import { EmDashHead, EmDashBodyStart, EmDashBodyEnd } from "emdash/ui";
+import { createPublicPageContext } from "emdash/page";
+
+const pageCtx = createPublicPageContext({
+	Astro,
+	kind: content ? "content" : "custom",
+	pageType: "article",
+	title: fullTitle,
+	pageTitle: post.data.title,
+	description,
+	canonical,
+	image,
+	content: { collection: "posts", id: post.data.id, slug },
+});
+---
+<html>
+	<head>
+		<!-- your meta tags -->
+		<EmDashHead page={pageCtx} />
+	</head>
+	<body>
+		<EmDashBodyStart page={pageCtx} />
+		<!-- your content -->
+		<EmDashBodyEnd page={pageCtx} />
+	</body>
+</html>
+```
+
+This enables plugins (analytics, tracking pixels, structured data, etc.) to contribute to any page.
+
+## Bylines
+
+Bylines are author profiles, independent of user accounts. They support guest authors and multi-author attribution with role labels.
+
+### Eagerly loaded on entries
+
+Bylines are automatically attached to every entry by the query layer:
+
+```astro
+{/* Primary author */}
+{post.data.byline && (
+	<span>{post.data.byline.displayName}</span>
+)}
+
+{/* All credits (includes roleLabel for co-authors, guest essays, etc.) */}
+{post.data.bylines?.map(credit => (
+	<span>
+		{credit.byline.displayName}
+		{credit.roleLabel && <em> ({credit.roleLabel})</em>}
+	</span>
+))}
+```
+
+- `entry.data.byline` -- primary `BylineSummary` or `null`
+- `entry.data.bylines` -- array of `ContentBylineCredit` (each has `.byline`, `.roleLabel`, `.source`)
+
+### Standalone query functions
+
+```typescript
+import { getByline, getBylineBySlug } from "emdash";
+
+// Look up a specific byline
+const byline = await getBylineBySlug("jane-doe");
+```
+
+### BylineSummary shape
+
+```typescript
+interface BylineSummary {
+	id: string;
+	slug: string;
+	displayName: string;
+	bio: string | null;
+	avatarMediaId: string | null;
+	websiteUrl: string | null;
+	isGuest: boolean;
+}
+```
+
+### ContentBylineCredit shape
+
+```typescript
+interface ContentBylineCredit {
+	byline: BylineSummary;
+	sortOrder: number;
+	roleLabel: string | null; // e.g., "Guest essay", "Photographer"
+	source?: "explicit" | "inferred"; // "inferred" = fallback from author_id
+}
+```
+
+## Dark Mode Pattern
+
+Cookie-based theme switching (no flash on load):
+
+```html
+<!-- In <head>, before styles load -->
+<script is:inline>
+	(function () {
+		var c = document.cookie;
+		var i = c.indexOf("theme=");
+		var theme = i >= 0 ? c.slice(i + 6).split(";")[0] : null;
+		if (theme === "dark" || theme === "light") {
+			document.documentElement.classList.add(theme);
+		} else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			document.documentElement.classList.add("dark");
+		}
+	})();
+</script>
+```
+
+Then use CSS variables that change based on `.dark` class:
+
+```css
+:root {
+	--color-bg: #ffffff;
+	--color-text: #1a1a1a;
+}
+:root.dark {
+	--color-bg: #0d0d0d;
+	--color-text: #ededed;
+}
+```
+
+## Layout Pattern
+
+A typical base layout:
+
+```astro
+---
+import { getMenu, getEmDashCollection } from "emdash";
+import { WidgetArea, EmDashHead, EmDashBodyStart, EmDashBodyEnd } from "emdash/ui";
+import { createPublicPageContext } from "emdash/page";
+import LiveSearch from "emdash/ui/search";
+
+interface Props {
+	title: string;
+	description?: string | null;
+	image?: string | null;
+	content?: { collection: string; id: string; slug?: string | null };
+}
+
+const { title, pageTitle, description, image, content } = Astro.props;
+const menu = await getMenu("primary");
+
+const pageCtx = createPublicPageContext({
+	Astro,
+	kind: content ? "content" : "custom",
+	pageType: "website",
+	title,
+	pageTitle: pageTitle ?? title,
+	description,
+	image,
+	content,
+});
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		{description && <meta name="description" content={description} />}
+		<EmDashHead page={pageCtx} />
+	</head>
+	<body>
+		<EmDashBodyStart page={pageCtx} />
+		<header>
+			<nav>
+				<a href="/">My Site</a>
+				<LiveSearch placeholder="Search..." collections={["posts", "pages"]} />
+				{menu?.items.map(item => (
+					<a href={item.url}>{item.label}</a>
+				))}
+			</nav>
+		</header>
+		<main>
+			<slot />
+		</main>
+		<footer>
+			<WidgetArea name="footer" />
+		</footer>
+		<EmDashBodyEnd page={pageCtx} />
+	</body>
+</html>
+```

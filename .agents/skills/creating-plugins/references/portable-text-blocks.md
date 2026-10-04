@@ -1,1 +1,253 @@
-IyBQb3J0YWJsZSBUZXh0IEJsb2NrIFR5cGVzCgpQbHVnaW4gQ0xJIGFuZCByZWdpc3RyeSBwYWNrYWdlcyBjYW5ub3QgZGVmaW5lIFBvcnRhYmxlIFRleHQgYmxvY2sgdHlwZXMuIGBlbWRhc2gtcGx1Z2luIGJ1aWxkYCB3YXJucyB0aGF0IGBwb3J0YWJsZVRleHRCbG9ja3NgIHJlcXVpcmUgdHJ1c3RlZCBtb2RlIGFuZCBvbWl0cyB0aGVtIGZyb20gdGhlIHNhbmRib3hlZCBtYW5pZmVzdC4gU2l0ZS1zaWRlIHJlbmRlcmluZyBhbHNvIG5lZWRzIGFuIEFzdHJvIGBjb21wb25lbnRzRW50cnlgLCB3aGljaCBpcyBsb2FkZWQgd2l0aCB0aGUgc2l0ZSBhdCBidWlsZCB0aW1lLgoKQ29yZSBjYW4gZm9yd2FyZCBkZWNsYXJhdGl2ZSBibG9jayBtZXRhZGF0YSBmcm9tIGEgY29uZmlnLWRlY2xhcmVkIHN0YW5kYXJkIHBsdWdpbiBkZXNjcmlwdG9yLCBidXQgdGhhdCBwYXRoIGRvZXMgbm90IG1ha2UgdGhlIGRlZmluaXRpb24gcG9ydGFibGUgdGhyb3VnaCB0aGUgcmVnaXN0cnkgYW5kIGRvZXMgbm90IHByb3ZpZGUgYSBzaXRlIHJlbmRlcmVyLiBUcmVhdCBjdXN0b20gUG9ydGFibGUgVGV4dCBibG9ja3MgYXMgYSBuYXRpdmUtcGx1Z2luIGZlYXR1cmUgdW5sZXNzIHRoZSBzaXRlIG93bnMgYm90aCB0aGUgZGVzY3JpcHRvciBhbmQgdGhlIHJlbmRlcmluZyBjb21wb25lbnRzIGFuZCBoYXMgdmVyaWZpZWQgdGhlIGNvbXBsZXRlIGVkaXRvci10by1yZW5kZXIgcGF0aC4KClBsdWdpbnMgY2FuIGFkZCBjdXN0b20gYmxvY2sgdHlwZXMgdG8gdGhlIFBvcnRhYmxlIFRleHQgZWRpdG9yLiBUaGVzZSBhcHBlYXIgaW4gdGhlIHNsYXNoIGNvbW1hbmQgbWVudSBhbmQgY2FuIGJlIGluc2VydGVkIGludG8gYW55IGBwb3J0YWJsZVRleHRgIGZpZWxkLgoKIyMgRGVjbGFyaW5nIEJsb2NrIFR5cGVzCgpJbiBgZGVmaW5lUGx1Z2luKClgLCBkZWNsYXJlIGJsb2NrcyB1bmRlciBgYWRtaW4ucG9ydGFibGVUZXh0QmxvY2tzYDoKCmBgYHR5cGVzY3JpcHQKYWRtaW46IHsKCXBvcnRhYmxlVGV4dEJsb2NrczogWwoJCXsKCQkJdHlwZTogInlvdXR1YmUiLAoJCQlsYWJlbDogIllvdVR1YmUgVmlkZW8iLAoJCQlpY29uOiAidmlkZW8iLAoJCQlwbGFjZWhvbGRlcjogIlBhc3RlIFlvdVR1YmUgVVJMLi4uIiwKCQkJZmllbGRzOiBbCgkJCQl7IHR5cGU6ICJ0ZXh0X2lucHV0IiwgYWN0aW9uX2lkOiAiaWQiLCBsYWJlbDogIllvdVR1YmUgVVJMIiB9LAoJCQkJeyB0eXBlOiAidGV4dF9pbnB1dCIsIGFjdGlvbl9pZDogInRpdGxlIiwgbGFiZWw6ICJUaXRsZSIgfSwKCQkJCXsgdHlwZTogInRleHRfaW5wdXQiLCBhY3Rpb25faWQ6ICJwb3N0ZXIiLCBsYWJlbDogIlBvc3RlciBJbWFnZSBVUkwiIH0sCgkJCV0sCgkJfSwKCQl7CgkJCXR5cGU6ICJjb2RlcGVuIiwKCQkJbGFiZWw6ICJDb2RlUGVuIiwKCQkJaWNvbjogImNvZGUiLAoJCQlwbGFjZWhvbGRlcjogIlBhc3RlIENvZGVQZW4gVVJMLi4uIiwKCQl9LAoJXSwKfQpgYGAKCiMjIyBCbG9jayBDb25maWcgRmllbGRzCgp8IEZpZWxkICAgICAgICAgfCBUeXBlICAgICB8IERlc2NyaXB0aW9uICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCAtLS0tLS0tLS0tLS0tIHwgLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgYHR5cGVgICAgICAgICB8IGBzdHJpbmdgIHwgQmxvY2sgdHlwZSBuYW1lICh1c2VkIGluIFBUIGBfdHlwZWApLiBSZXF1aXJlZC4gfAp8IGBsYWJlbGAgICAgICAgfCBgc3RyaW5nYCB8IERpc3BsYXkgbmFtZSBpbiBzbGFzaCBjb21tYW5kIG1lbnUuIFJlcXVpcmVkLiAgIHwKfCBgaWNvbmAgICAgICAgIHwgYHN0cmluZ2AgfCBJY29uIGtleS4gT3B0aW9uYWwuICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGRlc2NyaXB0aW9uYCB8IGBzdHJpbmdgIHwgRGVzY3JpcHRpb24gaW4gc2xhc2ggY29tbWFuZCBtZW51LiBPcHRpb25hbC4gICAgfAp8IGBwbGFjZWhvbGRlcmAgfCBgc3RyaW5nYCB8IElucHV0IHBsYWNlaG9sZGVyIHRleHQuIE9wdGlvbmFsLiAgICAgICAgICAgICAgIHwKfCBgZmllbGRzYCAgICAgIHwgYGFycmF5YCAgfCBCbG9jayBLaXQgZm9ybSBmaWVsZHMgZm9yIGVkaXRpbmcgVUkuIE9wdGlvbmFsLiB8CgojIyMgSWNvbnMKCk5hbWVkIGljb25zOiBgdmlkZW9gLCBgY29kZWAsIGBsaW5rYCwgYGxpbmstZXh0ZXJuYWxgLiBVbmtub3duIG9yIG1pc3NpbmcgZmFsbHMgYmFjayB0byBhIGdlbmVyaWMgY3ViZSBpY29uLgoKIyMjIEZpZWxkcwoKV2hlbiBgZmllbGRzYCBpcyBkZWNsYXJlZCwgdGhlIGVkaXRvciByZW5kZXJzIGEgQmxvY2sgS2l0IGZvcm0gZm9yIGVkaXRpbmcuIFdoZW4gb21pdHRlZCwgYSBzaW1wbGUgVVJMIGlucHV0IGlzIHNob3duLgoKRmllbGRzIHVzZSBCbG9jayBLaXQgZWxlbWVudCBzeW50YXg6CgpgYGB0eXBlc2NyaXB0CmZpZWxkczogWwoJewoJCXR5cGU6ICJ0ZXh0X2lucHV0IiwKCQlhY3Rpb25faWQ6ICJpZCIsCgkJbGFiZWw6ICJVUkwiLAoJCXBsYWNlaG9sZGVyOiAiaHR0cHM6Ly8uLi4iLAoJfSwKCXsgdHlwZTogInRleHRfaW5wdXQiLCBhY3Rpb25faWQ6ICJ0aXRsZSIsIGxhYmVsOiAiVGl0bGUiIH0sCgl7IHR5cGU6ICJ0ZXh0X2lucHV0IiwgYWN0aW9uX2lkOiAicG9zdGVyIiwgbGFiZWw6ICJQb3N0ZXIgSW1hZ2UiIH0sCgl7IHR5cGU6ICJudW1iZXJfaW5wdXQiLCBhY3Rpb25faWQ6ICJzdGFydCIsIGxhYmVsOiAiU3RhcnQgVGltZSAoc2Vjb25kcykiIH0sCgl7IHR5cGU6ICJ0b2dnbGUiLCBhY3Rpb25faWQ6ICJhdXRvcGxheSIsIGxhYmVsOiAiQXV0b3BsYXkiIH0sCgl7CgkJdHlwZTogInNlbGVjdCIsCgkJYWN0aW9uX2lkOiAic2l6ZSIsCgkJbGFiZWw6ICJTaXplIiwKCQlvcHRpb25zOiBbCgkJCXsgbGFiZWw6ICJTbWFsbCIsIHZhbHVlOiAic21hbGwiIH0sCgkJCXsgbGFiZWw6ICJNZWRpdW0iLCB2YWx1ZTogIm1lZGl1bSIgfSwKCQkJeyBsYWJlbDogIkxhcmdlIiwgdmFsdWU6ICJsYXJnZSIgfSwKCQldLAoJfSwKXTsKYGBgCgpTZWUgW0Jsb2NrIEtpdF0oLi9ibG9jay1raXQubWQpIGZvciBlbGVtZW50IHNoYXBlcy4gVGhlIFBvcnRhYmxlIFRleHQgZWRpdG9yIGFkZGl0aW9uYWxseSByZW5kZXJzIGByZXBlYXRlcmAgYW5kIGBtZWRpYV9waWNrZXJgIGF1dGhvcmluZyBlbGVtZW50cy4gRG8gbm90IGFzc3VtZSBldmVyeSBlbGVtZW50IGFjY2VwdGVkIGJ5IHRoZSBzaGFyZWQgdW5pb24gcmVuZGVycyBpbiBldmVyeSBCbG9jayBLaXQgc3VyZmFjZS4KClRoZSBgYWN0aW9uX2lkYCBvZiBlYWNoIGZpZWxkIGJlY29tZXMgYSBrZXkgaW4gdGhlIFBvcnRhYmxlIFRleHQgYmxvY2sgZGF0YS4gVGhlIGZpZWxkIHdpdGggYGFjdGlvbl9pZDogImlkImAgaXMgdHJlYXRlZCBhcyB0aGUgcHJpbWFyeSBpZGVudGlmaWVyICh0eXBpY2FsbHkgdGhlIFVSTCkuCgojIyMgRGF0YSBGbG93CgoxLiBVc2VyIHR5cGVzIGAvYCBpbiB0aGUgZWRpdG9yIGFuZCBzZWxlY3RzIGEgYmxvY2sgdHlwZQoyLiBNb2RhbCBvcGVucyB3aXRoIEJsb2NrIEtpdCBmb3JtIChvciBzaW1wbGUgVVJMIGlucHV0IGlmIG5vIGZpZWxkcykKMy4gVXNlciBmaWxscyBpbiBmaWVsZHMgYW5kIHN1Ym1pdHMKNC4gQmxvY2sgaXMgaW5zZXJ0ZWQgd2l0aCBgX3R5cGVgIHNldCB0byB0aGUgYmxvY2sgdHlwZSBhbmQgZmllbGQgdmFsdWVzIGFzIHByb3BlcnRpZXMKNS4gRWRpdGluZyBhbiBleGlzdGluZyBibG9jayByZS1vcGVucyB0aGUgbW9kYWwgcHJlLXBvcHVsYXRlZAoKUG9ydGFibGUgVGV4dCBvdXRwdXQ6CgpgYGBqc29uCnsKCSJfdHlwZSI6ICJ5b3V0dWJlIiwKCSJfa2V5IjogImFiYzEyMyIsCgkiaWQiOiAiaHR0cHM6Ly95b3V0dWJlLmNvbS93YXRjaD92PWRRdzR3OVdnWGNRIiwKCSJ0aXRsZSI6ICJOZXZlciBHb25uYSBHaXZlIFlvdSBVcCIsCgkicG9zdGVyIjogImh0dHBzOi8vaW1nLnlvdXR1YmUuY29tL3ZpL2RRdzR3OVdnWGNRLzAuanBnIgp9CmBgYAoKIyMgU2l0ZS1TaWRlIFJlbmRlcmluZwoKVG8gcmVuZGVyIGJsb2NrIHR5cGVzIG9uIHRoZSBzaXRlLCBleHBvcnQgQXN0cm8gY29tcG9uZW50cyBmcm9tIGEgYGNvbXBvbmVudHNFbnRyeWAuCgojIyMgQ29tcG9uZW50IEZpbGUKCmBgYHR5cGVzY3JpcHQKLy8gc3JjL2FzdHJvL2luZGV4LnRzCmltcG9ydCBZb3VUdWJlIGZyb20gIi4vWW91VHViZS5hc3RybyI7CmltcG9ydCBDb2RlUGVuIGZyb20gIi4vQ29kZVBlbi5hc3RybyI7CgovLyBUaGlzIGV4cG9ydCBuYW1lIGlzIHJlcXVpcmVkCmV4cG9ydCBjb25zdCBibG9ja0NvbXBvbmVudHMgPSB7Cgl5b3V0dWJlOiBZb3VUdWJlLAoJY29kZXBlbjogQ29kZVBlbiwKfTsKYGBgCgojIyMgQXN0cm8gQ29tcG9uZW50CgpgYGBhc3RybwotLS0KLy8gc3JjL2FzdHJvL1lvdVR1YmUuYXN0cm8KY29uc3QgeyBpZCwgdGl0bGUsIHBvc3RlciB9ID0gQXN0cm8ucHJvcHMubm9kZTsKCi8vIEV4dHJhY3QgdmlkZW8gSUQgZnJvbSBVUkwKY29uc3QgdmlkZW9JZCA9IGlkPy5tYXRjaCgvKD86dj18eW91dHVcLmJlXC8pKFteJl0rKS8pPy5bMV0gPz8gaWQ7Ci0tLQoKPGRpdiBjbGFzcz0ieW91dHViZS1lbWJlZCI+Cgk8aWZyYW1lCgkJc3JjPXtgaHR0cHM6Ly93d3cueW91dHViZS1ub2Nvb2tpZS5jb20vZW1iZWQvJHt2aWRlb0lkfWB9CgkJdGl0bGU9e3RpdGxlIHx8ICJZb3VUdWJlIFZpZGVvIn0KCQlhbGxvdz0iYWNjZWxlcm9tZXRlcjsgYXV0b3BsYXk7IGNsaXBib2FyZC13cml0ZTsgZW5jcnlwdGVkLW1lZGlhOyBneXJvc2NvcGU7IHBpY3R1cmUtaW4tcGljdHVyZSIKCQlhbGxvd2Z1bGxzY3JlZW4KCT48L2lmcmFtZT4KPC9kaXY+CmBgYAoKQ29tcG9uZW50IHJlY2VpdmVzIGBBc3Ryby5wcm9wcy5ub2RlYCB3aXRoIHRoZSBmdWxsIGJsb2NrIGRhdGEuCgojIyMgUGx1Z2luIERlc2NyaXB0b3IKClNldCBgY29tcG9uZW50c0VudHJ5YCBpbiB0aGUgZGVzY3JpcHRvcjoKCmBgYHR5cGVzY3JpcHQKZXhwb3J0IGZ1bmN0aW9uIG15UGx1Z2luKG9wdGlvbnMgPSB7fSk6IFBsdWdpbkRlc2NyaXB0b3IgewoJcmV0dXJuIHsKCQlpZDogIm15LXBsdWdpbiIsCgkJZW50cnlwb2ludDogIkBteS1vcmcvbXktcGx1Z2luIiwKCQljb21wb25lbnRzRW50cnk6ICJAbXktb3JnL215LXBsdWdpbi9hc3RybyIsCgkJdmVyc2lvbjogIjEuMC4wIiwKCQlvcHRpb25zLAoJfTsKfQpgYGAKCiMjIyBQYWNrYWdlIEV4cG9ydHMKCkFkZCB0aGUgYC4vYXN0cm9gIGV4cG9ydDoKCmBgYGpzb24KewoJImV4cG9ydHMiOiB7CgkJIi4iOiB7ICJ0eXBlcyI6ICIuL2Rpc3QvaW5kZXguZC50cyIsICJpbXBvcnQiOiAiLi9kaXN0L2luZGV4LmpzIiB9LAoJCSIuL2FkbWluIjogeyAidHlwZXMiOiAiLi9kaXN0L2FkbWluLmQudHMiLCAiaW1wb3J0IjogIi4vZGlzdC9hZG1pbi5qcyIgfSwKCQkiLi9hc3RybyI6IHsKCQkJInR5cGVzIjogIi4vZGlzdC9hc3Ryby9pbmRleC5kLnRzIiwKCQkJImltcG9ydCI6ICIuL2Rpc3QvYXN0cm8vaW5kZXguanMiCgkJfQoJfQp9CmBgYAoKIyMjIEF1dG8tV2lyaW5nCgpQbHVnaW4gYmxvY2sgY29tcG9uZW50cyBhcmUgYXV0b21hdGljYWxseSBtZXJnZWQgaW50byBgPFBvcnRhYmxlVGV4dD5gIG9uIHRoZSBzaXRlLiBNZXJnZSBvcmRlcjoKCjEuIEVtRGFzaCBkZWZhdWx0cyAobG93ZXN0IHByaW9yaXR5KQoyLiBQbHVnaW4gYmxvY2sgY29tcG9uZW50cwozLiBVc2VyLXByb3ZpZGVkIGNvbXBvbmVudHMgKGhpZ2hlc3QgcHJpb3JpdHkpCgpTaXRlIGF1dGhvcnMgZG9uJ3QgbmVlZCB0byBpbXBvcnQgYW55dGhpbmcuIFVzZXIgY29tcG9uZW50cyB0YWtlIHByZWNlZGVuY2Ugb3ZlciBwbHVnaW4gZGVmYXVsdHMuCgojIyBDb21wbGV0ZSBFeGFtcGxlCgpgYGB0eXBlc2NyaXB0Ci8vIHNyYy9pbmRleC50cwppbXBvcnQgeyBkZWZpbmVQbHVnaW4gfSBmcm9tICJlbWRhc2giOwppbXBvcnQgdHlwZSB7IFBsdWdpbkRlc2NyaXB0b3IgfSBmcm9tICJlbWRhc2giOwoKZXhwb3J0IGZ1bmN0aW9uIGVtYmVkc1BsdWdpbihvcHRpb25zID0ge30pOiBQbHVnaW5EZXNjcmlwdG9yIHsKCXJldHVybiB7CgkJaWQ6ICJlbWJlZHMiLAoJCXZlcnNpb246ICIxLjAuMCIsCgkJZW50cnlwb2ludDogIkBteS1vcmcvcGx1Z2luLWVtYmVkcyIsCgkJY29tcG9uZW50c0VudHJ5OiAiQG15LW9yZy9wbHVnaW4tZW1iZWRzL2FzdHJvIiwKCQlvcHRpb25zLAoJfTsKfQoKZXhwb3J0IGZ1bmN0aW9uIGNyZWF0ZVBsdWdpbigpIHsKCXJldHVybiBkZWZpbmVQbHVnaW4oewoJCWlkOiAiZW1iZWRzIiwKCQl2ZXJzaW9uOiAiMS4wLjAiLAoKCQlhZG1pbjogewoJCQlwb3J0YWJsZVRleHRCbG9ja3M6IFsKCQkJCXsKCQkJCQl0eXBlOiAieW91dHViZSIsCgkJCQkJbGFiZWw6ICJZb3VUdWJlIFZpZGVvIiwKCQkJCQlpY29uOiAidmlkZW8iLAoJCQkJCXBsYWNlaG9sZGVyOiAiUGFzdGUgWW91VHViZSBVUkwuLi4iLAoJCQkJCWZpZWxkczogWwoJCQkJCQl7IHR5cGU6ICJ0ZXh0X2lucHV0IiwgYWN0aW9uX2lkOiAiaWQiLCBsYWJlbDogIllvdVR1YmUgVVJMIiB9LAoJCQkJCQl7IHR5cGU6ICJ0ZXh0X2lucHV0IiwgYWN0aW9uX2lkOiAidGl0bGUiLCBsYWJlbDogIlRpdGxlIiB9LAoJCQkJCQl7CgkJCQkJCQl0eXBlOiAidGV4dF9pbnB1dCIsCgkJCQkJCQlhY3Rpb25faWQ6ICJwb3N0ZXIiLAoJCQkJCQkJbGFiZWw6ICJQb3N0ZXIgSW1hZ2UgVVJMIiwKCQkJCQkJfSwKCQkJCQldLAoJCQkJfSwKCQkJCXsKCQkJCQl0eXBlOiAibGlua1ByZXZpZXciLAoJCQkJCWxhYmVsOiAiTGluayBQcmV2aWV3IiwKCQkJCQlpY29uOiAibGluay1leHRlcm5hbCIsCgkJCQkJcGxhY2Vob2xkZXI6ICJQYXN0ZSBhbnkgVVJMLi4uIiwKCQkJCX0sCgkJCV0sCgkJfSwKCX0pOwp9CgpleHBvcnQgZGVmYXVsdCBjcmVhdGVQbHVnaW47CmBgYAoKYGBgdHlwZXNjcmlwdAovLyBzcmMvYXN0cm8vaW5kZXgudHMKaW1wb3J0IFlvdVR1YmUgZnJvbSAiLi9Zb3VUdWJlLmFzdHJvIjsKaW1wb3J0IExpbmtQcmV2aWV3IGZyb20gIi4vTGlua1ByZXZpZXcuYXN0cm8iOwoKZXhwb3J0IGNvbnN0IGJsb2NrQ29tcG9uZW50cyA9IHsKCXlvdXR1YmU6IFlvdVR1YmUsCglsaW5rUHJldmlldzogTGlua1ByZXZpZXcsCn07CmBgYAo=
+# Portable Text Block Types
+
+Plugin CLI and registry packages cannot define Portable Text block types. `emdash-plugin build` warns that `portableTextBlocks` require trusted mode and omits them from the sandboxed manifest. Site-side rendering also needs an Astro `componentsEntry`, which is loaded with the site at build time.
+
+Core can forward declarative block metadata from a config-declared standard plugin descriptor, but that path does not make the definition portable through the registry and does not provide a site renderer. Treat custom Portable Text blocks as a native-plugin feature unless the site owns both the descriptor and the rendering components and has verified the complete editor-to-render path.
+
+Plugins can add custom block types to the Portable Text editor. These appear in the slash command menu and can be inserted into any `portableText` field.
+
+## Declaring Block Types
+
+In `definePlugin()`, declare blocks under `admin.portableTextBlocks`:
+
+```typescript
+admin: {
+	portableTextBlocks: [
+		{
+			type: "youtube",
+			label: "YouTube Video",
+			icon: "video",
+			placeholder: "Paste YouTube URL...",
+			fields: [
+				{ type: "text_input", action_id: "id", label: "YouTube URL" },
+				{ type: "text_input", action_id: "title", label: "Title" },
+				{ type: "text_input", action_id: "poster", label: "Poster Image URL" },
+			],
+		},
+		{
+			type: "codepen",
+			label: "CodePen",
+			icon: "code",
+			placeholder: "Paste CodePen URL...",
+		},
+	],
+}
+```
+
+### Block Config Fields
+
+| Field         | Type     | Description                                     |
+| ------------- | -------- | ----------------------------------------------- |
+| `type`        | `string` | Block type name (used in PT `_type`). Required. |
+| `label`       | `string` | Display name in slash command menu. Required.   |
+| `icon`        | `string` | Icon key. Optional.                             |
+| `description` | `string` | Description in slash command menu. Optional.    |
+| `placeholder` | `string` | Input placeholder text. Optional.               |
+| `fields`      | `array`  | Block Kit form fields for editing UI. Optional. |
+
+### Icons
+
+Named icons: `video`, `code`, `link`, `link-external`. Unknown or missing falls back to a generic cube icon.
+
+### Fields
+
+When `fields` is declared, the editor renders a Block Kit form for editing. When omitted, a simple URL input is shown.
+
+Fields use Block Kit element syntax:
+
+```typescript
+fields: [
+	{
+		type: "text_input",
+		action_id: "id",
+		label: "URL",
+		placeholder: "https://...",
+	},
+	{ type: "text_input", action_id: "title", label: "Title" },
+	{ type: "text_input", action_id: "poster", label: "Poster Image" },
+	{ type: "number_input", action_id: "start", label: "Start Time (seconds)" },
+	{ type: "toggle", action_id: "autoplay", label: "Autoplay" },
+	{
+		type: "select",
+		action_id: "size",
+		label: "Size",
+		options: [
+			{ label: "Small", value: "small" },
+			{ label: "Medium", value: "medium" },
+			{ label: "Large", value: "large" },
+		],
+	},
+];
+```
+
+See [Block Kit](./block-kit.md) for element shapes. The Portable Text editor additionally renders `repeater` and `media_picker` authoring elements. Do not assume every element accepted by the shared union renders in every Block Kit surface.
+
+The `action_id` of each field becomes a key in the Portable Text block data. The field with `action_id: "id"` is treated as the primary identifier (typically the URL).
+
+### Data Flow
+
+1. User types `/` in the editor and selects a block type
+2. Modal opens with Block Kit form (or simple URL input if no fields)
+3. User fills in fields and submits
+4. Block is inserted with `_type` set to the block type and field values as properties
+5. Editing an existing block re-opens the modal pre-populated
+
+Portable Text output:
+
+```json
+{
+	"_type": "youtube",
+	"_key": "abc123",
+	"id": "https://youtube.com/watch?v=dQw4w9WgXcQ",
+	"title": "Never Gonna Give You Up",
+	"poster": "https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"
+}
+```
+
+## Site-Side Rendering
+
+To render block types on the site, export Astro components from a `componentsEntry`.
+
+### Component File
+
+```typescript
+// src/astro/index.ts
+import YouTube from "./YouTube.astro";
+import CodePen from "./CodePen.astro";
+
+// This export name is required
+export const blockComponents = {
+	youtube: YouTube,
+	codepen: CodePen,
+};
+```
+
+### Astro Component
+
+```astro
+---
+// src/astro/YouTube.astro
+const { id, title, poster } = Astro.props.node;
+
+// Extract video ID from URL
+const videoId = id?.match(/(?:v=|youtu\.be\/)([^&]+)/)?.[1] ?? id;
+---
+
+<div class="youtube-embed">
+	<iframe
+		src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+		title={title || "YouTube Video"}
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen
+	></iframe>
+</div>
+```
+
+Component receives `Astro.props.node` with the full block data.
+
+### Plugin Descriptor
+
+Set `componentsEntry` in the descriptor:
+
+```typescript
+export function myPlugin(options = {}): PluginDescriptor {
+	return {
+		id: "my-plugin",
+		entrypoint: "@my-org/my-plugin",
+		componentsEntry: "@my-org/my-plugin/astro",
+		version: "1.0.0",
+		options,
+	};
+}
+```
+
+### Package Exports
+
+Add the `./astro` export:
+
+```json
+{
+	"exports": {
+		".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+		"./admin": { "types": "./dist/admin.d.ts", "import": "./dist/admin.js" },
+		"./astro": {
+			"types": "./dist/astro/index.d.ts",
+			"import": "./dist/astro/index.js"
+		}
+	}
+}
+```
+
+### Auto-Wiring
+
+Plugin block components are automatically merged into `<PortableText>` on the site. Merge order:
+
+1. EmDash defaults (lowest priority)
+2. Plugin block components
+3. User-provided components (highest priority)
+
+Site authors don't need to import anything. User components take precedence over plugin defaults.
+
+## Complete Example
+
+```typescript
+// src/index.ts
+import { definePlugin } from "emdash";
+import type { PluginDescriptor } from "emdash";
+
+export function embedsPlugin(options = {}): PluginDescriptor {
+	return {
+		id: "embeds",
+		version: "1.0.0",
+		entrypoint: "@my-org/plugin-embeds",
+		componentsEntry: "@my-org/plugin-embeds/astro",
+		options,
+	};
+}
+
+export function createPlugin() {
+	return definePlugin({
+		id: "embeds",
+		version: "1.0.0",
+
+		admin: {
+			portableTextBlocks: [
+				{
+					type: "youtube",
+					label: "YouTube Video",
+					icon: "video",
+					placeholder: "Paste YouTube URL...",
+					fields: [
+						{ type: "text_input", action_id: "id", label: "YouTube URL" },
+						{ type: "text_input", action_id: "title", label: "Title" },
+						{
+							type: "text_input",
+							action_id: "poster",
+							label: "Poster Image URL",
+						},
+					],
+				},
+				{
+					type: "linkPreview",
+					label: "Link Preview",
+					icon: "link-external",
+					placeholder: "Paste any URL...",
+				},
+			],
+		},
+	});
+}
+
+export default createPlugin;
+```
+
+```typescript
+// src/astro/index.ts
+import YouTube from "./YouTube.astro";
+import LinkPreview from "./LinkPreview.astro";
+
+export const blockComponents = {
+	youtube: YouTube,
+	linkPreview: LinkPreview,
+};
+```

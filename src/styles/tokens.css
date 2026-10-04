@@ -1,1 +1,146 @@
-LyoKICB0b2tlbnMuY3NzIC0tIHRoZSBkZXNpZ24gdG9rZW5zIGZvciB0aGlzIHRlbXBsYXRlLiBUaGVzZSBhcmUgdGhlCiAgZGVmYXVsdHM7IHRvIGN1c3RvbWl6ZSB0aGUgc2l0ZSwgb3ZlcnJpZGUgYW55IHZhcmlhYmxlIGluCiAgc3JjL3N0eWxlcy90aGVtZS5jc3MgcmF0aGVyIHRoYW4gZWRpdGluZyB0aGlzIGZpbGUuIERlY2xhcmF0aW9ucyBpbgogIHRoZW1lLmNzcyBhcmUgdW5sYXllcmVkLCBzbyB0aGV5IGFsd2F5cyBiZWF0IHRoZXNlIEBsYXllciBiYXNlCiAgZGVmYXVsdHMgLS0gbm8gc3BlY2lmaWNpdHkgdHJpY2tzIG5lZWRlZC4KCiAgQ29sb3JzIHVzZSBsaWdodC1kYXJrKCk6IHRoZSBmaXJzdCB2YWx1ZSBhcHBsaWVzIGluIGxpZ2h0IG1vZGUsIHRoZQogIHNlY29uZCBpbiBkYXJrIG1vZGUuIE92ZXJyaWRpbmcgYSBjb2xvciB3aXRoIGEgcGxhaW4gdmFsdWUgY2hhbmdlcwogIGJvdGggbW9kZXMgYXQgb25jZTsgdXNlIGxpZ2h0LWRhcmsoPGxpZ2h0PiwgPGRhcms+KSBpbiBhbiBvdmVycmlkZSB0bwogIGtlZXAgdGhlbSBkaXN0aW5jdC4KCiAgLS1mb250LWJvZHkgaXMgZGVmaW5lZCBieSB0aGUgZm9udCBwaXBlbGluZSBpbiBhc3Ryby5jb25maWcubWpzLCBub3QKICBoZXJlLiBUbyBzd2FwIHRoZSBsb2FkZWQgd2ViZm9udCwgZWRpdCB0aGUgZm9udHMgZW50cnkgdGhlcmUuIFRvIHVzZSBhCiAgc3lzdGVtIGZvbnQsIG9yIGEgZGlmZmVyZW50IGZhY2UgZm9yIGhlYWRpbmdzIG9ubHksIG92ZXJyaWRlCiAgLS1mb250LWJvZHkgLyAtLWZvbnQtaGVhZGluZyBpbiB0aGVtZS5jc3MuCiovCgpAbGF5ZXIgYmFzZSB7Cgk6cm9vdCB7CgkJY29sb3Itc2NoZW1lOiBsaWdodCBkYXJrOwoKCQkvKiBDb2xvcnMgKi8KCQktLWNvbG9yLWJnOiBsaWdodC1kYXJrKCNmZmZmZmYsICMwZDBkMGQpOwoJCS0tY29sb3ItYmctc3VidGxlOiBsaWdodC1kYXJrKCNmYWZhZmEsICMxNDE0MTQpOwoJCS0tY29sb3ItdGV4dDogbGlnaHQtZGFyaygjMWExYTFhLCAjZWRlZGVkKTsKCQktLWNvbG9yLXRleHQtc2Vjb25kYXJ5OiBsaWdodC1kYXJrKCM1MjUyNTIsICNhMGEwYTApOwoJCS0tY29sb3ItbXV0ZWQ6IGxpZ2h0LWRhcmsoIzhiOGI4YiwgIzZiNmI2Yik7CgkJLS1jb2xvci1ib3JkZXI6IGxpZ2h0LWRhcmsoI2U1ZTVlNSwgIzJhMmEyYSk7CgkJLS1jb2xvci1ib3JkZXItc3VidGxlOiBsaWdodC1kYXJrKCNmMGYwZjAsICMxZjFmMWYpOwoJCS0tY29sb3Itc3VyZmFjZTogbGlnaHQtZGFyaygjZjdmN2Y3LCAjMTgxODE4KTsKCQktLWNvbG9yLWJyYW5kOiBsaWdodC1kYXJrKCMwMDY2Y2MsICM0ZDlmZmYpOwoJCS0tY29sb3ItYnJhbmQtaG92ZXI6IGxpZ2h0LWRhcmsoIzAwNTJhMywgIzZlYjBmZik7CgkJLS1jb2xvci1vbi1icmFuZDogd2hpdGU7CgkJLS1jb2xvci1icmFuZC1yaW5nOiBjb2xvci1taXgoaW4gc3JnYiwgdmFyKC0tY29sb3ItYnJhbmQpIDI1JSwgdHJhbnNwYXJlbnQpOwoKCQkvKiBFbURhc2ggc2VhcmNoIHRoZW1pbmcgKi8KCQktLWVtZGFzaC1zZWFyY2gtYmc6IHZhcigtLWNvbG9yLWJnKTsKCQktLWVtZGFzaC1zZWFyY2gtdGV4dDogdmFyKC0tY29sb3ItdGV4dCk7CgkJLS1lbWRhc2gtc2VhcmNoLW11dGVkOiB2YXIoLS1jb2xvci1tdXRlZCk7CgkJLS1lbWRhc2gtc2VhcmNoLWJvcmRlcjogdmFyKC0tY29sb3ItYm9yZGVyKTsKCQktLWVtZGFzaC1zZWFyY2gtaG92ZXI6IHZhcigtLWNvbG9yLXN1cmZhY2UpOwoJCS0tZW1kYXNoLXNlYXJjaC1oaWdobGlnaHQ6IHZhcigtLWNvbG9yLXRleHQpOwoKCQkvKiBUeXBvZ3JhcGh5ICovCgkJLS1mb250LWhlYWRpbmc6IHZhcigtLWZvbnQtYm9keSk7CgkJLS1mb250LXdlaWdodC1oZWFkaW5nOiA2MDA7IC8qIGgyLWg2LCBjYXJkIGFuZCBsaXN0IHRpdGxlcyAqLwoJCS0tZm9udC13ZWlnaHQtZGlzcGxheTogNzAwOyAvKiBoMSBhbmQgbGFyZ2UgcGFnZSB0aXRsZXMgKi8KCgkJLyogVHlwZSBzY2FsZSAqLwoJCS0tZm9udC1zaXplLXhzOiAwLjgxMjVyZW07CgkJLS1mb250LXNpemUtc206IDAuODc1cmVtOwoJCS0tZm9udC1zaXplLWJhc2U6IDFyZW07CgkJLS1mb250LXNpemUtbGc6IDEuMTI1cmVtOwoJCS0tZm9udC1zaXplLXhsOiAxLjI1cmVtOwoJCS0tZm9udC1zaXplLTJ4bDogMS41cmVtOwoJCS0tZm9udC1zaXplLTN4bDogMnJlbTsKCQktLWZvbnQtc2l6ZS00eGw6IDIuNXJlbTsKCQktLWZvbnQtc2l6ZS01eGw6IDMuNXJlbTsKCgkJLyogTGluZSBoZWlnaHRzICovCgkJLS1sZWFkaW5nLXRpZ2h0OiAxLjE1OwoJCS0tbGVhZGluZy1zbnVnOiAxLjM7CgkJLS1sZWFkaW5nLW5vcm1hbDogMS41OwoJCS0tbGVhZGluZy1yZWxheGVkOiAxLjc7CgoJCS8qIExldHRlciBzcGFjaW5nICovCgkJLS10cmFja2luZy10aWdodDogLTAuMDNlbTsgLyogaDEgYW5kIGxhcmdlIHRpdGxlcyAqLwoJCS0tdHJhY2tpbmctc251ZzogLTAuMDJlbTsgLyogaDItaDYsIHNpdGUvY2FyZCB0aXRsZXMgKi8KCQktLXRyYWNraW5nLXdpZGU6IDAuMDZlbTsgLyogbWV0YSBsYWJlbHMsIFRPQy93aWRnZXQgdGl0bGVzICovCgkJLS10cmFja2luZy13aWRlcjogMC4wOGVtOyAvKiBmb290ZXIgaGVhZGluZ3MsIHNlY3Rpb24gbGFiZWxzICovCgoJCS8qIFNwYWNpbmcgKi8KCQktLXNwYWNpbmctMTogMC4yNXJlbTsKCQktLXNwYWNpbmctMjogMC41cmVtOwoJCS0tc3BhY2luZy0zOiAwLjc1cmVtOwoJCS0tc3BhY2luZy00OiAxcmVtOwoJCS0tc3BhY2luZy01OiAxLjI1cmVtOwoJCS0tc3BhY2luZy02OiAxLjVyZW07CgkJLS1zcGFjaW5nLTg6IDJyZW07CgkJLS1zcGFjaW5nLTEwOiAyLjVyZW07CgkJLS1zcGFjaW5nLTEyOiAzcmVtOwoJCS0tc3BhY2luZy0xNjogNHJlbTsKCQktLXNwYWNpbmctMjA6IDVyZW07CgkJLS1zcGFjaW5nLTI0OiA2cmVtOwoKCQkvKiBMZWdhY3kgc3BhY2luZyBhbGlhc2VzICovCgkJLS1zcGFjaW5nLXhzOiB2YXIoLS1zcGFjaW5nLTEpOwoJCS0tc3BhY2luZy1zbTogdmFyKC0tc3BhY2luZy0yKTsKCQktLXNwYWNpbmctbWQ6IHZhcigtLXNwYWNpbmctNCk7CgkJLS1zcGFjaW5nLWxnOiB2YXIoLS1zcGFjaW5nLTYpOwoJCS0tc3BhY2luZy14bDogdmFyKC0tc3BhY2luZy04KTsKCQktLXNwYWNpbmctMnhsOiB2YXIoLS1zcGFjaW5nLTEyKTsKCQktLXNwYWNpbmctM3hsOiB2YXIoLS1zcGFjaW5nLTE2KTsKCgkJLyogTGF5b3V0ICovCgkJLS1jb250ZW50LXdpZHRoOiA2ODBweDsgLyogYXJ0aWNsZS9wYWdlIGJvZHkgY29sdW1uICovCgkJLS13aWRlLXdpZHRoOiAxMjAwcHg7IC8qIG1heCBjb250YWluZXIgKGhvbWUsIGFyY2hpdmVzKSAqLwoJCS0tbWF4LXdpZHRoOiB2YXIoLS1jb250ZW50LXdpZHRoKTsKCQktLWd1dHRlci13aWR0aDogMjAwcHg7IC8qIHJpZ2h0IHNpZGViYXIgY29sdW1uIChUT0MpIG9uIGFydGljbGUgcGFnZXMgKi8KCQktLW1ldGEtY29sLXdpZHRoOiAxODBweDsgLyogbGVmdCBtZXRhIGNvbHVtbiBvbiBhcnRpY2xlIHBhZ2VzICovCgkJLS1uYXYtaGVpZ2h0OiA2NHB4OyAvKiBzdGlja3kgaGVhZGVyIGhlaWdodCAqLwoJCS0tc2VhcmNoLWlucHV0LXdpZHRoOiAxODBweDsgLyogbmF2IHNlYXJjaCBib3ggd2lkdGggKi8KCgkJLyogQm9yZGVycyAmIHJhZGl1cyAqLwoJCS0tcmFkaXVzOiA0cHg7CgkJLS1yYWRpdXMtbGc6IDhweDsKCgkJLyogVHJhbnNpdGlvbnMgKi8KCQktLXRyYW5zaXRpb24tZmFzdDogMTIwbXMgZWFzZTsKCQktLXRyYW5zaXRpb24tYmFzZTogMTgwbXMgZWFzZTsKCgkJLyogQXZhdGFycyAqLwoJCS0tYXZhdGFyLXNpemUteHM6IDE4cHg7IC8qIGNhcmQgYnlsaW5lIGF2YXRhcnMgKi8KCQktLWF2YXRhci1zaXplLXNtOiAyMHB4OyAvKiBwb3N0IGxpc3QgYnlsaW5lIGF2YXRhcnMgKi8KCQktLWF2YXRhci1zaXplLW1kOiAyNHB4OyAvKiBmZWF0dXJlZCBwb3N0IGJ5bGluZSBhdmF0YXJzICovCgkJLS1hdmF0YXItc2l6ZS1sZzogMzJweDsgLyogc2luZ2xlIHBvc3QgYnlsaW5lIGF2YXRhcnMgKi8KCgkJLyogU2hhZG93cyAqLwoJCS0tc2hhZG93LXNtOiAwIDFweCAycHggcmdiYSgwLCAwLCAwLCAwLjA1KTsKCQktLXNoYWRvdy1sZzogMCA4cHggMzBweCByZ2JhKDAsIDAsIDAsIDAuMTIpOwoKCQkvKiBNaXNjICovCgkJLS10YWctcGFkZGluZy15OiAycHg7IC8qIHZlcnRpY2FsIHBhZGRpbmcgb24gdGFnIHBpbGxzICovCgl9CgoJLyoKCSAqIExpZ2h0LW1vZGUgdmFsdWVzIGZvciBicm93c2VycyB3aXRob3V0IGxpZ2h0LWRhcmsoKSAoU2FmYXJpIDwgMTcuNSwKCSAqIENocm9tZSA8IDEyMykuIE11c3QgbWlycm9yIHRoZSBsaWdodCB2YWx1ZXMgYWJvdmUuCgkgKi8KCUBzdXBwb3J0cyBub3QgKGNvbG9yOiBsaWdodC1kYXJrKCMwMDAsICNmZmYpKSB7CgkJOnJvb3QgewoJCQljb2xvci1zY2hlbWU6IGxpZ2h0OwoJCQktLWNvbG9yLWJnOiAjZmZmZmZmOwoJCQktLWNvbG9yLWJnLXN1YnRsZTogI2ZhZmFmYTsKCQkJLS1jb2xvci10ZXh0OiAjMWExYTFhOwoJCQktLWNvbG9yLXRleHQtc2Vjb25kYXJ5OiAjNTI1MjUyOwoJCQktLWNvbG9yLW11dGVkOiAjOGI4YjhiOwoJCQktLWNvbG9yLWJvcmRlcjogI2U1ZTVlNTsKCQkJLS1jb2xvci1ib3JkZXItc3VidGxlOiAjZjBmMGYwOwoJCQktLWNvbG9yLXN1cmZhY2U6ICNmN2Y3Zjc7CgkJCS0tY29sb3ItYnJhbmQ6ICMwMDY2Y2M7CgkJCS0tY29sb3ItYnJhbmQtaG92ZXI6ICMwMDUyYTM7CgkJfQoJfQp9Cg==
+/*
+  tokens.css -- the design tokens for this template. These are the
+  defaults; to customize the site, override any variable in
+  src/styles/theme.css rather than editing this file. Declarations in
+  theme.css are unlayered, so they always beat these @layer base
+  defaults -- no specificity tricks needed.
+
+  Colors use light-dark(): the first value applies in light mode, the
+  second in dark mode. Overriding a color with a plain value changes
+  both modes at once; use light-dark(<light>, <dark>) in an override to
+  keep them distinct.
+
+  --font-body is defined by the font pipeline in astro.config.mjs, not
+  here. To swap the loaded webfont, edit the fonts entry there. To use a
+  system font, or a different face for headings only, override
+  --font-body / --font-heading in theme.css.
+*/
+
+@layer base {
+	:root {
+		color-scheme: light dark;
+
+		/* Colors */
+		--color-bg: light-dark(#ffffff, #0d0d0d);
+		--color-bg-subtle: light-dark(#fafafa, #141414);
+		--color-text: light-dark(#1a1a1a, #ededed);
+		--color-text-secondary: light-dark(#525252, #a0a0a0);
+		--color-muted: light-dark(#8b8b8b, #6b6b6b);
+		--color-border: light-dark(#e5e5e5, #2a2a2a);
+		--color-border-subtle: light-dark(#f0f0f0, #1f1f1f);
+		--color-surface: light-dark(#f7f7f7, #181818);
+		--color-brand: light-dark(#0066cc, #4d9fff);
+		--color-brand-hover: light-dark(#0052a3, #6eb0ff);
+		--color-on-brand: white;
+		--color-brand-ring: color-mix(in srgb, var(--color-brand) 25%, transparent);
+
+		/* EmDash search theming */
+		--emdash-search-bg: var(--color-bg);
+		--emdash-search-text: var(--color-text);
+		--emdash-search-muted: var(--color-muted);
+		--emdash-search-border: var(--color-border);
+		--emdash-search-hover: var(--color-surface);
+		--emdash-search-highlight: var(--color-text);
+
+		/* Typography */
+		--font-heading: var(--font-body);
+		--font-weight-heading: 600; /* h2-h6, card and list titles */
+		--font-weight-display: 700; /* h1 and large page titles */
+
+		/* Type scale */
+		--font-size-xs: 0.8125rem;
+		--font-size-sm: 0.875rem;
+		--font-size-base: 1rem;
+		--font-size-lg: 1.125rem;
+		--font-size-xl: 1.25rem;
+		--font-size-2xl: 1.5rem;
+		--font-size-3xl: 2rem;
+		--font-size-4xl: 2.5rem;
+		--font-size-5xl: 3.5rem;
+
+		/* Line heights */
+		--leading-tight: 1.15;
+		--leading-snug: 1.3;
+		--leading-normal: 1.5;
+		--leading-relaxed: 1.7;
+
+		/* Letter spacing */
+		--tracking-tight: -0.03em; /* h1 and large titles */
+		--tracking-snug: -0.02em; /* h2-h6, site/card titles */
+		--tracking-wide: 0.06em; /* meta labels, TOC/widget titles */
+		--tracking-wider: 0.08em; /* footer headings, section labels */
+
+		/* Spacing */
+		--spacing-1: 0.25rem;
+		--spacing-2: 0.5rem;
+		--spacing-3: 0.75rem;
+		--spacing-4: 1rem;
+		--spacing-5: 1.25rem;
+		--spacing-6: 1.5rem;
+		--spacing-8: 2rem;
+		--spacing-10: 2.5rem;
+		--spacing-12: 3rem;
+		--spacing-16: 4rem;
+		--spacing-20: 5rem;
+		--spacing-24: 6rem;
+
+		/* Legacy spacing aliases */
+		--spacing-xs: var(--spacing-1);
+		--spacing-sm: var(--spacing-2);
+		--spacing-md: var(--spacing-4);
+		--spacing-lg: var(--spacing-6);
+		--spacing-xl: var(--spacing-8);
+		--spacing-2xl: var(--spacing-12);
+		--spacing-3xl: var(--spacing-16);
+
+		/* Layout */
+		--content-width: 680px; /* article/page body column */
+		--wide-width: 1200px; /* max container (home, archives) */
+		--max-width: var(--content-width);
+		--gutter-width: 200px; /* right sidebar column (TOC) on article pages */
+		--meta-col-width: 180px; /* left meta column on article pages */
+		--nav-height: 64px; /* sticky header height */
+		--search-input-width: 180px; /* nav search box width */
+
+		/* Borders & radius */
+		--radius: 4px;
+		--radius-lg: 8px;
+
+		/* Transitions */
+		--transition-fast: 120ms ease;
+		--transition-base: 180ms ease;
+
+		/* Avatars */
+		--avatar-size-xs: 18px; /* card byline avatars */
+		--avatar-size-sm: 20px; /* post list byline avatars */
+		--avatar-size-md: 24px; /* featured post byline avatars */
+		--avatar-size-lg: 32px; /* single post byline avatars */
+
+		/* Shadows */
+		--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+		--shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+		/* Misc */
+		--tag-padding-y: 2px; /* vertical padding on tag pills */
+	}
+
+	/*
+	 * Light-mode values for browsers without light-dark() (Safari < 17.5,
+	 * Chrome < 123). Must mirror the light values above.
+	 */
+	@supports not (color: light-dark(#000, #fff)) {
+		:root {
+			color-scheme: light;
+			--color-bg: #ffffff;
+			--color-bg-subtle: #fafafa;
+			--color-text: #1a1a1a;
+			--color-text-secondary: #525252;
+			--color-muted: #8b8b8b;
+			--color-border: #e5e5e5;
+			--color-border-subtle: #f0f0f0;
+			--color-surface: #f7f7f7;
+			--color-brand: #0066cc;
+			--color-brand-hover: #0052a3;
+		}
+	}
+}

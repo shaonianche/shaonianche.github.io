@@ -1,1 +1,234 @@
-IyBDb25maWd1cmF0aW9uCgojIyBhc3Ryby5jb25maWcubWpzCgojIyMgTm9kZS5qcyAobG9jYWwgZGV2ZWxvcG1lbnQgLyBzZWxmLWhvc3RlZCkKCmBgYGphdmFzY3JpcHQKaW1wb3J0IG5vZGUgZnJvbSAiQGFzdHJvanMvbm9kZSI7CmltcG9ydCByZWFjdCBmcm9tICJAYXN0cm9qcy9yZWFjdCI7CmltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gImFzdHJvL2NvbmZpZyI7CmltcG9ydCBlbWRhc2gsIHsgbG9jYWwgfSBmcm9tICJlbWRhc2gvYXN0cm8iOwppbXBvcnQgeyBzcWxpdGUgfSBmcm9tICJlbWRhc2gvZGIiOwoKZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHsKCW91dHB1dDogInNlcnZlciIsCglhZGFwdGVyOiBub2RlKHsgbW9kZTogInN0YW5kYWxvbmUiIH0pLAoJaW1hZ2U6IHsKCQlsYXlvdXQ6ICJjb25zdHJhaW5lZCIsCgkJcmVzcG9uc2l2ZVN0eWxlczogdHJ1ZSwKCX0sCglpbnRlZ3JhdGlvbnM6IFsKCQlyZWFjdCgpLAoJCWVtZGFzaCh7CgkJCWRhdGFiYXNlOiBzcWxpdGUoeyB1cmw6ICJmaWxlOi4vZGF0YS5kYiIgfSksCgkJCXN0b3JhZ2U6IGxvY2FsKHsKCQkJCWRpcmVjdG9yeTogIi4vdXBsb2FkcyIsCgkJCQliYXNlVXJsOiAiL19lbWRhc2gvYXBpL21lZGlhL2ZpbGUiLAoJCQl9KSwKCQl9KSwKCV0sCglkZXZUb29sYmFyOiB7IGVuYWJsZWQ6IGZhbHNlIH0sCn0pOwpgYGAKCiMjIyBSZXZlcnNlIHByb3h5CgpXaGVuIGJlaGluZCBhIFRMUy10ZXJtaW5hdGluZyByZXZlcnNlIHByb3h5LCBgQXN0cm8udXJsYCByZXR1cm5zIHRoZSBpbnRlcm5hbCBhZGRyZXNzIChlLmcuIGBodHRwOi8vbG9jYWxob3N0OjQzMjFgKSBpbnN0ZWFkIG9mIHRoZSBwdWJsaWMgb25lIChgaHR0cHM6Ly9teXNpdGUuZXhhbXBsZS5jb21gKS4gVGhpcyBicmVha3MgcGFzc2tleXMsIENTUkYsIE9BdXRoLCByZWRpcmVjdHMsIGFuZCBtb3JlLgoKKipTdGVwIDE6KiogRGVjbGFyZSBhbGxvd2VkIHB1YmxpYyBob3N0cyB2aWEgW2BzZWN1cml0eS5hbGxvd2VkRG9tYWluc2BdKGh0dHBzOi8vZG9jcy5hc3Ryby5idWlsZC9lbi9yZWZlcmVuY2UvY29uZmlndXJhdGlvbi1yZWZlcmVuY2UvI3NlY3VyaXR5YWxsb3dlZGRvbWFpbnMpIHNvIEFzdHJvIHJlY29uc3RydWN0cyB0aGUgVVJMIGZyb20gYFgtRm9yd2FyZGVkLSpgIGhlYWRlcnMuIEluIGRldiwgYWRkIG1hdGNoaW5nICoqYHZpdGUuc2VydmVyLmFsbG93ZWRIb3N0c2AqKiBvciBWaXRlIHJlamVjdHMgdGhlIHByb3h5IGBIb3N0YC4KCioqU3RlcCAyOioqIElmIHRoZSByZWNvbnN0cnVjdGVkIFVSTCBzdGlsbCBkaXNhZ3JlZXMgd2l0aCB0aGUgYnJvd3NlciAoY29tbW9uIHdpdGggVExTIHRlcm1pbmF0aW9uKSwgc2V0ICoqYHNpdGVVcmxgKio6CgpgYGBqYXZhc2NyaXB0CmVtZGFzaCh7CglzaXRlVXJsOiAiaHR0cHM6Ly9teXNpdGUuZXhhbXBsZS5jb20iLAoJLy8gLi4uCn0pOwpgYGAKCk9yIHZpYSBlbnZpcm9ubWVudCB2YXJpYWJsZSAodXNlZnVsIGZvciBjb250YWluZXIgZGVwbG95bWVudHMpOgoKYGBgYmFzaApFTURBU0hfU0lURV9VUkw9aHR0cHM6Ly9teXNpdGUuZXhhbXBsZS5jb20KIyBvcjogU0lURV9VUkw9aHR0cHM6Ly9teXNpdGUuZXhhbXBsZS5jb20KYGBgCgpgc2l0ZVVybGAgcmVwbGFjZXMgYHBhc3NrZXlQdWJsaWNPcmlnaW5gICh3aGljaCBvbmx5IGZpeGVkIHBhc3NrZXlzKS4gSXQgYXBwbGllcyB0byBwYXNza2V5cywgQ1NSRiBvcmlnaW4gbWF0Y2hpbmcsIE9BdXRoIHJlZGlyZWN0cywgbG9naW4gcmVkaXJlY3RzLCBNQ1AgZGlzY292ZXJ5LCBzbmFwc2hvdCBleHBvcnRzLCBzaXRlbWFwLCByb2JvdHMudHh0LCBhbmQgSlNPTi1MRCBzdHJ1Y3R1cmVkIGRhdGEuCgpXaXRoIFRMUyB0ZXJtaW5hdGVkIGluIGZyb250LCAqKmBhc3RybyBkZXYgLS1ob3N0IDEyNy4wLjAuMWAqKiAobG9vcGJhY2spIGlzIHVzdWFsbHkgZW5vdWdoOiB0aGUgcHJveHkgcmVhY2hlcyB0aGUgZGV2IHNlcnZlciBsb2NhbGx5IHdoaWxlICoqYHNpdGVVcmxgKiogbWF0Y2hlcyB0aGUgYnJvd3NlcuKAmXMgSFRUUFMgb3JpZ2luIC0tIHdpdGhvdXQgb3BlbmluZyB0aGUgTm9kZSBwb3J0IG9uIHRoZSBMQU4uCgojIyMgQ2xvdWRmbGFyZSAoRDEgKyBSMikKCmBgYGphdmFzY3JpcHQKaW1wb3J0IGNsb3VkZmxhcmUgZnJvbSAiQGFzdHJvanMvY2xvdWRmbGFyZSI7CmltcG9ydCByZWFjdCBmcm9tICJAYXN0cm9qcy9yZWFjdCI7CmltcG9ydCB7IGQxLCByMiB9IGZyb20gIkBlbWRhc2gtY21zL2Nsb3VkZmxhcmUiOwppbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICJhc3Ryby9jb25maWciOwppbXBvcnQgZW1kYXNoIGZyb20gImVtZGFzaC9hc3RybyI7CgpleHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoewoJb3V0cHV0OiAic2VydmVyIiwKCWFkYXB0ZXI6IGNsb3VkZmxhcmUoKSwKCWltYWdlOiB7CgkJbGF5b3V0OiAiY29uc3RyYWluZWQiLAoJCXJlc3BvbnNpdmVTdHlsZXM6IHRydWUsCgl9LAoJaW50ZWdyYXRpb25zOiBbCgkJcmVhY3QoKSwKCQllbWRhc2goewoJCQlkYXRhYmFzZTogZDEoeyBiaW5kaW5nOiAiREIiLCBzZXNzaW9uOiAiYXV0byIgfSksCgkJCXN0b3JhZ2U6IHIyKHsgYmluZGluZzogIk1FRElBIiB9KSwKCQl9KSwKCV0sCglkZXZUb29sYmFyOiB7IGVuYWJsZWQ6IGZhbHNlIH0sCn0pOwpgYGAKClJlcXVpcmVzIGEgYHdyYW5nbGVyLmpzb25jYCB3aXRoIEQxIGFuZCBSMiBiaW5kaW5nczoKCmBgYGpzb25jCnsKCSJuYW1lIjogIm15LXNpdGUiLAoJIm1haW4iOiAiLi9zcmMvd29ya2VyLnRzIiwKCSJjb21wYXRpYmlsaXR5X2RhdGUiOiAiMjAyNi0wMi0yNCIsCgkiY29tcGF0aWJpbGl0eV9mbGFncyI6IFsibm9kZWpzX2NvbXBhdCJdLAoJImQxX2RhdGFiYXNlcyI6IFsKCQl7CgkJCSJiaW5kaW5nIjogIkRCIiwKCQkJImRhdGFiYXNlX25hbWUiOiAibXktc2l0ZSIsCgkJfSwKCV0sCgkicjJfYnVja2V0cyI6IFsKCQl7CgkJCSJiaW5kaW5nIjogIk1FRElBIiwKCQkJImJ1Y2tldF9uYW1lIjogIm15LXNpdGUtbWVkaWEiLAoJCX0sCgldLAoJInRyaWdnZXJzIjogewoJCSJjcm9ucyI6IFsiKiAqICogKiAqIl0sCgl9LAp9CmBgYAoKVXNlIHRoZSBFbURhc2ggV29ya2VyIGVudHJ5IHBvaW50IHNvIHNjaGVkdWxlZCBwdWJsaXNoaW5nIGFuZCBtYWludGVuYW5jZSBydW4gdGhyb3VnaCB0aGUgc2FtZSBkZXBsb3ltZW50OgoKYGBgdHlwZXNjcmlwdAppbXBvcnQgaGFuZGxlciwgeyBjcmVhdGVTY2hlZHVsZWRIYW5kbGVyLCBQbHVnaW5CcmlkZ2UgfSBmcm9tICJAZW1kYXNoLWNtcy9jbG91ZGZsYXJlL3dvcmtlciI7CgpleHBvcnQgeyBQbHVnaW5CcmlkZ2UgfTsKCmV4cG9ydCBkZWZhdWx0IHsKCS4uLmhhbmRsZXIsCglzY2hlZHVsZWQ6IGNyZWF0ZVNjaGVkdWxlZEhhbmRsZXIoKSwKfSBzYXRpc2ZpZXMgRXhwb3J0ZWRIYW5kbGVyOwpgYGAKCiMjIyBQbHVnaW5zCgpSZWdpc3RlciBwbHVnaW5zIGluIGBhc3Ryby5jb25maWcubWpzYDoKCmBgYGphdmFzY3JpcHQKaW1wb3J0IGF1ZGl0TG9nIGZyb20gIkBlbWRhc2gtY21zL3BsdWdpbi1hdWRpdC1sb2ciOwoKZW1kYXNoKHsKCWRhdGFiYXNlOiBzcWxpdGUoeyB1cmw6ICJmaWxlOi4vZGF0YS5kYiIgfSksCglzdG9yYWdlOiBsb2NhbCh7IGRpcmVjdG9yeTogIi4vdXBsb2FkcyIsIGJhc2VVcmw6ICIvX2VtZGFzaC9hcGkvbWVkaWEvZmlsZSIgfSksCglwbHVnaW5zOiBbYXVkaXRMb2ddLAp9KSwKYGBgCgojIyBsaXZlLmNvbmZpZy50cwoKRXZlcnkgRW1EYXNoIHNpdGUgbmVlZHMgdGhpcyBmaWxlIGF0IGBzcmMvbGl2ZS5jb25maWcudHNgLiBJdCdzIGJvaWxlcnBsYXRlIC0tIHRoZSBzYW1lIGluIGV2ZXJ5IHByb2plY3Q6CgpgYGB0eXBlc2NyaXB0CmltcG9ydCB7IGRlZmluZUxpdmVDb2xsZWN0aW9uIH0gZnJvbSAiYXN0cm86Y29udGVudCI7CmltcG9ydCB7IGVtZGFzaExvYWRlciB9IGZyb20gImVtZGFzaC9ydW50aW1lIjsKCmV4cG9ydCBjb25zdCBjb2xsZWN0aW9ucyA9IHsKCV9lbWRhc2g6IGRlZmluZUxpdmVDb2xsZWN0aW9uKHsgbG9hZGVyOiBlbWRhc2hMb2FkZXIoKSB9KSwKfTsKYGBgCgpUaGlzIHJlZ2lzdGVycyBFbURhc2gncyBsaXZlIGNvbnRlbnQgY29sbGVjdGlvbnMgd2l0aCBBc3Ryby4gQWxsIGNvbnRlbnQgdHlwZXMgYXJlIHNlcnZlZCB0aHJvdWdoIHRoZSBzaW5nbGUgYF9lbWRhc2hgIGNvbGxlY3Rpb24gLS0geW91IHF1ZXJ5IHNwZWNpZmljIHR5cGVzIHVzaW5nIGBnZXRFbURhc2hDb2xsZWN0aW9uKCJwb3N0cyIpYCBldGMuCgojIyBlbWRhc2gtZW52LmQudHMKCkF1dG8tZ2VuZXJhdGVkIGF0IHRoZSBwcm9qZWN0IHJvb3Qgd2hlbiB0aGUgZGV2IHNlcnZlciBzdGFydHMuIFByb3ZpZGVzIFR5cGVTY3JpcHQgdHlwZXMgZm9yIHlvdXIgY29sbGVjdGlvbnMuIFRoaXMgaXMgdGhlIGZpbGUgeW91ciBgdHNjb25maWcuanNvbmAgaW5jbHVkZXMuCgpgYGB0eXBlc2NyaXB0Ci8vLyA8cmVmZXJlbmNlIHR5cGVzPSJlbWRhc2gvbG9jYWxzIiAvPgoKaW1wb3J0IHR5cGUgeyBQb3J0YWJsZVRleHRCbG9jayB9IGZyb20gImVtZGFzaCI7CgpleHBvcnQgaW50ZXJmYWNlIFBvc3QgewoJaWQ6IHN0cmluZzsKCXNsdWc6IHN0cmluZyB8IG51bGw7CglzdGF0dXM6IHN0cmluZzsKCXRpdGxlOiBzdHJpbmc7CglmZWF0dXJlZF9pbWFnZT86IHsKCQlpZDogc3RyaW5nOwoJCXNyYz86IHN0cmluZzsKCQlhbHQ/OiBzdHJpbmc7CgkJd2lkdGg/OiBudW1iZXI7CgkJaGVpZ2h0PzogbnVtYmVyOwoJfTsKCWNvbnRlbnQ/OiBQb3J0YWJsZVRleHRCbG9ja1tdOwoJZXhjZXJwdD86IHN0cmluZzsKCWNyZWF0ZWRBdDogRGF0ZTsKCXVwZGF0ZWRBdDogRGF0ZTsKCXB1Ymxpc2hlZEF0OiBEYXRlIHwgbnVsbDsKfQoKZGVjbGFyZSBtb2R1bGUgImVtZGFzaCIgewoJaW50ZXJmYWNlIEVtRGFzaENvbGxlY3Rpb25zIHsKCQlwb3N0czogUG9zdDsKCX0KfQpgYGAKClRoZSBkZXYgc2VydmVyIHJlZ2VuZXJhdGVzIHRoaXMgZmlsZSBhdXRvbWF0aWNhbGx5IHdoZW4gc2NoZW1hIGNoYW5nZXMuIFlvdSBjYW4gYWxzbyBnZW5lcmF0ZSBpdCBtYW51YWxseToKCiMjIFR5cGUgR2VuZXJhdGlvbgoKYGBgYmFzaAojIEZyb20gbG9jYWwgZGV2IHNlcnZlciAod3JpdGVzIGVtZGFzaC1lbnYuZC50cyBhdCBwcm9qZWN0IHJvb3QpCm5weCBlbWRhc2ggdHlwZXMKCiMgRnJvbSByZW1vdGUgaW5zdGFuY2UKbnB4IGVtZGFzaCB0eXBlcyAtLXVybCBodHRwczovL215LXNpdGUucGFnZXMuZGV2CgojIEN1c3RvbSBvdXRwdXQgcGF0aApucHggZW1kYXNoIHR5cGVzIC0tb3V0cHV0IHNyYy90eXBlcy9jbXMudHMKYGBgCgpUaGUgQ0xJIGFsc28gd3JpdGVzIGAuZW1kYXNoL3NjaGVtYS5qc29uYCB3aXRoIHRoZSByYXcgc2NoZW1hIGZvciB0b29saW5nLgoKIyMgcGFja2FnZS5qc29uCgpLZXkgZGVwZW5kZW5jaWVzIGZvciBhIE5vZGUuanMgc2l0ZToKCmBgYGpzb24KewoJImRlcGVuZGVuY2llcyI6IHsKCQkiYXN0cm8iOiAiXjcuMC4wIiwKCQkiZW1kYXNoIjogIndvcmtzcGFjZToqIiwKCQkiQGFzdHJvanMvbm9kZSI6ICJeMTEuMC4wIiwKCQkiQGFzdHJvanMvcmVhY3QiOiAiXjQuMC4wIiwKCQkicmVhY3QiOiAiXjE5LjAuMCIsCgkJInJlYWN0LWRvbSI6ICJeMTkuMC4wIgoJfQp9CmBgYAoKRm9yIENsb3VkZmxhcmUsIHJlcGxhY2UgYEBhc3Ryb2pzL25vZGVgIHdpdGggYEBhc3Ryb2pzL2Nsb3VkZmxhcmVgIGFuZCBhZGQgYEBlbWRhc2gtY21zL2Nsb3VkZmxhcmVgLgoKIyMgRGV2IFNlcnZlcgoKYGBgYmFzaApwbnBtIGRldiAgICAgICAgICAgICAgICAgICAgIyBTdGFydCB0aGUgQXN0cm8gZGV2IHNlcnZlcgpucHggZW1kYXNoIHR5cGVzICAgICAgICAgICAgIyBSZWZyZXNoIHR5cGVzIGZyb20gdGhlIHJ1bm5pbmcgc2l0ZQpgYGAKClRoZSBydW50aW1lIHJ1bnMgcGVuZGluZyBtaWdyYXRpb25zIG9uIHRoZSBmaXJzdCByZXF1ZXN0IGFuZCBhcHBsaWVzIHRoZSBidW5kbGVkIHNlZWQgd2hlbiB0aGUgZGF0YWJhc2UgaXMgZW1wdHkgYW5kIHNldHVwIGhhcyBub3QgYmVlbiBjb21wbGV0ZWQuIFRoZSBBc3RybyBpbnRlZ3JhdGlvbiBnZW5lcmF0ZXMgYGVtZGFzaC1lbnYuZC50c2Agd2hlbiB0aGUgc2VydmVyIHN0YXJ0cy4gVGhlIGFkbWluIFVJIGlzIGF0IGBodHRwOi8vbG9jYWxob3N0OjQzMjEvX2VtZGFzaC9hZG1pbmAuIE9uIGZpcnN0IHJ1biwgeW91J2xsIGdvIHRocm91Z2ggc2V0dXAgdG8gY3JlYXRlIGFuIGFkbWluIGFjY291bnQuCg==
+# Configuration
+
+## astro.config.mjs
+
+### Node.js (local development / self-hosted)
+
+```javascript
+import node from "@astrojs/node";
+import react from "@astrojs/react";
+import { defineConfig } from "astro/config";
+import emdash, { local } from "emdash/astro";
+import { sqlite } from "emdash/db";
+
+export default defineConfig({
+	output: "server",
+	adapter: node({ mode: "standalone" }),
+	image: {
+		layout: "constrained",
+		responsiveStyles: true,
+	},
+	integrations: [
+		react(),
+		emdash({
+			database: sqlite({ url: "file:./data.db" }),
+			storage: local({
+				directory: "./uploads",
+				baseUrl: "/_emdash/api/media/file",
+			}),
+		}),
+	],
+	devToolbar: { enabled: false },
+});
+```
+
+### Reverse proxy
+
+When behind a TLS-terminating reverse proxy, `Astro.url` returns the internal address (e.g. `http://localhost:4321`) instead of the public one (`https://mysite.example.com`). This breaks passkeys, CSRF, OAuth, redirects, and more.
+
+**Step 1:** Declare allowed public hosts via [`security.allowedDomains`](https://docs.astro.build/en/reference/configuration-reference/#securityalloweddomains) so Astro reconstructs the URL from `X-Forwarded-*` headers. In dev, add matching **`vite.server.allowedHosts`** or Vite rejects the proxy `Host`.
+
+**Step 2:** If the reconstructed URL still disagrees with the browser (common with TLS termination), set **`siteUrl`**:
+
+```javascript
+emdash({
+	siteUrl: "https://mysite.example.com",
+	// ...
+});
+```
+
+Or via environment variable (useful for container deployments):
+
+```bash
+EMDASH_SITE_URL=https://mysite.example.com
+# or: SITE_URL=https://mysite.example.com
+```
+
+`siteUrl` replaces `passkeyPublicOrigin` (which only fixed passkeys). It applies to passkeys, CSRF origin matching, OAuth redirects, login redirects, MCP discovery, snapshot exports, sitemap, robots.txt, and JSON-LD structured data.
+
+With TLS terminated in front, **`astro dev --host 127.0.0.1`** (loopback) is usually enough: the proxy reaches the dev server locally while **`siteUrl`** matches the browser’s HTTPS origin -- without opening the Node port on the LAN.
+
+### Cloudflare (D1 + R2)
+
+```javascript
+import cloudflare from "@astrojs/cloudflare";
+import react from "@astrojs/react";
+import { d1, r2 } from "@emdash-cms/cloudflare";
+import { defineConfig } from "astro/config";
+import emdash from "emdash/astro";
+
+export default defineConfig({
+	output: "server",
+	adapter: cloudflare(),
+	image: {
+		layout: "constrained",
+		responsiveStyles: true,
+	},
+	integrations: [
+		react(),
+		emdash({
+			database: d1({ binding: "DB", session: "auto" }),
+			storage: r2({ binding: "MEDIA" }),
+		}),
+	],
+	devToolbar: { enabled: false },
+});
+```
+
+Requires a `wrangler.jsonc` with D1 and R2 bindings:
+
+```jsonc
+{
+	"name": "my-site",
+	"main": "./src/worker.ts",
+	"compatibility_date": "2026-02-24",
+	"compatibility_flags": ["nodejs_compat"],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "my-site",
+		},
+	],
+	"r2_buckets": [
+		{
+			"binding": "MEDIA",
+			"bucket_name": "my-site-media",
+		},
+	],
+	"triggers": {
+		"crons": ["* * * * *"],
+	},
+}
+```
+
+Use the EmDash Worker entry point so scheduled publishing and maintenance run through the same deployment:
+
+```typescript
+import handler, { createScheduledHandler, PluginBridge } from "@emdash-cms/cloudflare/worker";
+
+export { PluginBridge };
+
+export default {
+	...handler,
+	scheduled: createScheduledHandler(),
+} satisfies ExportedHandler;
+```
+
+### Plugins
+
+Register plugins in `astro.config.mjs`:
+
+```javascript
+import auditLog from "@emdash-cms/plugin-audit-log";
+
+emdash({
+	database: sqlite({ url: "file:./data.db" }),
+	storage: local({ directory: "./uploads", baseUrl: "/_emdash/api/media/file" }),
+	plugins: [auditLog],
+}),
+```
+
+## live.config.ts
+
+Every EmDash site needs this file at `src/live.config.ts`. It's boilerplate -- the same in every project:
+
+```typescript
+import { defineLiveCollection } from "astro:content";
+import { emdashLoader } from "emdash/runtime";
+
+export const collections = {
+	_emdash: defineLiveCollection({ loader: emdashLoader() }),
+};
+```
+
+This registers EmDash's live content collections with Astro. All content types are served through the single `_emdash` collection -- you query specific types using `getEmDashCollection("posts")` etc.
+
+## emdash-env.d.ts
+
+Auto-generated at the project root when the dev server starts. Provides TypeScript types for your collections. This is the file your `tsconfig.json` includes.
+
+```typescript
+/// <reference types="emdash/locals" />
+
+import type { PortableTextBlock } from "emdash";
+
+export interface Post {
+	id: string;
+	slug: string | null;
+	status: string;
+	title: string;
+	featured_image?: {
+		id: string;
+		src?: string;
+		alt?: string;
+		width?: number;
+		height?: number;
+	};
+	content?: PortableTextBlock[];
+	excerpt?: string;
+	createdAt: Date;
+	updatedAt: Date;
+	publishedAt: Date | null;
+}
+
+declare module "emdash" {
+	interface EmDashCollections {
+		posts: Post;
+	}
+}
+```
+
+The dev server regenerates this file automatically when schema changes. You can also generate it manually:
+
+## Type Generation
+
+```bash
+# From local dev server (writes emdash-env.d.ts at project root)
+npx emdash types
+
+# From remote instance
+npx emdash types --url https://my-site.pages.dev
+
+# Custom output path
+npx emdash types --output src/types/cms.ts
+```
+
+The CLI also writes `.emdash/schema.json` with the raw schema for tooling.
+
+## package.json
+
+Key dependencies for a Node.js site:
+
+```json
+{
+	"dependencies": {
+		"astro": "^7.0.0",
+		"emdash": "workspace:*",
+		"@astrojs/node": "^11.0.0",
+		"@astrojs/react": "^4.0.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	}
+}
+```
+
+For Cloudflare, replace `@astrojs/node` with `@astrojs/cloudflare` and add `@emdash-cms/cloudflare`.
+
+## Dev Server
+
+```bash
+pnpm dev                    # Start the Astro dev server
+npx emdash types            # Refresh types from the running site
+```
+
+The runtime runs pending migrations on the first request and applies the bundled seed when the database is empty and setup has not been completed. The Astro integration generates `emdash-env.d.ts` when the server starts. The admin UI is at `http://localhost:4321/_emdash/admin`. On first run, you'll go through setup to create an admin account.

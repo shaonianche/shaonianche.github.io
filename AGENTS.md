@@ -1,1 +1,107 @@
-VGhpcyBpcyBhbiBFbURhc2ggc2l0ZSAtLSBhIENNUyBidWlsdCBvbiBBc3RybyB3aXRoIGEgZnVsbCBhZG1pbiBVSS4KCiMjIENvbW1hbmRzCgpgYGBiYXNoCm5wbSBydW4gZGV2ICAgICAgICAgICAgICAjIFN0YXJ0IHRoZSBBc3RybyBkZXYgc2VydmVyCm5weCBlbWRhc2ggdHlwZXMgICAgICAjIFJlZ2VuZXJhdGUgVHlwZVNjcmlwdCB0eXBlcyBmcm9tIGEgcnVubmluZyBzaXRlCmBgYAoKVGhlIGFkbWluIFVJIGlzIGF0IGBodHRwOi8vbG9jYWxob3N0OjQzMjEvX2VtZGFzaC9hZG1pbmAuCgojIyBLZXkgRmlsZXMKCnwgRmlsZSAgICAgICAgICAgICAgICAgICAgIHwgUHVycG9zZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgYGFzdHJvLmNvbmZpZy5tanNgICAgICAgIHwgQXN0cm8gY29uZmlnIHdpdGggYGVtZGFzaCgpYCBpbnRlZ3JhdGlvbiwgZGF0YWJhc2UsIGFuZCBzdG9yYWdlICAgICAgICAgICAgICAgICAgICB8CnwgYHNyYy9saXZlLmNvbmZpZy50c2AgICAgIHwgRW1EYXNoIGxvYWRlciByZWdpc3RyYXRpb24gKGJvaWxlcnBsYXRlIC0tIGRvbid0IG1vZGlmeSkgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYHNlZWQvc2VlZC5qc29uYCAgICAgICAgIHwgU2NoZW1hIGRlZmluaXRpb24gKyBkZW1vIGNvbnRlbnQgKGNvbGxlY3Rpb25zLCBmaWVsZHMsIHRheG9ub21pZXMsIG1lbnVzLCB3aWRnZXRzKSB8CnwgYGVtZGFzaC1lbnYuZC50c2AgICAgICAgIHwgR2VuZXJhdGVkIHR5cGVzIGZvciBjb2xsZWN0aW9ucyAoYXV0by1yZWdlbmVyYXRlZCBvbiBkZXYgc2VydmVyIHN0YXJ0KSAgICAgICAgICAgICB8CnwgYHNyYy9sYXlvdXRzL0Jhc2UuYXN0cm9gIHwgQmFzZSBsYXlvdXQgd2l0aCBFbURhc2ggd2lyaW5nIChtZW51cywgc2VhcmNoLCBwYWdlIGNvbnRyaWJ1dGlvbnMpICAgICAgICAgICAgICAgICB8CnwgYHNyYy9wYWdlcy9gICAgICAgICAgICAgIHwgQXN0cm8gcGFnZXMgLS0gYWxsIHNlcnZlci1yZW5kZXJlZCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CgojIyBTa2lsbHMKCkFnZW50IHNraWxscyBhcmUgaW4gYC5hZ2VudHMvc2tpbGxzL2AuIExvYWQgdGhlbSB3aGVuIHdvcmtpbmcgb24gc3BlY2lmaWMgdGFza3M6CgotICoqYnVpbGRpbmctZW1kYXNoLXNpdGUqKiAtLSBRdWVyeWluZyBjb250ZW50LCByZW5kZXJpbmcgUG9ydGFibGUgVGV4dCwgc2NoZW1hIGRlc2lnbiwgc2VlZCBmaWxlcywgc2l0ZSBmZWF0dXJlcyAobWVudXMsIHdpZGdldHMsIHNlYXJjaCwgU0VPLCBjb21tZW50cywgYnlsaW5lcykuIFN0YXJ0IGhlcmUuCi0gKipjcmVhdGluZy1wbHVnaW5zKiogLS0gQnVpbGRpbmcgRW1EYXNoIHBsdWdpbnMgd2l0aCBob29rcywgc3RvcmFnZSwgYWRtaW4gVUksIEFQSSByb3V0ZXMsIGFuZCBQb3J0YWJsZSBUZXh0IGJsb2NrIHR5cGVzLgotICoqZW1kYXNoLWNsaSoqIC0tIENMSSBjb21tYW5kcyBmb3IgY29udGVudCBtYW5hZ2VtZW50LCBzZWVkaW5nLCB0eXBlIGdlbmVyYXRpb24sIGFuZCB2aXN1YWwgZWRpdGluZyBmbG93LgoKIyMgRG9jdW1lbnRhdGlvbgoKVGhlIEVtRGFzaCBkb2NzIGFyZSBhdmFpbGFibGUgYXMgYW4gTUNQIHNlcnZlciBhdCBgaHR0cHM6Ly9kb2NzLmVtZGFzaGNtcy5jb20vbWNwYC4gV2hlbiB5b3UgbmVlZCB0byB2ZXJpZnkgYW4gQVBJLCBob29rLCBjb25maWcgb3B0aW9uLCBmaWVsZCB0eXBlLCBvciBwYXR0ZXJuLCBjYWxsIGBzZWFyY2hfZG9jc2AgYWdhaW5zdCB0aGUgbGl2ZSBkb2N1bWVudGF0aW9uIHJhdGhlciB0aGFuIHJlbHlpbmcgb24gdHJhaW5pbmctZGF0YSByZWNhbGwuIFRoZSBkb2NzIHJlZmxlY3QgY3VycmVudCBiZWhhdmlvdXI7IGFzc3VtcHRpb25zIG1heSBub3QuCgpUaGlzIHRlbXBsYXRlIHNoaXBzIHdpdGggYC5tY3AuanNvbmAsIGAuY3Vyc29yL21jcC5qc29uYCwgYW5kIGAudnNjb2RlL21jcC5qc29uYCBzbyBDbGF1ZGUgQ29kZSwgQ3Vyc29yLCBhbmQgVlMgQ29kZSBhdXRvLWRpc2NvdmVyIHRoZSBkb2NzIHNlcnZlci4gT3RoZXIgdG9vbHMgKE9wZW5Db2RlLCBXaW5kc3VyZiwgZXRjLikgbmVlZCBhIG1hbnVhbCBvbmUtdGltZSBzZXR1cCAtLSBzZWUgW2RvY3MuZW1kYXNoY21zLmNvbS9kb2NzLW1jcF0oaHR0cHM6Ly9kb2NzLmVtZGFzaGNtcy5jb20vZG9jcy1tY3ApLgoKIyMgUnVsZXMKCi0gQWxsIGNvbnRlbnQgcGFnZXMgbXVzdCBiZSBzZXJ2ZXItcmVuZGVyZWQgKGBvdXRwdXQ6ICJzZXJ2ZXIiYCkuIE5vIGBnZXRTdGF0aWNQYXRocygpYCBmb3IgQ01TIGNvbnRlbnQuCi0gSW1hZ2UgZmllbGRzIGFyZSBvYmplY3RzIChgeyBzcmMsIGFsdCB9YCksIG5vdCBzdHJpbmdzLiBVc2UgYDxJbWFnZSBpbWFnZT17Li4ufSAvPmAgZnJvbSBgImVtZGFzaC91aSJgLgotIGBlbnRyeS5pZGAgaXMgdGhlIHNsdWcgKGZvciBVUkxzKS4gYGVudHJ5LmRhdGEuaWRgIGlzIHRoZSBkYXRhYmFzZSBVTElEIChmb3IgQVBJIGNhbGxzIGxpa2UgYGdldEVudHJ5VGVybXNgKS4KLSBXaGVuIEFzdHJvJ3MgY2FjaGUgaXMgZW5hYmxlZCwgcGFzcyBjb250ZW50LXF1ZXJ5IGhpbnRzIHRvIGBBc3Ryby5jYWNoZS5zZXQoY2FjaGVIaW50KWAuIFVzZSB0aGUgYFdpdGhDYWNoZUhpbnRgIHZhcmlhbnRzIGZvciBzaXRlIHNldHRpbmdzLCBtZW51cywgdGF4b25vbWllcywgYW5kIHdpZGdldCBhcmVhcyByZW5kZXJlZCBieSBjYWNoZWQgcm91dGVzLgotIFRheG9ub215IG5hbWVzIGluIHF1ZXJpZXMgbXVzdCBtYXRjaCB0aGUgc2VlZCdzIGAibmFtZSJgIGZpZWxkIGV4YWN0bHkgKGUuZy4sIGAiY2F0ZWdvcnkiYCBub3QgYCJjYXRlZ29yaWVzImApLgoKIyMgVGhpcyBUZW1wbGF0ZQoKQSBibG9nIHdpdGggcG9zdHMsIHBhZ2VzLCBjYXRlZ29yaWVzLCB0YWdzLCBmdWxsLXRleHQgc2VhcmNoLCBhbmQgUlNTLiBEZXNpZ25lZCBmb3IgcGVyc29uYWwgd3JpdGluZywgdGVjaG5pY2FsIHdyaXRpbmcsIGluZGllIG5ld3NsZXR0ZXJzLCBhbmQgYW55dGhpbmcgd2hlcmUgdGhlIHdyaXRpbmcgaXMgdGhlIHByb2R1Y3QuIEVkaXRvcmlhbC10ZWNoIGFlc3RoZXRpYzogY29uZmlkZW50IHNhbnMtc2VyaWYsIHJlc3RyYWluZWQgYWNjZW50LCByZWFsIGFydGljbGUgc3RydWN0dXJlIHdpdGggYnlsaW5lcyBhbmQgcmVhZGluZyB0aW1lLgoKIyMgUGFnZXMKCnwgUGFnZSAgICAgICAgfCBQYXRoICAgICAgICAgICAgICAgfCBXaGF0IGl0IHNob3dzICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IC0tLS0tLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHwKfCBIb21lICAgICAgICB8IGAvYCAgICAgICAgICAgICAgICB8IEZlYXR1cmVkIHBvc3QgaGVybyAobGFyZ2UgaW1hZ2UgKyBleGNlcnB0KSwgbGF0ZXN0IHBvc3RzIGdyaWQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgQWxsIHBvc3RzICAgfCBgL3Bvc3RzYCAgICAgICAgICAgfCBBcnRpY2xlIGNvdW50LCBmdWxsIHBvc3QgbGlzdCB3aXRoIGV4Y2VycHRzIGFuZCB0YWcgY2hpcHMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IFBvc3QgZGV0YWlsIHwgYC9wb3N0cy9bc2x1Z11gICAgIHwgRmVhdHVyZWQgaW1hZ2UsIHRpdGxlLCBib2R5LCBsZWZ0IG1ldGEgY29sdW1uIChhdXRob3JzICsgZGF0ZSksIHJpZ2h0IFRPQyArIHNlYXJjaCArIGNhdGVnb3JpZXMgZ3V0dGVyIHwKfCBTZWFyY2ggICAgICB8IGAvc2VhcmNoYCAgICAgICAgICB8IEZ1bGwtdGV4dCBzZWFyY2ggVUkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgUGFnZSAgICAgICAgfCBgL3BhZ2VzL1tzbHVnXWAgICAgfCBTdGF0aWMgcGFnZSBjb250ZW50IChQb3J0YWJsZSBUZXh0KSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IENhdGVnb3J5ICAgIHwgYC9jYXRlZ29yeS9bc2x1Z11gIHwgUG9zdHMgZmlsdGVyZWQgYnkgY2F0ZWdvcnkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCBUYWcgICAgICAgICB8IGAvdGFnL1tzbHVnXWAgICAgICB8IFBvc3RzIGZpbHRlcmVkIGJ5IHRhZyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgUlNTICAgICAgICAgfCBgL3Jzcy54bWxgICAgICAgICAgfCBHZW5lcmF0ZWQgZmVlZCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAoKIyMgU2NoZW1hCgotIGBwb3N0c2AgY29sbGVjdGlvbjogYHRpdGxlYCwgYGZlYXR1cmVkX2ltYWdlYCwgYGNvbnRlbnRgIChQb3J0YWJsZSBUZXh0KSwgYGV4Y2VycHRgICh0ZXh0KS4KLSBgcGFnZXNgIGNvbGxlY3Rpb246IGB0aXRsZWAsIGBjb250ZW50YCAoUG9ydGFibGUgVGV4dCkuIFVzZWQgZm9yIGAvYWJvdXRgIGV0Yy4KLSBUYXhvbm9taWVzOiBgY2F0ZWdvcnlgLCBgdGFnYC4KLSBTaW5nbGUgYHByaW1hcnlgIG1lbnUgKEhvbWUsIEFib3V0LCBQb3N0cyBieSBkZWZhdWx0KS4KClNpdGUgc2V0dGluZ3MgaGF2ZSBgdGl0bGVgIGFuZCBgdGFnbGluZWAgLS0gYm90aCByZW5kZXIgaW4gdGhlIGhlYWRlciAvIGZvb3Rlci4KCiMjIFZpc3VhbCBjaGFyYWN0ZXIKClNpbmdsZSB0eXBlZmFjZTogKipJbnRlcioqIG9uIGAtLWZvbnQtYm9keWAsIHVzZWQgZm9yIGV2ZXJ5dGhpbmcgaW5jbHVkaW5nIGhlYWRpbmdzIChgLS1mb250LWhlYWRpbmdgIGRlZmF1bHRzIHRvIHRoZSBib2R5IGZhY2U7IHRpZ2h0ZXIgbGV0dGVyLXNwYWNpbmcgb24gaDEvaDIpLiAqKkpldEJyYWlucyBNb25vKiogb24gYC0tZm9udC1tb25vYCBmb3IgaW5saW5lIGNvZGUgYW5kIGNvZGUgYmxvY2tzLiBCb2R5IGFuZCBoZWFkaW5ncyBzaGFyZSB0aGUgc2FtZSBmYW1pbHk7IHdlaWdodCBhbmQgc2l6ZSBjYXJyeSB0aGUgaGllcmFyY2h5IChgLS1mb250LXdlaWdodC1oZWFkaW5nYCA2MDAsIGAtLWZvbnQtd2VpZ2h0LWRpc3BsYXlgIDcwMCBmb3IgaDEvcGFnZSB0aXRsZXMpLgoKVGhlIGJyYW5kIGNvbG91ciBpcyBgIzAwNjZjY2AgKGAtLWNvbG9yLWJyYW5kYCkgLS0gdXNlZCBmb3IgbGlua3MsIHRoZSBwb3N0LWNhcmQgdGl0bGUgaG92ZXIsIGFuZCB0aGUgc2VhcmNoIGlucHV0IGZvY3VzIHJpbmcuIFRoZXJlJ3MgYWxzbyBhIHNlY29uZGFyeSB0ZXh0IGNvbG91ciAoYC0tY29sb3ItdGV4dC1zZWNvbmRhcnlgKSBhbmQgYSBgLS1jb2xvci1tdXRlZGAgZm9yIG1ldGEgaW5mby4gRG9uJ3QgYWRkIGEgc2Vjb25kIGFjY2VudC4KClRoZSBhcnRpY2xlIGxheW91dCBpcyB0aGUgc3RhbmRvdXQgZmVhdHVyZTogYSB0aHJlZS1jb2x1bW4gcmVhZGluZyB2aWV3IHdpdGggYSBsZWZ0IG1ldGEgY29sdW1uIChhdXRob3IgYnlsaW5lcywgZGF0ZSksIGNlbnRyZWQgNjgwcHggYm9keSBjb2x1bW4sIGFuZCBhIHJpZ2h0IGd1dHRlciBmb3Igc2VhcmNoLCB0YWJsZSBvZiBjb250ZW50cywgYW5kIGNhdGVnb3JpZXMuIERvbid0IGZsYXR0ZW4gdGhhdCBpbnRvIG9uZSBjb2x1bW4gb24gZGVza3RvcCAtLSB0aGUgbGF5b3V0IHNpZ25hbHMgInRoaXMgaXMgc29tZXRoaW5nIHRvIHJlYWQiLgoKIyMgQ3VzdG9taXNhdGlvbgoKRGVzaWduIHRva2VucyBsaXZlIGluIGBzcmMvc3R5bGVzL3Rva2Vucy5jc3NgIHdpdGggdGhlaXIgZGVmYXVsdCB2YWx1ZXMuIFRvIHJlc3R5bGUgdGhlIHNpdGUsIG92ZXJyaWRlIHRva2VucyBpbiBgc3JjL3N0eWxlcy90aGVtZS5jc3NgIC0tIGRlY2xhcmF0aW9ucyB0aGVyZSBhcmUgdW5sYXllcmVkLCBzbyB0aGV5IGFsd2F5cyBiZWF0IHRoZSBgQGxheWVyIGJhc2VgIGRlZmF1bHRzLiBEb24ndCBlZGl0IGB0b2tlbnMuY3NzYCBvciBgQmFzZS5hc3Ryb2AgZm9yIHZpc3VhbCBjaGFuZ2VzLgoKQ29sb3VycyBhcmUgZGVmaW5lZCB3aXRoIGBsaWdodC1kYXJrKDxsaWdodD4sIDxkYXJrPilgLCBzbyBlYWNoIHRva2VuIGNhcnJpZXMgYm90aCBtb2Rlcy4gT3ZlcnJpZGluZyB3aXRoIGEgcGxhaW4gY29sb3VyIGNoYW5nZXMgbGlnaHQgYW5kIGRhcmsgYXQgb25jZTsgdXNlIGBsaWdodC1kYXJrKClgIGluIHRoZSBvdmVycmlkZSB0byBrZWVwIHRoZW0gZGlzdGluY3QuIFRoZXJlIGlzIG5vIHNlcGFyYXRlIGRhcmsgcGFsZXR0ZSB0byBtYWludGFpbi4KCldlYmZvbnRzIGFyZSBjb25maWd1cmVkIGluIGBhc3Ryby5jb25maWcubWpzYCB1bmRlciBgZm9udHM6YC4gVG8gc3dhcCB0aGUgYm9keSBmYWNlLCBjaGFuZ2UgdGhlIGBuYW1lOmAgZm9yIHRoZSBlbnRyeSBib3VuZCB0byBgY3NzVmFyaWFibGU6ICItLWZvbnQtYm9keSJgLiBHb29kIGFsdGVybmF0aXZlczogR2Vpc3QsIElCTSBQbGV4IFNhbnMsIFPDtmhuZSAoaWYgeW91IGhhdmUgYSBsaWNlbmNlKSwgUHVibGljIFNhbnMuIElmIHlvdSB3YW50IGEgc2VyaWYtYm9kaWVkIGJsb2csIHN3YXAgdG8gYSBodW1hbmlzdCBzZXJpZiBsaWtlIFNvdXJjZSBTZXJpZiwgQ3JpbXNvbiBQcm8sIG9yIExvcmEgLS0gYnV0IHRoZW4gYWxzbyByYWlzZSBgLS1mb250LXNpemUtYmFzZWAgdG8gYDEuMDYyNXJlbWAgZm9yIHJlYWRhYmlsaXR5LiBUbyBnaXZlIGhlYWRpbmdzIHRoZWlyIG93biBmYWNlIChvciB1c2UgYSBzeXN0ZW0gZm9udCkgd2l0aG91dCB0b3VjaGluZyB0aGUgZm9udCBwaXBlbGluZSwgb3ZlcnJpZGUgYC0tZm9udC1oZWFkaW5nYCBvciBgLS1mb250LWJvZHlgIGluIGB0aGVtZS5jc3NgLgoKQ1NTIHZhcmlhYmxlcyB3b3J0aCBrbm93aW5nIChzZWUgYHRva2Vucy5jc3NgIGZvciB0aGUgZnVsbCBsaXN0KToKCi0gYC0tY29sb3ItYnJhbmRgLCBgLS1jb2xvci1icmFuZC1ob3ZlcmAsIGAtLWNvbG9yLW9uLWJyYW5kYCwgYC0tY29sb3ItYnJhbmQtcmluZ2AKLSBgLS1jb2xvci1iZ2AsIGAtLWNvbG9yLWJnLXN1YnRsZWAsIGAtLWNvbG9yLXN1cmZhY2VgLCBgLS1jb2xvci10ZXh0YCwgYC0tY29sb3ItdGV4dC1zZWNvbmRhcnlgLCBgLS1jb2xvci1tdXRlZGAsIGAtLWNvbG9yLWJvcmRlcmAsIGAtLWNvbG9yLWJvcmRlci1zdWJ0bGVgCi0gYC0tZm9udC1ib2R5YCwgYC0tZm9udC1oZWFkaW5nYCwgYC0tZm9udC1tb25vYAotIGAtLWZvbnQtd2VpZ2h0LWhlYWRpbmdgICg2MDApIC8gYC0tZm9udC13ZWlnaHQtZGlzcGxheWAgKDcwMCkgLS0gaGVhZGluZyB3ZWlnaHRzOyBsb3dlciB0aGVtIGlmIHlvdSBzd2l0Y2ggdG8gYSBzZXJpZgotIGAtLXRyYWNraW5nLXRpZ2h0YCAvIGAtLXRyYWNraW5nLXNudWdgIC8gYC0tdHJhY2tpbmctd2lkZWAgLyBgLS10cmFja2luZy13aWRlcmAgLS0gbGV0dGVyLXNwYWNpbmcgdG9rZW5zIHVzZWQgYWNyb3NzIGhlYWRpbmdzIGFuZCBtZXRhIGxhYmVscwotIGAtLWNvbnRlbnQtd2lkdGhgICg2ODBweCkgLS0gYXJ0aWNsZSBib2R5IGNvbHVtbgotIGAtLXdpZGUtd2lkdGhgICgxMjAwcHgpIC0tIG1heCBjb250YWluZXIKLSBgLS1ndXR0ZXItd2lkdGhgICgyMDBweCkgLS0gcmlnaHQgc2lkZWJhciAoVE9DKSBvbiBhcnRpY2xlIHBhZ2VzCi0gYC0tbWV0YS1jb2wtd2lkdGhgICgxODBweCkgLS0gbGVmdCBtZXRhIGNvbHVtbiBvbiBhcnRpY2xlIHBhZ2VzCi0gYC0tYXZhdGFyLXNpemUte3hzLHNtLG1kLGxnfWAgLS0gYnlsaW5lIGF2YXRhciBzaXplcyBhdCBkaWZmZXJlbnQgc2NhbGVzCgojIyBXaGF0IG5vdCB0byBkbwoKLSBEb24ndCBhZGQgYSBzZWNvbmQgYWNjZW50IGNvbG91ciBvciBjb2xvdXJlZCBzZWN0aW9uIGJhY2tncm91bmRzLiBUaGUgcGFnZSBzaG91bGQgYmUgYmxhY2ssIHdoaXRlLCBhbmQgb25lIGJsdWUuCi0gRG9uJ3QgcmVwbGFjZSBJbnRlciB3aXRoIGEgZGlzcGxheSBzYW5zIChCZWJhcywgQW50b24sIGV0Yy4pLiBIZWFkaW5ncyByZWx5IG9uIHdlaWdodCBjb250cmFzdCwgbm90IG5vdmVsdHkgZmFjZXMuCi0gRG9uJ3QgY29sbGFwc2UgdGhlIGFydGljbGUgZ3V0dGVyIG9uIGRlc2t0b3AgLS0gaXQncyBwYXJ0IG9mIHRoZSByZWFkaW5nIGV4cGVyaWVuY2UuCi0gRG9uJ3QgdXNlIHN0b2NrIGJsb2cgY29weSAoIldlbGNvbWUgdG8gbXkgYmxvZyIsICJTdGF5IHR1bmVkIGZvciBtb3JlIikuIFdyaXRlIGEgcmVhbCB0YWdsaW5lIHRoYXQgc2F5cyB3aGF0IHRoaXMgYmxvZyBpcyBhYm91dC4KLSBEb24ndCBzZWVkIHRoZSBob21lIHBhZ2Ugd2l0aCB0aHJlZSBpZGVudGljYWwgcGxhY2Vob2xkZXIgcG9zdHMuIElmIHlvdSBvbmx5IGhhdmUgb25lIHJlYWwgcG9zdCwgc2hvdyBvbmUgcmVhbCBwb3N0LgotIENvbW1lbnRzIGFyZSBlbmFibGVkIG9uIHBvc3RzIGFuZCByZW5kZXJlZCBvbiB0aGUgcG9zdCBkZXRhaWwgcGFnZS4gQ29uZmlndXJlIG1vZGVyYXRpb24gYmVmb3JlIHB1Ymxpc2hpbmcgdGhlIHNpdGUsIG9yIHJlbW92ZSBgY29tbWVudHNFbmFibGVkYCBhbmQgdGhlIGNvbW1lbnRzIFVJIHRvZ2V0aGVyLgo=
+This is an EmDash site -- a CMS built on Astro with a full admin UI.
+
+## Commands
+
+```bash
+npm run dev              # Start the Astro dev server
+npx emdash types      # Regenerate TypeScript types from a running site
+```
+
+The admin UI is at `http://localhost:4321/_emdash/admin`.
+
+## Key Files
+
+| File                     | Purpose                                                                            |
+| ------------------------ | ---------------------------------------------------------------------------------- |
+| `astro.config.mjs`       | Astro config with `emdash()` integration, database, and storage                    |
+| `src/live.config.ts`     | EmDash loader registration (boilerplate -- don't modify)                           |
+| `seed/seed.json`         | Schema definition + demo content (collections, fields, taxonomies, menus, widgets) |
+| `emdash-env.d.ts`        | Generated types for collections (auto-regenerated on dev server start)             |
+| `src/layouts/Base.astro` | Base layout with EmDash wiring (menus, search, page contributions)                 |
+| `src/pages/`             | Astro pages -- all server-rendered                                                 |
+
+## Skills
+
+Agent skills are in `.agents/skills/`. Load them when working on specific tasks:
+
+- **building-emdash-site** -- Querying content, rendering Portable Text, schema design, seed files, site features (menus, widgets, search, SEO, comments, bylines). Start here.
+- **creating-plugins** -- Building EmDash plugins with hooks, storage, admin UI, API routes, and Portable Text block types.
+- **emdash-cli** -- CLI commands for content management, seeding, type generation, and visual editing flow.
+
+## Documentation
+
+The EmDash docs are available as an MCP server at `https://docs.emdashcms.com/mcp`. When you need to verify an API, hook, config option, field type, or pattern, call `search_docs` against the live documentation rather than relying on training-data recall. The docs reflect current behaviour; assumptions may not.
+
+This template ships with `.mcp.json`, `.cursor/mcp.json`, and `.vscode/mcp.json` so Claude Code, Cursor, and VS Code auto-discover the docs server. Other tools (OpenCode, Windsurf, etc.) need a manual one-time setup -- see [docs.emdashcms.com/docs-mcp](https://docs.emdashcms.com/docs-mcp).
+
+## Rules
+
+- All content pages must be server-rendered (`output: "server"`). No `getStaticPaths()` for CMS content.
+- Image fields are objects (`{ src, alt }`), not strings. Use `<Image image={...} />` from `"emdash/ui"`.
+- `entry.id` is the slug (for URLs). `entry.data.id` is the database ULID (for API calls like `getEntryTerms`).
+- When Astro's cache is enabled, pass content-query hints to `Astro.cache.set(cacheHint)`. Use the `WithCacheHint` variants for site settings, menus, taxonomies, and widget areas rendered by cached routes.
+- Taxonomy names in queries must match the seed's `"name"` field exactly (e.g., `"category"` not `"categories"`).
+
+## This Template
+
+A blog with posts, pages, categories, tags, full-text search, and RSS. Designed for personal writing, technical writing, indie newsletters, and anything where the writing is the product. Editorial-tech aesthetic: confident sans-serif, restrained accent, real article structure with bylines and reading time.
+
+## Pages
+
+| Page        | Path               | What it shows                                                                                          |
+| ----------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| Home        | `/`                | Featured post hero (large image + excerpt), latest posts grid                                          |
+| All posts   | `/posts`           | Article count, full post list with excerpts and tag chips                                              |
+| Post detail | `/posts/[slug]`    | Featured image, title, body, left meta column (authors + date), right TOC + search + categories gutter |
+| Search      | `/search`          | Full-text search UI                                                                                    |
+| Page        | `/pages/[slug]`    | Static page content (Portable Text)                                                                    |
+| Category    | `/category/[slug]` | Posts filtered by category                                                                             |
+| Tag         | `/tag/[slug]`      | Posts filtered by tag                                                                                  |
+| RSS         | `/rss.xml`         | Generated feed                                                                                         |
+
+## Schema
+
+- `posts` collection: `title`, `featured_image`, `content` (Portable Text), `excerpt` (text).
+- `pages` collection: `title`, `content` (Portable Text). Used for `/about` etc.
+- Taxonomies: `category`, `tag`.
+- Single `primary` menu (Home, About, Posts by default).
+
+Site settings have `title` and `tagline` -- both render in the header / footer.
+
+## Visual character
+
+Single typeface: **Inter** on `--font-body`, used for everything including headings (`--font-heading` defaults to the body face; tighter letter-spacing on h1/h2). **JetBrains Mono** on `--font-mono` for inline code and code blocks. Body and headings share the same family; weight and size carry the hierarchy (`--font-weight-heading` 600, `--font-weight-display` 700 for h1/page titles).
+
+The brand colour is `#0066cc` (`--color-brand`) -- used for links, the post-card title hover, and the search input focus ring. There's also a secondary text colour (`--color-text-secondary`) and a `--color-muted` for meta info. Don't add a second accent.
+
+The article layout is the standout feature: a three-column reading view with a left meta column (author bylines, date), centred 680px body column, and a right gutter for search, table of contents, and categories. Don't flatten that into one column on desktop -- the layout signals "this is something to read".
+
+## Customisation
+
+Design tokens live in `src/styles/tokens.css` with their default values. To restyle the site, override tokens in `src/styles/theme.css` -- declarations there are unlayered, so they always beat the `@layer base` defaults. Don't edit `tokens.css` or `Base.astro` for visual changes.
+
+Colours are defined with `light-dark(<light>, <dark>)`, so each token carries both modes. Overriding with a plain colour changes light and dark at once; use `light-dark()` in the override to keep them distinct. There is no separate dark palette to maintain.
+
+Webfonts are configured in `astro.config.mjs` under `fonts:`. To swap the body face, change the `name:` for the entry bound to `cssVariable: "--font-body"`. Good alternatives: Geist, IBM Plex Sans, Söhne (if you have a licence), Public Sans. If you want a serif-bodied blog, swap to a humanist serif like Source Serif, Crimson Pro, or Lora -- but then also raise `--font-size-base` to `1.0625rem` for readability. To give headings their own face (or use a system font) without touching the font pipeline, override `--font-heading` or `--font-body` in `theme.css`.
+
+CSS variables worth knowing (see `tokens.css` for the full list):
+
+- `--color-brand`, `--color-brand-hover`, `--color-on-brand`, `--color-brand-ring`
+- `--color-bg`, `--color-bg-subtle`, `--color-surface`, `--color-text`, `--color-text-secondary`, `--color-muted`, `--color-border`, `--color-border-subtle`
+- `--font-body`, `--font-heading`, `--font-mono`
+- `--font-weight-heading` (600) / `--font-weight-display` (700) -- heading weights; lower them if you switch to a serif
+- `--tracking-tight` / `--tracking-snug` / `--tracking-wide` / `--tracking-wider` -- letter-spacing tokens used across headings and meta labels
+- `--content-width` (680px) -- article body column
+- `--wide-width` (1200px) -- max container
+- `--gutter-width` (200px) -- right sidebar (TOC) on article pages
+- `--meta-col-width` (180px) -- left meta column on article pages
+- `--avatar-size-{xs,sm,md,lg}` -- byline avatar sizes at different scales
+
+## What not to do
+
+- Don't add a second accent colour or coloured section backgrounds. The page should be black, white, and one blue.
+- Don't replace Inter with a display sans (Bebas, Anton, etc.). Headings rely on weight contrast, not novelty faces.
+- Don't collapse the article gutter on desktop -- it's part of the reading experience.
+- Don't use stock blog copy ("Welcome to my blog", "Stay tuned for more"). Write a real tagline that says what this blog is about.
+- Don't seed the home page with three identical placeholder posts. If you only have one real post, show one real post.
+- Comments are enabled on posts and rendered on the post detail page. Configure moderation before publishing the site, or remove `commentsEnabled` and the comments UI together.

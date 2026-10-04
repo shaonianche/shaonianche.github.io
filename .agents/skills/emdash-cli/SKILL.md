@@ -1,1 +1,267 @@
-LS0tCm5hbWU6IGVtZGFzaC1jbGkKZGVzY3JpcHRpb246IFVzZSB0aGUgRW1EYXNoIENMSSB0byBpbnNwZWN0IGFuZCBtYW5hZ2UgYW4gRW1EYXNoIGluc3RhbmNlIGZyb20gdGhlIGNvbW1hbmQgbGluZSwgaW5jbHVkaW5nIGNvbnRlbnQsIHNjaGVtYSwgbWVkaWEsIHRheG9ub21pZXMsIG1lbnVzLCBzZWFyY2gsIGF1dGhlbnRpY2F0aW9uLCBzZWVkcywgbWlncmF0aW9ucywgZ2VuZXJhdGVkIHR5cGVzLCBhbmQgd2hvbGUtc2l0ZSBleHBvcnQgYW5kIGltcG9ydC4KLS0tCgojIEVtRGFzaCBDTEkKClRoZSBFbURhc2ggQ0xJIChgZW1kYXNoYCwgd2l0aCB0aGUgc2hvcnQgYWxpYXMgYGVtYCkgbWFuYWdlcyBFbURhc2ggQ01TIGluc3RhbmNlcy4gQ29tbWFuZHMgZmFsbCBpbnRvIHR3byBjYXRlZ29yaWVzOgoKLSAqKkxvY2FsIGNvbW1hbmRzKiogd29yayB3aXRoIHByb2plY3QgZmlsZXMgb3IgYSBjb25maWd1cmVkIGRhdGFiYXNlOiBgaW5pdGAsIGBkb2N0b3JgLCBgc2VlZGAsIGBtaWdyYXRlYCwgYGV4cG9ydC1zZWVkYCwgYW5kIGBzZWNyZXRzYC4KLSAqKlJlbW90ZSBjb21tYW5kcyoqIHRhbGsgdG8gYSBydW5uaW5nIEVtRGFzaCBpbnN0YW5jZTogYHR5cGVzYCwgYGxvZ2luYCwgYGxvZ291dGAsIGB3aG9hbWlgLCBgY29udGVudGAsIGBzY2hlbWFgLCBgbWVkaWFgLCBgc2VhcmNoYCwgYHRheG9ub215YCwgYG1lbnVgLCBgc2l0ZWAsIGFuZCBgcGx1Z2luYC4KClJ1biBgbnB4IGVtZGFzaCAtLWhlbHBgIGFuZCBgbnB4IGVtZGFzaCA8Y29tbWFuZD4gLS1oZWxwYCBmb3IgdGhlIGluc3RhbGxlZCB2ZXJzaW9uJ3MgZXhhY3QgY29tbWFuZHMgYW5kIGZsYWdzLiBSZXNvbHZlIHRoZSBjdXJyZW50IHRhcmdldCB3aXRoIGEgcmVhZCBjb21tYW5kIGJlZm9yZSBhIGRlc3RydWN0aXZlIG9yIGJ1bGsgbXV0YXRpb247IGV4YW1wbGVzIGluIHRoaXMgc2tpbGwgZG8gbm90IGF1dGhvcml6ZSBjaGFuZ2luZyBhbiBpbnN0YW5jZSB0aGUgdXNlciBkaWQgbm90IHBsYWNlIGluIHNjb3BlLgoKIyMgQXV0aGVudGljYXRpb24KClJlbW90ZSBjb21tYW5kcyByZXNvbHZlIGF1dGggYXV0b21hdGljYWxseToKCjEuIGAtLXRva2VuYCBmbGFnCjIuIGBFTURBU0hfVE9LRU5gIGVudiB2YXIKMy4gU3RvcmVkIGNyZWRlbnRpYWxzIGZyb20gYGVtZGFzaCBsb2dpbmAKNC4gRGV2IGJ5cGFzcyAobG9jYWxob3N0IG9ubHkg4oCUIG5vIHRva2VuIG5lZWRlZCkKCkZvciBhIGxvY2FsaG9zdCBkZXZlbG9wbWVudCBzZXJ2ZXIgd2l0aCB0aGUgZGV2ZWxvcG1lbnQgYnlwYXNzIGVuYWJsZWQsIHRoZSBjbGllbnQgY2FuIGF1dGhlbnRpY2F0ZSBhdXRvbWF0aWNhbGx5LiBGb3IgYSByZW1vdGUgaW5zdGFuY2UsIHJ1biBgZW1kYXNoIGxvZ2luIC0tdXJsIGh0dHBzOi8vbXktc2l0ZS5wYWdlcy5kZXZgIG9yIHByb3ZpZGUgYSBzY29wZWQgdG9rZW4uCgojIyBDdXN0b20gSGVhZGVycyAmIFJldmVyc2UgUHJveGllcwoKU2l0ZXMgYmVoaW5kIENsb3VkZmxhcmUgQWNjZXNzIG9yIG90aGVyIHJldmVyc2UgcHJveGllcyBuZWVkIGF1dGggaGVhZGVycyBvbiBldmVyeSByZXF1ZXN0LiBUaGUgQ0xJIHN1cHBvcnRzIHRoaXMgdmlhIGAtLWhlYWRlcmAgZmxhZ3MgYW5kIGVudmlyb25tZW50IHZhcmlhYmxlcy4KCiMjIyBTZXJ2aWNlIHRva2VucyBmb3IgYXV0b21hdGlvbgoKYGBgYmFzaAojIFByb3ZpZGUgc2Vuc2l0aXZlIGhlYWRlcnMgdGhyb3VnaCB0aGUgZW52aXJvbm1lbnQgaW4gQ0kuCmV4cG9ydCBFTURBU0hfSEVBREVSUz0iQ0YtQWNjZXNzLUNsaWVudC1JZDogeHh4CkNGLUFjY2Vzcy1DbGllbnQtU2VjcmV0OiB5eXkiCm5weCBlbWRhc2ggd2hvYW1pIC0tdXJsIGh0dHBzOi8vbXktc2l0ZS5wYWdlcy5kZXYKYGBgCgpgZW1kYXNoIGxvZ2luIC0taGVhZGVyYCBwZXJzaXN0cyBjdXN0b20gaGVhZGVycyB0byBgfi8uY29uZmlnL2VtZGFzaC9hdXRoLmpzb25gIGZvciBsYXRlciBjb21tYW5kcy4gUHJlZmVyIGVudmlyb25tZW50LXByb3ZpZGVkIGhlYWRlcnMgaW4gQ0kgc28gYSBzZXJ2aWNlIHNlY3JldCBpcyBub3Qgd3JpdHRlbiB0byB0aGUgY3JlZGVudGlhbCBmaWxlIG9yIHNoZWxsIGhpc3RvcnkuCgojIyMgQ2xvdWRmbGFyZSBBY2Nlc3MgQnJvd3NlciBGbG93CgpJZiB5b3UgZG9uJ3QgaGF2ZSBzZXJ2aWNlIHRva2VucyBhbmQgYGNsb3VkZmxhcmVkYCBpcyBpbnN0YWxsZWQsIHRoZSBDTEkgd2lsbCBhdXRvbWF0aWNhbGx5OgoKMS4gRGV0ZWN0IHdoZW4gQWNjZXNzIGJsb2NrcyB0aGUgcmVxdWVzdAoyLiBUcnkgdG8gZ2V0IGEgY2FjaGVkIEpXVCB2aWEgYGNsb3VkZmxhcmVkIGFjY2VzcyB0b2tlbmAKMy4gRmFsbCBiYWNrIHRvIGBjbG91ZGZsYXJlZCBhY2Nlc3MgbG9naW5gIGZvciBicm93c2VyLWJhc2VkIGF1dGgKClRoaXMgd29ya3MgZm9yIGludGVyYWN0aXZlIHVzZSBidXQgaXNuJ3Qgc3VpdGFibGUgZm9yIENJLiBVc2Ugc2VydmljZSB0b2tlbnMgZm9yIGF1dG9tYXRpb24uCgojIyMgR2VuZXJpYyBSZXZlcnNlIFByb3h5IEF1dGgKClRoZSBgLS1oZWFkZXJgIGZsYWcgd29ya3Mgd2l0aCBhbnkgYXV0aCBzY2hlbWU6CgpgYGBiYXNoCiMgQmFzaWMgYXV0aApucHggZW1kYXNoIGxvZ2luIC0tdXJsIGh0dHBzOi8vZXhhbXBsZS5jb20gLUggIkF1dGhvcml6YXRpb246IEJhc2ljIGRYTmxjanB3WVhOeiIKCiMgQ3VzdG9tIGF1dGggaGVhZGVyCm5weCBlbWRhc2ggbG9naW4gLS11cmwgaHR0cHM6Ly9leGFtcGxlLmNvbSAtSCAiWC1BUEktS2V5OiBzZWNyZXQxMjMiCmBgYAoKIyMgUXVpY2sgUmVmZXJlbmNlCgojIyMgRGF0YWJhc2UgU2V0dXAKCkZvciBub3JtYWwgc2l0ZSBzdGFydHVwLCB1c2UgdGhlIHByb2plY3QncyBwYWNrYWdlIHNjcmlwdC4gVGhlIGZpcnN0IHJlcXVlc3QgcnVucyBwZW5kaW5nIG1pZ3JhdGlvbnMgYW5kIGFwcGxpZXMgdGhlIGJ1bmRsZWQgc2VlZCB3aGVuIHRoZSBkYXRhYmFzZSBpcyBlbXB0eSBhbmQgc2V0dXAgaGFzIG5vdCBiZWVuIGNvbXBsZXRlZC4gVGhlIEFzdHJvIGludGVncmF0aW9uIGdlbmVyYXRlcyBgZW1kYXNoLWVudi5kLnRzYCB3aGVuIHRoZSBzZXJ2ZXIgc3RhcnRzLgoKYGBgYmFzaAojIFN0YXJ0IHRoZSBzaXRlIHdpdGggaXRzIHBhY2thZ2Ugc2NyaXB0CnBucG0gZGV2CgojIEV4cG9ydCBhbiBleGlzdGluZyBkYXRhYmFzZSBhcyBhIHNlZWQgZmlsZQojICh0aGUgcnVudGltZSBhdXRvLWRpc2NvdmVycyAuZW1kYXNoL3NlZWQuanNvbiBvbiBmaXJzdCBib290OwojIGBta2RpciAtcGAgYmVjYXVzZSB0aGUgZGlyZWN0b3J5IG1heSBub3QgZXhpc3QgeWV0KQpta2RpciAtcCAuZW1kYXNoCm5weCBlbWRhc2ggZXhwb3J0LXNlZWQgPiAuZW1kYXNoL3NlZWQuanNvbgpucHggZW1kYXNoIGV4cG9ydC1zZWVkIC0td2l0aC1jb250ZW50PWFsbCA+IC5lbWRhc2gvc2VlZC5qc29uCmBgYAoKIyMjIFR5cGUgR2VuZXJhdGlvbgoKYGBgYmFzaAojIEdlbmVyYXRlIHR5cGVzIGZyb20gbG9jYWwgZGV2IHNlcnZlcgpucHggZW1kYXNoIHR5cGVzCgojIEdlbmVyYXRlIGZyb20gcmVtb3RlCm5weCBlbWRhc2ggdHlwZXMgLS11cmwgaHR0cHM6Ly9teS1zaXRlLnBhZ2VzLmRldgoKIyBDdXN0b20gb3V0cHV0IHBhdGgKbnB4IGVtZGFzaCB0eXBlcyAtLW91dHB1dCBzcmMvdHlwZXMvY21zLnRzCmBgYAoKV3JpdGVzIGAuZW1kYXNoL3R5cGVzLnRzYCAoVHlwZVNjcmlwdCBpbnRlcmZhY2VzKSBhbmQgYC5lbWRhc2gvc2NoZW1hLmpzb25gLgoKIyMjIEF1dGhlbnRpY2F0aW9uCgpgYGBiYXNoCiMgTG9naW4gKE9BdXRoIERldmljZSBGbG93KQpucHggZW1kYXNoIGxvZ2luIC0tdXJsIGh0dHBzOi8vbXktc2l0ZS5wYWdlcy5kZXYKCiMgQ2hlY2sgY3VycmVudCB1c2VyCm5weCBlbWRhc2ggd2hvYW1pCgojIExvZ291dApucHggZW1kYXNoIGxvZ291dAoKIyBHZW5lcmF0ZSBhbiBlbmNyeXB0aW9uIGtleSBmb3IgZGVwbG95bWVudApucHggZW1kYXNoIHNlY3JldHMgZ2VuZXJhdGUKYGBgCgojIyMgQ29udGVudCBDUlVECgpUaGUgQ0xJIGlzIGRlc2lnbmVkIGZvciBhZ2VudHMuIENyZWF0ZSBhbmQgdXBkYXRlIGF1dG8tcHVibGlzaCBieSBkZWZhdWx0IHNvIGFnZW50cyBnZXQgcmVhZC1hZnRlci13cml0ZSBjb25zaXN0ZW5jeSB3aXRob3V0IG1hbmFnaW5nIGRyYWZ0cy4KCmBgYGJhc2gKIyBMaXN0IGNvbnRlbnQKbnB4IGVtZGFzaCBjb250ZW50IGxpc3QgcG9zdHMKbnB4IGVtZGFzaCBjb250ZW50IGxpc3QgcG9zdHMgLS1zdGF0dXMgcHVibGlzaGVkIC0tbGltaXQgMTAKCiMgR2V0IGEgc2luZ2xlIGl0ZW0gKFBvcnRhYmxlIFRleHQgZmllbGRzIGNvbnZlcnRlZCB0byBtYXJrZG93bikKIyBSZXR1cm5zIGRyYWZ0IGRhdGEgaWYgYSBwZW5kaW5nIGRyYWZ0IGV4aXN0cwpucHggZW1kYXNoIGNvbnRlbnQgZ2V0IHBvc3RzIDAxQUJDMTIzCm5weCBlbWRhc2ggY29udGVudCBnZXQgcG9zdHMgMDFBQkMxMjMgLS1yYXcgICAgICAgICMgc2tpcCBQVC0+bWFya2Rvd24gY29udmVyc2lvbgpucHggZW1kYXNoIGNvbnRlbnQgZ2V0IHBvc3RzIDAxQUJDMTIzIC0tcHVibGlzaGVkICAgIyBpZ25vcmUgcGVuZGluZyBkcmFmdHMKCiMgQ3JlYXRlIGNvbnRlbnQgKGF1dG8tcHVibGlzaGVzIGJ5IGRlZmF1bHQpCm5weCBlbWRhc2ggY29udGVudCBjcmVhdGUgcG9zdHMgLS1kYXRhICd7InRpdGxlIjogIkhlbGxvIiwgImJvZHkiOiAiIyBXb3JsZCJ9JwpucHggZW1kYXNoIGNvbnRlbnQgY3JlYXRlIHBvc3RzIC0tZmlsZSBwb3N0Lmpzb24gLS1zbHVnIGhlbGxvLXdvcmxkCm5weCBlbWRhc2ggY29udGVudCBjcmVhdGUgcG9zdHMgLS1kcmFmdCAtLWRhdGEgJy4uLicgICMga2VlcCBhcyBkcmFmdApjYXQgcG9zdC5qc29uIHwgbnB4IGVtZGFzaCBjb250ZW50IGNyZWF0ZSBwb3N0cyAtLXN0ZGluCgojIFVwZGF0ZSAocmVxdWlyZXMgLS1yZXYgZnJvbSBhIHByaW9yIGdldCwgYXV0by1wdWJsaXNoZXMgYnkgZGVmYXVsdCkKbnB4IGVtZGFzaCBjb250ZW50IHVwZGF0ZSBwb3N0cyAwMUFCQzEyMyAtLXJldiBNVG95TURJMi4uLiAtLWRhdGEgJ3sidGl0bGUiOiAiVXBkYXRlZCJ9JwpucHggZW1kYXNoIGNvbnRlbnQgdXBkYXRlIHBvc3RzIDAxQUJDMTIzIC0tcmV2IE1Ub3lNREkyLi4uIC0tZHJhZnQgLS1kYXRhICcuLi4nICAjIGtlZXAgYXMgZHJhZnQKCiMgRGVsZXRlIChzb2Z0IGRlbGV0ZSkKbnB4IGVtZGFzaCBjb250ZW50IGRlbGV0ZSBwb3N0cyAwMUFCQzEyMwoKIyBMaWZlY3ljbGUKbnB4IGVtZGFzaCBjb250ZW50IHB1Ymxpc2ggcG9zdHMgMDFBQkMxMjMKbnB4IGVtZGFzaCBjb250ZW50IHVucHVibGlzaCBwb3N0cyAwMUFCQzEyMwpucHggZW1kYXNoIGNvbnRlbnQgc2NoZWR1bGUgcG9zdHMgMDFBQkMxMjMgLS1hdCAyMDI2LTAzLTAxVDA5OjAwOjAwWgpucHggZW1kYXNoIGNvbnRlbnQgcmVzdG9yZSBwb3N0cyAwMUFCQzEyMwpgYGAKCiMjIyBTY2hlbWEgTWFuYWdlbWVudAoKYGBgYmFzaAojIExpc3QgY29sbGVjdGlvbnMKbnB4IGVtZGFzaCBzY2hlbWEgbGlzdAoKIyBHZXQgY29sbGVjdGlvbiB3aXRoIGZpZWxkcwpucHggZW1kYXNoIHNjaGVtYSBnZXQgcG9zdHMKCiMgQ3JlYXRlIGNvbGxlY3Rpb24KbnB4IGVtZGFzaCBzY2hlbWEgY3JlYXRlIGFydGljbGVzIC0tbGFiZWwgQXJ0aWNsZXMgLS1kZXNjcmlwdGlvbiAiQmxvZyBhcnRpY2xlcyIKCiMgRGVsZXRlIGEgY29sbGVjdGlvbiBhZnRlciBpbnNwZWN0aW5nIGl0IGFuZCBjb25maXJtaW5nIHRoZSB0YXJnZXQKbnB4IGVtZGFzaCBzY2hlbWEgZ2V0IGFydGljbGVzCm5weCBlbWRhc2ggc2NoZW1hIGRlbGV0ZSBhcnRpY2xlcwoKIyBBZGQgZmllbGQKbnB4IGVtZGFzaCBzY2hlbWEgYWRkLWZpZWxkIHBvc3RzIGJvZHkgLS10eXBlIHBvcnRhYmxlVGV4dCAtLWxhYmVsICJCb2R5IENvbnRlbnQiCm5weCBlbWRhc2ggc2NoZW1hIGFkZC1maWVsZCBwb3N0cyBmZWF0dXJlZCAtLXR5cGUgYm9vbGVhbiAtLXJlcXVpcmVkCgojIFJlbW92ZSBmaWVsZApucHggZW1kYXNoIHNjaGVtYSByZW1vdmUtZmllbGQgcG9zdHMgZmVhdHVyZWQKYGBgCgpgc2NoZW1hIGFkZC1maWVsZGAgc3VwcG9ydHMgdGhlIGZpZWxkIHR5cGVzIHByaW50ZWQgYnkgYG5weCBlbWRhc2ggc2NoZW1hIGFkZC1maWVsZCAtLWhlbHBgLiBUaGUgZnVsbCBwcm9kdWN0IHNjaGVtYSBzdXBwb3J0cyBhZGRpdGlvbmFsIGZpZWxkIHR5cGVzIHRoYXQgYXJlIG5vdCBuZWNlc3NhcmlseSBjcmVhdGFibGUgdGhyb3VnaCB0aGlzIGNvbW1hbmQuCgojIyMgTWVkaWEKCmBgYGJhc2gKIyBMaXN0IG1lZGlhCm5weCBlbWRhc2ggbWVkaWEgbGlzdApucHggZW1kYXNoIG1lZGlhIGxpc3QgLS1taW1lIGltYWdlL3BuZwoKIyBVcGxvYWQKbnB4IGVtZGFzaCBtZWRpYSB1cGxvYWQgLi9waG90by5qcGcgLS1hbHQgIkEgc3Vuc2V0IiAtLWNhcHRpb24gIkJyaXN0b2wsIDIwMjYiCgojIEdldCAvIGRlbGV0ZQpucHggZW1kYXNoIG1lZGlhIGdldCAwMU1FRElBMTIzCm5weCBlbWRhc2ggbWVkaWEgZGVsZXRlIDAxTUVESUExMjMKYGBgCgojIyMgU2VhcmNoCgpgYGBiYXNoCm5weCBlbWRhc2ggc2VhcmNoICJoZWxsbyB3b3JsZCIKbnB4IGVtZGFzaCBzZWFyY2ggImhlbGxvIiAtLWNvbGxlY3Rpb24gcG9zdHMgLS1saW1pdCA1CmBgYAoKIyMjIFRheG9ub21pZXMKCmBgYGJhc2gKbnB4IGVtZGFzaCB0YXhvbm9teSBsaXN0Cm5weCBlbWRhc2ggdGF4b25vbXkgdGVybXMgY2F0ZWdvcmllcwpucHggZW1kYXNoIHRheG9ub215IGFkZC10ZXJtIGNhdGVnb3JpZXMgLS1uYW1lICJUZWNoIiAtLXNsdWcgdGVjaApucHggZW1kYXNoIHRheG9ub215IGFkZC10ZXJtIGNhdGVnb3JpZXMgLS1uYW1lICJGcm9udGVuZCIgLS1wYXJlbnQgMDFQQVJFTlQxMjMKYGBgCgojIyMgTWVudXMKCmBgYGJhc2gKbnB4IGVtZGFzaCBtZW51IGxpc3QKbnB4IGVtZGFzaCBtZW51IGdldCBwcmltYXJ5CmBgYAoKIyMjIFNpdGUgRXhwb3J0IGFuZCBJbXBvcnQKCmBlbWRhc2ggc2l0ZWAgY29waWVzIGEgd2hvbGUgc2l0ZSAoY29udGVudCBtb2RlbCwgY29udGVudCwgaGlzdG9yeSwgc2V0dGluZ3MsIGFuZCBtZWRpYSwgYnV0IG5vIHVzZXJzIG9yIHNlY3JldHMpIGludG8gYSBgLmVtZGFzaGAgc2l0ZSBwYWNrYWdlLCBhbmQgaW1wb3J0cyBhIHBhY2thZ2UgaW50byBhbiBlbXB0eSBzaXRlLiBUaGUgdG9rZW4gbmVlZHMgYGFkbWluYCwgd2hpY2ggdGhlIGBlbWRhc2ggbG9naW5gIHRva2VuIGhhcywgb3IgdGhlIGB0cmFuc2ZlcjpleHBvcnRgLCBgdHJhbnNmZXI6YW5hbHl6ZWAsIGFuZCBgdHJhbnNmZXI6ZXhlY3V0ZWAgc2NvcGVzLiBBbiBgSU5TVUZGSUNJRU5UX1NDT1BFYCBlcnJvciBtZWFucyB0aGUgdG9rZW4gaGFzIG5laXRoZXIuIEEgcGFja2FnZSBob2xkcyBldmVyeSBlbnRyeSBhbmQgdGhlIGVtYWlsIGFkZHJlc3NlcyBvZiBhdXRob3JzIGFuZCBjb21tZW50ZXJzOiB0cmVhdCBpdCBsaWtlIGEgZGF0YWJhc2UgYmFja3VwLgoKYGBgYmFzaAojIEV4cG9ydCAocmUtcnVuIHRoZSBzYW1lIGNvbW1hbmQgdG8gcmVzdW1lIGFmdGVyIGFuIGludGVycnVwdGlvbikKbnB4IGVtZGFzaCBzaXRlIGV4cG9ydCAtLXVybCBodHRwczovL29sZC5leGFtcGxlLmNvbSAtLW91dHB1dCBzaXRlLmVtZGFzaApucHggZW1kYXNoIHNpdGUgZXhwb3J0IC0tdXJsIGh0dHBzOi8vb2xkLmV4YW1wbGUuY29tIC0tb3V0cHV0IHNpdGUuZW1kYXNoIC0tbm8tY29tbWVudHMKCiMgSW1wb3J0LCBzdGVwIDE6IHVwbG9hZCBhbmQgYW5hbHl6ZTsgcHJpbnRzIHRoZSBwbGFuIGFuZCBpdHMgZGlnZXN0Cm5weCBlbWRhc2ggc2l0ZSBpbXBvcnQgc2l0ZS5lbWRhc2ggLS11cmwgaHR0cHM6Ly9uZXcuZXhhbXBsZS5jb20gLS1hbmFseXplCm5weCBlbWRhc2ggc2l0ZSBpbXBvcnQgc2l0ZS5lbWRhc2ggLS11cmwgaHR0cHM6Ly9uZXcuZXhhbXBsZS5jb20gLS1hbmFseXplIFwKICAtLW1hcC1wcmluY2lwYWwgZWRpdG9yQGV4YW1wbGUuY29tPWVkaXRvckBleGFtcGxlLmNvbSAtLXVzZS10YXJnZXQtdGl0bGUKCiMgSW1wb3J0LCBzdGVwIDI6IGV4ZWN1dGUgZXhhY3RseSB0aGUgcmV2aWV3ZWQgcGxhbgpucHggZW1kYXNoIHNpdGUgaW1wb3J0IHNpdGUuZW1kYXNoIC0tdXJsIGh0dHBzOi8vbmV3LmV4YW1wbGUuY29tIC0tcGxhbiBzaGEyNTY6PGhleD4gLS1jb25maXJtCgojIEZvbGxvdyB1cCBvbiBhbiBpbXBvcnQgYnkgb3BlcmF0aW9uIGlkCm5weCBlbWRhc2ggc2l0ZSBpbXBvcnQgc3RhdHVzIDxvcGVyYXRpb24taWQ+IC0tdXJsIGh0dHBzOi8vbmV3LmV4YW1wbGUuY29tCm5weCBlbWRhc2ggc2l0ZSBpbXBvcnQgcmVzdW1lIDxvcGVyYXRpb24taWQ+IFtzaXRlLmVtZGFzaF0gLS11cmwgaHR0cHM6Ly9uZXcuZXhhbXBsZS5jb20KbnB4IGVtZGFzaCBzaXRlIGltcG9ydCByZWNlaXB0IDxvcGVyYXRpb24taWQ+IC0tdXJsIGh0dHBzOi8vbmV3LmV4YW1wbGUuY29tCgojIFN0b3AgYW4gaW1wb3J0LCBvciBsaWZ0IHRoZSB3cml0ZSBibG9jayBhIGZhaWxlZCBvciBjYW5jZWxsZWQgaW1wb3J0IGxlYXZlcwojIChuZWl0aGVyIGRlbGV0ZXMgd2hhdCB0aGUgaW1wb3J0IHdyb3RlOyAtLXllcyBza2lwcyB0aGUgcHJvbXB0KQpucHggZW1kYXNoIHNpdGUgaW1wb3J0IGNhbmNlbCA8b3BlcmF0aW9uLWlkPiAtLXVybCBodHRwczovL25ldy5leGFtcGxlLmNvbQpucHggZW1kYXNoIHNpdGUgaW1wb3J0IGFiYW5kb24gPG9wZXJhdGlvbi1pZD4gLS11cmwgaHR0cHM6Ly9uZXcuZXhhbXBsZS5jb20KYGBgCgpTaG93IHRoZSB1c2VyIHRoZSBwbGFuIChkaWZmZXJlbmNlcyBmcm9tIHRoZSBzb3VyY2Ugc2l0ZSwgd2FybmluZ3MsIGJsb2NrZXJzLCBwcmluY2lwYWwgbWFwcGluZ3MpIGFuZCBnZXQgdGhlaXIgY29uZmlybWF0aW9uIGJlZm9yZSBydW5uaW5nIGAtLWNvbmZpcm1gOyBpdCB3cml0ZXMgdG8gdGhlIHRhcmdldCBzaXRlIGFuZCBibG9ja3Mgb3RoZXIgd3JpdGVzIHRoZXJlIHVudGlsIGl0IGZpbmlzaGVzLiBgc2l0ZSBpbXBvcnRgIGV4aXRzIGAyYCB3aGVuIHRoZSBwbGFuIGhhcyBibG9ja2VycywgYW5kIGBzaXRlIGltcG9ydCBzdGF0dXNgIGV4aXRzIGAxYCBmb3IgYW4gaW1wb3J0IHRoYXQgZmFpbGVkLCB3YXMgY2FuY2VsbGVkIG9yIGFiYW5kb25lZCwgb3IgZXhwaXJlZC4gT25seSBjYW5jZWwgb3IgYWJhbmRvbiBhbiBpbXBvcnQgd2hlbiB0aGUgdXNlciBhc2tzOiBhYmFuZG9uaW5nIGxlYXZlcyBwYXJ0aWFsIGRhdGEgb24gdGhlIHNpdGUsIHdoaWNoIHRoZW4gaGFzIHRvIGJlIHJlc2V0IGJlZm9yZSBhbm90aGVyIGltcG9ydC4gYC0tbWFwLXByaW5jaXBhbGAgdGFrZXMgYDxwcmluY2lwYWwgaWQgb3IgZW1haWw+PTx1c2VyIGlkLCBlbWFpbCwgb3Igbm9uZT5gIGFuZCBpcyByZXBlYXRhYmxlOyBkZWNpc2lvbiBmbGFncyBvbmx5IHdvcmsgd2l0aCBgLS1hbmFseXplYCwgYW5kIGVhY2ggY2hhbmdlIHByb2R1Y2VzIGEgbmV3IHBsYW4gZGlnZXN0LiBUaGUgcHVibGljIHNpdGUgaXMgbm90IGhpZGRlbiBkdXJpbmcgYW4gaW1wb3J0LCBzbyB0aGUgdGFyZ2V0IHNob3VsZCBzdGF5IHByaXZhdGUgdW50aWwgdGhlIGNvbW1hbmQgcHJpbnRzIGEgcmVjZWlwdCB3aXRoIGByZWNlaXB0RGlnZXN0VmFsaWQ6IHRydWVgLgoKIyMgRHJhZnRzIGFuZCBQdWJsaXNoaW5nCgpUaGUgQ0xJIGF1dG8tcHVibGlzaGVzIG9uIGBjcmVhdGVgIGFuZCBgdXBkYXRlYCBieSBkZWZhdWx0LiBUaGlzIG1lYW5zOgoKLSAqKmBjcmVhdGVgKiogY3JlYXRlcyB0aGUgaXRlbSBhbmQgaW1tZWRpYXRlbHkgcHVibGlzaGVzIGl0Ci0gKipgdXBkYXRlYCoqIHVwZGF0ZXMgdGhlIGl0ZW0gYW5kIHB1Ymxpc2hlcyBpZiBhIGRyYWZ0IHJldmlzaW9uIHdhcyBjcmVhdGVkCi0gKipgZ2V0YCoqIHJldHVybnMgZHJhZnQgZGF0YSBpZiBhIHBlbmRpbmcgZHJhZnQgZXhpc3RzIChlLmcuIGZyb20gdGhlIGFkbWluIFVJKQoKVXNlIGAtLWRyYWZ0YCBvbiBjcmVhdGUvdXBkYXRlIHRvIHNraXAgYXV0by1wdWJsaXNoaW5nLiBVc2UgYC0tcHVibGlzaGVkYCBvbiBnZXQgdG8gaWdub3JlIHBlbmRpbmcgZHJhZnRzLgoKQ29sbGVjdGlvbnMgdGhhdCBzdXBwb3J0IHJldmlzaW9ucyBzdG9yZSBlZGl0cyBhcyBkcmFmdCByZXZpc2lvbnMuIFRoZSBDTEkgaGFuZGxlcyB0aGlzIHRyYW5zcGFyZW50bHkg4oCUIGFnZW50cyBkb24ndCBuZWVkIHRvIGtub3cgd2hldGhlciBhIGNvbGxlY3Rpb24gdXNlcyByZXZpc2lvbnMgb3Igbm90LgoKIyMgSlNPTiBPdXRwdXQKCkFsbCByZW1vdGUgY29tbWFuZHMgc3VwcG9ydCBgLS1qc29uYCBmb3IgbWFjaGluZS1yZWFkYWJsZSBvdXRwdXQuIEl0J3MgYXV0by1lbmFibGVkIHdoZW4gc3Rkb3V0IGlzIHBpcGVkLiBgZW1kYXNoIHNpdGVgIGFsd2F5cyB3cml0ZXMgcHJvZ3Jlc3MgdG8gc3RkZXJyLCBzbyBzdGRvdXQgaG9sZHMgb25seSB0aGUgSlNPTiByZXN1bHQ7IGVycm9ycyBhcmUgYHsgImVycm9yIjogeyAiY29kZSIsICJtZXNzYWdlIiB9IH1gLgoKYGBgYmFzaAojIFBpcGUgdG8ganEKbnB4IGVtZGFzaCBjb250ZW50IGxpc3QgcG9zdHMgLS1qc29uIHwganEgJy5pdGVtc1tdLnNsdWcnCgojIFVzZSBpbiBzY3JpcHRzCklEPSQobnB4IGVtZGFzaCBjb250ZW50IGNyZWF0ZSBwb3N0cyAtLWRhdGEgJ3sidGl0bGUiOiJIZWxsbyJ9JyAtLWpzb24gfCBqcSAtciAnLmlkJykKYGBgCgojIyBFZGl0aW5nIEZsb3cKCkZvciBkZXRhaWxzIG9uIGhvdyBjb250ZW50IGVkaXRpbmcgd29ya3Mg4oCUIFBvcnRhYmxlIFRleHQvbWFya2Rvd24gY29udmVyc2lvbiwgYF9yZXZgIHRva2VucywgYW5kIHJhdyBtb2RlIOKAlCBzZWUgKipbRURJVElORy1GTE9XLm1kXSguL0VESVRJTkctRkxPVy5tZCkqKi4K
+---
+name: emdash-cli
+description: Use the EmDash CLI to inspect and manage an EmDash instance from the command line, including content, schema, media, taxonomies, menus, search, authentication, seeds, migrations, generated types, and whole-site export and import.
+---
+
+# EmDash CLI
+
+The EmDash CLI (`emdash`, with the short alias `em`) manages EmDash CMS instances. Commands fall into two categories:
+
+- **Local commands** work with project files or a configured database: `init`, `doctor`, `seed`, `migrate`, `export-seed`, and `secrets`.
+- **Remote commands** talk to a running EmDash instance: `types`, `login`, `logout`, `whoami`, `content`, `schema`, `media`, `search`, `taxonomy`, `menu`, `site`, and `plugin`.
+
+Run `npx emdash --help` and `npx emdash <command> --help` for the installed version's exact commands and flags. Resolve the current target with a read command before a destructive or bulk mutation; examples in this skill do not authorize changing an instance the user did not place in scope.
+
+## Authentication
+
+Remote commands resolve auth automatically:
+
+1. `--token` flag
+2. `EMDASH_TOKEN` env var
+3. Stored credentials from `emdash login`
+4. Dev bypass (localhost only — no token needed)
+
+For a localhost development server with the development bypass enabled, the client can authenticate automatically. For a remote instance, run `emdash login --url https://my-site.pages.dev` or provide a scoped token.
+
+## Custom Headers & Reverse Proxies
+
+Sites behind Cloudflare Access or other reverse proxies need auth headers on every request. The CLI supports this via `--header` flags and environment variables.
+
+### Service tokens for automation
+
+```bash
+# Provide sensitive headers through the environment in CI.
+export EMDASH_HEADERS="CF-Access-Client-Id: xxx
+CF-Access-Client-Secret: yyy"
+npx emdash whoami --url https://my-site.pages.dev
+```
+
+`emdash login --header` persists custom headers to `~/.config/emdash/auth.json` for later commands. Prefer environment-provided headers in CI so a service secret is not written to the credential file or shell history.
+
+### Cloudflare Access Browser Flow
+
+If you don't have service tokens and `cloudflared` is installed, the CLI will automatically:
+
+1. Detect when Access blocks the request
+2. Try to get a cached JWT via `cloudflared access token`
+3. Fall back to `cloudflared access login` for browser-based auth
+
+This works for interactive use but isn't suitable for CI. Use service tokens for automation.
+
+### Generic Reverse Proxy Auth
+
+The `--header` flag works with any auth scheme:
+
+```bash
+# Basic auth
+npx emdash login --url https://example.com -H "Authorization: Basic dXNlcjpwYXNz"
+
+# Custom auth header
+npx emdash login --url https://example.com -H "X-API-Key: secret123"
+```
+
+## Quick Reference
+
+### Database Setup
+
+For normal site startup, use the project's package script. The first request runs pending migrations and applies the bundled seed when the database is empty and setup has not been completed. The Astro integration generates `emdash-env.d.ts` when the server starts.
+
+```bash
+# Start the site with its package script
+pnpm dev
+
+# Export an existing database as a seed file
+# (the runtime auto-discovers .emdash/seed.json on first boot;
+# `mkdir -p` because the directory may not exist yet)
+mkdir -p .emdash
+npx emdash export-seed > .emdash/seed.json
+npx emdash export-seed --with-content=all > .emdash/seed.json
+```
+
+### Type Generation
+
+```bash
+# Generate types from local dev server
+npx emdash types
+
+# Generate from remote
+npx emdash types --url https://my-site.pages.dev
+
+# Custom output path
+npx emdash types --output src/types/cms.ts
+```
+
+Writes `.emdash/types.ts` (TypeScript interfaces) and `.emdash/schema.json`.
+
+### Authentication
+
+```bash
+# Login (OAuth Device Flow)
+npx emdash login --url https://my-site.pages.dev
+
+# Check current user
+npx emdash whoami
+
+# Logout
+npx emdash logout
+
+# Generate an encryption key for deployment
+npx emdash secrets generate
+```
+
+### Content CRUD
+
+The CLI is designed for agents. Create and update auto-publish by default so agents get read-after-write consistency without managing drafts.
+
+```bash
+# List content
+npx emdash content list posts
+npx emdash content list posts --status published --limit 10
+
+# Get a single item (Portable Text fields converted to markdown)
+# Returns draft data if a pending draft exists
+npx emdash content get posts 01ABC123
+npx emdash content get posts 01ABC123 --raw        # skip PT->markdown conversion
+npx emdash content get posts 01ABC123 --published   # ignore pending drafts
+
+# Create content (auto-publishes by default)
+npx emdash content create posts --data '{"title": "Hello", "body": "# World"}'
+npx emdash content create posts --file post.json --slug hello-world
+npx emdash content create posts --draft --data '...'  # keep as draft
+cat post.json | npx emdash content create posts --stdin
+
+# Update (requires --rev from a prior get, auto-publishes by default)
+npx emdash content update posts 01ABC123 --rev MToyMDI2... --data '{"title": "Updated"}'
+npx emdash content update posts 01ABC123 --rev MToyMDI2... --draft --data '...'  # keep as draft
+
+# Delete (soft delete)
+npx emdash content delete posts 01ABC123
+
+# Lifecycle
+npx emdash content publish posts 01ABC123
+npx emdash content unpublish posts 01ABC123
+npx emdash content schedule posts 01ABC123 --at 2026-03-01T09:00:00Z
+npx emdash content restore posts 01ABC123
+```
+
+### Schema Management
+
+```bash
+# List collections
+npx emdash schema list
+
+# Get collection with fields
+npx emdash schema get posts
+
+# Create collection
+npx emdash schema create articles --label Articles --description "Blog articles"
+
+# Delete a collection after inspecting it and confirming the target
+npx emdash schema get articles
+npx emdash schema delete articles
+
+# Add field
+npx emdash schema add-field posts body --type portableText --label "Body Content"
+npx emdash schema add-field posts featured --type boolean --required
+
+# Remove field
+npx emdash schema remove-field posts featured
+```
+
+`schema add-field` supports the field types printed by `npx emdash schema add-field --help`. The full product schema supports additional field types that are not necessarily creatable through this command.
+
+### Media
+
+```bash
+# List media
+npx emdash media list
+npx emdash media list --mime image/png
+
+# Upload
+npx emdash media upload ./photo.jpg --alt "A sunset" --caption "Bristol, 2026"
+
+# Get / delete
+npx emdash media get 01MEDIA123
+npx emdash media delete 01MEDIA123
+```
+
+### Search
+
+```bash
+npx emdash search "hello world"
+npx emdash search "hello" --collection posts --limit 5
+```
+
+### Taxonomies
+
+```bash
+npx emdash taxonomy list
+npx emdash taxonomy terms categories
+npx emdash taxonomy add-term categories --name "Tech" --slug tech
+npx emdash taxonomy add-term categories --name "Frontend" --parent 01PARENT123
+```
+
+### Menus
+
+```bash
+npx emdash menu list
+npx emdash menu get primary
+```
+
+### Site Export and Import
+
+`emdash site` copies a whole site (content model, content, history, settings, and media, but no users or secrets) into a `.emdash` site package, and imports a package into an empty site. The token needs `admin`, which the `emdash login` token has, or the `transfer:export`, `transfer:analyze`, and `transfer:execute` scopes. An `INSUFFICIENT_SCOPE` error means the token has neither. A package holds every entry and the email addresses of authors and commenters: treat it like a database backup.
+
+```bash
+# Export (re-run the same command to resume after an interruption)
+npx emdash site export --url https://old.example.com --output site.emdash
+npx emdash site export --url https://old.example.com --output site.emdash --no-comments
+
+# Import, step 1: upload and analyze; prints the plan and its digest
+npx emdash site import site.emdash --url https://new.example.com --analyze
+npx emdash site import site.emdash --url https://new.example.com --analyze \
+  --map-principal editor@example.com=editor@example.com --use-target-title
+
+# Import, step 2: execute exactly the reviewed plan
+npx emdash site import site.emdash --url https://new.example.com --plan sha256:<hex> --confirm
+
+# Follow up on an import by operation id
+npx emdash site import status <operation-id> --url https://new.example.com
+npx emdash site import resume <operation-id> [site.emdash] --url https://new.example.com
+npx emdash site import receipt <operation-id> --url https://new.example.com
+
+# Stop an import, or lift the write block a failed or cancelled import leaves
+# (neither deletes what the import wrote; --yes skips the prompt)
+npx emdash site import cancel <operation-id> --url https://new.example.com
+npx emdash site import abandon <operation-id> --url https://new.example.com
+```
+
+Show the user the plan (differences from the source site, warnings, blockers, principal mappings) and get their confirmation before running `--confirm`; it writes to the target site and blocks other writes there until it finishes. `site import` exits `2` when the plan has blockers, and `site import status` exits `1` for an import that failed, was cancelled or abandoned, or expired. Only cancel or abandon an import when the user asks: abandoning leaves partial data on the site, which then has to be reset before another import. `--map-principal` takes `<principal id or email>=<user id, email, or none>` and is repeatable; decision flags only work with `--analyze`, and each change produces a new plan digest. The public site is not hidden during an import, so the target should stay private until the command prints a receipt with `receiptDigestValid: true`.
+
+## Drafts and Publishing
+
+The CLI auto-publishes on `create` and `update` by default. This means:
+
+- **`create`** creates the item and immediately publishes it
+- **`update`** updates the item and publishes if a draft revision was created
+- **`get`** returns draft data if a pending draft exists (e.g. from the admin UI)
+
+Use `--draft` on create/update to skip auto-publishing. Use `--published` on get to ignore pending drafts.
+
+Collections that support revisions store edits as draft revisions. The CLI handles this transparently — agents don't need to know whether a collection uses revisions or not.
+
+## JSON Output
+
+All remote commands support `--json` for machine-readable output. It's auto-enabled when stdout is piped. `emdash site` always writes progress to stderr, so stdout holds only the JSON result; errors are `{ "error": { "code", "message" } }`.
+
+```bash
+# Pipe to jq
+npx emdash content list posts --json | jq '.items[].slug'
+
+# Use in scripts
+ID=$(npx emdash content create posts --data '{"title":"Hello"}' --json | jq -r '.id')
+```
+
+## Editing Flow
+
+For details on how content editing works — Portable Text/markdown conversion, `_rev` tokens, and raw mode — see **[EDITING-FLOW.md](./EDITING-FLOW.md)**.

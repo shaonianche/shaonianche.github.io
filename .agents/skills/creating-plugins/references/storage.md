@@ -1,1 +1,213 @@
-IyBTdG9yYWdlIGFuZCBLVgoKU2FuZGJveGVkIHBsdWdpbnMgaGF2ZSB0aHJlZSBwbHVnaW4tc2NvcGVkIGRhdGEgQVBJczoKCnwgQVBJICAgICAgICAgICAgICAgICAgICAgICAgfCBVc2UgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfAp8IGBjdHguc3RvcmFnZS48Y29sbGVjdGlvbj5gIHwgUXVlcnlhYmxlIHJlY29yZHMgZGVjbGFyZWQgaW4gYGVtZGFzaC1wbHVnaW4uanNvbmNgICAgICB8CnwgYGN0eC5zZXR0aW5nc2AgICAgICAgICAgICAgfCBVc2VyLWNvbmZpZ3VyYWJsZSBzZXR0aW5ncywgaW5jbHVkaW5nIGVuY3J5cHRlZCBzZWNyZXRzIHwKfCBgY3R4Lmt2YCAgICAgICAgICAgICAgICAgICB8IEN1cnNvcnMsIGNhY2hlZCB2YWx1ZXMsIGFuZCBvdGhlciBrZXktdmFsdWUgc3RhdGUgICAgICAgfAoKQWxsIHRocmVlIHN0b3JlcyB1c2UgdGhlIGhvc3QgZGF0YWJhc2UgYW5kIGFyZSBpc29sYXRlZCBieSBydW50aW1lIHBsdWdpbiBJRC4gTm9uZSBuZWVkcyBhIGNhcGFiaWxpdHkuCgojIyBEZWNsYXJlIHN0b3JhZ2UgY29sbGVjdGlvbnMKCkRlY2xhcmUgZXZlcnkgY29sbGVjdGlvbiBhbmQgcXVlcnkgaW5kZXggaW4gdGhlIG1hbmlmZXN0OgoKYGBganNvbmMgdGl0bGU9ImVtZGFzaC1wbHVnaW4uanNvbmMiCnsKCSJzdG9yYWdlIjogewoJCSJzdWJtaXNzaW9ucyI6IHsKCQkJImluZGV4ZXMiOiBbImZvcm1JZCIsICJzdGF0dXMiLCAiY3JlYXRlZEF0IiwgWyJmb3JtSWQiLCAiY3JlYXRlZEF0Il1dLAoJCQkidW5pcXVlSW5kZXhlcyI6IFsiZXh0ZXJuYWxJZCJdLAoJCX0sCgl9LAp9CmBgYAoKQW4gdW5kZWNsYXJlZCBjb2xsZWN0aW9uIGlzIHJlamVjdGVkIGJ5IHRoZSBzYW5kYm94IGJyaWRnZS4gRmllbGRzIGluIGB1bmlxdWVJbmRleGVzYCBhcmUgYWxyZWFkeSBxdWVyeWFibGU7IGRvIG5vdCByZXBlYXQgdGhlbSBpbiBgaW5kZXhlc2AuCgojIyBDb2xsZWN0aW9uIG9wZXJhdGlvbnMKCkV2ZXJ5IGRlY2xhcmVkIGNvbGxlY3Rpb24gZXhwb3NlcyB0aGlzIHBvcnRhYmxlIEFQSSBpbiBuYXRpdmUsIENsb3VkZmxhcmUtc2FuZGJveGVkLCBhbmQgTm9kZS93b3JrZXJkLXNhbmRib3hlZCBleGVjdXRpb246CgpgYGB0eXBlc2NyaXB0CmludGVyZmFjZSBTdG9yYWdlQ29sbGVjdGlvbjxUID0gdW5rbm93bj4gewoJZ2V0KGlkOiBzdHJpbmcpOiBQcm9taXNlPFQgfCBudWxsPjsKCXB1dChpZDogc3RyaW5nLCBkYXRhOiBUKTogUHJvbWlzZTx2b2lkPjsKCWRlbGV0ZShpZDogc3RyaW5nKTogUHJvbWlzZTxib29sZWFuPjsKCWV4aXN0cyhpZDogc3RyaW5nKTogUHJvbWlzZTxib29sZWFuPjsKCglnZXRWZXJzaW9uZWQoaWQ6IHN0cmluZyk6IFByb21pc2U8eyB2YWx1ZTogVDsgcmV2aXNpb246IHN0cmluZyB9IHwgbnVsbD47Cgljb21wYXJlQW5kU2V0KAoJCWlkOiBzdHJpbmcsCgkJZXhwZWN0ZWRSZXZpc2lvbjogc3RyaW5nIHwgbnVsbCwKCQlkYXRhOiBULAoJKTogUHJvbWlzZTx7IGFwcGxpZWQ6IHRydWU7IHJldmlzaW9uOiBzdHJpbmcgfSB8IHsgYXBwbGllZDogZmFsc2UgfT47Cgljb21wYXJlQW5kRGVsZXRlKGlkOiBzdHJpbmcsIGV4cGVjdGVkUmV2aXNpb246IHN0cmluZyk6IFByb21pc2U8eyBhcHBsaWVkOiBib29sZWFuIH0+OwoJdXBkYXRlSWYoaWQ6IHN0cmluZywgYXJnczogVXBkYXRlSWZBcmdzPFQ+KTogUHJvbWlzZTxVcGRhdGVJZlJlc3VsdDxUPj47CgoJZ2V0TWFueShpZHM6IHN0cmluZ1tdKTogUHJvbWlzZTxNYXA8c3RyaW5nLCBUPj47CglwdXRNYW55KGl0ZW1zOiBBcnJheTx7IGlkOiBzdHJpbmc7IGRhdGE6IFQgfT4pOiBQcm9taXNlPHZvaWQ+OwoJZGVsZXRlTWFueShpZHM6IHN0cmluZ1tdKTogUHJvbWlzZTxudW1iZXI+OwoKCXF1ZXJ5KG9wdGlvbnM/OiBRdWVyeU9wdGlvbnMpOiBQcm9taXNlPHsKCQlpdGVtczogQXJyYXk8eyBpZDogc3RyaW5nOyBkYXRhOiBUIH0+OwoJCWN1cnNvcj86IHN0cmluZzsKCQloYXNNb3JlOiBib29sZWFuOwoJfT47Cgljb3VudCh3aGVyZT86IFdoZXJlQ2xhdXNlKTogUHJvbWlzZTxudW1iZXI+Owp9CmBgYAoKVGhlIE5vZGUvd29ya2VyZCB3cmFwcGVyIGFsc28gY29udGFpbnMgY29udGVudCBiYXRjaCBtZXRob2RzLiBUaGV5IGFyZSBub3QgcGFydCBvZiBgU3RvcmFnZUNvbGxlY3Rpb25gOyBzdG9yYWdlIGJhdGNoIG1ldGhvZHMgaW4gdGhlIGludGVyZmFjZSBhYm92ZSBhcmUgcG9ydGFibGUgYWNyb3NzIGJvdGggcnVubmVycy4KCiMjIEJhc2ljIGFuZCBiYXRjaCB3cml0ZXMKCmBgYHR5cGVzY3JpcHQKY29uc3Qgc3VibWlzc2lvbnMgPSBjdHguc3RvcmFnZS5zdWJtaXNzaW9ucyBhcyBTdG9yYWdlQ29sbGVjdGlvbjxTdWJtaXNzaW9uPjsKCmF3YWl0IHN1Ym1pc3Npb25zLnB1dCgic3ViXzEyMyIsIHsKCWZvcm1JZDogImNvbnRhY3QiLAoJc3RhdHVzOiAicGVuZGluZyIsCgljcmVhdGVkQXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSwKfSk7Cgpjb25zdCBpdGVtID0gYXdhaXQgc3VibWlzc2lvbnMuZ2V0KCJzdWJfMTIzIik7CmNvbnN0IGV4aXN0cyA9IGF3YWl0IHN1Ym1pc3Npb25zLmV4aXN0cygic3ViXzEyMyIpOwoKY29uc3QgaXRlbXMgPSBhd2FpdCBzdWJtaXNzaW9ucy5nZXRNYW55KFsic3ViXzEyMyIsICJzdWJfNDU2Il0pOwphd2FpdCBzdWJtaXNzaW9ucy5wdXRNYW55KFsKCXsgaWQ6ICJzdWJfNDU2IiwgZGF0YTogeyBmb3JtSWQ6ICJjb250YWN0Iiwgc3RhdHVzOiAicGVuZGluZyIgfSB9LAoJeyBpZDogInN1Yl83ODkiLCBkYXRhOiB7IGZvcm1JZDogInNhbGVzIiwgc3RhdHVzOiAicGVuZGluZyIgfSB9LApdKTsKY29uc3QgZGVsZXRlZCA9IGF3YWl0IHN1Ym1pc3Npb25zLmRlbGV0ZU1hbnkoWyJzdWJfNDU2IiwgInN1Yl83ODkiXSk7CmBgYAoKYGdldE1hbnkoKWAgcmV0dXJucyBhIGBNYXBgLCBpbmNsdWRpbmcgYWZ0ZXIgY3Jvc3NpbmcgZWl0aGVyIHNhbmRib3ggYnJpZGdlLgoKIyMgUmV2aXNpb24tYmFzZWQgY29tcGFyZSBhbmQgc2V0CgpVc2UgYGdldFZlcnNpb25lZCgpYCwgYGNvbXBhcmVBbmRTZXQoKWAsIGFuZCBgY29tcGFyZUFuZERlbGV0ZSgpYCB3aGVuIGNvbmN1cnJlbnQgcmVxdWVzdHMgbWF5IHJlcGxhY2UgdGhlIHNhbWUgd2hvbGUgdmFsdWUuCgpgYGB0eXBlc2NyaXB0CmNvbnN0IGN1cnJlbnQgPSBhd2FpdCBzdWJtaXNzaW9ucy5nZXRWZXJzaW9uZWQoInN1Yl8xMjMiKTsKaWYgKCFjdXJyZW50KSB0aHJvdyBuZXcgRXJyb3IoIlN1Ym1pc3Npb24gbm90IGZvdW5kIik7Cgpjb25zdCByZXN1bHQgPSBhd2FpdCBzdWJtaXNzaW9ucy5jb21wYXJlQW5kU2V0KCJzdWJfMTIzIiwgY3VycmVudC5yZXZpc2lvbiwgewoJLi4uY3VycmVudC52YWx1ZSwKCXN0YXR1czogInByb2Nlc3NpbmciLAp9KTsKCmlmICghcmVzdWx0LmFwcGxpZWQpIHsKCS8vIEFub3RoZXIgcmVxdWVzdCBjaGFuZ2VkIG9yIGRlbGV0ZWQgdGhlIHZhbHVlLiBSZWFkIGl0IGFnYWluIGJlZm9yZSByZXRyeWluZy4KfQpgYGAKClRoZSBvcGVyYXRpb25zIGhhdmUgdGhlc2UgcHJlY29uZGl0aW9uczoKCnwgT3BlcmF0aW9uICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IEJlaGF2aW9yICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgYGdldFZlcnNpb25lZChrZXkpYCAgICAgICAgICAgICAgICAgICB8IFJldHVybnMgYHsgdmFsdWUsIHJldmlzaW9uIH1gLCBvciBgbnVsbGAgb25seSB3aGVuIGFic2VudCB8CnwgYGNvbXBhcmVBbmRTZXQoa2V5LCBudWxsLCB2YWx1ZSlgICAgICB8IENyZWF0ZXMgb25seSB3aGVuIGFic2VudCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGNvbXBhcmVBbmRTZXQoa2V5LCByZXZpc2lvbiwgdmFsdWUpYCB8IFJlcGxhY2VzIG9ubHkgd2hlbiB0aGUgY3VycmVudCByZXZpc2lvbiBtYXRjaGVzICAgICAgICAgICB8CnwgYGNvbXBhcmVBbmREZWxldGUoa2V5LCByZXZpc2lvbilgICAgICB8IERlbGV0ZXMgb25seSB3aGVuIHRoZSBjdXJyZW50IHJldmlzaW9uIG1hdGNoZXMgICAgICAgICAgICB8CgpBIHN0b3JlZCBKU09OIGBudWxsYCBzdGlsbCByZXR1cm5zIGEgdmVyc2lvbmVkIGVudmVsb3BlLiBFdmVyeSBzdWNjZXNzZnVsIHdyaXRlIGNoYW5nZXMgdGhlIHJldmlzaW9uLCBpbmNsdWRpbmcgYW4gZXF1YWwtdmFsdWUgYHB1dCgpYCBvciBgc2V0KClgLiBSZXZpc2lvbnMgYXJlIG9wYXF1ZSwga2V5LXNwZWNpZmljIHZhbHVlczsgcGFzcyB0aGVtIGJhY2sgdW5jaGFuZ2VkLgoKQ29uZmxpY3RzIHJldHVybiBgYXBwbGllZDogZmFsc2VgLiBJbnZhbGlkIGlucHV0cywgcGVybWlzc2lvbiBmYWlsdXJlcywgdW5pcXVlLWluZGV4IHZpb2xhdGlvbnMsIGFuZCBkYXRhYmFzZSBmYWlsdXJlcyByZWplY3QuIEFmdGVyIGEgY29uZmxpY3QsIHJlLXJlYWQgYW5kIHJlY29tcHV0ZTsga2VlcCByZXRyaWVzIGJvdW5kZWQuIEEgbG9zdCByZXNwb25zZSBjYW4gbGVhdmUgdGhlIHdyaXRlIG91dGNvbWUgdW5rbm93biwgc28gQ0FTIGlzIG5vdCBhbiBleGFjdGx5LW9uY2UgbWVjaGFuaXNtIGZvciBleHRlcm5hbCBzaWRlIGVmZmVjdHMuCgpUaGUgdmVyc2lvbmVkIG1ldGhvZHMgYXJlIGFsc28gYXZhaWxhYmxlIG9uIGBjdHgua3ZgOgoKYGBgdHlwZXNjcmlwdApjb25zdCBjdXJyZW50ID0gYXdhaXQgY3R4Lmt2LmdldFZlcnNpb25lZDxudW1iZXI+KCJzdGF0ZTpjb21wbGV0ZWQiKTsKY29uc3QgbmV4dCA9IChjdXJyZW50Py52YWx1ZSA/PyAwKSArIDE7CmNvbnN0IHJlc3VsdCA9IGF3YWl0IGN0eC5rdi5jb21wYXJlQW5kU2V0KCJzdGF0ZTpjb21wbGV0ZWQiLCBjdXJyZW50Py5yZXZpc2lvbiA/PyBudWxsLCBuZXh0KTsKYGBgCgojIyBQcmVkaWNhdGUtZ3VhcmRlZCB1cGRhdGVzCgpgdXBkYXRlSWYoKWAgY2hhbmdlcyBmaWVsZHMgb2YgYW4gZXhpc3RpbmcgZG9jdW1lbnQgd2hlbiBpdHMgc3RvcmVkIGRhdGEgbWF0Y2hlcyBhIGd1YXJkLiBUaGUgZ3VhcmQsIGZpZWxkIHJlcGxhY2VtZW50cywgYW5kIGludGVnZXIgZGVsdGFzIGV4ZWN1dGUgYXRvbWljYWxseSBmb3IgdGhhdCByZWNvcmQuCgpgYGB0eXBlc2NyaXB0CmNvbnN0IHJlc3VsdCA9IGF3YWl0IHN1Ym1pc3Npb25zLnVwZGF0ZUlmKCJzdWJfMTIzIiwgewoJd2hlcmU6IHsgc3RhdHVzOiAicGVuZGluZyIsIGF0dGVtcHRzOiB7IGx0OiAzIH0gfSwKCXNldDogeyBzdGF0dXM6ICJwcm9jZXNzaW5nIiwgbGFzdEF0dGVtcHRBdDogbmV3IERhdGUoKS50b0lTT1N0cmluZygpIH0sCglkZWx0YTogeyBhdHRlbXB0czogeyBpbmM6IDEgfSB9LAp9KTsKCmlmIChyZXN1bHQuYXBwbGllZCkgewoJY3R4LmxvZy5pbmZvKCJDbGFpbWVkIHN1Ym1pc3Npb24iLCB7IHN1Ym1pc3Npb246IHJlc3VsdC5kYXRhIH0pOwp9CmBgYAoKYHVwZGF0ZUlmKClgIHJldHVybnMgYHsgYXBwbGllZDogZmFsc2UgfWAgd2hlbiB0aGUgcm93IGlzIGFic2VudCwgdGhlIGd1YXJkIGZhaWxzLCB0aGUgc3RvcmVkIGRvY3VtZW50IGlzIG5vdCBhbiBvYmplY3QsIG9yIGludGVnZXIgYXJpdGhtZXRpYyBpcyB1bnNhZmUuIEl0IG5ldmVyIGluc2VydHMuCgpSdWxlczoKCi0gYHdoZXJlYCBpcyByZXF1aXJlZC4gQW4gZXhwbGljaXQgYHt9YCBtZWFucyDigJxtYXRjaCBhbnkgZXhpc3Rpbmcgcm93LuKAnQotIGBzZXRgIHJlcGxhY2VzIHN1cHBsaWVkIHRvcC1sZXZlbCBmaWVsZHMgYW5kIGxlYXZlcyBvdGhlciBmaWVsZHMgdW5jaGFuZ2VkLgotIGBkZWx0YWAgY29udGFpbnMgZXhhY3RseSBvbmUgc2FmZS1pbnRlZ2VyIGBpbmNgIG9yIGBkZWNgIHBlciBmaWVsZC4gTWlzc2luZyBvciBgbnVsbGAgY291bnRlcnMgc3RhcnQgYXQgemVyby4KLSBBIGZpZWxkIGNhbm5vdCBhcHBlYXIgaW4gYm90aCBgc2V0YCBhbmQgYGRlbHRhYC4KLSBBdCBsZWFzdCBvbmUgZGVmaW5lZCBmaWVsZCBtdXN0IHJlbWFpbiBpbiBgc2V0YCBvciBgZGVsdGFgLgotIFBhaXIgYGRlYzogbmAgd2l0aCBhIGBndGU6IG5gIGd1YXJkIHdoZW4gdGhlIHZhbHVlIG11c3Qgc3RheSBub25uZWdhdGl2ZS4KCk1hbGZvcm1lZCBhcmd1bWVudHMgcmVqZWN0IHdpdGhvdXQgd3JpdGluZy4gSW4gbmF0aXZlIFBvc3RncmVTUUwgZXhlY3V0aW9uLCBzZXJpYWxpemF0aW9uIGZhaWx1cmVzIGFuZCBkZWFkbG9ja3MgdGhyb3cgYFN0b3JhZ2VTZXJpYWxpemF0aW9uRXJyb3JgIHdpdGggYGNvZGU6ICJTVE9SQUdFX1NFUklBTElaQVRJT05fRkFJTFVSRSJgIGFuZCBgcmV0cnlhYmxlOiB0cnVlYC4gU2FuZGJveCB0cmFuc3BvcnRzIHByZXNlcnZlIHRoZSBzYWZlIGZpZWxkcyBidXQgZG8gbm90IGd1YXJhbnRlZSBgaW5zdGFuY2VvZmA7IGNoZWNrIGBjb2RlYCBhbmQgYHJldHJ5YWJsZWAuIFJlc3RhcnQgYW4gZW50aXJlIGV4cGxpY2l0IHRyYW5zYWN0aW9uIGJlZm9yZSByZXRyeWluZyBpdC4KCiMjIEluZGV4ZWQgcXVlcmllcwoKT25seSBkZWNsYXJlZCBpbmRleCBmaWVsZHMgY2FuIGJlIGZpbHRlcmVkIG9yIG9yZGVyZWQ6CgpgYGB0eXBlc2NyaXB0CmNvbnN0IHJlc3VsdCA9IGF3YWl0IHN1Ym1pc3Npb25zLnF1ZXJ5KHsKCXdoZXJlOiB7CgkJZm9ybUlkOiAiY29udGFjdCIsCgkJc3RhdHVzOiB7IGluOiBbInBlbmRpbmciLCAicHJvY2Vzc2luZyJdIH0sCgkJY3JlYXRlZEF0OiB7IGd0ZTogIjIwMjYtMDEtMDEiIH0sCgl9LAoJb3JkZXJCeTogeyBjcmVhdGVkQXQ6ICJkZXNjIiB9LAoJbGltaXQ6IDEwMCwKCWN1cnNvciwKfSk7CmBgYAoKU3VwcG9ydGVkIGZpbHRlcnMgYXJlIGV4YWN0IHZhbHVlcywgYHsgaW46IFsuLi5dIH1gLCBgeyBzdGFydHNXaXRoOiAiLi4uIiB9YCwgYW5kIHJhbmdlIG9iamVjdHMgdXNpbmcgYGd0YCwgYGd0ZWAsIGBsdGAsIG9yIGBsdGVgLiBBIHJhbmdlIG5lZWRzIGF0IGxlYXN0IG9uZSBkZWZpbmVkIGJvdW5kLgoKYHF1ZXJ5KClgIGRlZmF1bHRzIHRvIDUwIGl0ZW1zIGFuZCByZXR1cm5zIGF0IG1vc3QgMTAwIHBlciBwYWdlLiBGb2xsb3cgYGN1cnNvcmAgd2hpbGUgYGhhc01vcmVgIGlzIHRydWUuIGBjb3VudCh3aGVyZSlgIGFjY2VwdHMgdGhlIHNhbWUgaW5kZXhlZCBmaWx0ZXJzLgoKQ29tcG9zaXRlIGluZGV4IG9yZGVyIGRldGVybWluZXMgdXNlZnVsIHF1ZXJ5IHNoYXBlcy4gYFsnZm9ybUlkJywgJ2NyZWF0ZWRBdCddYCBzdXBwb3J0cyBmaWx0ZXJpbmcgYnkgYGZvcm1JZGAgYW5kIG9yZGVyaW5nIGJ5IGBjcmVhdGVkQXRgOyBpdCBkb2VzIG5vdCByZXBsYWNlIGEgc3RhbmRhbG9uZSBgY3JlYXRlZEF0YCBpbmRleCBmb3IgcXVlcmllcyB0aGF0IG9taXQgYGZvcm1JZGAuCgojIyBLViBvcGVyYXRpb25zCgpLViBzdXBwb3J0cyB1bmNvbmRpdGlvbmFsLCB2ZXJzaW9uZWQsIGRlbGV0ZSwgYW5kIHByZWZpeC1saXN0IG9wZXJhdGlvbnM6CgpgYGB0eXBlc2NyaXB0CmludGVyZmFjZSBLVkFjY2VzcyB7CglnZXQ8VD4oa2V5OiBzdHJpbmcpOiBQcm9taXNlPFQgfCBudWxsPjsKCXNldChrZXk6IHN0cmluZywgdmFsdWU6IHVua25vd24pOiBQcm9taXNlPHZvaWQ+OwoJZGVsZXRlKGtleTogc3RyaW5nKTogUHJvbWlzZTxib29sZWFuPjsKCWxpc3QocHJlZml4Pzogc3RyaW5nKTogUHJvbWlzZTxBcnJheTx7IGtleTogc3RyaW5nOyB2YWx1ZTogdW5rbm93biB9Pj47CglnZXRWZXJzaW9uZWQ8VD4oa2V5OiBzdHJpbmcpOiBQcm9taXNlPHsgdmFsdWU6IFQ7IHJldmlzaW9uOiBzdHJpbmcgfSB8IG51bGw+OwoJY29tcGFyZUFuZFNldCgKCQlrZXk6IHN0cmluZywKCQlleHBlY3RlZFJldmlzaW9uOiBzdHJpbmcgfCBudWxsLAoJCXZhbHVlOiB1bmtub3duLAoJKTogUHJvbWlzZTx7IGFwcGxpZWQ6IHRydWU7IHJldmlzaW9uOiBzdHJpbmcgfSB8IHsgYXBwbGllZDogZmFsc2UgfT47Cgljb21wYXJlQW5kRGVsZXRlKGtleTogc3RyaW5nLCBleHBlY3RlZFJldmlzaW9uOiBzdHJpbmcpOiBQcm9taXNlPHsgYXBwbGllZDogYm9vbGVhbiB9PjsKfQpgYGAKClVzZSBzdGFibGUgcHJlZml4ZXMgdG8ga2VlcCBpbnRlcm5hbCBLViBrZXlzIGRpc2NvdmVyYWJsZToKCmBgYHR5cGVzY3JpcHQKYXdhaXQgY3R4LnNldHRpbmdzLnNldCgid2ViaG9va1VybCIsIHVybCk7CmF3YWl0IGN0eC5rdi5zZXQoInN0YXRlOmxhc3RSdW4iLCBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCkpOwphd2FpdCBjdHgua3Yuc2V0KCJjYWNoZTpzdW1tYXJ5Iiwgc3VtbWFyeSk7CmNvbnN0IHNldHRpbmdzID0gYXdhaXQgY3R4LnNldHRpbmdzLmxpc3QoKTsKYGBgCgpUaGUgcGx1Z2luIENMSSBzZXJpYWxpemVzIGBhZG1pbi5zZXR0aW5nc1NjaGVtYWAsIGFuZCBib3RoIHNhbmRib3ggYnJpZGdlcyByb3V0ZSBgY3R4LnNldHRpbmdzYCB0aHJvdWdoIHRoZSBzYW1lIG9wdGlvbnMgcmVjb3JkcyBhcyB0aGUgZ2VuZXJhdGVkIGFkbWluIGZvcm0uIFZhbHVlcyBzYXZlZCBpbiB0aGF0IGZvcm0gYXJlIGF2YWlsYWJsZSB0aHJvdWdoIGBjdHguc2V0dGluZ3MuZ2V0KCI8a2V5PiIpYC4gVGhlIGNvbXBsZXRlIHNldHRpbmdzIEFQSSBzdXBwb3J0cyBgc2V0YCwgYGRlbGV0ZWAsIGBsaXN0YCwgYGdldFZlcnNpb25lZGAsIGBjb21wYXJlQW5kU2V0YCwgYW5kIGBjb21wYXJlQW5kRGVsZXRlYC4KCkZpZWxkcyBkZWNsYXJlZCBhcyBgc2VjcmV0YCB1c2UgYSB2ZXJzaW9uZWQgQUVTLUdDTSBlbnZlbG9wZSB3aXRoIHRoZSBwbHVnaW4gSUQgYW5kIHNldHRpbmcga2V5IGFzIGF1dGhlbnRpY2F0ZWQgZGF0YS4gYEVNREFTSF9FTkNSWVBUSU9OX0tFWWAgbWF5IGNvbnRhaW4gYSBjb21tYS1zZXBhcmF0ZWQgcm90YXRpb24gbGlzdDogdGhlIGZpcnN0IGtleSBlbmNyeXB0cyBuZXcgdmFsdWVzIGFuZCB0aGUgZW52ZWxvcGUncyBga2lkYCBzZWxlY3RzIGEga2V5IGZvciByZWFkcy4gTWlzc2luZywgd3JvbmcsIGFuZCB0YW1wZXJlZCBrZXlzIGZhaWwgY2xvc2VkIHdpdGhvdXQgZXhwb3NpbmcgcGxhaW50ZXh0LiBFeGlzdGluZyBwbGFpbnRleHQgc2VjcmV0cyByZW1haW4gcmVhZGFibGUgYW5kIGJlY29tZSBlbmNyeXB0ZWQgd2hlbiBzYXZlZCBhZ2Fpbi4KCktlZXAgdGhlIGZ1bGwgZW5jcnlwdGlvbi1rZXkgbGlzdCB3aXRoIG9wZXJhdGlvbmFsIGJhY2t1cHMuIFJlc3RvcmluZyB0aGUgZGF0YWJhc2Ugd2l0aG91dCBldmVyeSBrZXkgcmVmZXJlbmNlZCBieSBpdHMgZW5jcnlwdGVkIHNldHRpbmdzIGxlYXZlcyB0aG9zZSB2YWx1ZXMgdW5yZWFkYWJsZS4gYGN0eC5rdi5nZXQoInNldHRpbmdzOjxrZXk+IilgIHJlbWFpbnMgYSBjb21wYXRpYmlsaXR5IGFsaWFzIHRocm91Z2hvdXQgRW1EYXNoIDEueDsgbmV3IHBsdWdpbnMgc2hvdWxkIHVzZSBgY3R4LnNldHRpbmdzYC4K
+# Storage and KV
+
+Sandboxed plugins have three plugin-scoped data APIs:
+
+| API                        | Use                                                     |
+| -------------------------- | ------------------------------------------------------- |
+| `ctx.storage.<collection>` | Queryable records declared in `emdash-plugin.jsonc`     |
+| `ctx.settings`             | User-configurable settings, including encrypted secrets |
+| `ctx.kv`                   | Cursors, cached values, and other key-value state       |
+
+All three stores use the host database and are isolated by runtime plugin ID. None needs a capability.
+
+## Declare storage collections
+
+Declare every collection and query index in the manifest:
+
+```jsonc title="emdash-plugin.jsonc"
+{
+	"storage": {
+		"submissions": {
+			"indexes": ["formId", "status", "createdAt", ["formId", "createdAt"]],
+			"uniqueIndexes": ["externalId"],
+		},
+	},
+}
+```
+
+An undeclared collection is rejected by the sandbox bridge. Fields in `uniqueIndexes` are already queryable; do not repeat them in `indexes`.
+
+## Collection operations
+
+Every declared collection exposes this portable API in native, Cloudflare-sandboxed, and Node/workerd-sandboxed execution:
+
+```typescript
+interface StorageCollection<T = unknown> {
+	get(id: string): Promise<T | null>;
+	put(id: string, data: T): Promise<void>;
+	delete(id: string): Promise<boolean>;
+	exists(id: string): Promise<boolean>;
+
+	getVersioned(id: string): Promise<{ value: T; revision: string } | null>;
+	compareAndSet(
+		id: string,
+		expectedRevision: string | null,
+		data: T,
+	): Promise<{ applied: true; revision: string } | { applied: false }>;
+	compareAndDelete(id: string, expectedRevision: string): Promise<{ applied: boolean }>;
+	updateIf(id: string, args: UpdateIfArgs<T>): Promise<UpdateIfResult<T>>;
+
+	getMany(ids: string[]): Promise<Map<string, T>>;
+	putMany(items: Array<{ id: string; data: T }>): Promise<void>;
+	deleteMany(ids: string[]): Promise<number>;
+
+	query(options?: QueryOptions): Promise<{
+		items: Array<{ id: string; data: T }>;
+		cursor?: string;
+		hasMore: boolean;
+	}>;
+	count(where?: WhereClause): Promise<number>;
+}
+```
+
+The Node/workerd wrapper also contains content batch methods. They are not part of `StorageCollection`; storage batch methods in the interface above are portable across both runners.
+
+## Basic and batch writes
+
+```typescript
+const submissions = ctx.storage.submissions as StorageCollection<Submission>;
+
+await submissions.put("sub_123", {
+	formId: "contact",
+	status: "pending",
+	createdAt: new Date().toISOString(),
+});
+
+const item = await submissions.get("sub_123");
+const exists = await submissions.exists("sub_123");
+
+const items = await submissions.getMany(["sub_123", "sub_456"]);
+await submissions.putMany([
+	{ id: "sub_456", data: { formId: "contact", status: "pending" } },
+	{ id: "sub_789", data: { formId: "sales", status: "pending" } },
+]);
+const deleted = await submissions.deleteMany(["sub_456", "sub_789"]);
+```
+
+`getMany()` returns a `Map`, including after crossing either sandbox bridge.
+
+## Revision-based compare and set
+
+Use `getVersioned()`, `compareAndSet()`, and `compareAndDelete()` when concurrent requests may replace the same whole value.
+
+```typescript
+const current = await submissions.getVersioned("sub_123");
+if (!current) throw new Error("Submission not found");
+
+const result = await submissions.compareAndSet("sub_123", current.revision, {
+	...current.value,
+	status: "processing",
+});
+
+if (!result.applied) {
+	// Another request changed or deleted the value. Read it again before retrying.
+}
+```
+
+The operations have these preconditions:
+
+| Operation                             | Behavior                                                  |
+| ------------------------------------- | --------------------------------------------------------- |
+| `getVersioned(key)`                   | Returns `{ value, revision }`, or `null` only when absent |
+| `compareAndSet(key, null, value)`     | Creates only when absent                                  |
+| `compareAndSet(key, revision, value)` | Replaces only when the current revision matches           |
+| `compareAndDelete(key, revision)`     | Deletes only when the current revision matches            |
+
+A stored JSON `null` still returns a versioned envelope. Every successful write changes the revision, including an equal-value `put()` or `set()`. Revisions are opaque, key-specific values; pass them back unchanged.
+
+Conflicts return `applied: false`. Invalid inputs, permission failures, unique-index violations, and database failures reject. After a conflict, re-read and recompute; keep retries bounded. A lost response can leave the write outcome unknown, so CAS is not an exactly-once mechanism for external side effects.
+
+The versioned methods are also available on `ctx.kv`:
+
+```typescript
+const current = await ctx.kv.getVersioned<number>("state:completed");
+const next = (current?.value ?? 0) + 1;
+const result = await ctx.kv.compareAndSet("state:completed", current?.revision ?? null, next);
+```
+
+## Predicate-guarded updates
+
+`updateIf()` changes fields of an existing document when its stored data matches a guard. The guard, field replacements, and integer deltas execute atomically for that record.
+
+```typescript
+const result = await submissions.updateIf("sub_123", {
+	where: { status: "pending", attempts: { lt: 3 } },
+	set: { status: "processing", lastAttemptAt: new Date().toISOString() },
+	delta: { attempts: { inc: 1 } },
+});
+
+if (result.applied) {
+	ctx.log.info("Claimed submission", { submission: result.data });
+}
+```
+
+`updateIf()` returns `{ applied: false }` when the row is absent, the guard fails, the stored document is not an object, or integer arithmetic is unsafe. It never inserts.
+
+Rules:
+
+- `where` is required. An explicit `{}` means “match any existing row.”
+- `set` replaces supplied top-level fields and leaves other fields unchanged.
+- `delta` contains exactly one safe-integer `inc` or `dec` per field. Missing or `null` counters start at zero.
+- A field cannot appear in both `set` and `delta`.
+- At least one defined field must remain in `set` or `delta`.
+- Pair `dec: n` with a `gte: n` guard when the value must stay nonnegative.
+
+Malformed arguments reject without writing. In native PostgreSQL execution, serialization failures and deadlocks throw `StorageSerializationError` with `code: "STORAGE_SERIALIZATION_FAILURE"` and `retryable: true`. Sandbox transports preserve the safe fields but do not guarantee `instanceof`; check `code` and `retryable`. Restart an entire explicit transaction before retrying it.
+
+## Indexed queries
+
+Only declared index fields can be filtered or ordered:
+
+```typescript
+const result = await submissions.query({
+	where: {
+		formId: "contact",
+		status: { in: ["pending", "processing"] },
+		createdAt: { gte: "2026-01-01" },
+	},
+	orderBy: { createdAt: "desc" },
+	limit: 100,
+	cursor,
+});
+```
+
+Supported filters are exact values, `{ in: [...] }`, `{ startsWith: "..." }`, and range objects using `gt`, `gte`, `lt`, or `lte`. A range needs at least one defined bound.
+
+`query()` defaults to 50 items and returns at most 100 per page. Follow `cursor` while `hasMore` is true. `count(where)` accepts the same indexed filters.
+
+Composite index order determines useful query shapes. `['formId', 'createdAt']` supports filtering by `formId` and ordering by `createdAt`; it does not replace a standalone `createdAt` index for queries that omit `formId`.
+
+## KV operations
+
+KV supports unconditional, versioned, delete, and prefix-list operations:
+
+```typescript
+interface KVAccess {
+	get<T>(key: string): Promise<T | null>;
+	set(key: string, value: unknown): Promise<void>;
+	delete(key: string): Promise<boolean>;
+	list(prefix?: string): Promise<Array<{ key: string; value: unknown }>>;
+	getVersioned<T>(key: string): Promise<{ value: T; revision: string } | null>;
+	compareAndSet(
+		key: string,
+		expectedRevision: string | null,
+		value: unknown,
+	): Promise<{ applied: true; revision: string } | { applied: false }>;
+	compareAndDelete(key: string, expectedRevision: string): Promise<{ applied: boolean }>;
+}
+```
+
+Use stable prefixes to keep internal KV keys discoverable:
+
+```typescript
+await ctx.settings.set("webhookUrl", url);
+await ctx.kv.set("state:lastRun", new Date().toISOString());
+await ctx.kv.set("cache:summary", summary);
+const settings = await ctx.settings.list();
+```
+
+The plugin CLI serializes `admin.settingsSchema`, and both sandbox bridges route `ctx.settings` through the same options records as the generated admin form. Values saved in that form are available through `ctx.settings.get("<key>")`. The complete settings API supports `set`, `delete`, `list`, `getVersioned`, `compareAndSet`, and `compareAndDelete`.
+
+Fields declared as `secret` use a versioned AES-GCM envelope with the plugin ID and setting key as authenticated data. `EMDASH_ENCRYPTION_KEY` may contain a comma-separated rotation list: the first key encrypts new values and the envelope's `kid` selects a key for reads. Missing, wrong, and tampered keys fail closed without exposing plaintext. Existing plaintext secrets remain readable and become encrypted when saved again.
+
+Keep the full encryption-key list with operational backups. Restoring the database without every key referenced by its encrypted settings leaves those values unreadable. `ctx.kv.get("settings:<key>")` remains a compatibility alias throughout EmDash 1.x; new plugins should use `ctx.settings`.

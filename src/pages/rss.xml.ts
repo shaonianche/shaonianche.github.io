@@ -1,1 +1,70 @@
-aW1wb3J0IHR5cGUgeyBBUElSb3V0ZSB9IGZyb20gImFzdHJvIjsKaW1wb3J0IHsgZ2V0RW1EYXNoQ29sbGVjdGlvbiwgZ2V0U2l0ZVNldHRpbmdzIH0gZnJvbSAiZW1kYXNoIjsKCmltcG9ydCB7IHJlc29sdmVCbG9nU2l0ZUlkZW50aXR5IH0gZnJvbSAiLi4vdXRpbHMvc2l0ZS1pZGVudGl0eSI7CgpleHBvcnQgY29uc3QgR0VUOiBBUElSb3V0ZSA9IGFzeW5jICh7IHNpdGUsIHVybCB9KSA9PiB7Cgljb25zdCBzaXRlVXJsID0gc2l0ZSA/PyBuZXcgVVJMKHVybC5vcmlnaW4pOwoJY29uc3QgeyBzaXRlVGl0bGUsIHNpdGVUYWdsaW5lIH0gPSByZXNvbHZlQmxvZ1NpdGVJZGVudGl0eShhd2FpdCBnZXRTaXRlU2V0dGluZ3MoKSk7CgoJY29uc3QgeyBlbnRyaWVzOiBwb3N0cyB9ID0gYXdhaXQgZ2V0RW1EYXNoQ29sbGVjdGlvbigicG9zdHMiLCB7CgkJb3JkZXJCeTogeyBwdWJsaXNoZWRfYXQ6ICJkZXNjIiB9LAoJCWxpbWl0OiAyMCwKCX0pOwoKCWNvbnN0IGl0ZW1zID0gcG9zdHMKCQkubWFwKChwb3N0KSA9PiB7CgkJCWlmICghcG9zdC5kYXRhLnB1Ymxpc2hlZEF0KSByZXR1cm4gbnVsbDsKCQkJY29uc3QgcHViRGF0ZSA9IHBvc3QuZGF0YS5wdWJsaXNoZWRBdC50b1VUQ1N0cmluZygpOwoKCQkJY29uc3QgcG9zdFVybCA9IG5ldyBVUkwoYC9wb3N0cy8ke3Bvc3QuaWR9YCwgc2l0ZVVybCkuaHJlZjsKCQkJY29uc3QgdGl0bGUgPSBlc2NhcGVYbWwocG9zdC5kYXRhLnRpdGxlIHx8ICJVbnRpdGxlZCIpOwoJCQljb25zdCBkZXNjcmlwdGlvbiA9IGVzY2FwZVhtbChwb3N0LmRhdGEuZXhjZXJwdCB8fCAiIik7CgoJCQlyZXR1cm4gYCAgICA8aXRlbT4KICAgICAgPHRpdGxlPiR7dGl0bGV9PC90aXRsZT4KICAgICAgPGxpbms+JHtwb3N0VXJsfTwvbGluaz4KICAgICAgPGd1aWQgaXNQZXJtYUxpbms9InRydWUiPiR7cG9zdFVybH08L2d1aWQ+CiAgICAgIDxwdWJEYXRlPiR7cHViRGF0ZX08L3B1YkRhdGU+CiAgICAgIDxkZXNjcmlwdGlvbj4ke2Rlc2NyaXB0aW9ufTwvZGVzY3JpcHRpb24+CiAgICA8L2l0ZW0+YDsKCQl9KQoJCS5maWx0ZXIoQm9vbGVhbikKCQkuam9pbigiXG4iKTsKCgljb25zdCByc3MgPSBgPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJzcyB2ZXJzaW9uPSIyLjAiIHhtbG5zOmF0b209Imh0dHA6Ly93d3cudzMub3JnLzIwMDUvQXRvbSI+CiAgPGNoYW5uZWw+CiAgICA8dGl0bGU+JHtlc2NhcGVYbWwoc2l0ZVRpdGxlKX08L3RpdGxlPgogICAgPGRlc2NyaXB0aW9uPiR7ZXNjYXBlWG1sKHNpdGVUYWdsaW5lKX08L2Rlc2NyaXB0aW9uPgoJPGxpbms+JHtzaXRlVXJsLmhyZWZ9PC9saW5rPgoJPGF0b206bGluayBocmVmPSIke25ldyBVUkwoIi9yc3MueG1sIiwgc2l0ZVVybCkuaHJlZn0iIHJlbD0ic2VsZiIgdHlwZT0iYXBwbGljYXRpb24vcnNzK3htbCIvPgogICAgPGxhbmd1YWdlPmVuLXVzPC9sYW5ndWFnZT4KICAgIDxsYXN0QnVpbGREYXRlPiR7bmV3IERhdGUoKS50b1VUQ1N0cmluZygpfTwvbGFzdEJ1aWxkRGF0ZT4KJHtpdGVtc30KICA8L2NoYW5uZWw+CjwvcnNzPmA7CgoJcmV0dXJuIG5ldyBSZXNwb25zZShyc3MsIHsKCQloZWFkZXJzOiB7CgkJCSJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vcnNzK3htbDsgY2hhcnNldD11dGYtOCIsCgkJCSJDYWNoZS1Db250cm9sIjogInB1YmxpYywgbWF4LWFnZT0zNjAwIiwKCQl9LAoJfSk7Cn07Cgpjb25zdCBYTUxfRVNDQVBFX1BBVFRFUk5TID0gWwoJWy8mL2csICImYW1wOyJdLAoJWy88L2csICImbHQ7Il0sCglbLz4vZywgIiZndDsiXSwKCVsvIi9nLCAiJnF1b3Q7Il0sCglbLycvZywgIiZhcG9zOyJdLApdIGFzIGNvbnN0OwoKZnVuY3Rpb24gZXNjYXBlWG1sKHN0cjogc3RyaW5nKTogc3RyaW5nIHsKCWxldCByZXN1bHQgPSBzdHI7Cglmb3IgKGNvbnN0IFtwYXR0ZXJuLCByZXBsYWNlbWVudF0gb2YgWE1MX0VTQ0FQRV9QQVRURVJOUykgewoJCXJlc3VsdCA9IHJlc3VsdC5yZXBsYWNlKHBhdHRlcm4sIHJlcGxhY2VtZW50KTsKCX0KCXJldHVybiByZXN1bHQ7Cn0K
+import type { APIRoute } from "astro";
+import { getEmDashCollection, getSiteSettings } from "emdash";
+
+import { resolveBlogSiteIdentity } from "../utils/site-identity";
+
+export const GET: APIRoute = async ({ site, url }) => {
+	const siteUrl = site ?? new URL(url.origin);
+	const { siteTitle, siteTagline } = resolveBlogSiteIdentity(await getSiteSettings());
+
+	const { entries: posts } = await getEmDashCollection("posts", {
+		orderBy: { published_at: "desc" },
+		limit: 20,
+	});
+
+	const items = posts
+		.map((post) => {
+			if (!post.data.publishedAt) return null;
+			const pubDate = post.data.publishedAt.toUTCString();
+
+			const postUrl = new URL(`/posts/${post.id}`, siteUrl).href;
+			const title = escapeXml(post.data.title || "Untitled");
+			const description = escapeXml(post.data.excerpt || "");
+
+			return `    <item>
+      <title>${title}</title>
+      <link>${postUrl}</link>
+      <guid isPermaLink="true">${postUrl}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <description>${description}</description>
+    </item>`;
+		})
+		.filter(Boolean)
+		.join("\n");
+
+	const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeXml(siteTitle)}</title>
+    <description>${escapeXml(siteTagline)}</description>
+	<link>${siteUrl.href}</link>
+	<atom:link href="${new URL("/rss.xml", siteUrl).href}" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${items}
+  </channel>
+</rss>`;
+
+	return new Response(rss, {
+		headers: {
+			"Content-Type": "application/rss+xml; charset=utf-8",
+			"Cache-Control": "public, max-age=3600",
+		},
+	});
+};
+
+const XML_ESCAPE_PATTERNS = [
+	[/&/g, "&amp;"],
+	[/</g, "&lt;"],
+	[/>/g, "&gt;"],
+	[/"/g, "&quot;"],
+	[/'/g, "&apos;"],
+] as const;
+
+function escapeXml(str: string): string {
+	let result = str;
+	for (const [pattern, replacement] of XML_ESCAPE_PATTERNS) {
+		result = result.replace(pattern, replacement);
+	}
+	return result;
+}

@@ -1,1 +1,25 @@
-IyBNZWRpYSBhY2Nlc3MKCktlZXAgbWVkaWEgYXV0aG9yaXR5IGFzIG5hcnJvdyBhcyB0aGUgcGx1Z2luJ3MgYmVoYXZpb3IgcGVybWl0cy4KCnwgQ2FwYWJpbGl0eSAgICAgICAgICAgICB8IEFjY2VzcyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHwKfCBgbWVkaWE6cmVhZGAgICAgICAgICAgIHwgUmVhZHktbWVkaWEgbWV0YWRhdGEgYW5kIGF1dGhlbnRpY2F0ZWQgSUQtYmFzZWQgYXNzZXQgVVJMcyB8CnwgYG1lZGlhOmJ5dGVzOnJlYWRgICAgICB8IEJvdW5kZWQgb3JpZ2luYWwgYnl0ZXMgYW5kIGNvbnRlbnQgaGFzaGVzICAgICAgICAgICAgICAgICAgfAp8IGBtZWRpYTptZXRhZGF0YTp3cml0ZWAgfCBBbHQgdGV4dCwgY2FwdGlvbiwgYW5kIGNvbXBsZXRlIGZvY2FsLXBvaW50IHVwZGF0ZXMgICAgICAgIHwKfCBgbWVkaWE6d3JpdGVgICAgICAgICAgIHwgVXBsb2FkIGFuZCBkZWxldGU7IGltcGxpZXMgYG1lZGlhOnJlYWRgICAgICAgICAgICAgICAgICAgICB8CgpgbWVkaWE6cmVhZGAgbWV0YWRhdGEgaW5jbHVkZXMgZGltZW5zaW9ucywgYWx0IHRleHQsIGNhcHRpb24sIGZvY2FsIHBvaW50LCBibHVyaGFzaCwgZG9taW5hbnQgY29sb3IsIGFuZCBmb2xkZXIgSUQuIEl0IGV4Y2x1ZGVzIHN0b3JhZ2Uga2V5cywgYXV0aG9yIGlkZW50aXR5LCBjb250ZW50IGhhc2hlcywgYW5kIGJ5dGVzLiBMb2dnZWQtb3V0IGFzc2V0IHJlcXVlc3RzIHN0b3AgYXQgYXV0aGVudGljYXRpb24gYmVmb3JlIHRoZSBtZWRpYSBsb29rdXAuCgpgY3R4Lm1lZGlhLnJlYWRCeXRlcyhpZCwgeyBtYXhCeXRlcyB9KWAgYnVmZmVycyBmcm9tIHRoZSBjb25maWd1cmVkIHN0b3JhZ2UgYWRhcHRlci4gVGhlIGRlZmF1bHQgbGltaXQgaXMgMTAgTWlCIGFuZCBjYWxsZXJzIGNhbm5vdCByZXF1ZXN0IG1vcmUgdGhhbiAxNiBNaUIuIFRoZSBob3N0IGVuZm9yY2VzIHRoZSBsaW1pdCB3aGlsZSBjb25zdW1pbmcgdGhlIHN0cmVhbSByYXRoZXIgdGhhbiB0cnVzdGluZyBzdG9yZWQgc2l6ZSBtZXRhZGF0YS4KCmBjdHgubWVkaWEudXBkYXRlTWV0YWRhdGEoKWAgY2hhbmdlcyBvbmx5IGFsdCB0ZXh0LCBjYXB0aW9uLCBhbmQgYSBjb21wbGV0ZSBmb2NhbC1wb2ludCBwYWlyLiBJdCBjYW5ub3QgdXBsb2FkLCByZXBsYWNlLCBtb3ZlLCBvciBkZWxldGUgdGhlIHVuZGVybHlpbmcgZmlsZS4KCldpdGggYG1lZGlhOndyaXRlYCwgdXBsb2FkIGJ5dGVzIHRocm91Z2ggdGhlIGJyaWRnZToKCmBgYHR5cGVzY3JpcHQKY29uc3QgYnl0ZXMgPSBhd2FpdCBzb3VyY2UuYXJyYXlCdWZmZXIoKTsKY29uc3QgdXBsb2FkZWQgPSBhd2FpdCBjdHgubWVkaWEhLnVwbG9hZCgicmVwb3J0LnBkZiIsICJhcHBsaWNhdGlvbi9wZGYiLCBieXRlcyk7CmBgYAoKQm90aCBzYW5kYm94IHJ1bm5lcnMgd3JpdGUgdGhyb3VnaCB0aGUgY29uZmlndXJlZCBtZWRpYSBhZGFwdGVyIGFuZCBjcmVhdGUgYSByZWFkeSByZWNvcmQuIEEgc2FuZGJveCBkb2VzIG5vdCBmb2xsb3cgYSBwcmVzaWduZWQgdXBsb2FkIFVSTCBkaXJlY3RseS4K
+# Media access
+
+Keep media authority as narrow as the plugin's behavior permits.
+
+| Capability             | Access                                                     |
+| ---------------------- | ---------------------------------------------------------- |
+| `media:read`           | Ready-media metadata and authenticated ID-based asset URLs |
+| `media:bytes:read`     | Bounded original bytes and content hashes                  |
+| `media:metadata:write` | Alt text, caption, and complete focal-point updates        |
+| `media:write`          | Upload and delete; implies `media:read`                    |
+
+`media:read` metadata includes dimensions, alt text, caption, focal point, blurhash, dominant color, and folder ID. It excludes storage keys, author identity, content hashes, and bytes. Logged-out asset requests stop at authentication before the media lookup.
+
+`ctx.media.readBytes(id, { maxBytes })` buffers from the configured storage adapter. The default limit is 10 MiB and callers cannot request more than 16 MiB. The host enforces the limit while consuming the stream rather than trusting stored size metadata.
+
+`ctx.media.updateMetadata()` changes only alt text, caption, and a complete focal-point pair. It cannot upload, replace, move, or delete the underlying file.
+
+With `media:write`, upload bytes through the bridge:
+
+```typescript
+const bytes = await source.arrayBuffer();
+const uploaded = await ctx.media!.upload("report.pdf", "application/pdf", bytes);
+```
+
+Both sandbox runners write through the configured media adapter and create a ready record. A sandbox does not follow a presigned upload URL directly.

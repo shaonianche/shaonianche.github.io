@@ -1,1 +1,13 @@
-LyoqCiAqIEVtRGFzaCBMaXZlIENvbnRlbnQgQ29sbGVjdGlvbnMKICoKICogRGVmaW5lcyB0aGUgX2VtZGFzaCBjb2xsZWN0aW9uIHRoYXQgaGFuZGxlcyBhbGwgY29udGVudCB0eXBlcyBmcm9tIHRoZSBkYXRhYmFzZS4KICogUXVlcnkgc3BlY2lmaWMgdHlwZXMgdXNpbmcgZ2V0RW1EYXNoQ29sbGVjdGlvbigpIGFuZCBnZXRFbURhc2hFbnRyeSgpLgogKi8KCmltcG9ydCB7IGRlZmluZUxpdmVDb2xsZWN0aW9uIH0gZnJvbSAiYXN0cm86Y29udGVudCI7CmltcG9ydCB7IGVtZGFzaExvYWRlciB9IGZyb20gImVtZGFzaC9ydW50aW1lIjsKCmV4cG9ydCBjb25zdCBjb2xsZWN0aW9ucyA9IHsKCV9lbWRhc2g6IGRlZmluZUxpdmVDb2xsZWN0aW9uKHsgbG9hZGVyOiBlbWRhc2hMb2FkZXIoKSB9KSwKfTsK
+/**
+ * EmDash Live Content Collections
+ *
+ * Defines the _emdash collection that handles all content types from the database.
+ * Query specific types using getEmDashCollection() and getEmDashEntry().
+ */
+
+import { defineLiveCollection } from "astro:content";
+import { emdashLoader } from "emdash/runtime";
+
+export const collections = {
+	_emdash: defineLiveCollection({ loader: emdashLoader() }),
+};

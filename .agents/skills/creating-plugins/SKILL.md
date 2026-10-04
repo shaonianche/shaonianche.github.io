@@ -1,1 +1,134 @@
-LS0tCm5hbWU6IGNyZWF0aW5nLXBsdWdpbnMKZGVzY3JpcHRpb246IENyZWF0ZSBFbURhc2ggQ01TIHBsdWdpbnMgd2l0aCBzYW5kYm94ZWQgaG9va3MsIHJvdXRlcywgc3RvcmFnZSwgY29udGVudCBhbmQgbWVkaWEgQVBJcywgTUNQIHRvb2xzLCBhbmQgZGVjbGFyYXRpdmUgYWRtaW4gVUksIG9yIG5hdGl2ZSBSZWFjdCBhbmQgQXN0cm8gZXh0ZW5zaW9ucy4gVXNlIHdoZW4gc2NhZmZvbGRpbmcgb3IgaW1wbGVtZW50aW5nIGFuIEVtRGFzaCBwbHVnaW4uCi0tLQoKIyBDcmVhdGluZyBFbURhc2ggcGx1Z2lucwoKQnVpbGQgYWdhaW5zdCB0aGUgQVBJIHRoYXQgcmVhY2hlcyB0aGUgaW50ZW5kZWQgZXhlY3V0aW9uIG1vZGUuIFNvdXJjZSB0eXBlcyBhbmQgcHJvZHVjdGlvbi1ib3VuZGFyeSB0ZXN0cyB0YWtlIHByZWNlZGVuY2Ugb3ZlciBleGFtcGxlcyBpbiB0aGlzIHNraWxsIHdoZW4gdGhleSBkaXNhZ3JlZS4KCiMjIENob29zZSBhIGZvcm1hdAoKfCBGb3JtYXQgICAgfCBSdW50aW1lIHNvdXJjZSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCBBZG1pbiBVSSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCBEaXN0cmlidXRpb24gICAgICAgICAgICAgICAgIHwKfCAtLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHwKfCBTYW5kYm94ZWQgfCBgc3JjL3BsdWdpbi50c2AgZGVmYXVsdC1leHBvcnRzIGEgYFNhbmRib3hlZFBsdWdpbmAgfCBCbG9jayBLaXQgcGFnZXMsIHdpZGdldHMsIHNhdmVkLWVudHJ5IHBhbmVscywgYW5kIGFjdGlvbnMgfCBQbHVnaW4gQ0xJIGFuZCByZWdpc3RyeSAgICAgIHwKfCBOYXRpdmUgICAgfCBgZGVmaW5lUGx1Z2luKClgIC8gYGNyZWF0ZVBsdWdpbigpYCAgICAgICAgICAgICAgICAgfCBSZWFjdCwgQmxvY2sgS2l0LCBhbmQgQXN0cm8gY29tcG9uZW50cyAgICAgICAgICAgICAgICAgICAgfCBUcnVzdGVkIHNpdGUgZGVwZW5kZW5jeSBvbmx5IHwKClVzZSBhIHNhbmRib3hlZCBwbHVnaW4gdW5sZXNzIHRoZSBmZWF0dXJlIG5lZWRzIGhvc3QtcHJvY2VzcyBhY2Nlc3MsIFJlYWN0IGFkbWluIGNvZGUsIEFzdHJvIHJlbmRlcmluZyBjb21wb25lbnRzLCByYXcgcGFnZSBmcmFnbWVudHMsIG9yIGN1c3RvbSBQb3J0YWJsZSBUZXh0IGJsb2NrIGRlZmluaXRpb25zLiBOYXRpdmUgcGx1Z2lucyBydW4gd2l0aCB0aGUgc2l0ZSdzIGF1dGhvcml0eSBhbmQgY2Fubm90IGJlIGluc3RhbGxlZCBmcm9tIHRoZSByZWdpc3RyeS4KCiMjIFNjYWZmb2xkIGEgc2FuZGJveGVkIHBsdWdpbgoKYGBgc2gKcG5wbSBkbHggQGVtZGFzaC1jbXMvcGx1Z2luLWNsaSBpbml0IG15LXBsdWdpbgpjZCBteS1wbHVnaW4KcG5wbSBpbnN0YWxsCnBucG0gcnVuIHRlc3QKYGBgCgpUaGUgbWFuaWZlc3QgaXMgdGhlIGlkZW50aXR5IGFuZCB0cnVzdCBjb250cmFjdC4gUnVudGltZSBob29rcyBhbmQgcm91dGVzIGxpdmUgaW4gYHNyYy9wbHVnaW4udHNgOyB0aGUgQ0xJIGdlbmVyYXRlcyBkZXNjcmlwdG9ycywgbWFuaWZlc3RzLCBhbmQgYnVuZGxlcy4gRG8gbm90IGNyZWF0ZSBhIHNlcGFyYXRlIGRlc2NyaXB0b3IgZmFjdG9yeSBvciBgc2FuZGJveC1lbnRyeS50c2AuCgpgYGB0eXBlc2NyaXB0IHRpdGxlPSJzcmMvcGx1Z2luLnRzIgppbXBvcnQgdHlwZSB7IFNhbmRib3hlZFBsdWdpbiB9IGZyb20gImVtZGFzaC9wbHVnaW4iOwoKY29uc3QgcGx1Z2luOiBTYW5kYm94ZWRQbHVnaW4gPSB7Cglob29rczogewoJCSJjb250ZW50OmFmdGVyU2F2ZSI6IGFzeW5jIChldmVudCwgY3R4KSA9PiB7CgkJCWN0eC5sb2cuaW5mbygiQ29udGVudCBzYXZlZCIsIHsgaWQ6IGV2ZW50LmNvbnRlbnQuaWQgfSk7CgkJfSwKCX0sCn07CgpleHBvcnQgZGVmYXVsdCBwbHVnaW47CmBgYAoKSW1wb3J0IGF1dGhvcmluZyB0eXBlcyBmcm9tIGBlbWRhc2gvcGx1Z2luYCB3aXRoIGBpbXBvcnQgdHlwZWAuIFZhbHVlIGltcG9ydHMgYXJlIGxpbWl0ZWQgdG8gbGlnaHR3ZWlnaHQgaGVscGVycyBzdWNoIGFzIGBwbHVnaW5Sb3V0ZSgpYCBhbmQgYHBsdWdpblJlc3BvbnNlKClgLCB3aGljaCB0aGUgQ0xJIGJ1bmRsZXMuIFNhbmRib3hlZCBydW50aW1lIGNvZGUgY2FuIHVzZSBXZWIgQVBJcyBidXQgbm90IE5vZGUuanMgYnVpbHQtaW5zLgoKIyMgRGVjbGFyZSBhY2Nlc3MKCkRlY2xhcmUgZXZlcnkgaG9zdCBBUEkgaW4gYGVtZGFzaC1wbHVnaW4uanNvbmNgLiBBZGRpbmcgYXV0aG9yaXR5LCBleHBvc2luZyBhIHJvdXRlIHB1YmxpY2x5LCBvciBhZGRpbmcgTUNQIHRvb2xzIHJlcXVpcmVzIHJlbmV3ZWQgYWRtaW5pc3RyYXRvciBhcHByb3ZhbC4KCnwgQ2FwYWJpbGl0eSAgICAgICAgICAgICAgICAgICAgICAgfCBHcmFudHMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgYHNjaGVtYTpyZWFkYCAgICAgICAgICAgICAgICAgICAgfCBQdWJsaWMgY29sbGVjdGlvbiBhbmQgZmllbGQgZGVmaW5pdGlvbnMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGFkbWluLmVkaXRvci1kcmFmdDpyZWFkYCAgICAgICAgfCBTZWxlY3RlZCB1bnNhdmVkIGZpZWxkIHZhbHVlcyBhZnRlciBhbiBleHBsaWNpdCBlZGl0b3IgaW50ZXJhY3Rpb24gICAgICAgICB8CnwgYGFkbWluLmVkaXRvci1kcmFmdDpwYXRjaGAgICAgICAgfCBIb3N0LXZhbGlkYXRlZCB1bnNhdmVkIGZpZWxkIGNoYW5nZXMgcHJvcG9zZWQgZm9yIGVkaXRvciByZXZpZXcgICAgICAgICAgICB8CnwgYGNvbnRlbnQ6cmVhZGAgICAgICAgICAgICAgICAgICAgfCBDb250ZW50IGlkZW50aXR5LCB0cmFuc2xhdGlvbnMsIGFuZCBwdWJsaXNoZWQgcHVibGljIFVSTHMgICAgICAgICAgICAgICAgICB8CnwgYGNvbnRlbnQ6cmV2aXNpb25zOnJlYWRgICAgICAgICAgfCBSZXRhaW5lZCByZXZpc2lvbiBkYXRhOyBpbXBsaWVzIGNvbnRlbnQgcmVhZCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGNvbnRlbnQ6d3JpdGVgICAgICAgICAgICAgICAgICAgfCBDcmVhdGUsIHVwZGF0ZSwgZGVsZXRlLCBhbmQgdHJhbnNsYXRpb24gY3JlYXRpb247IGltcGxpZXMgcmVhZCAgICAgICAgICAgICB8CnwgYGNvbnRlbnQ6cHVibGlzaGAgICAgICAgICAgICAgICAgfCBSZXZpc2lvbi1mZW5jZWQgcHVibGlzaCwgdW5wdWJsaXNoLCBzY2hlZHVsZSwgYW5kIHVuc2NoZWR1bGU7IGltcGxpZXMgcmVhZCB8CnwgYGNvbnRlbnQ6cmVzdG9yZWAgICAgICAgICAgICAgICAgfCBSZXZpc2lvbi1mZW5jZWQgcmVhZHMgYW5kIHJlc3RvcmF0aW9uIG9mIHRyYXNoZWQgY29udGVudCAgICAgICAgICAgICAgICAgICB8CnwgYGhvb2tzLmNvbnRlbnQtcG9saWN5OnJlZ2lzdGVyYCAgfCBQcmUtcHVibGlzaCwgcHJlLXNjaGVkdWxlLCBhbmQgcHJlLXVucHVibGlzaCBwb2xpY3kgaG9va3MgICAgICAgICAgICAgICAgICB8CnwgYHRheG9ub21pZXM6cmVhZGAgICAgICAgICAgICAgICAgfCBUYXhvbm9teSBkZWZpbml0aW9ucywgdGVybXMsIGFuZCBlbnRyeSBhc3NpZ25tZW50cyAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYHRheG9ub21pZXM6d3JpdGVgICAgICAgICAgICAgICAgfCBUZXJtIGNyZWF0aW9uIGFuZCBhc3NpZ25tZW50IGRlbHRhczsgaW1wbGllcyByZWFkICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYHJlZGlyZWN0czpyZWFkYCAgICAgICAgICAgICAgICAgfCBWZXJzaW9uZWQgcmVkaXJlY3QgaW5zcGVjdGlvbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYHJlZGlyZWN0czp3cml0ZWAgICAgICAgICAgICAgICAgfCBWZXJzaW9uZWQgcmVkaXJlY3QgY3JlYXRpb24sIHVwZGF0ZSwgYW5kIGRlbGV0aW9uOyBpbXBsaWVzIHJlYWQgICAgICAgICAgICB8CnwgYGNvbW1lbnRzOnJlYWRgICAgICAgICAgICAgICAgICAgfCBTdG9yZWQgbm9uLXRyYXNoZWQgY29tbWVudHMgYW5kIHRoZWlyIHBlcnNvbmFsIGRhdGEgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGNvbW1lbnRzOm1vZGVyYXRlYCAgICAgICAgICAgICAgfCBFeHBlY3RlZC1zdGF0dXMgbW9kZXJhdGlvbjsgaW1wbGllcyByZWFkICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYG1lZGlhOnJlYWRgICAgICAgICAgICAgICAgICAgICAgfCBSZWFkeS1tZWRpYSBtZXRhZGF0YSBhbmQgYXV0aGVudGljYXRlZCBhc3NldCBVUkxzICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYG1lZGlhOmJ5dGVzOnJlYWRgICAgICAgICAgICAgICAgfCBCb3VuZGVkIG1lZGlhIGJ5dGVzIGFuZCBjb250ZW50IGhhc2hlcyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYG1lZGlhOm1ldGFkYXRhOndyaXRlYCAgICAgICAgICAgfCBBbHQgdGV4dCwgY2FwdGlvbiwgYW5kIGZvY2FsLXBvaW50IHVwZGF0ZXMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYG1lZGlhOndyaXRlYCAgICAgICAgICAgICAgICAgICAgfCBVcGxvYWQgYW5kIGRlbGV0ZTsgaW1wbGllcyBtZWRpYSByZWFkICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYG5ldHdvcms6cmVxdWVzdGAgICAgICAgICAgICAgICAgfCBgY3R4Lmh0dHAuZmV0Y2goKWAgcmVzdHJpY3RlZCB0byBgYWxsb3dlZEhvc3RzYCAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYG5ldHdvcms6cmVxdWVzdDp1bnJlc3RyaWN0ZWRgICAgfCBgY3R4Lmh0dHAuZmV0Y2goKWAgd2l0aG91dCBhIGhvc3QgbGlzdCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYHVzZXJzOnJlYWRgICAgICAgICAgICAgICAgICAgICAgfCBVc2VyIGRpcmVjdG9yeSBsb29rdXA7IGFsc28gcmVxdWlyZWQgYnkgY29tbWVudCBob29rcyAgICAgICAgICAgICAgICAgICAgICB8CnwgYGVtYWlsOnNlbmRgICAgICAgICAgICAgICAgICAgICAgfCBFbWFpbCBkZWxpdmVyeSB3aGVuIGEgdHJhbnNwb3J0IGlzIGNvbmZpZ3VyZWQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGhvb2tzLmVtYWlsLXRyYW5zcG9ydDpyZWdpc3RlcmAgfCBFeGNsdXNpdmUgYGVtYWlsOmRlbGl2ZXJgIGhvb2sgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGhvb2tzLmVtYWlsLWV2ZW50czpyZWdpc3RlcmAgICAgfCBFbWFpbCBiZWZvcmUvYWZ0ZXIgaG9va3MgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGhvb2tzLnBhZ2UtZnJhZ21lbnRzOnJlZ2lzdGVyYCAgfCBUcnVzdGVkLW9ubHkgcGFnZSBmcmFnbWVudHM7IGV4Y2x1ZGVkIGZyb20gc2FuZGJveCByZWdpc3RyYXRpb24gICAgICAgICAgICB8CgpTZXR0aW5ncywgS1YsIGRlY2xhcmVkIHN0b3JhZ2UsIGxvZ2dpbmcsIGFuZCBjcm9uIHNjaGVkdWxpbmcgYXJlIHBsdWdpbi1zY29wZWQgYW5kIG5lZWQgbm8gY2FwYWJpbGl0eS4gVXNlIGBjdHguc2V0dGluZ3NgIGZvciB1c2VyIGNvbmZpZ3VyYXRpb24sIGBjdHgua3ZgIGZvciBpbnRlcm5hbCBrZXktdmFsdWUgc3RhdGUsIGFuZCBkZWNsYXJlZCBgY3R4LnN0b3JhZ2UuPGNvbGxlY3Rpb24+YCBmb3IgcXVlcnlhYmxlIHJlY29yZHMuCgpSZWFkIHRoZSBmb2N1c2VkIHJlZmVyZW5jZSBmb3IgdGhlIEFQSSBiZWluZyB1c2VkOgoKLSBbQ29udGVudCwgc2NoZW1hLCB0cmFuc2xhdGlvbnMsIGFuZCBwdWJsaWNhdGlvbl0oLi9yZWZlcmVuY2VzL2NvbnRlbnQubWQpCi0gW1RheG9ub21pZXMgYW5kIHJlZGlyZWN0c10oLi9yZWZlcmVuY2VzL3RheG9ub21pZXMtYW5kLXJlZGlyZWN0cy5tZCkKLSBbQ29tbWVudHNdKC4vcmVmZXJlbmNlcy9jb21tZW50cy5tZCkKLSBbTWVkaWFdKC4vcmVmZXJlbmNlcy9tZWRpYS5tZCkKLSBbU3RvcmFnZSwgS1YsIGFuZCBlbmNyeXB0ZWQgc2V0dGluZ3NdKC4vcmVmZXJlbmNlcy9zdG9yYWdlLm1kKQoKIyMgUm91dGVzLCBIVFRQLCBhbmQgTUNQCgpSb3V0ZXMgYXJlIHByaXZhdGUgYnkgZGVmYXVsdCBhbmQgcmVxdWlyZSBhdXRoZW50aWNhdGlvbiwgdGhlaXIgZGVjbGFyZWQgUkJBQyBwZXJtaXNzaW9uLCB0b2tlbiBzY29wZSBvciBDU1JGIGFzIGFwcHJvcHJpYXRlLiBQdWJsaWMgcm91dGVzIGFyZSBpbnRlcm5ldC1mYWNpbmcgYW5kIHJlcXVpcmUgZXhwbGljaXQgaW5zdGFsbCBjb25zZW50LgoKVW5kZWNsYXJlZCByb3V0ZXMga2VlcCB0aGUgbGVnYWN5IEpTT04vcXVlcnkgZW52ZWxvcGUuIERlY2xhcmUgbWV0aG9kcyBhbmQgYm9keSBtb2RlcyBmb3IgaG9zdC1lbmZvcmNlZCBwYXJzaW5nLiBVc2UgYHBsdWdpblJlc3BvbnNlKClgIG9ubHkgb24gYSByb3V0ZSB0aGF0IGRlY2xhcmVzIGEgcmF3IHJlc3BvbnNlLiBPdXRib3VuZCBgY3R4Lmh0dHAuZmV0Y2goKWAgcmVzcG9uc2VzIGFuZCBkZWNsYXJlZCByb3V0ZSBib2RpZXMgYXJlIGJ1ZmZlcmVkIGFuZCBib3VuZGVkLgoKTUNQIHRvb2xzIHJlZmVyZW5jZSBwcml2YXRlIEpTT04gcm91dGVzIHdpdGggZXhwbGljaXQgcGVybWlzc2lvbnMgYW5kIFpvZCBpbnB1dCBzY2hlbWFzLiBNYXJrIGRpZmZpY3VsdC10by1yZXZlcnNlIG9wZXJhdGlvbnMgYGRlc3RydWN0aXZlOiB0cnVlYC4gUmVhZCBbQVBJIHJvdXRlcyBhbmQgTUNQIHRvb2xzXSguL3JlZmVyZW5jZXMvYXBpLXJvdXRlcy5tZCkuCgojIyBIb29rcwoKU2FuZGJveGVkIGhvb2tzIGVudGVyIHRoZSBzYW1lIHByaW9yaXR5LCBkZXBlbmRlbmN5LCB0aW1lb3V0LCBlcnJvci1wb2xpY3ksIGVuYWJsZW1lbnQsIGV4Y2x1c2l2ZS1wcm92aWRlciwgYW5kIGNhcGFiaWxpdHkgcGlwZWxpbmUgYXMgdHJ1c3RlZCBob29rcy4gUHVibGljYXRpb24gcG9saWN5IGhvb2tzIGlkZW50aWZ5IGFjdGlvbiBvcmlnaW4gYW5kIGFjdG9yIHdpdGhvdXQgZ3JhbnRpbmcgcHVibGljYXRpb24gYXV0aG9yaXR5LiBDb21tZW50IG1vZGVyYXRpb24gaW52b2tlZCB0aHJvdWdoIGBjdHguY29tbWVudHNgIHJlcG9ydHMgcGx1Z2luIG9yaWdpbiBhbmQgcnVucyB0aGUgbm9ybWFsIGFmdGVyLWhvb2sgb25jZS4gUmVhZCBbSG9va3NdKC4vcmVmZXJlbmNlcy9ob29rcy5tZCkuCgojIyBEZWNsYXJhdGl2ZSBhZG1pbiBVSQoKU2FuZGJveGVkIHBhZ2VzIGFuZCB3aWRnZXRzIHJldHVybiB2YWxpZGF0ZWQgQmxvY2sgS2l0LiBTdHJ1Y3R1cmVkIGxpbmtzIHVzZSBob3N0LXJlc29sdmVkIHRhcmdldHM7IGByb3V0ZUN0eC51aWAgY2FycmllcyBob3N0LWF0dGVzdGVkIGxvY2FsZSwgZGlyZWN0aW9uLCBhbmQgc3VyZmFjZS4gRXh0ZXJuYWwgaW1hZ2VzIHJlcXVpcmUgbWF0Y2hpbmcgbmV0d29yayBhdXRob3JpdHkuCgpTYXZlZC1lbnRyeSBwYW5lbHMgYW5kIGFjdGlvbnMgcG9pbnQgdG8gcHJpdmF0ZSByb3V0ZXMuIE9yZGluYXJ5IHBhbmVsIGxvYWQgcmVjZWl2ZXMgb25seSBob3N0LXJlbG9hZGVkIHNhdmVkIGlkZW50aXR5IGFuZCB2ZXJzaW9uLiBBZGQgYGFkbWluLmVkaXRvci1kcmFmdDpyZWFkYCBvciBgYWRtaW4uZWRpdG9yLWRyYWZ0OnBhdGNoYCBwbHVzIGV4dGVuc2lvbi1sZXZlbCBjb2xsZWN0aW9uIGFuZCBmaWVsZCBzZWxlY3RvcnMgd2hlbiBhbiBleHBsaWNpdCBpbnRlcmFjdGlvbiBtdXN0IHJlY2VpdmUgc2VsZWN0ZWQgdW5zYXZlZCBmaWVsZHMgb3IgcHJvcG9zZSBhbiBhdG9taWMgd2hvbGUtZmllbGQgcGF0Y2guIFBhdGNoIGRvZXMgbm90IGltcGx5IHJlYWQuIFRoZSBob3N0IHByZXZpZXdzIGFjY2VwdGVkIHBhdGNoZXMsIG1hcmtzIHRoZSBmb3JtIGRpcnR5LCBhbmQgbmV2ZXIgc2F2ZXMgdGhlbSBhdXRvbWF0aWNhbGx5LiBSZWFkIHNhdmVkIGNvbnRlbnQgdGhyb3VnaCBjYXBhYmlsaXR5LWdhdGVkIGBjdHguY29udGVudGAuCgpEZWNsYXJhdGl2ZSBmaWVsZCB3aWRnZXRzIGN1cnJlbnRseSBjb21wb3NlIHN1cHBvcnRlZCBCbG9jayBLaXQgZWxlbWVudHMgaW50byBhIEpTT04gdmFsdWUuIEN1c3RvbSBQb3J0YWJsZSBUZXh0IGJsb2NrcyBhbmQgQXN0cm8gcmVuZGVyIGNvbXBvbmVudHMgcmVtYWluIG5hdGl2ZS1vbmx5LiBSZWFkIFtBZG1pbiBVSV0oLi9yZWZlcmVuY2VzL2FkbWluLXVpLm1kKSwgW0Jsb2NrIEtpdF0oLi9yZWZlcmVuY2VzL2Jsb2NrLWtpdC5tZCksIGFuZCBbUG9ydGFibGUgVGV4dCBibG9ja3NdKC4vcmVmZXJlbmNlcy9wb3J0YWJsZS10ZXh0LWJsb2Nrcy5tZCkuCgojIyBSdW5uZXIgcGFyaXR5CgpDbG91ZGZsYXJlIFdvcmtlciBMb2FkZXIgYW5kIE5vZGUvd29ya2VyZCBleGVjdXRlIHRoZSBzYW1lIGJ1bmRsZSBiZWhpbmQgYSBwbHVnaW4tc2NvcGVkIGJyaWRnZS4gQm90aCByZXR1cm4gYnVmZmVyZWQgV0hBVFdHIHJlc3BvbnNlcyBmcm9tIGBjdHguaHR0cC5mZXRjaCgpYCB3aXRoIGJpbmFyeSBieXRlcyBwcmVzZXJ2ZWQgYW5kIGRlY29kZWQgcmVxdWVzdC9yZXNwb25zZSBib2RpZXMgbGltaXRlZCB0byA4IE1pQi4gV3JpdGUgYWdhaW5zdCBleHBvcnRlZCB0eXBlcywgbm90IGV4dHJhIG1ldGhvZHMgZm91bmQgaW4gb25lIHdyYXBwZXIuCgpSZWFkIFtTYW5kYm94IGJvdW5kYXJpZXNdKC4vcmVmZXJlbmNlcy9zYW5kYm94LWJvdW5kYXJpZXMubWQpIGJlZm9yZSBkZXNpZ25pbmcgYXJvdW5kIGFuIEFQSSBub3QgbGlzdGVkIGhlcmUuCgojIyBUZXN0IHRoZSBwcm9kdWN0aW9uIGJvdW5kYXJ5CgpVc2UgYGNyZWF0ZVBsdWdpblRlc3RIb3N0KClgIGZvciBmYXN0IGhvb2ssIHJvdXRlLCBtYW5pZmVzdCwgY2FwYWJpbGl0eSwgS1YsIHNldHRpbmdzLCBhbmQgc3RvcmFnZSB0cmFuc3BvcnQgdGVzdHMuIFVzZSBgY3JlYXRlUGx1Z2luUnVudGltZVRlc3RIb3N0KClgIHdoZW4gdGhlIHRlc3QgbXVzdCBleGVyY2lzZSByZWFsIGNvbnRlbnQgYWN0aW9ucywgcGx1Z2luIGFjdGl2YXRpb24sIG1lZGlhLCBjb21tZW50cywgcmVkaXJlY3RzLCBzY2hlZHVsaW5nLCByZXN0YXJ0LCBhdXRob3JpemF0aW9uLCBDU1JGLCBjYWNoaW5nLCBCbG9jayBLaXQgdmFsaWRhdGlvbiwgb3Igc2F2ZWQtZW50cnkgZXh0ZW5zaW9ucy4KClJ1bnRpbWUgZml4dHVyZXMgZXN0YWJsaXNoIHN0YXRlIHdpdGhvdXQgZmlyaW5nIGhvb2tzLiBSdW50aW1lIGFjdGlvbnMgY2FsbCBwcm9kdWN0aW9uIGJvdW5kYXJpZXM7IGluc3BlY3RvcnMgcmVhZCBvYnNlcnZhYmxlIHN0YXRlLiBRdWV1ZSBvdXRib3VuZCBIVFRQIHJlc3BvbnNlcyB3aXRoIGBob3N0Lmh0dHAucmVzcG9uZCgpYCBhbmQgaW5zcGVjdCByZXF1ZXN0cyB3aXRoIGBob3N0Lmh0dHAucmVxdWVzdHMoKWAuIERpc3Bvc2UgZXZlcnkgaG9zdCBhZnRlciB1c2UuIEFkZCBOb2RlL3dvcmtlcmQgcGFyaXR5IG9ubHkgZm9yIHJ1bm5lci1zZW5zaXRpdmUgYmVoYXZpb3IuCgojIyBSZWZlcmVuY2VzCgotIFtDb250ZW50LCBzY2hlbWEsIHRyYW5zbGF0aW9ucywgYW5kIHB1YmxpY2F0aW9uXSguL3JlZmVyZW5jZXMvY29udGVudC5tZCkKLSBbVGF4b25vbWllcyBhbmQgcmVkaXJlY3RzXSguL3JlZmVyZW5jZXMvdGF4b25vbWllcy1hbmQtcmVkaXJlY3RzLm1kKQotIFtDb21tZW50c10oLi9yZWZlcmVuY2VzL2NvbW1lbnRzLm1kKQotIFtNZWRpYV0oLi9yZWZlcmVuY2VzL21lZGlhLm1kKQotIFtIb29rc10oLi9yZWZlcmVuY2VzL2hvb2tzLm1kKQotIFtTdG9yYWdlLCBLViwgYW5kIGVuY3J5cHRlZCBzZXR0aW5nc10oLi9yZWZlcmVuY2VzL3N0b3JhZ2UubWQpCi0gW0FkbWluIFVJIGFuZCBmaWVsZCB3aWRnZXRzXSguL3JlZmVyZW5jZXMvYWRtaW4tdWkubWQpCi0gW0FQSSByb3V0ZXMgYW5kIE1DUCB0b29sc10oLi9yZWZlcmVuY2VzL2FwaS1yb3V0ZXMubWQpCi0gW0Jsb2NrIEtpdF0oLi9yZWZlcmVuY2VzL2Jsb2NrLWtpdC5tZCkKLSBbUG9ydGFibGUgVGV4dCBibG9ja3NdKC4vcmVmZXJlbmNlcy9wb3J0YWJsZS10ZXh0LWJsb2Nrcy5tZCkKLSBbU2FuZGJveCBib3VuZGFyaWVzXSguL3JlZmVyZW5jZXMvc2FuZGJveC1ib3VuZGFyaWVzLm1kKQotIFtQdWJsaXNoaW5nXSguL3JlZmVyZW5jZXMvcHVibGlzaGluZy5tZCkK
+---
+name: creating-plugins
+description: Create EmDash CMS plugins with sandboxed hooks, routes, storage, content and media APIs, MCP tools, and declarative admin UI, or native React and Astro extensions. Use when scaffolding or implementing an EmDash plugin.
+---
+
+# Creating EmDash plugins
+
+Build against the API that reaches the intended execution mode. Source types and production-boundary tests take precedence over examples in this skill when they disagree.
+
+## Choose a format
+
+| Format    | Runtime source                                      | Admin UI                                                  | Distribution                 |
+| --------- | --------------------------------------------------- | --------------------------------------------------------- | ---------------------------- |
+| Sandboxed | `src/plugin.ts` default-exports a `SandboxedPlugin` | Block Kit pages, widgets, saved-entry panels, and actions | Plugin CLI and registry      |
+| Native    | `definePlugin()` / `createPlugin()`                 | React, Block Kit, and Astro components                    | Trusted site dependency only |
+
+Use a sandboxed plugin unless the feature needs host-process access, React admin code, Astro rendering components, raw page fragments, or custom Portable Text block definitions. Native plugins run with the site's authority and cannot be installed from the registry.
+
+## Scaffold a sandboxed plugin
+
+```sh
+pnpm dlx @emdash-cms/plugin-cli init my-plugin
+cd my-plugin
+pnpm install
+pnpm run test
+```
+
+The manifest is the identity and trust contract. Runtime hooks and routes live in `src/plugin.ts`; the CLI generates descriptors, manifests, and bundles. Do not create a separate descriptor factory or `sandbox-entry.ts`.
+
+```typescript title="src/plugin.ts"
+import type { SandboxedPlugin } from "emdash/plugin";
+
+const plugin: SandboxedPlugin = {
+	hooks: {
+		"content:afterSave": async (event, ctx) => {
+			ctx.log.info("Content saved", { id: event.content.id });
+		},
+	},
+};
+
+export default plugin;
+```
+
+Import authoring types from `emdash/plugin` with `import type`. Value imports are limited to lightweight helpers such as `pluginRoute()` and `pluginResponse()`, which the CLI bundles. Sandboxed runtime code can use Web APIs but not Node.js built-ins.
+
+## Declare access
+
+Declare every host API in `emdash-plugin.jsonc`. Adding authority, exposing a route publicly, or adding MCP tools requires renewed administrator approval.
+
+| Capability                       | Grants                                                                     |
+| -------------------------------- | -------------------------------------------------------------------------- |
+| `schema:read`                    | Public collection and field definitions                                    |
+| `admin.editor-draft:read`        | Selected unsaved field values after an explicit editor interaction         |
+| `admin.editor-draft:patch`       | Host-validated unsaved field changes proposed for editor review            |
+| `content:read`                   | Content identity, translations, and published public URLs                  |
+| `content:revisions:read`         | Retained revision data; implies content read                               |
+| `content:write`                  | Create, update, delete, and translation creation; implies read             |
+| `content:publish`                | Revision-fenced publish, unpublish, schedule, and unschedule; implies read |
+| `content:restore`                | Revision-fenced reads and restoration of trashed content                   |
+| `hooks.content-policy:register`  | Pre-publish, pre-schedule, and pre-unpublish policy hooks                  |
+| `taxonomies:read`                | Taxonomy definitions, terms, and entry assignments                         |
+| `taxonomies:write`               | Term creation and assignment deltas; implies read                          |
+| `redirects:read`                 | Versioned redirect inspection                                              |
+| `redirects:write`                | Versioned redirect creation, update, and deletion; implies read            |
+| `comments:read`                  | Stored non-trashed comments and their personal data                        |
+| `comments:moderate`              | Expected-status moderation; implies read                                   |
+| `media:read`                     | Ready-media metadata and authenticated asset URLs                          |
+| `media:bytes:read`               | Bounded media bytes and content hashes                                     |
+| `media:metadata:write`           | Alt text, caption, and focal-point updates                                 |
+| `media:write`                    | Upload and delete; implies media read                                      |
+| `network:request`                | `ctx.http.fetch()` restricted to `allowedHosts`                            |
+| `network:request:unrestricted`   | `ctx.http.fetch()` without a host list                                     |
+| `users:read`                     | User directory lookup; also required by comment hooks                      |
+| `email:send`                     | Email delivery when a transport is configured                              |
+| `hooks.email-transport:register` | Exclusive `email:deliver` hook                                             |
+| `hooks.email-events:register`    | Email before/after hooks                                                   |
+| `hooks.page-fragments:register`  | Trusted-only page fragments; excluded from sandbox registration            |
+
+Settings, KV, declared storage, logging, and cron scheduling are plugin-scoped and need no capability. Use `ctx.settings` for user configuration, `ctx.kv` for internal key-value state, and declared `ctx.storage.<collection>` for queryable records.
+
+Read the focused reference for the API being used:
+
+- [Content, schema, translations, and publication](./references/content.md)
+- [Taxonomies and redirects](./references/taxonomies-and-redirects.md)
+- [Comments](./references/comments.md)
+- [Media](./references/media.md)
+- [Storage, KV, and encrypted settings](./references/storage.md)
+
+## Routes, HTTP, and MCP
+
+Routes are private by default and require authentication, their declared RBAC permission, token scope or CSRF as appropriate. Public routes are internet-facing and require explicit install consent.
+
+Undeclared routes keep the legacy JSON/query envelope. Declare methods and body modes for host-enforced parsing. Use `pluginResponse()` only on a route that declares a raw response. Outbound `ctx.http.fetch()` responses and declared route bodies are buffered and bounded.
+
+MCP tools reference private JSON routes with explicit permissions and Zod input schemas. Mark difficult-to-reverse operations `destructive: true`. Read [API routes and MCP tools](./references/api-routes.md).
+
+## Hooks
+
+Sandboxed hooks enter the same priority, dependency, timeout, error-policy, enablement, exclusive-provider, and capability pipeline as trusted hooks. Publication policy hooks identify action origin and actor without granting publication authority. Comment moderation invoked through `ctx.comments` reports plugin origin and runs the normal after-hook once. Read [Hooks](./references/hooks.md).
+
+## Declarative admin UI
+
+Sandboxed pages and widgets return validated Block Kit. Structured links use host-resolved targets; `routeCtx.ui` carries host-attested locale, direction, and surface. External images require matching network authority.
+
+Saved-entry panels and actions point to private routes. Ordinary panel load receives only host-reloaded saved identity and version. Add `admin.editor-draft:read` or `admin.editor-draft:patch` plus extension-level collection and field selectors when an explicit interaction must receive selected unsaved fields or propose an atomic whole-field patch. Patch does not imply read. The host previews accepted patches, marks the form dirty, and never saves them automatically. Read saved content through capability-gated `ctx.content`.
+
+Declarative field widgets currently compose supported Block Kit elements into a JSON value. Custom Portable Text blocks and Astro render components remain native-only. Read [Admin UI](./references/admin-ui.md), [Block Kit](./references/block-kit.md), and [Portable Text blocks](./references/portable-text-blocks.md).
+
+## Runner parity
+
+Cloudflare Worker Loader and Node/workerd execute the same bundle behind a plugin-scoped bridge. Both return buffered WHATWG responses from `ctx.http.fetch()` with binary bytes preserved and decoded request/response bodies limited to 8 MiB. Write against exported types, not extra methods found in one wrapper.
+
+Read [Sandbox boundaries](./references/sandbox-boundaries.md) before designing around an API not listed here.
+
+## Test the production boundary
+
+Use `createPluginTestHost()` for fast hook, route, manifest, capability, KV, settings, and storage transport tests. Use `createPluginRuntimeTestHost()` when the test must exercise real content actions, plugin activation, media, comments, redirects, scheduling, restart, authorization, CSRF, caching, Block Kit validation, or saved-entry extensions.
+
+Runtime fixtures establish state without firing hooks. Runtime actions call production boundaries; inspectors read observable state. Queue outbound HTTP responses with `host.http.respond()` and inspect requests with `host.http.requests()`. Dispose every host after use. Add Node/workerd parity only for runner-sensitive behavior.
+
+## References
+
+- [Content, schema, translations, and publication](./references/content.md)
+- [Taxonomies and redirects](./references/taxonomies-and-redirects.md)
+- [Comments](./references/comments.md)
+- [Media](./references/media.md)
+- [Hooks](./references/hooks.md)
+- [Storage, KV, and encrypted settings](./references/storage.md)
+- [Admin UI and field widgets](./references/admin-ui.md)
+- [API routes and MCP tools](./references/api-routes.md)
+- [Block Kit](./references/block-kit.md)
+- [Portable Text blocks](./references/portable-text-blocks.md)
+- [Sandbox boundaries](./references/sandbox-boundaries.md)
+- [Publishing](./references/publishing.md)

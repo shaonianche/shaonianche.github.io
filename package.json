@@ -1,1 +1,31 @@
-ewogICJuYW1lIjogIm15LXNpdGUiLAogICJ2ZXJzaW9uIjogIjAuMC4zIiwKICAicHJpdmF0ZSI6IHRydWUsCiAgInR5cGUiOiAibW9kdWxlIiwKICAiZW1kYXNoIjogewogICAgImxhYmVsIjogIkJsb2ciLAogICAgInNlZWQiOiAic2VlZC9zZWVkLmpzb24iCiAgfSwKICAic2NyaXB0cyI6IHsKICAgICJkZXYiOiAiYXN0cm8gZGV2IiwKICAgICJidWlsZCI6ICJhc3RybyBidWlsZCIsCiAgICAicHJldmlldyI6ICJhc3RybyBwcmV2aWV3IiwKICAgICJkZXBsb3kiOiAiYXN0cm8gYnVpbGQgJiYgd3JhbmdsZXIgZGVwbG95IiwKICAgICJ0eXBlY2hlY2siOiAiYXN0cm8gY2hlY2siCiAgfSwKICAiZGVwZW5kZW5jaWVzIjogewogICAgIkBhc3Ryb2pzL2Nsb3VkZmxhcmUiOiAiXjE0LjMuMSIsCiAgICAiQGFzdHJvanMvcmVhY3QiOiAiXjYuMC41IiwKICAgICJAZW1kYXNoLWNtcy9jbG91ZGZsYXJlIjogIl4xLjAuMSIsCiAgICAiYXN0cm8iOiAiXjcuMy4yIiwKICAgICJlbWRhc2giOiAiXjEuMC4xIiwKICAgICJyZWFjdCI6ICIxOS4yLjQiLAogICAgInJlYWN0LWRvbSI6ICIxOS4yLjQiCiAgfSwKICAiZGV2RGVwZW5kZW5jaWVzIjogewogICAgIkBhc3Ryb2pzL2NoZWNrIjogIl4wLjkuMTAiLAogICAgIkBjbG91ZGZsYXJlL3dvcmtlcnMtdHlwZXMiOiAiXjUuMjAyNjA4MjAuMSIsCiAgICAid3JhbmdsZXIiOiAiXjQuMTI1LjAiCiAgfQp9
+{
+  "name": "my-site",
+  "version": "0.0.3",
+  "private": true,
+  "type": "module",
+  "emdash": {
+    "label": "Blog",
+    "seed": "seed/seed.json"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "astro build && wrangler deploy",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.3.1",
+    "@astrojs/react": "^6.0.5",
+    "@emdash-cms/cloudflare": "^1.0.1",
+    "astro": "^7.3.2",
+    "emdash": "^1.0.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@cloudflare/workers-types": "^5.20260820.1",
+    "wrangler": "^4.125.0"
+  }
+}

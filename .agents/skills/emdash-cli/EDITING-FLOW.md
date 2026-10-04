@@ -1,1 +1,180 @@
-IyBFZGl0aW5nIEZsb3cKCkhvdyBjb250ZW50IGVkaXRpbmcgd29ya3MgdGhyb3VnaCB0aGUgQ0xJLiBDb3ZlcnMgUG9ydGFibGUgVGV4dCBjb252ZXJzaW9uLCBgX3JldmAgdG9rZW5zLCBhbmQgcmF3IG1vZGUuCgojIyBQb3J0YWJsZSBUZXh0IGFuZCBNYXJrZG93bgoKRW1EYXNoIHN0b3JlcyByaWNoIHRleHQgYXMgW1BvcnRhYmxlIFRleHRdKGh0dHBzOi8vcG9ydGFibGV0ZXh0Lm9yZy8pIChQVCkg4oCUIGEgc3RydWN0dXJlZCBKU09OIGZvcm1hdC4gVGhlIENMSSBhdXRvbWF0aWNhbGx5IGNvbnZlcnRzIGJldHdlZW4gUFQgYW5kIG1hcmtkb3duIHNvIHlvdSB3b3JrIHdpdGggYSBmYW1pbGlhciB0ZXh0IGZvcm1hdC4KCiMjIyBBdXRvbWF0aWMgQ29udmVyc2lvbgoKLSAqKk9uIHJlYWQqKjogUFQgYXJyYXlzIGluIGBwb3J0YWJsZVRleHRgIGZpZWxkcyBhcmUgY29udmVydGVkIHRvIG1hcmtkb3duIHN0cmluZ3MKLSAqKk9uIHdyaXRlKio6IG1hcmtkb3duIHN0cmluZ3MgaW4gYHBvcnRhYmxlVGV4dGAgZmllbGRzIGFyZSBjb252ZXJ0ZWQgYmFjayB0byBQVCBhcnJheXMKLSAqKk5vbi1QVCBmaWVsZHMqKiAoc3RyaW5nLCB0ZXh0LCBudW1iZXIsIGV0Yy4pIHBhc3MgdGhyb3VnaCB1bmNoYW5nZWQKClRoZSBDTEkgZGV0ZWN0cyB3aGljaCBmaWVsZHMgbmVlZCBjb252ZXJzaW9uIGJ5IGZldGNoaW5nIHRoZSBjb2xsZWN0aW9uJ3MgZmllbGQgc2NoZW1hLgoKIyMjIFN1cHBvcnRlZCBNYXJrZG93biBTeW50YXgKClN0YW5kYXJkIGJsb2NrcyAobG9zc2xlc3Mgcm91bmQtdHJpcCk6Cgp8IE1hcmtkb3duICAgICAgICAgICAgICAgICAgICAgfCBQVCBibG9jayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfAp8IGAjIEhlYWRpbmdgIHRocm91Z2ggYCMjIyMjI2AgfCBoMS1oNiBibG9ja3MgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IFBsYWluIHBhcmFncmFwaCAgICAgICAgICAgICAgfCBub3JtYWwgYmxvY2sgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IGA+IFF1b3RlYCAgICAgICAgICAgICAgICAgICAgfCBibG9ja3F1b3RlICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IGAtIGl0ZW1gIC8gYCogaXRlbWAgICAgICAgICAgfCBidWxsZXQgbGlzdCAobmVzdGluZyB2aWEgMi1zcGFjZSBpbmRlbnQpICAgfAp8IGAxLiBpdGVtYCAgICAgICAgICAgICAgICAgICAgfCBudW1iZXJlZCBsaXN0IChuZXN0aW5nIHZpYSAyLXNwYWNlIGluZGVudCkgfAp8IGAgYGBgIGBgYGxhbmdgYGAgYCAgICAgICAgICAgfCBjb2RlIGJsb2NrIHdpdGggbGFuZ3VhZ2UgICAgICAgICAgICAgICAgICAgfAp8IGAhW2FsdF0odXJsKWAgICAgICAgICAgICAgICAgfCBpbWFnZSBibG9jayAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAoKSW5saW5lIG1hcmtzOgoKfCBNYXJrZG93biAgICAgIHwgUFQgbWFyayAgICAgICAgIHwKfCAtLS0tLS0tLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tIHwKfCBgKipib2xkKipgICAgIHwgYHN0cm9uZ2AgICAgICAgIHwKfCBgX2l0YWxpY19gICAgIHwgYGVtYCAgICAgICAgICAgIHwKfCBgYCBgY29kZWAgYGAgIHwgYGNvZGVgICAgICAgICAgIHwKfCBgfn5zdHJpa2V+fmAgIHwgYHN0cmlrZXRocm91Z2hgIHwKfCBgW3RleHRdKHVybClgIHwgbGluayBhbm5vdGF0aW9uIHwKCiMjIyBVbmtub3duIEJsb2NrcyAoT3BhcXVlIEZlbmNlcykKCkJsb2NrcyB0aGUgY29udmVydGVyIGRvZXNuJ3QgcmVjb2duaXplIChjdXN0b20gYmxvY2tzLCBlbWJlZHMsIGV0Yy4pIGFyZSBzZXJpYWxpemVkIGFzIEhUTUwgY29tbWVudHM6CgpgYGBtYXJrZG93bgo8IS0tZWM6YmxvY2sgeyJfdHlwZSI6ImNhbGxvdXQiLCJsZXZlbCI6Indhcm5pbmciLCJ0ZXh0IjoiQmUgY2FyZWZ1bCJ9IC0tPgpgYGAKClRoZXNlIHN1cnZpdmUgcm91bmQtdHJpcHMgaW50YWN0LiBZb3UgY2FuIHNlZSBhbmQgbW92ZSB0aGVtLCBidXQgZWRpdGluZyB0aGUgSlNPTiByaXNrcyBjb3JydXB0aW9uLiBPbiB3cml0ZSwgdGhleSdyZSBkZXNlcmlhbGl6ZWQgYmFjayB0byB0aGUgb3JpZ2luYWwgUFQgYmxvY2suCgojIyMgUmF3IE1vZGUKClNraXAgbWFya2Rvd24gY29udmVyc2lvbiBlbnRpcmVseSB0byB3b3JrIHdpdGggcmF3IFBUIEpTT046CgpgYGBiYXNoCm5weCBlbWRhc2ggY29udGVudCBnZXQgcG9zdHMgMDFBQkMxMjMgLS1yYXcKYGBgCgpVc2UgcmF3IG1vZGUgd2hlbjoKCi0gWW91IG5lZWQgZXhhY3QgY29udHJvbCBvdmVyIFBUIHN0cnVjdHVyZQotIFlvdSdyZSB3b3JraW5nIHdpdGggY3VzdG9tIGJsb2NrIHR5cGVzCi0gWW91J3JlIGNvcHlpbmcgUFQgYmV0d2VlbiBpdGVtcyB3aXRob3V0IHRyYW5zZm9ybWF0aW9uCgojIyMgV3JpdGluZyBDb250ZW50CgpXaGVuIGNyZWF0aW5nIG9yIHVwZGF0aW5nIGNvbnRlbnQsIGVhY2ggZmllbGQgaXMgY2hlY2tlZDoKCi0gYHBvcnRhYmxlVGV4dGAgZmllbGQgKyAqKnN0cmluZyB2YWx1ZSoqIOKGkiBjb252ZXJ0cyBtYXJrZG93biB0byBQVCBiZWZvcmUgc2VuZGluZwotIGBwb3J0YWJsZVRleHRgIGZpZWxkICsgKiphcnJheSB2YWx1ZSoqIOKGkiBzZW5kcyBhcyByYXcgUFQgKG5vIGNvbnZlcnNpb24pCi0gQW55IG90aGVyIGZpZWxkIHR5cGUg4oaSIHNlbmRzIGFzLWlzCgpgYGBiYXNoCiMgTWFya2Rvd24gc3RyaW5nIOKAlCBjb252ZXJ0ZWQgdG8gUFQgYXV0b21hdGljYWxseQpucHggZW1kYXNoIGNvbnRlbnQgY3JlYXRlIHBvc3RzIC0tZGF0YSAneyJ0aXRsZSI6ICJIZWxsbyIsICJib2R5IjogIiMgV2VsY29tZVxuXG5UaGlzIGlzICoqYm9sZCoqLiJ9JwoKIyBSYXcgUFQgYXJyYXkg4oCUIHBhc3NlZCB0aHJvdWdoIGFzLWlzCm5weCBlbWRhc2ggY29udGVudCBjcmVhdGUgcG9zdHMgLS1kYXRhICd7InRpdGxlIjogIkhlbGxvIiwgImJvZHkiOiBbeyJfdHlwZSI6ICJibG9jayIsICJjaGlsZHJlbiI6IFt7Il90eXBlIjogInNwYW4iLCAidGV4dCI6ICJXZWxjb21lIn1dfV19JwpgYGAKCiMjIEF1dG8tUHVibGlzaGluZwoKVGhlIENMSSBpcyBkZXNpZ25lZCBmb3IgYWdlbnRzLiBJdCBhdXRvLXB1Ymxpc2hlcyBvbiBgY3JlYXRlYCBhbmQgYHVwZGF0ZWAgYnkgZGVmYXVsdCBzbyBhZ2VudHMgZ2V0IHJlYWQtYWZ0ZXItd3JpdGUgY29uc2lzdGVuY3kgd2l0aG91dCBtYW5hZ2luZyB0aGUgZHJhZnQvcHVibGlzaCBsaWZlY3ljbGUuCgojIyMgSG93IEl0IFdvcmtzCgotICoqYGNyZWF0ZWAqKiDigJQgY3JlYXRlcyB0aGUgaXRlbSwgdGhlbiBwdWJsaXNoZXMgaXQuIFRoZSByZXR1cm5lZCBpdGVtIGlzIGluIGBwdWJsaXNoZWRgIHN0YXR1cy4KLSAqKmB1cGRhdGVgKiog4oCUIHVwZGF0ZXMgdGhlIGl0ZW0uIElmIHRoZSBjb2xsZWN0aW9uIHVzZXMgcmV2aXNpb25zIGFuZCB0aGUgdXBkYXRlIGNyZWF0ZWQgYSBkcmFmdCByZXZpc2lvbiwgaXQgYXV0by1wdWJsaXNoZXMgdG8gcHJvbW90ZSB0aGUgZHJhZnQgdG8gdGhlIGNvbnRlbnQgdGFibGUuIFRoZSByZXR1cm5lZCBpdGVtIHJlZmxlY3RzIHRoZSB1cGRhdGVkIGRhdGEuCi0gKipgZ2V0YCoqIOKAlCByZXR1cm5zIHRoZSBsYXRlc3Qgc3RhdGUuIElmIGEgcGVuZGluZyBkcmFmdCBleGlzdHMgKGUuZy4gc29tZW9uZSBlZGl0ZWQgaW4gdGhlIGFkbWluIFVJIGJ1dCBkaWRuJ3QgcHVibGlzaCksIHRoZSBkcmFmdCBkYXRhIGlzIHJldHVybmVkIGluc3RlYWQgb2YgdGhlIHB1Ymxpc2hlZCBkYXRhLiBVc2UgYC0tcHVibGlzaGVkYCB0byBzZWUgb25seSBwdWJsaXNoZWQgZGF0YS4KClVzZSBgLS1kcmFmdGAgb24gY3JlYXRlL3VwZGF0ZSB0byBza2lwIGF1dG8tcHVibGlzaGluZy4KCiMjIyBXaHkgQXV0by1QdWJsaXNoPwoKRW1EYXNoIGNvbGxlY3Rpb25zIGNhbiBzdXBwb3J0IGRyYWZ0IHJldmlzaW9ucy4gV2hlbiB0aGV5IGRvLCBgdXBkYXRlYCB3cml0ZXMgZGF0YSB0byBhIGRyYWZ0IHJldmlzaW9uIGluc3RlYWQgb2YgdGhlIGNvbnRlbnQgdGFibGUuIFdpdGhvdXQgYXV0by1wdWJsaXNoLCBhbiBhZ2VudCB3b3VsZCB1cGRhdGUsIHRoZW4gYGdldGAgdGhlIGl0ZW0sIGFuZCBzZWUgc3RhbGUgcHVibGlzaGVkIGRhdGEg4oCUIG5vdCB0aGUgY2hhbmdlcyBpdCBqdXN0IG1hZGUuIEF1dG8tcHVibGlzaCBlbGltaW5hdGVzIHRoaXMgY29uZnVzaW9uLgoKIyMgUmVhZC1CZWZvcmUtV3JpdGUKClVwZGF0ZXMgdXNlIGBfcmV2YCB0b2tlbnMgZm9yIG9wdGltaXN0aWMgY29uY3VycmVuY3kg4oCUIHRoZSBzYW1lIHByaW5jaXBsZSBhcyBhIGZpbGUgZWRpdGluZyB0b29sIHRoYXQgcmVxdWlyZXMgeW91IHRvIHJlYWQgYSBmaWxlIGJlZm9yZSB5b3UgY2FuIGVkaXQgaXQuIFlvdSBtdXN0IHNlZSB3aGF0IHlvdSdyZSBvdmVyd3JpdGluZy4KCiMjIyBUaGUgQW5hbG9neQoKVGhpbmsgb2YgaXQgbGlrZSBhIGZpbGVzeXN0ZW0gZWRpdCB0b29sOgoKMS4gWW91ICoqcmVhZCoqIHRoZSBmaWxlIHRvIHNlZSBpdHMgY3VycmVudCBjb250ZW50cwoyLiBZb3UgZGVjaWRlIHdoYXQgdG8gY2hhbmdlCjMuIFlvdSAqKndyaXRlKiogd2l0aCBhIHJlZmVyZW5jZSB0byB0aGUgdmVyc2lvbiB5b3UgcmVhZAoKSWYgc29tZW9uZSBlbHNlIGNoYW5nZWQgdGhlIGZpbGUgYmV0d2VlbiB5b3VyIHJlYWQgYW5kIHlvdXIgd3JpdGUsIHRoZSB3cml0ZSBmYWlscyDigJQgeW91IGNhbid0IG92ZXJ3cml0ZSBjaGFuZ2VzIHlvdSBoYXZlbid0IHNlZW4uIFRoZSBgX3JldmAgdG9rZW4gaXMgeW91ciBwcm9vZiB0aGF0IHlvdSd2ZSBzZWVuIHRoZSBjdXJyZW50IHN0YXRlLgoKIyMjIEhvdyBJdCBXb3JrcwoKMS4gYGNvbnRlbnQgZ2V0YCByZXR1cm5zIHRoZSBpdGVtIHdpdGggYSBgX3JldmAgdG9rZW4gaW4gdGhlIG91dHB1dAoyLiBZb3UgcGFzcyB0aGF0IGBfcmV2YCBiYWNrIHRvIGBjb250ZW50IHVwZGF0ZWAgdmlhIGAtLXJldmAKMy4gVGhlIHNlcnZlciBjaGVja3M6IGlmIHRoZSBpdGVtIGhhcyBjaGFuZ2VkIHNpbmNlIHlvdXIgcmVhZCwgaXQgcmV0dXJucyAqKjQwOSBDb25mbGljdCoqCjQuIEEgc3VjY2Vzc2Z1bCB1cGRhdGUgcmV0dXJucyBhIG5ldyBgX3JldmAgZm9yIHN1YnNlcXVlbnQgZWRpdHMKCiMjIyBXaGF0IElzIGEgYF9yZXZgIFRva2VuPwoKQW4gb3BhcXVlIGJhc2U2NCBzdHJpbmcuIERvbid0IHBhcnNlIGl0IOKAlCBqdXN0IHBhc3MgaXQgYmFjay4KCiMjIyBDTEkgV29ya2Zsb3cKClRoZSBDTEkgKipyZXF1aXJlcyoqIGAtLXJldmAgb24gdXBkYXRlcy4gVGhlIHR5cGljYWwgd29ya2Zsb3c6CgpgYGBiYXNoCiMgMS4gUmVhZCB0aGUgaXRlbSDigJQgbm90ZSB0aGUgX3JldiBpbiB0aGUgb3V0cHV0Cm5weCBlbWRhc2ggY29udGVudCBnZXQgcG9zdHMgMDFBQkMxMjMKIyBPdXRwdXQgaW5jbHVkZXM6IF9yZXY6IE1Ub3lNREkyTFRBeUxURTAuLi4KCiMgMi4gVXBkYXRlIHdpdGggdGhlIF9yZXYgeW91IHJlY2VpdmVkIOKAlCBhdXRvLXB1Ymxpc2hlcyBieSBkZWZhdWx0Cm5weCBlbWRhc2ggY29udGVudCB1cGRhdGUgcG9zdHMgMDFBQkMxMjMgXAogIC0tcmV2IE1Ub3lNREkyTFRBeUxURTAuLi4gXAogIC0tZGF0YSAneyJ0aXRsZSI6ICJOZXcgVGl0bGUifScKIyBPdXRwdXQgc2hvd3MgdXBkYXRlZCBpdGVtIHdpdGggbmV3IF9yZXYKYGBgCgpJZiB5b3UgdHJ5IHRvIHVwZGF0ZSB3aXRob3V0IGAtLXJldmAsIHRoZSBDTEkgcmVqZWN0cyB0aGUgY29tbWFuZC4gVGhpcyBlbnN1cmVzIHlvdSBhbHdheXMga25vdyB3aGF0IHlvdSdyZSBvdmVyd3JpdGluZy4KCiMjIyBDb25mbGljdCBIYW5kbGluZwoKSWYgc29tZW9uZSBlbHNlIHVwZGF0ZWQgdGhlIGl0ZW0gYmV0d2VlbiB5b3VyIHJlYWQgYW5kIHdyaXRlOgoKYGBgCkVtRGFzaEFwaUVycm9yOiBDb250ZW50IGhhcyBiZWVuIG1vZGlmaWVkIHNpbmNlIGxhc3QgcmVhZCAodmVyc2lvbiBjb25mbGljdCkKICBzdGF0dXM6IDQwOQogIGNvZGU6IENPTkZMSUNUCmBgYAoKUmVzb2x1dGlvbjogcmUtcmVhZCB3aXRoIGBnZXRgLCBpbnNwZWN0IHRoZSBuZXcgc3RhdGUsIHRoZW4gYHVwZGF0ZWAgd2l0aCB0aGUgZnJlc2ggYF9yZXZgLgoKIyMjIExvY2tlZCBFbnRyaWVzCgpBIDQwOSBkb2VzIG5vdCBhbHdheXMgbWVhbiB0aGUgaXRlbSBjaGFuZ2VkLiBJZiBzb21lb25lIGhhcyB0aGUgZW50cnkgb3BlbiBpbiB0aGUgYWRtaW4sIHRoZSB3cml0ZSBpcyByZWZ1c2VkIHdpdGggYSBkaWZmZXJlbnQgY29kZToKCmBgYApFbURhc2hBcGlFcnJvcjogQWRhIGlzIGhvbGRpbmcgdGhpcyBlbnRyeQogIHN0YXR1czogNDA5CiAgY29kZTogRU5UUllfTE9DS0VECmBgYAoKUmUtcmVhZGluZyBkb2VzIG5vdCBjbGVhciB0aGlzIG9uZS4gVGhlIGl0ZW0gaGFzIG5vdCBjaGFuZ2VkLCBzbyBhIGZyZXNoIGBfcmV2YCBwcm9kdWNlcyB0aGUgc2FtZSByZWZ1c2FsLiBDaGVjayBgY29kZWAgYmVmb3JlIHlvdSByZXRyeS4gRWl0aGVyIHdhaXQsIG9yIHBhc3MgYC0tb3ZlcnJpZGUtbG9ja2AgdG8gd3JpdGUgYW55d2F5LiBBbiBlZGl0b3IgcmVsZWFzZXMgdGhlIGxvY2sgd2hlbiB0aGV5IGNsb3NlIHRoZSBlbnRyeSwgYW5kIGEgbG9jayBsZWZ0IGJlaGluZCBieSBhIGNyYXNoZWQgdGFiIGxhcHNlcyBzZXZlbiBtaW51dGVzIGFmdGVyIHRoZWlyIGxhc3QgaGVhcnRiZWF0LgoKT3ZlcnJpZGluZyBkb2VzIG5vdCB0YWtlIHRoZSBsb2NrLiBUaGUgZWRpdG9yIGtlZXBzIGl0IGFuZCB0aGVpciBuZXh0IHNhdmUgaXMgcmVqZWN0ZWQgYXMgYSB2ZXJzaW9uIGNvbmZsaWN0LCBzbyB3YWl0IHVubGVzcyB5b3Uga25vdyB0aGV5IGhhdmUgZ29uZS4KCmAtLW92ZXJyaWRlLWxvY2tgIGlzIGFjY2VwdGVkIGJ5IGBjb250ZW50IHVwZGF0ZWAsIGBjb250ZW50IGRlbGV0ZWAsIGBjb250ZW50IHB1Ymxpc2hgLCBgY29udGVudCB1bnB1Ymxpc2hgIGFuZCBgY29udGVudCBzY2hlZHVsZWAuIENvbGxlY3Rpb25zIHdpdGggZWRpdCBsb2NraW5nIHN3aXRjaGVkIG9mZiBuZXZlciByZXR1cm4gYEVOVFJZX0xPQ0tFRGAuCgojIyMgV2hpY2ggT3BlcmF0aW9ucyBOZWVkIGBfcmV2YD8KCk9ubHkgYHVwZGF0ZWAuIEFsbCBvdGhlciBvcGVyYXRpb25zIGFyZSBlaXRoZXIgaWRlbXBvdGVudCBvciBub24tZGVzdHJ1Y3RpdmU6Cgp8IENvbW1hbmQgICAgICAgICAgICAgfCBgLS1yZXZgIG5lZWRlZD8gfCBXaHkgICAgICAgICAgICAgICAgICAgICAgfAp8IC0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfAp8IGBjb250ZW50IGNyZWF0ZWAgICAgfCBObyAgICAgICAgICAgICAgfCBOb3RoaW5nIGV4aXN0cyB5ZXQgICAgICAgfAp8IGBjb250ZW50IHVwZGF0ZWAgICAgfCAqKlllcyoqICAgICAgICAgfCBPdmVyd3JpdGVzIGV4aXN0aW5nIGRhdGEgfAp8IGBjb250ZW50IGRlbGV0ZWAgICAgfCBObyAgICAgICAgICAgICAgfCBTb2Z0IGRlbGV0ZSwgcmV2ZXJzaWJsZSAgfAp8IGBjb250ZW50IHB1Ymxpc2hgICAgfCBObyAgICAgICAgICAgICAgfCBJZGVtcG90ZW50IHN0YXR1cyBjaGFuZ2UgfAp8IGBjb250ZW50IHVucHVibGlzaGAgfCBObyAgICAgICAgICAgICAgfCBJZGVtcG90ZW50IHN0YXR1cyBjaGFuZ2UgfAp8IGBjb250ZW50IHNjaGVkdWxlYCAgfCBObyAgICAgICAgICAgICAgfCBPbmx5IGNoYW5nZXMgbWV0YWRhdGEgICAgfAp8IGBjb250ZW50IHJlc3RvcmVgICAgfCBObyAgICAgICAgICAgICAgfCBSZXN0b3JlcyBmcm9tIHRyYXNoICAgICAgfAo=
+# Editing Flow
+
+How content editing works through the CLI. Covers Portable Text conversion, `_rev` tokens, and raw mode.
+
+## Portable Text and Markdown
+
+EmDash stores rich text as [Portable Text](https://portabletext.org/) (PT) — a structured JSON format. The CLI automatically converts between PT and markdown so you work with a familiar text format.
+
+### Automatic Conversion
+
+- **On read**: PT arrays in `portableText` fields are converted to markdown strings
+- **On write**: markdown strings in `portableText` fields are converted back to PT arrays
+- **Non-PT fields** (string, text, number, etc.) pass through unchanged
+
+The CLI detects which fields need conversion by fetching the collection's field schema.
+
+### Supported Markdown Syntax
+
+Standard blocks (lossless round-trip):
+
+| Markdown                     | PT block                                   |
+| ---------------------------- | ------------------------------------------ |
+| `# Heading` through `######` | h1-h6 blocks                               |
+| Plain paragraph              | normal block                               |
+| `> Quote`                    | blockquote                                 |
+| `- item` / `* item`          | bullet list (nesting via 2-space indent)   |
+| `1. item`                    | numbered list (nesting via 2-space indent) |
+| ` ``` ```lang``` `           | code block with language                   |
+| `![alt](url)`                | image block                                |
+
+Inline marks:
+
+| Markdown      | PT mark         |
+| ------------- | --------------- |
+| `**bold**`    | `strong`        |
+| `_italic_`    | `em`            |
+| `` `code` ``  | `code`          |
+| `~~strike~~`  | `strikethrough` |
+| `[text](url)` | link annotation |
+
+### Unknown Blocks (Opaque Fences)
+
+Blocks the converter doesn't recognize (custom blocks, embeds, etc.) are serialized as HTML comments:
+
+```markdown
+<!--ec:block {"_type":"callout","level":"warning","text":"Be careful"} -->
+```
+
+These survive round-trips intact. You can see and move them, but editing the JSON risks corruption. On write, they're deserialized back to the original PT block.
+
+### Raw Mode
+
+Skip markdown conversion entirely to work with raw PT JSON:
+
+```bash
+npx emdash content get posts 01ABC123 --raw
+```
+
+Use raw mode when:
+
+- You need exact control over PT structure
+- You're working with custom block types
+- You're copying PT between items without transformation
+
+### Writing Content
+
+When creating or updating content, each field is checked:
+
+- `portableText` field + **string value** → converts markdown to PT before sending
+- `portableText` field + **array value** → sends as raw PT (no conversion)
+- Any other field type → sends as-is
+
+```bash
+# Markdown string — converted to PT automatically
+npx emdash content create posts --data '{"title": "Hello", "body": "# Welcome\n\nThis is **bold**."}'
+
+# Raw PT array — passed through as-is
+npx emdash content create posts --data '{"title": "Hello", "body": [{"_type": "block", "children": [{"_type": "span", "text": "Welcome"}]}]}'
+```
+
+## Auto-Publishing
+
+The CLI is designed for agents. It auto-publishes on `create` and `update` by default so agents get read-after-write consistency without managing the draft/publish lifecycle.
+
+### How It Works
+
+- **`create`** — creates the item, then publishes it. The returned item is in `published` status.
+- **`update`** — updates the item. If the collection uses revisions and the update created a draft revision, it auto-publishes to promote the draft to the content table. The returned item reflects the updated data.
+- **`get`** — returns the latest state. If a pending draft exists (e.g. someone edited in the admin UI but didn't publish), the draft data is returned instead of the published data. Use `--published` to see only published data.
+
+Use `--draft` on create/update to skip auto-publishing.
+
+### Why Auto-Publish?
+
+EmDash collections can support draft revisions. When they do, `update` writes data to a draft revision instead of the content table. Without auto-publish, an agent would update, then `get` the item, and see stale published data — not the changes it just made. Auto-publish eliminates this confusion.
+
+## Read-Before-Write
+
+Updates use `_rev` tokens for optimistic concurrency — the same principle as a file editing tool that requires you to read a file before you can edit it. You must see what you're overwriting.
+
+### The Analogy
+
+Think of it like a filesystem edit tool:
+
+1. You **read** the file to see its current contents
+2. You decide what to change
+3. You **write** with a reference to the version you read
+
+If someone else changed the file between your read and your write, the write fails — you can't overwrite changes you haven't seen. The `_rev` token is your proof that you've seen the current state.
+
+### How It Works
+
+1. `content get` returns the item with a `_rev` token in the output
+2. You pass that `_rev` back to `content update` via `--rev`
+3. The server checks: if the item has changed since your read, it returns **409 Conflict**
+4. A successful update returns a new `_rev` for subsequent edits
+
+### What Is a `_rev` Token?
+
+An opaque base64 string. Don't parse it — just pass it back.
+
+### CLI Workflow
+
+The CLI **requires** `--rev` on updates. The typical workflow:
+
+```bash
+# 1. Read the item — note the _rev in the output
+npx emdash content get posts 01ABC123
+# Output includes: _rev: MToyMDI2LTAyLTE0...
+
+# 2. Update with the _rev you received — auto-publishes by default
+npx emdash content update posts 01ABC123 \
+  --rev MToyMDI2LTAyLTE0... \
+  --data '{"title": "New Title"}'
+# Output shows updated item with new _rev
+```
+
+If you try to update without `--rev`, the CLI rejects the command. This ensures you always know what you're overwriting.
+
+### Conflict Handling
+
+If someone else updated the item between your read and write:
+
+```
+EmDashApiError: Content has been modified since last read (version conflict)
+  status: 409
+  code: CONFLICT
+```
+
+Resolution: re-read with `get`, inspect the new state, then `update` with the fresh `_rev`.
+
+### Locked Entries
+
+A 409 does not always mean the item changed. If someone has the entry open in the admin, the write is refused with a different code:
+
+```
+EmDashApiError: Ada is holding this entry
+  status: 409
+  code: ENTRY_LOCKED
+```
+
+Re-reading does not clear this one. The item has not changed, so a fresh `_rev` produces the same refusal. Check `code` before you retry. Either wait, or pass `--override-lock` to write anyway. An editor releases the lock when they close the entry, and a lock left behind by a crashed tab lapses seven minutes after their last heartbeat.
+
+Overriding does not take the lock. The editor keeps it and their next save is rejected as a version conflict, so wait unless you know they have gone.
+
+`--override-lock` is accepted by `content update`, `content delete`, `content publish`, `content unpublish` and `content schedule`. Collections with edit locking switched off never return `ENTRY_LOCKED`.
+
+### Which Operations Need `_rev`?
+
+Only `update`. All other operations are either idempotent or non-destructive:
+
+| Command             | `--rev` needed? | Why                      |
+| ------------------- | --------------- | ------------------------ |
+| `content create`    | No              | Nothing exists yet       |
+| `content update`    | **Yes**         | Overwrites existing data |
+| `content delete`    | No              | Soft delete, reversible  |
+| `content publish`   | No              | Idempotent status change |
+| `content unpublish` | No              | Idempotent status change |
+| `content schedule`  | No              | Only changes metadata    |
+| `content restore`   | No              | Restores from trash      |

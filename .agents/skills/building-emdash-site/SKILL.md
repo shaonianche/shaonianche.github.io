@@ -1,1 +1,151 @@
-LS0tCm5hbWU6IGJ1aWxkaW5nLWVtZGFzaC1zaXRlCmRlc2NyaXB0aW9uOiBCdWlsZCB0aGUgc2l0ZS1mYWNpbmcgcGFydHMgb2YgYW4gRW1EYXNoIENNUyBwcm9qZWN0IG9uIEFzdHJvLCBpbmNsdWRpbmcgc2NoZW1hIGFuZCBzZWVkcywgY29udGVudCBxdWVyaWVzLCBQb3J0YWJsZSBUZXh0IHJlbmRlcmluZywgbWVudXMsIHRheG9ub21pZXMsIHdpZGdldHMsIGFuZCBkZXBsb3ltZW50IGNvbmZpZ3VyYXRpb24uIFVzZSBmb3IgRW1EYXNoIHNpdGUgYW5kIHRoZW1lIHdvcms7IHVzZSBjcmVhdGluZy1wbHVnaW5zIGluc3RlYWQgd2hlbiB0aGUgdGFzayBpcyBwbHVnaW4gYXV0aG9yaW5nIGFsb25lLgotLS0KCiMgQnVpbGRpbmcgYW4gRW1EYXNoIFNpdGUKCkVtRGFzaCBpcyBhIENNUyBidWlsdCBvbiBBc3Ryby4gSXQgc3RvcmVzIHNjaGVtYSBpbiB0aGUgZGF0YWJhc2UgKG5vdCBpbiBjb2RlKSwgc2VydmVzIGNvbnRlbnQgdmlhIGxpdmUgY29udGVudCBjb2xsZWN0aW9ucywgYW5kIHByb3ZpZGVzIGEgZnVsbCBhZG1pbiBVSSBhdCBgL19lbWRhc2gvYWRtaW5gLiBTaXRlcyBhcmUgc3RhbmRhcmQgQXN0cm8gcHJvamVjdHMgd2l0aCB0aGUgYGVtZGFzaGAgaW50ZWdyYXRpb24uCgojIyBDb21tb24gR290Y2hhcwoKVGhlc2UgYXJlIHRoZSB0aGluZ3MgdGhhdCBzaWxlbnRseSBicmVhayBzaXRlcy4gS25vdyB0aGVtIGJlZm9yZSB5b3Ugc3RhcnQuCgoxLiAqKkltYWdlIGZpZWxkcyBhcmUgb2JqZWN0cywgbm90IHN0cmluZ3MuKiogYHBvc3QuZGF0YS5mZWF0dXJlZF9pbWFnZWAgaXMgYHsgaWQsIHNyYywgYWx0IH1gLiBXcml0aW5nIGA8aW1nIHNyYz17cG9zdC5kYXRhLmZlYXR1cmVkX2ltYWdlfSAvPmAgcmVuZGVycyBgW29iamVjdCBPYmplY3RdYC4gVXNlIGA8SW1hZ2UgaW1hZ2U9e3Bvc3QuZGF0YS5mZWF0dXJlZF9pbWFnZX0gLz5gIGZyb20gYCJlbWRhc2gvdWkiYC4KCjIuICoqYGVudHJ5LmlkYCB2cyBgZW50cnkuZGF0YS5pZGAgYXJlIGRpZmZlcmVudCB0aGluZ3MuKiogYGVudHJ5LmlkYCBpcyB0aGUgc2x1ZyAodXNlIGluIFVSTHMpLiBgZW50cnkuZGF0YS5pZGAgaXMgdGhlIGRhdGFiYXNlIFVMSUQgKHVzZSBmb3IgYGdldEVudHJ5VGVybXNgLCBgQ29tbWVudHNgLCBhbmQgb3RoZXIgQVBJIGNhbGxzIHRoYXQgbmVlZCB0aGUgcmVhbCBJRCkuIE1peGluZyB0aGVtIHVwIGNhdXNlcyBzaWxlbnQgZW1wdHkgcmVzdWx0cy4KCjMuICoqVGF4b25vbXkgbmFtZXMgbXVzdCBtYXRjaCB0aGUgc2VlZCBleGFjdGx5LioqIElmIHlvdXIgc2VlZCBkZWZpbmVzIGAibmFtZSI6ICJjYXRlZ29yeSJgLCB5b3UgbXVzdCBxdWVyeSBgZ2V0VGVybSgiY2F0ZWdvcnkiLCBzbHVnKWAgLS0gbm90IGAiY2F0ZWdvcmllcyJgLiBXcm9uZyBuYW1lID0gZW1wdHkgcmVzdWx0cywgbm8gZXJyb3IuCgo0LiAqKlJlZ2lzdGVyIGNhY2hlIGhpbnRzIHdoZW4gQXN0cm8ncyBjYWNoZSBpcyBlbmFibGVkLioqIENvbnRlbnQgcXVlcmllcyByZXR1cm4gYSBgY2FjaGVIaW50YDsgcGFzcyBpdCB0byBgQXN0cm8uY2FjaGUuc2V0KGNhY2hlSGludClgLiBVc2UgYGdldFNpdGVTZXR0aW5nc1dpdGhDYWNoZUhpbnQoKWAsIGBnZXRNZW51V2l0aENhY2hlSGludCgpYCwgYGdldFRheG9ub215VGVybXNXaXRoQ2FjaGVIaW50KClgLCBhbmQgYGdldFdpZGdldEFyZWFXaXRoQ2FjaGVIaW50KClgIHdoZW4gYSBjYWNoZWQgcm91dGUgcmVuZGVycyB0aG9zZSB2YWx1ZXMuCgo1LiAqKk5vIGBnZXRTdGF0aWNQYXRoc2AgZm9yIENNUyBjb250ZW50LioqIEVtRGFzaCBjb250ZW50IGlzIGR5bmFtaWMuIFBhZ2VzIG11c3QgYmUgc2VydmVyLXJlbmRlcmVkIChgb3V0cHV0OiAic2VydmVyImAgaW4gYGFzdHJvLmNvbmZpZy5tanNgKS4KCiMjIEZpbGUgU3RydWN0dXJlCgpFdmVyeSBFbURhc2ggc2l0ZSBoYXMgdGhlc2Uga2V5IGZpbGVzOgoKYGBgCm15LXNpdGUvCuKUnOKUgOKUgCBhc3Ryby5jb25maWcubWpzICAgICAgICAgICMgQXN0cm8gY29uZmlnIHdpdGggZW1kYXNoKCkgaW50ZWdyYXRpb24K4pSc4pSA4pSAIHNyYy8K4pSCICAg4pSc4pSA4pSAIGxpdmUuY29uZmlnLnRzICAgICAgICAgIyBFbURhc2ggbG9hZGVyIHJlZ2lzdHJhdGlvbiAoYm9pbGVycGxhdGUpCuKUgiAgIOKUnOKUgOKUgCBwYWdlcy8gICAgICAgICAgICAgICAgICMgQXN0cm8gcGFnZXMgKGFsbCBzZXJ2ZXItcmVuZGVyZWQpCuKUgiAgIOKUnOKUgOKUgCBsYXlvdXRzLyAgICAgICAgICAgICAgICMgTGF5b3V0IGNvbXBvbmVudHMK4pSCICAg4pSU4pSA4pSAIGNvbXBvbmVudHMvICAgICAgICAgICAgIyBSZXVzYWJsZSBjb21wb25lbnRzCuKUnOKUgOKUgCBzZWVkLwrilIIgICDilJTilIDilIAgc2VlZC5qc29uICAgICAgICAgICAgICAjIFNjaGVtYSArIGRlbW8gY29udGVudArilJzilIDilIAgZW1kYXNoLWVudi5kLnRzICAgICAgICAgICMgR2VuZXJhdGVkIHR5cGVzIChmcm9tIGBlbWRhc2ggdHlwZXNgKQrilJTilIDilIAgcGFja2FnZS5qc29uCmBgYAoKIyMgV29ya2Zsb3cKCiMjIyAxLiBDb25maWd1cmUgdGhlIHByb2plY3QKClJlYWQgKipbcmVmZXJlbmNlcy9jb25maWd1cmF0aW9uLm1kXShyZWZlcmVuY2VzL2NvbmZpZ3VyYXRpb24ubWQpKiogZm9yIGBhc3Ryby5jb25maWcubWpzYCwgYGxpdmUuY29uZmlnLnRzYCwgZGVwbG95bWVudCB0YXJnZXRzIChOb2RlIHZzIENsb3VkZmxhcmUpLCBhbmQgdHlwZSBnZW5lcmF0aW9uLgoKIyMjIDIuIERlc2lnbiB0aGUgc2NoZW1hCgpSZWFkICoqW3JlZmVyZW5jZXMvc2NoZW1hLWFuZC1zZWVkLm1kXShyZWZlcmVuY2VzL3NjaGVtYS1hbmQtc2VlZC5tZCkqKiBmb3IgY29sbGVjdGlvbiBkZWZpbml0aW9ucywgZmllbGQgdHlwZXMsIHRheG9ub21pZXMsIG1lbnVzLCB3aWRnZXQgYXJlYXMsIHNlY3Rpb25zLCBieWxpbmVzLCBhbmQgdGhlIGNvbXBsZXRlIHNlZWQgZmlsZSBmb3JtYXQuCgojIyMgMy4gQnVpbGQgdGhlIHBhZ2VzCgpSZWFkICoqW3JlZmVyZW5jZXMvcXVlcnlpbmctYW5kLXJlbmRlcmluZy5tZF0ocmVmZXJlbmNlcy9xdWVyeWluZy1hbmQtcmVuZGVyaW5nLm1kKSoqIGZvciBjb250ZW50IHF1ZXJpZXMsIFBvcnRhYmxlIFRleHQgcmVuZGVyaW5nLCB0aGUgSW1hZ2UgY29tcG9uZW50LCB2aXN1YWwgZWRpdGluZyBhdHRyaWJ1dGVzLCBjYWNoaW5nLCBhbmQgY29tbW9uIHBhZ2UgcGF0dGVybnMgKGxpc3QsIGRldGFpbCwgdGF4b25vbXkgYXJjaGl2ZSwgUlNTLCBzZWFyY2gsIDQwNCkuCgojIyMgNC4gV2lyZSB1cCBzaXRlIGZlYXR1cmVzCgpSZWFkICoqW3JlZmVyZW5jZXMvc2l0ZS1mZWF0dXJlcy5tZF0ocmVmZXJlbmNlcy9zaXRlLWZlYXR1cmVzLm1kKSoqIGZvciBzaXRlIHNldHRpbmdzLCBuYXZpZ2F0aW9uIG1lbnVzLCB0YXhvbm9taWVzLCB3aWRnZXQgYXJlYXMsIHNlYXJjaCwgU0VPIG1ldGEsIGNvbW1lbnRzLCBhbmQgcGFnZSBjb250cmlidXRpb25zLgoKIyMjIDUuIENyZWF0ZSB0aGUgc2VlZCBmaWxlCgpXcml0ZSBgc2VlZC9zZWVkLmpzb25gIHdpdGggY29sbGVjdGlvbnMsIGZpZWxkcywgdGF4b25vbWllcywgbWVudXMsIHdpZGdldHMsIGFuZCBzYW1wbGUgY29udGVudC4KCiMjIyA2LiBSdW4gYW5kIHZlcmlmeQoKYGBgYmFzaApwbnBtIGRldiAgICAgICAgICAgICAgICAjIFN0YXJ0IHRoZSBBc3RybyBkZXYgc2VydmVyCmBgYAoKVGhlIHJ1bnRpbWUgcnVucyBwZW5kaW5nIG1pZ3JhdGlvbnMgb24gdGhlIGZpcnN0IHJlcXVlc3QgYW5kIGFwcGxpZXMgdGhlIGJ1bmRsZWQgc2VlZCB3aGVuIHRoZSBkYXRhYmFzZSBpcyBlbXB0eSBhbmQgc2V0dXAgaGFzIG5vdCBiZWVuIGNvbXBsZXRlZC4gVGhlIEFzdHJvIGludGVncmF0aW9uIGdlbmVyYXRlcyBgZW1kYXNoLWVudi5kLnRzYCB3aGVuIHRoZSBzZXJ2ZXIgc3RhcnRzLiBUaGUgYWRtaW4gVUkgaXMgYXQgYGh0dHA6Ly9sb2NhbGhvc3Q6NDMyMS9fZW1kYXNoL2FkbWluYC4KCiMjIFF1aWNrIEFQSSBDaGVhdCBTaGVldAoKYGBgdHlwZXNjcmlwdAovLyBDb250ZW50IChlbnRyaWVzIGhhdmUgLmRhdGEuYnlsaW5lIGFuZCAuZGF0YS5ieWxpbmVzIGVhZ2VybHkgbG9hZGVkKQppbXBvcnQgeyBnZXRFbURhc2hDb2xsZWN0aW9uLCBnZXRFbURhc2hFbnRyeSB9IGZyb20gImVtZGFzaCI7CmNvbnN0IHsgZW50cmllcywgbmV4dEN1cnNvciwgY2FjaGVIaW50IH0gPSBhd2FpdCBnZXRFbURhc2hDb2xsZWN0aW9uKCJwb3N0cyIsIHsKCWxpbWl0OiAxMCwKCWN1cnNvciwKCW9yZGVyQnk6IHsgcHVibGlzaGVkX2F0OiAiZGVzYyIgfSwKfSk7CmNvbnN0IHsgZW50cnk6IHBvc3QsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoRW50cnkoInBvc3RzIiwgc2x1Zyk7CgovLyBTaXRlIGZlYXR1cmVzCmltcG9ydCB7CglnZXRTaXRlU2V0dGluZ3MsCglnZXRTaXRlU2V0dGluZ3NXaXRoQ2FjaGVIaW50LAoJZ2V0TWVudSwKCWdldE1lbnVXaXRoQ2FjaGVIaW50LAoJZ2V0VGF4b25vbXlUZXJtcywKCWdldFRheG9ub215VGVybXNXaXRoQ2FjaGVIaW50LAoJZ2V0VGVybSwKCWdldEVudHJ5VGVybXMsCglnZXRFbnRyaWVzQnlUZXJtLAoJZ2V0V2lkZ2V0QXJlYSwKCWdldFdpZGdldEFyZWFXaXRoQ2FjaGVIaW50LAoJc2VhcmNoLAoJZ2V0U2VjdGlvbiwKCWdldFNlb01ldGEsCn0gZnJvbSAiZW1kYXNoIjsKCi8vIEJ5bGluZXMgKHN0YW5kYWxvbmUgcXVlcmllcyAtLSB1c3VhbGx5IG5vdCBuZWVkZWQgc2luY2UgZW50cmllcyBoYXZlIGJ5bGluZXMgYXR0YWNoZWQpCmltcG9ydCB7IGdldEJ5bGluZSwgZ2V0QnlsaW5lQnlTbHVnIH0gZnJvbSAiZW1kYXNoIjsKCi8vIFVJIGNvbXBvbmVudHMKaW1wb3J0IHsKCVBvcnRhYmxlVGV4dCwKCUJsb2NrcywKCWRlZmluZUJsb2NrQ29tcG9uZW50cywKCUltYWdlLAoJV2lkZ2V0QXJlYSwKCUVtRGFzaEhlYWQsCglFbURhc2hCb2R5U3RhcnQsCglFbURhc2hCb2R5RW5kLAp9IGZyb20gImVtZGFzaC91aSI7CmltcG9ydCB7IENvbW1lbnRzLCBDb21tZW50Rm9ybSB9IGZyb20gImVtZGFzaC91aS9jb21tZW50cyI7CmltcG9ydCBMaXZlU2VhcmNoIGZyb20gImVtZGFzaC91aS9zZWFyY2giOwoKLy8gUGFnZSBjb250ZXh0IChmb3IgcGx1Z2luIGNvbnRyaWJ1dGlvbnMpCmltcG9ydCB7IGNyZWF0ZVB1YmxpY1BhZ2VDb250ZXh0IH0gZnJvbSAiZW1kYXNoL3BhZ2UiOwpgYGAKCiMjIFBsdWdpbnMKCkVtRGFzaCBzdXBwb3J0cyBwbHVnaW5zIGZvciBleHRlbmRpbmcgdGhlIENNUyB3aXRoIGhvb2tzLCBzdG9yYWdlLCBzZXR0aW5ncywgYWRtaW4gVUksIEFQSSByb3V0ZXMsIGFuZCBjdXN0b20gUG9ydGFibGUgVGV4dCBibG9jayB0eXBlcy4gQ29uc2lkZXIgYSBwbHVnaW4gd2hlbiB5b3UgbmVlZCB0bzoKCi0gUmVhY3QgdG8gY29udGVudCBsaWZlY3ljbGUgZXZlbnRzIChlLmcuLCBzZW5kIGEgbm90aWZpY2F0aW9uIG9uIHB1Ymxpc2gsIHN5bmMgdG8gYW4gZXh0ZXJuYWwgc2VydmljZSkKLSBBZGQgY3VzdG9tIGFkbWluIHBhZ2VzIG9yIGRhc2hib2FyZCB3aWRnZXRzCi0gQWRkIHJldXNhYmxlIGJlaGF2aW9yIG9yIGN1c3RvbSBQb3J0YWJsZSBUZXh0IHR5cGVzIChlLmcuLCBlbWJlZGRlZCBtYXBzIG9yIGNvZGUgcGxheWdyb3VuZHMpCi0gUHJvdmlkZSBhIHJldXNhYmxlIHNlcnZpY2UgKGUuZy4sIGFuYWx5dGljcywgZm9ybXMsIGNvbW1lbnRzIHZpYSBhIHRoaXJkLXBhcnR5IHByb3ZpZGVyKQoKUGx1Z2lucyBhcmUgcmVnaXN0ZXJlZCBpbiBgYXN0cm8uY29uZmlnLm1qc2A6CgpgYGBqYXZhc2NyaXB0CmVtZGFzaCh7CglkYXRhYmFzZTogc3FsaXRlKHsgdXJsOiAiZmlsZTouL2RhdGEuZGIiIH0pLAoJc3RvcmFnZTogbG9jYWwoeyBkaXJlY3Rvcnk6ICIuL3VwbG9hZHMiLCBiYXNlVXJsOiAiL19lbWRhc2gvYXBpL21lZGlhL2ZpbGUiIH0pLAoJcGx1Z2luczogW215UGx1Z2luKCldLAp9KSwKYGBgCgoqKlRvIGJ1aWxkIGEgcGx1Z2luLCBsb2FkIHRoZSBgY3JlYXRpbmctcGx1Z2luc2Agc2tpbGwqKiAoaW4gYC5hZ2VudHMvc2tpbGxzL2NyZWF0aW5nLXBsdWdpbnMvYCkuIEl0IGNvdmVycyBwbHVnaW4gYW5hdG9teSwgaG9va3MsIHN0b3JhZ2UsIGFkbWluIFVJLCBBUEkgcm91dGVzLCBQb3J0YWJsZSBUZXh0IGJsb2NrcywgY2FwYWJpbGl0aWVzLCBhbmQgdGhlIGZ1bGwgYGRlZmluZVBsdWdpbigpYCBBUEkuCgojIyBSZWZlcmVuY2UgRG9jdW1lbnRzCgp8IEZpbGUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCBDb250ZW50cyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgW3JlZmVyZW5jZXMvY29uZmlndXJhdGlvbi5tZF0ocmVmZXJlbmNlcy9jb25maWd1cmF0aW9uLm1kKSAgICAgICAgICAgICAgICAgICB8IFByb2plY3Qgc2V0dXAsIGFzdHJvLmNvbmZpZywgbGl2ZS5jb25maWcsIGRlcGxveW1lbnQsIHR5cGVzICAgICAgICAgfAp8IFtyZWZlcmVuY2VzL3NjaGVtYS1hbmQtc2VlZC5tZF0ocmVmZXJlbmNlcy9zY2hlbWEtYW5kLXNlZWQubWQpICAgICAgICAgICAgICAgfCBDb2xsZWN0aW9ucywgZmllbGRzLCB0YXhvbm9taWVzLCBtZW51cywgd2lkZ2V0cywgc2VlZCBmb3JtYXQgICAgICAgIHwKfCBbcmVmZXJlbmNlcy9xdWVyeWluZy1hbmQtcmVuZGVyaW5nLm1kXShyZWZlcmVuY2VzL3F1ZXJ5aW5nLWFuZC1yZW5kZXJpbmcubWQpIHwgQ29udGVudCBBUElzLCBQb3J0YWJsZVRleHQsIEltYWdlLCBjYWNoaW5nLCBwYWdlIHBhdHRlcm5zICAgICAgICAgICB8CnwgW3JlZmVyZW5jZXMvc2l0ZS1mZWF0dXJlcy5tZF0ocmVmZXJlbmNlcy9zaXRlLWZlYXR1cmVzLm1kKSAgICAgICAgICAgICAgICAgICB8IFNldHRpbmdzLCBtZW51cywgd2lkZ2V0cywgc2VhcmNoLCBTRU8sIGNvbW1lbnRzLCBwYWdlIGNvbnRyaWJ1dGlvbnMgfAo=
+---
+name: building-emdash-site
+description: Build the site-facing parts of an EmDash CMS project on Astro, including schema and seeds, content queries, Portable Text rendering, menus, taxonomies, widgets, and deployment configuration. Use for EmDash site and theme work; use creating-plugins instead when the task is plugin authoring alone.
+---
+
+# Building an EmDash Site
+
+EmDash is a CMS built on Astro. It stores schema in the database (not in code), serves content via live content collections, and provides a full admin UI at `/_emdash/admin`. Sites are standard Astro projects with the `emdash` integration.
+
+## Common Gotchas
+
+These are the things that silently break sites. Know them before you start.
+
+1. **Image fields are objects, not strings.** `post.data.featured_image` is `{ id, src, alt }`. Writing `<img src={post.data.featured_image} />` renders `[object Object]`. Use `<Image image={post.data.featured_image} />` from `"emdash/ui"`.
+
+2. **`entry.id` vs `entry.data.id` are different things.** `entry.id` is the slug (use in URLs). `entry.data.id` is the database ULID (use for `getEntryTerms`, `Comments`, and other API calls that need the real ID). Mixing them up causes silent empty results.
+
+3. **Taxonomy names must match the seed exactly.** If your seed defines `"name": "category"`, you must query `getTerm("category", slug)` -- not `"categories"`. Wrong name = empty results, no error.
+
+4. **Register cache hints when Astro's cache is enabled.** Content queries return a `cacheHint`; pass it to `Astro.cache.set(cacheHint)`. Use `getSiteSettingsWithCacheHint()`, `getMenuWithCacheHint()`, `getTaxonomyTermsWithCacheHint()`, and `getWidgetAreaWithCacheHint()` when a cached route renders those values.
+
+5. **No `getStaticPaths` for CMS content.** EmDash content is dynamic. Pages must be server-rendered (`output: "server"` in `astro.config.mjs`).
+
+## File Structure
+
+Every EmDash site has these key files:
+
+```
+my-site/
+├── astro.config.mjs          # Astro config with emdash() integration
+├── src/
+│   ├── live.config.ts         # EmDash loader registration (boilerplate)
+│   ├── pages/                 # Astro pages (all server-rendered)
+│   ├── layouts/               # Layout components
+│   └── components/            # Reusable components
+├── seed/
+│   └── seed.json              # Schema + demo content
+├── emdash-env.d.ts          # Generated types (from `emdash types`)
+└── package.json
+```
+
+## Workflow
+
+### 1. Configure the project
+
+Read **[references/configuration.md](references/configuration.md)** for `astro.config.mjs`, `live.config.ts`, deployment targets (Node vs Cloudflare), and type generation.
+
+### 2. Design the schema
+
+Read **[references/schema-and-seed.md](references/schema-and-seed.md)** for collection definitions, field types, taxonomies, menus, widget areas, sections, bylines, and the complete seed file format.
+
+### 3. Build the pages
+
+Read **[references/querying-and-rendering.md](references/querying-and-rendering.md)** for content queries, Portable Text rendering, the Image component, visual editing attributes, caching, and common page patterns (list, detail, taxonomy archive, RSS, search, 404).
+
+### 4. Wire up site features
+
+Read **[references/site-features.md](references/site-features.md)** for site settings, navigation menus, taxonomies, widget areas, search, SEO meta, comments, and page contributions.
+
+### 5. Create the seed file
+
+Write `seed/seed.json` with collections, fields, taxonomies, menus, widgets, and sample content.
+
+### 6. Run and verify
+
+```bash
+pnpm dev                # Start the Astro dev server
+```
+
+The runtime runs pending migrations on the first request and applies the bundled seed when the database is empty and setup has not been completed. The Astro integration generates `emdash-env.d.ts` when the server starts. The admin UI is at `http://localhost:4321/_emdash/admin`.
+
+## Quick API Cheat Sheet
+
+```typescript
+// Content (entries have .data.byline and .data.bylines eagerly loaded)
+import { getEmDashCollection, getEmDashEntry } from "emdash";
+const { entries, nextCursor, cacheHint } = await getEmDashCollection("posts", {
+	limit: 10,
+	cursor,
+	orderBy: { published_at: "desc" },
+});
+const { entry: post, cacheHint } = await getEmDashEntry("posts", slug);
+
+// Site features
+import {
+	getSiteSettings,
+	getSiteSettingsWithCacheHint,
+	getMenu,
+	getMenuWithCacheHint,
+	getTaxonomyTerms,
+	getTaxonomyTermsWithCacheHint,
+	getTerm,
+	getEntryTerms,
+	getEntriesByTerm,
+	getWidgetArea,
+	getWidgetAreaWithCacheHint,
+	search,
+	getSection,
+	getSeoMeta,
+} from "emdash";
+
+// Bylines (standalone queries -- usually not needed since entries have bylines attached)
+import { getByline, getBylineBySlug } from "emdash";
+
+// UI components
+import {
+	PortableText,
+	Blocks,
+	defineBlockComponents,
+	Image,
+	WidgetArea,
+	EmDashHead,
+	EmDashBodyStart,
+	EmDashBodyEnd,
+} from "emdash/ui";
+import { Comments, CommentForm } from "emdash/ui/comments";
+import LiveSearch from "emdash/ui/search";
+
+// Page context (for plugin contributions)
+import { createPublicPageContext } from "emdash/page";
+```
+
+## Plugins
+
+EmDash supports plugins for extending the CMS with hooks, storage, settings, admin UI, API routes, and custom Portable Text block types. Consider a plugin when you need to:
+
+- React to content lifecycle events (e.g., send a notification on publish, sync to an external service)
+- Add custom admin pages or dashboard widgets
+- Add reusable behavior or custom Portable Text types (e.g., embedded maps or code playgrounds)
+- Provide a reusable service (e.g., analytics, forms, comments via a third-party provider)
+
+Plugins are registered in `astro.config.mjs`:
+
+```javascript
+emdash({
+	database: sqlite({ url: "file:./data.db" }),
+	storage: local({ directory: "./uploads", baseUrl: "/_emdash/api/media/file" }),
+	plugins: [myPlugin()],
+}),
+```
+
+**To build a plugin, load the `creating-plugins` skill** (in `.agents/skills/creating-plugins/`). It covers plugin anatomy, hooks, storage, admin UI, API routes, Portable Text blocks, capabilities, and the full `definePlugin()` API.
+
+## Reference Documents
+
+| File                                                                         | Contents                                                            |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [references/configuration.md](references/configuration.md)                   | Project setup, astro.config, live.config, deployment, types         |
+| [references/schema-and-seed.md](references/schema-and-seed.md)               | Collections, fields, taxonomies, menus, widgets, seed format        |
+| [references/querying-and-rendering.md](references/querying-and-rendering.md) | Content APIs, PortableText, Image, caching, page patterns           |
+| [references/site-features.md](references/site-features.md)                   | Settings, menus, widgets, search, SEO, comments, page contributions |

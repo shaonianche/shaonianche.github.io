@@ -1,1 +1,38 @@
-aW1wb3J0IGNsb3VkZmxhcmUgZnJvbSAiQGFzdHJvanMvY2xvdWRmbGFyZSI7CmltcG9ydCByZWFjdCBmcm9tICJAYXN0cm9qcy9yZWFjdCI7CmltcG9ydCB7IGQxLCByMiB9IGZyb20gIkBlbWRhc2gtY21zL2Nsb3VkZmxhcmUiOwppbXBvcnQgeyBkZWZpbmVDb25maWcsIGZvbnRQcm92aWRlcnMgfSBmcm9tICJhc3Ryby9jb25maWciOwppbXBvcnQgZW1kYXNoIGZyb20gImVtZGFzaC9hc3RybyI7CgpleHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoewoJb3V0cHV0OiAic2VydmVyIiwKCWFkYXB0ZXI6IGNsb3VkZmxhcmUoKSwKCWltYWdlOiB7CgkJbGF5b3V0OiAiY29uc3RyYWluZWQiLAoJCXJlc3BvbnNpdmVTdHlsZXM6IHRydWUsCgl9LAoJaW50ZWdyYXRpb25zOiBbCgkJcmVhY3QoKSwKCQllbWRhc2goewoJCQlkYXRhYmFzZTogZDEoeyBiaW5kaW5nOiAiREIiLCBzZXNzaW9uOiAiYXV0byIgfSksCgkJCXN0b3JhZ2U6IHIyKHsgYmluZGluZzogIk1FRElBIiB9KSwKCQl9KSwKCV0sCglmb250czogWwoJCXsKCQkJcHJvdmlkZXI6IGZvbnRQcm92aWRlcnMuZ29vZ2xlKCksCgkJCW5hbWU6ICJJbnRlciIsCgkJCWNzc1ZhcmlhYmxlOiAiLS1mb250LWJvZHkiLAoJCQl3ZWlnaHRzOiBbNDAwLCA1MDAsIDYwMCwgNzAwXSwKCQkJZmFsbGJhY2tzOiBbInNhbnMtc2VyaWYiXSwKCQl9LAoJCXsKCQkJcHJvdmlkZXI6IGZvbnRQcm92aWRlcnMuZ29vZ2xlKCksCgkJCW5hbWU6ICJKZXRCcmFpbnMgTW9ubyIsCgkJCWNzc1ZhcmlhYmxlOiAiLS1mb250LW1vbm8iLAoJCQl3ZWlnaHRzOiBbNDAwLCA1MDBdLAoJCQlmYWxsYmFja3M6IFsibW9ub3NwYWNlIl0sCgkJfSwKCV0sCglkZXZUb29sYmFyOiB7IGVuYWJsZWQ6IGZhbHNlIH0sCn0pOwo=
+import cloudflare from "@astrojs/cloudflare";
+import react from "@astrojs/react";
+import { d1, r2 } from "@emdash-cms/cloudflare";
+import { defineConfig, fontProviders } from "astro/config";
+import emdash from "emdash/astro";
+
+export default defineConfig({
+	output: "server",
+	adapter: cloudflare(),
+	image: {
+		layout: "constrained",
+		responsiveStyles: true,
+	},
+	integrations: [
+		react(),
+		emdash({
+			database: d1({ binding: "DB", session: "auto" }),
+			storage: r2({ binding: "MEDIA" }),
+		}),
+	],
+	fonts: [
+		{
+			provider: fontProviders.google(),
+			name: "Inter",
+			cssVariable: "--font-body",
+			weights: [400, 500, 600, 700],
+			fallbacks: ["sans-serif"],
+		},
+		{
+			provider: fontProviders.google(),
+			name: "JetBrains Mono",
+			cssVariable: "--font-mono",
+			weights: [400, 500],
+			fallbacks: ["monospace"],
+		},
+	],
+	devToolbar: { enabled: false },
+});

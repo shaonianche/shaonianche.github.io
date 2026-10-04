@@ -1,1 +1,8 @@
-ewoJInNlcnZlcnMiOiB7CgkJImVtZGFzaC1kb2NzIjogewoJCQkidHlwZSI6ICJodHRwIiwKCQkJInVybCI6ICJodHRwczovL2RvY3MuZW1kYXNoY21zLmNvbS9tY3AiCgkJfQoJfQp9Cg==
+{
+	"servers": {
+		"emdash-docs": {
+			"type": "http",
+			"url": "https://docs.emdashcms.com/mcp"
+		}
+	}
+}

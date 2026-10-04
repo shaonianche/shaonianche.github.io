@@ -1,1 +1,211 @@
-IyBBZG1pbiBVSSBhbmQgZmllbGQgd2lkZ2V0cwoKU2FuZGJveGVkIHBsdWdpbnMgcmV0dXJuIGRlY2xhcmF0aXZlIEJsb2NrIEtpdCBmcm9tIGEgcHJpdmF0ZSByb3V0ZS4gTmF0aXZlIHBsdWdpbnMgbWF5IGluc3RlYWQgc2hpcCBSZWFjdCBjb21wb25lbnRzLiBLZWVwIHRoZXNlIHBhdGhzIHNlcGFyYXRlOiBzYW5kYm94ZWQgcGx1Z2luIEphdmFTY3JpcHQgbmV2ZXIgcnVucyBpbiB0aGUgYnJvd3Nlci4KCiMjIFNhbmRib3hlZCBwYWdlcyBhbmQgZGFzaGJvYXJkIHdpZGdldHMKCkRlY2xhcmUgbmF2aWdhdGlvbiBhbmQgd2lkZ2V0IGNhcmRzIGluIGBlbWRhc2gtcGx1Z2luLmpzb25jYDoKCmBgYGpzb25jIHRpdGxlPSJlbWRhc2gtcGx1Z2luLmpzb25jIgp7CgkiYWRtaW4iOiB7CgkJInBhZ2VzIjogWwoJCQl7ICJwYXRoIjogIi9zZXR0aW5ncyIsICJsYWJlbCI6ICJTZXR0aW5ncyIsICJpY29uIjogInNldHRpbmdzIiB9LAoJCQl7ICJwYXRoIjogIi9yZXBvcnRzIiwgImxhYmVsIjogIlJlcG9ydHMiLCAiaWNvbiI6ICJjaGFydCIgfSwKCQldLAoJCSJ3aWRnZXRzIjogW3sgImlkIjogInN0YXR1cyIsICJ0aXRsZSI6ICJQbHVnaW4gc3RhdHVzIiwgInNpemUiOiAiaGFsZiIgfV0sCgl9LAp9CmBgYAoKUGFnZXMgbW91bnQgYXQgYC9fZW1kYXNoL2FkbWluL3BsdWdpbnMvPHBsdWdpbi1pZD4vPHBhdGg+YC4gV2lkZ2V0IHNpemVzIGFyZSBgZnVsbGAsIGBoYWxmYCwgYW5kIGB0aGlyZGAuCgpBbnkgc2FuZGJveGVkIHBsdWdpbiB0aGF0IGRlY2xhcmVzIGEgcGFnZSBvciB3aWRnZXQgbXVzdCBkZWZpbmUgYW4gYGFkbWluYCByb3V0ZS4gVGhlIGFkbWluIHNlbmRzIGEgYHBhZ2VfbG9hZGAsIGBibG9ja19hY3Rpb25gLCBvciBgZm9ybV9zdWJtaXRgIGludGVyYWN0aW9uIGFzIGByb3V0ZUN0eC5pbnB1dGA6CgpgYGB0eXBlc2NyaXB0IHRpdGxlPSJzcmMvcGx1Z2luLnRzIgppbXBvcnQgdHlwZSB7IFNhbmRib3hlZFBsdWdpbiB9IGZyb20gImVtZGFzaC9wbHVnaW4iOwppbXBvcnQgdHlwZSB7IEJsb2NrUmVzcG9uc2UgfSBmcm9tICJAZW1kYXNoLWNtcy9ibG9ja3MiOwppbXBvcnQgeyB6IH0gZnJvbSAiem9kIjsKCmNvbnN0IGludGVyYWN0aW9uU2NoZW1hID0gei5kaXNjcmltaW5hdGVkVW5pb24oInR5cGUiLCBbCgl6Lm9iamVjdCh7IHR5cGU6IHoubGl0ZXJhbCgicGFnZV9sb2FkIiksIHBhZ2U6IHouc3RyaW5nKCkgfSksCgl6Lm9iamVjdCh7CgkJdHlwZTogei5saXRlcmFsKCJibG9ja19hY3Rpb24iKSwKCQlhY3Rpb25faWQ6IHouc3RyaW5nKCksCgkJYmxvY2tfaWQ6IHouc3RyaW5nKCkub3B0aW9uYWwoKSwKCQl2YWx1ZTogei51bmtub3duKCkub3B0aW9uYWwoKSwKCX0pLAoJei5vYmplY3QoewoJCXR5cGU6IHoubGl0ZXJhbCgiZm9ybV9zdWJtaXQiKSwKCQlhY3Rpb25faWQ6IHouc3RyaW5nKCksCgkJYmxvY2tfaWQ6IHouc3RyaW5nKCkub3B0aW9uYWwoKSwKCQl2YWx1ZXM6IHoub2JqZWN0KHsgZW5hYmxlZDogei5ib29sZWFuKCkgfSksCgl9KSwKXSk7CgpmdW5jdGlvbiBzZXR0aW5nc0Zvcm0oZW5hYmxlZDogYm9vbGVhbik6IEJsb2NrUmVzcG9uc2UgewoJcmV0dXJuIHsKCQlibG9ja3M6IFsKCQkJeyB0eXBlOiAiaGVhZGVyIiwgdGV4dDogIlNldHRpbmdzIiB9LAoJCQl7CgkJCQl0eXBlOiAiZm9ybSIsCgkJCQlibG9ja19pZDogInNldHRpbmdzIiwKCQkJCWZpZWxkczogWwoJCQkJCXsgdHlwZTogInRvZ2dsZSIsIGFjdGlvbl9pZDogImVuYWJsZWQiLCBsYWJlbDogIkVuYWJsZWQiLCBpbml0aWFsX3ZhbHVlOiBlbmFibGVkIH0sCgkJCQldLAoJCQkJc3VibWl0OiB7IGFjdGlvbl9pZDogInNhdmUiLCBsYWJlbDogIlNhdmUiIH0sCgkJCX0sCgkJXSwKCX07Cn0KCmNvbnN0IHBsdWdpbjogU2FuZGJveGVkUGx1Z2luID0gewoJcm91dGVzOiB7CgkJYWRtaW46IHsKCQkJcGVybWlzc2lvbjogInBsdWdpbnM6bWFuYWdlIiwKCQkJaGFuZGxlcjogYXN5bmMgKHJvdXRlQ3R4LCBjdHgpID0+IHsKCQkJCWNvbnN0IHBhcnNlZCA9IGludGVyYWN0aW9uU2NoZW1hLnNhZmVQYXJzZShyb3V0ZUN0eC5pbnB1dCk7CgkJCQlpZiAoIXBhcnNlZC5zdWNjZXNzKSByZXR1cm4geyBibG9ja3M6IFtdIH07CgkJCQljb25zdCBpbnRlcmFjdGlvbiA9IHBhcnNlZC5kYXRhOwoJCQkJaWYgKGludGVyYWN0aW9uLnR5cGUgPT09ICJmb3JtX3N1Ym1pdCIgJiYgaW50ZXJhY3Rpb24uYWN0aW9uX2lkID09PSAic2F2ZSIpIHsKCQkJCQlhd2FpdCBjdHguc2V0dGluZ3Muc2V0KCJlbmFibGVkIiwgaW50ZXJhY3Rpb24udmFsdWVzLmVuYWJsZWQgPT09IHRydWUpOwoJCQkJCXJldHVybiB7CgkJCQkJCS4uLnNldHRpbmdzRm9ybShpbnRlcmFjdGlvbi52YWx1ZXMuZW5hYmxlZCA9PT0gdHJ1ZSksCgkJCQkJCXRvYXN0OiB7IHR5cGU6ICJzdWNjZXNzIiwgbWVzc2FnZTogIlNldHRpbmdzIHNhdmVkIiB9LAoJCQkJCX07CgkJCQl9CgoJCQkJY29uc3QgZW5hYmxlZCA9IChhd2FpdCBjdHguc2V0dGluZ3MuZ2V0PGJvb2xlYW4+KCJlbmFibGVkIikpID8/IGZhbHNlOwoJCQkJcmV0dXJuIHNldHRpbmdzRm9ybShlbmFibGVkKTsKCQkJfSwKCQl9LAoJfSwKfTsKCmV4cG9ydCBkZWZhdWx0IHBsdWdpbjsKYGBgCgpWYWxpZGF0ZSBpbnRlcmFjdGlvbnMgYmVmb3JlIHByb2R1Y3Rpb24gc2lkZSBlZmZlY3RzOyBgcm91dGVDdHguaW5wdXRgIGlzIGB1bmtub3duYC4gUmVhZCBbQmxvY2sgS2l0XSguL2Jsb2NrLWtpdC5tZCkgZm9yIGV4YWN0IGludGVyYWN0aW9uLCBibG9jaywgYW5kIGVsZW1lbnQgc2hhcGVzLgoKVGhlIHBsdWdpbiBDTEkgcHJlc2VydmVzIGBhZG1pbi5zZXR0aW5nc1NjaGVtYWAgaW4gdGhlIHJlZ2lzdHJ5IG1hbmlmZXN0IGFuZCBnZW5lcmF0ZWQgZGVzY3JpcHRvciwgc28gdGhlIGhvc3QgY2FuIGdlbmVyYXRlIGEgc2V0dGluZ3MgZm9ybS4gQm90aCBzYW5kYm94IGJyaWRnZXMgcm91dGUgYGN0eC5zZXR0aW5nc2AgdGhyb3VnaCB0aGUgc2FtZSBvcHRpb25zIHJlY29yZHMgYXMgdGhhdCBmb3JtLiBSZWFkIGEgZ2VuZXJhdGVkIHNldHRpbmcgd2l0aCBgY3R4LnNldHRpbmdzLmdldCgiPGtleT4iKWA7IHdyaXRlcywgZGVsZXRlcywgbGlzdCBvcGVyYXRpb25zLCBhbmQgcmV2aXNpb24tYmFzZWQgb3BlcmF0aW9ucyB1c2UgdGhlIHNhbWUgbmFtZXNwYWNlIG9uIENsb3VkZmxhcmUgYW5kIE5vZGUvd29ya2VyZC4KClRoZSBgc2VjcmV0YCBzZXR0aW5ncyBmaWVsZCBpcyB3cml0ZS1vbmx5IGluIHRoZSBhZG1pbiByZXNwb25zZSBhbmQgZW5jcnlwdGVkIGJlZm9yZSBwZXJzaXN0ZW5jZS4gVGhlIHNpdGUgbXVzdCBwcm92aWRlIGBFTURBU0hfRU5DUllQVElPTl9LRVlgOyBtaXNzaW5nLCB3cm9uZywgb3IgdGFtcGVyZWQga2V5IG1hdGVyaWFsIGZhaWxzIGNsb3NlZC4gS2VlcCB0aGUgZW5jcnlwdGlvbi1rZXkgbGlzdCB3aXRoIGRhdGFiYXNlIGJhY2t1cHMuIEV4aXN0aW5nIGBjdHgua3YuZ2V0KCJzZXR0aW5nczo8a2V5PiIpYCByZWFkcyByZW1haW4gY29tcGF0aWJsZSB0aHJvdWdob3V0IEVtRGFzaCAxLnguCgojIyBTYW5kYm94ZWQgc2F2ZWQtZW50cnkgZXh0ZW5zaW9ucwoKRGVjbGFyZSBzYXZlZC1lbnRyeSBwYW5lbHMgYW5kIGFjdGlvbnMgaW4gYGVtZGFzaC1wbHVnaW4uanNvbmNgOgoKYGBganNvbmMgdGl0bGU9ImVtZGFzaC1wbHVnaW4uanNvbmMiCnsKCSJhZG1pbiI6IHsKCQkiZWRpdG9yUGFuZWxzIjogWwoJCQl7CgkJCQkiaWQiOiAiaGVhbHRoIiwKCQkJCSJ0aXRsZSI6ICJDb250ZW50IGhlYWx0aCIsCgkJCQkicm91dGUiOiAiZWRpdG9yL2hlYWx0aCIsCgkJCQkiY29sbGVjdGlvbnMiOiBbInBvc3RzIl0sCgkJCQkiZHJhZnQiOiB7CgkJCQkJInJlYWQiOiB7ICJ0cmFuc2xhdGFibGUiOiB0cnVlIH0sCgkJCQkJInBhdGNoIjogeyAiZmllbGRzIjogWyJ0aXRsZSIsICJleGNlcnB0Il0gfSwKCQkJCX0sCgkJCX0sCgkJXSwKCQkiZWRpdG9yQWN0aW9ucyI6IFsKCQkJewoJCQkJImlkIjogInJlcGFpciIsCgkJCQkibGFiZWwiOiAiUmVwYWlyIG1ldGFkYXRhIiwKCQkJCSJyb3V0ZSI6ICJlZGl0b3IvcmVwYWlyIiwKCQkJCSJwbGFjZW1lbnQiOiAib3ZlcmZsb3ciLAoJCQkJInN0eWxlIjogImRhbmdlciIsCgkJCQkiY29uZmlybSI6IHsKCQkJCQkidGl0bGUiOiAiUmVwYWlyPyIsCgkJCQkJInRleHQiOiAiVGhpcyBjaGFuZ2VzIHRoZSBzYXZlZCBlbnRyeS4iLAoJCQkJCSJjb25maXJtIjogIlJlcGFpciIsCgkJCQkJImRlbnkiOiAiQ2FuY2VsIiwKCQkJCX0sCgkJCX0sCgkJXSwKCX0sCn0KYGBgCgpFdmVyeSByZWZlcmVuY2VkIHJvdXRlIG11c3QgYmUgcHJpdmF0ZS4gRW1EYXNoIHJlbG9hZHMgdGhlIHNhdmVkIGVudHJ5IGFuZCBjaGVja3Mgb3duZXJzaGlwIHBsdXMgdGhlIHJvdXRlIHBlcm1pc3Npb24gYmVmb3JlIGludm9raW5nIGl0LiBgcm91dGVDdHgudWkuZW50cnlgIGNvbnRhaW5zIG9ubHkgdGhlIGNhbm9uaWNhbCBjb2xsZWN0aW9uLCBJRCwgbG9jYWxlLCBhbmQgdmVyc2lvbi4KClBhbmVscyBzdGFydCBjb2xsYXBzZWQuIGBwYW5lbF9sb2FkYCBuZXZlciBpbmNsdWRlcyBkcmFmdCB2YWx1ZXMuIEFmdGVyIGFuIGV4cGxpY2l0IGBibG9ja19hY3Rpb25gLCBgZm9ybV9zdWJtaXRgLCBvciBgZWRpdG9yX2FjdGlvbmAsIGBhZG1pbi5lZGl0b3ItZHJhZnQ6cmVhZGAgY2FuIGF0dGFjaCBvbmx5IHRoZSBmaWVsZHMgc2VsZWN0ZWQgYnkgdGhlIGV4dGVuc2lvbidzIGBkcmFmdC5yZWFkYCBkZWNsYXJhdGlvbi4gYGZpZWxkc2Agc2VsZWN0cyBleHBsaWNpdCBzbHVncyBhbmQgYHRyYW5zbGF0YWJsZTogdHJ1ZWAgc2VsZWN0cyBjdXJyZW50IHNjaGVtYSBmaWVsZHMgbWFya2VkIHRyYW5zbGF0YWJsZS4gRHJhZnQgZGVjbGFyYXRpb25zIHJlcXVpcmUgZXhwbGljaXQgY29sbGVjdGlvbiBzY29wZS4KCmBhZG1pbi5lZGl0b3ItZHJhZnQ6cGF0Y2hgIHBlcm1pdHMgYSBzZXBhcmF0ZSBgZHJhZnQucGF0Y2hgIGZpZWxkIHNlbGVjdG9yIGFuZCBkb2VzIG5vdCBpbXBseSByZWFkLiBSZXR1cm4gYHBhdGNoOiB7IHR5cGU6ICJlZGl0b3ItZHJhZnQtcGF0Y2giLCBvcGVyYXRpb25zIH1gIHdpdGggd2hvbGUtZmllbGQgYHNldGAgb3IgYGNsZWFyYCBvcGVyYXRpb25zLiBUaGUgaG9zdCByZWplY3RzIHRoZSBjb21wbGV0ZSBwYXRjaCBvbiBhbiB1bmtub3duLCBmb3JiaWRkZW4sIGludmFsaWQsIHVuc3VwcG9ydGVkLCBvdmVyc2l6ZWQsIG9yIHN0YWxlIG9wZXJhdGlvbi4gQWNjZXB0ZWQgcGF0Y2hlcyByZWNlaXZlIGEgaG9zdC1yZW5kZXJlZCBwcmV2aWV3LCB1cGRhdGUgdGhlIGZvcm0gYXRvbWljYWxseSwgbWFyayBpdCBkaXJ0eSwgYW5kIHJlbWFpbiB1bnNhdmVkLiBBIHJlc3BvbnNlIG1heSBjb250YWluIGEgdG9hc3QgYW5kIG9uZSB0ZXJtaW5hbCBlZmZlY3Q6IHBhdGNoLCByZWZyZXNoLCBvciBuYXZpZ2F0aW9uLgoKVXNlIGBjcmVhdGVQbHVnaW5SdW50aW1lVGVzdEhvc3QoKS5hZG1pbmAgdG8gZXhlcmNpc2UgdGhpcyBib3VuZGFyeS4gYGNhcHR1cmVFZGl0b3JEcmFmdCgpYCBjcmVhdGVzIGEgc2F2ZWQtZW50cnkgZHJhZnQgcmVxdWVzdCwgdGhlIGV4aXN0aW5nIHBhbmVsL2FjdGlvbiBoZWxwZXJzIGludm9rZSB0aGUgcHJvZHVjdGlvbiByb3V0ZSwgYW5kIGBhcHBseUVkaXRvckRyYWZ0UGF0Y2goKWAgYXBwbGllcyBvbmx5IGEgY3VycmVudCByZXNwb25zZSB0aHJvdWdoIHRoZSBob3N0IHZhbGlkYXRvci4KCiMjIFNhbmRib3hlZCBkZWNsYXJhdGl2ZSBmaWVsZCB3aWRnZXRzCgpDb3JlIGFuZCB0aGUgYWRtaW4gY29udGFpbiBhIGRlY2xhcmF0aXZlIGZpZWxkLXdpZGdldCBwYXRoLiBEZWNsYXJlIHRoZSB3aWRnZXQgaW4gdGhlIHJlZ2lzdHJ5IG1hbmlmZXN0OgoKYGBganNvbmMgdGl0bGU9ImVtZGFzaC1wbHVnaW4uanNvbmMiCnsKCSJhZG1pbiI6IHsKCQkiZmllbGRXaWRnZXRzIjogWwoJCQl7CgkJCQkibmFtZSI6ICJldmVudC1waWNrZXIiLAoJCQkJImxhYmVsIjogIkV2ZW50IiwKCQkJCSJmaWVsZFR5cGVzIjogWyJqc29uIl0sCgkJCQkiZWxlbWVudHMiOiBbCgkJCQkJeyAidHlwZSI6ICJ0ZXh0X2lucHV0IiwgImFjdGlvbl9pZCI6ICJldmVudElkIiwgImxhYmVsIjogIkV2ZW50IElEIiB9LAoJCQkJCXsgInR5cGUiOiAidG9nZ2xlIiwgImFjdGlvbl9pZCI6ICJmZWF0dXJlZCIsICJsYWJlbCI6ICJGZWF0dXJlZCIgfSwKCQkJCV0sCgkJCX0sCgkJXSwKCX0sCn0KYGBgCgpBIHNjaGVtYSBmaWVsZCBzZWxlY3RzIGl0IHdpdGggYHdpZGdldDogInBsdWdpbklkOndpZGdldE5hbWUiYC4gVGhlIGVkaXRvciBzdG9yZXMgYW4gb2JqZWN0IGtleWVkIGJ5IGVhY2ggZWxlbWVudCdzIGBhY3Rpb25faWRgLiBVc2UgYSBganNvbmAgZmllbGQgZm9yIHRoaXMgb2JqZWN0LiBUaGUgbWFuaWZlc3Qgc2NoZW1hIGFjY2VwdHMgb3RoZXIgY29tcGF0aWJsZSBmaWVsZCB0eXBlcywgYnV0IHRoZSByZXBvc2l0b3J5IGhhcyBubyBlbmQtdG8tZW5kIHRlc3QgcHJvdmluZyB0aGF0IHRoZSBjb21wb3NlZCBvYmplY3Qgc2F2ZXMgdGhyb3VnaCB0aGVtLgoKVGhlIGN1cnJlbnQgZmllbGQtd2lkZ2V0IHJlbmRlcmVyIHN1cHBvcnRzOgoKLSBgdGV4dF9pbnB1dGAKLSBgbnVtYmVyX2lucHV0YAotIGB0b2dnbGVgCi0gYHNlbGVjdGAKLSBgbWVkaWFfcGlja2VyYAoKT3RoZXIgQmxvY2sgS2l0IGVsZW1lbnQgdHlwZXMgZGlzcGxheSBhbiB1bnN1cHBvcnRlZC1lbGVtZW50IG1lc3NhZ2UgaW4gdGhpcyBzdXJmYWNlLgoKYGVtZGFzaC1wbHVnaW4uanNvbmNgIGFjY2VwdHMgYGFkbWluLmZpZWxkV2lkZ2V0c2AsIGFuZCB0aGUgcGx1Z2luIENMSSBjYXJyaWVzIHRoZSBkZWZpbml0aW9ucyB0aHJvdWdoIHRoZSBidW5kbGUgbWFuaWZlc3QgYW5kIGdlbmVyYXRlZCBkZXNjcmlwdG9yIGZvciByZWdpc3RyeSBpbnN0YWxsYXRpb24uIFRoZSBhcnRpZmFjdCByb3VuZC10cmlwIGlzIGNvdmVyZWQgYnkgcGx1Z2luIENMSSwgc2hhcmVkIG1hbmlmZXN0LCBhbmQgcGx1Z2luLXRlc3QgdGVzdHMuIFRoZSBicm93c2VyIEUyRSBmaXh0dXJlIHN0aWxsIHRlc3RzIGEgbmF0aXZlIFJlYWN0IGNvbG9yIHBpY2tlciByYXRoZXIgdGhhbiBhIHJlZ2lzdHJ5LWluc3RhbGxlZCBkZWNsYXJhdGl2ZSB3aWRnZXQsIHNvIHZlcmlmeSB0aGUgcmVhbCBlZGl0b3IgcmVuZGVyIGFuZCB2YWx1ZSBwZXJzaXN0ZW5jZSBmb3IgdGhlIGNob3NlbiBlbGVtZW50cy4KClRoZSBzYW5kYm94IGFkbWluIHJvdXRlIHJlY2VpdmVzIGByb3V0ZUN0eC51aWAgd2l0aCB0aGUgaG9zdC1hdHRlc3RlZCBhZG1pbiBsb2NhbGUsIHRleHQgZGlyZWN0aW9uLCBhbmQgc3VyZmFjZS4gVXNlIGl0IHRvIHNlbGVjdCBsb2NhbGl6ZWQgdGV4dCBpbiBhIHJ1bnRpbWUgQmxvY2sgS2l0IHJlc3BvbnNlLiBMYWJlbHMgaW4gbWFuaWZlc3QgbWV0YWRhdGEgcmVtYWluIHN0YXRpYyBzdHJpbmdzOyByZWdpc3RyeSBwbHVnaW5zIGRvIG5vdCBoYW5kIHRyYW5zbGF0aW9uIGNhdGFsb2dzIHRvIHRoZSBob3N0LgoKIyMgTmF0aXZlIFJlYWN0IHBhZ2VzLCB3aWRnZXRzLCBhbmQgZmllbGRzCgpOYXRpdmUgcGx1Z2lucyBtYXkgc2V0IGBhZG1pbi5lbnRyeWAgYW5kIGV4cG9ydCBSZWFjdCBjb21wb25lbnRzOgoKYGBgdHlwZXNjcmlwdCB0aXRsZT0ic3JjL2FkbWluLnRzeCIKZXhwb3J0IGNvbnN0IHBhZ2VzID0gewoJIi9zZXR0aW5ncyI6IFNldHRpbmdzUGFnZSwKfTsKCmV4cG9ydCBjb25zdCB3aWRnZXRzID0gewoJc3RhdHVzOiBTdGF0dXNXaWRnZXQsCn07CgpleHBvcnQgY29uc3QgZmllbGRzID0gewoJcGlja2VyOiBDb2xvclBpY2tlckZpZWxkLAp9OwpgYGAKClRoZSBwbHVnaW4gZGVmaW5pdGlvbiBwb2ludHMgdG8gdGhlIGVudHJ5IGFuZCBkZWNsYXJlcyBpdHMgc3VyZmFjZXM6CgpgYGB0eXBlc2NyaXB0CmRlZmluZVBsdWdpbih7CglpZDogImNvbG9yIiwKCXZlcnNpb246ICIxLjAuMCIsCglhZG1pbjogewoJCWVudHJ5OiAiQG15LW9yZy9wbHVnaW4tY29sb3IvYWRtaW4iLAoJCXBhZ2VzOiBbeyBwYXRoOiAiL3NldHRpbmdzIiwgbGFiZWw6ICJTZXR0aW5ncyIgfV0sCgkJd2lkZ2V0czogW3sgaWQ6ICJzdGF0dXMiLCB0aXRsZTogIlN0YXR1cyIsIHNpemU6ICJoYWxmIiB9XSwKCQlmaWVsZFdpZGdldHM6IFt7IG5hbWU6ICJwaWNrZXIiLCBsYWJlbDogIkNvbG9yIHBpY2tlciIsIGZpZWxkVHlwZXM6IFsic3RyaW5nIl0gfV0sCgl9LAp9KTsKYGBgCgpOYXRpdmUgYWRtaW4gY29kZSBtdXN0IGZvbGxvdyB0aGUgcmVwb3NpdG9yeSdzIEt1bW8sIGxvY2FsaXphdGlvbiwgYWNjZXNzaWJpbGl0eSwgYW5kIFJUTCBydWxlcy4gSXQgcnVucyB3aXRoIHRoZSBzaXRlJ3MgYXV0aG9yaXR5IGFuZCBpcyBub3QgcmVnaXN0cnktaW5zdGFsbGFibGUuCg==
+# Admin UI and field widgets
+
+Sandboxed plugins return declarative Block Kit from a private route. Native plugins may instead ship React components. Keep these paths separate: sandboxed plugin JavaScript never runs in the browser.
+
+## Sandboxed pages and dashboard widgets
+
+Declare navigation and widget cards in `emdash-plugin.jsonc`:
+
+```jsonc title="emdash-plugin.jsonc"
+{
+	"admin": {
+		"pages": [
+			{ "path": "/settings", "label": "Settings", "icon": "settings" },
+			{ "path": "/reports", "label": "Reports", "icon": "chart" },
+		],
+		"widgets": [{ "id": "status", "title": "Plugin status", "size": "half" }],
+	},
+}
+```
+
+Pages mount at `/_emdash/admin/plugins/<plugin-id>/<path>`. Widget sizes are `full`, `half`, and `third`.
+
+Any sandboxed plugin that declares a page or widget must define an `admin` route. The admin sends a `page_load`, `block_action`, or `form_submit` interaction as `routeCtx.input`:
+
+```typescript title="src/plugin.ts"
+import type { SandboxedPlugin } from "emdash/plugin";
+import type { BlockResponse } from "@emdash-cms/blocks";
+import { z } from "zod";
+
+const interactionSchema = z.discriminatedUnion("type", [
+	z.object({ type: z.literal("page_load"), page: z.string() }),
+	z.object({
+		type: z.literal("block_action"),
+		action_id: z.string(),
+		block_id: z.string().optional(),
+		value: z.unknown().optional(),
+	}),
+	z.object({
+		type: z.literal("form_submit"),
+		action_id: z.string(),
+		block_id: z.string().optional(),
+		values: z.object({ enabled: z.boolean() }),
+	}),
+]);
+
+function settingsForm(enabled: boolean): BlockResponse {
+	return {
+		blocks: [
+			{ type: "header", text: "Settings" },
+			{
+				type: "form",
+				block_id: "settings",
+				fields: [
+					{ type: "toggle", action_id: "enabled", label: "Enabled", initial_value: enabled },
+				],
+				submit: { action_id: "save", label: "Save" },
+			},
+		],
+	};
+}
+
+const plugin: SandboxedPlugin = {
+	routes: {
+		admin: {
+			permission: "plugins:manage",
+			handler: async (routeCtx, ctx) => {
+				const parsed = interactionSchema.safeParse(routeCtx.input);
+				if (!parsed.success) return { blocks: [] };
+				const interaction = parsed.data;
+				if (interaction.type === "form_submit" && interaction.action_id === "save") {
+					await ctx.settings.set("enabled", interaction.values.enabled === true);
+					return {
+						...settingsForm(interaction.values.enabled === true),
+						toast: { type: "success", message: "Settings saved" },
+					};
+				}
+
+				const enabled = (await ctx.settings.get<boolean>("enabled")) ?? false;
+				return settingsForm(enabled);
+			},
+		},
+	},
+};
+
+export default plugin;
+```
+
+Validate interactions before production side effects; `routeCtx.input` is `unknown`. Read [Block Kit](./block-kit.md) for exact interaction, block, and element shapes.
+
+The plugin CLI preserves `admin.settingsSchema` in the registry manifest and generated descriptor, so the host can generate a settings form. Both sandbox bridges route `ctx.settings` through the same options records as that form. Read a generated setting with `ctx.settings.get("<key>")`; writes, deletes, list operations, and revision-based operations use the same namespace on Cloudflare and Node/workerd.
+
+The `secret` settings field is write-only in the admin response and encrypted before persistence. The site must provide `EMDASH_ENCRYPTION_KEY`; missing, wrong, or tampered key material fails closed. Keep the encryption-key list with database backups. Existing `ctx.kv.get("settings:<key>")` reads remain compatible throughout EmDash 1.x.
+
+## Sandboxed saved-entry extensions
+
+Declare saved-entry panels and actions in `emdash-plugin.jsonc`:
+
+```jsonc title="emdash-plugin.jsonc"
+{
+	"admin": {
+		"editorPanels": [
+			{
+				"id": "health",
+				"title": "Content health",
+				"route": "editor/health",
+				"collections": ["posts"],
+				"draft": {
+					"read": { "translatable": true },
+					"patch": { "fields": ["title", "excerpt"] },
+				},
+			},
+		],
+		"editorActions": [
+			{
+				"id": "repair",
+				"label": "Repair metadata",
+				"route": "editor/repair",
+				"placement": "overflow",
+				"style": "danger",
+				"confirm": {
+					"title": "Repair?",
+					"text": "This changes the saved entry.",
+					"confirm": "Repair",
+					"deny": "Cancel",
+				},
+			},
+		],
+	},
+}
+```
+
+Every referenced route must be private. EmDash reloads the saved entry and checks ownership plus the route permission before invoking it. `routeCtx.ui.entry` contains only the canonical collection, ID, locale, and version.
+
+Panels start collapsed. `panel_load` never includes draft values. After an explicit `block_action`, `form_submit`, or `editor_action`, `admin.editor-draft:read` can attach only the fields selected by the extension's `draft.read` declaration. `fields` selects explicit slugs and `translatable: true` selects current schema fields marked translatable. Draft declarations require explicit collection scope.
+
+`admin.editor-draft:patch` permits a separate `draft.patch` field selector and does not imply read. Return `patch: { type: "editor-draft-patch", operations }` with whole-field `set` or `clear` operations. The host rejects the complete patch on an unknown, forbidden, invalid, unsupported, oversized, or stale operation. Accepted patches receive a host-rendered preview, update the form atomically, mark it dirty, and remain unsaved. A response may contain a toast and one terminal effect: patch, refresh, or navigation.
+
+Use `createPluginRuntimeTestHost().admin` to exercise this boundary. `captureEditorDraft()` creates a saved-entry draft request, the existing panel/action helpers invoke the production route, and `applyEditorDraftPatch()` applies only a current response through the host validator.
+
+## Sandboxed declarative field widgets
+
+Core and the admin contain a declarative field-widget path. Declare the widget in the registry manifest:
+
+```jsonc title="emdash-plugin.jsonc"
+{
+	"admin": {
+		"fieldWidgets": [
+			{
+				"name": "event-picker",
+				"label": "Event",
+				"fieldTypes": ["json"],
+				"elements": [
+					{ "type": "text_input", "action_id": "eventId", "label": "Event ID" },
+					{ "type": "toggle", "action_id": "featured", "label": "Featured" },
+				],
+			},
+		],
+	},
+}
+```
+
+A schema field selects it with `widget: "pluginId:widgetName"`. The editor stores an object keyed by each element's `action_id`. Use a `json` field for this object. The manifest schema accepts other compatible field types, but the repository has no end-to-end test proving that the composed object saves through them.
+
+The current field-widget renderer supports:
+
+- `text_input`
+- `number_input`
+- `toggle`
+- `select`
+- `media_picker`
+
+Other Block Kit element types display an unsupported-element message in this surface.
+
+`emdash-plugin.jsonc` accepts `admin.fieldWidgets`, and the plugin CLI carries the definitions through the bundle manifest and generated descriptor for registry installation. The artifact round-trip is covered by plugin CLI, shared manifest, and plugin-test tests. The browser E2E fixture still tests a native React color picker rather than a registry-installed declarative widget, so verify the real editor render and value persistence for the chosen elements.
+
+The sandbox admin route receives `routeCtx.ui` with the host-attested admin locale, text direction, and surface. Use it to select localized text in a runtime Block Kit response. Labels in manifest metadata remain static strings; registry plugins do not hand translation catalogs to the host.
+
+## Native React pages, widgets, and fields
+
+Native plugins may set `admin.entry` and export React components:
+
+```typescript title="src/admin.tsx"
+export const pages = {
+	"/settings": SettingsPage,
+};
+
+export const widgets = {
+	status: StatusWidget,
+};
+
+export const fields = {
+	picker: ColorPickerField,
+};
+```
+
+The plugin definition points to the entry and declares its surfaces:
+
+```typescript
+definePlugin({
+	id: "color",
+	version: "1.0.0",
+	admin: {
+		entry: "@my-org/plugin-color/admin",
+		pages: [{ path: "/settings", label: "Settings" }],
+		widgets: [{ id: "status", title: "Status", size: "half" }],
+		fieldWidgets: [{ name: "picker", label: "Color picker", fieldTypes: ["string"] }],
+	},
+});
+```
+
+Native admin code must follow the repository's Kumo, localization, accessibility, and RTL rules. It runs with the site's authority and is not registry-installable.

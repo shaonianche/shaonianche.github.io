@@ -1,1 +1,17 @@
-bm9kZV9tb2R1bGVzCmRpc3QKLmFzdHJvCi5lbWRhc2gvbWlncmF0aW9ucy5qc29uCnVwbG9hZHMKZGF0YS5kYgoud3JhbmdsZXIKCiMgRW52aXJvbm1lbnQgLyBXcmFuZ2xlciBzZWNyZXRzCi5lbnYKLmVudi4qCiEuZW52LmV4YW1wbGUKLmRldi52YXJzCi5kZXYudmFycy4qCg==
+node_modules
+dist
+.astro
+.emdash/migrations.json
+uploads
+data.db
+.wrangler
+
+# Decompressed from seed/seed.json.gz before local use (see seed/README.md)
+seed/seed.json
+
+# Environment / Wrangler secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*

@@ -1,1 +1,68 @@
-IyBFbURhc2ggQmxvZyBUZW1wbGF0ZSAoQ2xvdWRmbGFyZSkKCkEgY2xlYW4sIG1pbmltYWwgYmxvZyBidWlsdCB3aXRoIFtFbURhc2hdKGh0dHBzOi8vZ2l0aHViLmNvbS9lbWRhc2gtY21zL2VtZGFzaCkgYW5kIGRlcGxveWVkIG9uIENsb3VkZmxhcmUgV29ya2VycyB3aXRoIEQxIGFuZCBSMi4KClshW0RlcGxveSB0byBDbG91ZGZsYXJlXShodHRwczovL2RlcGxveS53b3JrZXJzLmNsb3VkZmxhcmUuY29tL2J1dHRvbildKGh0dHBzOi8vZGVwbG95LndvcmtlcnMuY2xvdWRmbGFyZS5jb20vP3VybD1odHRwczovL2dpdGh1Yi5jb20vZW1kYXNoLWNtcy90ZW1wbGF0ZXMvdHJlZS9tYWluL2Jsb2ctY2xvdWRmbGFyZSkKCiFbQmxvZyB0ZW1wbGF0ZSBob21lcGFnZV0oaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2VtZGFzaC1jbXMvZW1kYXNoL21haW4vYXNzZXRzL3RlbXBsYXRlcy9ibG9nL2xhdGVzdC9ob21lcGFnZS1saWdodC1kZXNrdG9wLmpwZykKCiMjIFdoYXQncyBJbmNsdWRlZAoKLSBGZWF0dXJlZCBwb3N0IGhlcm8gb24gdGhlIGhvbWVwYWdlCi0gUG9zdCBhcmNoaXZlIHdpdGggcmVhZGluZyB0aW1lIGVzdGltYXRlcwotIENhdGVnb3J5IGFuZCB0YWcgYXJjaGl2ZXMKLSBGdWxsLXRleHQgc2VhcmNoCi0gUlNTIGZlZWQKLSBTRU8gbWV0YWRhdGEgYW5kIEpTT04tTEQKLSBEYXJrL2xpZ2h0IG1vZGUKCiMjIFBhZ2VzCgp8IFBhZ2UgfCBSb3V0ZSB8CnwtLS18LS0tfAp8IEhvbWVwYWdlIHwgYC9gIHwKfCBBbGwgcG9zdHMgfCBgL3Bvc3RzYCB8CnwgU2luZ2xlIHBvc3QgfCBgL3Bvc3RzLzpzbHVnYCB8CnwgQ2F0ZWdvcnkgYXJjaGl2ZSB8IGAvY2F0ZWdvcnkvOnNsdWdgIHwKfCBUYWcgYXJjaGl2ZSB8IGAvdGFnLzpzbHVnYCB8CnwgU2VhcmNoIHwgYC9zZWFyY2hgIHwKfCBTdGF0aWMgcGFnZXMgfCBgL3BhZ2VzLzpzbHVnYCB8CnwgNDA0IHwgZmFsbGJhY2sgfAoKIyMgU2NyZWVuc2hvdHMKCnwgfCBEZXNrdG9wIHwgTW9iaWxlIHwKfC0tLXwtLS18LS0tfAp8IExpZ2h0IHwgIVtob21lcGFnZSBsaWdodCBkZXNrdG9wXShodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZW1kYXNoLWNtcy9lbWRhc2gvbWFpbi9hc3NldHMvdGVtcGxhdGVzL2Jsb2cvbGF0ZXN0L2hvbWVwYWdlLWxpZ2h0LWRlc2t0b3AuanBnKSB8ICFbaG9tZXBhZ2UgbGlnaHQgbW9iaWxlXShodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZW1kYXNoLWNtcy9lbWRhc2gvbWFpbi9hc3NldHMvdGVtcGxhdGVzL2Jsb2cvbGF0ZXN0L2hvbWVwYWdlLWxpZ2h0LW1vYmlsZS5qcGcpIHwKfCBEYXJrIHwgIVtob21lcGFnZSBkYXJrIGRlc2t0b3BdKGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9lbWRhc2gtY21zL2VtZGFzaC9tYWluL2Fzc2V0cy90ZW1wbGF0ZXMvYmxvZy9sYXRlc3QvaG9tZXBhZ2UtZGFyay1kZXNrdG9wLmpwZykgfCAhW2hvbWVwYWdlIGRhcmsgbW9iaWxlXShodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZW1kYXNoLWNtcy9lbWRhc2gvbWFpbi9hc3NldHMvdGVtcGxhdGVzL2Jsb2cvbGF0ZXN0L2hvbWVwYWdlLWRhcmstbW9iaWxlLmpwZykgfAoKIyMgSW5mcmFzdHJ1Y3R1cmUKCi0gKipSdW50aW1lOioqIENsb3VkZmxhcmUgV29ya2VycwotICoqRGF0YWJhc2U6KiogRDEKLSAqKlN0b3JhZ2U6KiogUjIKLSAqKkZyYW1ld29yazoqKiBBc3RybyB3aXRoIGBAYXN0cm9qcy9jbG91ZGZsYXJlYAoKIyMgTG9jYWwgRGV2ZWxvcG1lbnQKCmBgYGJhc2gKbnBtIGluc3RhbGwKbnBtIHJ1biBkZXYKYGBgCgpPcGVuIGh0dHA6Ly9sb2NhbGhvc3Q6NDMyMS9fZW1kYXNoL2FkbWluIGFuZCBjb21wbGV0ZSB0aGUgc2V0dXAgd2l6YXJkLiBFbURhc2ggcnVucyBkYXRhYmFzZSBtaWdyYXRpb25zIGFuZCBhcHBsaWVzIHRoZSBibG9nIHNlZWQgZHVyaW5nIHNldHVwLiBUaGUgc2l0ZSBpcyBhdmFpbGFibGUgYXQgaHR0cDovL2xvY2FsaG9zdDo0MzIxLgoKIyMgRGVwbG95aW5nCgpgYGBiYXNoCm5weCB3cmFuZ2xlciBsb2dpbgpucG0gcnVuIGRlcGxveQpgYGAKClRoZSBmaXJzdCBkZXBsb3ltZW50IHByb3Zpc2lvbnMgdGhlIG5hbWVkIEQxIGRhdGFiYXNlIGFuZCBSMiBidWNrZXQgZnJvbSBgd3JhbmdsZXIuanNvbmNgLiBTZWUgW0RlcGxveSB0byBDbG91ZGZsYXJlXShodHRwczovL2RvY3MuZW1kYXNoY21zLmNvbS9kZXBsb3ltZW50L2Nsb3VkZmxhcmUvKSBmb3IgcHJvZHVjdGlvbiBzZXR1cCwgb3IgdXNlIHRoZSBkZXBsb3kgYnV0dG9uIGFib3ZlLgoKIyMgU2VlIEFsc28KCi0gW05vZGUuanMgdmFyaWFudF0oLi4vYmxvZykgLS0gc2FtZSB0ZW1wbGF0ZSB1c2luZyBTUUxpdGUgYW5kIGxvY2FsIGZpbGUgc3RvcmFnZQotIFtBbGwgdGVtcGxhdGVzXSguLi8pCi0gW0VtRGFzaCBkb2N1bWVudGF0aW9uXShodHRwczovL2RvY3MuZW1kYXNoY21zLmNvbS8pCg==
+# EmDash Blog Template (Cloudflare)
+
+A clean, minimal blog built with [EmDash](https://github.com/emdash-cms/emdash) and deployed on Cloudflare Workers with D1 and R2.
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/emdash-cms/templates/tree/main/blog-cloudflare)
+
+![Blog template homepage](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-light-desktop.jpg)
+
+## What's Included
+
+- Featured post hero on the homepage
+- Post archive with reading time estimates
+- Category and tag archives
+- Full-text search
+- RSS feed
+- SEO metadata and JSON-LD
+- Dark/light mode
+
+## Pages
+
+| Page | Route |
+|---|---|
+| Homepage | `/` |
+| All posts | `/posts` |
+| Single post | `/posts/:slug` |
+| Category archive | `/category/:slug` |
+| Tag archive | `/tag/:slug` |
+| Search | `/search` |
+| Static pages | `/pages/:slug` |
+| 404 | fallback |
+
+## Screenshots
+
+| | Desktop | Mobile |
+|---|---|---|
+| Light | ![homepage light desktop](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-light-desktop.jpg) | ![homepage light mobile](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-light-mobile.jpg) |
+| Dark | ![homepage dark desktop](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-dark-desktop.jpg) | ![homepage dark mobile](https://raw.githubusercontent.com/emdash-cms/emdash/main/assets/templates/blog/latest/homepage-dark-mobile.jpg) |
+
+## Infrastructure
+
+- **Runtime:** Cloudflare Workers
+- **Database:** D1
+- **Storage:** R2
+- **Framework:** Astro with `@astrojs/cloudflare`
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:4321/_emdash/admin and complete the setup wizard. EmDash runs database migrations and applies the blog seed during setup. The site is available at http://localhost:4321.
+
+## Deploying
+
+```bash
+npx wrangler login
+npm run deploy
+```
+
+The first deployment provisions the named D1 database and R2 bucket from `wrangler.jsonc`. See [Deploy to Cloudflare](https://docs.emdashcms.com/deployment/cloudflare/) for production setup, or use the deploy button above.
+
+## See Also
+
+- [Node.js variant](../blog) -- same template using SQLite and local file storage
+- [All templates](../)
+- [EmDash documentation](https://docs.emdashcms.com/)

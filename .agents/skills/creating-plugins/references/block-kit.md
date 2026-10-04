@@ -1,1 +1,584 @@
-IyBCbG9jayBLaXQKCkRlY2xhcmF0aXZlIEpTT04gVUkgZm9yIHNhbmRib3hlZCBwbHVnaW4gYWRtaW4gcGFnZXMuIFRoZSBob3N0IHJlbmRlcnMgYmxvY2tzIOKAlCBubyBwbHVnaW4gSmF2YVNjcmlwdCBydW5zIGluIHRoZSBicm93c2VyLiBJbnNwaXJlZCBieSBTbGFjaydzIEJsb2NrIEtpdCBidXQgbm90IGlkZW50aWNhbCDigJQgc2ltaWxhciBjb25jZXB0cyBhbmQgbmFtaW5nLCBkaWZmZXJlbnQgYmxvY2svZWxlbWVudCB0eXBlcyBhbmQgY2FwYWJpbGl0aWVzLgoKVHJ1c3RlZCBwbHVnaW5zIChkZWNsYXJlZCBpbiBgYXN0cm8uY29uZmlnLnRzYCkgY2FuIHNoaXAgY3VzdG9tIFJlYWN0IGNvbXBvbmVudHMgaW5zdGVhZC4gQmxvY2sgS2l0IGlzIGZvciBydW50aW1lLWluc3RhbGxlZCBzYW5kYm94ZWQgcGx1Z2lucy4KCk5hdGl2ZSBwbHVnaW5zIGFsc28gdXNlIEJsb2NrIEtpdCBlbGVtZW50cyBmb3IgW1BvcnRhYmxlIFRleHQgYmxvY2sgZWRpdGluZyBmaWVsZHNdKC4vcG9ydGFibGUtdGV4dC1ibG9ja3MubWQpLiBQbHVnaW4gQ0xJIGFuZCByZWdpc3RyeSBwYWNrYWdlcyBjYW5ub3QgcmVnaXN0ZXIgUG9ydGFibGUgVGV4dCBibG9jayB0eXBlcy4KCiMjIEhvdyBJdCBXb3JrcwoKMS4gVXNlciBuYXZpZ2F0ZXMgdG8gcGx1Z2luIGFkbWluIHBhZ2UKMi4gQWRtaW4gc2VuZHMgYHBhZ2VfbG9hZGAgaW50ZXJhY3Rpb24gdG8gcGx1Z2luJ3MgYWRtaW4gcm91dGUKMy4gUGx1Z2luIHJldHVybnMgYEJsb2NrUmVzcG9uc2VgIHdpdGggYXJyYXkgb2YgYmxvY2tzCjQuIEFkbWluIHJlbmRlcnMgYmxvY2tzIHVzaW5nIGBCbG9ja1JlbmRlcmVyYAo1LiBVc2VyIGludGVyYWN0cyAoYnV0dG9uIGNsaWNrLCBmb3JtIHN1Ym1pdCkg4oaSIGludGVyYWN0aW9uIHNlbnQgYmFjawo2LiBQbHVnaW4gcmV0dXJucyBuZXcgYmxvY2tzCgpgYGB0eXBlc2NyaXB0CmltcG9ydCB0eXBlIHsgQmxvY2tJbnRlcmFjdGlvbiB9IGZyb20gIkBlbWRhc2gtY21zL2Jsb2NrcyI7Cgpyb3V0ZXM6IHsKCWFkbWluOiB7CgkJaGFuZGxlcjogYXN5bmMgKGN0eCkgPT4gewoJCQkvLyBFbURhc2ggcGFyc2VzIHRoZSByZXF1ZXN0IGJvZHkgb25jZSBhbmQgZXhwb3NlcyBpdCBhcyBjdHguaW5wdXQ7CgkJCS8vIHJlYWQgaXQgZGlyZWN0bHkgcmF0aGVyIHRoYW4gY3R4LnJlcXVlc3QuanNvbigpICh0aGUgYm9keSBpcyBjb25zdW1lZCkuCgkJCS8vIEJsb2NrSW50ZXJhY3Rpb24gaXMgdGhlIGRpc2NyaW1pbmF0ZWQgdW5pb24gb2YgcGFnZV9sb2FkLAoJCQkvLyBibG9ja19hY3Rpb24sIGFuZCBmb3JtX3N1Ym1pdCBwYXlsb2Fkcy4KCQkJY29uc3QgaW50ZXJhY3Rpb24gPSBjdHguaW5wdXQgYXMgQmxvY2tJbnRlcmFjdGlvbjsKCgkJCWlmIChpbnRlcmFjdGlvbi50eXBlID09PSAicGFnZV9sb2FkIikgewoJCQkJcmV0dXJuIHsKCQkJCQlibG9ja3M6IFsKCQkJCQkJeyB0eXBlOiAiaGVhZGVyIiwgdGV4dDogIk15IFBsdWdpbiBTZXR0aW5ncyIgfSwKCQkJCQkJewoJCQkJCQkJdHlwZTogImZvcm0iLAoJCQkJCQkJYmxvY2tfaWQ6ICJzZXR0aW5ncyIsCgkJCQkJCQlmaWVsZHM6IFsKCQkJCQkJCQl7IHR5cGU6ICJ0ZXh0X2lucHV0IiwgYWN0aW9uX2lkOiAiYXBpX3VybCIsIGxhYmVsOiAiQVBJIFVSTCIgfSwKCQkJCQkJCQl7IHR5cGU6ICJ0b2dnbGUiLCBhY3Rpb25faWQ6ICJlbmFibGVkIiwgbGFiZWw6ICJFbmFibGVkIiwgaW5pdGlhbF92YWx1ZTogdHJ1ZSB9LAoJCQkJCQkJXSwKCQkJCQkJCXN1Ym1pdDogeyBsYWJlbDogIlNhdmUiLCBhY3Rpb25faWQ6ICJzYXZlIiB9LAoJCQkJCQl9LAoJCQkJCV0sCgkJCQl9OwoJCQl9CgoJCQlpZiAoaW50ZXJhY3Rpb24udHlwZSA9PT0gImZvcm1fc3VibWl0IiAmJiBpbnRlcmFjdGlvbi5hY3Rpb25faWQgPT09ICJzYXZlIikgewoJCQkJYXdhaXQgY3R4Lmt2LnNldCgic2V0dGluZ3MiLCBpbnRlcmFjdGlvbi52YWx1ZXMpOwoJCQkJcmV0dXJuIHsKCQkJCQlibG9ja3M6IFsvKiB1cGRhdGVkIGJsb2NrcyAqL10sCgkJCQkJdG9hc3Q6IHsgbWVzc2FnZTogIlNldHRpbmdzIHNhdmVkIiwgdHlwZTogInN1Y2Nlc3MiIH0sCgkJCQl9OwoJCQl9CgkJfSwKCX0sCn0KYGBgCgojIyBCbG9jayBUeXBlcwoKfCBUeXBlICAgICAgICB8IERlc2NyaXB0aW9uICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfAp8IGBoZWFkZXJgICAgIHwgTGFyZ2UgYm9sZCBoZWFkaW5nICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCBgc2VjdGlvbmAgICB8IFRleHQgd2l0aCBvcHRpb25hbCBhY2Nlc3NvcnkgZWxlbWVudCAgICAgICAgICAgICAgICB8CnwgYGRpdmlkZXJgICAgfCBIb3Jpem9udGFsIHJ1bGUgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IGBmaWVsZHNgICAgIHwgVHdvLWNvbHVtbiBsYWJlbC92YWx1ZSBncmlkICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCBgdGFibGVgICAgICB8IERhdGEgdGFibGUgd2l0aCBmb3JtYXR0aW5nLCBzb3J0aW5nLCBwYWdpbmF0aW9uICAgICB8CnwgYGFjdGlvbnNgICAgfCBIb3Jpem9udGFsIHJvdyBvZiBidXR0b25zIGFuZCBjb250cm9scyAgICAgICAgICAgICAgfAp8IGBzdGF0c2AgICAgIHwgRGFzaGJvYXJkIG1ldHJpYyBjYXJkcyB3aXRoIHRyZW5kIGluZGljYXRvcnMgICAgICAgIHwKfCBgZm9ybWAgICAgICB8IElucHV0IGZpZWxkcyB3aXRoIGNvbmRpdGlvbmFsIHZpc2liaWxpdHkgYW5kIHN1Ym1pdCB8CnwgYGltYWdlYCAgICAgfCBCbG9jay1sZXZlbCBpbWFnZSB3aXRoIGFsdCB0ZXh0IGFuZCBvcHRpb25hbCB0aXRsZSAgfAp8IGBjb250ZXh0YCAgIHwgU21hbGwgbXV0ZWQgaGVscCB0ZXh0ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCBgY29sdW1uc2AgICB8IDItMyBjb2x1bW4gbGF5b3V0IHdpdGggbmVzdGVkIGJsb2NrcyAgICAgICAgICAgICAgICB8CnwgYGNoYXJ0YCAgICAgfCBDaGFydHMgKHRpbWVzZXJpZXMgbGluZS9iYXIsIHBpZSwgY3VzdG9tIEVDaGFydHMpICAgfAp8IGBjb2RlYCAgICAgIHwgU3ludGF4LWhpZ2hsaWdodGVkIGNvZGUgYmxvY2sgICAgICAgICAgICAgICAgICAgICAgIHwKfCBgbWV0ZXJgICAgICB8IFByb2dyZXNzL3F1b3RhIG1ldGVyIGJhciAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGJhbm5lcmAgICAgfCBJbmZvLCB3YXJuaW5nLCBvciBlcnJvciBpbmxpbmUgbWVzc2FnZXMgICAgICAgICAgICAgfAp8IGBlbXB0eWAgICAgIHwgRW1wdHkgc3RhdGUgd2l0aCBvcHRpb25hbCBjb21tYW5kIGFuZCBhY3Rpb25zICAgICAgIHwKfCBgYWNjb3JkaW9uYCB8IENvbGxhcHNpYmxlIHNlY3Rpb24gY29udGFpbmluZyBuZXN0ZWQgYmxvY2tzICAgICAgICB8CgojIyBFbGVtZW50IFR5cGVzCgp8IFR5cGUgICAgICAgICAgIHwgRGVzY3JpcHRpb24gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCAtLS0tLS0tLS0tLS0tLSB8IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgYGJ1dHRvbmAgICAgICAgfCBBY3Rpb24gYnV0dG9uIHdpdGggb3B0aW9uYWwgY29uZmlybWF0aW9uIGRpYWxvZyAgICAgICAgICAgfAp8IGBsaW5rYCAgICAgICAgIHwgSG9zdC1yZXNvbHZlZCBuYXZpZ2F0aW9uIHRoYXQgZG9lcyBub3QgZGlzcGF0Y2ggYW4gYWN0aW9uIHwKfCBgdGV4dF9pbnB1dGAgICB8IFNpbmdsZS1saW5lIG9yIG11bHRpbGluZSB0ZXh0IGlucHV0ICAgICAgICAgICAgICAgICAgICAgICB8CnwgYG51bWJlcl9pbnB1dGAgfCBOdW1lcmljIGlucHV0IHdpdGggbWluL21heCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IGBzZWxlY3RgICAgICAgIHwgRHJvcGRvd24gc2VsZWN0ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCBgdG9nZ2xlYCAgICAgICB8IE9uL29mZiBzd2l0Y2ggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYHNlY3JldF9pbnB1dGAgfCBNYXNrZWQgaW5wdXQgZm9yIEFQSSBrZXlzIGFuZCB0b2tlbnMgICAgICAgICAgICAgICAgICAgICAgfAp8IGBjaGVja2JveGAgICAgIHwgTXVsdGktc2VsZWN0IGNoZWNrYm94ZXMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCBgcmFkaW9gICAgICAgICB8IFNpbmdsZS1zZWxlY3QgcmFkaW8gYnV0dG9ucyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgYGRhdGVfaW5wdXRgICAgfCBEYXRlIHBpY2tlciAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8IGBjb21ib2JveGAgICAgIHwgU2VhcmNoYWJsZSBkcm9wZG93biBzZWxlY3QgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCBgcmVwZWF0ZXJgICAgICB8IEFycmF5IG9mIHJlY29yZHMgd2l0aCBzY2FsYXIgc3ViLWZpZWxkcyAgICAgICAgICAgICAgICAgICB8CnwgYG1lZGlhX3BpY2tlcmAgfCBNZWRpYS1saWJyYXJ5IHBpY2tlciB0aGF0IHN0b3JlcyB0aGUgYXNzZXQgVVJMICAgICAgICAgICAgfAoKIyMgQmxvY2sgU3ludGF4CgojIyMgSGVhZGVyCgpgYGBqc29uCnsgInR5cGUiOiAiaGVhZGVyIiwgInRleHQiOiAiU2V0dGluZ3MiIH0KYGBgCgojIyMgU2VjdGlvbgoKYGBganNvbgp7CgkidHlwZSI6ICJzZWN0aW9uIiwKCSJ0ZXh0IjogIkNvbmZpZ3VyZSB5b3VyIHBsdWdpbiBzZXR0aW5ncyBiZWxvdy4iLAoJImFjY2Vzc29yeSI6IHsgInR5cGUiOiAiYnV0dG9uIiwgImxhYmVsIjogIlJlZnJlc2giLCAiYWN0aW9uX2lkIjogInJlZnJlc2giIH0KfQpgYGAKCiMjIyBEaXZpZGVyCgpgYGBqc29uCnsgInR5cGUiOiAiZGl2aWRlciIgfQpgYGAKCiMjIyBGaWVsZHMKCmBgYGpzb24KewoJInR5cGUiOiAiZmllbGRzIiwKCSJmaWVsZHMiOiBbCgkJeyAibGFiZWwiOiAiU3RhdHVzIiwgInZhbHVlIjogIkFjdGl2ZSIgfSwKCQl7ICJsYWJlbCI6ICJMYXN0IFN5bmMiLCAidmFsdWUiOiAiMiBob3VycyBhZ28iIH0KCV0KfQpgYGAKCiMjIyBTdGF0cwoKYGBganNvbgp7CgkidHlwZSI6ICJzdGF0cyIsCgkiaXRlbXMiOiBbCgkJeyAibGFiZWwiOiAiVG90YWwiLCAidmFsdWUiOiAiMSwyMzQiLCAidHJlbmQiOiAidXAiLCAiZGVzY3JpcHRpb24iOiAiKzEyJSB2cyBsYXN0IHdlZWsiIH0sCgkJeyAibGFiZWwiOiAiQWN0aXZlIiwgInZhbHVlIjogIjU2NyIgfQoJXQp9CmBgYAoKLSBgaXRlbXNgIOKAlCB0aGUgYXJyYXkga2V5IGlzIGBpdGVtc2AsIG5vdCBgc3RhdHNgCi0gYHRyZW5kYCDigJQgYCJ1cCJgLCBgImRvd24iYCwgb3IgYCJuZXV0cmFsImA7IHJlbmRlcnMgYW4gYXJyb3cgaWNvbiBuZXh0IHRvIHRoZSB2YWx1ZQotIGBkZXNjcmlwdGlvbmAg4oCUIHNlY29uZGFyeSBsaW5lIGJlbmVhdGggdGhlIHZhbHVlLCBmb3IgY29udGV4dCBzdWNoIGFzICIrMTIlIHZzIGxhc3Qgd2VlayIKCiMjIyBUYWJsZQoKYGBganNvbgp7CgkidHlwZSI6ICJ0YWJsZSIsCgkiY29sdW1ucyI6IFsKCQl7ICJrZXkiOiAibmFtZSIsICJsYWJlbCI6ICJOYW1lIiB9LAoJCXsgImtleSI6ICJzdGF0dXMiLCAibGFiZWwiOiAiU3RhdHVzIiB9LAoJCXsgImtleSI6ICJkYXRlIiwgImxhYmVsIjogIkRhdGUiIH0KCV0sCgkicm93cyI6IFt7ICJuYW1lIjogIkl0ZW0gMSIsICJzdGF0dXMiOiAiQWN0aXZlIiwgImRhdGUiOiAiMjAyNS0wMS0wMSIgfV0sCgkicGFnZV9hY3Rpb25faWQiOiAiYnJvd3NlX2l0ZW1zIiwKCSJlbXB0eV90ZXh0IjogIk5vIGl0ZW1zIHlldC4iCn0KYGBgCgotIGBwYWdlX2FjdGlvbl9pZGAg4oCUIHJlcXVpcmVkLiBUaGUgYWRtaW4gc2VuZHMgaXQgYXMgdGhlIGBibG9ja19hY3Rpb25gIGlkIHdoZW4gdGhlIHVzZXIgc29ydHMgYSBjb2x1bW4gb3IgcGFnZXMgdGhyb3VnaCByZXN1bHRzLgotIGBlbXB0eV90ZXh0YCDigJQgc2hvd24gaW4gcGxhY2Ugb2YgdGhlIHRhYmxlIHdoZW4gYHJvd3NgIGlzIGVtcHR5Ci0gYG5leHRfY3Vyc29yYCDigJQgc2V0IGl0IHRvIHJlbmRlciBhICJMb2FkIG1vcmUiIGNvbnRyb2wKCiMjIyBBY3Rpb25zCgpgYGBqc29uCnsKCSJ0eXBlIjogImFjdGlvbnMiLAoJImVsZW1lbnRzIjogWwoJCXsgInR5cGUiOiAiYnV0dG9uIiwgImxhYmVsIjogIlNhdmUiLCAiYWN0aW9uX2lkIjogInNhdmUiLCAic3R5bGUiOiAicHJpbWFyeSIgfSwKCQl7ICJ0eXBlIjogImJ1dHRvbiIsICJsYWJlbCI6ICJDYW5jZWwiLCAiYWN0aW9uX2lkIjogImNhbmNlbCIgfQoJXQp9CmBgYAoKIyMjIEZvcm0KCmBgYGpzb24KewoJInR5cGUiOiAiZm9ybSIsCgkiYmxvY2tfaWQiOiAic2V0dGluZ3MiLAoJImZpZWxkcyI6IFsKCQl7ICJ0eXBlIjogInRleHRfaW5wdXQiLCAiYWN0aW9uX2lkIjogIm5hbWUiLCAibGFiZWwiOiAiTmFtZSIgfSwKCQl7ICJ0eXBlIjogIm51bWJlcl9pbnB1dCIsICJhY3Rpb25faWQiOiAiY291bnQiLCAibGFiZWwiOiAiQ291bnQiLCAibWluIjogMCwgIm1heCI6IDEwMCB9LAoJCXsKCQkJInR5cGUiOiAic2VsZWN0IiwKCQkJImFjdGlvbl9pZCI6ICJ0aGVtZSIsCgkJCSJsYWJlbCI6ICJUaGVtZSIsCgkJCSJvcHRpb25zIjogWwoJCQkJeyAibGFiZWwiOiAiTGlnaHQiLCAidmFsdWUiOiAibGlnaHQiIH0sCgkJCQl7ICJsYWJlbCI6ICJEYXJrIiwgInZhbHVlIjogImRhcmsiIH0KCQkJXQoJCX0sCgkJeyAidHlwZSI6ICJ0b2dnbGUiLCAiYWN0aW9uX2lkIjogImVuYWJsZWQiLCAibGFiZWwiOiAiRW5hYmxlZCIsICJpbml0aWFsX3ZhbHVlIjogdHJ1ZSB9LAoJCXsgInR5cGUiOiAic2VjcmV0X2lucHV0IiwgImFjdGlvbl9pZCI6ICJhcGlfa2V5IiwgImxhYmVsIjogIkFQSSBLZXkiIH0KCV0sCgkic3VibWl0IjogeyAibGFiZWwiOiAiU2F2ZSIsICJhY3Rpb25faWQiOiAic2F2ZV9zZXR0aW5ncyIgfQp9CmBgYAoKIyMjIENvbHVtbnMKCmBgYGpzb24KewoJInR5cGUiOiAiY29sdW1ucyIsCgkiY29sdW1ucyI6IFsKCQlbCgkJCXsgInR5cGUiOiAiaGVhZGVyIiwgInRleHQiOiAiVXNhZ2UiIH0sCgkJCXsgInR5cGUiOiAibWV0ZXIiLCAibGFiZWwiOiAiU3RvcmFnZSB1c2VkIiwgInZhbHVlIjogNjUgfQoJCV0sCgkJWwoJCQl7ICJ0eXBlIjogImhlYWRlciIsICJ0ZXh0IjogIkFjdGl2aXR5IiB9LAoJCQl7ICJ0eXBlIjogImNvbnRleHQiLCAidGV4dCI6ICJMYXN0IHN5bmMgMiBob3VycyBhZ28iIH0KCQldCgldCn0KYGBgCgotIGBjb2x1bW5zYCDigJQgMiBvciAzIGNvbHVtbnMsIGVhY2ggb25lIGFuIGFycmF5IG9mIGJsb2NrcwoKIyMjIENoYXJ0IChUaW1lc2VyaWVzKQoKYGBganNvbgp7CgkidHlwZSI6ICJjaGFydCIsCgkiY29uZmlnIjogewoJCSJjaGFydF90eXBlIjogInRpbWVzZXJpZXMiLAoJCSJzZXJpZXMiOiBbCgkJCXsKCQkJCSJuYW1lIjogIlJlcXVlc3RzIiwKCQkJCSJkYXRhIjogWwoJCQkJCVsxNzA5NTk2ODAwMDAwLCA0Ml0sCgkJCQkJWzE3MDk2MDA0MDAwMDAsIDY3XSwKCQkJCQlbMTcwOTYwNDAwMDAwMCwgNTNdCgkJCQldLAoJCQkJImNvbG9yIjogIiMwODZGRkYiCgkJCX0sCgkJCXsKCQkJCSJuYW1lIjogIkVycm9ycyIsCgkJCQkiZGF0YSI6IFsKCQkJCQlbMTcwOTU5NjgwMDAwMCwgMl0sCgkJCQkJWzE3MDk2MDA0MDAwMDAsIDVdLAoJCQkJCVsxNzA5NjA0MDAwMDAwLCAxXQoJCQkJXQoJCQl9CgkJXSwKCQkieF9heGlzX25hbWUiOiAiVGltZSIsCgkJInlfYXhpc19uYW1lIjogIkNvdW50IiwKCQkic3R5bGUiOiAibGluZSIsCgkJImdyYWRpZW50IjogdHJ1ZSwKCQkiaGVpZ2h0IjogMzAwCgl9Cn0KYGBgCgotIGBzZXJpZXNbXS5kYXRhYCDigJQgYXJyYXkgb2YgYFt0aW1lc3RhbXBfbXMsIHZhbHVlXWAgdHVwbGVzCi0gYHNlcmllc1tdLmNvbG9yYCDigJQgaGV4IGNvbG9yIChvcHRpb25hbCwgYXV0by1hc3NpZ25lZCBmcm9tIEt1bW8gcGFsZXR0ZSkKLSBgc3R5bGVgIOKAlCBgImxpbmUiYCAoZGVmYXVsdCkgb3IgYCJiYXIiYAotIGBncmFkaWVudGAg4oCUIGZpbGwgZ3JhZGllbnQgYmVuZWF0aCBsaW5lcyAoZGVmYXVsdCBmYWxzZSkKLSBgaGVpZ2h0YCDigJQgY2hhcnQgaGVpZ2h0IGluIHBpeGVscyAoZGVmYXVsdCAzNTApCgojIyMgQ2hhcnQgKEN1c3RvbSkKCkZvciBwaWUgY2hhcnRzLCBnYXVnZXMsIG9yIGFueSBFQ2hhcnRzIHZpc3VhbGl6YXRpb246CgpgYGBqc29uCnsKCSJ0eXBlIjogImNoYXJ0IiwKCSJjb25maWciOiB7CgkJImNoYXJ0X3R5cGUiOiAiY3VzdG9tIiwKCQkib3B0aW9ucyI6IHsKCQkJInNlcmllcyI6IFsKCQkJCXsKCQkJCQkidHlwZSI6ICJwaWUiLAoJCQkJCSJkYXRhIjogWwoJCQkJCQl7ICJ2YWx1ZSI6IDMzNSwgIm5hbWUiOiAiUHVibGlzaGVkIiB9LAoJCQkJCQl7ICJ2YWx1ZSI6IDIzNCwgIm5hbWUiOiAiRHJhZnQiIH0sCgkJCQkJCXsgInZhbHVlIjogMTIwLCAibmFtZSI6ICJTY2hlZHVsZWQiIH0KCQkJCQldCgkJCQl9CgkJCV0KCQl9LAoJCSJoZWlnaHQiOiAzMDAKCX0KfQpgYGAKCi0gYG9wdGlvbnNgIOKAlCByYXcgRUNoYXJ0cyBvcHRpb24gb2JqZWN0IHBhc3NlZCB0aHJvdWdoIHRvIGBjaGFydC5zZXRPcHRpb24oKWAKCiMjIyBDb2RlCgpgYGBqc29uCnsKCSJ0eXBlIjogImNvZGUiLAoJImNvZGUiOiAiY29uc3QgZ3JlZXRpbmcgPSBcIkhlbGxvIVwiO1xuY29uc29sZS5sb2coZ3JlZXRpbmcpOyIsCgkibGFuZ3VhZ2UiOiAidHMiCn0KYGBgCgotIGBsYW5ndWFnZWAg4oCUIGAidHMiYCwgYCJ0c3giYCwgYCJqc29uYyJgLCBgImJhc2giYCwgb3IgYCJjc3MiYCAoZGVmYXVsdHMgdG8gYCJ0cyJgKQoKIyMjIE1ldGVyCgpgYGBqc29uCnsKCSJ0eXBlIjogIm1ldGVyIiwKCSJsYWJlbCI6ICJTdG9yYWdlIHVzZWQiLAoJInZhbHVlIjogNjUsCgkiY3VzdG9tX3ZhbHVlIjogIjYuNSBHQiAvIDEwIEdCIgp9CmBgYAoKLSBgdmFsdWVgIOKAlCBudW1lcmljIHZhbHVlIChkZWZhdWx0IHJhbmdlIDAtMTAwKQotIGBtYXhgIC8gYG1pbmAg4oCUIGN1c3RvbSByYW5nZSAoZGVmYXVsdHMgdG8gMC0xMDApCi0gYGN1c3RvbV92YWx1ZWAg4oCUIGRpc3BsYXkgc3RyaW5nIGluc3RlYWQgb2YgcGVyY2VudGFnZSAoZS5nLiAiNzUwIC8gMSwwMDAiKQoKIyMjIEJhbm5lcgoKYGBganNvbgp7CgkidHlwZSI6ICJiYW5uZXIiLAoJInRpdGxlIjogIkFQSSBrZXkgaW52YWxpZCIsCgkiZGVzY3JpcHRpb24iOiAiUGxlYXNlIGNoZWNrIHlvdXIgQVBJIGtleSBpbiBzZXR0aW5ncy4iLAoJInZhcmlhbnQiOiAiZXJyb3IiCn0KYGBgCgotIGB2YXJpYW50YCDigJQgYCJkZWZhdWx0ImAgKGluZm8sIGRlZmF1bHQpLCBgImFsZXJ0ImAgKHdhcm5pbmcpLCBvciBgImVycm9yImAKLSBBdCBsZWFzdCBvbmUgb2YgYHRpdGxlYCBvciBgZGVzY3JpcHRpb25gIGlzIHJlcXVpcmVkCgojIyMgRW1wdHkKCmBgYGpzb24KewoJInR5cGUiOiAiZW1wdHkiLAoJInRpdGxlIjogIk5vIHN1Ym1pc3Npb25zIiwKCSJkZXNjcmlwdGlvbiI6ICJOZXcgc3VibWlzc2lvbnMgYXBwZWFyIGhlcmUuIiwKCSJjb21tYW5kX2xpbmUiOiAicG5wbSBydW4gc2VlZCIsCgkic2l6ZSI6ICJiYXNlIiwKCSJhY3Rpb25zIjogW3sgInR5cGUiOiAiYnV0dG9uIiwgImFjdGlvbl9pZCI6ICJyZWZyZXNoIiwgImxhYmVsIjogIlJlZnJlc2giIH1dCn0KYGBgCgojIyMgVGFicwoKVXNlIGB0YWJgIHRvIGdyb3VwIHJlbGF0ZWQgYmxvY2tzIGludG8gbGFiZWxsZWQgcGFuZWxzOgoKYGBganNvbgp7CgkidHlwZSI6ICJ0YWIiLAoJInBhbmVscyI6IFsKCQl7CgkJCSJsYWJlbCI6ICJHZW5lcmFsIiwKCQkJImJsb2NrcyI6IFt7ICJ0eXBlIjogImNvbnRleHQiLCAidGV4dCI6ICJHZW5lcmFsIHNldHRpbmdzIiB9XQoJCX0KCV0KfQpgYGAKCiMjIyBBY2NvcmRpb24KCmBgYGpzb24KewoJInR5cGUiOiAiYWNjb3JkaW9uIiwKCSJsYWJlbCI6ICJBZHZhbmNlZCBzZXR0aW5ncyIsCgkiZGVmYXVsdF9vcGVuIjogZmFsc2UsCgkiYmxvY2tzIjogW3sgInR5cGUiOiAiY29udGV4dCIsICJ0ZXh0IjogIlNldHRpbmdzIHZpc2libGUgd2hlbiBleHBhbmRlZCIgfV0KfQpgYGAKCiMjIFJlcGVhdGVyIGFuZCBtZWRpYSBwaWNrZXIgZWxlbWVudHMKCmByZXBlYXRlcmAgYW5kIGBtZWRpYV9waWNrZXJgIGFyZSBhZG1pbi1hdXRob3JpbmcgZWxlbWVudHMsIG5vdCBvcmRpbmFyeSBmaWVsZHMgaW4gYSBzYW5kYm94ZWQgYWRtaW4tcGFnZSBgZm9ybWAuCgpgcmVwZWF0ZXJgIGNhcHR1cmVzIGFuIGFycmF5IG9mIG9iamVjdHMuIEl0cyBuZXN0ZWQgZmllbGRzIGFyZSBsaW1pdGVkIHRvIGB0ZXh0X2lucHV0YCwgYG51bWJlcl9pbnB1dGAsIGBzZWxlY3RgLCBhbmQgYHRvZ2dsZWA6CgpgYGB0eXBlc2NyaXB0CnsKCSJ0eXBlIjogInJlcGVhdGVyIiwKCSJhY3Rpb25faWQiOiAiaXRlbXMiLAoJImxhYmVsIjogIlF1ZXN0aW9ucyIsCgkiaXRlbV9sYWJlbCI6ICJRdWVzdGlvbiIsCgkiZmllbGRzIjogWwoJCXsgInR5cGUiOiAidGV4dF9pbnB1dCIsICJhY3Rpb25faWQiOiAicXVlc3Rpb24iLCAibGFiZWwiOiAiUXVlc3Rpb24iIH0sCgkJeyAidHlwZSI6ICJ0ZXh0X2lucHV0IiwgImFjdGlvbl9pZCI6ICJhbnN3ZXIiLCAibGFiZWwiOiAiQW5zd2VyIiwgIm11bHRpbGluZSI6IHRydWUgfQoJXQp9CmBgYAoKYG1lZGlhX3BpY2tlcmAgb3BlbnMgdGhlIG1lZGlhIGxpYnJhcnkgYW5kIHN0b3JlcyB0aGUgc2VsZWN0ZWQgYXNzZXQncyBVUkwgc3RyaW5nOgoKYGBgdHlwZXNjcmlwdAp7CgkidHlwZSI6ICJtZWRpYV9waWNrZXIiLAoJImFjdGlvbl9pZCI6ICJoZXJvIiwKCSJsYWJlbCI6ICJIZXJvIGltYWdlIiwKCSJtaW1lX3R5cGVfZmlsdGVyIjogImltYWdlLyIKfQpgYGAKCiMjIERlY2xhcmF0aXZlIGZpZWxkIHdpZGdldHMKClRoZSBhZG1pbiBmaWVsZCBlZGl0b3IgY2FuIHJlbmRlciBhIHBsdWdpbiBmaWVsZCB3aWRnZXQgZnJvbSBCbG9jayBLaXQgZWxlbWVudHMuIEEgc2NoZW1hIGZpZWxkIHJlZmVycyB0byBgcGx1Z2luSWQ6d2lkZ2V0TmFtZWA7IGEgY29uZmlnLWRlY2xhcmVkIHN0YW5kYXJkIGRlc2NyaXB0b3Igc3VwcGxpZXMgYG5hbWVgLCBgbGFiZWxgLCBjb21wYXRpYmxlIGBmaWVsZFR5cGVzYCwgYW5kIGBlbGVtZW50c2AuCgpUaGUgZmllbGQtd2lkZ2V0IHJlbmRlcmVyIGN1cnJlbnRseSBzdXBwb3J0cyBvbmx5IHRoZXNlIGVsZW1lbnRzOgoKLSBgdGV4dF9pbnB1dGAKLSBgbnVtYmVyX2lucHV0YAotIGB0b2dnbGVgCi0gYHNlbGVjdGAKLSBgbWVkaWFfcGlja2VyYAoKSXQgc3RvcmVzIGFuIG9iamVjdCBrZXllZCBieSBlYWNoIGVsZW1lbnQncyBgYWN0aW9uX2lkYC4gVXNlIGEgYGpzb25gIGZpZWxkIGZvciB0aGlzIGNvbXBvc2VkIHZhbHVlOyBvdGhlciBmaWVsZCB0eXBlcyBhcmUgYWNjZXB0ZWQgYnkgdGhlIG1hbmlmZXN0IHNjaGVtYSBidXQgYXJlIG5vdCBjb3ZlcmVkIGJ5IGFuIGVuZC10by1lbmQgc2F2ZSB0ZXN0LiBPdGhlciBlbGVtZW50IHR5cGVzIHJlbmRlciBhbiB1bnN1cHBvcnRlZC1lbGVtZW50IG1lc3NhZ2UuCgpgZW1kYXNoLXBsdWdpbi5qc29uY2AgYWNjZXB0cyB0aGlzIGZpZWxkLXdpZGdldCBkZWZpbml0aW9uLCBhbmQgdGhlIHBsdWdpbiBDTEkgcHJlc2VydmVzIGl0IGluIHRoZSByZWdpc3RyeSBtYW5pZmVzdCBhbmQgZ2VuZXJhdGVkIGRlc2NyaXB0b3IuIFRoZSBhcnRpZmFjdCB0cmFuc3BvcnQgaXMgdGVzdGVkOyB0aGUgcmVwb3NpdG9yeSdzIGJyb3dzZXIgRTJFIHRlc3Qgc3RpbGwgY292ZXJzIGEgbmF0aXZlIFJlYWN0IGZpZWxkIHdpZGdldCByYXRoZXIgdGhhbiBhIHJlZ2lzdHJ5IGRlY2xhcmF0aXZlIHdpZGdldC4gVmVyaWZ5IHRoZSByZW5kZXJlZCBlZGl0b3IgYW5kIHNhdmVkIHZhbHVlIGZvciB0aGUgc2VsZWN0ZWQgZWxlbWVudHMuCgojIyBDb25kaXRpb25hbCBGaWVsZHMKClNob3cvaGlkZSBmaWVsZHMgYmFzZWQgb24gb3RoZXIgZmllbGQgdmFsdWVzLiBFdmFsdWF0ZWQgY2xpZW50LXNpZGUsIG5vIHJvdW5kLXRyaXAuCgpgYGBqc29uCnsKCSJ0eXBlIjogInRvZ2dsZSIsCgkiYWN0aW9uX2lkIjogImF1dGhfZW5hYmxlZCIsCgkibGFiZWwiOiAiRW5hYmxlIEF1dGhlbnRpY2F0aW9uIgp9CmBgYAoKYGBganNvbgp7CgkidHlwZSI6ICJzZWNyZXRfaW5wdXQiLAoJImFjdGlvbl9pZCI6ICJhcGlfa2V5IiwKCSJsYWJlbCI6ICJBUEkgS2V5IiwKCSJjb25kaXRpb24iOiB7ICJmaWVsZCI6ICJhdXRoX2VuYWJsZWQiLCAiZXEiOiB0cnVlIH0KfQpgYGAKCiMjIEJ1aWxkZXIgSGVscGVycwoKYEBlbWRhc2gtY21zL2Jsb2Nrc2AgcHJvdmlkZXMgVHlwZVNjcmlwdCBoZWxwZXJzOgoKYGBgdHlwZXNjcmlwdAppbXBvcnQgeyBibG9ja3MsIGVsZW1lbnRzIH0gZnJvbSAiQGVtZGFzaC1jbXMvYmxvY2tzIjsKCmNvbnN0IHsKCWhlYWRlciwKCWZvcm0sCglzZWN0aW9uLAoJc3RhdHMsCgl0aW1lc2VyaWVzQ2hhcnQsCgljdXN0b21DaGFydCwKCWJhbm5lcjogYmFubmVyQmxvY2ssCgllbXB0eSwKCWFjY29yZGlvbiwKfSA9IGJsb2NrczsKY29uc3QgeyB0ZXh0SW5wdXQsIHRvZ2dsZSwgc2VsZWN0LCBidXR0b24sIHJlcGVhdGVyLCBtZWRpYVBpY2tlciB9ID0gZWxlbWVudHM7CgpyZXR1cm4gewoJYmxvY2tzOiBbCgkJaGVhZGVyKCJTZXR0aW5ncyIpLAoJCWZvcm0oewoJCQlibG9ja0lkOiAic2V0dGluZ3MiLAoJCQlmaWVsZHM6IFsKCQkJCXRleHRJbnB1dCgic2l0ZV90aXRsZSIsICJTaXRlIFRpdGxlIiwgeyBpbml0aWFsVmFsdWU6ICJNeSBTaXRlIiB9KSwKCQkJCXRvZ2dsZSgiZ2VuZXJhdGVfc2l0ZW1hcCIsICJHZW5lcmF0ZSBTaXRlbWFwIiwgeyBpbml0aWFsVmFsdWU6IHRydWUgfSksCgkJCQlzZWxlY3QoInJvYm90cyIsICJEZWZhdWx0IFJvYm90cyIsIFsKCQkJCQl7IGxhYmVsOiAiSW5kZXgsIEZvbGxvdyIsIHZhbHVlOiAiaW5kZXgsZm9sbG93IiB9LAoJCQkJCXsgbGFiZWw6ICJObyBJbmRleCIsIHZhbHVlOiAibm9pbmRleCxmb2xsb3ciIH0sCgkJCQldKSwKCQkJXSwKCQkJc3VibWl0OiB7IGxhYmVsOiAiU2F2ZSIsIGFjdGlvbklkOiAic2F2ZSIgfSwKCQl9KSwKCQkvLyBUaW1lc2VyaWVzIGNoYXJ0CgkJdGltZXNlcmllc0NoYXJ0KHsKCQkJc2VyaWVzOiBbCgkJCQl7CgkJCQkJbmFtZTogIlBhZ2UgVmlld3MiLAoJCQkJCWRhdGE6IFsKCQkJCQkJW0RhdGUubm93KCkgLSAzNjAwMDAwLCAxMDBdLAoJCQkJCQlbRGF0ZS5ub3coKSwgMTUwXSwKCQkJCQldLAoJCQkJfSwKCQkJXSwKCQkJeUF4aXNOYW1lOiAiVmlld3MiLAoJCQlncmFkaWVudDogdHJ1ZSwKCQl9KSwKCQkvLyBQaWUgY2hhcnQgdmlhIGN1c3RvbSBFQ2hhcnRzIG9wdGlvbnMKCQljdXN0b21DaGFydCh7CgkJCW9wdGlvbnM6IHsKCQkJCXNlcmllczogWwoJCQkJCXsKCQkJCQkJdHlwZTogInBpZSIsCgkJCQkJCWRhdGE6IFsKCQkJCQkJCXsgdmFsdWU6IDMzNSwgbmFtZTogIlB1Ymxpc2hlZCIgfSwKCQkJCQkJCXsgdmFsdWU6IDIzNCwgbmFtZTogIkRyYWZ0IiB9LAoJCQkJCQldLAoJCQkJCX0sCgkJCQldLAoJCQl9LAoJCX0pLAoJXSwKfTsKYGBgCgojIyBCdXR0b24gQ29uZmlybWF0aW9ucwoKYGBganNvbgp7CgkidHlwZSI6ICJidXR0b24iLAoJImxhYmVsIjogIkRlbGV0ZSBBbGwiLAoJImFjdGlvbl9pZCI6ICJkZWxldGVfYWxsIiwKCSJzdHlsZSI6ICJkYW5nZXIiLAoJImNvbmZpcm0iOiB7CgkJInRpdGxlIjogIkFyZSB5b3Ugc3VyZT8iLAoJCSJ0ZXh0IjogIlRoaXMgY2Fubm90IGJlIHVuZG9uZS4iLAoJCSJjb25maXJtIjogIkRlbGV0ZSIsCgkJImRlbnkiOiAiQ2FuY2VsIgoJfQp9CmBgYAoKIyMgU2F2ZWQtZW50cnkgcGFuZWxzIGFuZCBhY3Rpb25zCgpgYWRtaW4uZWRpdG9yUGFuZWxzYCBhbmQgYGFkbWluLmVkaXRvckFjdGlvbnNgIHBvaW50IHRvIHByaXZhdGUgcGx1Z2luIHJvdXRlcy4gUGFuZWwgcm91dGVzIHJldHVybiBCbG9jayBLaXQgYW5kIHJlY2VpdmUgYHBhbmVsX2xvYWRgLCBgYmxvY2tfYWN0aW9uYCwgb3IgYGZvcm1fc3VibWl0YC4gQWN0aW9uIHJvdXRlcyByZWNlaXZlIGBlZGl0b3JfYWN0aW9uYCBhbmQgcmV0dXJuIG9ubHkgdGhlc2UgYm91bmRlZCBmaWVsZHM6CgpgYGB0eXBlc2NyaXB0CnsKCXRvYXN0PzogeyBtZXNzYWdlOiBzdHJpbmc7IHR5cGU6ICJzdWNjZXNzIiB8ICJlcnJvciIgfCAiaW5mbyIgfTsKCXJlZnJlc2g/OiB0cnVlOwoJbmF2aWdhdGU/OiBMaW5rVGFyZ2V0OwoJcGF0Y2g/OiBFZGl0b3JEcmFmdFBhdGNoRWZmZWN0Owp9CmBgYAoKVXNlIG9ubHkgb25lIG9mIGByZWZyZXNoYCwgYG5hdmlnYXRlYCwgb3IgYHBhdGNoYC4gTmF2aWdhdGlvbiB1c2VzIHRoZSBzYW1lIHN0cnVjdHVyZWQgdGFyZ2V0IHZhbGlkYXRvciBhcyBgbGlua2AgZWxlbWVudHMuIEEgZGFuZ2VyIGFjdGlvbiBkZWNsYXJhdGlvbiBtdXN0IGluY2x1ZGUgYSBjb25maXJtYXRpb24gZGlhbG9nLgoKRm9yIGJvdGggc3VyZmFjZXMsIGByb3V0ZUN0eC51aS5lbnRyeWAgY29udGFpbnMgdGhlIGhvc3QtcmVsb2FkZWQgY29sbGVjdGlvbiwgc2F2ZWQgZW50cnkgSUQsIGNvbnRlbnQgbG9jYWxlLCBhbmQgdmVyc2lvbi4gYHJvdXRlQ3R4LnVpLmV4dGVuc2lvbklkYCBpZGVudGlmaWVzIHRoZSBtYW5pZmVzdCBkZWNsYXJhdGlvbi4gT3JkaW5hcnkgcGFuZWwgbG9hZCBjb250YWlucyBubyBkcmFmdC4gQW4gZXhwbGljaXQgaW50ZXJhY3Rpb24gaW5jbHVkZXMgc2VsZWN0ZWQgdW5zYXZlZCBmaWVsZHMgb25seSB3aGVuIHRoZSBwbHVnaW4gaGFzIGBhZG1pbi5lZGl0b3ItZHJhZnQ6cmVhZGAgYW5kIHRoZSBleHRlbnNpb24gZGVjbGFyZXMgYm91bmRlZCBgZHJhZnQucmVhZGAgYWNjZXNzLiBgYWRtaW4uZWRpdG9yLWRyYWZ0OnBhdGNoYCBzZXBhcmF0ZWx5IHBlcm1pdHMgYXRvbWljIHdob2xlLWZpZWxkIGBzZXRgIGFuZCBgY2xlYXJgIHByb3Bvc2FscyBmb3IgZmllbGRzIGluIGBkcmFmdC5wYXRjaGA7IHRoZSBob3N0IHByZXZpZXdzIGFjY2VwdGVkIGNoYW5nZXMgd2l0aG91dCBzYXZpbmcgdGhlbS4KCiMjIExpbmtzIGFuZCBhZG1pbiBsb2NhbGUKClVzZSBhIHN0cnVjdHVyZWQgbGluayB0YXJnZXQgaW5zdGVhZCBvZiByZXR1cm5pbmcgYW4gYWRtaW4gVVJMOgoKYGBganNvbgp7CgkidHlwZSI6ICJsaW5rIiwKCSJsYWJlbCI6ICJFZGl0IGFydGljbGUiLAoJInRhcmdldCI6IHsgImtpbmQiOiAiY29udGVudCIsICJjb2xsZWN0aW9uIjogInBvc3RzIiwgImlkIjogInBvc3QtMSIsICJsb2NhbGUiOiAiYXIiIH0sCgkiYXBwZWFyYW5jZSI6ICJwcmltYXJ5Igp9CmBgYAoKVGFyZ2V0cyBjYW4gaWRlbnRpZnkgc2F2ZWQgY29udGVudCwgYSBwYWdlIGRlY2xhcmVkIGJ5IHRoZSBzYW1lIHBsdWdpbiwgdGhlIHBsdWdpbidzIGdlbmVyYXRlZCBzZXR0aW5ncyBwYWdlLCBvciBhbiBhYnNvbHV0ZSBleHRlcm5hbCBIVFRQLCBIVFRQUywgb3IgYG1haWx0bzpgIFVSTC4gRXh0ZXJuYWwgbGlua3Mgb3BlbiBpbiBhIG5ldyB0YWIgd2l0aCBgbm9vcGVuZXIgbm9yZWZlcnJlcmAuIEEgbGluayBoYXMgbm8gYGFjdGlvbl9pZGA7IHVzZSBhIGJ1dHRvbiB3aGVuIHRoZSBpbnRlcmFjdGlvbiBtdXN0IGNhbGwgdGhlIHBsdWdpbi4KCkV2ZXJ5IHBhZ2UgYW5kIHdpZGdldCByZXNwb25zZSBpcyB2YWxpZGF0ZWQgYmVmb3JlIHJlbmRlcmluZy4gUmVzcG9uc2VzIGFyZSBsaW1pdGVkIHRvIDI1NiBLaUIsIDIwIG5lc3RlZCBsZXZlbHMsIDIsMDAwIG5vZGVzLCAxLDAwMCBpdGVtcyBwZXIgYXJyYXksIGFuZCA2NCBLaUIgcGVyIHN0cmluZy4gUm9vdC1yZWxhdGl2ZSBpbWFnZSBVUkxzIGFyZSBhY2NlcHRlZC4gRXh0ZXJuYWwgaW1hZ2VzIHJlcXVpcmUgSFRUUFMgYW5kIGVpdGhlciBgbmV0d29yazpyZXF1ZXN0YCB3aXRoIHRoZSBob3N0bmFtZSBpbiB0aGUgcGx1Z2luIG1hbmlmZXN0J3MgYGFsbG93ZWRIb3N0c2AsIG9yIGBuZXR3b3JrOnJlcXVlc3Q6dW5yZXN0cmljdGVkYC4KClRoZSBhZG1pbiByb3V0ZSByZWNlaXZlcyBob3N0LWF0dGVzdGVkIFVJIGNvbnRleHQgc2VwYXJhdGVseSBmcm9tIHRoZSBpbnRlcmFjdGlvbjoKCmBgYHR5cGVzY3JpcHQKY29uc3QgeyBsb2NhbGUsIGRpcmVjdGlvbiwgc3VyZmFjZSB9ID0gcm91dGVDdHgudWkgPz8gewoJbG9jYWxlOiAiZW4iLAoJZGlyZWN0aW9uOiAibHRyIiwKCXN1cmZhY2U6ICJhZG1pbi1wYWdlIiwKfTsKYGBgCgpUaGUgVUkgbG9jYWxlIGlzIHRoZSBhZG1pbmlzdHJhdG9yJ3MgYWN0aXZlIGxvY2FsZS4gSXQgaXMgc2VwYXJhdGUgZnJvbSB0aGUgc2l0ZSdzIGRlZmF1bHQgY29udGVudCBsb2NhbGUgaW4gYGN0eC5zaXRlLmxvY2FsZWAuIFJ1bnRpbWUgcGFnZSBsYWJlbHMgY2FuIHVzZSBpdCB0byBzZWxlY3QgbG9jYWxpemVkIEJsb2NrIEtpdCB0ZXh0OyBtYW5pZmVzdCBuYXZpZ2F0aW9uIGxhYmVscyByZW1haW4gc3RhdGljLgoKIyMgVG9hc3QgUmVzcG9uc2VzCgpSZXR1cm4gYSBgdG9hc3RgIGFsb25nc2lkZSBibG9ja3MgdG8gc2hvdyBhIG5vdGlmaWNhdGlvbjoKCmBgYHR5cGVzY3JpcHQKcmV0dXJuIHsKCWJsb2NrczogWy8qIC4uLiAqL10sCgl0b2FzdDogeyBtZXNzYWdlOiAiU2V0dGluZ3Mgc2F2ZWQiLCB0eXBlOiAic3VjY2VzcyIgfSwgLy8gInN1Y2Nlc3MiIHwgImVycm9yIiB8ICJpbmZvIgp9OwpgYGAK
+# Block Kit
+
+Declarative JSON UI for sandboxed plugin admin pages. The host renders blocks — no plugin JavaScript runs in the browser. Inspired by Slack's Block Kit but not identical — similar concepts and naming, different block/element types and capabilities.
+
+Trusted plugins (declared in `astro.config.ts`) can ship custom React components instead. Block Kit is for runtime-installed sandboxed plugins.
+
+Native plugins also use Block Kit elements for [Portable Text block editing fields](./portable-text-blocks.md). Plugin CLI and registry packages cannot register Portable Text block types.
+
+## How It Works
+
+1. User navigates to plugin admin page
+2. Admin sends `page_load` interaction to plugin's admin route
+3. Plugin returns `BlockResponse` with array of blocks
+4. Admin renders blocks using `BlockRenderer`
+5. User interacts (button click, form submit) → interaction sent back
+6. Plugin returns new blocks
+
+```typescript
+import type { BlockInteraction } from "@emdash-cms/blocks";
+
+routes: {
+	admin: {
+		handler: async (ctx) => {
+			// EmDash parses the request body once and exposes it as ctx.input;
+			// read it directly rather than ctx.request.json() (the body is consumed).
+			// BlockInteraction is the discriminated union of page_load,
+			// block_action, and form_submit payloads.
+			const interaction = ctx.input as BlockInteraction;
+
+			if (interaction.type === "page_load") {
+				return {
+					blocks: [
+						{ type: "header", text: "My Plugin Settings" },
+						{
+							type: "form",
+							block_id: "settings",
+							fields: [
+								{ type: "text_input", action_id: "api_url", label: "API URL" },
+								{ type: "toggle", action_id: "enabled", label: "Enabled", initial_value: true },
+							],
+							submit: { label: "Save", action_id: "save" },
+						},
+					],
+				};
+			}
+
+			if (interaction.type === "form_submit" && interaction.action_id === "save") {
+				await ctx.kv.set("settings", interaction.values);
+				return {
+					blocks: [/* updated blocks */],
+					toast: { message: "Settings saved", type: "success" },
+				};
+			}
+		},
+	},
+}
+```
+
+## Block Types
+
+| Type        | Description                                         |
+| ----------- | --------------------------------------------------- |
+| `header`    | Large bold heading                                  |
+| `section`   | Text with optional accessory element                |
+| `divider`   | Horizontal rule                                     |
+| `fields`    | Two-column label/value grid                         |
+| `table`     | Data table with formatting, sorting, pagination     |
+| `actions`   | Horizontal row of buttons and controls              |
+| `stats`     | Dashboard metric cards with trend indicators        |
+| `form`      | Input fields with conditional visibility and submit |
+| `image`     | Block-level image with alt text and optional title  |
+| `context`   | Small muted help text                               |
+| `columns`   | 2-3 column layout with nested blocks                |
+| `chart`     | Charts (timeseries line/bar, pie, custom ECharts)   |
+| `code`      | Syntax-highlighted code block                       |
+| `meter`     | Progress/quota meter bar                            |
+| `banner`    | Info, warning, or error inline messages             |
+| `empty`     | Empty state with optional command and actions       |
+| `accordion` | Collapsible section containing nested blocks        |
+
+## Element Types
+
+| Type           | Description                                               |
+| -------------- | --------------------------------------------------------- |
+| `button`       | Action button with optional confirmation dialog           |
+| `link`         | Host-resolved navigation that does not dispatch an action |
+| `text_input`   | Single-line or multiline text input                       |
+| `number_input` | Numeric input with min/max                                |
+| `select`       | Dropdown select                                           |
+| `toggle`       | On/off switch                                             |
+| `secret_input` | Masked input for API keys and tokens                      |
+| `checkbox`     | Multi-select checkboxes                                   |
+| `radio`        | Single-select radio buttons                               |
+| `date_input`   | Date picker                                               |
+| `combobox`     | Searchable dropdown select                                |
+| `repeater`     | Array of records with scalar sub-fields                   |
+| `media_picker` | Media-library picker that stores the asset URL            |
+
+## Block Syntax
+
+### Header
+
+```json
+{ "type": "header", "text": "Settings" }
+```
+
+### Section
+
+```json
+{
+	"type": "section",
+	"text": "Configure your plugin settings below.",
+	"accessory": { "type": "button", "label": "Refresh", "action_id": "refresh" }
+}
+```
+
+### Divider
+
+```json
+{ "type": "divider" }
+```
+
+### Fields
+
+```json
+{
+	"type": "fields",
+	"fields": [
+		{ "label": "Status", "value": "Active" },
+		{ "label": "Last Sync", "value": "2 hours ago" }
+	]
+}
+```
+
+### Stats
+
+```json
+{
+	"type": "stats",
+	"items": [
+		{ "label": "Total", "value": "1,234", "trend": "up", "description": "+12% vs last week" },
+		{ "label": "Active", "value": "567" }
+	]
+}
+```
+
+- `items` — the array key is `items`, not `stats`
+- `trend` — `"up"`, `"down"`, or `"neutral"`; renders an arrow icon next to the value
+- `description` — secondary line beneath the value, for context such as "+12% vs last week"
+
+### Table
+
+```json
+{
+	"type": "table",
+	"columns": [
+		{ "key": "name", "label": "Name" },
+		{ "key": "status", "label": "Status" },
+		{ "key": "date", "label": "Date" }
+	],
+	"rows": [{ "name": "Item 1", "status": "Active", "date": "2025-01-01" }],
+	"page_action_id": "browse_items",
+	"empty_text": "No items yet."
+}
+```
+
+- `page_action_id` — required. The admin sends it as the `block_action` id when the user sorts a column or pages through results.
+- `empty_text` — shown in place of the table when `rows` is empty
+- `next_cursor` — set it to render a "Load more" control
+
+### Actions
+
+```json
+{
+	"type": "actions",
+	"elements": [
+		{ "type": "button", "label": "Save", "action_id": "save", "style": "primary" },
+		{ "type": "button", "label": "Cancel", "action_id": "cancel" }
+	]
+}
+```
+
+### Form
+
+```json
+{
+	"type": "form",
+	"block_id": "settings",
+	"fields": [
+		{ "type": "text_input", "action_id": "name", "label": "Name" },
+		{ "type": "number_input", "action_id": "count", "label": "Count", "min": 0, "max": 100 },
+		{
+			"type": "select",
+			"action_id": "theme",
+			"label": "Theme",
+			"options": [
+				{ "label": "Light", "value": "light" },
+				{ "label": "Dark", "value": "dark" }
+			]
+		},
+		{ "type": "toggle", "action_id": "enabled", "label": "Enabled", "initial_value": true },
+		{ "type": "secret_input", "action_id": "api_key", "label": "API Key" }
+	],
+	"submit": { "label": "Save", "action_id": "save_settings" }
+}
+```
+
+### Columns
+
+```json
+{
+	"type": "columns",
+	"columns": [
+		[
+			{ "type": "header", "text": "Usage" },
+			{ "type": "meter", "label": "Storage used", "value": 65 }
+		],
+		[
+			{ "type": "header", "text": "Activity" },
+			{ "type": "context", "text": "Last sync 2 hours ago" }
+		]
+	]
+}
+```
+
+- `columns` — 2 or 3 columns, each one an array of blocks
+
+### Chart (Timeseries)
+
+```json
+{
+	"type": "chart",
+	"config": {
+		"chart_type": "timeseries",
+		"series": [
+			{
+				"name": "Requests",
+				"data": [
+					[1709596800000, 42],
+					[1709600400000, 67],
+					[1709604000000, 53]
+				],
+				"color": "#086FFF"
+			},
+			{
+				"name": "Errors",
+				"data": [
+					[1709596800000, 2],
+					[1709600400000, 5],
+					[1709604000000, 1]
+				]
+			}
+		],
+		"x_axis_name": "Time",
+		"y_axis_name": "Count",
+		"style": "line",
+		"gradient": true,
+		"height": 300
+	}
+}
+```
+
+- `series[].data` — array of `[timestamp_ms, value]` tuples
+- `series[].color` — hex color (optional, auto-assigned from Kumo palette)
+- `style` — `"line"` (default) or `"bar"`
+- `gradient` — fill gradient beneath lines (default false)
+- `height` — chart height in pixels (default 350)
+
+### Chart (Custom)
+
+For pie charts, gauges, or any ECharts visualization:
+
+```json
+{
+	"type": "chart",
+	"config": {
+		"chart_type": "custom",
+		"options": {
+			"series": [
+				{
+					"type": "pie",
+					"data": [
+						{ "value": 335, "name": "Published" },
+						{ "value": 234, "name": "Draft" },
+						{ "value": 120, "name": "Scheduled" }
+					]
+				}
+			]
+		},
+		"height": 300
+	}
+}
+```
+
+- `options` — raw ECharts option object passed through to `chart.setOption()`
+
+### Code
+
+```json
+{
+	"type": "code",
+	"code": "const greeting = \"Hello!\";\nconsole.log(greeting);",
+	"language": "ts"
+}
+```
+
+- `language` — `"ts"`, `"tsx"`, `"jsonc"`, `"bash"`, or `"css"` (defaults to `"ts"`)
+
+### Meter
+
+```json
+{
+	"type": "meter",
+	"label": "Storage used",
+	"value": 65,
+	"custom_value": "6.5 GB / 10 GB"
+}
+```
+
+- `value` — numeric value (default range 0-100)
+- `max` / `min` — custom range (defaults to 0-100)
+- `custom_value` — display string instead of percentage (e.g. "750 / 1,000")
+
+### Banner
+
+```json
+{
+	"type": "banner",
+	"title": "API key invalid",
+	"description": "Please check your API key in settings.",
+	"variant": "error"
+}
+```
+
+- `variant` — `"default"` (info, default), `"alert"` (warning), or `"error"`
+- At least one of `title` or `description` is required
+
+### Empty
+
+```json
+{
+	"type": "empty",
+	"title": "No submissions",
+	"description": "New submissions appear here.",
+	"command_line": "pnpm run seed",
+	"size": "base",
+	"actions": [{ "type": "button", "action_id": "refresh", "label": "Refresh" }]
+}
+```
+
+### Tabs
+
+Use `tab` to group related blocks into labelled panels:
+
+```json
+{
+	"type": "tab",
+	"panels": [
+		{
+			"label": "General",
+			"blocks": [{ "type": "context", "text": "General settings" }]
+		}
+	]
+}
+```
+
+### Accordion
+
+```json
+{
+	"type": "accordion",
+	"label": "Advanced settings",
+	"default_open": false,
+	"blocks": [{ "type": "context", "text": "Settings visible when expanded" }]
+}
+```
+
+## Repeater and media picker elements
+
+`repeater` and `media_picker` are admin-authoring elements, not ordinary fields in a sandboxed admin-page `form`.
+
+`repeater` captures an array of objects. Its nested fields are limited to `text_input`, `number_input`, `select`, and `toggle`:
+
+```typescript
+{
+	"type": "repeater",
+	"action_id": "items",
+	"label": "Questions",
+	"item_label": "Question",
+	"fields": [
+		{ "type": "text_input", "action_id": "question", "label": "Question" },
+		{ "type": "text_input", "action_id": "answer", "label": "Answer", "multiline": true }
+	]
+}
+```
+
+`media_picker` opens the media library and stores the selected asset's URL string:
+
+```typescript
+{
+	"type": "media_picker",
+	"action_id": "hero",
+	"label": "Hero image",
+	"mime_type_filter": "image/"
+}
+```
+
+## Declarative field widgets
+
+The admin field editor can render a plugin field widget from Block Kit elements. A schema field refers to `pluginId:widgetName`; a config-declared standard descriptor supplies `name`, `label`, compatible `fieldTypes`, and `elements`.
+
+The field-widget renderer currently supports only these elements:
+
+- `text_input`
+- `number_input`
+- `toggle`
+- `select`
+- `media_picker`
+
+It stores an object keyed by each element's `action_id`. Use a `json` field for this composed value; other field types are accepted by the manifest schema but are not covered by an end-to-end save test. Other element types render an unsupported-element message.
+
+`emdash-plugin.jsonc` accepts this field-widget definition, and the plugin CLI preserves it in the registry manifest and generated descriptor. The artifact transport is tested; the repository's browser E2E test still covers a native React field widget rather than a registry declarative widget. Verify the rendered editor and saved value for the selected elements.
+
+## Conditional Fields
+
+Show/hide fields based on other field values. Evaluated client-side, no round-trip.
+
+```json
+{
+	"type": "toggle",
+	"action_id": "auth_enabled",
+	"label": "Enable Authentication"
+}
+```
+
+```json
+{
+	"type": "secret_input",
+	"action_id": "api_key",
+	"label": "API Key",
+	"condition": { "field": "auth_enabled", "eq": true }
+}
+```
+
+## Builder Helpers
+
+`@emdash-cms/blocks` provides TypeScript helpers:
+
+```typescript
+import { blocks, elements } from "@emdash-cms/blocks";
+
+const {
+	header,
+	form,
+	section,
+	stats,
+	timeseriesChart,
+	customChart,
+	banner: bannerBlock,
+	empty,
+	accordion,
+} = blocks;
+const { textInput, toggle, select, button, repeater, mediaPicker } = elements;
+
+return {
+	blocks: [
+		header("Settings"),
+		form({
+			blockId: "settings",
+			fields: [
+				textInput("site_title", "Site Title", { initialValue: "My Site" }),
+				toggle("generate_sitemap", "Generate Sitemap", { initialValue: true }),
+				select("robots", "Default Robots", [
+					{ label: "Index, Follow", value: "index,follow" },
+					{ label: "No Index", value: "noindex,follow" },
+				]),
+			],
+			submit: { label: "Save", actionId: "save" },
+		}),
+		// Timeseries chart
+		timeseriesChart({
+			series: [
+				{
+					name: "Page Views",
+					data: [
+						[Date.now() - 3600000, 100],
+						[Date.now(), 150],
+					],
+				},
+			],
+			yAxisName: "Views",
+			gradient: true,
+		}),
+		// Pie chart via custom ECharts options
+		customChart({
+			options: {
+				series: [
+					{
+						type: "pie",
+						data: [
+							{ value: 335, name: "Published" },
+							{ value: 234, name: "Draft" },
+						],
+					},
+				],
+			},
+		}),
+	],
+};
+```
+
+## Button Confirmations
+
+```json
+{
+	"type": "button",
+	"label": "Delete All",
+	"action_id": "delete_all",
+	"style": "danger",
+	"confirm": {
+		"title": "Are you sure?",
+		"text": "This cannot be undone.",
+		"confirm": "Delete",
+		"deny": "Cancel"
+	}
+}
+```
+
+## Saved-entry panels and actions
+
+`admin.editorPanels` and `admin.editorActions` point to private plugin routes. Panel routes return Block Kit and receive `panel_load`, `block_action`, or `form_submit`. Action routes receive `editor_action` and return only these bounded fields:
+
+```typescript
+{
+	toast?: { message: string; type: "success" | "error" | "info" };
+	refresh?: true;
+	navigate?: LinkTarget;
+	patch?: EditorDraftPatchEffect;
+}
+```
+
+Use only one of `refresh`, `navigate`, or `patch`. Navigation uses the same structured target validator as `link` elements. A danger action declaration must include a confirmation dialog.
+
+For both surfaces, `routeCtx.ui.entry` contains the host-reloaded collection, saved entry ID, content locale, and version. `routeCtx.ui.extensionId` identifies the manifest declaration. Ordinary panel load contains no draft. An explicit interaction includes selected unsaved fields only when the plugin has `admin.editor-draft:read` and the extension declares bounded `draft.read` access. `admin.editor-draft:patch` separately permits atomic whole-field `set` and `clear` proposals for fields in `draft.patch`; the host previews accepted changes without saving them.
+
+## Links and admin locale
+
+Use a structured link target instead of returning an admin URL:
+
+```json
+{
+	"type": "link",
+	"label": "Edit article",
+	"target": { "kind": "content", "collection": "posts", "id": "post-1", "locale": "ar" },
+	"appearance": "primary"
+}
+```
+
+Targets can identify saved content, a page declared by the same plugin, the plugin's generated settings page, or an absolute external HTTP, HTTPS, or `mailto:` URL. External links open in a new tab with `noopener noreferrer`. A link has no `action_id`; use a button when the interaction must call the plugin.
+
+Every page and widget response is validated before rendering. Responses are limited to 256 KiB, 20 nested levels, 2,000 nodes, 1,000 items per array, and 64 KiB per string. Root-relative image URLs are accepted. External images require HTTPS and either `network:request` with the hostname in the plugin manifest's `allowedHosts`, or `network:request:unrestricted`.
+
+The admin route receives host-attested UI context separately from the interaction:
+
+```typescript
+const { locale, direction, surface } = routeCtx.ui ?? {
+	locale: "en",
+	direction: "ltr",
+	surface: "admin-page",
+};
+```
+
+The UI locale is the administrator's active locale. It is separate from the site's default content locale in `ctx.site.locale`. Runtime page labels can use it to select localized Block Kit text; manifest navigation labels remain static.
+
+## Toast Responses
+
+Return a `toast` alongside blocks to show a notification:
+
+```typescript
+return {
+	blocks: [/* ... */],
+	toast: { message: "Settings saved", type: "success" }, // "success" | "error" | "info"
+};
+```

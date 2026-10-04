@@ -1,1 +1,411 @@
-IyBRdWVyeWluZyBhbmQgUmVuZGVyaW5nIENvbnRlbnQKCiMjIENvbnRlbnQgUXVlcmllcwoKQWxsIHF1ZXJ5IGZ1bmN0aW9ucyBhcmUgaW1wb3J0ZWQgZnJvbSBgImVtZGFzaCJgLgoKIyMjIGdldEVtRGFzaENvbGxlY3Rpb24KCkZldGNoIG11bHRpcGxlIGVudHJpZXMgZnJvbSBhIGNvbGxlY3Rpb24uIFJldHVybnMgYHsgZW50cmllcywgZXJyb3IsIGNhY2hlSGludCwgbmV4dEN1cnNvciB9YC4KCmBgYHR5cGVzY3JpcHQKaW1wb3J0IHsgZ2V0RW1EYXNoQ29sbGVjdGlvbiB9IGZyb20gImVtZGFzaCI7CgovLyBCYXNpYwpjb25zdCB7IGVudHJpZXM6IHBvc3RzIH0gPSBhd2FpdCBnZXRFbURhc2hDb2xsZWN0aW9uKCJwb3N0cyIpOwoKLy8gV2l0aCBvcHRpb25zCmNvbnN0IHsgZW50cmllczogcG9zdHMsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoQ29sbGVjdGlvbigicG9zdHMiLCB7CglzdGF0dXM6ICJwdWJsaXNoZWQiLAoJbGltaXQ6IDEwLAoJb3JkZXJCeTogeyBwdWJsaXNoZWRfYXQ6ICJkZXNjIiB9LAoJd2hlcmU6IHsgY2F0ZWdvcnk6ICJuZXdzIiB9LAp9KTsKYGBgCgpPcHRpb25zOgoKLSBgc3RhdHVzYCAtLSBmaWx0ZXIgYnkgc3RhdHVzIChgInB1Ymxpc2hlZCJgLCBgImRyYWZ0ImAsIGV0Yy4pCi0gYGxpbWl0YCAtLSBtYXggZW50cmllcwotIGBjdXJzb3JgIC0tIG9wYXF1ZSBjdXJzb3IgZm9yIGtleXNldCBwYWdpbmF0aW9uIChwYXNzIGBuZXh0Q3Vyc29yYCBmcm9tIGEgcHJldmlvdXMgcmVzdWx0KQotIGBvcmRlckJ5YCAtLSBgeyBmaWVsZDogImFzYyIgfCAiZGVzYyIgfWAgKGRlZmF1bHQ6IGB7IGNyZWF0ZWRfYXQ6ICJkZXNjIiB9YCkKLSBgd2hlcmVgIC0tIGZpbHRlciBieSBmaWVsZCB2YWx1ZXMgb3IgdGF4b25vbXkgdGVybXMuIFN1cHBvcnRzIGFycmF5cyBmb3IgT1I6IGB7IGNhdGVnb3J5OiBbIm5ld3MiLCAiZmVhdHVyZWQiXSB9YAotIGBsb2NhbGVgIC0tIGZpbHRlciBieSBsb2NhbGUgKHdoZW4gaTE4biBpcyBjb25maWd1cmVkKQoKIyMjIGdldEVtRGFzaEVudHJ5CgpGZXRjaCBhIHNpbmdsZSBlbnRyeSBieSBzbHVnLiBSZXR1cm5zIGB7IGVudHJ5LCBlcnJvciwgaXNQcmV2aWV3LCBjYWNoZUhpbnQgfWAuCgpgYGB0eXBlc2NyaXB0CmltcG9ydCB7IGdldEVtRGFzaEVudHJ5IH0gZnJvbSAiZW1kYXNoIjsKCmNvbnN0IHsgZW50cnk6IHBvc3QsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoRW50cnkoInBvc3RzIiwgc2x1Zyk7CgppZiAoIXBvc3QpIHsKCXJldHVybiBBc3Ryby5yZWRpcmVjdCgiLzQwNCIpOwp9CmBgYAoKIyMjIEVudHJ5IFNoYXBlCgpgYGB0eXBlc2NyaXB0CmludGVyZmFjZSBDb250ZW50RW50cnk8VD4gewoJaWQ6IHN0cmluZzsgLy8gVGhlIHNsdWcgKHVzZWQgaW4gVVJMcykKCWRhdGE6IFQ7IC8vIEFsbCBmaWVsZHMsIGluY2x1ZGluZyBzeXN0ZW0gZmllbGRzCgllZGl0OiBFZGl0UHJveHk7IC8vIFZpc3VhbCBlZGl0aW5nIGF0dHJpYnV0ZXMgKHNwcmVhZCBvbnRvIGVsZW1lbnRzKQp9CgovLyBkYXRhIGluY2x1ZGVzIHN5c3RlbSBmaWVsZHMgcGx1cyB5b3VyIGN1c3RvbSBmaWVsZHM6CmludGVyZmFjZSBQb3N0RGF0YSB7CglpZDogc3RyaW5nOyAvLyBEYXRhYmFzZSBVTElEICh1c2UgZm9yIHRheG9ub215IGxvb2t1cHMsIGV0Yy4pCglzbHVnOiBzdHJpbmc7CglzdGF0dXM6IHN0cmluZzsKCXRpdGxlOiBzdHJpbmc7CglmZWF0dXJlZF9pbWFnZT86IHsKCQlpZDogc3RyaW5nOwoJCXNyYz86IHN0cmluZzsKCQlhbHQ/OiBzdHJpbmc7CgkJd2lkdGg/OiBudW1iZXI7CgkJaGVpZ2h0PzogbnVtYmVyOwoJfTsKCWNvbnRlbnQ/OiBQb3J0YWJsZVRleHRCbG9ja1tdOwoJY3JlYXRlZEF0OiBEYXRlOwoJdXBkYXRlZEF0OiBEYXRlOwoJcHVibGlzaGVkQXQ6IERhdGUgfCBudWxsOwoJLy8gQnlsaW5lcyAoZWFnZXJseSBsb2FkZWQpCglieWxpbmU6IEJ5bGluZVN1bW1hcnkgfCBudWxsOyAvLyBQcmltYXJ5IGF1dGhvcgoJYnlsaW5lczogQ29udGVudEJ5bGluZUNyZWRpdFtdOyAvLyBBbGwgY3JlZGl0cyAod2l0aCByb2xlTGFiZWwsIHNvdXJjZSkKCS8vIC4uLiB5b3VyIGN1c3RvbSBmaWVsZHMKfQpgYGAKCioqSW1wb3J0YW50OioqIGBlbnRyeS5pZGAgaXMgdGhlIHNsdWcgKGZvciBVUkxzKSwgYGVudHJ5LmRhdGEuaWRgIGlzIHRoZSBkYXRhYmFzZSBVTElEIChmb3IgQVBJIGNhbGxzIGxpa2UgYGdldEVudHJ5VGVybXNgKS4KCiMjIyBDYWNoaW5nCgpRdWVyeSByZXN1bHRzIGluY2x1ZGUgYSBgY2FjaGVIaW50YCBmb3IgQXN0cm8ncyBSb3V0ZSBDYWNoaW5nOgoKYGBgYXN0cm8KLS0tCmNvbnN0IHsgZW50cmllczogcG9zdHMsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoQ29sbGVjdGlvbigicG9zdHMiKTsKaWYgKEFzdHJvLmNhY2hlPy5lbmFibGVkKSBBc3Ryby5jYWNoZS5zZXQoY2FjaGVIaW50KTsKLS0tCmBgYAoKV2hlbiBBc3RybydzIHJvdXRlIGNhY2hlIGlzIGVuYWJsZWQsIGNhbGwgYEFzdHJvLmNhY2hlLnNldChjYWNoZUhpbnQpYCBzbyBwdWJsaXNoaW5nIGludmFsaWRhdGVzIGNhY2hlZCBvdXRwdXQuCgojIyBSZW5kZXJpbmcgUG9ydGFibGUgVGV4dAoKIyMjIFBvcnRhYmxlVGV4dCBjb21wb25lbnQKCmBgYGFzdHJvCi0tLQppbXBvcnQgeyBQb3J0YWJsZVRleHQgfSBmcm9tICJlbWRhc2gvdWkiOwotLS0KPFBvcnRhYmxlVGV4dCB2YWx1ZT17cG9zdC5kYXRhLmNvbnRlbnR9IC8+CmBgYAoKUmVuZGVycyBzdGFuZGFyZCBibG9ja3MgKHBhcmFncmFwaHMsIGhlYWRpbmdzLCBsaXN0cywgYmxvY2txdW90ZXMsIGNvZGUgYmxvY2tzLCBpbWFnZXMpIGFuZCBpbmxpbmUgbWFya3MgKGJvbGQsIGl0YWxpYywgY29kZSwgc3RyaWtldGhyb3VnaCwgbGlua3MpLgoKIyMjIEN1c3RvbSBibG9jayB0eXBlcwoKRm9yIGN1c3RvbSBQb3J0YWJsZSBUZXh0IG9iamVjdHMgdGhhdCBiZWxvbmcgaW5zaWRlIGEgcmljaC10ZXh0IGRvY3VtZW50LCBwYXNzIGEgYGNvbXBvbmVudHNgIHByb3A6CgpgYGBhc3RybwotLS0KaW1wb3J0IHsgUG9ydGFibGVUZXh0IH0gZnJvbSAiZW1kYXNoL3VpIjsKaW1wb3J0IERpYWdyYW0gZnJvbSAiLi9ibG9ja3MvRGlhZ3JhbS5hc3RybyI7Cgpjb25zdCBjdXN0b21UeXBlcyA9IHsKCSJwdWJsaWNhdGlvbi5kaWFncmFtIjogRGlhZ3JhbSwKfTsKLS0tCjxQb3J0YWJsZVRleHQgdmFsdWU9e3BhZ2UuZGF0YS5jb250ZW50fSBjb21wb25lbnRzPXt7IHR5cGU6IGN1c3RvbVR5cGVzIH19IC8+CmBgYAoKRWFjaCBjdXN0b20gY29tcG9uZW50IHJlY2VpdmVzIHRoZSBibG9jayBkYXRhIGFzIHByb3BzLgoKIyMgUmVuZGVyaW5nIGEgYmxvY2tzIGZpZWxkCgpVc2UgYEJsb2Nrc2AgZm9yIGFuIG9yZGVyZWQgY29tcG9zaXRpb24gc3RvcmVkIGluIGEgYGJsb2Nrc2AgY29sbGVjdGlvbiBmaWVsZC4gTWFwIGVhY2ggZ2VuZXJhdGVkIGBfdHlwZWAgdG8gYW4gQXN0cm8gY29tcG9uZW50IGF0IHRoZSBjYWxsIHNpdGUuCgpgYGBhc3RybwotLS0KaW1wb3J0IHsgQmxvY2tzLCBkZWZpbmVCbG9ja0NvbXBvbmVudHMgfSBmcm9tICJlbWRhc2gvdWkiOwppbXBvcnQgdHlwZSB7IFBhZ2VMYXlvdXRCbG9jayB9IGZyb20gIi4uLy4uL2VtZGFzaC1lbnYiOwppbXBvcnQgSGVybyBmcm9tICIuLi9jb21wb25lbnRzL2Jsb2Nrcy9IZXJvLmFzdHJvIjsKaW1wb3J0IEZlYXR1cmVHcmlkIGZyb20gIi4uL2NvbXBvbmVudHMvYmxvY2tzL0ZlYXR1cmVHcmlkLmFzdHJvIjsKCmNvbnN0IGNvbXBvbmVudHMgPSBkZWZpbmVCbG9ja0NvbXBvbmVudHM8UGFnZUxheW91dEJsb2NrPih7CgloZXJvOiBIZXJvLAoJZmVhdHVyZV9ncmlkOiBGZWF0dXJlR3JpZCwKfSk7Ci0tLQoKPEJsb2NrcyB2YWx1ZT17cGFnZS5kYXRhLmxheW91dH0gY29tcG9uZW50cz17Y29tcG9uZW50c30gLz4KYGBgCgpFYWNoIGNvbXBvbmVudCByZWNlaXZlcyBgeyB2YWx1ZSwgaW5kZXgsIGJsb2NrS2V5IH1gLiBUaGUgdmFsdWUgcmV0YWlucyBgX3ZlcnNpb25gLCBzbyBhIHJlbmRlcmVyIGNhbiBuYXJyb3cgb2xkIGFuZCBhY3RpdmUgc2hhcGVzLiBgQmxvY2tzYCBwZXJmb3JtcyBubyBkYXRhYmFzZSBvciBuZXR3b3JrIHF1ZXJpZXMuCgpBbiB1bm1hcHBlZCB0eXBlIHByb2R1Y2VzIGEgdmlzaWJsZSBkZXZlbG9wbWVudCBwbGFjZWhvbGRlci4gSW4gcHJvZHVjdGlvbiBpdCByZW5kZXJzIHRoZSBvcHRpb25hbCBgZmFsbGJhY2tgIGNvbXBvbmVudCBvciBubyBvdXRwdXQuIFNoaXAgcmVuZGVyZXIgc3VwcG9ydCBiZWZvcmUgYWN0aXZhdGluZyBhIG5ldyBicmVha2luZyBibG9jayB2ZXJzaW9uLgoKIyMgSW1hZ2UgQ29tcG9uZW50CgoqKkFsd2F5cyB1c2UgdGhlIEVtRGFzaCBJbWFnZSBjb21wb25lbnQgZm9yIENNUyBpbWFnZXMuKiogSW1hZ2UgZmllbGRzIGFyZSBvYmplY3RzLCBub3Qgc3RyaW5ncy4KCmBgYGFzdHJvCi0tLQppbXBvcnQgeyBJbWFnZSB9IGZyb20gImVtZGFzaC91aSI7Ci0tLQoKey8qIENvcnJlY3QgLS0gcGFzc2VzIHRoZSBpbWFnZSBvYmplY3QgKi99CjxJbWFnZSBpbWFnZT17cG9zdC5kYXRhLmZlYXR1cmVkX2ltYWdlfSAvPgoKey8qIEFsc28gd29ya3Mgd2l0aCBleHBsaWNpdCBwcm9wcyAqL30Ke3Bvc3QuZGF0YS5mZWF0dXJlZF9pbWFnZT8uc3JjICYmICgKCTxpbWcgc3JjPXtwb3N0LmRhdGEuZmVhdHVyZWRfaW1hZ2Uuc3JjfSBhbHQ9e3Bvc3QuZGF0YS5mZWF0dXJlZF9pbWFnZS5hbHQgfHwgIiJ9IC8+Cil9CmBgYAoKKipDb21tb24gbWlzdGFrZToqKgoKYGBgYXN0cm8Key8qIFdST05HIC0tIGltYWdlIGlzIGFuIG9iamVjdCwgbm90IGEgc3RyaW5nICovfQo8aW1nIHNyYz17cG9zdC5kYXRhLmZlYXR1cmVkX2ltYWdlfSAvPgpgYGAKCiMjIFZpc3VhbCBFZGl0aW5nIEF0dHJpYnV0ZXMKCkVudHJpZXMgaW5jbHVkZSBgZWRpdGAgYXR0cmlidXRlcyBmb3IgaW5saW5lIGVkaXRpbmcuIFNwcmVhZCB0aGVtIG9udG8gdGhlIGVsZW1lbnQgdGhhdCBkaXNwbGF5cyB0aGUgZmllbGQ6CgpgYGBhc3Rybwo8aDEgey4uLnBvc3QuZWRpdC50aXRsZX0+e3Bvc3QuZGF0YS50aXRsZX08L2gxPgo8cCB7Li4ucG9zdC5lZGl0LmV4Y2VycHR9Pntwb3N0LmRhdGEuZXhjZXJwdH08L3A+CjxkaXYgey4uLnBvc3QuZWRpdC5mZWF0dXJlZF9pbWFnZX0+Cgk8SW1hZ2UgaW1hZ2U9e3Bvc3QuZGF0YS5mZWF0dXJlZF9pbWFnZX0gLz4KPC9kaXY+CmBgYAoKV2hlbiBhbiBhZG1pbiBpcyBsb2dnZWQgaW4gYW5kIHZpZXdzIHRoZSBzaXRlLCB0aGVzZSBhdHRyaWJ1dGVzIGVuYWJsZSBjbGljay10by1lZGl0IGZ1bmN0aW9uYWxpdHkuCgojIyBDb21tb24gUGFnZSBQYXR0ZXJucwoKIyMjIExpc3QgcGFnZSAoZS5nLiwgYC9wb3N0cy9pbmRleC5hc3Ryb2ApCgpgYGBhc3RybwotLS0KaW1wb3J0IHsgZ2V0RW1EYXNoQ29sbGVjdGlvbiB9IGZyb20gImVtZGFzaCI7CmltcG9ydCB7IEltYWdlIH0gZnJvbSAiZW1kYXNoL3VpIjsKaW1wb3J0IEJhc2UgZnJvbSAiLi4vLi4vbGF5b3V0cy9CYXNlLmFzdHJvIjsKCmNvbnN0IHsgZW50cmllczogcG9zdHMsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoQ29sbGVjdGlvbigicG9zdHMiLCB7CglvcmRlckJ5OiB7IHB1Ymxpc2hlZF9hdDogImRlc2MiIH0sCglsaW1pdDogMjAsCn0pOwppZiAoQXN0cm8uY2FjaGU/LmVuYWJsZWQpIEFzdHJvLmNhY2hlLnNldChjYWNoZUhpbnQpOwotLS0KPEJhc2UgdGl0bGU9IlBvc3RzIj4KCQl7cG9zdHMubWFwKHBvc3QgPT4gKAoJCTxhcnRpY2xlPgoJCQl7cG9zdC5kYXRhLmZlYXR1cmVkX2ltYWdlICYmIDxJbWFnZSBpbWFnZT17cG9zdC5kYXRhLmZlYXR1cmVkX2ltYWdlfSAvPn0KCQkJPGEgaHJlZj17YC9wb3N0cy8ke3Bvc3QuaWR9YH0+e3Bvc3QuZGF0YS50aXRsZX08L2E+CgkJCXtwb3N0LmRhdGEuZXhjZXJwdCAmJiA8cD57cG9zdC5kYXRhLmV4Y2VycHR9PC9wPn0KCQk8L2FydGljbGU+CgkpKX0KPC9CYXNlPgpgYGAKCiMjIyBEZXRhaWwgcGFnZSAoZS5nLiwgYC9wb3N0cy9bc2x1Z10uYXN0cm9gKQoKYGBgYXN0cm8KLS0tCmltcG9ydCB7IGdldEVtRGFzaEVudHJ5LCBnZXRTZW9NZXRhIH0gZnJvbSAiZW1kYXNoIjsKaW1wb3J0IHsgSW1hZ2UsIFBvcnRhYmxlVGV4dCB9IGZyb20gImVtZGFzaC91aSI7CmltcG9ydCBCYXNlIGZyb20gIi4uLy4uL2xheW91dHMvQmFzZS5hc3RybyI7Cgpjb25zdCB7IHNsdWcgfSA9IEFzdHJvLnBhcmFtczsKaWYgKCFzbHVnKSByZXR1cm4gQXN0cm8ucmVkaXJlY3QoIi80MDQiKTsKCmNvbnN0IHsgZW50cnk6IHBvc3QsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoRW50cnkoInBvc3RzIiwgc2x1Zyk7CmlmICghcG9zdCkgcmV0dXJuIEFzdHJvLnJlZGlyZWN0KCIvNDA0Iik7CgppZiAoQXN0cm8uY2FjaGU/LmVuYWJsZWQpIEFzdHJvLmNhY2hlLnNldChjYWNoZUhpbnQpOwoKY29uc3Qgc2VvID0gZ2V0U2VvTWV0YShwb3N0LCB7CglzaXRlVGl0bGU6ICJNeSBCbG9nIiwKCXNpdGVVcmw6IEFzdHJvLnVybC5vcmlnaW4sCglwYXRoOiBgL3Bvc3RzLyR7c2x1Z31gLAp9KTsKCmNvbnN0IHRhZ3MgPSBwb3N0LmRhdGEudGVybXM/LnRhZyA/PyBbXTsKLS0tCjxCYXNlIHRpdGxlPXtzZW8udGl0bGV9IGRlc2NyaXB0aW9uPXtzZW8uZGVzY3JpcHRpb259PgoJPGFydGljbGU+CgkJe3Bvc3QuZGF0YS5mZWF0dXJlZF9pbWFnZSAmJiAoCgkJCTxkaXYgey4uLnBvc3QuZWRpdC5mZWF0dXJlZF9pbWFnZX0+CgkJCQk8SW1hZ2UgaW1hZ2U9e3Bvc3QuZGF0YS5mZWF0dXJlZF9pbWFnZX0gLz4KCQkJPC9kaXY+CgkJKX0KCQk8aDEgey4uLnBvc3QuZWRpdC50aXRsZX0+e3Bvc3QuZGF0YS50aXRsZX08L2gxPgoJCTxQb3J0YWJsZVRleHQgdmFsdWU9e3Bvc3QuZGF0YS5jb250ZW50fSAvPgoJCXt0YWdzLmxlbmd0aCA+IDAgJiYgKAoJCQk8ZGl2PgoJCQkJe3RhZ3MubWFwKHQgPT4gPGEgaHJlZj17YC90YWcvJHt0LnNsdWd9YH0+e3QubGFiZWx9PC9hPil9CgkJCTwvZGl2PgoJCSl9Cgk8L2FydGljbGU+CjwvQmFzZT4KYGBgCgojIyMgVGF4b25vbXkgYXJjaGl2ZSAoZS5nLiwgYC9jYXRlZ29yeS9bc2x1Z10uYXN0cm9gKQoKYGBgYXN0cm8KLS0tCmltcG9ydCB7IGdldFRheG9ub215VGVybXNXaXRoQ2FjaGVIaW50LCBnZXRFbURhc2hDb2xsZWN0aW9uIH0gZnJvbSAiZW1kYXNoIjsKaW1wb3J0IEJhc2UgZnJvbSAiLi4vLi4vbGF5b3V0cy9CYXNlLmFzdHJvIjsKCmNvbnN0IHsgc2x1ZyB9ID0gQXN0cm8ucGFyYW1zOwpjb25zdCB0ZXJtc1Jlc3VsdCA9IGF3YWl0IGdldFRheG9ub215VGVybXNXaXRoQ2FjaGVIaW50KCJjYXRlZ29yeSIsIHsgaW5jbHVkZUNvdW50czogZmFsc2UgfSk7CmNvbnN0IHRlcm0gPSBzbHVnID8gdGVybXNSZXN1bHQuZGF0YS5maW5kKChpdGVtKSA9PiBpdGVtLnNsdWcgPT09IHNsdWcpIDogbnVsbDsKaWYgKCF0ZXJtKSByZXR1cm4gQXN0cm8ucmVkaXJlY3QoIi80MDQiKTsKCmNvbnN0IHsgZW50cmllczogcG9zdHMsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoQ29sbGVjdGlvbigicG9zdHMiLCB7Cgl3aGVyZTogeyBjYXRlZ29yeTogdGVybS5zbHVnIH0sCglvcmRlckJ5OiB7IHB1Ymxpc2hlZF9hdDogImRlc2MiIH0sCglsaW1pdDogMjAsCn0pOwppZiAoQXN0cm8uY2FjaGU/LmVuYWJsZWQpIHsKCUFzdHJvLmNhY2hlLnNldCh0ZXJtc1Jlc3VsdC5jYWNoZUhpbnQpOwoJQXN0cm8uY2FjaGUuc2V0KGNhY2hlSGludCk7Cn0KLS0tCjxCYXNlIHRpdGxlPXtgJHt0ZXJtLmxhYmVsfSBwb3N0c2B9PgoJPGgxPnt0ZXJtLmxhYmVsfTwvaDE+Cgl7cG9zdHMubWFwKHBvc3QgPT4gKAoJCTxhIGhyZWY9e2AvcG9zdHMvJHtwb3N0LmlkfWB9Pntwb3N0LmRhdGEudGl0bGV9PC9hPgoJKSl9CjwvQmFzZT4KYGBgCgojIyMgUlNTIGZlZWQgKGUuZy4sIGAvcnNzLnhtbC50c2ApCgpgYGB0eXBlc2NyaXB0CmltcG9ydCB0eXBlIHsgQVBJUm91dGUgfSBmcm9tICJhc3RybyI7CmltcG9ydCB7IGdldEVtRGFzaENvbGxlY3Rpb24gfSBmcm9tICJlbWRhc2giOwoKY29uc3Qgc2l0ZVRpdGxlID0gIk15IFNpdGUiOwoKZXhwb3J0IGNvbnN0IEdFVDogQVBJUm91dGUgPSBhc3luYyAoeyB1cmwgfSkgPT4gewoJY29uc3Qgc2l0ZVVybCA9IHVybC5vcmlnaW47Cgljb25zdCB7IGVudHJpZXM6IHBvc3RzIH0gPSBhd2FpdCBnZXRFbURhc2hDb2xsZWN0aW9uKCJwb3N0cyIsIHsKCQlvcmRlckJ5OiB7IHB1Ymxpc2hlZF9hdDogImRlc2MiIH0sCgkJbGltaXQ6IDIwLAoJfSk7CgoJY29uc3QgaXRlbXMgPSBwb3N0cwoJCS5maWx0ZXIoKHApID0+IHAuZGF0YS5wdWJsaXNoZWRBdCkKCQkubWFwKChwb3N0KSA9PiB7CgkJCWNvbnN0IHBvc3RVcmwgPSBgJHtzaXRlVXJsfS9wb3N0cy8ke3Bvc3QuaWR9YDsKCQkJcmV0dXJuIGAgICAgPGl0ZW0+CiAgICAgIDx0aXRsZT4ke2VzY2FwZVhtbChwb3N0LmRhdGEudGl0bGUpfTwvdGl0bGU+CiAgICAgIDxsaW5rPiR7cG9zdFVybH08L2xpbms+CiAgICAgIDxndWlkIGlzUGVybWFMaW5rPSJ0cnVlIj4ke3Bvc3RVcmx9PC9ndWlkPgogICAgICA8cHViRGF0ZT4ke3Bvc3QuZGF0YS5wdWJsaXNoZWRBdCEudG9VVENTdHJpbmcoKX08L3B1YkRhdGU+CiAgICAgIDxkZXNjcmlwdGlvbj4ke2VzY2FwZVhtbChwb3N0LmRhdGEuZXhjZXJwdCB8fCAiIil9PC9kZXNjcmlwdGlvbj4KICAgIDwvaXRlbT5gOwoJCX0pCgkJLmpvaW4oIlxuIik7CgoJcmV0dXJuIG5ldyBSZXNwb25zZSgKCQlgPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJzcyB2ZXJzaW9uPSIyLjAiIHhtbG5zOmF0b209Imh0dHA6Ly93d3cudzMub3JnLzIwMDUvQXRvbSI+CiAgPGNoYW5uZWw+CiAgICA8dGl0bGU+JHtlc2NhcGVYbWwoc2l0ZVRpdGxlKX08L3RpdGxlPgogICAgPGxpbms+JHtzaXRlVXJsfTwvbGluaz4KICAgIDxhdG9tOmxpbmsgaHJlZj0iJHtzaXRlVXJsfS9yc3MueG1sIiByZWw9InNlbGYiIHR5cGU9ImFwcGxpY2F0aW9uL3Jzcyt4bWwiLz4KICAgIDxsYW5ndWFnZT5lbi11czwvbGFuZ3VhZ2U+CiAgICA8bGFzdEJ1aWxkRGF0ZT4ke25ldyBEYXRlKCkudG9VVENTdHJpbmcoKX08L2xhc3RCdWlsZERhdGU+CiR7aXRlbXN9CiAgPC9jaGFubmVsPgo8L3Jzcz5gLAoJCXsKCQkJaGVhZGVyczogewoJCQkJIkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9yc3MreG1sOyBjaGFyc2V0PXV0Zi04IiwKCQkJCSJDYWNoZS1Db250cm9sIjogInB1YmxpYywgbWF4LWFnZT0zNjAwIiwKCQkJfSwKCQl9LAoJKTsKfTsKCmZ1bmN0aW9uIGVzY2FwZVhtbChzOiBzdHJpbmcpOiBzdHJpbmcgewoJcmV0dXJuIHMKCQkucmVwbGFjZSgvJi9nLCAiJmFtcDsiKQoJCS5yZXBsYWNlKC88L2csICImbHQ7IikKCQkucmVwbGFjZSgvPi9nLCAiJmd0OyIpCgkJLnJlcGxhY2UoLyIvZywgIiZxdW90OyIpCgkJLnJlcGxhY2UoLycvZywgIiZhcG9zOyIpOwp9CmBgYAoKIyMjIDQwNCBwYWdlIChgLzQwNC5hc3Ryb2ApCgpgYGBhc3RybwotLS0KaW1wb3J0IEJhc2UgZnJvbSAiLi4vbGF5b3V0cy9CYXNlLmFzdHJvIjsKLS0tCjxCYXNlIHRpdGxlPSJOb3QgRm91bmQiPgoJPGgxPlBhZ2Ugbm90IGZvdW5kPC9oMT4KCTxwPlRoZSBwYWdlIHlvdSdyZSBsb29raW5nIGZvciBkb2Vzbid0IGV4aXN0LjwvcD4KCTxhIGhyZWY9Ii8iPkdvIGhvbWU8L2E+CjwvQmFzZT4KYGBgCgojIyMgRW1wdHkgc3RhdGUKCldoZW4gYSBjb2xsZWN0aW9uIGhhcyBubyBjb250ZW50LCBzaG93IGEgaGVscGZ1bCBlbXB0eSBzdGF0ZToKCmBgYGFzdHJvCntwb3N0cy5sZW5ndGggPT09IDAgPyAoCgk8c2VjdGlvbj4KCQk8aDI+Tm8gcG9zdHMgeWV0PC9oMj4KCQk8cD5DcmVhdGUgeW91ciBmaXJzdCBwb3N0IGluIHRoZSBhZG1pbiBwYW5lbC48L3A+CgkJPGEgaHJlZj0iL19lbWRhc2gvYWRtaW4vY29udGVudC9wb3N0cy9uZXciPkNyZWF0ZSBhIHBvc3Q8L2E+Cgk8L3NlY3Rpb24+CikgOiAoCgkvKiAuLi4gcmVuZGVyIHBvc3RzIC4uLiAqLwopfQpgYGAKCiMjIFBhZ2luYXRpb24KCmBnZXRFbURhc2hDb2xsZWN0aW9uYCBzdXBwb3J0cyBjdXJzb3ItYmFzZWQga2V5c2V0IHBhZ2luYXRpb24uIFBhc3MgYGN1cnNvcmAgZnJvbSBhIHByZXZpb3VzIHJlc3VsdCdzIGBuZXh0Q3Vyc29yYCB0byBnZXQgdGhlIG5leHQgcGFnZToKCmBgYGFzdHJvCi0tLQpjb25zdCBjdXJzb3IgPSBBc3Ryby51cmwuc2VhcmNoUGFyYW1zLmdldCgiY3Vyc29yIikgPz8gdW5kZWZpbmVkOwpjb25zdCB7IGVudHJpZXMsIG5leHRDdXJzb3IsIGNhY2hlSGludCB9ID0gYXdhaXQgZ2V0RW1EYXNoQ29sbGVjdGlvbigicG9zdHMiLCB7CglsaW1pdDogMTAsCgljdXJzb3IsCglvcmRlckJ5OiB7IHB1Ymxpc2hlZF9hdDogImRlc2MiIH0sCn0pOwpBc3Ryby5jYWNoZS5zZXQoY2FjaGVIaW50KTsKLS0tCntlbnRyaWVzLm1hcChwb3N0ID0+ICgKCTxhIGhyZWY9e2AvcG9zdHMvJHtwb3N0LmlkfWB9Pntwb3N0LmRhdGEudGl0bGV9PC9hPgopKX0Ke25leHRDdXJzb3IgJiYgPGEgaHJlZj17YD9jdXJzb3I9JHtuZXh0Q3Vyc29yfWB9Pk5leHQgcGFnZTwvYT59CmBgYAoKYG5leHRDdXJzb3JgIGlzIGB1bmRlZmluZWRgIHdoZW4gdGhlcmUgYXJlIG5vIG1vcmUgcmVzdWx0cy4KCiMjIERhdGUgRm9ybWF0dGluZwoKRGF0ZXMgY29tZSBhcyBgRGF0ZWAgb2JqZWN0cy4gVXNlIGB0b0xvY2FsZURhdGVTdHJpbmdgIG9yIGBJbnRsLkRhdGVUaW1lRm9ybWF0YDoKCmBgYHR5cGVzY3JpcHQKY29uc3QgZm9ybWF0dGVkID0gcG9zdC5kYXRhLnB1Ymxpc2hlZEF0Py50b0xvY2FsZURhdGVTdHJpbmcoImVuLVVTIiwgewoJeWVhcjogIm51bWVyaWMiLAoJbW9udGg6ICJsb25nIiwKCWRheTogIm51bWVyaWMiLAp9KTsKYGBgCg==
+# Querying and Rendering Content
+
+## Content Queries
+
+All query functions are imported from `"emdash"`.
+
+### getEmDashCollection
+
+Fetch multiple entries from a collection. Returns `{ entries, error, cacheHint, nextCursor }`.
+
+```typescript
+import { getEmDashCollection } from "emdash";
+
+// Basic
+const { entries: posts } = await getEmDashCollection("posts");
+
+// With options
+const { entries: posts, cacheHint } = await getEmDashCollection("posts", {
+	status: "published",
+	limit: 10,
+	orderBy: { published_at: "desc" },
+	where: { category: "news" },
+});
+```
+
+Options:
+
+- `status` -- filter by status (`"published"`, `"draft"`, etc.)
+- `limit` -- max entries
+- `cursor` -- opaque cursor for keyset pagination (pass `nextCursor` from a previous result)
+- `orderBy` -- `{ field: "asc" | "desc" }` (default: `{ created_at: "desc" }`)
+- `where` -- filter by field values or taxonomy terms. Supports arrays for OR: `{ category: ["news", "featured"] }`
+- `locale` -- filter by locale (when i18n is configured)
+
+### getEmDashEntry
+
+Fetch a single entry by slug. Returns `{ entry, error, isPreview, cacheHint }`.
+
+```typescript
+import { getEmDashEntry } from "emdash";
+
+const { entry: post, cacheHint } = await getEmDashEntry("posts", slug);
+
+if (!post) {
+	return Astro.redirect("/404");
+}
+```
+
+### Entry Shape
+
+```typescript
+interface ContentEntry<T> {
+	id: string; // The slug (used in URLs)
+	data: T; // All fields, including system fields
+	edit: EditProxy; // Visual editing attributes (spread onto elements)
+}
+
+// data includes system fields plus your custom fields:
+interface PostData {
+	id: string; // Database ULID (use for taxonomy lookups, etc.)
+	slug: string;
+	status: string;
+	title: string;
+	featured_image?: {
+		id: string;
+		src?: string;
+		alt?: string;
+		width?: number;
+		height?: number;
+	};
+	content?: PortableTextBlock[];
+	createdAt: Date;
+	updatedAt: Date;
+	publishedAt: Date | null;
+	// Bylines (eagerly loaded)
+	byline: BylineSummary | null; // Primary author
+	bylines: ContentBylineCredit[]; // All credits (with roleLabel, source)
+	// ... your custom fields
+}
+```
+
+**Important:** `entry.id` is the slug (for URLs), `entry.data.id` is the database ULID (for API calls like `getEntryTerms`).
+
+### Caching
+
+Query results include a `cacheHint` for Astro's Route Caching:
+
+```astro
+---
+const { entries: posts, cacheHint } = await getEmDashCollection("posts");
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+---
+```
+
+When Astro's route cache is enabled, call `Astro.cache.set(cacheHint)` so publishing invalidates cached output.
+
+## Rendering Portable Text
+
+### PortableText component
+
+```astro
+---
+import { PortableText } from "emdash/ui";
+---
+<PortableText value={post.data.content} />
+```
+
+Renders standard blocks (paragraphs, headings, lists, blockquotes, code blocks, images) and inline marks (bold, italic, code, strikethrough, links).
+
+### Custom block types
+
+For custom Portable Text objects that belong inside a rich-text document, pass a `components` prop:
+
+```astro
+---
+import { PortableText } from "emdash/ui";
+import Diagram from "./blocks/Diagram.astro";
+
+const customTypes = {
+	"publication.diagram": Diagram,
+};
+---
+<PortableText value={page.data.content} components={{ type: customTypes }} />
+```
+
+Each custom component receives the block data as props.
+
+## Rendering a blocks field
+
+Use `Blocks` for an ordered composition stored in a `blocks` collection field. Map each generated `_type` to an Astro component at the call site.
+
+```astro
+---
+import { Blocks, defineBlockComponents } from "emdash/ui";
+import type { PageLayoutBlock } from "../../emdash-env";
+import Hero from "../components/blocks/Hero.astro";
+import FeatureGrid from "../components/blocks/FeatureGrid.astro";
+
+const components = defineBlockComponents<PageLayoutBlock>({
+	hero: Hero,
+	feature_grid: FeatureGrid,
+});
+---
+
+<Blocks value={page.data.layout} components={components} />
+```
+
+Each component receives `{ value, index, blockKey }`. The value retains `_version`, so a renderer can narrow old and active shapes. `Blocks` performs no database or network queries.
+
+An unmapped type produces a visible development placeholder. In production it renders the optional `fallback` component or no output. Ship renderer support before activating a new breaking block version.
+
+## Image Component
+
+**Always use the EmDash Image component for CMS images.** Image fields are objects, not strings.
+
+```astro
+---
+import { Image } from "emdash/ui";
+---
+
+{/* Correct -- passes the image object */}
+<Image image={post.data.featured_image} />
+
+{/* Also works with explicit props */}
+{post.data.featured_image?.src && (
+	<img src={post.data.featured_image.src} alt={post.data.featured_image.alt || ""} />
+)}
+```
+
+**Common mistake:**
+
+```astro
+{/* WRONG -- image is an object, not a string */}
+<img src={post.data.featured_image} />
+```
+
+## Visual Editing Attributes
+
+Entries include `edit` attributes for inline editing. Spread them onto the element that displays the field:
+
+```astro
+<h1 {...post.edit.title}>{post.data.title}</h1>
+<p {...post.edit.excerpt}>{post.data.excerpt}</p>
+<div {...post.edit.featured_image}>
+	<Image image={post.data.featured_image} />
+</div>
+```
+
+When an admin is logged in and views the site, these attributes enable click-to-edit functionality.
+
+## Common Page Patterns
+
+### List page (e.g., `/posts/index.astro`)
+
+```astro
+---
+import { getEmDashCollection } from "emdash";
+import { Image } from "emdash/ui";
+import Base from "../../layouts/Base.astro";
+
+const { entries: posts, cacheHint } = await getEmDashCollection("posts", {
+	orderBy: { published_at: "desc" },
+	limit: 20,
+});
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+---
+<Base title="Posts">
+		{posts.map(post => (
+		<article>
+			{post.data.featured_image && <Image image={post.data.featured_image} />}
+			<a href={`/posts/${post.id}`}>{post.data.title}</a>
+			{post.data.excerpt && <p>{post.data.excerpt}</p>}
+		</article>
+	))}
+</Base>
+```
+
+### Detail page (e.g., `/posts/[slug].astro`)
+
+```astro
+---
+import { getEmDashEntry, getSeoMeta } from "emdash";
+import { Image, PortableText } from "emdash/ui";
+import Base from "../../layouts/Base.astro";
+
+const { slug } = Astro.params;
+if (!slug) return Astro.redirect("/404");
+
+const { entry: post, cacheHint } = await getEmDashEntry("posts", slug);
+if (!post) return Astro.redirect("/404");
+
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+
+const seo = getSeoMeta(post, {
+	siteTitle: "My Blog",
+	siteUrl: Astro.url.origin,
+	path: `/posts/${slug}`,
+});
+
+const tags = post.data.terms?.tag ?? [];
+---
+<Base title={seo.title} description={seo.description}>
+	<article>
+		{post.data.featured_image && (
+			<div {...post.edit.featured_image}>
+				<Image image={post.data.featured_image} />
+			</div>
+		)}
+		<h1 {...post.edit.title}>{post.data.title}</h1>
+		<PortableText value={post.data.content} />
+		{tags.length > 0 && (
+			<div>
+				{tags.map(t => <a href={`/tag/${t.slug}`}>{t.label}</a>)}
+			</div>
+		)}
+	</article>
+</Base>
+```
+
+### Taxonomy archive (e.g., `/category/[slug].astro`)
+
+```astro
+---
+import { getTaxonomyTermsWithCacheHint, getEmDashCollection } from "emdash";
+import Base from "../../layouts/Base.astro";
+
+const { slug } = Astro.params;
+const termsResult = await getTaxonomyTermsWithCacheHint("category", { includeCounts: false });
+const term = slug ? termsResult.data.find((item) => item.slug === slug) : null;
+if (!term) return Astro.redirect("/404");
+
+const { entries: posts, cacheHint } = await getEmDashCollection("posts", {
+	where: { category: term.slug },
+	orderBy: { published_at: "desc" },
+	limit: 20,
+});
+if (Astro.cache?.enabled) {
+	Astro.cache.set(termsResult.cacheHint);
+	Astro.cache.set(cacheHint);
+}
+---
+<Base title={`${term.label} posts`}>
+	<h1>{term.label}</h1>
+	{posts.map(post => (
+		<a href={`/posts/${post.id}`}>{post.data.title}</a>
+	))}
+</Base>
+```
+
+### RSS feed (e.g., `/rss.xml.ts`)
+
+```typescript
+import type { APIRoute } from "astro";
+import { getEmDashCollection } from "emdash";
+
+const siteTitle = "My Site";
+
+export const GET: APIRoute = async ({ url }) => {
+	const siteUrl = url.origin;
+	const { entries: posts } = await getEmDashCollection("posts", {
+		orderBy: { published_at: "desc" },
+		limit: 20,
+	});
+
+	const items = posts
+		.filter((p) => p.data.publishedAt)
+		.map((post) => {
+			const postUrl = `${siteUrl}/posts/${post.id}`;
+			return `    <item>
+      <title>${escapeXml(post.data.title)}</title>
+      <link>${postUrl}</link>
+      <guid isPermaLink="true">${postUrl}</guid>
+      <pubDate>${post.data.publishedAt!.toUTCString()}</pubDate>
+      <description>${escapeXml(post.data.excerpt || "")}</description>
+    </item>`;
+		})
+		.join("\n");
+
+	return new Response(
+		`<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeXml(siteTitle)}</title>
+    <link>${siteUrl}</link>
+    <atom:link href="${siteUrl}/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${items}
+  </channel>
+</rss>`,
+		{
+			headers: {
+				"Content-Type": "application/rss+xml; charset=utf-8",
+				"Cache-Control": "public, max-age=3600",
+			},
+		},
+	);
+};
+
+function escapeXml(s: string): string {
+	return s
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&apos;");
+}
+```
+
+### 404 page (`/404.astro`)
+
+```astro
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="Not Found">
+	<h1>Page not found</h1>
+	<p>The page you're looking for doesn't exist.</p>
+	<a href="/">Go home</a>
+</Base>
+```
+
+### Empty state
+
+When a collection has no content, show a helpful empty state:
+
+```astro
+{posts.length === 0 ? (
+	<section>
+		<h2>No posts yet</h2>
+		<p>Create your first post in the admin panel.</p>
+		<a href="/_emdash/admin/content/posts/new">Create a post</a>
+	</section>
+) : (
+	/* ... render posts ... */
+)}
+```
+
+## Pagination
+
+`getEmDashCollection` supports cursor-based keyset pagination. Pass `cursor` from a previous result's `nextCursor` to get the next page:
+
+```astro
+---
+const cursor = Astro.url.searchParams.get("cursor") ?? undefined;
+const { entries, nextCursor, cacheHint } = await getEmDashCollection("posts", {
+	limit: 10,
+	cursor,
+	orderBy: { published_at: "desc" },
+});
+Astro.cache.set(cacheHint);
+---
+{entries.map(post => (
+	<a href={`/posts/${post.id}`}>{post.data.title}</a>
+))}
+{nextCursor && <a href={`?cursor=${nextCursor}`}>Next page</a>}
+```
+
+`nextCursor` is `undefined` when there are no more results.
+
+## Date Formatting
+
+Dates come as `Date` objects. Use `toLocaleDateString` or `Intl.DateTimeFormat`:
+
+```typescript
+const formatted = post.data.publishedAt?.toLocaleDateString("en-US", {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+});
+```

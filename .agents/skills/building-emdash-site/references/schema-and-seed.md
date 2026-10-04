@@ -1,1 +1,529 @@
-IyBTY2hlbWEgYW5kIFNlZWQgRmlsZXMKClRoZSBzZWVkIGZpbGUgKGBzZWVkL3NlZWQuanNvbmApIGRlZmluZXMgdGhlIHNpdGUncyBlbnRpcmUgc2NoZW1hIGFuZCBvcHRpb25hbCBkZW1vIGNvbnRlbnQuIEl0J3MgaW5saW5lZCBpbnRvIHRoZSBidWlsZCBhbmQgYXBwbGllZCBhdXRvbWF0aWNhbGx5IG9uIHRoZSBmaXJzdCByZXF1ZXN0IHdoZW4gdGhlIGRhdGFiYXNlIGlzIGVtcHR5IGFuZCB0aGUgc2V0dXAgd2l6YXJkIGhhc24ndCBiZWVuIGNvbXBsZXRlZC4KCiMjIFNlZWQgRmlsZSBTdHJ1Y3R1cmUKCmBgYGpzb24KewoJIiRzY2hlbWEiOiAiaHR0cHM6Ly9lbWRhc2hjbXMuY29tL3NlZWQuc2NoZW1hLmpzb24iLAoJInZlcnNpb24iOiAiMSIsCgkibWV0YSI6IHsKCQkibmFtZSI6ICJNeSBTaXRlIiwKCQkiZGVzY3JpcHRpb24iOiAiQSBkZXNjcmlwdGlvbiBvZiB0aGlzIHNpdGUiLAoJCSJhdXRob3IiOiAiQXV0aG9yIE5hbWUiCgl9LAoJInNldHRpbmdzIjogeyAuLi4gfSwKCSJibG9ja1R5cGVzIjogWyAuLi4gXSwKCSJjb2xsZWN0aW9ucyI6IFsgLi4uIF0sCgkidGF4b25vbWllcyI6IFsgLi4uIF0sCgkibWVudXMiOiBbIC4uLiBdLAoJIndpZGdldEFyZWFzIjogWyAuLi4gXSwKCSJzZWN0aW9ucyI6IFsgLi4uIF0sCgkiYnlsaW5lcyI6IFsgLi4uIF0sCgkiY29udGVudCI6IHsgLi4uIH0KfQpgYGAKCiMjIENvbGxlY3Rpb25zCgpDb2xsZWN0aW9ucyBkZWZpbmUgY29udGVudCB0eXBlcy4gRWFjaCBjb2xsZWN0aW9uIGJlY29tZXMgYSBkYXRhYmFzZSB0YWJsZSAoYGVjX3tzbHVnfWApLgoKYGBganNvbgp7Cgkic2x1ZyI6ICJwb3N0cyIsCgkibGFiZWwiOiAiUG9zdHMiLAoJImxhYmVsU2luZ3VsYXIiOiAiUG9zdCIsCgkic3VwcG9ydHMiOiBbImRyYWZ0cyIsICJyZXZpc2lvbnMiLCAic2VhcmNoIiwgInNlbyJdLAoJImNvbW1lbnRzRW5hYmxlZCI6IHRydWUsCgkiZmllbGRzIjogWyAuLi4gXQp9CmBgYAoKIyMjIENvbGxlY3Rpb24gU3VwcG9ydHMKCnwgU3VwcG9ydCAgICAgIHwgRGVzY3JpcHRpb24gICAgICAgICAgICAgICB8CnwgLS0tLS0tLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgYGRyYWZ0c2AgICAgIHwgRHJhZnQvcHVibGlzaGVkIHdvcmtmbG93ICB8CnwgYHJldmlzaW9uc2AgIHwgUmV2aXNpb24gaGlzdG9yeSAgICAgICAgICB8CnwgYHByZXZpZXdgICAgIHwgU2lnbmVkIGRyYWZ0IHByZXZpZXdzICAgICB8CnwgYHNjaGVkdWxpbmdgIHwgU2NoZWR1bGVkIHB1YmxpY2F0aW9uICAgICB8CnwgYHNlYXJjaGAgICAgIHwgRnVsbC10ZXh0IHNlYXJjaCBpbmRleGluZyB8CnwgYHNlb2AgICAgICAgIHwgU0VPIG1ldGEgZmllbGRzIGluIGFkbWluICB8CgojIyMgU2x1ZyBSdWxlcwoKLSBMb3dlcmNhc2UgYWxwaGFudW1lcmljICsgdW5kZXJzY29yZXM6IGAvXlthLXpdW2EtejAtOV9dKiQvYAotIE1heCA2MyBjaGFyYWN0ZXJzCi0gQ2Fubm90IGNvbmZsaWN0IHdpdGggcmVzZXJ2ZWQgc2x1Z3MKCiMjIEZpZWxkIFR5cGVzCgp8IFR5cGUgICAgICAgICAgIHwgQ29sdW1uIHR5cGUgfCBSdW50aW1lIHNoYXBlICAgICAgICAgICAgICAgICAgICAgICAgIHwgTm90ZXMgICAgICAgICAgICAgICAgICAgICAgICB8CnwgLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLSB8IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHwKfCBgc3RyaW5nYCAgICAgICB8IFRFWFQgICAgICAgIHwgYHN0cmluZ2AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IFNpbmdsZSBsaW5lIHRleHQgICAgICAgICAgICAgfAp8IGB0ZXh0YCAgICAgICAgIHwgVEVYVCAgICAgICAgfCBgc3RyaW5nYCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgTXVsdGktbGluZSB0ZXh0ICh0ZXh0YXJlYSkgICB8CnwgYHVybGAgICAgICAgICAgfCBURVhUICAgICAgICB8IGBzdHJpbmdgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCBVUkwgaW5wdXQgICAgICAgICAgICAgICAgICAgIHwKfCBgbnVtYmVyYCAgICAgICB8IFJFQUwgICAgICAgIHwgYG51bWJlcmAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IEZsb2F0aW5nIHBvaW50ICAgICAgICAgICAgICAgfAp8IGBpbnRlZ2VyYCAgICAgIHwgSU5URUdFUiAgICAgfCBgbnVtYmVyYCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgV2hvbGUgbnVtYmVycyAgICAgICAgICAgICAgICB8CnwgYGJvb2xlYW5gICAgICAgfCBJTlRFR0VSICAgICB8IGBib29sZWFuYCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCBTdG9yZWQgYXMgMC8xICAgICAgICAgICAgICAgIHwKfCBgZGF0ZXRpbWVgICAgICB8IFRFWFQgICAgICAgIHwgYERhdGVgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IElTTyA4NjAxIHN0cmluZyBpbiBEQiAgICAgICAgfAp8IGBzZWxlY3RgICAgICAgIHwgVEVYVCAgICAgICAgfCBgc3RyaW5nYCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgT25lIGNvbmZpZ3VyZWQgb3B0aW9uICAgICAgICB8CnwgYG11bHRpU2VsZWN0YCAgfCBKU09OICAgICAgICB8IGBzdHJpbmdbXWAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCBDb25maWd1cmVkIG9wdGlvbiBsaXN0ICAgICAgIHwKfCBgaW1hZ2VgICAgICAgICB8IFRFWFQgICAgICAgIHwgYHsgaWQsIHNyYz8sIGFsdD8sIHdpZHRoPywgaGVpZ2h0PyB9YCB8ICoqT2JqZWN0LCBub3QgYSBzdHJpbmcqKiAgICAgfAp8IGBmaWxlYCAgICAgICAgIHwgVEVYVCAgICAgICAgfCBgeyBpZCwgdXJsPywgZmlsZW5hbWU/LCAuLi4gfWAgICAgICAgIHwgRmlsZSByZWZlcmVuY2UgICAgICAgICAgICAgICB8CnwgYHJlZmVyZW5jZWAgICAgfCBURVhUICAgICAgICB8IGBzdHJpbmdgIChJRCkgICAgICAgICAgICAgICAgICAgICAgICAgfCBSZWZlcmVuY2UgdG8gYW5vdGhlciBlbnRyeSAgIHwKfCBgc2x1Z2AgICAgICAgICB8IFRFWFQgICAgICAgIHwgYHN0cmluZ2AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8IFNsdWcgaW5wdXQgICAgICAgICAgICAgICAgICAgfAp8IGByZXBlYXRlcmAgICAgIHwgSlNPTiAgICAgICAgfCBgb2JqZWN0W11gICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgUmVwZWF0ZWQgc3RydWN0dXJlZCByb3dzICAgICB8CnwgYHBvcnRhYmxlVGV4dGAgfCBKU09OICAgICAgICB8IGBQb3J0YWJsZVRleHRCbG9ja1tdYCAgICAgICAgICAgICAgICAgfCBSaWNoIHRleHQgYXMgc3RydWN0dXJlZCBKU09OIHwKfCBgYmxvY2tzYCAgICAgICB8IEpTT04gICAgICAgIHwgYHsgX3R5cGUsIF92ZXJzaW9uLCBfa2V5LCAuLi4gfVtdYCAgICB8IE9yZGVyZWQgdHlwZWQgY29tcG9zaXRpb24gICAgfAp8IGBqc29uYCAgICAgICAgIHwgSlNPTiAgICAgICAgfCBgdW5rbm93bmAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgQXJiaXRyYXJ5IEpTT04gZGF0YSAgICAgICAgICB8CgojIyMgRmllbGQgRGVmaW5pdGlvbgoKYGBganNvbgp7Cgkic2x1ZyI6ICJ0aXRsZSIsCgkibGFiZWwiOiAiVGl0bGUiLAoJInR5cGUiOiAic3RyaW5nIiwKCSJyZXF1aXJlZCI6IHRydWUsCgkic2VhcmNoYWJsZSI6IHRydWUKfQpgYGAKCkZpZWxkcyBjYW4gaGF2ZToKCi0gYHNsdWdgIChyZXF1aXJlZCkgLS0gZmllbGQgaWRlbnRpZmllcgotIGBsYWJlbGAgKHJlcXVpcmVkKSAtLSBkaXNwbGF5IGxhYmVsIGluIGFkbWluCi0gYHR5cGVgIChyZXF1aXJlZCkgLS0gb25lIG9mIHRoZSB0eXBlcyBhYm92ZQotIGByZXF1aXJlZGAgLS0gdmFsaWRhdGlvbgotIGBzZWFyY2hhYmxlYCAtLSBpbmNsdWRlIGluIGZ1bGwtdGV4dCBzZWFyY2ggaW5kZXgKCiMjIyBDb21tb24gRmllbGQgUGF0dGVybnMKCioqQmxvZyBwb3N0OioqCgpgYGBqc29uCiJmaWVsZHMiOiBbCgl7ICJzbHVnIjogInRpdGxlIiwgImxhYmVsIjogIlRpdGxlIiwgInR5cGUiOiAic3RyaW5nIiwgInJlcXVpcmVkIjogdHJ1ZSwgInNlYXJjaGFibGUiOiB0cnVlIH0sCgl7ICJzbHVnIjogImZlYXR1cmVkX2ltYWdlIiwgImxhYmVsIjogIkZlYXR1cmVkIEltYWdlIiwgInR5cGUiOiAiaW1hZ2UiIH0sCgl7ICJzbHVnIjogImNvbnRlbnQiLCAibGFiZWwiOiAiQ29udGVudCIsICJ0eXBlIjogInBvcnRhYmxlVGV4dCIsICJzZWFyY2hhYmxlIjogdHJ1ZSB9LAoJeyAic2x1ZyI6ICJleGNlcnB0IiwgImxhYmVsIjogIkV4Y2VycHQiLCAidHlwZSI6ICJ0ZXh0IiB9Cl0KYGBgCgoqKlBvcnRmb2xpbyBwcm9qZWN0OioqCgpgYGBqc29uCiJmaWVsZHMiOiBbCgl7ICJzbHVnIjogInRpdGxlIiwgImxhYmVsIjogIlRpdGxlIiwgInR5cGUiOiAic3RyaW5nIiwgInJlcXVpcmVkIjogdHJ1ZSwgInNlYXJjaGFibGUiOiB0cnVlIH0sCgl7ICJzbHVnIjogImZlYXR1cmVkX2ltYWdlIiwgImxhYmVsIjogIkZlYXR1cmVkIEltYWdlIiwgInR5cGUiOiAiaW1hZ2UiLCAicmVxdWlyZWQiOiB0cnVlIH0sCgl7ICJzbHVnIjogImNsaWVudCIsICJsYWJlbCI6ICJDbGllbnQiLCAidHlwZSI6ICJzdHJpbmciIH0sCgl7ICJzbHVnIjogInllYXIiLCAibGFiZWwiOiAiWWVhciIsICJ0eXBlIjogInN0cmluZyIgfSwKCXsgInNsdWciOiAic3VtbWFyeSIsICJsYWJlbCI6ICJTdW1tYXJ5IiwgInR5cGUiOiAidGV4dCIsICJzZWFyY2hhYmxlIjogdHJ1ZSB9LAoJeyAic2x1ZyI6ICJjb250ZW50IiwgImxhYmVsIjogIkNvbnRlbnQiLCAidHlwZSI6ICJwb3J0YWJsZVRleHQiLCAic2VhcmNoYWJsZSI6IHRydWUgfSwKCXsgInNsdWciOiAiZ2FsbGVyeSIsICJsYWJlbCI6ICJHYWxsZXJ5IiwgInR5cGUiOiAicmVwZWF0ZXIiLCAidmFsaWRhdGlvbiI6IHsgInN1YkZpZWxkcyI6IFt7ICJzbHVnIjogImltYWdlIiwgImxhYmVsIjogIkltYWdlIiwgInR5cGUiOiAiaW1hZ2UiLCAicmVxdWlyZWQiOiB0cnVlIH1dIH0gfSwKCXsgInNsdWciOiAidXJsIiwgImxhYmVsIjogIlByb2plY3QgVVJMIiwgInR5cGUiOiAidXJsIiB9Cl0KYGBgCgoqKlBhZ2UgKG1pbmltYWwpOioqCgpgYGBqc29uCiJmaWVsZHMiOiBbCgl7ICJzbHVnIjogInRpdGxlIiwgImxhYmVsIjogIlRpdGxlIiwgInR5cGUiOiAic3RyaW5nIiwgInJlcXVpcmVkIjogdHJ1ZSwgInNlYXJjaGFibGUiOiB0cnVlIH0sCgl7ICJzbHVnIjogImNvbnRlbnQiLCAibGFiZWwiOiAiQ29udGVudCIsICJ0eXBlIjogInBvcnRhYmxlVGV4dCIsICJzZWFyY2hhYmxlIjogdHJ1ZSB9Cl0KYGBgCgojIyBCbG9jayB0eXBlcwoKRGVmaW5lIGBibG9ja1R5cGVzYCBiZWZvcmUgY29sbGVjdGlvbnMgdGhhdCB1c2UgYSBgYmxvY2tzYCBmaWVsZC4gRWFjaCB0eXBlIHJldGFpbnMgZXZlcnkgbnVtYmVyZWQgdmVyc2lvbiBhbmQgbmFtZXMgb25lIGFjdGl2ZSB2ZXJzaW9uIGZvciBuZXcgYmxvY2tzLgoKYGBganNvbgp7CgkidmVyc2lvbiI6ICIxIiwKCSJibG9ja1R5cGVzIjogWwoJCXsKCQkJInNsdWciOiAiaGVybyIsCgkJCSJsYWJlbCI6ICJIZXJvIiwKCQkJImN1cnJlbnRWZXJzaW9uIjogMSwKCQkJInZlcnNpb25zIjogWwoJCQkJewoJCQkJCSJ2ZXJzaW9uIjogMSwKCQkJCQkiZmllbGRzIjogWwoJCQkJCQl7ICJzbHVnIjogImhlYWRpbmciLCAibGFiZWwiOiAiSGVhZGluZyIsICJ0eXBlIjogInN0cmluZyIsICJyZXF1aXJlZCI6IHRydWUgfSwKCQkJCQkJeyAic2x1ZyI6ICJpbWFnZSIsICJsYWJlbCI6ICJJbWFnZSIsICJ0eXBlIjogImltYWdlIiB9CgkJCQkJXQoJCQkJfQoJCQldCgkJfQoJXSwKCSJjb2xsZWN0aW9ucyI6IFsKCQl7CgkJCSJzbHVnIjogInBhZ2VzIiwKCQkJImxhYmVsIjogIlBhZ2VzIiwKCQkJImZpZWxkcyI6IFsKCQkJCXsKCQkJCQkic2x1ZyI6ICJsYXlvdXQiLAoJCQkJCSJsYWJlbCI6ICJMYXlvdXQiLAoJCQkJCSJ0eXBlIjogImJsb2NrcyIsCgkJCQkJInZhbGlkYXRpb24iOiB7ICJhbGxvd2VkVHlwZXMiOiBbImhlcm8iXSwgIm1heEl0ZW1zIjogMjAgfQoJCQkJfQoJCQldCgkJfQoJXQp9CmBgYAoKQ29tcGF0aWJsZSBjaGFuZ2VzIGFtZW5kIHRoZSBhY3RpdmUgdmVyc2lvbi4gQSBicmVha2luZyBjaGFuZ2UgY3JlYXRlcyBhIG5ldyBpbmFjdGl2ZSB2ZXJzaW9uOyBkZXBsb3kgcmVuZGVyZXJzIGZvciBpdCBiZWZvcmUgYWN0aXZhdGlvbiwgdGhlbiBtaWdyYXRlIHN0b3JlZCBibG9ja3MgZXhwbGljaXRseS4gUmVtb3ZpbmcgYSB0eXBlIGZyb20gYGFsbG93ZWRUeXBlc2AgbW92ZXMgaXQgdG8gdGhlIHNlcnZlci1tYW5hZ2VkIGByZXRpcmVkVHlwZXNgIGxpc3QuCgpTZWVkZWQgYmxvY2sgdmFsdWVzIGluY2x1ZGUgdGhlaXIgdHlwZSB2ZXJzaW9uIGFuZCBzdGFibGUga2V5OgoKYGBganNvbgp7CgkiX3R5cGUiOiAiaGVybyIsCgkiX3ZlcnNpb24iOiAxLAoJIl9rZXkiOiAiaG9tZS1oZXJvIiwKCSJoZWFkaW5nIjogIkJ1aWxkIHNvbWV0aGluZyB1c2VmdWwiCn0KYGBgCgpBZGRpbmcgYSByZXF1aXJlZCBibG9ja3MgZmllbGQgb3IgYSBwb3NpdGl2ZSBgbWluSXRlbXNgIHJ1bGUgdG8gYSBwb3B1bGF0ZWQgY29sbGVjdGlvbiBpcyBub3QgYW4gYWRkaXRpdmUgc2NoZW1hIGNoYW5nZS4gQmFja2ZpbGwgZXZlcnkgZXhpc3RpbmcgZW50cnkgYmVmb3JlIGVuZm9yY2luZyB0aGUgcmVxdWlyZW1lbnQuCgpCbG9jayBmaWVsZHMgc3VwcG9ydCBzY2FsYXIsIHRleHQsIHNlbGVjdGlvbiwgUG9ydGFibGUgVGV4dCwgaW1hZ2UsIGZpbGUsIGFuZCByZXBlYXRlciBmaWVsZHMuIFJlZmVyZW5jZXMsIEpTT04sIHNsdWdzLCBuZXN0ZWQgYmxvY2tzLCBjdXN0b20gd2lkZ2V0cywgaW5kZXhlcywgdW5pcXVlbmVzcywgYW5kIHBlci1zdWJmaWVsZCBsb2NhbGl6YXRpb24gYXJlIG5vdCBzdXBwb3J0ZWQgaW5zaWRlIGJsb2NrIGRlZmluaXRpb25zLgoKIyMgVGF4b25vbWllcwoKVGF4b25vbWllcyBhcmUgdGFnL2NhdGVnb3J5IHN5c3RlbXMgYXR0YWNoZWQgdG8gY29sbGVjdGlvbnMuCgpgYGBqc29uCnsKCSJuYW1lIjogImNhdGVnb3J5IiwKCSJsYWJlbCI6ICJDYXRlZ29yaWVzIiwKCSJsYWJlbFNpbmd1bGFyIjogIkNhdGVnb3J5IiwKCSJoaWVyYXJjaGljYWwiOiB0cnVlLAoJImNvbGxlY3Rpb25zIjogWyJwb3N0cyJdLAoJInRlcm1zIjogWwoJCXsgInNsdWciOiAiZGV2ZWxvcG1lbnQiLCAibGFiZWwiOiAiRGV2ZWxvcG1lbnQiIH0sCgkJeyAic2x1ZyI6ICJkZXNpZ24iLCAibGFiZWwiOiAiRGVzaWduIiB9CgldCn0KYGBgCgotIGBoaWVyYXJjaGljYWw6IHRydWVgIC0tIHRyZWUgc3RydWN0dXJlIChsaWtlIFdvcmRQcmVzcyBjYXRlZ29yaWVzKQotIGBoaWVyYXJjaGljYWw6IGZhbHNlYCAtLSBmbGF0IGxpc3QgKGxpa2UgV29yZFByZXNzIHRhZ3MpCi0gYGNvbGxlY3Rpb25zYCAtLSB3aGljaCBjb2xsZWN0aW9ucyB0aGlzIHRheG9ub215IGFwcGxpZXMgdG8KLSBgdGVybXNgIC0tIHByZS1kZWZpbmVkIHRlcm1zIHRvIGNyZWF0ZQoKIyMgTWVudXMKCk5hdmlnYXRpb24gbWVudXMsIG1hbmFnZWQgZnJvbSB0aGUgYWRtaW4gVUkuCgpgYGBqc29uCnsKCSJuYW1lIjogInByaW1hcnkiLAoJImxhYmVsIjogIlByaW1hcnkgTmF2aWdhdGlvbiIsCgkiaXRlbXMiOiBbCgkJeyAidHlwZSI6ICJjdXN0b20iLCAibGFiZWwiOiAiSG9tZSIsICJ1cmwiOiAiLyIgfSwKCQl7ICJ0eXBlIjogImN1c3RvbSIsICJsYWJlbCI6ICJBYm91dCIsICJ1cmwiOiAiL3BhZ2VzL2Fib3V0IiB9LAoJCXsgInR5cGUiOiAiY3VzdG9tIiwgImxhYmVsIjogIlBvc3RzIiwgInVybCI6ICIvcG9zdHMiIH0KCV0KfQpgYGAKCk1lbnUgaXRlbSB0eXBlczoKCi0gYGN1c3RvbWAgLS0gYXJiaXRyYXJ5IFVSTAotIENvbnRlbnQgcmVmZXJlbmNlcyBhcmUgcmVzb2x2ZWQgYXQgcmVuZGVyIHRpbWUKCiMjIFdpZGdldCBBcmVhcwoKTmFtZWQgcmVnaW9ucyB3aGVyZSBlZGl0b3JzIGNhbiBhZGQgY29uZmlndXJhYmxlIHdpZGdldHMuCgpgYGBqc29uCnsKCSJuYW1lIjogInNpZGViYXIiLAoJImxhYmVsIjogIlNpZGViYXIiLAoJImRlc2NyaXB0aW9uIjogIldpZGdldCBhcmVhIGRpc3BsYXllZCBvbiBzaW5nbGUgcG9zdCBwYWdlcyIsCgkid2lkZ2V0cyI6IFsKCQl7CgkJCSJ0eXBlIjogImNvbXBvbmVudCIsCgkJCSJjb21wb25lbnRJZCI6ICJjb3JlOnNlYXJjaCIsCgkJCSJ0aXRsZSI6ICJTZWFyY2giCgkJfSwKCQl7CgkJCSJ0eXBlIjogImNvbXBvbmVudCIsCgkJCSJjb21wb25lbnRJZCI6ICJjb3JlOmNhdGVnb3JpZXMiLAoJCQkidGl0bGUiOiAiQ2F0ZWdvcmllcyIKCQl9LAoJCXsKCQkJInR5cGUiOiAiY29tcG9uZW50IiwKCQkJImNvbXBvbmVudElkIjogImNvcmU6dGFncyIsCgkJCSJ0aXRsZSI6ICJUYWdzIgoJCX0sCgkJewoJCQkidHlwZSI6ICJjb21wb25lbnQiLAoJCQkiY29tcG9uZW50SWQiOiAiY29yZTpyZWNlbnQtcG9zdHMiLAoJCQkidGl0bGUiOiAiUmVjZW50IFBvc3RzIiwKCQkJInNldHRpbmdzIjogeyAiY291bnQiOiA1LCAic2hvd0RhdGUiOiB0cnVlIH0KCQl9LAoJCXsKCQkJInR5cGUiOiAiY29tcG9uZW50IiwKCQkJImNvbXBvbmVudElkIjogImNvcmU6YXJjaGl2ZXMiLAoJCQkidGl0bGUiOiAiQXJjaGl2ZXMiLAoJCQkic2V0dGluZ3MiOiB7ICJ0eXBlIjogIm1vbnRobHkiLCAibGltaXQiOiA2IH0KCQl9LAoJCXsKCQkJInR5cGUiOiAiY29udGVudCIsCgkJCSJ0aXRsZSI6ICJBYm91dCIsCgkJCSJjb250ZW50IjogWwoJCQkJewoJCQkJCSJfdHlwZSI6ICJibG9jayIsCgkJCQkJInN0eWxlIjogIm5vcm1hbCIsCgkJCQkJImNoaWxkcmVuIjogW3sgIl90eXBlIjogInNwYW4iLCAidGV4dCI6ICJTb21lIHJpY2ggdGV4dCBjb250ZW50LiIgfV0KCQkJCX0KCQkJXQoJCX0KCV0KfQpgYGAKCiMjIyBXaWRnZXQgdHlwZXMKCnwgVHlwZSAgICAgICAgfCBEZXNjcmlwdGlvbiAgICAgICAgICAgICAgIHwgS2V5IGZpZWxkcyAgICAgICAgICAgICAgICB8CnwgLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8CnwgYGNvbnRlbnRgICAgfCBSaWNoIHRleHQgKFBvcnRhYmxlIFRleHQpIHwgYGNvbnRlbnRgICAgICAgICAgICAgICAgICB8CnwgYG1lbnVgICAgICAgfCBOYXZpZ2F0aW9uIG1lbnUgICAgICAgICAgIHwgYG1lbnVOYW1lYCAgICAgICAgICAgICAgICB8CnwgYGNvbXBvbmVudGAgfCBDb3JlIG9yIGN1c3RvbSBjb21wb25lbnQgIHwgYGNvbXBvbmVudElkYCwgYHNldHRpbmdzYCB8CgojIyMgQ29yZSB3aWRnZXQgY29tcG9uZW50cwoKLSBgY29yZTpzZWFyY2hgIC0tIHNlYXJjaCBmb3JtCi0gYGNvcmU6Y2F0ZWdvcmllc2AgLS0gY2F0ZWdvcnkgbGlzdCB3aXRoIGNvdW50cwotIGBjb3JlOnRhZ3NgIC0tIHRhZyBjbG91ZAotIGBjb3JlOnJlY2VudC1wb3N0c2AgLS0gbGF0ZXN0IHBvc3RzIGxpc3QKLSBgY29yZTphcmNoaXZlc2AgLS0gbW9udGhseSBhcmNoaXZlIGxpbmtzCgojIyBTZWN0aW9ucyAoUmV1c2FibGUgQmxvY2tzKQoKUmV1c2FibGUgY29udGVudCBibG9ja3MgdGhhdCBlZGl0b3JzIGNhbiBpbnNlcnQgdmlhIGAvc2VjdGlvbmAgc2xhc2ggY29tbWFuZCBpbiB0aGUgZWRpdG9yLgoKYGBganNvbgp7Cgkic2x1ZyI6ICJuZXdzbGV0dGVyLXNpZ251cCIsCgkidGl0bGUiOiAiTmV3c2xldHRlciBTaWdudXAiLAoJImRlc2NyaXB0aW9uIjogIkEgY2FsbC10by1hY3Rpb24gYmxvY2sgZm9yIG5ld3NsZXR0ZXIgc3Vic2NyaXB0aW9ucyIsCgkia2V5d29yZHMiOiBbIm5ld3NsZXR0ZXIiLCAic3Vic2NyaWJlIiwgImVtYWlsIiwgImN0YSJdLAoJInNvdXJjZSI6ICJ0aGVtZSIsCgkiY29udGVudCI6IFsKCQl7CgkJCSJfdHlwZSI6ICJibG9jayIsCgkJCSJzdHlsZSI6ICJoMyIsCgkJCSJjaGlsZHJlbiI6IFt7ICJfdHlwZSI6ICJzcGFuIiwgInRleHQiOiAiU3RheSBpbiB0aGUgbG9vcCIgfV0KCQl9LAoJCXsKCQkJIl90eXBlIjogImJsb2NrIiwKCQkJInN0eWxlIjogIm5vcm1hbCIsCgkJCSJjaGlsZHJlbiI6IFt7ICJfdHlwZSI6ICJzcGFuIiwgInRleHQiOiAiR2V0IG5vdGlmaWVkIHdoZW4gbmV3IHBvc3RzIGFyZSBwdWJsaXNoZWQuIiB9XQoJCX0KCV0KfQpgYGAKCiMjIEJ5bGluZXMKCk5hbWVkIGF1dGhvciBwcm9maWxlcywgaW5kZXBlbmRlbnQgb2YgdXNlciBhY2NvdW50cy4KCmBgYGpzb24KewoJImlkIjogImJ5bGluZS1lZGl0b3JpYWwiLAoJInNsdWciOiAiZW1kYXNoLWVkaXRvcmlhbCIsCgkiZGlzcGxheU5hbWUiOiAiRW1EYXNoIEVkaXRvcmlhbCIKfQpgYGAKCkd1ZXN0IGJ5bGluZXM6CgpgYGBqc29uCnsKCSJpZCI6ICJieWxpbmUtZ3Vlc3QiLAoJInNsdWciOiAiZ3Vlc3QtY29udHJpYnV0b3IiLAoJImRpc3BsYXlOYW1lIjogIkd1ZXN0IENvbnRyaWJ1dG9yIiwKCSJpc0d1ZXN0IjogdHJ1ZQp9CmBgYAoKIyMgU2V0dGluZ3MKClNpdGUtd2lkZSBzZXR0aW5nczoKCmBgYGpzb24KInNldHRpbmdzIjogewoJInRpdGxlIjogIk15IEJsb2ciLAoJInRhZ2xpbmUiOiAiVGhvdWdodHMgb24gYnVpbGRpbmcgZm9yIHRoZSB3ZWIiCn0KYGBgCgpBdmFpbGFibGUga2V5czogYHRpdGxlYCwgYHRhZ2xpbmVgLCBgbG9nb2AsIGBmYXZpY29uYCwgYHNvY2lhbGAsIGB0aW1lem9uZWAsIGBkYXRlRm9ybWF0YC4KCiMjIENvbnRlbnQKClNhbXBsZSBjb250ZW50IG9yZ2FuaXplZCBieSBjb2xsZWN0aW9uIHNsdWc6CgpgYGBqc29uCiJjb250ZW50IjogewoJInBvc3RzIjogWwoJCXsKCQkJImlkIjogInBvc3QtMSIsCgkJCSJzbHVnIjogImhlbGxvLXdvcmxkIiwKCQkJInN0YXR1cyI6ICJwdWJsaXNoZWQiLAoJCQkiZGF0YSI6IHsKCQkJCSJ0aXRsZSI6ICJIZWxsbyBXb3JsZCIsCgkJCQkiZXhjZXJwdCI6ICJNeSBmaXJzdCBwb3N0LiIsCgkJCQkiZmVhdHVyZWRfaW1hZ2UiOiB7CgkJCQkJIiRtZWRpYSI6IHsKCQkJCQkJInVybCI6ICJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8teHh4P3c9MTIwMCZoPTgwMCZmaXQ9Y3JvcCIsCgkJCQkJCSJhbHQiOiAiRGVzY3JpcHRpb24gb2YgaW1hZ2UiLAoJCQkJCQkiZmlsZW5hbWUiOiAiaGVsbG8td29ybGQuanBnIgoJCQkJCX0KCQkJCX0sCgkJCQkiY29udGVudCI6IFsKCQkJCQl7CgkJCQkJCSJfdHlwZSI6ICJibG9jayIsCgkJCQkJCSJzdHlsZSI6ICJub3JtYWwiLAoJCQkJCQkiY2hpbGRyZW4iOiBbeyAiX3R5cGUiOiAic3BhbiIsICJ0ZXh0IjogIlRoaXMgaXMgdGhlIGJvZHkgdGV4dC4iIH1dCgkJCQkJfQoJCQkJXQoJCQl9LAoJCQkiYnlsaW5lcyI6IFsKCQkJCXsgImJ5bGluZSI6ICJieWxpbmUtZWRpdG9yaWFsIiB9CgkJCV0sCgkJCSJ0YXhvbm9taWVzIjogewoJCQkJImNhdGVnb3J5IjogWyJkZXZlbG9wbWVudCJdLAoJCQkJInRhZyI6IFsid2ViZGV2IiwgIm9waW5pb24iXQoJCQl9CgkJfQoJXSwKCSJwYWdlcyI6IFsKCQl7CgkJCSJpZCI6ICJhYm91dCIsCgkJCSJzbHVnIjogImFib3V0IiwKCQkJInN0YXR1cyI6ICJwdWJsaXNoZWQiLAoJCQkiZGF0YSI6IHsKCQkJCSJ0aXRsZSI6ICJBYm91dCIsCgkJCQkiY29udGVudCI6IFsKCQkJCQl7CgkJCQkJCSJfdHlwZSI6ICJibG9jayIsCgkJCQkJCSJzdHlsZSI6ICJub3JtYWwiLAoJCQkJCQkiY2hpbGRyZW4iOiBbeyAiX3R5cGUiOiAic3BhbiIsICJ0ZXh0IjogIkFib3V0IHRoaXMgc2l0ZS4iIH1dCgkJCQkJfQoJCQkJXQoJCQl9CgkJfQoJXQp9CmBgYAoKIyMjIE1lZGlhIHJlZmVyZW5jZXMgaW4gc2VlZCBjb250ZW50CgpVc2UgYCRtZWRpYWAgZm9yIGltYWdlIGZpZWxkcyAtLSBFbURhc2ggZG93bmxvYWRzIGFuZCBzdG9yZXMgdGhlIGltYWdlOgoKYGBganNvbgoiZmVhdHVyZWRfaW1hZ2UiOiB7CgkiJG1lZGlhIjogewoJCSJ1cmwiOiAiaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLXh4eD93PTEyMDAmaD04MDAmZml0PWNyb3AiLAoJCSJhbHQiOiAiRGVzY3JpcHRpb24iLAoJCSJmaWxlbmFtZSI6ICJteS1pbWFnZS5qcGciCgl9Cn0KYGBgCgpGb3IgZXh0ZXJuYWwgaW1hZ2VzIHdpdGhvdXQgZG93bmxvYWRpbmc6CgpgYGBqc29uCiJmZWF0dXJlZF9pbWFnZSI6ICJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8teHh4P3c9MTIwMCIKYGBgCgojIyMgUmVmZXJlbmNlIGZpZWxkcyBpbiBzZWVkIGNvbnRlbnQKClVzZSBgJHJlZjppZGAgZm9ybWF0IHRvIHJlZmVyZW5jZSBvdGhlciBlbnRyaWVzOgoKYGBganNvbgoiYXV0aG9yIjogIiRyZWY6YnlsaW5lLWVkaXRvcmlhbCIKYGBgCgojIyMgUG9ydGFibGUgVGV4dCBpbiBzZWVkIGNvbnRlbnQKCkNvbnRlbnQgZmllbGRzIG9mIHR5cGUgYHBvcnRhYmxlVGV4dGAgYXJlIGFycmF5cyBvZiBibG9ja3M6CgpgYGBqc29uClsKCXsKCQkiX3R5cGUiOiAiYmxvY2siLAoJCSJzdHlsZSI6ICJub3JtYWwiLAoJCSJjaGlsZHJlbiI6IFt7ICJfdHlwZSI6ICJzcGFuIiwgInRleHQiOiAiQSBwYXJhZ3JhcGguIiB9XQoJfSwKCXsKCQkiX3R5cGUiOiAiYmxvY2siLAoJCSJzdHlsZSI6ICJoMiIsCgkJImNoaWxkcmVuIjogW3sgIl90eXBlIjogInNwYW4iLCAidGV4dCI6ICJBIGhlYWRpbmciIH1dCgl9LAoJewoJCSJfdHlwZSI6ICJibG9jayIsCgkJInN0eWxlIjogImJsb2NrcXVvdGUiLAoJCSJjaGlsZHJlbiI6IFt7ICJfdHlwZSI6ICJzcGFuIiwgInRleHQiOiAiQSBxdW90ZS4iIH1dCgl9Cl0KYGBgCgpJbmxpbmUgbWFya3MgKGJvbGQsIGl0YWxpYywgbGlua3MpOgoKYGBganNvbgp7CgkiX3R5cGUiOiAiYmxvY2siLAoJInN0eWxlIjogIm5vcm1hbCIsCgkiY2hpbGRyZW4iOiBbCgkJeyAiX3R5cGUiOiAic3BhbiIsICJ0ZXh0IjogIlRoaXMgaXMgIiB9LAoJCXsgIl90eXBlIjogInNwYW4iLCAidGV4dCI6ICJib2xkIiwgIm1hcmtzIjogWyJzdHJvbmciXSB9LAoJCXsgIl90eXBlIjogInNwYW4iLCAidGV4dCI6ICIgYW5kICIgfSwKCQl7ICJfdHlwZSI6ICJzcGFuIiwgInRleHQiOiAiaXRhbGljIiwgIm1hcmtzIjogWyJlbSJdIH0KCV0KfQpgYGAKCkJsb2NrIHN0eWxlczogYG5vcm1hbGAsIGBoMWAtYGg2YCwgYGJsb2NrcXVvdGVgLgoKIyMjIERyYWZ0IGNvbnRlbnQKClNldCBgInN0YXR1cyI6ICJkcmFmdCJgIHRvIGNyZWF0ZSB1bnB1Ymxpc2hlZCBjb250ZW50OgoKYGBganNvbgp7CgkiaWQiOiAicG9zdC1kcmFmdCIsCgkic2x1ZyI6ICJ3b3JrLWluLXByb2dyZXNzIiwKCSJzdGF0dXMiOiAiZHJhZnQiLAoJImRhdGEiOiB7IC4uLiB9Cn0KYGBgCgojIyBBcHBseWluZyBTZWVkcwoKVGhlIHNlZWQgYXQgYC5lbWRhc2gvc2VlZC5qc29uYCwgYHBhY2thZ2UuanNvbiNlbWRhc2guc2VlZGAsIG9yIGBzZWVkL3NlZWQuanNvbmAgaXMgaW5saW5lZCBpbnRvIHRoZSBidWlsZCBhbmQgYXBwbGllZCBvbiB0aGUgZmlyc3QgcmVxdWVzdCB3aGVuIHRoZSBkYXRhYmFzZSBpcyBlbXB0eSBhbmQgdGhlIHNldHVwIHdpemFyZCBoYXNuJ3QgYmVlbiBjb21wbGV0ZWQuIEV4aXN0aW5nIGRhdGEgaXMgbmV2ZXIgb3ZlcndyaXR0ZW4uCgpWYWxpZGF0aW9uIHJ1bnMgYXQgYXBwbHkgdGltZS4gQ29tbW9uIGVycm9ycyBjYXVnaHQ6CgotIEltYWdlIGZpZWxkcyB3aXRoIHJhdyBVUkxzIChzaG91bGQgdXNlIGAkbWVkaWFgKQotIFJlZmVyZW5jZSBmaWVsZHMgd2l0aCByYXcgSURzIChzaG91bGQgdXNlIGAkcmVmOmlkYCkKLSBQb3J0YWJsZVRleHQgbm90IGFuIGFycmF5IG9yIG1pc3NpbmcgYF90eXBlYAotIFR5cGUgbWlzbWF0Y2hlcyAoc3RyaW5nIHZzIG51bWJlciwgZXRjLikKCklmIHRoZSBzZWVkIGlzIGludmFsaWQsIHRoZSBmaXJzdCByZXF1ZXN0IGZhaWxzIGFuZCB0aGUgZXJyb3IgaXMgbG9nZ2VkLiBSZXN0YXJ0IHRoZSBkZXYgc2VydmVyIGFmdGVyIGZpeGluZyBpdC4KCiMjIEV4cG9ydGluZyBTZWVkcwoKYGBgYmFzaApucHggZW1kYXNoIGV4cG9ydC1zZWVkICAgICAgICAgICAgICAgICAgICAgICMgU2NoZW1hIG9ubHkKbnB4IGVtZGFzaCBleHBvcnQtc2VlZCAtLXdpdGgtY29udGVudCAgICAgICAjIFNjaGVtYSArIGFsbCBjb250ZW50Cm5weCBlbWRhc2ggZXhwb3J0LXNlZWQgLS13aXRoLWNvbnRlbnQ9cG9zdHMscGFnZXMgICMgU3BlY2lmaWMgY29sbGVjdGlvbnMKYGBgCg==
+# Schema and Seed Files
+
+The seed file (`seed/seed.json`) defines the site's entire schema and optional demo content. It's inlined into the build and applied automatically on the first request when the database is empty and the setup wizard hasn't been completed.
+
+## Seed File Structure
+
+```json
+{
+	"$schema": "https://emdashcms.com/seed.schema.json",
+	"version": "1",
+	"meta": {
+		"name": "My Site",
+		"description": "A description of this site",
+		"author": "Author Name"
+	},
+	"settings": { ... },
+	"blockTypes": [ ... ],
+	"collections": [ ... ],
+	"taxonomies": [ ... ],
+	"menus": [ ... ],
+	"widgetAreas": [ ... ],
+	"sections": [ ... ],
+	"bylines": [ ... ],
+	"content": { ... }
+}
+```
+
+## Collections
+
+Collections define content types. Each collection becomes a database table (`ec_{slug}`).
+
+```json
+{
+	"slug": "posts",
+	"label": "Posts",
+	"labelSingular": "Post",
+	"supports": ["drafts", "revisions", "search", "seo"],
+	"commentsEnabled": true,
+	"fields": [ ... ]
+}
+```
+
+### Collection Supports
+
+| Support      | Description               |
+| ------------ | ------------------------- |
+| `drafts`     | Draft/published workflow  |
+| `revisions`  | Revision history          |
+| `preview`    | Signed draft previews     |
+| `scheduling` | Scheduled publication     |
+| `search`     | Full-text search indexing |
+| `seo`        | SEO meta fields in admin  |
+
+### Slug Rules
+
+- Lowercase alphanumeric + underscores: `/^[a-z][a-z0-9_]*$/`
+- Max 63 characters
+- Cannot conflict with reserved slugs
+
+## Field Types
+
+| Type           | Column type | Runtime shape                         | Notes                        |
+| -------------- | ----------- | ------------------------------------- | ---------------------------- |
+| `string`       | TEXT        | `string`                              | Single line text             |
+| `text`         | TEXT        | `string`                              | Multi-line text (textarea)   |
+| `url`          | TEXT        | `string`                              | URL input                    |
+| `number`       | REAL        | `number`                              | Floating point               |
+| `integer`      | INTEGER     | `number`                              | Whole numbers                |
+| `boolean`      | INTEGER     | `boolean`                             | Stored as 0/1                |
+| `datetime`     | TEXT        | `Date`                                | ISO 8601 string in DB        |
+| `select`       | TEXT        | `string`                              | One configured option        |
+| `multiSelect`  | JSON        | `string[]`                            | Configured option list       |
+| `image`        | TEXT        | `{ id, src?, alt?, width?, height? }` | **Object, not a string**     |
+| `file`         | TEXT        | `{ id, url?, filename?, ... }`        | File reference               |
+| `reference`    | TEXT        | `string` (ID)                         | Reference to another entry   |
+| `slug`         | TEXT        | `string`                              | Slug input                   |
+| `repeater`     | JSON        | `object[]`                            | Repeated structured rows     |
+| `portableText` | JSON        | `PortableTextBlock[]`                 | Rich text as structured JSON |
+| `blocks`       | JSON        | `{ _type, _version, _key, ... }[]`    | Ordered typed composition    |
+| `json`         | JSON        | `unknown`                             | Arbitrary JSON data          |
+
+### Field Definition
+
+```json
+{
+	"slug": "title",
+	"label": "Title",
+	"type": "string",
+	"required": true,
+	"searchable": true
+}
+```
+
+Fields can have:
+
+- `slug` (required) -- field identifier
+- `label` (required) -- display label in admin
+- `type` (required) -- one of the types above
+- `required` -- validation
+- `searchable` -- include in full-text search index
+
+### Common Field Patterns
+
+**Blog post:**
+
+```json
+"fields": [
+	{ "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
+	{ "slug": "featured_image", "label": "Featured Image", "type": "image" },
+	{ "slug": "content", "label": "Content", "type": "portableText", "searchable": true },
+	{ "slug": "excerpt", "label": "Excerpt", "type": "text" }
+]
+```
+
+**Portfolio project:**
+
+```json
+"fields": [
+	{ "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
+	{ "slug": "featured_image", "label": "Featured Image", "type": "image", "required": true },
+	{ "slug": "client", "label": "Client", "type": "string" },
+	{ "slug": "year", "label": "Year", "type": "string" },
+	{ "slug": "summary", "label": "Summary", "type": "text", "searchable": true },
+	{ "slug": "content", "label": "Content", "type": "portableText", "searchable": true },
+	{ "slug": "gallery", "label": "Gallery", "type": "repeater", "validation": { "subFields": [{ "slug": "image", "label": "Image", "type": "image", "required": true }] } },
+	{ "slug": "url", "label": "Project URL", "type": "url" }
+]
+```
+
+**Page (minimal):**
+
+```json
+"fields": [
+	{ "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
+	{ "slug": "content", "label": "Content", "type": "portableText", "searchable": true }
+]
+```
+
+## Block types
+
+Define `blockTypes` before collections that use a `blocks` field. Each type retains every numbered version and names one active version for new blocks.
+
+```json
+{
+	"version": "1",
+	"blockTypes": [
+		{
+			"slug": "hero",
+			"label": "Hero",
+			"currentVersion": 1,
+			"versions": [
+				{
+					"version": 1,
+					"fields": [
+						{ "slug": "heading", "label": "Heading", "type": "string", "required": true },
+						{ "slug": "image", "label": "Image", "type": "image" }
+					]
+				}
+			]
+		}
+	],
+	"collections": [
+		{
+			"slug": "pages",
+			"label": "Pages",
+			"fields": [
+				{
+					"slug": "layout",
+					"label": "Layout",
+					"type": "blocks",
+					"validation": { "allowedTypes": ["hero"], "maxItems": 20 }
+				}
+			]
+		}
+	]
+}
+```
+
+Compatible changes amend the active version. A breaking change creates a new inactive version; deploy renderers for it before activation, then migrate stored blocks explicitly. Removing a type from `allowedTypes` moves it to the server-managed `retiredTypes` list.
+
+Seeded block values include their type version and stable key:
+
+```json
+{
+	"_type": "hero",
+	"_version": 1,
+	"_key": "home-hero",
+	"heading": "Build something useful"
+}
+```
+
+Adding a required blocks field or a positive `minItems` rule to a populated collection is not an additive schema change. Backfill every existing entry before enforcing the requirement.
+
+Block fields support scalar, text, selection, Portable Text, image, file, and repeater fields. References, JSON, slugs, nested blocks, custom widgets, indexes, uniqueness, and per-subfield localization are not supported inside block definitions.
+
+## Taxonomies
+
+Taxonomies are tag/category systems attached to collections.
+
+```json
+{
+	"name": "category",
+	"label": "Categories",
+	"labelSingular": "Category",
+	"hierarchical": true,
+	"collections": ["posts"],
+	"terms": [
+		{ "slug": "development", "label": "Development" },
+		{ "slug": "design", "label": "Design" }
+	]
+}
+```
+
+- `hierarchical: true` -- tree structure (like WordPress categories)
+- `hierarchical: false` -- flat list (like WordPress tags)
+- `collections` -- which collections this taxonomy applies to
+- `terms` -- pre-defined terms to create
+
+## Menus
+
+Navigation menus, managed from the admin UI.
+
+```json
+{
+	"name": "primary",
+	"label": "Primary Navigation",
+	"items": [
+		{ "type": "custom", "label": "Home", "url": "/" },
+		{ "type": "custom", "label": "About", "url": "/pages/about" },
+		{ "type": "custom", "label": "Posts", "url": "/posts" }
+	]
+}
+```
+
+Menu item types:
+
+- `custom` -- arbitrary URL
+- Content references are resolved at render time
+
+## Widget Areas
+
+Named regions where editors can add configurable widgets.
+
+```json
+{
+	"name": "sidebar",
+	"label": "Sidebar",
+	"description": "Widget area displayed on single post pages",
+	"widgets": [
+		{
+			"type": "component",
+			"componentId": "core:search",
+			"title": "Search"
+		},
+		{
+			"type": "component",
+			"componentId": "core:categories",
+			"title": "Categories"
+		},
+		{
+			"type": "component",
+			"componentId": "core:tags",
+			"title": "Tags"
+		},
+		{
+			"type": "component",
+			"componentId": "core:recent-posts",
+			"title": "Recent Posts",
+			"settings": { "count": 5, "showDate": true }
+		},
+		{
+			"type": "component",
+			"componentId": "core:archives",
+			"title": "Archives",
+			"settings": { "type": "monthly", "limit": 6 }
+		},
+		{
+			"type": "content",
+			"title": "About",
+			"content": [
+				{
+					"_type": "block",
+					"style": "normal",
+					"children": [{ "_type": "span", "text": "Some rich text content." }]
+				}
+			]
+		}
+	]
+}
+```
+
+### Widget types
+
+| Type        | Description               | Key fields                |
+| ----------- | ------------------------- | ------------------------- |
+| `content`   | Rich text (Portable Text) | `content`                 |
+| `menu`      | Navigation menu           | `menuName`                |
+| `component` | Core or custom component  | `componentId`, `settings` |
+
+### Core widget components
+
+- `core:search` -- search form
+- `core:categories` -- category list with counts
+- `core:tags` -- tag cloud
+- `core:recent-posts` -- latest posts list
+- `core:archives` -- monthly archive links
+
+## Sections (Reusable Blocks)
+
+Reusable content blocks that editors can insert via `/section` slash command in the editor.
+
+```json
+{
+	"slug": "newsletter-signup",
+	"title": "Newsletter Signup",
+	"description": "A call-to-action block for newsletter subscriptions",
+	"keywords": ["newsletter", "subscribe", "email", "cta"],
+	"source": "theme",
+	"content": [
+		{
+			"_type": "block",
+			"style": "h3",
+			"children": [{ "_type": "span", "text": "Stay in the loop" }]
+		},
+		{
+			"_type": "block",
+			"style": "normal",
+			"children": [{ "_type": "span", "text": "Get notified when new posts are published." }]
+		}
+	]
+}
+```
+
+## Bylines
+
+Named author profiles, independent of user accounts.
+
+```json
+{
+	"id": "byline-editorial",
+	"slug": "emdash-editorial",
+	"displayName": "EmDash Editorial"
+}
+```
+
+Guest bylines:
+
+```json
+{
+	"id": "byline-guest",
+	"slug": "guest-contributor",
+	"displayName": "Guest Contributor",
+	"isGuest": true
+}
+```
+
+## Settings
+
+Site-wide settings:
+
+```json
+"settings": {
+	"title": "My Blog",
+	"tagline": "Thoughts on building for the web"
+}
+```
+
+Available keys: `title`, `tagline`, `logo`, `favicon`, `social`, `timezone`, `dateFormat`.
+
+## Content
+
+Sample content organized by collection slug:
+
+```json
+"content": {
+	"posts": [
+		{
+			"id": "post-1",
+			"slug": "hello-world",
+			"status": "published",
+			"data": {
+				"title": "Hello World",
+				"excerpt": "My first post.",
+				"featured_image": {
+					"$media": {
+						"url": "https://images.unsplash.com/photo-xxx?w=1200&h=800&fit=crop",
+						"alt": "Description of image",
+						"filename": "hello-world.jpg"
+					}
+				},
+				"content": [
+					{
+						"_type": "block",
+						"style": "normal",
+						"children": [{ "_type": "span", "text": "This is the body text." }]
+					}
+				]
+			},
+			"bylines": [
+				{ "byline": "byline-editorial" }
+			],
+			"taxonomies": {
+				"category": ["development"],
+				"tag": ["webdev", "opinion"]
+			}
+		}
+	],
+	"pages": [
+		{
+			"id": "about",
+			"slug": "about",
+			"status": "published",
+			"data": {
+				"title": "About",
+				"content": [
+					{
+						"_type": "block",
+						"style": "normal",
+						"children": [{ "_type": "span", "text": "About this site." }]
+					}
+				]
+			}
+		}
+	]
+}
+```
+
+### Media references in seed content
+
+Use `$media` for image fields -- EmDash downloads and stores the image:
+
+```json
+"featured_image": {
+	"$media": {
+		"url": "https://images.unsplash.com/photo-xxx?w=1200&h=800&fit=crop",
+		"alt": "Description",
+		"filename": "my-image.jpg"
+	}
+}
+```
+
+For external images without downloading:
+
+```json
+"featured_image": "https://images.unsplash.com/photo-xxx?w=1200"
+```
+
+### Reference fields in seed content
+
+Use `$ref:id` format to reference other entries:
+
+```json
+"author": "$ref:byline-editorial"
+```
+
+### Portable Text in seed content
+
+Content fields of type `portableText` are arrays of blocks:
+
+```json
+[
+	{
+		"_type": "block",
+		"style": "normal",
+		"children": [{ "_type": "span", "text": "A paragraph." }]
+	},
+	{
+		"_type": "block",
+		"style": "h2",
+		"children": [{ "_type": "span", "text": "A heading" }]
+	},
+	{
+		"_type": "block",
+		"style": "blockquote",
+		"children": [{ "_type": "span", "text": "A quote." }]
+	}
+]
+```
+
+Inline marks (bold, italic, links):
+
+```json
+{
+	"_type": "block",
+	"style": "normal",
+	"children": [
+		{ "_type": "span", "text": "This is " },
+		{ "_type": "span", "text": "bold", "marks": ["strong"] },
+		{ "_type": "span", "text": " and " },
+		{ "_type": "span", "text": "italic", "marks": ["em"] }
+	]
+}
+```
+
+Block styles: `normal`, `h1`-`h6`, `blockquote`.
+
+### Draft content
+
+Set `"status": "draft"` to create unpublished content:
+
+```json
+{
+	"id": "post-draft",
+	"slug": "work-in-progress",
+	"status": "draft",
+	"data": { ... }
+}
+```
+
+## Applying Seeds
+
+The seed at `.emdash/seed.json`, `package.json#emdash.seed`, or `seed/seed.json` is inlined into the build and applied on the first request when the database is empty and the setup wizard hasn't been completed. Existing data is never overwritten.
+
+Validation runs at apply time. Common errors caught:
+
+- Image fields with raw URLs (should use `$media`)
+- Reference fields with raw IDs (should use `$ref:id`)
+- PortableText not an array or missing `_type`
+- Type mismatches (string vs number, etc.)
+
+If the seed is invalid, the first request fails and the error is logged. Restart the dev server after fixing it.
+
+## Exporting Seeds
+
+```bash
+npx emdash export-seed                      # Schema only
+npx emdash export-seed --with-content       # Schema + all content
+npx emdash export-seed --with-content=posts,pages  # Specific collections
+```

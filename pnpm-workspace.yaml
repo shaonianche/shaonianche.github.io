@@ -1,1 +1,15 @@
-IyBCdWlsZCBzY3JpcHRzOiBhbGxvdyBvbmx5IHdoYXQgZWFjaCBydW50aW1lIG5lZWRzOyByZXN0IGZhbHNlIHNvCiMgc3RyaWN0RGVwQnVpbGRzIChwbnBtID49MTAuMjYgLyAxMSkgcGFzc2VzLgphbGxvd0J1aWxkczoKICBlc2J1aWxkOiB0cnVlCiAgd29ya2VyZDogdHJ1ZQogIHNoYXJwOiBmYWxzZQoKIyBTdXBwbHktY2hhaW4gaGFyZGVuaW5nOiBjb29sZG93biBvbiBicmFuZC1uZXcgcmVsZWFzZXMgKEVtRGFzaCBleGVtcHQpCiMgYW5kIG5vIG5vbi1yZWdpc3RyeSB0cmFuc2l0aXZlIHNvdXJjZXMuIChObyB0cnVzdFBvbGljeTogbm8tZG93bmdyYWRlIC0tCiMgaXQgdHJpcHMgb24gdXBzdHJlYW0gcHJvdmVuYW5jZSByZWdyZXNzaW9ucyB3ZSBkb24ndCBjb250cm9sLikKbWluaW11bVJlbGVhc2VBZ2U6IDE0NDAKbWluaW11bVJlbGVhc2VBZ2VFeGNsdWRlOgogIC0gZW1kYXNoCiAgLSAiQGVtZGFzaC1jbXMvKiIKYmxvY2tFeG90aWNTdWJkZXBzOiB0cnVlCg==
+# Build scripts: allow only what each runtime needs; rest false so
+# strictDepBuilds (pnpm >=10.26 / 11) passes.
+allowBuilds:
+  esbuild: true
+  workerd: true
+  sharp: false
+
+# Supply-chain hardening: cooldown on brand-new releases (EmDash exempt)
+# and no non-registry transitive sources. (No trustPolicy: no-downgrade --
+# it trips on upstream provenance regressions we don't control.)
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - emdash
+  - "@emdash-cms/*"
+blockExoticSubdeps: true
