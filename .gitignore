@@ -15,3 +15,7 @@ seed/seed.json
 !.env.example
 .dev.vars
 .dev.vars.*
+
+# Editor settings
+.cursor
+.vscode
