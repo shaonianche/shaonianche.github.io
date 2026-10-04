@@ -6,11 +6,9 @@ import emdash from "emdash/astro";
 
 export default defineConfig({
 	output: "server",
-	adapter: cloudflare(),
-	image: {
-		layout: "constrained",
-		responsiveStyles: true,
-	},
+	// imageService "passthrough": 不使用 Cloudflare Images 绑定做实时缩放
+	// （计费服务，当前 0 调用）；图片全部由 R2 直出原图。
+	adapter: cloudflare({ imageService: "passthrough" }),
 	integrations: [
 		react(),
 		emdash({

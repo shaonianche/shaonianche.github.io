@@ -59,7 +59,8 @@ if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
 														src={img}
 														alt={resolveImageAlt(post.data.featured_image) || post.data.title}
 														loading="lazy"
-													/>
+														decoding="async"
+														/>
 												)}
 												<span class="overlay">{post.data.title}</span>
 											</div>

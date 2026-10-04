@@ -28,6 +28,7 @@ const img = resolveImageUrl(featuredImage);
 						src={img}
 						alt={resolveImageAlt(featuredImage) || title}
 						loading="lazy"
+						decoding="async"
 					/>
 					<span class="overlay" />
 				</a>
