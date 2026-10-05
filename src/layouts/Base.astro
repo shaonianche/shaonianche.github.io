@@ -121,6 +121,14 @@ const menuItems = (menu?.items ?? []).map((item) => ({
 				}
 			})();
 		</script>
+		<!-- Cloudflare Web Analytics -->
+		<script
+			is:inline
+			defer
+			src="https://static.cloudflareinsights.com/beacon.min.js"
+			data-cf-beacon='{"token": "2669a625e06f4a0caf2dc6ed33dcecf2"}'
+		></script>
+		<!-- End Cloudflare Web Analytics -->
 	</head>
 	<body>
 		<EmDashBodyStart page={pageCtx} />
