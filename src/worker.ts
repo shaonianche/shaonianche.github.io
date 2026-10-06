@@ -9,5 +9,6 @@ export { PluginBridge };
 
 export default {
 	...handler,
-	scheduled: createScheduledHandler(),
+	// 与 wrangler.jsonc 的 triggers.crons 保持一致；不一致的触发会被记录并忽略
+	scheduled: createScheduledHandler({ generalCron: "*/15 * * * *" }),
 } satisfies ExportedHandler;

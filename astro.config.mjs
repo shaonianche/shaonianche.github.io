@@ -1,4 +1,5 @@
 import cloudflare from "@astrojs/cloudflare";
+import { cacheCloudflare } from "@astrojs/cloudflare/cache";
 import react from "@astrojs/react";
 import { d1, r2 } from "@emdash-cms/cloudflare";
 import { defineConfig, fontProviders } from "astro/config";
@@ -31,6 +32,22 @@ export default defineConfig({
 	// 默认 imageService "cloudflare-binding"：通过 IMAGES 绑定做实时缩放
 	// （Images Free 计划每月 5000 次唯一变换免费，本站用量远低于此）。
 	adapter: cloudflare(),
+	// Workers Cache：在 Worker 前面加边缘缓存，命中时完全不消耗 Worker CPU
+	// （免费套餐 10ms 上限的主要对策）。EmDash 发布/更新内容时通过
+	// cache.purge({ tags }) 精确失效；maxAge 只是兜底。评论等动态内容
+	// 最坏 5 分钟内刷新。
+	// 注意：/search 与 /_emdash/* 有意不配置缓存规则；EmDash 自带
+	// private, no-store，登录编辑者的响应也不会被存储。
+	cache: { provider: cacheCloudflare() },
+	routeRules: {
+		"/": { maxAge: 300, swr: 86400 },
+		"/posts": { maxAge: 300, swr: 86400 },
+		"/posts/[slug]": { maxAge: 300, swr: 86400 },
+		"/pages/[slug]": { maxAge: 300, swr: 86400 },
+		"/category/[slug]": { maxAge: 300, swr: 86400 },
+		"/tag/[slug]": { maxAge: 300, swr: 86400 },
+		"/rss.xml": { maxAge: 3600, swr: 86400 },
+	},
 	integrations: [
 		react(),
 		emdash({
