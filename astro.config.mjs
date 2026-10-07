@@ -40,12 +40,15 @@ export default defineConfig({
 	// private, no-store，登录编辑者的响应也不会被存储。
 	cache: { provider: cacheCloudflare() },
 	routeRules: {
-		"/": { maxAge: 300, swr: 86400 },
-		"/posts": { maxAge: 300, swr: 86400 },
-		"/posts/[slug]": { maxAge: 300, swr: 86400 },
-		"/pages/[slug]": { maxAge: 300, swr: 86400 },
-		"/category/[slug]": { maxAge: 300, swr: 86400 },
-		"/tag/[slug]": { maxAge: 300, swr: 86400 },
+		// maxAge 1 小时：内容更新由发布时的标签 purge 保证新鲜，maxAge 只兜底。
+		// 拉长它直接减少回源 revalidation 次数（Worker 调用和冷启动的主要来源）。
+		// 注意：评论审核通过不触发 purge，新评论最长约 1 小时后才对外可见。
+		"/": { maxAge: 3600, swr: 86400 },
+		"/posts": { maxAge: 3600, swr: 86400 },
+		"/posts/[slug]": { maxAge: 3600, swr: 86400 },
+		"/pages/[slug]": { maxAge: 3600, swr: 86400 },
+		"/category/[slug]": { maxAge: 3600, swr: 86400 },
+		"/tag/[slug]": { maxAge: 3600, swr: 86400 },
 		"/rss.xml": { maxAge: 3600, swr: 86400 },
 	},
 	integrations: [
