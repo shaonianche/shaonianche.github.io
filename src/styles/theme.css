@@ -1,89 +1,30 @@
 /*
-  theme.css -- port of the shaonianche.github.io Saber theme
-  (Vue 2 + Bulma + SCSS) design tokens.
+  theme.css -- your theme overrides. This is the file to edit to
+  retheme the site.
 
-  Source: theme/styles/components/_variables.scss
+  Every design token lives in src/styles/tokens.css (colors, type
+  scale, spacing, layout, shadows) with its default value. Override any
+  of them here: declarations in this file are unlayered, so they always
+  beat the @layer base defaults in tokens.css.
 
-  Colors keep the original light/dark palettes via light-dark(), so they
-  follow EmDash's theme switcher (footer buttons set .light/.dark on
-  <html>; with no choice, color-scheme: light dark follows the OS --
-  same behaviour as the original prefers-color-scheme rules).
+  Colors are defined with light-dark(). Overriding with a plain color
+  changes light and dark mode at once; use light-dark(<light>, <dark>)
+  to set different values per mode.
 
-  Fonts keep the original Chinese-first stacks.
+  Webfonts are loaded in astro.config.mjs (--font-body, --font-mono).
+  Swap the loaded font there; use overrides here for system fonts or a
+  separate heading face.
+
+  Example:
+
+  :root {
+    --color-brand: light-dark(#0f766e, #2dd4bf);
+    --font-heading: "Iowan Old Style", Georgia, serif;
+    --radius: 8px;
+  }
 */
 
 :root {
-	/* ---- original accent scale (light | dark) ---- */
-	--color-accent-0: light-dark(#ffffff, #22272e);
-	--color-accent-1: light-dark(#efefef, #2d333b);
-	--color-accent-2: light-dark(#dfdfdf, #373e47);
-	--color-accent-3: light-dark(#bfbfbf, #444c56);
-	--color-accent-4: light-dark(#5f5f5f, #545d68);
-	--color-accent-5: light-dark(#3f3f3f, #636e7b);
-	--color-accent-6: light-dark(#2f2f2f, #768390);
-	--color-accent-7: light-dark(#1f1f1f, #909dab);
-	--color-accent-8: light-dark(#1f1f1f, #adbac7);
-	--color-accent-9: light-dark(#1f1f1f, #cdd9e5);
-
-	--color-background: var(--color-accent-0);
-	--color-background-transparent: light-dark(
-		rgba(255, 255, 255, 0),
-		rgba(31, 31, 31, 0)
-	);
-	--color-text-primary: light-dark(#3f3f3f, #cdd9e5);
-	--color-text-secondary: light-dark(#bfbfbf, #768390);
-	--color-link: light-dark(#039be5, #66ccff);
-
-	/* ---- mapped onto this template's token names ---- */
-	--color-bg: var(--color-background);
-	--color-bg-subtle: var(--color-accent-1);
-	--color-text: var(--color-text-primary);
-	/* --color-text-secondary already matches the template name */
-	--color-muted: light-dark(#bfbfbf, #545d68);
-	--color-border: var(--color-accent-2);
-	--color-border-subtle: var(--color-accent-1);
-	--color-surface: var(--color-accent-1);
-	--color-brand: var(--color-link);
-	--color-brand-hover: light-dark(#0288d1, #99ddff);
-	--color-on-brand: #ffffff;
-	--color-brand-ring: color-mix(in srgb, var(--color-link) 25%, transparent);
-
-	/* ---- typography: Chinese-first stacks (from _variables.scss) ---- */
-	--font-body:
-		pt-sans, system-ui, source-han-sans-cjk-sc, -apple-system,
-		"lucida grande", "lucida sans unicode", "Noto Sans SC",
-		"Source Han Sans SC", "PingFang SC", "Hiragino Sans GB",
-		"WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
-	--font-heading:
-		pt-sans, system-ui, source-han-sans-cjk-sc, -apple-system,
-		"lucida grande", "lucida sans unicode", "Noto Sans SC",
-		"Source Han Sans SC", "PingFang SC", "Hiragino Sans GB",
-		"WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
-	--font-mono:
-		"Inconsolata", Monaco, Consolas, "Lucida Console", monospace;
-
-	/* original base rhythm */
-	--leading-relaxed: 1.7778;
-	--leading-normal: 1.5;
-
-	/* original spacing scale */
-	--gap-s: 0.4445rem;
-	--gap-m: 0.8889rem;
-	--gap-l: 1.7778rem;
-	--gap-xl: 3.5556rem;
-
-	/* original content column */
-	--content-width: 840px;
-	--wide-width: 1200px;
-}
-
-/* Body copy follows the original theme's justified, loose rhythm. */
-body {
-	text-rendering: optimizeLegibility;
-	font-feature-settings:
-		"liga" 1,
-		"pnum" 1,
-		"kerns" 1;
 }
 
 /* Keep the signed-in Admin link separated from the primary navigation. */

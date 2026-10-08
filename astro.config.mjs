@@ -32,6 +32,11 @@ export default defineConfig({
 	// 默认 imageService "cloudflare-binding"：通过 IMAGES 绑定做实时缩放
 	// （Images Free 计划每月 5000 次唯一变换免费，本站用量远低于此）。
 	adapter: cloudflare(),
+	// 官方 blog 模板的图片组件依赖这两个默认值（ constrained 布局 + 响应式样式）
+	image: {
+		layout: "constrained",
+		responsiveStyles: true,
+	},
 	// Workers Cache：在 Worker 前面加边缘缓存，命中时完全不消耗 Worker CPU
 	// （免费套餐 10ms 上限的主要对策）。EmDash 发布/更新内容时通过
 	// cache.purge({ tags }) 精确失效；maxAge 只是兜底。评论等动态内容

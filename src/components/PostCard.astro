@@ -1,164 +1,281 @@
 ---
-/**
- * PostCard -- port of the post card from theme/layouts/index.vue.
- * 3:2 cover, date, title, excerpt with fade-out clamp.
- */
-import {
-	resolveImageUrl,
-	resolveImageAlt,
-	transformImageUrl,
-	transformSrcset,
-} from "../utils/media";
-import { formatCardDate } from "../utils/format-date";
+import type { ContentBylineCredit, EditProxy, MediaValue } from "emdash";
+import { Image } from "emdash/ui";
 
 interface Props {
 	title: string;
-	excerpt?: string | null;
-	featuredImage?: unknown;
+	excerpt?: string;
+	featuredImage?: MediaValue | string;
 	href: string;
-	date?: Date | null;
-	edit?: Record<string, unknown>;
+	date?: Date;
+	readingTime?: number;
+	tags?: Array<{ slug: string; label: string }>;
+	bylines?: ContentBylineCredit[];
+	edit?: EditProxy;
 }
 
-const { title, excerpt, featuredImage, href, date, edit } = Astro.props;
-const img = resolveImageUrl(featuredImage);
+const {
+	title,
+	excerpt,
+	featuredImage,
+	href,
+	date,
+	readingTime,
+	tags,
+	bylines,
+	edit,
+} = Astro.props;
+
+const formattedDate = date
+	? date.toLocaleDateString("en-US", {
+			year: "numeric",
+			month: "short",
+			day: "numeric",
+		})
+	: null;
 ---
 
 <article class="post-card">
+	<a href={href} class="card-link">
+		{
+			featuredImage ? (
+				<div class="card-image" {...edit?.featured_image}>
+					<Image image={featuredImage} />
+				</div>
+			) : (
+				<div class="card-placeholder" />
+			)
+		}
+		<div class="card-body">
+			<div class="card-meta">
+				{
+					bylines && bylines.length > 0 && (
+						<>
+							<div class="card-bylines">
+								{bylines.slice(0, 1).map((credit) => (
+									<span class="card-byline">
+										{credit.byline.avatarMediaId && (
+											<img
+												src={`/_emdash/api/media/file/${credit.byline.avatarMediaId}`}
+												alt={credit.byline.displayName}
+												class="card-byline-avatar"
+											/>
+										)}
+										<span class="card-byline-name">
+											{credit.byline.displayName}
+										</span>
+									</span>
+								))}
+								{bylines.length > 1 && (
+									<span
+										class="byline-more"
+										data-tooltip={bylines
+											.slice(1)
+											.map((c) => c.byline.displayName)
+											.join(", ")}
+										title={bylines
+											.slice(1)
+											.map((c) => c.byline.displayName)
+											.join(", ")}
+										tabindex="0"
+									>
+										+{bylines.length - 1}
+									</span>
+								)}
+							</div>
+							{(formattedDate || readingTime) && <span class="meta-dot" />}
+						</>
+					)
+				}
+				{formattedDate && <time>{formattedDate}</time>}
+				{formattedDate && readingTime && <span class="meta-dot" />}
+				{readingTime && <span>{readingTime} min</span>}
+			</div>
+			<h2 class="card-title" {...edit?.title}>{title}</h2>
+			{excerpt && <p class="card-excerpt" {...edit?.excerpt}>{excerpt}</p>}
+		</div>
+	</a>
 	{
-		img && (
-			<div class="post-card-image">
-				<a class="link" href={href} aria-label={title}>
-					<img
-						src={transformImageUrl(featuredImage, 480)}
-						srcset={transformSrcset(featuredImage, [480, 960])}
-						sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 90vw"
-						alt={resolveImageAlt(featuredImage) || title}
-						loading="lazy"
-						decoding="async"
-					/>
-					<span class="overlay" />
-				</a>
+		tags && tags.length > 0 && (
+			<div class="card-tags">
+				{tags.slice(0, 2).map((tag) => (
+					<a href={`/tag/${tag.slug}`} class="card-tag">
+						{tag.label}
+					</a>
+				))}
 			</div>
 		)
 	}
-	<div class="post-card-info">
-		{
-			date && (
-				<div class="post-meta">
-					<time datetime={date.toISOString()}>{formatCardDate(date)}</time>
-				</div>
-			)
-		}
-		<h2 class="post-title" {...(edit as any)?.title}>
-			<a href={href} title={title}>
-				{title}
-			</a>
-		</h2>
-		{
-			excerpt && (
-				<div class="post-excerpt" {...(edit as any)?.excerpt}>
-					<small>{excerpt}</small>
-				</div>
-			)
-		}
-	</div>
 </article>
 
 <style>
 	.post-card {
-		width: 100%;
-		height: 100%;
-		list-style: none;
+		display: flex;
+		flex-direction: column;
 	}
 
-	.post-card-image {
-		position: relative;
-		background-color: var(--color-surface);
+	.card-link {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.card-image {
+		aspect-ratio: 16 / 10;
 		overflow: hidden;
-		aspect-ratio: 3 / 2;
+		border-radius: var(--radius-lg);
+		background: var(--color-surface);
+		margin-bottom: var(--spacing-4);
 	}
 
-	.post-card-image a.link {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		display: block;
-	}
-
-	.post-card-image img {
-		display: block;
+	.card-image img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		transition: transform 0.3s ease;
 	}
 
-	.post-card-image .overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+	.card-link:hover .card-image img {
+		transform: scale(1.03);
 	}
 
-	.post-card-info {
-		padding: 0.4445rem;
-		overflow-wrap: break-word;
-		text-align: justify;
+	.card-placeholder {
+		aspect-ratio: 16 / 10;
+		border-radius: var(--radius-lg);
+		background: var(--color-surface);
+		margin-bottom: var(--spacing-4);
 	}
 
-	.post-meta {
+	.card-body {
+		flex: 1;
+	}
+
+	.card-meta {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		column-gap: var(--spacing-3);
+		row-gap: 0;
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+		margin-bottom: var(--spacing-2);
+	}
+
+	.card-meta time,
+	.card-meta span:not(.meta-dot) {
+		white-space: nowrap;
+	}
+
+	.meta-dot {
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		background: var(--color-muted);
+	}
+
+	.card-title {
+		font-size: var(--font-size-xl);
+		font-weight: var(--font-weight-heading);
+		line-height: var(--leading-snug);
+		letter-spacing: var(--tracking-snug);
+		margin-bottom: var(--spacing-2);
+		transition: color var(--transition-fast);
+	}
+
+	.card-link:hover .card-title {
+		color: var(--color-brand);
+	}
+
+	.card-excerpt {
+		font-size: var(--font-size-base);
+		line-height: var(--leading-relaxed);
 		color: var(--color-text-secondary);
-		display: block;
-		font-size: 0.75rem;
-		font-style: italic;
-	}
-
-	.post-title {
-		padding: 0.4445rem 0;
-		display: block;
-		margin: 0;
-		font-size: 1.125rem;
-		line-height: 1.2;
-	}
-
-	.post-title a {
-		color: var(--color-text-primary);
-		text-decoration: none;
-	}
-
-	.post-title a:hover {
-		color: var(--color-link);
-		text-decoration: none;
-	}
-
-	.post-excerpt {
-		position: relative;
-		max-height: 4rem;
-		overflow: hidden;
-		color: var(--color-text-secondary);
-		line-height: 1.3rem;
-		text-overflow: ellipsis;
 		display: -webkit-box;
-		-webkit-line-clamp: 3;
+		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 
-	/* fade out ellipsis */
-	.post-excerpt::after {
-		content: "";
-		text-align: right;
+	.card-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-2);
+		margin-top: var(--spacing-3);
+	}
+
+	.card-tag {
+		display: inline-block;
+		padding: var(--tag-padding-y) var(--spacing-2);
+		font-size: var(--font-size-xs);
+		color: var(--color-text-secondary);
+		background: var(--color-surface);
+		border-radius: var(--radius);
+		text-decoration: none;
+		transition:
+			color var(--transition-fast),
+			background var(--transition-fast);
+	}
+
+	.card-tag:hover {
+		color: var(--color-text);
+		background: var(--color-border);
+	}
+
+	/* Byline styles */
+	.card-bylines {
+		display: flex;
+		align-items: center;
+		gap: 2px;
+		white-space: nowrap;
+	}
+
+	.card-byline {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-1);
+	}
+
+	.card-byline-avatar {
+		width: var(--avatar-size-xs);
+		height: var(--avatar-size-xs);
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.card-byline-name {
+		font-weight: 500;
+		color: var(--color-text-secondary);
+	}
+
+	.byline-more {
+		position: relative;
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+		margin-left: 2px;
+		cursor: default;
+		border-radius: var(--radius);
+		outline-offset: 2px;
+	}
+
+	.byline-more:focus-visible {
+		outline: 2px solid var(--color-brand);
+	}
+
+	.byline-more[data-tooltip]:hover::after,
+	.byline-more[data-tooltip]:focus-visible::after {
+		content: attr(data-tooltip);
 		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 40%;
-		height: 1.3em;
-		background: linear-gradient(
-			to right,
-			var(--color-background-transparent),
-			var(--color-background) 80%
-		);
+		bottom: calc(100% + 6px);
+		left: 50%;
+		transform: translateX(-50%);
+		white-space: nowrap;
+		background: var(--color-text);
+		color: var(--color-bg);
+		font-size: var(--font-size-xs);
+		font-weight: 400;
+		padding: var(--spacing-1) var(--spacing-2);
+		border-radius: var(--radius);
+		pointer-events: none;
+		z-index: 10;
 	}
 </style>

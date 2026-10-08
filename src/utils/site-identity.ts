@@ -1,22 +1,24 @@
-/**
- * Site identity helper.
- *
- * EmDash site settings carry `title` and `tagline`; both may be empty before
- * the admin setup wizard runs. Fall back to the blog's own name so pages
- * still render a sensible <title> and header.
- */
-
-interface SiteSettingsLike {
-	title?: string | null;
-	tagline?: string | null;
+/** Resolved media reference from getSiteSettings() */
+export interface MediaReference {
+	mediaId: string;
+	alt?: string;
+	url?: string;
 }
 
-export function resolveBlogSiteIdentity(settings: SiteSettingsLike | null | undefined): {
-	siteTitle: string;
-	siteTagline: string;
-} {
+export interface BlogSiteIdentitySettings {
+	title?: string;
+	tagline?: string;
+	logo?: MediaReference;
+	favicon?: MediaReference;
+}
+
+const DEFAULT_SITE_TITLE = "My Blog";
+const DEFAULT_SITE_TAGLINE = "Thoughts, stories, and ideas.";
+
+export function resolveBlogSiteIdentity(settings?: BlogSiteIdentitySettings) {
 	return {
-		siteTitle: settings?.title || "段飛",
-		siteTagline: settings?.tagline || "This is DuanFei's website.",
+		siteTitle: settings?.title ?? DEFAULT_SITE_TITLE,
+		siteTagline: settings?.tagline ?? DEFAULT_SITE_TAGLINE,
+		siteLogo: settings?.logo?.url ? settings.logo : null,
 	};
 }

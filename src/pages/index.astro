@@ -1,304 +1,466 @@
 ---
-/**
- * Home -- port of theme/layouts/home.vue.
- * Hero image, haiku quote, featured posts grid, RSS subscribe section.
- */
-import { getEmDashCollection, getSiteSettings } from "emdash";
-import Base from "../layouts/Base.astro";
 import {
-	resolveImageUrl,
-	resolveImageAlt,
-	transformImageUrl,
-	transformSrcset,
-} from "../utils/media";
+	getEmDashCollection,
+	getTermsForEntries,
+	getSiteSettings,
+} from "emdash";
+import { Image } from "emdash/ui";
+import Base from "../layouts/Base.astro";
+import PostCard from "../components/PostCard.astro";
+import { getReadingTime } from "../utils/reading-time";
 import { resolveBlogSiteIdentity } from "../utils/site-identity";
 
-const HERO_IMAGE = "/media/home-page-1.jpg";
+// Limit to what we render (1 featured + 6 grid). The DB does the slicing
+// instead of fetching every post and discarding the tail in JS.
+const POSTS_PER_PAGE = 7;
 
 const [{ entries: posts, cacheHint }, settings] = await Promise.all([
 	getEmDashCollection("posts", {
 		orderBy: { published_at: "desc" },
-		limit: 6,
+		limit: POSTS_PER_PAGE + 1, // +1 to detect "view all" need
 	}),
 	getSiteSettings(),
 ]);
 const { siteTitle, siteTagline } = resolveBlogSiteIdentity(settings);
 
 if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+
+// Trim the lookahead post used to detect overflow
+const visiblePosts = posts.slice(0, POSTS_PER_PAGE);
+const hasMorePosts = posts.length > POSTS_PER_PAGE;
+
+// Find the first post with a featured image for the hero
+const featuredPost = visiblePosts.find((p) => p.data.featured_image);
+const featuredIndex = featuredPost ? visiblePosts.indexOf(featuredPost) : -1;
+
+// Get remaining posts (exclude featured if found, limit to 6 for grid)
+const gridPosts = visiblePosts
+	.filter((_, i) => i !== featuredIndex)
+	.slice(0, 6);
+
+// Single batched query for tags across the featured post + grid posts.
+// Avoids the N+1 pattern of calling getEntryTerms() per entry.
+// Bylines are already hydrated on entry.data.bylines by getEmDashCollection.
+const tagEntryIds = [
+	...(featuredPost ? [featuredPost.data.id] : []),
+	...gridPosts.map((p) => p.data.id),
+];
+const tagsByEntry = await getTermsForEntries("posts", tagEntryIds, "tag");
+
+const featuredTags = featuredPost
+	? (tagsByEntry.get(featuredPost.data.id) ?? []).map((t) => ({
+			slug: t.slug,
+			label: t.label,
+		}))
+	: [];
+const featuredBylines = featuredPost?.data.bylines ?? [];
+
+const gridPostsWithTags = gridPosts.map((post) => ({
+	post,
+	tags: (tagsByEntry.get(post.data.id) ?? []).map((t) => ({
+		slug: t.slug,
+		label: t.label,
+	})),
+	bylines: post.data.bylines ?? [],
+}));
+
+// Format date helper
+function formatDate(date: Date | null | undefined) {
+	if (!date) return null;
+	return date.toLocaleDateString("en-US", {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
+}
 ---
 
 <Base title={siteTitle} description={siteTagline}>
-	<div class="tach-portfolio">
-		<h1 class="visually-hidden">{siteTitle}</h1>
-		{
-			HERO_IMAGE && (
-				<section class="tach-portfolio-hero">
-					<img
-						class="hero-img"
-						src={transformImageUrl(HERO_IMAGE, 1200)}
-						srcset={transformSrcset(HERO_IMAGE, [1200, 2400])}
-						sizes="100vw"
-						alt={siteTitle}
-						fetchpriority="high"
-						decoding="async"
-					/>
-				</section>
-			)
-		}
-
-		<section class="tach-portfolio-haiku">
-			<div class="haiku-content">
-				<small>There will</small>
-				<p class="haiku-line">
-					still be <span>love</span> in this world
-				</p>
-			</div>
-		</section>
-
-		{
-			posts.length > 0 && (
-				<section class="tach-portfolio-feature">
-					<h2 class="feature-title">Featured</h2>
-					<div class="feature-grid">
-						{posts.map((post) => {
-							const img = resolveImageUrl(post.data.featured_image);
-							return (
-								<article class="tach-portfolio-item">
-									<figure class="item-content">
-										<a class="link" href={`/posts/${post.id}`}>
-											<div class="pic-box">
-												{img && (
-													<img
-														class="item-cover"
-														src={transformImageUrl(post.data.featured_image, 480)}
-														srcset={transformSrcset(post.data.featured_image, [480, 960])}
-														sizes="(min-width: 1100px) 340px, (min-width: 640px) 45vw, 90vw"
-														alt={resolveImageAlt(post.data.featured_image) || post.data.title}
-														loading="lazy"
-														decoding="async"
-														/>
-												)}
-												<span class="overlay">{post.data.title}</span>
-											</div>
-										</a>
-									</figure>
-								</article>
-							);
-						})}
-					</div>
-				</section>
-			)
-		}
-
-		<section class="tach-portfolio-subscribe">
-			<div class="subscribe-content">
-				<h2>Feeds</h2>
-				<p>如果你不想错过更新的文章，可以通过 RSS 订阅本博客</p>
-				<a class="button" target="_blank" rel="noopener" href="/rss.xml">
-					Subscribe
+	{
+		posts.length === 0 ? (
+			<section class="empty-state">
+				<h1>No posts yet</h1>
+				<p>Create your first post in the admin panel.</p>
+				<a href="/_emdash/admin/content/posts/new" class="btn">
+					Create a post
 				</a>
+			</section>
+		) : (
+			<div class="home-content">
+				{/* Featured Post - Side by side */}
+				{featuredPost && (
+					<section class="featured-section">
+						<div class="featured-grid">
+							<a href={`/posts/${featuredPost.id}`} class="featured-image-link">
+								<div class="featured-image" {...featuredPost.edit.featured_image}>
+									<Image image={featuredPost.data.featured_image} />
+								</div>
+							</a>
+							<div class="featured-content">
+								<div class="featured-meta">
+									{featuredBylines.length > 0 && (
+										<>
+											<div class="featured-bylines">
+												{featuredBylines.slice(0, 2).map((credit, index) => (
+													<>
+														{index > 0 && <span class="byline-sep">,</span>}
+														<span class="featured-byline">
+															{credit.byline.avatarMediaId && (
+																<img
+																	src={`/_emdash/api/media/file/${credit.byline.avatarMediaId}`}
+																	alt={credit.byline.displayName}
+																	class="featured-byline-avatar"
+																/>
+															)}
+															<span class="featured-byline-name">
+																{credit.byline.displayName}
+															</span>
+														</span>
+													</>
+												))}
+												{featuredBylines.length > 2 && (
+													<span class="byline-more">
+														+{featuredBylines.length - 2}
+													</span>
+												)}
+											</div>
+											<span class="meta-dot" />
+										</>
+									)}
+									{formatDate(featuredPost.data.publishedAt) && (
+										<time>{formatDate(featuredPost.data.publishedAt)}</time>
+									)}
+									<span class="meta-dot" />
+									<span>
+										{getReadingTime(featuredPost.data.content)} min read
+									</span>
+								</div>
+								<a
+									href={`/posts/${featuredPost.id}`}
+									class="featured-title-link"
+								>
+									<h1 class="featured-title" {...featuredPost.edit.title}>{featuredPost.data.title}</h1>
+								</a>
+								{featuredPost.data.excerpt && (
+									<p class="featured-excerpt" {...featuredPost.edit.excerpt}>{featuredPost.data.excerpt}</p>
+								)}
+								{featuredTags.length > 0 && (
+									<div class="featured-tags">
+										{featuredTags.map((tag) => (
+											<a href={`/tag/${tag.slug}`} class="featured-tag">
+												{tag.label}
+											</a>
+										))}
+									</div>
+								)}
+							</div>
+						</div>
+					</section>
+				)}
+
+				{/* Latest Posts */}
+				{gridPostsWithTags.length > 0 && (
+					<section class="posts-section">
+						<header class="section-header">
+							<h2 class="section-title">Latest</h2>
+							{hasMorePosts && (
+								<a href="/posts" class="section-link">
+									View all
+								</a>
+							)}
+						</header>
+						<div class="posts-grid">
+							{gridPostsWithTags.map(({ post, tags, bylines }) => (
+								<PostCard
+									title={post.data.title ?? "Untitled"}
+									excerpt={post.data.excerpt}
+									featuredImage={post.data.featured_image}
+									href={`/posts/${post.id}`}
+									date={post.data.publishedAt ?? undefined}
+									readingTime={getReadingTime(post.data.content)}
+									tags={tags}
+									bylines={bylines}
+									edit={post.edit}
+								/>
+							))}
+						</div>
+					</section>
+				)}
 			</div>
-		</section>
-	</div>
+		)
+	}
 </Base>
 
 <style>
-	.visually-hidden {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		white-space: nowrap;
-		border: 0;
-	}
-
-	.tach-portfolio-hero .hero-img {
-		display: block;
-		width: 100%;
-		height: 80vw;
-		max-height: 80vh;
-		object-fit: cover;
-	}
-
-	.tach-portfolio-haiku {
-		padding-top: 4rem;
-	}
-
-	.haiku-content {
-		padding: 0 var(--gap-m);
-		text-align: center;
-	}
-
-	.haiku-content small {
-		display: block;
-		margin-bottom: var(--gap-m);
-		color: var(--color-text-secondary);
-		letter-spacing: 4px;
-		text-transform: uppercase;
-	}
-
-	.haiku-content .haiku-line {
-		letter-spacing: 6px;
-		font-weight: 400;
-		line-height: var(--leading-relaxed);
-		text-transform: uppercase;
-		font-size: var(--font-size-lg);
-	}
-
-	.haiku-content .haiku-line span {
-		background: #2f2f2f;
-		color: #ffffff;
-		padding: 0.3rem;
-		padding-right: 0;
-	}
-
-	.tach-portfolio-feature {
-		padding-top: 2.7778rem;
+	.home-content {
 		max-width: var(--wide-width);
 		margin: 0 auto;
-		padding-left: var(--gap-m);
-		padding-right: var(--gap-m);
+		padding: var(--spacing-16) var(--spacing-6);
 	}
 
-	.feature-title {
-		margin: 0 0 var(--gap-l);
-		text-align: center;
-		line-height: var(--leading-relaxed);
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		font-size: var(--font-size-base);
-		font-weight: 500;
+	/* Featured Section - Side by side */
+	.featured-section {
+		margin-bottom: var(--spacing-16);
 	}
 
-	.feature-grid {
+	.featured-grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: var(--gap-m);
+		gap: var(--spacing-8);
+		align-items: center;
 	}
 
-	.tach-portfolio-item .item-content {
-		position: relative;
-		margin: 0;
+	.featured-image-link {
+		grid-column: 1 / 3;
+		display: block;
+		/* Extend to viewport edge, but cap at -6rem minimum extension */
+		margin-left: min(
+			-6rem,
+			calc(-1 * (var(--spacing-6) + (100vw - var(--wide-width)) / 2))
+		);
 	}
 
-	.pic-box {
-		position: relative;
+	.featured-image {
 		overflow: hidden;
-		z-index: 1;
-		aspect-ratio: 4 / 3;
+		border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
 		background: var(--color-surface);
 	}
 
-	.item-cover {
-		position: relative;
-		display: block;
+	.featured-image img {
 		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		z-index: 0;
-		transition: transform 0.5s ease-in-out;
-	}
-
-	.overlay {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		padding: var(--gap-l);
-		color: #ffffff;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background: rgba(47, 47, 47, 0.5);
-		opacity: 0;
-		z-index: 1;
-		transition: opacity 0.3s ease-in-out;
-	}
-
-	.tach-portfolio-item:hover .overlay,
-	.tach-portfolio-item:focus-within .overlay {
-		opacity: 1;
-	}
-
-	.tach-portfolio-item:hover .item-cover {
-		transform: scale(1.05);
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.item-cover,
-		.overlay {
-			transition: none;
-		}
-
-		.tach-portfolio-item:hover .item-cover {
-			transform: none;
-		}
-	}
-
-	.tach-portfolio-subscribe {
-		padding: 3rem 0;
-		text-align: center;
-	}
-
-	.subscribe-content {
-		padding: 0 var(--gap-m);
-	}
-
-	.subscribe-content h2 {
-		text-align: center;
-		letter-spacing: 2px;
-		line-height: var(--leading-relaxed);
-		text-transform: uppercase;
-		font-size: var(--font-size-base);
-		font-weight: 500;
-		margin-bottom: var(--gap-m);
-	}
-
-	.subscribe-content p {
-		color: var(--color-text-primary);
-		margin-bottom: 0;
-	}
-
-	a.button {
-		display: inline-block;
 		height: auto;
-		background: var(--color-text-primary);
-		color: var(--color-background);
-		margin-top: 1.7778rem;
-		border-radius: 50px;
-		padding: 0.6rem 3.2rem;
-		border: 1px solid var(--color-text-primary);
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		transition: transform 0.4s ease;
+	}
+
+	.featured-image-link:hover .featured-image img,
+	.featured-grid:has(.featured-title-link:hover) .featured-image img {
+		transform: scale(1.02);
+	}
+
+	.featured-content {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-4);
+	}
+
+	.featured-meta {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		column-gap: var(--spacing-3);
+		row-gap: var(--spacing-1);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+
+	.meta-dot {
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		background: var(--color-muted);
+	}
+
+	/* Featured bylines */
+	.featured-bylines {
+		display: flex;
+		align-items: center;
+		gap: 2px;
+	}
+
+	.featured-byline {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-2);
+	}
+
+	.featured-byline-avatar {
+		width: var(--avatar-size-md);
+		height: var(--avatar-size-md);
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.featured-byline-name {
+		font-weight: 500;
+		color: var(--color-text-secondary);
+	}
+
+	.byline-sep {
+		color: var(--color-muted);
+		margin-right: 2px;
+	}
+
+	.byline-more {
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+		margin-left: 2px;
+	}
+
+	.featured-title-link {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.featured-title {
+		font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
+		font-weight: var(--font-weight-display);
+		line-height: var(--leading-tight);
+		letter-spacing: var(--tracking-tight);
+		transition: color var(--transition-fast);
+	}
+
+	.featured-title-link:hover .featured-title,
+	.featured-grid:has(.featured-image-link:hover) .featured-title {
+		color: var(--color-brand);
+	}
+
+	.featured-excerpt {
+		font-size: var(--font-size-lg);
+		line-height: var(--leading-relaxed);
+		color: var(--color-text-secondary);
+	}
+
+	.featured-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-2);
+		margin-top: var(--spacing-2);
+	}
+
+	.featured-tag {
+		display: inline-block;
+		padding: var(--tag-padding-y) var(--spacing-2);
+		font-size: var(--font-size-xs);
+		color: var(--color-text-secondary);
+		background: var(--color-surface);
+		border-radius: var(--radius);
+		text-decoration: none;
 		transition:
-			background-color 0.2s ease-in-out,
-			color 0.2s ease-in-out;
-		text-decoration: none;
+			color var(--transition-fast),
+			background var(--transition-fast);
 	}
 
-	a.button:hover {
-		background: var(--color-background);
-		color: var(--color-text-primary);
-		text-decoration: none;
+	.featured-tag:hover {
+		color: var(--color-text);
+		background: var(--color-border);
 	}
 
+	/* Section header */
+	.section-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: var(--spacing-8);
+		padding-bottom: var(--spacing-4);
+		border-bottom: 1px solid var(--color-border-subtle);
+	}
+
+	.section-title {
+		font-size: var(--font-size-sm);
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: var(--tracking-wider);
+		color: var(--color-muted);
+	}
+
+	.section-link {
+		font-size: var(--font-size-sm);
+		color: var(--color-brand);
+		text-decoration: none;
+		transition: color var(--transition-fast);
+	}
+
+	.section-link:hover {
+		color: var(--color-brand-hover);
+	}
+
+	/* Posts Grid */
+	.posts-section {
+	}
+
+	.posts-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--spacing-12) var(--spacing-8);
+	}
+
+	/* Empty State */
+	.empty-state {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--spacing-3);
+		text-align: center;
+		padding: var(--spacing-20) var(--spacing-6);
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.empty-state h2 {
+		font-size: var(--font-size-2xl);
+		font-weight: var(--font-weight-heading);
+	}
+
+	.empty-state p {
+		color: var(--color-muted);
+	}
+
+	.btn {
+		display: inline-block;
+		margin-top: var(--spacing-4);
+		padding: var(--spacing-3) var(--spacing-6);
+		background: var(--color-brand);
+		color: var(--color-on-brand);
+		text-decoration: none;
+		border-radius: var(--radius);
+		font-size: var(--font-size-sm);
+		font-weight: 500;
+		transition: background var(--transition-fast);
+	}
+
+	.btn:hover {
+		background: var(--color-brand-hover);
+	}
+
+	/* Responsive */
 	@media (max-width: 900px) {
-		.feature-grid {
+		.home-content {
+			padding: var(--spacing-6) var(--spacing-4) var(--spacing-12);
+		}
+
+		.featured-image-link {
+			margin-left: 0;
+		}
+
+		.featured-grid {
+			grid-template-columns: 1fr;
+			gap: var(--spacing-6);
+		}
+
+		.featured-image {
+			border-radius: var(--radius-lg);
+		}
+
+		.featured-image img {
+			aspect-ratio: 16 / 9;
+		}
+
+		.posts-grid {
 			grid-template-columns: repeat(2, 1fr);
+			gap: var(--spacing-8) var(--spacing-6);
 		}
 	}
 
 	@media (max-width: 600px) {
-		.feature-grid {
-			grid-template-columns: 1fr;
+		.featured-title {
+			font-size: var(--font-size-2xl);
 		}
 
-		/* Always show titles on touch devices (original theme behaviour) */
-		.overlay {
-			opacity: 1;
+		.posts-grid {
+			grid-template-columns: 1fr;
+			gap: var(--spacing-8);
 		}
 	}
 </style>

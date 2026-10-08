@@ -31,19 +31,12 @@ const { items: results } = query
 				type="search"
 				name="q"
 				value={query}
-				placeholder="Search posts…"
+				placeholder="Search posts..."
 				class="search-input"
-				autocomplete="off"
+				autofocus
 			/>
 			<button type="submit" class="search-button">Search</button>
-			</form>
-
-			<script>
-			// Desktop-only autofocus: avoid popping the mobile keyboard.
-			if (window.matchMedia("(pointer: fine)").matches) {
-				document.getElementById("site-search-query")?.focus();
-			}
-			</script>
+		</form>
 
 		{
 			query && (
@@ -81,9 +74,9 @@ const { items: results } = query
 
 <style>
 	.search-page {
-		max-width: 840px;
+		max-width: var(--max-width);
 		margin: 0 auto;
-		padding: 2rem var(--gap-m) var(--gap-xl);
+		padding: var(--spacing-8) var(--spacing-6) var(--spacing-16);
 	}
 
 	.visually-hidden {
@@ -111,41 +104,32 @@ const { items: results } = query
 
 	.search-input {
 		flex: 1;
-		padding: var(--gap-s) var(--gap-m);
+		padding: var(--spacing-2) var(--spacing-4);
 		font-size: var(--font-size-base);
-		font-family: var(--font-body);
 		border: 1px solid var(--color-border);
-		border-radius: 50px;
+		border-radius: var(--radius);
 		background: var(--color-bg);
 		color: var(--color-text);
 	}
 
 	.search-input:focus {
 		outline: none;
-	}
-
-	.search-input:focus-visible {
 		border-color: var(--color-brand);
-		box-shadow: 0 0 0 3px var(--color-brand-ring);
 	}
 
 	.search-button {
-		padding: var(--gap-s) 2rem;
+		padding: var(--spacing-2) var(--spacing-6);
 		font-size: var(--font-size-base);
-		font-family: var(--font-body);
-		background: var(--color-text-primary);
-		color: var(--color-background);
-		border: 1px solid var(--color-text-primary);
-		border-radius: 50px;
+		background: var(--color-brand);
+		color: var(--color-on-brand);
+		border: none;
+		border-radius: var(--radius);
 		cursor: pointer;
-		transition:
-			background-color 0.2s ease-in-out,
-			color 0.2s ease-in-out;
+		font-weight: 500;
 	}
 
 	.search-button:hover {
-		background: var(--color-background);
-		color: var(--color-text-primary);
+		opacity: 0.9;
 	}
 
 	.search-summary {
