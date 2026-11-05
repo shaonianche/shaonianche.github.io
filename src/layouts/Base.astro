@@ -83,7 +83,7 @@ const isLoggedIn = !!Astro.locals.user;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -764,6 +764,8 @@ const isLoggedIn = !!Astro.locals.user;
 
 			.footer-copyright a {
 				color: var(--color-text-secondary);
+				text-decoration: underline;
+				text-underline-offset: 2px;
 			}
 
 			/* Theme switcher */
@@ -898,16 +900,18 @@ const isLoggedIn = !!Astro.locals.user;
 		</style>
 
 		<script>
+			// LiveSearch has no label prop; name the input explicitly instead of
+			// relying on its placeholder.
+			const searchInput = document.querySelector(
+				".site-search-input",
+			) as HTMLInputElement | null;
+			searchInput?.setAttribute("aria-label", "Search");
+
 			// ⌘K / Ctrl+K to focus search
 			document.addEventListener("keydown", (e) => {
 				if ((e.metaKey || e.ctrlKey) && e.key === "k") {
 					e.preventDefault();
-					const searchInput = document.querySelector(
-						".site-search-input",
-					) as HTMLInputElement;
-					if (searchInput) {
-						searchInput.focus();
-					}
+					searchInput?.focus();
 				}
 			});
 		</script>
