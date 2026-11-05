@@ -1,24 +1,22 @@
 # seed/
 
-`seed.json` 是 EmDash 的种子文件（数据结构 + 24 篇文章完整内容）。
+`seed.json` is the EmDash seed file: the site schema plus the full content of all 24 posts.
 
-因 GitHub API 单次推送大小限制，仓库中存放的是 gzip 压缩版。
-`.agents/setup` 会自动解压并完成本地播种（D1 内容 + R2 媒体二进制），无需手动操作。
-手动解压：
+Because of the GitHub API push size limit, the repository stores a gzipped copy. `.agents/setup` decompresses it and seeds the local environment automatically (D1 content + R2 media binaries), so no manual steps are needed. To decompress it manually:
 
 ```bash
-gunzip -k seed/seed.json.gz   # 得到 seed/seed.json
+gunzip -k seed/seed.json.gz   # creates seed/seed.json
 ```
 
-也可随时从线上 D1 重新导出最新版：
-`npx emdash export-seed`
+You can also re-export the latest version from the live D1 at any time:
 
-## 本地媒体的工作原理
+```bash
+npx emdash export-seed
+```
 
-- `emdash seed`（CLI）会把 seed 里 `$media` 引用的图片下载到 `./uploads/<storage_key>`，
-  但 dev server 从 R2 绑定（miniflare）读媒体，不读 `./uploads`。
-- 因此播种后需要把二进制导入本地 R2（`.agents/setup` 已自动化）：
-  对 media 表里的每条记录执行
-  `npx wrangler r2 object put "blog/<storage_key>" --file "uploads/<storage_key>" --local`。
-- 不要通过 HTTP 请求触发首次访问自动播种（auto-seed 不带 storage，且与手动播种竞争，
-  会产生没有二进制的 media 记录）。
+## How local media works
+
+- The `emdash seed` CLI downloads images referenced by `$media` in the seed to `./uploads/<storage_key>`, but the dev server reads media from the R2 binding (miniflare), not from `./uploads`.
+- After seeding, import the binaries into local R2 (`.agents/setup` does this automatically). For each row in the `media` table, run:
+  `npx wrangler r2 object put "blog/<storage_key>" --file "uploads/<storage_key>" --local`
+- Do not trigger auto-seeding with an HTTP request on first visit: auto-seed has no storage and races the manual seed, leaving media rows without binaries.
