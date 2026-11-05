@@ -3,9 +3,12 @@ This is an EmDash site -- a CMS built on Astro with a full admin UI.
 ## Commands
 
 ```bash
-npm run dev              # Start the Astro dev server
-npx emdash types      # Regenerate TypeScript types from a running site
+pnpm install             # Install dependencies (pnpm is the package manager)
+pnpm dev                 # Start the Astro dev server
+pnpm exec emdash types   # Regenerate TypeScript types from a running site
 ```
+
+The first local run also needs the seed applied to D1 and its media imported into R2, or the site has no posts and images 404. `.agents/setup` does both; the manual steps are in `seed/README.md`.
 
 The admin UI is at `http://localhost:4321/_emdash/admin`.
 
@@ -15,7 +18,7 @@ The admin UI is at `http://localhost:4321/_emdash/admin`.
 | ------------------------ | ---------------------------------------------------------------------------------- |
 | `astro.config.mjs`       | Astro config with `emdash()` integration, database, and storage                    |
 | `src/live.config.ts`     | EmDash loader registration (boilerplate -- don't modify)                           |
-| `seed/seed.json`         | Schema definition + demo content (collections, fields, taxonomies, menus, widgets) |
+| `seed/seed.json.gz`      | Gzipped schema + all content (collections, fields, taxonomies, menus, widgets); decompress to the gitignored `seed/seed.json` -- see `seed/README.md` |
 | `emdash-env.d.ts`        | Generated types for collections (auto-regenerated on dev server start)             |
 | `src/layouts/Base.astro` | Base layout with EmDash wiring (menus, search, page contributions)                 |
 | `src/pages/`             | Astro pages -- all server-rendered                                                 |
@@ -32,7 +35,7 @@ Agent skills are in `.agents/skills/`. Load them when working on specific tasks:
 
 The EmDash docs are available as an MCP server at `https://docs.emdashcms.com/mcp`. When you need to verify an API, hook, config option, field type, or pattern, call `search_docs` against the live documentation rather than relying on training-data recall. The docs reflect current behaviour; assumptions may not.
 
-This template ships with `.mcp.json`, `.cursor/mcp.json`, and `.vscode/mcp.json` so Claude Code, Cursor, and VS Code auto-discover the docs server. Other tools (OpenCode, Windsurf, etc.) need a manual one-time setup -- see [docs.emdashcms.com/docs-mcp](https://docs.emdashcms.com/docs-mcp).
+The repo ships with `.mcp.json`, so Claude Code auto-discovers the docs server. Cursor and VS Code read their own config (`.cursor/mcp.json`, `.vscode/mcp.json`); those directories are gitignored here, so add the server manually. Other tools (OpenCode, Windsurf, etc.) need the same one-time setup -- see [docs.emdashcms.com/docs-mcp](https://docs.emdashcms.com/docs-mcp).
 
 ## Rules
 
