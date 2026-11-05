@@ -513,6 +513,15 @@ const publishDate =
 	.article-content {
 		font-size: var(--font-size-lg);
 		line-height: var(--leading-relaxed);
+		/* Long code lines scroll inside their <pre>; long URLs wrap instead of
+		   widening the page on narrow screens. */
+		overflow-x: clip;
+	}
+
+	.article-content :global(p),
+	.article-content :global(li),
+	.article-content :global(a) {
+		overflow-wrap: anywhere;
 	}
 
 	.article-content :global(p) {
