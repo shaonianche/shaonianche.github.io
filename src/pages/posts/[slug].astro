@@ -6,11 +6,13 @@ import {
 	getSeoMeta,
 	decodeSlug,
 	getSiteSettings,
+	getCollectionInfo,
 } from "emdash";
 import { Image, PortableText, WidgetArea } from "emdash/ui";
 import { Comments, CommentForm } from "emdash/ui/comments";
 import Base from "../../layouts/Base.astro";
 import PostCard from "../../components/PostCard.astro";
+import CodeBlock from "../../components/CodeBlock.astro";
 import { getReadingTime } from "../../utils/reading-time";
 import { resolveBlogSiteIdentity } from "../../utils/site-identity";
 
@@ -27,6 +29,14 @@ if (!post) {
 }
 
 if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+
+const postsCollection = await getCollectionInfo("posts");
+const commentsClosedAfterDays = postsCollection?.commentsClosedAfterDays ?? 0;
+const commentsClosed =
+	(postsCollection?.commentsEnabled ?? false) &&
+	commentsClosedAfterDays > 0 &&
+	!!post.data.publishedAt &&
+	Date.now() > post.data.publishedAt.getTime() + commentsClosedAfterDays * 86400000;
 
 // Get featured image URL for OG fallback
 // The image may have src (external) or meta.storageKey (local)
@@ -228,12 +238,16 @@ const publishDate =
 				</header>
 
 				<div class="article-content">
-					<PortableText value={post.data.content} />
+					<PortableText value={post.data.content} components={{ type: { code: CodeBlock } }} />
 				</div>
 
 				<div class="article-comments">
 					<Comments collection="posts" contentId={post.data.id} threaded />
-					<CommentForm collection="posts" contentId={post.data.id} />
+					{commentsClosed ? (
+						<p class="comments-closed">Comments are closed for this post.</p>
+					) : (
+						<CommentForm collection="posts" contentId={post.data.id} />
+					)}
 				</div>
 			</div>
 
@@ -866,6 +880,12 @@ const publishDate =
 		margin-top: var(--spacing-16);
 		padding-top: var(--spacing-10);
 		border-top: 1px solid var(--color-border);
+	}
+
+	.comments-closed {
+		margin-top: var(--spacing-4);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
 	}
 
 	.article-comments :global(.ec-comments) {

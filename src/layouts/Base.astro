@@ -87,6 +87,8 @@ const isLoggedIn = !!Astro.locals.user;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/favicon.ico" sizes="64x64" />
 		<Font cssVariable="--font-body" preload />
 		<Font cssVariable="--font-mono" />
 		<title>{fullTitle}</title>
@@ -104,14 +106,20 @@ const isLoggedIn = !!Astro.locals.user;
 				}
 			})();
 		</script>
-		<!-- Cloudflare Web Analytics -->
-		<script
-			is:inline
-			defer
-			src="https://static.cloudflareinsights.com/beacon.min.js"
-			data-cf-beacon='{"token": "2669a625e06f4a0caf2dc6ed33dcecf2"}'
-		></script>
-		<!-- End Cloudflare Web Analytics -->
+		{
+			import.meta.env.PROD && (
+				<>
+					{/* Cloudflare Web Analytics */}
+					<script
+						is:inline
+						defer
+						src="https://static.cloudflareinsights.com/beacon.min.js"
+						data-cf-beacon='{"token": "2669a625e06f4a0caf2dc6ed33dcecf2"}'
+					/>
+					{/* End Cloudflare Web Analytics */}
+				</>
+			)
+		}
 	</head>
 	<body>
 		<EmDashBodyStart page={pageCtx} />
