@@ -31,4 +31,24 @@
 */
 
 :root {
+	/*
+	  Dark mode greys run one step lighter than the defaults. Light text on a
+	  near-black canvas reads dimmer than its contrast ratio suggests, and the
+	  11-14px meta labels (dates, reading time, tags) were the first to go.
+	  Light mode keeps the stock values.
+	*/
+	--color-text-secondary: light-dark(#525252, #b8b8b8);
+	--color-muted: light-dark(#6b6b6b, #a3a3a3);
+}
+
+/*
+  Article body. prose.css mixes 82% text into the canvas, which is right on
+  white but leaves body copy greyer than the headings in dark mode. 88% keeps
+  the step down from headings without the text looking washed out.
+*/
+.prose {
+	--prose-color: light-dark(
+		color-mix(in srgb, var(--color-text) 82%, var(--color-bg)),
+		color-mix(in srgb, var(--color-text) 88%, var(--color-bg))
+	);
 }
