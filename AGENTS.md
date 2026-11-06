@@ -6,7 +6,10 @@ This is an EmDash site -- a CMS built on Astro with a full admin UI.
 pnpm install             # Install dependencies (pnpm is the package manager)
 pnpm dev                 # Start the Astro dev server
 pnpm exec emdash types   # Regenerate TypeScript types from a running site
+pnpm seed:sync           # Refresh seed.json.gz + local D1 from production
 ```
+
+`pnpm dev` first checks whether `seed/seed.json.gz` is behind production D1 and prints a warning (it never blocks startup); run `pnpm seed:sync` to refresh the seed and the local database from production.
 
 The first local run also needs the seed applied to D1 and its media imported into R2, or the site has no posts and images 404. `.agents/setup` does both; the manual steps are in `seed/README.md`.
 
@@ -54,9 +57,9 @@ A blog with posts, pages, categories, tags, full-text search, and RSS. Designed 
 | Page        | Path               | What it shows                                                                                          |
 | ----------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
 | Home        | `/`                | Featured post hero (large image + excerpt), latest posts grid                                          |
-| All posts   | `/posts`           | Article count, full post list with excerpts and tag chips                                              |
-| Post detail | `/posts/[slug]`    | Featured image, title, body, left meta column (authors + date), right TOC + search + categories gutter |
-| Search      | `/search`          | Full-text search UI                                                                                    |
+| All posts   | `/posts`           | Paginated list (20 per page, `?cursor=`), newest first, with tag chips                                 |
+| Post detail | `/posts/[slug]`    | Featured image, title, left meta rail (date + reading time), 680px body, right rail (TOC + widgets)    |
+| Search      | `/search`          | Full-text search UI with cursor paging                                                                 |
 | Page        | `/pages/[slug]`    | Static page content (Portable Text)                                                                    |
 | Category    | `/category/[slug]` | Posts filtered by category                                                                             |
 | Tag         | `/tag/[slug]`      | Posts filtered by tag                                                                                  |
@@ -73,11 +76,11 @@ Site settings have `title` and `tagline` -- both render in the header / footer.
 
 ## Visual character
 
-Single typeface: **Inter** on `--font-body`, used for everything including headings (`--font-heading` defaults to the body face; tighter letter-spacing on h1/h2). **JetBrains Mono** on `--font-mono` for inline code and code blocks. Body and headings share the same family; weight and size carry the hierarchy (`--font-weight-heading` 600, `--font-weight-display` 700 for h1/page titles).
+Single typeface: **Inter** on `--font-body`, used for everything including headings (`--font-heading` defaults to the body face; tighter letter-spacing on h1/h2). **JetBrains Mono** on `--font-mono` for labels, inline code, and code blocks. Body and headings share the same family; weight and size carry the hierarchy (`--font-weight-heading` 600, `--font-weight-display` 600 for h1/page titles).
 
-The brand colour is `#0066cc` (`--color-brand`) -- used for links, the post-card title hover, and the search input focus ring. There's also a secondary text colour (`--color-text-secondary`) and a `--color-muted` for meta info. Don't add a second accent.
+The theme is monochrome: `--color-brand` is near-black in light mode and near-white in dark mode, and drives buttons, the logo mark, and focus rings. Body links are text-coloured with a subtle underline (see `prose.css`). There is no accent colour -- photographs supply the only colour on the page. `--color-text-secondary` and `--color-muted` carry meta information.
 
-The article layout is the standout feature: a three-column reading view with a left meta column (author bylines, date), centred 680px body column, and a right gutter for search, table of contents, and categories. Don't flatten that into one column on desktop -- the layout signals "this is something to read".
+The layout is built from `band` sections split by hairline rails with corner crosshairs, and a `frame` container (`--frame-width`) that aligns content with those rails. The article layout is the standout feature: a three-column reading view with a left meta rail (date, reading time), centred 680px body column, and a right rail for the TOC and widget area. Don't flatten that into one column on desktop -- the layout signals "this is something to read".
 
 ## Customisation
 
@@ -90,19 +93,74 @@ Webfonts are configured in `astro.config.mjs` under `fonts:`. To swap the body f
 CSS variables worth knowing (see `tokens.css` for the full list):
 
 - `--color-brand`, `--color-brand-hover`, `--color-on-brand`, `--color-brand-ring`
-- `--color-bg`, `--color-bg-subtle`, `--color-surface`, `--color-text`, `--color-text-secondary`, `--color-muted`, `--color-border`, `--color-border-subtle`
+- `--color-bg`, `--color-bg-subtle`, `--color-surface`, `--color-fill`, `--color-fill-strong`, `--color-text`, `--color-text-secondary`, `--color-muted`, `--color-border`, `--color-border-subtle`, `--color-border-strong`, `--color-ring`
 - `--font-body`, `--font-heading`, `--font-mono`
-- `--font-weight-heading` (600) / `--font-weight-display` (700) -- heading weights; lower them if you switch to a serif
+- `--font-weight-heading` (600) / `--font-weight-display` (600) -- heading weights; lower them if you switch to a serif
 - `--tracking-tight` / `--tracking-snug` / `--tracking-wide` / `--tracking-wider` -- letter-spacing tokens used across headings and meta labels
 - `--content-width` (680px) -- article body column
 - `--wide-width` (1200px) -- max container
-- `--gutter-width` (200px) -- right sidebar (TOC) on article pages
-- `--meta-col-width` (180px) -- left meta column on article pages
+- `--frame-margin` / `--frame-padding` / `--frame-width` -- the rail-aligned content frame
+- `--gutter-width` (200px) -- right rail (TOC, widgets) on article pages
+- `--meta-col-width` (180px) -- left meta rail on article pages
+- `--radius-sm` (6px) / `--radius` (8px) / `--radius-lg` (12px) / `--radius-xl` (18px) / `--radius-full` (pills)
+- `--card-padding` (6px) -- inset between a card edge and its media
 - `--avatar-size-{xs,sm,md,lg}` -- byline avatar sizes at different scales
+
+Article body typography lives in `src/styles/prose.css`, applied by wrapping Portable Text in `.prose`. It sits in `@layer base`, so `theme.css` overrides win; the unlayered block at the end restyles EmDash's code, button, and file blocks with `!important`.
+
+## Upstream Template Sync
+
+The site-facing code is a copy of the official EmDash blog template: `blog-cloudflare/` in [emdash-cms/templates](https://github.com/emdash-cms/templates). This repo was synced from **v1.0.1** (2026-09-28) and ported to **v1.3.0** (2026-10-16), the redesign that introduced `src/styles/prose.css`, `Byline.astro`, `Pagination.astro`, `src/utils/locale.ts`, the `band`/`frame`/`rail` layout, and the current token set. Porting meant re-applying the local deltas below, not copying files.
+
+EmDash package upgrades are separate: commits such as `chore: upgrade EmDash to 1.4.0` touch only `package.json`, `pnpm-lock.yaml`, and `emdash-env.d.ts`. They never update template files.
+
+### Replaced wholesale from upstream
+
+| Path | Notes |
+| --- | --- |
+| `src/pages/**` | Every route: home, posts list and detail, pages, category, tag, search, 404, `rss.xml.ts` |
+| `src/layouts/Base.astro` | Site shell, header, footer, theme switcher (has local edits, see below) |
+| `src/components/PostCard.astro`, `Byline.astro`, `Pagination.astro` | Card variants, byline, cursor paging |
+| `src/styles/tokens.css`, `src/styles/theme.css`, `src/styles/prose.css` | Design tokens, the theme override point, and article body typography |
+| `src/utils/reading-time.ts`, `src/utils/site-identity.ts`, `src/utils/locale.ts` | |
+| `src/live.config.ts`, `.mcp.json` | Boilerplate |
+
+Do not take upstream's `seed/seed.json`: it is demo content, while this repo ships `seed/seed.json.gz` with the real migrated content. `AGENTS.md` and `README.md` describe this site and stay local.
+
+### Local files that upstream does not have
+
+Never overwritten by a sync:
+
+- `src/endpoints/image.ts` and the `imageEndpoint` integration in `astro.config.mjs` (path-style media keys)
+- `src/components/CodeBlock.astro`
+- `wrangler.jsonc` (D1, R2, KV bindings and the hourly cron)
+- `seed/seed.json.gz`, `seed/README.md`, `public/media/`, `public/images/`
+- `.agents/setup`, `.emdash/migrations.json`, `.github/`, `.npmrc`
+- `emdash-env.d.ts` (generated by `pnpm exec emdash types`)
+- Dependency ranges in `package.json`, `pnpm-lock.yaml`, and the security `overrides` in `pnpm-workspace.yaml`. `@astrojs/react` stays on 6.x; the template pins `^7`, which is not required here.
+
+### Files that need a manual merge
+
+Re-apply these local changes after replacing the upstream file:
+
+| File | Local change |
+| --- | --- |
+| `astro.config.mjs` | Workers Cache (`cache`, `routeRules`), custom `/_image` endpoint, `fonts:`, `d1({ coalesce: true })` |
+| `src/layouts/Base.astro` | Favicon links, Cloudflare Web Analytics beacon, footer meta link underline, search input `aria-label` |
+| `src/styles/theme.css` | Stays stock: `:root` is empty, no local overrides |
+| `src/utils/locale.ts` | `SITE_LOCALE = "zh-CN"` fallback, so dates, `<html lang>`, and the RSS language are Chinese without an Astro `i18n` config |
+| `src/pages/posts/[slug].astro` | `CodeBlock` mapping and the comment-closing logic (`getCollectionInfo().commentsClosedAfterDays`) |
+| `src/pages/pages/[slug].astro` | `CodeBlock` mapping |
+| `src/pages/rss.xml.ts` | Lower-case the feed `<language>` |
+| `src/worker.ts` | `generalCron: "0 * * * *"` |
+| `tsconfig.json` | `astro/tsconfigs/strict` and the local `include` list |
+| `package.json` | Package name, EmDash label, dependency ranges |
+
+Keep new site styling in the `:root` block of `theme.css`, so a sync only has to re-apply one block instead of scattered edits.
 
 ## What not to do
 
-- Don't add a second accent colour or coloured section backgrounds. The page should be black, white, and one blue.
+- Don't add an accent colour or coloured section backgrounds. The site is black, white, and photography -- the theme ships that way and `theme.css` has no overrides.
 - Don't replace Inter with a display sans (Bebas, Anton, etc.). Headings rely on weight contrast, not novelty faces.
 - Don't collapse the article gutter on desktop -- it's part of the reading experience.
 - Don't use stock blog copy ("Welcome to my blog", "Stay tuned for more"). Write a real tagline that says what this blog is about.

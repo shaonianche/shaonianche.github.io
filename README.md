@@ -5,7 +5,7 @@ A personal blog built with [EmDash](https://github.com/emdash-cms/emdash) (Astro
 ## Features
 
 - Home: a featured post hero with a large image, followed by a grid of recent posts
-- `/posts` lists all posts; `/posts/[slug]` shows a post with the author and date on the left and a table of contents, search, and categories in the right gutter
+- `/posts` lists all posts, 20 per page; `/posts/[slug]` shows a post with the date and reading time on the left and a table of contents plus widgets in the right rail
 - `/search` full-text search (EmDash FTS)
 - `/category/[slug]` and `/tag/[slug]` category and tag archives
 - `/pages/[slug]` standalone pages (such as About)
@@ -35,6 +35,7 @@ Common commands:
 ```bash
 pnpm build       # build
 pnpm typecheck   # type-check (astro check)
+pnpm seed:sync   # refresh seed.json.gz and local D1 from production
 pnpm deploy      # build and run wrangler deploy
 ```
 
@@ -50,11 +51,13 @@ Pushing to `main` triggers Cloudflare Workers Builds, which builds and deploys t
 | --- | --- |
 | `src/pages/` | Page routes (home, posts, categories, tags, standalone pages, search, RSS, 404) |
 | `src/layouts/Base.astro` | Site shell: navigation menu, footer, SEO, Cloudflare Web Analytics |
-| `src/components/PostCard.astro` | Post card |
+| `src/components/PostCard.astro` | Post card (feature, grid, and row variants) |
+| `src/components/Byline.astro` / `Pagination.astro` | Author byline; cursor paging for post lists |
 | `src/endpoints/image.ts` | Custom `/_image` transform endpoint (supports path-style media keys) |
 | `src/utils/reading-time.ts` | Reading-time estimate (counts CJK characters and Latin words separately) |
 | `src/utils/site-identity.ts` | Site title, tagline, and logo resolution with defaults |
-| `src/styles/tokens.css` / `theme.css` | Design tokens and theme overrides |
+| `src/utils/locale.ts` | Site locale (defaults to `zh-CN`) and date formatting |
+| `src/styles/tokens.css` / `theme.css` / `prose.css` | Design tokens, theme overrides, article body typography |
 | `src/worker.ts` | Worker entry point and hourly cron schedule |
 | `seed/seed.json.gz` | EmDash seed data (schema and all content); see `seed/README.md` |
 | `astro.config.mjs` | Astro config: EmDash integration, cache rules, fonts, image endpoint |
