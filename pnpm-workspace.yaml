@@ -13,3 +13,37 @@ minimumReleaseAgeExclude:
   - emdash
   - "@emdash-cms/*"
 blockExoticSubdeps: true
+
+# Security overrides for transitive dependencies flagged by Dependabot.
+# Each pin is the lowest published version that fixes the advisories, chosen so
+# that every dependent keeps its existing major. undici is split by major
+# because miniflare expects 7.x while unifont expects 8.x.
+overrides:
+  # GHSA-cg2g-xh64-v4q7, GHSA-mrv2-3pqr-j5jr, GHSA-c6gr-qvv4-5v3f (critical)
+  dompurify: 3.4.17
+  # GHSA-27r3-jxmh-p828 (high) and GHSA-6pq8-jhm2-2vcw (moderate)
+  body-parser: 2.4.0
+  qs: 6.16.1
+  # GHSA-wq5f-xc86-pv6w (high); astro already resolves 0.35.5 on its own
+  sharp: 0.35.5
+  # GHSA-4qv8-2p9j-2685, GHSA-f72v-6w45-q472, GHSA-xjj6-f33q-929c,
+  # GHSA-4w7w-5xrc-9h26, GHSA-2m5v-pch6-74hx, GHSA-qrxm-fqhp-jwvm,
+  # GHSA-9fm3-97px-rjf6, GHSA-55wc-3pg8-jfw6
+  "undici@>=7 <8": 7.30.1
+  "undici@>=8 <9": 8.12.2
+  # GHSA-698v-4r3x-3vcv, GHSA-r825-w8mm-5pxw, GHSA-587h-7wmj-h5pm,
+  # GHSA-9jrq-w75r-8gcw, GHSA-rq7h-c2jc-7f22, GHSA-vfpm-58rq-9qcg
+  vite: 8.3.3
+  # GHSA-mrhx-c7xc-m3w5 (high); emdash pins zod 4.5.4 exactly
+  zod: 4.6.6
+  # GHSA-w74x-v6f9-j3xg, GHSA-xhq7-xmqj-769h, GHSA-wjr9-j795-jxcr,
+  # GHSA-333x-w4r6-6crp
+  fast-uri: 3.1.9
+  # GHSA-rxp7-6hxx-x8q5
+  ip-address: 10.7.4
+  # GHSA-c9rx-x947-fp3h
+  sanitize-html: 2.18.1
+  # GHSA-f86p-h4j2-7qgj, GHSA-9wx9-5pv9-3349
+  seroval: 1.6.11
+  # deepmerge (GHSA-gcqx-w48m-w2h4) has no patched release, but sanitize-html
+  # 2.18.1 dropped the dependency, so it no longer appears in the tree.
