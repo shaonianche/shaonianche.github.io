@@ -76,7 +76,9 @@ Site settings have `title` and `tagline` -- both render in the header / footer.
 
 ## Visual character
 
-Single typeface: **Inter** on `--font-body`, used for everything including headings (`--font-heading` defaults to the body face; tighter letter-spacing on h1/h2). **JetBrains Mono** on `--font-mono` for labels, inline code, and code blocks. Body and headings share the same family; weight and size carry the hierarchy (`--font-weight-heading` 600, `--font-weight-display` 600 for h1/page titles).
+System fonts only, defined in `src/styles/custom.css`. `--font-body` is a Chinese-first stack: `system-ui` / `-apple-system` first, then `SF Pro SC`, `PingFang SC`, `Hiragino Sans GB`, `Microsoft YaHei`, `Noto Sans CJK SC`. It follows apple.com.cn's Chinese face order without shipping a webfont. `--font-mono` is the system monospace stack for labels, inline code, and code blocks. Body and headings share the same family; weight and size carry the hierarchy (`--font-weight-heading` 600, `--font-weight-display` 600 for h1/page titles).
+
+Chinese typography: 17px base, zero letter-spacing (negative tracking is a Latin convention and makes CJK glyphs collide), 1.3 heading leading, and 1.85 leading in `.prose`. Paragraph gaps are 1.15em.
 
 The theme is monochrome: `--color-brand` is near-black in light mode and near-white in dark mode, and drives buttons, the logo mark, and focus rings. Body links are text-coloured with a subtle underline (see `prose.css`). There is no accent colour -- photographs supply the only colour on the page. `--color-text-secondary` and `--color-muted` carry meta information.
 
@@ -88,7 +90,7 @@ Design tokens live in `src/styles/tokens.css` with their default values. To rest
 
 Colours are defined with `light-dark(<light>, <dark>)`, so each token carries both modes. Overriding with a plain colour changes light and dark at once; use `light-dark()` in the override to keep them distinct. There is no separate dark palette to maintain.
 
-Webfonts are configured in `astro.config.mjs` under `fonts:`. To swap the body face, change the `name:` for the entry bound to `cssVariable: "--font-body"`. Good alternatives: Geist, IBM Plex Sans, Söhne (if you have a licence), Public Sans. If you want a serif-bodied blog, swap to a humanist serif like Source Serif, Crimson Pro, or Lora -- but then also raise `--font-size-base` to `1.0625rem` for readability. To give headings their own face (or use a system font) without touching the font pipeline, override `--font-heading` or `--font-body` in `theme.css`.
+Site-specific styling lives in `src/styles/custom.css`, which Base.astro imports after `tokens.css` and `theme.css`. A template upgrade never touches that file. There is no webfont pipeline: `astro.config.mjs` has no `fonts:` entry and Base.astro has no `<Font>` tags, so the system stacks above are the whole font story. To change the body face, edit `--font-body` in `custom.css`; to give headings their own face, set `--font-heading` there.
 
 CSS variables worth knowing (see `tokens.css` for the full list):
 
@@ -133,6 +135,7 @@ Never overwritten by a sync:
 
 - `src/endpoints/image.ts` and the `imageEndpoint` integration in `astro.config.mjs` (path-style media keys)
 - `src/components/CodeBlock.astro`
+- `src/styles/custom.css` (site typography and any future overrides)
 - `wrangler.jsonc` (D1, R2, KV bindings and the hourly cron)
 - `seed/seed.json.gz`, `seed/README.md`, `public/media/`, `public/images/`
 - `.agents/setup`, `.emdash/migrations.json`, `.github/`, `.npmrc`
@@ -145,8 +148,8 @@ Re-apply these local changes after replacing the upstream file:
 
 | File | Local change |
 | --- | --- |
-| `astro.config.mjs` | Workers Cache (`cache`, `routeRules`), custom `/_image` endpoint, `fonts:`, `d1({ coalesce: true })` |
-| `src/layouts/Base.astro` | Favicon links, Cloudflare Web Analytics beacon, footer meta link underline, search input `aria-label` |
+| `astro.config.mjs` | Workers Cache (`cache`, `routeRules`), custom `/_image` endpoint, `d1({ coalesce: true })`, and no `fonts:` entry (system stack lives in `custom.css`) |
+| `src/layouts/Base.astro` | `custom.css` import (after `theme.css`), no `<Font>` tags, favicon links, Cloudflare Web Analytics beacon, footer meta link underline, search input `aria-label` |
 | `src/styles/theme.css` | Stays stock: `:root` is empty, no local overrides |
 | `src/utils/locale.ts` | `SITE_LOCALE = "zh-CN"` fallback, so dates, `<html lang>`, and the RSS language are Chinese without an Astro `i18n` config |
 | `src/pages/posts/[slug].astro` | `CodeBlock` mapping and the comment-closing logic (`getCollectionInfo().commentsClosedAfterDays`) |
@@ -161,7 +164,7 @@ Keep new site styling in the `:root` block of `theme.css`, so a sync only has to
 ## What not to do
 
 - Don't add an accent colour or coloured section backgrounds. The site is black, white, and photography -- the theme ships that way and `theme.css` has no overrides.
-- Don't replace Inter with a display sans (Bebas, Anton, etc.). Headings rely on weight contrast, not novelty faces.
+- Don't replace the system Chinese stack with a display sans (Bebas, Anton, etc.). Headings rely on weight contrast, not novelty faces.
 - Don't collapse the article gutter on desktop -- it's part of the reading experience.
 - Don't use stock blog copy ("Welcome to my blog", "Stay tuned for more"). Write a real tagline that says what this blog is about.
 - Don't seed the home page with three identical placeholder posts. If you only have one real post, show one real post.

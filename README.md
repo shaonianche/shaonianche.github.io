@@ -18,7 +18,7 @@ A personal blog built with [EmDash](https://github.com/emdash-cms/emdash) (Astro
 - **Data**: D1 (content), R2 (media), KV (sessions)
 - **Caching**: Workers Cache (`cacheCloudflare()`), with per-route `maxAge` and tag-based invalidation on publish
 - **Images**: Cloudflare Images binding for on-demand resizing; a custom `/_image` endpoint (`src/endpoints/image.ts`) extends the EmDash endpoint to accept path-style media keys
-- **Fonts**: Inter for body and headings, JetBrains Mono for code, loaded through Astro Fonts
+- **Fonts**: system stack (SF Pro / PingFang SC / Microsoft YaHei / Noto Sans CJK) with Chinese-friendly sizing and leading; no webfont downloads
 
 ## Local development
 
@@ -58,6 +58,7 @@ Pushing to `main` triggers Cloudflare Workers Builds, which builds and deploys t
 | `src/utils/site-identity.ts` | Site title, tagline, and logo resolution with defaults |
 | `src/utils/locale.ts` | Site locale (defaults to `zh-CN`) and date formatting |
 | `src/styles/tokens.css` / `theme.css` / `prose.css` | Design tokens, theme overrides, article body typography |
+| `src/styles/custom.css` | Site-specific overrides (Chinese system font stack, spacing); survives template upgrades |
 | `src/worker.ts` | Worker entry point and hourly cron schedule |
 | `seed/seed.json.gz` | EmDash seed data (schema and all content); see `seed/README.md` |
 | `astro.config.mjs` | Astro config: EmDash integration, cache rules, fonts, image endpoint |

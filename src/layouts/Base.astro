@@ -8,11 +8,11 @@ import {
 } from "emdash/ui";
 import { createPublicPageContext } from "emdash/page";
 import LiveSearch from "emdash/ui/search";
-import { Font } from "astro:assets";
 import { getSiteLocale } from "../utils/locale";
 import { resolveBlogSiteIdentity } from "../utils/site-identity";
 import "../styles/tokens.css";
 import "../styles/theme.css";
+import "../styles/custom.css";
 
 interface Props {
 	title: string;
@@ -114,8 +114,6 @@ const year = new Date().getFullYear();
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 		<link rel="icon" href="/favicon.ico" sizes="64x64" />
-		<Font cssVariable="--font-body" preload />
-		<Font cssVariable="--font-mono" />
 		<title>{fullTitle}</title>
 		<EmDashHead page={pageCtx} />
 		<link

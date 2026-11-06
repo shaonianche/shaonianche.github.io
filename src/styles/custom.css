@@ -1,0 +1,65 @@
+/*
+  custom.css -- site-specific overrides.
+
+  This file is not part of the upstream template: a template upgrade never
+  replaces it. Base.astro imports it after tokens.css and theme.css, so its
+  declarations are unlayered and win over the @layer base defaults.
+
+  Typography is Chinese-first. The stack follows apple.com.cn's Chinese
+  face order ("SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, ...")
+  but puts system-ui first so Windows and Linux pick their own UI font
+  instead of falling back to a serif CJK face. Per-character fallback does
+  the rest: Segoe UI has no CJK glyphs, so Chinese text moves on to
+  PingFang SC (macOS), Microsoft YaHei (Windows), or Noto Sans CJK.
+*/
+
+:root {
+	--font-body:
+		system-ui, -apple-system, BlinkMacSystemFont, "SF Pro SC", "SF Pro Text",
+		"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI",
+		"Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC",
+		"WenQuanYi Micro Hei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+	--font-heading: var(--font-body);
+	--font-mono:
+		ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+		"Liberation Mono", monospace;
+
+	/* 17px base: Chinese UI text reads better one step above 16px. */
+	--font-size-base: 1.0625rem;
+
+	/* CJK line boxes are taller than Latin ones; 1.1 clips multi-line titles. */
+	--leading-tight: 1.3;
+	--leading-snug: 1.45;
+	--leading-relaxed: 1.75;
+
+	/* Negative tracking is a Latin convention; it makes Chinese glyphs collide. */
+	--tracking-tight: 0;
+	--tracking-snug: 0;
+}
+
+/* Long-form reading: 18px body with Chinese-friendly leading. */
+.prose {
+	line-height: 1.85;
+}
+
+.prose > * + * {
+	margin-block-start: 1.15em;
+}
+
+.prose :is(h1, h2, h3, h4, h5, h6) {
+	letter-spacing: 0;
+	line-height: var(--leading-tight);
+}
+
+/* Keep Latin words whole; Chinese still wraps between any two characters. */
+.prose :is(p, li, blockquote) {
+	word-break: normal;
+	line-break: normal;
+}
+
+@media (max-width: 640px) {
+	.prose {
+		line-height: 1.8;
+	}
+}
