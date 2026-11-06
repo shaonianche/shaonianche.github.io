@@ -19,16 +19,16 @@
     "typecheck": "astro check"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^14.3.1",
-    "@astrojs/react": "^6.0.5",
+    "@astrojs/cloudflare": "^14.4.4",
+    "@astrojs/react": "^7.1.2",
     "@emdash-cms/cloudflare": "^1.4.0",
-    "astro": "^7.3.2",
+    "astro": "^7.4.5",
     "emdash": "^1.4.0",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
+    "@astrojs/check": "^0.9.12",
     "@cloudflare/workers-types": "^5.20261103.1",
     "wrangler": "^4.156.2"
   }
