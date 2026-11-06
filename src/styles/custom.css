@@ -38,6 +38,253 @@
 	--tracking-snug: 0;
 }
 
+/*
+  Mobile.
+
+  Type does not scale with the viewport: body and prose sizes are fixed rem
+  values, so they follow the browser's font-size setting instead of shrinking
+  on a phone. -webkit-text-size-adjust: 100% in Base.astro already stops iOS
+  from inflating them on top of that. The display scale is the only type size
+  adjusted for narrow screens.
+*/
+
+@media (max-width: 640px) {
+	/* 36px is a poster on a phone; 22px is a compact mobile page title and
+	   keeps a long Chinese title to three lines. */
+	:root {
+		--font-size-display: 1.375rem;
+	}
+
+	/* A 44px row is the comfortable touch target; 37px is fiddly.
+	   [href] outranks Base.astro's scoped .site-nav a rule. */
+	.site-header .site-nav ul a[href] {
+		padding-block: 11.5px;
+	}
+}
+
+/*
+  1.05 is a Latin poster leading. A Chinese title wraps to three or four
+  lines on a phone and the lines nearly touch; use the same heading leading
+  as the article body instead. The page title needs three classes to
+  outrank its scoped rule in pages/[slug].astro.
+*/
+@media (max-width: 900px) {
+	.intro__title,
+	.intro__subtitle,
+	.page__layout .page__header .page__title {
+		line-height: var(--leading-tight);
+	}
+}
+
+/*
+  iOS Safari zooms the page when a focused field is under 16px. The header
+  search is 14px and visible on iPads; touch devices get a 16px field.
+  The element qualifier outranks Base.astro's scoped rule.
+*/
+@media (pointer: coarse) {
+	.site-header .site-search input.site-search-input {
+		font-size: 1rem;
+	}
+}
+
+/*
+  Between the phone and tablet layouts the 200px search field, the nav, and
+  the brand cannot share one row, so the site name truncates to "友…".
+*/
+@media (min-width: 641px) and (max-width: 720px) {
+	:root {
+		--search-input-width: 160px;
+	}
+}
+
+/*
+  Mobile reading layout.
+
+  body:has(.post-header) scopes these rules to article pages without
+  adding a class to the templates. #main outranks the scoped .related
+  rules in posts/[slug].astro.
+*/
+
+@media (max-width: 640px) {
+	/* The two-row header cannot stick without eating the screen; on
+	   articles, drop the nav and keep a 56px bar. */
+	body:has(.post-header) .site-header {
+		position: sticky;
+		top: 0;
+	}
+
+	body:has(.post-header) .site-nav {
+		display: none;
+	}
+
+	body:has(.post-header) .site-header__inner {
+		min-height: 3.5rem;
+		padding-block: var(--spacing-2);
+	}
+
+	/* Body images run to the screen edge; captions stay in the column. */
+	body:has(.post-header) .prose :is(figure, .emdash-image) {
+		margin-inline: calc(-1 * (var(--frame-margin) + var(--frame-padding)));
+	}
+
+	body:has(.post-header) .prose :is(figure, .emdash-image) img {
+		border-radius: 0;
+	}
+
+	body:has(.post-header) .prose figcaption {
+		padding-inline: calc(var(--frame-margin) + var(--frame-padding));
+	}
+
+	body:has(.post-header) .post-hero .frame {
+		padding-inline: 0;
+	}
+
+	body:has(.post-header) .post-hero__media {
+		margin-inline: calc(-1 * var(--frame-margin));
+		border-radius: 0;
+	}
+
+	/* Related posts become one swipeable row instead of a stack. */
+	#main .related .post-grid {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: min(78%, 18rem);
+		grid-template-columns: none;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: calc(var(--frame-margin) + var(--frame-padding));
+		scrollbar-width: none;
+		margin-inline: calc(-1 * (var(--frame-margin) + var(--frame-padding)));
+		margin-block: -8px;
+		padding-block: 8px;
+		padding-inline: calc(var(--frame-margin) + var(--frame-padding));
+	}
+
+	#main .related .post-grid::-webkit-scrollbar {
+		display: none;
+	}
+
+	#main .related .post-grid > * {
+		scroll-snap-align: start;
+	}
+
+	/* The 2-column grid hides the third card; the rail keeps it. */
+	#main .related .post-grid > .post:nth-child(3) {
+		display: block;
+	}
+
+	/* The smallest remaining tap targets. */
+	:root {
+		--tag-padding-y: 5px;
+	}
+
+	.site-footer .theme-switcher .theme-btn {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	body:has(.post-header) .back-link {
+		padding-block: 8px;
+	}
+}
+
+/*
+  The table of contents sits after the article body in the DOM. Flatten the
+  rail so the TOC can move above the body, then render it as a horizontal
+  chip rail instead of a vertical list.
+*/
+@media (max-width: 1099.98px) {
+	body:has(.post-header) .post-layout {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-8);
+	}
+
+	body:has(.post-header) .post-rail {
+		display: contents;
+	}
+
+	body:has(.post-header) .toc {
+		order: -1;
+		display: block;
+		width: 100%;
+		max-width: var(--content-width);
+		margin-inline: auto;
+	}
+
+	body:has(.post-header) .toc[hidden] {
+		display: none;
+	}
+
+	body:has(.post-header) .toc h2 {
+		margin-block-end: var(--spacing-2);
+	}
+
+	body:has(.post-header) .toc__list {
+		display: flex;
+		gap: var(--spacing-2);
+		overflow-x: auto;
+		border-inline-start: 0;
+		scrollbar-width: none;
+		mask-image: linear-gradient(
+			to right,
+			#000 calc(100% - 2rem),
+			transparent
+		);
+	}
+
+	body:has(.post-header) .toc__list::-webkit-scrollbar {
+		display: none;
+	}
+
+	body:has(.post-header) .toc__item {
+		flex: none;
+	}
+
+	body:has(.post-header) .toc .toc__link {
+		max-width: min(78vw, 22rem);
+		margin-inline-start: 0;
+		padding: 6px 12px;
+		border: 0;
+		border-radius: var(--radius-full);
+		background: var(--color-fill);
+		color: var(--color-text-secondary);
+		font-size: var(--font-size-xs);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	body:has(.post-header) .toc .toc__link[aria-current="true"] {
+		background: var(--color-brand);
+		color: var(--color-on-brand);
+	}
+
+	body:has(.post-header) .post-widgets {
+		width: 100%;
+		max-width: var(--content-width);
+		margin-inline: auto;
+		overflow-wrap: anywhere;
+	}
+}
+
+/* Let the chip rail scroll to the screen edge, so the cut chip reads as
+   "more to the right" instead of clipping inside the text column. */
+@media (max-width: 640px) {
+	body:has(.post-header) .toc__list {
+		margin-inline: calc(-1 * (var(--frame-margin) + var(--frame-padding)));
+		padding-inline: calc(var(--frame-margin) + var(--frame-padding));
+		scroll-padding-inline: calc(var(--frame-margin) + var(--frame-padding));
+	}
+}
+
+/* 34 characters per line instead of 37 on tablets. */
+@media (min-width: 641px) and (max-width: 1099.98px) {
+	body:has(.post-header) :is(.post-header__inner, .post-main, .toc, .post-widgets) {
+		max-width: min(var(--content-width), 38rem);
+	}
+}
+
 /* Long-form reading: 18px body with Chinese-friendly leading. */
 .prose {
 	line-height: 1.85;
