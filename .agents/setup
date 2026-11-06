@@ -23,7 +23,8 @@ else
 	# Boot the dev server once so miniflare creates its D1 sqlite file.
 	# Do NOT HTTP-request the app here: EmDash auto-seeds on the first
 	# request, which would race our explicit seed below.
-	npm run dev >/tmp/emdash-seed-dev.log 2>&1 &
+	# Skip the production freshness check here: setup has no wrangler credentials.
+	SKIP_SEED_CHECK=1 npm run dev >/tmp/emdash-seed-dev.log 2>&1 &
 	dev_pid=$!
 	cleanup() {
 		kill "$dev_pid" 2>/dev/null || true
@@ -50,6 +51,41 @@ else
 	# Apply the seed directly to the D1 file. The CLI downloads each $media
 	# URL and writes binaries to ./uploads/<storage_key>.
 	npx emdash seed seed/seed.json -d "$db_file"
+
+	# The seeder stamps published_at/created_at/updated_at with "now" instead
+	# of the seed's dates, so restore them from the seed by slug. Without this
+	# a fresh environment dates every post to the moment it was seeded.
+	python3 - "$db_file" <<'PYEOF'
+import datetime, json, sqlite3, sys
+
+seed = json.load(open("seed/seed.json"))
+db = sqlite3.connect(sys.argv[1])
+
+def utc(value):
+    if not value:
+        return None
+    dt = datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    dt = dt.astimezone(datetime.timezone.utc)
+    return dt.strftime("%Y-%m-%dT%H:%M:%S.") + f"{dt.microsecond // 1000:03d}Z"
+
+restored = 0
+for collection, table in (("posts", "ec_posts"), ("pages", "ec_pages")):
+    for entry in seed.get("content", {}).get(collection, []):
+        cur = db.execute(
+            f"UPDATE {table} SET published_at=?, created_at=?, updated_at=? WHERE slug=?",
+            (
+                utc(entry.get("publishedAt")),
+                utc(entry.get("createdAt")),
+                utc(entry.get("updatedAt")),
+                entry["slug"],
+            ),
+        )
+        restored += cur.rowcount
+db.commit()
+print(f"restored seed dates on {restored} entries")
+PYEOF
 
 	# Stop the temp server before touching R2 state.
 	cleanup

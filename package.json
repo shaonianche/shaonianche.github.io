@@ -9,10 +9,13 @@
     "seed": "seed/seed.json"
   },
   "scripts": {
+    "predev": "node scripts/check-seed.ts",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "deploy": "astro build && wrangler deploy",
+    "seed:sync": "node scripts/sync-seed.ts",
+    "check:seed": "node scripts/check-seed.ts",
     "typecheck": "astro check"
   },
   "dependencies": {
